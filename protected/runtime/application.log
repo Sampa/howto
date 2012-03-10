@@ -9641,3 +9641,11 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/scrape?info_hash=%11%01%A8%B5%AFB%EFSH%D8%F5%60%A1%83%01%04%96%8D%B3f&info_hash=J%3BV%2FX%09%D3Xf%EFt%11v%F9X%7D%BB%02%CA%09
 ---
+2012/03/10 18:28:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%11%01%A8%B5%AFB%EFSH%D8%F5%60%A1%83%01%04%96%8D%B3f&info_hash=J%3BV%2FX%09%D3Xf%EFt%11v%F9X%7D%BB%02%CA%09
+---
