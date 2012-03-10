@@ -22,6 +22,10 @@
 		<?php if( Yii::app()->user->checkAccess('HowtoUpdateOwn', array('userid'=>$data->author_id))): ?>
 			<?php echo CHtml::link('Update', array('/howto/update','id'=>$data->id)); ?> |
 		<?php endif; ?>
-		Last updated on <?php echo date('F j, Y',$data->update_time); ?>
+		Last updated on <?php echo date('F j, Y',$data->update_time); ?>     
+		
+		<?= CHtml::link('<i class="icon-print icon-white"></i>Print/Pdf', 
+		array('/howto/viewpdf/id/' . $data->id ), array('class'=>'btn btn-primary') );
+?>
 	</div>
 </div>

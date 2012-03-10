@@ -34,11 +34,11 @@
 
 <div class="container" id="page">
 
-	<!--header 
+	
 	<div id="header">
-		<div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?></div>
+		<div id="logo"><h1>Howto<h1></div>
 	</div>
-	-->
+	
 
 	<div id="mainMenu">
 <?php 
@@ -47,23 +47,18 @@
 				array('label'=>'Home', 'url'=>array('/howto/index')),
 				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
 				array('label'=>'Contact', 'url'=>array('/site/contact')),
-				array('label'=>'Products', 'url'=>array('/product')),
-				array('label'=>$this->user, 'url'=>array( User::getUserLink( $this->user ) ),
-				'visible'=>!$this->isGuest,
-                  'items'=>array( //Submenu under the users name
-					array('label'=>'Profile', 'url'=>array( User::getUserLink( $this->user ) ) ),
-                    array('label'=>'Update','url'=>array( '//user/update/id/' . Yii::app()->user->id ) ), 
-					array('label'=>'Rights', 'url'=>array( '/rights' ),
-							'visible'=>Yii::app()->user->checkAccess(Rights::module()->superuserName ) ),
-					array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 
-							'visible'=>!$this->isGuest ),
-						array('label'=>'Howtos','url'=>array( '//Howtos/index'),
+				array('label'=>'Howtos','url'=>array( '//Howtos/index'),
 							'visible'=>Yii::app()->user->checkAccess( 'Howto.Admin' ),
 								'items'=>array( //submenu under "Howtos" If user has Howto.Admin
 									array(
 										'label'=>'Create New Howto',
 										'url'=>array( '/howto/create' ), 
 										'visible'=>Yii::app()->user->checkAccess( 'Howto.Create' )
+									),
+									array('label'=>'New Howtos!','url'=>array( '/howto/show/new' ), 
+									),
+									array('label'=>'Your Howtos!','url'=>array( '/howto/show/new' ), 
+										'visible'=>!Yii::app()->user->isGuest
 									),
 									array(
 										'label'=>'Manage Howtos', 
@@ -79,6 +74,16 @@
 								
 								), 
 							), //End Howtos + submenu
+				array('label'=>$this->user, 'url'=>array( User::getUserLink( $this->user ) ),
+				'visible'=>!$this->isGuest,
+                  'items'=>array( //Submenu under the users name
+					array('label'=>'Profile', 'url'=>array( User::getUserLink( $this->user ) ) ),
+                    array('label'=>'Update','url'=>array( '//user/update/id/' . Yii::app()->user->id ) ), 
+					array('label'=>'Rights', 'url'=>array( '/rights' ),
+							'visible'=>Yii::app()->user->checkAccess(Rights::module()->superuserName ) ),
+					array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 
+							'visible'=>!$this->isGuest ),
+						
 						), 
                   ),//End username + submenu
 				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),

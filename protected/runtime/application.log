@@ -9084,3 +9084,560 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/favicon.ico
 ---
+2012/03/10 17:08:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%11%01%A8%B5%AFB%EFSH%D8%F5%60%A1%83%01%04%96%8D%B3f&info_hash=%E1%BC%8C%8A%FA%24k%0A%DF%5B%FD%3CG%F6%89%2B%97%D4%BAq&info_hash=%ADe%93o%9E%14%B9%E1-%AFJ%8E%D5%D8%FEm%9D%A0%0C%A7&info_hash=%94N%F3%40%21%BE%89v%5CZ%A2%28%9F%86%D5%D6%28%20%FE%2B&info_hash=G%29%A3T%5C%FC%09%B6%EA%EC%15q%24%BAZ%E0%AD%81%FF%40&info_hash=%05%E8j%40%F0%88%FC%BD%9D%DA%ADJ%82k%0Bpe%8E%E1%9F&info_hash=%A4%FD%B0a%1A%98Wj%11c%A6%C8%AD%FA%A6%06%207l-&info_hash=%7B%E3z%C7%F6%5D%C7%8B%F8%B1%15b%9E%60%22%0Cc%7F%E0%D1&info_hash=%FF%F0y%8D%83N%92%60%D1%CCn%97%FF%F4%12pv%60%CD%A9&info_hash=%09%88%FB%D1%A0%97%C0P%88%13%0D%BB%C4%A4%2C%F9*%83%CC%AE&info_hash=%F8%EA%80%DA%0Av_%F4%C6k%3D%28lu5%EB%FF%BF%DC%3B&info_hash=%F1%0A%D7%7C%88%23u%EC%5D%8F%C3%A9%3BW%15%E5v%DA%D0%21&info_hash=%C1%29%FC%40r%08V%3E%87l%A4%E6%FF%B7%06%D1%96%10%12%92&info_hash=%CFw%8E-%CF6%A1%8F%AB%F8%83K%29L%2B%C8%FD%AF%26I&info_hash=%A2%B8Ag%3B%80%92%E4%00%7B%B5%F9%CD7%9D%3BV%AF%9F%7C&info_hash=J%3BV%2FX%09%D3Xf%EFt%11v%F9X%7D%BB%02%CA%09&info_hash=%12%85U%E9h%5D3%09%1F%21%24o%C0Jb%D2r%C2%8A3&info_hash=h%0C%01%C6%D4J%01%96D%99up%89%CD%21%3F1Y%F4%5D&info_hash=%17*J%A2%D5%95%FA%B8%AD%DC%F3Q%BC%89%DA%29%FF%8A%40%87
+---
+2012/03/10 17:15:48 [error] [exception.CException] exception 'CException' with message 'Property "Step.author" is not defined.' in C:\Programmering\xampp\htdocs\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('author')
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\helpers\CHtml.php(1696): CActiveRecord->__get('author')
+#2 C:\Programmering\xampp\htdocs\yii\framework\zii\widgets\CDetailView.php(210): CHtml::value(Object(Step), 'author')
+#3 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(174): CDetailView->run()
+#4 C:\Programmering\xampp\htdocs\blog\protected\views\step\view.php(28): CBaseController->widget('zii.widgets.CDe...', Array)
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\Programmerin...')
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Programmerin...', Array, true)
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Programmerin...', Array, true)
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('view', Array, true)
+#9 C:\Programmering\xampp\htdocs\blog\protected\controllers\StepController.php(50): CController->render('view', Array)
+#10 [internal function]: StepController->actionView('1')
+#11 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(StepController), Array)
+#12 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(StepController), Object(ReflectionMethod), Array)
+#13 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#14 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#15 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#16 C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php(51): CFilter->filter(Object(CFilterChain))
+#17 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#18 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#19 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#20 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#22 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('step/view/id/1')
+#23 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#24 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/step/view/id/1
+HTTP_REFERER=http://83.233.118.50/howto/1/Welcome%21
+---
+2012/03/10 17:15:49 [error] [exception.CException] exception 'CException' with message 'Property "Step.author" is not defined.' in C:\Programmering\xampp\htdocs\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('author')
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\helpers\CHtml.php(1696): CActiveRecord->__get('author')
+#2 C:\Programmering\xampp\htdocs\yii\framework\zii\widgets\CDetailView.php(210): CHtml::value(Object(Step), 'author')
+#3 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(174): CDetailView->run()
+#4 C:\Programmering\xampp\htdocs\blog\protected\views\step\view.php(28): CBaseController->widget('zii.widgets.CDe...', Array)
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\Programmerin...')
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Programmerin...', Array, true)
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Programmerin...', Array, true)
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('view', Array, true)
+#9 C:\Programmering\xampp\htdocs\blog\protected\controllers\StepController.php(50): CController->render('view', Array)
+#10 [internal function]: StepController->actionView('1')
+#11 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(StepController), Array)
+#12 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(StepController), Object(ReflectionMethod), Array)
+#13 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#14 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#15 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#16 C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php(51): CFilter->filter(Object(CFilterChain))
+#17 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#18 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#19 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#20 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#22 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('step/view/id/1')
+#23 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#24 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/step/view/id/1
+HTTP_REFERER=http://83.233.118.50/howto/1/Welcome%21
+---
+2012/03/10 17:15:50 [error] [exception.CException] exception 'CException' with message 'Property "Step.author" is not defined.' in C:\Programmering\xampp\htdocs\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('author')
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\helpers\CHtml.php(1696): CActiveRecord->__get('author')
+#2 C:\Programmering\xampp\htdocs\yii\framework\zii\widgets\CDetailView.php(210): CHtml::value(Object(Step), 'author')
+#3 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(174): CDetailView->run()
+#4 C:\Programmering\xampp\htdocs\blog\protected\views\step\view.php(28): CBaseController->widget('zii.widgets.CDe...', Array)
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\Programmerin...')
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Programmerin...', Array, true)
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Programmerin...', Array, true)
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('view', Array, true)
+#9 C:\Programmering\xampp\htdocs\blog\protected\controllers\StepController.php(50): CController->render('view', Array)
+#10 [internal function]: StepController->actionView('1')
+#11 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(StepController), Array)
+#12 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(StepController), Object(ReflectionMethod), Array)
+#13 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#14 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#15 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#16 C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php(51): CFilter->filter(Object(CFilterChain))
+#17 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#18 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#19 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#20 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#22 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('step/view/id/1')
+#23 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#24 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/step/view/id/1
+HTTP_REFERER=http://83.233.118.50/howto/1/Welcome%21
+---
+2012/03/10 17:18:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%11%01%A8%B5%AFB%EFSH%D8%F5%60%A1%83%01%04%96%8D%B3f&info_hash=J%3BV%2FX%09%D3Xf%EFt%11v%F9X%7D%BB%02%CA%09
+---
+2012/03/10 17:19:33 [error] [exception.CException] exception 'CException' with message 'Property "Step.author" is not defined.' in C:\Programmering\xampp\htdocs\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('author')
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\helpers\CHtml.php(1696): CActiveRecord->__get('author')
+#2 C:\Programmering\xampp\htdocs\yii\framework\zii\widgets\CDetailView.php(210): CHtml::value(Object(Step), 'author')
+#3 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(174): CDetailView->run()
+#4 C:\Programmering\xampp\htdocs\blog\protected\views\step\view.php(28): CBaseController->widget('zii.widgets.CDe...', Array)
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\Programmerin...')
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Programmerin...', Array, true)
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Programmerin...', Array, true)
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('view', Array, true)
+#9 C:\Programmering\xampp\htdocs\blog\protected\controllers\StepController.php(50): CController->render('view', Array)
+#10 [internal function]: StepController->actionView('1')
+#11 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(StepController), Array)
+#12 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(StepController), Object(ReflectionMethod), Array)
+#13 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#14 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#15 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#16 C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php(51): CFilter->filter(Object(CFilterChain))
+#17 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#18 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#19 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#20 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#22 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('step/view/id/1')
+#23 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#24 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/step/view/id/1
+HTTP_REFERER=http://83.233.118.50/howto/1/Welcome%21
+---
+2012/03/10 17:20:26 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.Bootview" is invalid. Make sure it points to an existing PHP file.' in C:\Programmering\xampp\htdocs\yii\framework\YiiBase.php:318
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWidgetFactory.php(147): YiiBase::import('bootstrap.Bootv...', true)
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(StepController), 'bootstrap.Bootv...', Array)
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('bootstrap.Bootv...', Array)
+#3 C:\Programmering\xampp\htdocs\blog\protected\views\step\view.php(27): CBaseController->widget('bootstrap.Bootv...', Array)
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\Programmerin...')
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Programmerin...', Array, true)
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Programmerin...', Array, true)
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('view', Array, true)
+#8 C:\Programmering\xampp\htdocs\blog\protected\controllers\StepController.php(50): CController->render('view', Array)
+#9 [internal function]: StepController->actionView('1')
+#10 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(StepController), Array)
+#11 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(StepController), Object(ReflectionMethod), Array)
+#12 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#15 C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php(51): CFilter->filter(Object(CFilterChain))
+#16 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#17 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#19 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#21 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('step/view/id/1')
+#22 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/step/view/id/1
+HTTP_REFERER=http://83.233.118.50/howto/1/Welcome%21
+---
+2012/03/10 17:28:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%11%01%A8%B5%AFB%EFSH%D8%F5%60%A1%83%01%04%96%8D%B3f&info_hash=J%3BV%2FX%09%D3Xf%EFt%11v%F9X%7D%BB%02%CA%09
+---
+2012/03/10 17:29:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "id".' in C:\Programmering\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('id')
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('id')
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('howto/id/1')
+#3 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/howto/id/1
+HTTP_REFERER=http://83.233.118.50/step/view/id/1
+---
+2012/03/10 17:29:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "id".' in C:\Programmering\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('id')
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('id')
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('howto/id/1')
+#3 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/howto/id/1
+HTTP_REFERER=http://83.233.118.50/step/view/id/1
+---
+2012/03/10 17:37:15 [error] [exception.CException] exception 'CException' with message 'StepController and its behaviors do not have a method or closure named "actionMakePdf".' in C:\Programmering\xampp\htdocs\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\blog\protected\controllers\StepController.php(43): CComponent->__call('actionMakePdf', Array)
+#1 C:\Programmering\xampp\htdocs\blog\protected\controllers\StepController.php(43): StepController->actionMakePdf()
+#2 [internal function]: StepController->actionviewPdf('1')
+#3 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(StepController), Array)
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(StepController), Object(ReflectionMethod), Array)
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#8 C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php(51): CFilter->filter(Object(CFilterChain))
+#9 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#10 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#12 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('viewpdf')
+#14 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('step/viewpdf/id...')
+#15 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/step/viewpdf/id/1
+HTTP_REFERER=http://83.233.118.50/step/view/id/1
+---
+2012/03/10 17:38:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%11%01%A8%B5%AFB%EFSH%D8%F5%60%A1%83%01%04%96%8D%B3f&info_hash=J%3BV%2FX%09%D3Xf%EFt%11v%F9X%7D%BB%02%CA%09
+---
+2012/03/10 17:38:47 [error] [php] include(mpdf.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\Programmering\xampp\htdocs\yii\framework\YiiBase.php:418)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 C:\Programmering\xampp\htdocs\blog\protected\extensions\yii-pdf\EYiiPdf.php(82): ReflectionClass->__construct()
+#2 C:\Programmering\xampp\htdocs\blog\protected\extensions\yii-pdf\EYiiPdf.php(104): EYiiPdf->initLibrary()
+#3 C:\Programmering\xampp\htdocs\blog\protected\components\Controller.php(40): EYiiPdf->mpdf()
+#4 C:\Programmering\xampp\htdocs\blog\protected\controllers\StepController.php(43): StepController->actionMakePdf()
+#5 unknown(0): StepController->actionviewPdf()
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#9 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): StepController->runAction()
+#10 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#11 C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php(51): RightsFilter->filter()
+#12 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): StepController->filterRights()
+#13 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#14 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#15 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): StepController->runActionWithFilters()
+#16 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): StepController->run()
+#17 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#18 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#19 C:\Programmering\xampp\htdocs\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/step/viewpdf/id/1
+in C:\Programmering\xampp\htdocs\blog\protected\extensions\yii-pdf\EYiiPdf.php (82)
+in C:\Programmering\xampp\htdocs\blog\protected\extensions\yii-pdf\EYiiPdf.php (104)
+in C:\Programmering\xampp\htdocs\blog\protected\components\Controller.php (40)
+2012/03/10 17:39:25 [error] [php] include(mpdf.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\Programmering\xampp\htdocs\yii\framework\YiiBase.php:418)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 C:\Programmering\xampp\htdocs\blog\protected\extensions\yii-pdf\EYiiPdf.php(82): ReflectionClass->__construct()
+#2 C:\Programmering\xampp\htdocs\blog\protected\extensions\yii-pdf\EYiiPdf.php(104): EYiiPdf->initLibrary()
+#3 C:\Programmering\xampp\htdocs\blog\protected\components\Controller.php(40): EYiiPdf->mpdf()
+#4 C:\Programmering\xampp\htdocs\blog\protected\controllers\StepController.php(43): StepController->actionMakePdf()
+#5 unknown(0): StepController->actionviewPdf()
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#9 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): StepController->runAction()
+#10 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#11 C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php(51): RightsFilter->filter()
+#12 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): StepController->filterRights()
+#13 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#14 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#15 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): StepController->runActionWithFilters()
+#16 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): StepController->run()
+#17 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#18 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#19 C:\Programmering\xampp\htdocs\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/step/viewpdf/id/1
+in C:\Programmering\xampp\htdocs\blog\protected\extensions\yii-pdf\EYiiPdf.php (82)
+in C:\Programmering\xampp\htdocs\blog\protected\extensions\yii-pdf\EYiiPdf.php (104)
+in C:\Programmering\xampp\htdocs\blog\protected\components\Controller.php (40)
+2012/03/10 17:39:26 [error] [php] include(mpdf.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\Programmering\xampp\htdocs\yii\framework\YiiBase.php:418)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 C:\Programmering\xampp\htdocs\blog\protected\extensions\yii-pdf\EYiiPdf.php(82): ReflectionClass->__construct()
+#2 C:\Programmering\xampp\htdocs\blog\protected\extensions\yii-pdf\EYiiPdf.php(104): EYiiPdf->initLibrary()
+#3 C:\Programmering\xampp\htdocs\blog\protected\components\Controller.php(40): EYiiPdf->mpdf()
+#4 C:\Programmering\xampp\htdocs\blog\protected\controllers\StepController.php(43): StepController->actionMakePdf()
+#5 unknown(0): StepController->actionviewPdf()
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#9 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): StepController->runAction()
+#10 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#11 C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php(51): RightsFilter->filter()
+#12 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): StepController->filterRights()
+#13 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#14 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#15 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): StepController->runActionWithFilters()
+#16 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): StepController->run()
+#17 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#18 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#19 C:\Programmering\xampp\htdocs\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/step/viewpdf/id/1
+in C:\Programmering\xampp\htdocs\blog\protected\extensions\yii-pdf\EYiiPdf.php (82)
+in C:\Programmering\xampp\htdocs\blog\protected\extensions\yii-pdf\EYiiPdf.php (104)
+in C:\Programmering\xampp\htdocs\blog\protected\components\Controller.php (40)
+2012/03/10 17:48:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%11%01%A8%B5%AFB%EFSH%D8%F5%60%A1%83%01%04%96%8D%B3f&info_hash=J%3BV%2FX%09%D3Xf%EFt%11v%F9X%7D%BB%02%CA%09
+---
+2012/03/10 17:53:08 [error] [php] Undefined variable: model (C:\Programmering\xampp\htdocs\blog\protected\views\howto\_view.php:28)
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): HowtoController->renderFile()
+#1 C:\Programmering\xampp\htdocs\blog\protected\views\howto\view.php(13): HowtoController->renderPartial()
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(127): require()
+#3 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): HowtoController->renderInternal()
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): HowtoController->renderFile()
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(783): HowtoController->renderPartial()
+#6 C:\Programmering\xampp\htdocs\blog\protected\controllers\HowtoController.php(59): HowtoController->render()
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): HowtoController->actionView()
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#9 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): HowtoController->runAction()
+#10 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#11 C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php(51): RightsFilter->filter()
+#12 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): HowtoController->filterRights()
+#13 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#14 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#15 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): HowtoController->runActionWithFilters()
+#16 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): HowtoController->run()
+#17 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#18 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#19 C:\Programmering\xampp\htdocs\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/howto/1/Welcome%21
+in C:\Programmering\xampp\htdocs\blog\protected\views\howto\_view.php (28)
+in C:\Programmering\xampp\htdocs\blog\protected\views\howto\view.php (13)
+in C:\Programmering\xampp\htdocs\blog\protected\controllers\HowtoController.php (59)
+2012/03/10 17:55:34 [error] [php] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed (C:\Programmering\xampp\htdocs\blog\protected\views\howto\_pdf.php:18)
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): HowtoController->renderInternal()
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): HowtoController->renderFile()
+#2 C:\Programmering\xampp\htdocs\blog\protected\controllers\HowtoController.php(154): HowtoController->renderPartial()
+#3 unknown(0): HowtoController->actionviewPdf()
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): HowtoController->runAction()
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#9 C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php(51): RightsFilter->filter()
+#10 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): HowtoController->filterRights()
+#11 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#12 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#13 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): HowtoController->runActionWithFilters()
+#14 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): HowtoController->run()
+#15 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#16 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 C:\Programmering\xampp\htdocs\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/howto/viewpdf/id/1
+in C:\Programmering\xampp\htdocs\blog\protected\views\howto\_pdf.php (18)
+in C:\Programmering\xampp\htdocs\blog\protected\controllers\HowtoController.php (154)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php (51)
+2012/03/10 17:58:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%11%01%A8%B5%AFB%EFSH%D8%F5%60%A1%83%01%04%96%8D%B3f&info_hash=%E1%BC%8C%8A%FA%24k%0A%DF%5B%FD%3CG%F6%89%2B%97%D4%BAq&info_hash=%ADe%93o%9E%14%B9%E1-%AFJ%8E%D5%D8%FEm%9D%A0%0C%A7&info_hash=%94N%F3%40%21%BE%89v%5CZ%A2%28%9F%86%D5%D6%28%20%FE%2B&info_hash=G%29%A3T%5C%FC%09%B6%EA%EC%15q%24%BAZ%E0%AD%81%FF%40&info_hash=%05%E8j%40%F0%88%FC%BD%9D%DA%ADJ%82k%0Bpe%8E%E1%9F&info_hash=%A4%FD%B0a%1A%98Wj%11c%A6%C8%AD%FA%A6%06%207l-&info_hash=%7B%E3z%C7%F6%5D%C7%8B%F8%B1%15b%9E%60%22%0Cc%7F%E0%D1&info_hash=%FF%F0y%8D%83N%92%60%D1%CCn%97%FF%F4%12pv%60%CD%A9&info_hash=%09%88%FB%D1%A0%97%C0P%88%13%0D%BB%C4%A4%2C%F9*%83%CC%AE&info_hash=%F8%EA%80%DA%0Av_%F4%C6k%3D%28lu5%EB%FF%BF%DC%3B&info_hash=%F1%0A%D7%7C%88%23u%EC%5D%8F%C3%A9%3BW%15%E5v%DA%D0%21&info_hash=%C1%29%FC%40r%08V%3E%87l%A4%E6%FF%B7%06%D1%96%10%12%92&info_hash=%CFw%8E-%CF6%A1%8F%AB%F8%83K%29L%2B%C8%FD%AF%26I&info_hash=%A2%B8Ag%3B%80%92%E4%00%7B%B5%F9%CD7%9D%3BV%AF%9F%7C&info_hash=J%3BV%2FX%09%D3Xf%EFt%11v%F9X%7D%BB%02%CA%09&info_hash=%12%85U%E9h%5D3%09%1F%21%24o%C0Jb%D2r%C2%8A3&info_hash=h%0C%01%C6%D4J%01%96D%99up%89%CD%21%3F1Y%F4%5D&info_hash=%17*J%A2%D5%95%FA%B8%AD%DC%F3Q%BC%89%DA%29%FF%8A%40%87
+---
+2012/03/10 18:02:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "howto".' in C:\Programmering\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('howto')
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('howto')
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('howto/howto/own')
+#3 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/howto/howto/own
+---
+2012/03/10 18:03:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "own".' in C:\Programmering\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('own')
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('own')
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('howto/own')
+#3 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/howto/own
+---
+2012/03/10 18:05:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "show".' in C:\Programmering\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('show')
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('show')
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('howto/show/own')
+#3 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/howto/show/own
+---
+2012/03/10 18:05:55 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'author' in 'where clause'. The SQL statement executed was: SELECT COUNT(DISTINCT `t`.`id`) FROM `tbl_howto` `t`  WHERE ((status=2) AND (author=:ycp0)).
+in C:\Programmering\xampp\htdocs\blog\protected\views\howto\index.php (9)
+in C:\Programmering\xampp\htdocs\blog\protected\controllers\HowtoController.php (213)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php (51)
+2012/03/10 18:05:55 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'author' in 'where clause'. The SQL statement executed was: SELECT COUNT(DISTINCT `t`.`id`) FROM `tbl_howto` `t`  WHERE ((status=2) AND (author=:ycp0))' in C:\Programmering\xampp\htdocs\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\db\CDbCommand.php(425): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 C:\Programmering\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php(762): CDbCommand->queryScalar()
+#2 C:\Programmering\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php(155): CJoinElement->count(Object(CDbCriteria))
+#3 C:\Programmering\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1540): CActiveFinder->count(Object(CDbCriteria))
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\CActiveDataProvider.php(179): CActiveRecord->count(Object(CDbCriteria))
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CDataProvider.php(193): CActiveDataProvider->calculateTotalItemCount()
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CActiveDataProvider.php(129): CDataProvider->getTotalItemCount()
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CDataProvider.php(137): CActiveDataProvider->fetchData()
+#8 C:\Programmering\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(105): CDataProvider->getData()
+#9 C:\Programmering\xampp\htdocs\yii\framework\zii\widgets\CListView.php(173): CBaseListView->init()
+#10 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(148): CListView->init()
+#11 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#12 C:\Programmering\xampp\htdocs\blog\protected\views\howto\index.php(9): CBaseController->widget('zii.widgets.CLi...', Array)
+#13 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\Programmerin...')
+#14 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Programmerin...', Array, true)
+#15 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Programmerin...', Array, true)
+#16 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#17 C:\Programmering\xampp\htdocs\blog\protected\controllers\HowtoController.php(213): CController->render('index', Array)
+#18 [internal function]: HowtoController->actionIndex('own', '')
+#19 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(HowtoController), Array)
+#20 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(HowtoController), Object(ReflectionMethod), Array)
+#21 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#22 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#23 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#24 C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php(51): CFilter->filter(Object(CFilterChain))
+#25 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#26 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#27 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#28 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#29 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('index')
+#30 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('howto/index/sho...')
+#31 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#32 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#33 {main}
+REQUEST_URI=/howto/index/show/own
+---
+2012/03/10 18:07:43 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'created' in 'where clause'. The SQL statement executed was: SELECT COUNT(DISTINCT `t`.`id`) FROM `tbl_howto` `t`  WHERE ((status=2) AND (created >2012-02-10)).
+in C:\Programmering\xampp\htdocs\blog\protected\views\howto\index.php (9)
+in C:\Programmering\xampp\htdocs\blog\protected\controllers\HowtoController.php (213)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php (51)
+2012/03/10 18:07:43 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'created' in 'where clause'. The SQL statement executed was: SELECT COUNT(DISTINCT `t`.`id`) FROM `tbl_howto` `t`  WHERE ((status=2) AND (created >2012-02-10))' in C:\Programmering\xampp\htdocs\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\db\CDbCommand.php(425): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 C:\Programmering\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php(762): CDbCommand->queryScalar()
+#2 C:\Programmering\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php(155): CJoinElement->count(Object(CDbCriteria))
+#3 C:\Programmering\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1540): CActiveFinder->count(Object(CDbCriteria))
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\CActiveDataProvider.php(179): CActiveRecord->count(Object(CDbCriteria))
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CDataProvider.php(193): CActiveDataProvider->calculateTotalItemCount()
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CActiveDataProvider.php(129): CDataProvider->getTotalItemCount()
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CDataProvider.php(137): CActiveDataProvider->fetchData()
+#8 C:\Programmering\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(105): CDataProvider->getData()
+#9 C:\Programmering\xampp\htdocs\yii\framework\zii\widgets\CListView.php(173): CBaseListView->init()
+#10 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(148): CListView->init()
+#11 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#12 C:\Programmering\xampp\htdocs\blog\protected\views\howto\index.php(9): CBaseController->widget('zii.widgets.CLi...', Array)
+#13 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\Programmerin...')
+#14 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Programmerin...', Array, true)
+#15 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Programmerin...', Array, true)
+#16 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#17 C:\Programmering\xampp\htdocs\blog\protected\controllers\HowtoController.php(213): CController->render('index', Array)
+#18 [internal function]: HowtoController->actionIndex('new', '')
+#19 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(HowtoController), Array)
+#20 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(HowtoController), Object(ReflectionMethod), Array)
+#21 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#22 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#23 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#24 C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php(51): CFilter->filter(Object(CFilterChain))
+#25 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#26 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#27 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#28 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#29 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('index')
+#30 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('howto/index/sho...')
+#31 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#32 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#33 {main}
+REQUEST_URI=/howto/index/show/new
+---
+2012/03/10 18:07:58 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'creat_time' in 'where clause'. The SQL statement executed was: SELECT COUNT(DISTINCT `t`.`id`) FROM `tbl_howto` `t`  WHERE ((status=2) AND (creat_time >2012-02-10)).
+in C:\Programmering\xampp\htdocs\blog\protected\views\howto\index.php (9)
+in C:\Programmering\xampp\htdocs\blog\protected\controllers\HowtoController.php (213)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php (51)
+2012/03/10 18:07:58 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'creat_time' in 'where clause'. The SQL statement executed was: SELECT COUNT(DISTINCT `t`.`id`) FROM `tbl_howto` `t`  WHERE ((status=2) AND (creat_time >2012-02-10))' in C:\Programmering\xampp\htdocs\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\db\CDbCommand.php(425): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 C:\Programmering\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php(762): CDbCommand->queryScalar()
+#2 C:\Programmering\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php(155): CJoinElement->count(Object(CDbCriteria))
+#3 C:\Programmering\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1540): CActiveFinder->count(Object(CDbCriteria))
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\CActiveDataProvider.php(179): CActiveRecord->count(Object(CDbCriteria))
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CDataProvider.php(193): CActiveDataProvider->calculateTotalItemCount()
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CActiveDataProvider.php(129): CDataProvider->getTotalItemCount()
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CDataProvider.php(137): CActiveDataProvider->fetchData()
+#8 C:\Programmering\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(105): CDataProvider->getData()
+#9 C:\Programmering\xampp\htdocs\yii\framework\zii\widgets\CListView.php(173): CBaseListView->init()
+#10 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(148): CListView->init()
+#11 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#12 C:\Programmering\xampp\htdocs\blog\protected\views\howto\index.php(9): CBaseController->widget('zii.widgets.CLi...', Array)
+#13 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\Programmerin...')
+#14 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Programmerin...', Array, true)
+#15 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Programmerin...', Array, true)
+#16 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#17 C:\Programmering\xampp\htdocs\blog\protected\controllers\HowtoController.php(213): CController->render('index', Array)
+#18 [internal function]: HowtoController->actionIndex('new', '')
+#19 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(HowtoController), Array)
+#20 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(HowtoController), Object(ReflectionMethod), Array)
+#21 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#22 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#23 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#24 C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php(51): CFilter->filter(Object(CFilterChain))
+#25 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#26 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#27 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#28 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#29 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('index')
+#30 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('howto/index/sho...')
+#31 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#32 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#33 {main}
+REQUEST_URI=/howto/index/show/new
+---
+2012/03/10 18:08:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%11%01%A8%B5%AFB%EFSH%D8%F5%60%A1%83%01%04%96%8D%B3f&info_hash=%E8%F1%F4%88%15%7D%96v%98y%D4%A4%2C%06%A8%F0%80A%3F%F4&info_hash=J%3BV%2FX%09%D3Xf%EFt%11v%F9X%7D%BB%02%CA%09
+---
+2012/03/10 18:09:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "show".' in C:\Programmering\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('show')
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('show')
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('howto/show/new')
+#3 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/howto/show/new
+---
+2012/03/10 18:18:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%11%01%A8%B5%AFB%EFSH%D8%F5%60%A1%83%01%04%96%8D%B3f&info_hash=J%3BV%2FX%09%D3Xf%EFt%11v%F9X%7D%BB%02%CA%09
+---

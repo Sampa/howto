@@ -13,14 +13,14 @@
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('text')); ?>:</b>
-	<?php echo CHtml::encode($data->text); ?>
+	<?php echo $data->text; ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('position')); ?>:</b>
 	<?php echo CHtml::encode($data->position); ?>
 	<br />
 
-	<b
+	
 
 
 </div>

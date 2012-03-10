@@ -24,7 +24,6 @@ return array(
 		'application.modules.rights.components.*',
 		'application.extensions.debugtoolbar.*',
 		'ext.xupload.models.XUploadForm',
-		'ext.wform.*',
 	
 	),
 
@@ -103,6 +102,7 @@ return array(
         		'howtos/<tag:.*?>'=>'howto/index',
         		'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 				'profile/*'=>'user/view',
+				'howtos/show/*'=>'howtos/index/show',
 					),
 			'showScriptName'=>false,
 			'caseSensitive'=>false, 
@@ -133,7 +133,7 @@ return array(
         'class'         => 'ext.yii-pdf.EYiiPdf',
         'params'        => array(
             'mpdf'     => array(
-                'librarySourcePath' => 'application.extentions.mpdf.*',
+                'librarySourcePath' => 'application.vendors.mpdf.*',
                 'constants'         => array(
                     '_MPDF_TEMP_PATH' => Yii::getPathOfAlias('application.runtime'),
                 ),
