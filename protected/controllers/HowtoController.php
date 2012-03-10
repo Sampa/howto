@@ -159,7 +159,12 @@ class HowtoController extends Controller
 	/**
 	 * Lists all models.
 	 */
-	public function actionIndex()
+	public function actionShow()
+	{
+		$this->forward('index');
+	}
+	
+	public function actionIndex($show="",$category="")
 	{
 		$criteria = new CDbCriteria(
 		array(
@@ -169,7 +174,37 @@ class HowtoController extends Controller
 		));
 		if ( isset ( $_GET['tag'] ) )
 			$criteria->addSearchCondition( 'tags',$_GET['tag'] );
+	
+		if ( isset ( $_GET['category'] ) )
+		{
+			$criteria->together = true;
+			$criteria->with = 'categories';
+			$criteria->Compare('categories.category' , $category , true );
+		}
+		
+		if ( isset ( $show ) )
+		{
+		
+			if ( $show == "new" )
+			{
+			$today = new DateTime();
+			$today->modify('-1 month'); 
+			
+			$compareDate = $today->format('Y-m-d');
+			$sql = "create_time >".$compareDate;
+			$criteria->addCondition($sql);
 
+			}
+			if ( $show == "own" )
+			{
+				if ( Yii::app()->user->isGuest )
+				{
+					$this->redirect( array( '/reg' , 'ref'=>'own' ) );
+				}
+				$criteria->addColumnCondition( array ( 'author_id'=>Yii::app()->user->id ) );
+			}
+		}
+		
 		$dataProvider = new CActiveDataProvider('Howto', array(
 			'pagination'=>array(
 				'pageSize'=>Yii::app()->params['howtosPerPage'],

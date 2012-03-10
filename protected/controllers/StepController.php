@@ -38,7 +38,14 @@ class StepController extends Controller
 			}
 		}
 	
-
+	public function actionviewPdf( $id )
+	{
+		$mPDF1= $this->actionMakePdf();
+		$mPDF1->WriteHTML( $this->renderPartial('_pdf', array( 'model' => $this->loadModel( $id ) ), true ) );
+		
+		return $mPDF1->outPut();
+	}
+	
 	/**
 	 * Displays a particular model.
 	 * @param integer $id the ID of the model to be displayed
