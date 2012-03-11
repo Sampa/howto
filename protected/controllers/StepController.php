@@ -70,7 +70,7 @@ public function actionCreate()
 		if ( isset ( $_GET['howto_id'] ) ) 
 		{
 			$howto_id = $_GET['howto_id'];
-			$howto = new howto;
+			$howto = new Howto;
 			$howto = $howto->findByPk( $howto_id );		
 		}else{
 			$howto_id = Yii::app()->session['howto_id'];        	

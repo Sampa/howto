@@ -58,7 +58,11 @@ class HowtoController extends Controller
 			'comment'=>$comment,
 		));
 	}
-
+	
+	public function actionEltre()
+	{
+		$this->renderPartial('_eltre');
+	}
 	
 	/**
 	 * Creates a new model.

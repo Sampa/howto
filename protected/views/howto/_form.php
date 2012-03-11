@@ -26,14 +26,7 @@
 
 	<div class="row">
 	<?php echo $form->error($model,'content'); ?>
-	<?php echo $form->textArea($model,'content',array('style'=>'display:none'));?>
-	<?php 
-		$this->widget('application.extensions.elrte.elRTE', 
-		array(
-			'selector'=>'#Howto_content',
-			'userid'=>Yii::app()->user->id,
-		));
-	?>
+	<?php echo $form->textArea($model,'content',array('style'=>'display:block'));?>
 		
 	</div>
 
@@ -70,29 +63,26 @@
         ),
         
     ));
- 
+
 	$this->widget('ext.multimodelform.MultiModelForm',
 	array(
         'id' => 'id_step', //the unique widget id
         'formConfig' => $stepFormConfig, //the form configuration array
+		'addItemText'=>'Add steps',
+		'removeText' => 'Remove this step',
         'model' => $step, //instance of the form model
- 
+		'tableView'=>false,
         //if submitted not empty from the controller,
         //the form will be rendered with validation errors
         'validatedItems' => $validatedSteps,
- 
+		'jsAfterClone'=>'$("#editorPlaceholder").load("/howto/eltre")',
+		'sortAttribute' => 'position', //if assigned: sortable fieldsets is enabled
         //array of member instances loaded from db
         'data' => $step->findAll('howto_id=:howtoId', array(':howtoId'=>$model->id)),
     ));
 ?>
-<?php 
-		$this->widget('application.extensions.elrte.elRTE', 
-		array(
-			'selector'=>'.eltre',
-			'userid'=>Yii::app()->user->id,
-		));
-	?>
-		
+
+
 	
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save', 
@@ -102,3 +92,21 @@
 <?php $this->endWidget(); ?>
 
 </div><!-- form -->
+
+<div id="editorPlaceholder"></div>
+<?php $this->widget('application.extensions.elrte.elRTE', 
+		array(
+			'selector'=>'#Howto_content',
+			'userid'=>Yii::app()->user->id,
+		));
+?>
+<script>
+$(document).ready(function(){
+	$("#Step_text").hide();
+	$("#Step_title").hide();
+	$('label[for="Step_title"]').hide();
+	$('label[for="Step_text"]').hide();
+
+});
+
+</script>

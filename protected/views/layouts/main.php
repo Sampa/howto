@@ -18,8 +18,7 @@
 <?php  //to be able to use xupload and eltre on the same page we need this scriptmap
 	$scriptmap=Yii::app()->clientScript;
 	$scriptmap->scriptMap=array(
-	        'jquery.min.js'=>'https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js',
-	        'jquery-ui.min.js'=>'https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery-ui.min.js',
+	        'jquery.min.js'=>'http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js',
 
 			);
 ?>

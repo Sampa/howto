@@ -13,6 +13,8 @@
  */
 class Step extends CActiveRecord
 {
+	
+	public $position;
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
@@ -47,7 +49,7 @@ class Step extends CActiveRecord
 		return array(
 			array('text', 'required'),
 			array('title', 'length', 'max'=>255),
-			
+
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('title, text', 'safe', 'on'=>'search'),

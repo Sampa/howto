@@ -103,6 +103,7 @@ return array(
         		'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 				'profile/*'=>'user/view',
 				'howto/show/*'=>'howto/index/show',
+				//'<controller:\w+>/<id:\d+>'=>'<controller>/view', 
 					),
 			'showScriptName'=>false,
 			'caseSensitive'=>false, 
