@@ -9649,3 +9649,540 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/scrape?info_hash=%11%01%A8%B5%AFB%EFSH%D8%F5%60%A1%83%01%04%96%8D%B3f&info_hash=J%3BV%2FX%09%D3Xf%EFt%11v%F9X%7D%BB%02%CA%09
 ---
+2012/03/10 18:38:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%11%01%A8%B5%AFB%EFSH%D8%F5%60%A1%83%01%04%96%8D%B3f&info_hash=J%3BV%2FX%09%D3Xf%EFt%11v%F9X%7D%BB%02%CA%09
+---
+2012/03/10 18:48:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%11%01%A8%B5%AFB%EFSH%D8%F5%60%A1%83%01%04%96%8D%B3f&info_hash=%E1%BC%8C%8A%FA%24k%0A%DF%5B%FD%3CG%F6%89%2B%97%D4%BAq&info_hash=%ADe%93o%9E%14%B9%E1-%AFJ%8E%D5%D8%FEm%9D%A0%0C%A7&info_hash=%94N%F3%40%21%BE%89v%5CZ%A2%28%9F%86%D5%D6%28%20%FE%2B&info_hash=G%29%A3T%5C%FC%09%B6%EA%EC%15q%24%BAZ%E0%AD%81%FF%40&info_hash=%05%E8j%40%F0%88%FC%BD%9D%DA%ADJ%82k%0Bpe%8E%E1%9F&info_hash=%A4%FD%B0a%1A%98Wj%11c%A6%C8%AD%FA%A6%06%207l-&info_hash=%7B%E3z%C7%F6%5D%C7%8B%F8%B1%15b%9E%60%22%0Cc%7F%E0%D1&info_hash=%FF%F0y%8D%83N%92%60%D1%CCn%97%FF%F4%12pv%60%CD%A9&info_hash=%09%88%FB%D1%A0%97%C0P%88%13%0D%BB%C4%A4%2C%F9*%83%CC%AE&info_hash=%F8%EA%80%DA%0Av_%F4%C6k%3D%28lu5%EB%FF%BF%DC%3B&info_hash=%F1%0A%D7%7C%88%23u%EC%5D%8F%C3%A9%3BW%15%E5v%DA%D0%21&info_hash=%C1%29%FC%40r%08V%3E%87l%A4%E6%FF%B7%06%D1%96%10%12%92&info_hash=%CFw%8E-%CF6%A1%8F%AB%F8%83K%29L%2B%C8%FD%AF%26I&info_hash=%A2%B8Ag%3B%80%92%E4%00%7B%B5%F9%CD7%9D%3BV%AF%9F%7C&info_hash=J%3BV%2FX%09%D3Xf%EFt%11v%F9X%7D%BB%02%CA%09&info_hash=%12%85U%E9h%5D3%09%1F%21%24o%C0Jb%D2r%C2%8A3&info_hash=h%0C%01%C6%D4J%01%96D%99up%89%CD%21%3F1Y%F4%5D&info_hash=%17*J%A2%D5%95%FA%B8%AD%DC%F3Q%BC%89%DA%29%FF%8A%40%87
+---
+2012/03/10 18:58:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%11%01%A8%B5%AFB%EFSH%D8%F5%60%A1%83%01%04%96%8D%B3f&info_hash=%E8%F1%F4%88%15%7D%96v%98y%D4%A4%2C%06%A8%F0%80A%3F%F4&info_hash=J%3BV%2FX%09%D3Xf%EFt%11v%F9X%7D%BB%02%CA%09
+---
+2012/03/10 19:08:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%11%01%A8%B5%AFB%EFSH%D8%F5%60%A1%83%01%04%96%8D%B3f&info_hash=J%3BV%2FX%09%D3Xf%EFt%11v%F9X%7D%BB%02%CA%09
+---
+2012/03/10 19:18:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%11%01%A8%B5%AFB%EFSH%D8%F5%60%A1%83%01%04%96%8D%B3f&info_hash=J%3BV%2FX%09%D3Xf%EFt%11v%F9X%7D%BB%02%CA%09
+---
+2012/03/10 19:29:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%11%01%A8%B5%AFB%EFSH%D8%F5%60%A1%83%01%04%96%8D%B3f&info_hash=J%3BV%2FX%09%D3Xf%EFt%11v%F9X%7D%BB%02%CA%09
+---
+2012/03/10 19:39:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%11%01%A8%B5%AFB%EFSH%D8%F5%60%A1%83%01%04%96%8D%B3f&info_hash=%E1%BC%8C%8A%FA%24k%0A%DF%5B%FD%3CG%F6%89%2B%97%D4%BAq&info_hash=%ADe%93o%9E%14%B9%E1-%AFJ%8E%D5%D8%FEm%9D%A0%0C%A7&info_hash=%94N%F3%40%21%BE%89v%5CZ%A2%28%9F%86%D5%D6%28%20%FE%2B&info_hash=G%29%A3T%5C%FC%09%B6%EA%EC%15q%24%BAZ%E0%AD%81%FF%40&info_hash=%05%E8j%40%F0%88%FC%BD%9D%DA%ADJ%82k%0Bpe%8E%E1%9F&info_hash=%A4%FD%B0a%1A%98Wj%11c%A6%C8%AD%FA%A6%06%207l-&info_hash=%7B%E3z%C7%F6%5D%C7%8B%F8%B1%15b%9E%60%22%0Cc%7F%E0%D1&info_hash=%FF%F0y%8D%83N%92%60%D1%CCn%97%FF%F4%12pv%60%CD%A9&info_hash=%09%88%FB%D1%A0%97%C0P%88%13%0D%BB%C4%A4%2C%F9*%83%CC%AE&info_hash=%F8%EA%80%DA%0Av_%F4%C6k%3D%28lu5%EB%FF%BF%DC%3B&info_hash=%F1%0A%D7%7C%88%23u%EC%5D%8F%C3%A9%3BW%15%E5v%DA%D0%21&info_hash=%C1%29%FC%40r%08V%3E%87l%A4%E6%FF%B7%06%D1%96%10%12%92&info_hash=%CFw%8E-%CF6%A1%8F%AB%F8%83K%29L%2B%C8%FD%AF%26I&info_hash=%A2%B8Ag%3B%80%92%E4%00%7B%B5%F9%CD7%9D%3BV%AF%9F%7C&info_hash=J%3BV%2FX%09%D3Xf%EFt%11v%F9X%7D%BB%02%CA%09&info_hash=%12%85U%E9h%5D3%09%1F%21%24o%C0Jb%D2r%C2%8A3&info_hash=h%0C%01%C6%D4J%01%96D%99up%89%CD%21%3F1Y%F4%5D&info_hash=%17*J%A2%D5%95%FA%B8%AD%DC%F3Q%BC%89%DA%29%FF%8A%40%87
+---
+2012/03/10 19:49:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%11%01%A8%B5%AFB%EFSH%D8%F5%60%A1%83%01%04%96%8D%B3f&info_hash=%E8%F1%F4%88%15%7D%96v%98y%D4%A4%2C%06%A8%F0%80A%3F%F4&info_hash=J%3BV%2FX%09%D3Xf%EFt%11v%F9X%7D%BB%02%CA%09
+---
+2012/03/10 19:59:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%11%01%A8%B5%AFB%EFSH%D8%F5%60%A1%83%01%04%96%8D%B3f&info_hash=J%3BV%2FX%09%D3Xf%EFt%11v%F9X%7D%BB%02%CA%09
+---
+2012/03/10 20:09:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%11%01%A8%B5%AFB%EFSH%D8%F5%60%A1%83%01%04%96%8D%B3f&info_hash=J%3BV%2FX%09%D3Xf%EFt%11v%F9X%7D%BB%02%CA%09
+---
+2012/03/10 20:19:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%11%01%A8%B5%AFB%EFSH%D8%F5%60%A1%83%01%04%96%8D%B3f&info_hash=J%3BV%2FX%09%D3Xf%EFt%11v%F9X%7D%BB%02%CA%09
+---
+2012/03/10 20:29:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%11%01%A8%B5%AFB%EFSH%D8%F5%60%A1%83%01%04%96%8D%B3f&info_hash=%E1%BC%8C%8A%FA%24k%0A%DF%5B%FD%3CG%F6%89%2B%97%D4%BAq&info_hash=%ADe%93o%9E%14%B9%E1-%AFJ%8E%D5%D8%FEm%9D%A0%0C%A7&info_hash=%94N%F3%40%21%BE%89v%5CZ%A2%28%9F%86%D5%D6%28%20%FE%2B&info_hash=G%29%A3T%5C%FC%09%B6%EA%EC%15q%24%BAZ%E0%AD%81%FF%40&info_hash=%05%E8j%40%F0%88%FC%BD%9D%DA%ADJ%82k%0Bpe%8E%E1%9F&info_hash=%A4%FD%B0a%1A%98Wj%11c%A6%C8%AD%FA%A6%06%207l-&info_hash=%7B%E3z%C7%F6%5D%C7%8B%F8%B1%15b%9E%60%22%0Cc%7F%E0%D1&info_hash=%FF%F0y%8D%83N%92%60%D1%CCn%97%FF%F4%12pv%60%CD%A9&info_hash=%09%88%FB%D1%A0%97%C0P%88%13%0D%BB%C4%A4%2C%F9*%83%CC%AE&info_hash=%F8%EA%80%DA%0Av_%F4%C6k%3D%28lu5%EB%FF%BF%DC%3B&info_hash=%F1%0A%D7%7C%88%23u%EC%5D%8F%C3%A9%3BW%15%E5v%DA%D0%21&info_hash=%C1%29%FC%40r%08V%3E%87l%A4%E6%FF%B7%06%D1%96%10%12%92&info_hash=%CFw%8E-%CF6%A1%8F%AB%F8%83K%29L%2B%C8%FD%AF%26I&info_hash=%A2%B8Ag%3B%80%92%E4%00%7B%B5%F9%CD7%9D%3BV%AF%9F%7C&info_hash=J%3BV%2FX%09%D3Xf%EFt%11v%F9X%7D%BB%02%CA%09&info_hash=%12%85U%E9h%5D3%09%1F%21%24o%C0Jb%D2r%C2%8A3&info_hash=h%0C%01%C6%D4J%01%96D%99up%89%CD%21%3F1Y%F4%5D&info_hash=%17*J%A2%D5%95%FA%B8%AD%DC%F3Q%BC%89%DA%29%FF%8A%40%87
+---
+2012/03/10 20:35:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/03/10 20:36:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/03/10 20:39:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%11%01%A8%B5%AFB%EFSH%D8%F5%60%A1%83%01%04%96%8D%B3f&info_hash=%E8%F1%F4%88%15%7D%96v%98y%D4%A4%2C%06%A8%F0%80A%3F%F4&info_hash=J%3BV%2FX%09%D3Xf%EFt%11v%F9X%7D%BB%02%CA%09
+---
+2012/03/10 20:49:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%11%01%A8%B5%AFB%EFSH%D8%F5%60%A1%83%01%04%96%8D%B3f&info_hash=J%3BV%2FX%09%D3Xf%EFt%11v%F9X%7D%BB%02%CA%09
+---
+2012/03/10 20:59:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%11%01%A8%B5%AFB%EFSH%D8%F5%60%A1%83%01%04%96%8D%B3f&info_hash=J%3BV%2FX%09%D3Xf%EFt%11v%F9X%7D%BB%02%CA%09
+---
+2012/03/10 21:09:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%11%01%A8%B5%AFB%EFSH%D8%F5%60%A1%83%01%04%96%8D%B3f&info_hash=J%3BV%2FX%09%D3Xf%EFt%11v%F9X%7D%BB%02%CA%09
+---
+2012/03/10 21:19:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%11%01%A8%B5%AFB%EFSH%D8%F5%60%A1%83%01%04%96%8D%B3f&info_hash=%E1%BC%8C%8A%FA%24k%0A%DF%5B%FD%3CG%F6%89%2B%97%D4%BAq&info_hash=%ADe%93o%9E%14%B9%E1-%AFJ%8E%D5%D8%FEm%9D%A0%0C%A7&info_hash=%94N%F3%40%21%BE%89v%5CZ%A2%28%9F%86%D5%D6%28%20%FE%2B&info_hash=G%29%A3T%5C%FC%09%B6%EA%EC%15q%24%BAZ%E0%AD%81%FF%40&info_hash=%05%E8j%40%F0%88%FC%BD%9D%DA%ADJ%82k%0Bpe%8E%E1%9F&info_hash=%A4%FD%B0a%1A%98Wj%11c%A6%C8%AD%FA%A6%06%207l-&info_hash=%7B%E3z%C7%F6%5D%C7%8B%F8%B1%15b%9E%60%22%0Cc%7F%E0%D1&info_hash=%FF%F0y%8D%83N%92%60%D1%CCn%97%FF%F4%12pv%60%CD%A9&info_hash=%09%88%FB%D1%A0%97%C0P%88%13%0D%BB%C4%A4%2C%F9*%83%CC%AE&info_hash=%F8%EA%80%DA%0Av_%F4%C6k%3D%28lu5%EB%FF%BF%DC%3B&info_hash=%F1%0A%D7%7C%88%23u%EC%5D%8F%C3%A9%3BW%15%E5v%DA%D0%21&info_hash=%C1%29%FC%40r%08V%3E%87l%A4%E6%FF%B7%06%D1%96%10%12%92&info_hash=%CFw%8E-%CF6%A1%8F%AB%F8%83K%29L%2B%C8%FD%AF%26I&info_hash=%A2%B8Ag%3B%80%92%E4%00%7B%B5%F9%CD7%9D%3BV%AF%9F%7C&info_hash=J%3BV%2FX%09%D3Xf%EFt%11v%F9X%7D%BB%02%CA%09&info_hash=%12%85U%E9h%5D3%09%1F%21%24o%C0Jb%D2r%C2%8A3&info_hash=h%0C%01%C6%D4J%01%96D%99up%89%CD%21%3F1Y%F4%5D&info_hash=%17*J%A2%D5%95%FA%B8%AD%DC%F3Q%BC%89%DA%29%FF%8A%40%87
+---
+2012/03/10 21:29:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%11%01%A8%B5%AFB%EFSH%D8%F5%60%A1%83%01%04%96%8D%B3f&info_hash=J%3BV%2FX%09%D3Xf%EFt%11v%F9X%7D%BB%02%CA%09
+---
+2012/03/10 21:39:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%11%01%A8%B5%AFB%EFSH%D8%F5%60%A1%83%01%04%96%8D%B3f&info_hash=J%3BV%2FX%09%D3Xf%EFt%11v%F9X%7D%BB%02%CA%09
+---
+2012/03/10 21:49:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%11%01%A8%B5%AFB%EFSH%D8%F5%60%A1%83%01%04%96%8D%B3f&info_hash=J%3BV%2FX%09%D3Xf%EFt%11v%F9X%7D%BB%02%CA%09
+---
+2012/03/10 21:59:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%11%01%A8%B5%AFB%EFSH%D8%F5%60%A1%83%01%04%96%8D%B3f&info_hash=J%3BV%2FX%09%D3Xf%EFt%11v%F9X%7D%BB%02%CA%09
+---
+2012/03/10 22:09:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%11%01%A8%B5%AFB%EFSH%D8%F5%60%A1%83%01%04%96%8D%B3f&info_hash=%E1%BC%8C%8A%FA%24k%0A%DF%5B%FD%3CG%F6%89%2B%97%D4%BAq&info_hash=%ADe%93o%9E%14%B9%E1-%AFJ%8E%D5%D8%FEm%9D%A0%0C%A7&info_hash=%94N%F3%40%21%BE%89v%5CZ%A2%28%9F%86%D5%D6%28%20%FE%2B&info_hash=G%29%A3T%5C%FC%09%B6%EA%EC%15q%24%BAZ%E0%AD%81%FF%40&info_hash=%05%E8j%40%F0%88%FC%BD%9D%DA%ADJ%82k%0Bpe%8E%E1%9F&info_hash=%A4%FD%B0a%1A%98Wj%11c%A6%C8%AD%FA%A6%06%207l-&info_hash=%7B%E3z%C7%F6%5D%C7%8B%F8%B1%15b%9E%60%22%0Cc%7F%E0%D1&info_hash=%FF%F0y%8D%83N%92%60%D1%CCn%97%FF%F4%12pv%60%CD%A9&info_hash=%09%88%FB%D1%A0%97%C0P%88%13%0D%BB%C4%A4%2C%F9*%83%CC%AE&info_hash=%E8%F1%F4%88%15%7D%96v%98y%D4%A4%2C%06%A8%F0%80A%3F%F4&info_hash=%F8%EA%80%DA%0Av_%F4%C6k%3D%28lu5%EB%FF%BF%DC%3B&info_hash=%F1%0A%D7%7C%88%23u%EC%5D%8F%C3%A9%3BW%15%E5v%DA%D0%21&info_hash=%C1%29%FC%40r%08V%3E%87l%A4%E6%FF%B7%06%D1%96%10%12%92&info_hash=%CFw%8E-%CF6%A1%8F%AB%F8%83K%29L%2B%C8%FD%AF%26I&info_hash=%A2%B8Ag%3B%80%92%E4%00%7B%B5%F9%CD7%9D%3BV%AF%9F%7C&info_hash=J%3BV%2FX%09%D3Xf%EFt%11v%F9X%7D%BB%02%CA%09&info_hash=%12%85U%E9h%5D3%09%1F%21%24o%C0Jb%D2r%C2%8A3&info_hash=h%0C%01%C6%D4J%01%96D%99up%89%CD%21%3F1Y%F4%5D&info_hash=%17*J%A2%D5%95%FA%B8%AD%DC%F3Q%BC%89%DA%29%FF%8A%40%87
+---
+2012/03/10 22:44:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "muieblackcat".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('muieblackcat')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/muieblackcat
+---
+2012/03/10 22:44:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index.php".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('index.php')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=//index.php
+---
+2012/03/10 22:44:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/index.php".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admin/index.php')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=//admin/index.php
+---
+2012/03/10 22:44:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/pma/index.php".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admin/pma/index...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=//admin/pma/index.php
+---
+2012/03/10 22:44:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/phpmyadmin/index.php".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admin/phpmyadmi...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=//admin/phpmyadmin/index.php
+---
+2012/03/10 22:44:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "db/index.php".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('db/index.php')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=//db/index.php
+---
+2012/03/10 22:44:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "dbadmin/index.php".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('dbadmin/index.p...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=//dbadmin/index.php
+---
+2012/03/10 22:44:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "myadmin/index.php".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('myadmin/index.p...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=//myadmin/index.php
+---
+2012/03/10 22:44:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "mysql/index.php".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('mysql/index.php')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=//mysql/index.php
+---
+2012/03/10 22:44:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "mysqladmin/index.php".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('mysqladmin/inde...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=//mysqladmin/index.php
+---
+2012/03/10 22:44:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "typo3/phpmyadmin/index.php".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('typo3/phpmyadmi...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=//typo3/phpmyadmin/index.php
+---
+2012/03/10 22:44:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "phpadmin/index.php".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('phpadmin/index....')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=//phpadmin/index.php
+---
+2012/03/10 22:44:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "pma/index.php".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('pma/index.php')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=//pma/index.php
+---
+2012/03/10 22:44:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "web/phpMyAdmin/index.php".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('web/phpMyAdmin/...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=//web/phpMyAdmin/index.php
+---
+2012/03/10 22:44:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "web/index.php".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('web/index.php')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=//web/index.php
+---
+2012/03/10 22:44:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "php-my-admin/index.php".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('php-my-admin/in...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=//php-my-admin/index.php
+---
+2012/03/10 22:44:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "websql/index.php".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('websql/index.ph...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=//websql/index.php
+---
+2012/03/10 22:44:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "php-my-admin/index.php".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('php-my-admin/in...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=//php-my-admin/index.php
+---
+2012/03/10 23:32:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "i".' in C:\Programmering\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('i')
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('i')
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('howto/i')
+#3 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/howto/i
+---
+2012/03/11 00:04:12 [warning] [application] Failed to set unsafe attribute "id" of "User".
+in C:\Programmering\xampp\htdocs\blog\protected\components\Controller.php (33)
+in C:\Programmering\xampp\htdocs\blog\protected\controllers\UserController.php (47)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php (51)
+2012/03/11 00:04:12 [warning] [application] Failed to set unsafe attribute "public_library" of "User".
+in C:\Programmering\xampp\htdocs\blog\protected\components\Controller.php (33)
+in C:\Programmering\xampp\htdocs\blog\protected\controllers\UserController.php (47)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php (51)
+2012/03/11 00:04:12 [warning] [application] Failed to set unsafe attribute "password2" of "User".
+in C:\Programmering\xampp\htdocs\blog\protected\components\Controller.php (33)
+in C:\Programmering\xampp\htdocs\blog\protected\controllers\UserController.php (47)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php (51)
+2012/03/11 00:04:14 [warning] [application] Failed to set unsafe attribute "id" of "User".
+in C:\Programmering\xampp\htdocs\blog\protected\components\Controller.php (33)
+in C:\Programmering\xampp\htdocs\blog\protected\controllers\UserController.php (47)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php (51)
+2012/03/11 00:04:14 [warning] [application] Failed to set unsafe attribute "public_library" of "User".
+in C:\Programmering\xampp\htdocs\blog\protected\components\Controller.php (33)
+in C:\Programmering\xampp\htdocs\blog\protected\controllers\UserController.php (47)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php (51)
+2012/03/11 00:04:14 [warning] [application] Failed to set unsafe attribute "password2" of "User".
+in C:\Programmering\xampp\htdocs\blog\protected\components\Controller.php (33)
+in C:\Programmering\xampp\htdocs\blog\protected\controllers\UserController.php (47)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php (51)
+2012/03/11 00:04:15 [warning] [application] Failed to set unsafe attribute "id" of "User".
+in C:\Programmering\xampp\htdocs\blog\protected\components\Controller.php (33)
+in C:\Programmering\xampp\htdocs\blog\protected\controllers\UserController.php (47)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php (51)
+2012/03/11 00:04:15 [warning] [application] Failed to set unsafe attribute "public_library" of "User".
+in C:\Programmering\xampp\htdocs\blog\protected\components\Controller.php (33)
+in C:\Programmering\xampp\htdocs\blog\protected\controllers\UserController.php (47)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php (51)
+2012/03/11 00:04:15 [warning] [application] Failed to set unsafe attribute "password2" of "User".
+in C:\Programmering\xampp\htdocs\blog\protected\components\Controller.php (33)
+in C:\Programmering\xampp\htdocs\blog\protected\controllers\UserController.php (47)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php (51)
+2012/03/11 00:04:17 [warning] [application] Failed to set unsafe attribute "id" of "User".
+in C:\Programmering\xampp\htdocs\blog\protected\components\Controller.php (33)
+in C:\Programmering\xampp\htdocs\blog\protected\controllers\UserController.php (47)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php (51)
+2012/03/11 00:04:17 [warning] [application] Failed to set unsafe attribute "public_library" of "User".
+in C:\Programmering\xampp\htdocs\blog\protected\components\Controller.php (33)
+in C:\Programmering\xampp\htdocs\blog\protected\controllers\UserController.php (47)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php (51)
+2012/03/11 00:04:17 [warning] [application] Failed to set unsafe attribute "password2" of "User".
+in C:\Programmering\xampp\htdocs\blog\protected\components\Controller.php (33)
+in C:\Programmering\xampp\htdocs\blog\protected\controllers\UserController.php (47)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php (51)
+2012/03/11 00:04:18 [warning] [application] Failed to set unsafe attribute "id" of "User".
+in C:\Programmering\xampp\htdocs\blog\protected\components\Controller.php (33)
+in C:\Programmering\xampp\htdocs\blog\protected\controllers\UserController.php (47)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php (51)
+2012/03/11 00:04:18 [warning] [application] Failed to set unsafe attribute "public_library" of "User".
+in C:\Programmering\xampp\htdocs\blog\protected\components\Controller.php (33)
+in C:\Programmering\xampp\htdocs\blog\protected\controllers\UserController.php (47)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php (51)
+2012/03/11 00:04:18 [warning] [application] Failed to set unsafe attribute "password2" of "User".
+in C:\Programmering\xampp\htdocs\blog\protected\components\Controller.php (33)
+in C:\Programmering\xampp\htdocs\blog\protected\controllers\UserController.php (47)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php (51)
+2012/03/11 00:04:21 [warning] [application] Failed to set unsafe attribute "id" of "User".
+in C:\Programmering\xampp\htdocs\blog\protected\components\Controller.php (33)
+in C:\Programmering\xampp\htdocs\blog\protected\controllers\UserController.php (47)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php (51)
+2012/03/11 00:04:21 [warning] [application] Failed to set unsafe attribute "public_library" of "User".
+in C:\Programmering\xampp\htdocs\blog\protected\components\Controller.php (33)
+in C:\Programmering\xampp\htdocs\blog\protected\controllers\UserController.php (47)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php (51)
+2012/03/11 00:04:21 [warning] [application] Failed to set unsafe attribute "password2" of "User".
+in C:\Programmering\xampp\htdocs\blog\protected\components\Controller.php (33)
+in C:\Programmering\xampp\htdocs\blog\protected\controllers\UserController.php (47)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php (51)
+2012/03/11 00:04:22 [warning] [application] Failed to set unsafe attribute "id" of "User".
+in C:\Programmering\xampp\htdocs\blog\protected\components\Controller.php (33)
+in C:\Programmering\xampp\htdocs\blog\protected\controllers\UserController.php (47)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php (51)
+2012/03/11 00:04:22 [warning] [application] Failed to set unsafe attribute "public_library" of "User".
+in C:\Programmering\xampp\htdocs\blog\protected\components\Controller.php (33)
+in C:\Programmering\xampp\htdocs\blog\protected\controllers\UserController.php (47)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php (51)
+2012/03/11 00:04:22 [warning] [application] Failed to set unsafe attribute "password2" of "User".
+in C:\Programmering\xampp\htdocs\blog\protected\components\Controller.php (33)
+in C:\Programmering\xampp\htdocs\blog\protected\controllers\UserController.php (47)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php (51)
+2012/03/11 00:04:23 [warning] [application] Failed to set unsafe attribute "id" of "User".
+in C:\Programmering\xampp\htdocs\blog\protected\components\Controller.php (33)
+in C:\Programmering\xampp\htdocs\blog\protected\controllers\UserController.php (47)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php (51)
+2012/03/11 00:04:23 [warning] [application] Failed to set unsafe attribute "public_library" of "User".
+in C:\Programmering\xampp\htdocs\blog\protected\components\Controller.php (33)
+in C:\Programmering\xampp\htdocs\blog\protected\controllers\UserController.php (47)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php (51)
+2012/03/11 00:04:23 [warning] [application] Failed to set unsafe attribute "password2" of "User".
+in C:\Programmering\xampp\htdocs\blog\protected\components\Controller.php (33)
+in C:\Programmering\xampp\htdocs\blog\protected\controllers\UserController.php (47)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php (51)
+2012/03/11 00:04:29 [warning] [application] Failed to set unsafe attribute "id" of "User".
+in C:\Programmering\xampp\htdocs\blog\protected\controllers\UserController.php (51)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php (51)
+in C:\Programmering\xampp\htdocs\blog\index.php (13)
+2012/03/11 00:04:29 [warning] [application] Failed to set unsafe attribute "public_library" of "User".
+in C:\Programmering\xampp\htdocs\blog\protected\controllers\UserController.php (51)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php (51)
+in C:\Programmering\xampp\htdocs\blog\index.php (13)
+2012/03/11 00:04:29 [warning] [application] Failed to set unsafe attribute "password2" of "User".
+in C:\Programmering\xampp\htdocs\blog\protected\controllers\UserController.php (51)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php (51)
+in C:\Programmering\xampp\htdocs\blog\index.php (13)
+2012/03/11 00:04:29 [error] [php] include(Randomness.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\Programmering\xampp\htdocs\yii\framework\YiiBase.php:418)
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\blog\protected\models\User.php(134): spl_autoload_call()
+#1 C:\Programmering\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1008): User->beforeSave()
+#2 C:\Programmering\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(787): User->insert()
+#3 C:\Programmering\xampp\htdocs\blog\protected\controllers\UserController.php(55): User->save()
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): UserController->actionRegister()
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): UserController->runAction()
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#8 C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php(51): RightsFilter->filter()
+#9 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): UserController->filterRights()
+#10 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#11 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#12 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): UserController->runActionWithFilters()
+#13 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): UserController->run()
+#14 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#15 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\Programmering\xampp\htdocs\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/user/register
+in C:\Programmering\xampp\htdocs\blog\protected\models\User.php (134)
+in C:\Programmering\xampp\htdocs\blog\protected\controllers\UserController.php (55)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php (51)
+2012/03/11 00:04:51 [warning] [application] Failed to set unsafe attribute "id" of "User".
+in C:\Programmering\xampp\htdocs\blog\protected\controllers\UserController.php (51)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php (51)
+in C:\Programmering\xampp\htdocs\blog\index.php (13)
+2012/03/11 00:04:51 [warning] [application] Failed to set unsafe attribute "public_library" of "User".
+in C:\Programmering\xampp\htdocs\blog\protected\controllers\UserController.php (51)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php (51)
+in C:\Programmering\xampp\htdocs\blog\index.php (13)
+2012/03/11 00:04:51 [warning] [application] Failed to set unsafe attribute "password2" of "User".
+in C:\Programmering\xampp\htdocs\blog\protected\controllers\UserController.php (51)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php (51)
+in C:\Programmering\xampp\htdocs\blog\index.php (13)
+2012/03/11 00:04:51 [error] [php] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: No such file or directory (C:\Programmering\xampp\htdocs\blog\protected\controllers\UserController.php:58)
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): UserController->runAction()
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php(51): RightsFilter->filter()
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): UserController->filterRights()
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): UserController->runActionWithFilters()
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): UserController->run()
+#9 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#10 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\Programmering\xampp\htdocs\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/user/register
+in C:\Programmering\xampp\htdocs\blog\protected\controllers\UserController.php (58)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php (51)
+in C:\Programmering\xampp\htdocs\blog\index.php (13)
+2012/03/11 00:08:49 [warning] [application] Failed to set unsafe attribute "id" of "User".
+in C:\Programmering\xampp\htdocs\blog\protected\controllers\UserController.php (51)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php (51)
+in C:\Programmering\xampp\htdocs\blog\index.php (13)
+2012/03/11 00:08:49 [warning] [application] Failed to set unsafe attribute "public_library" of "User".
+in C:\Programmering\xampp\htdocs\blog\protected\controllers\UserController.php (51)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php (51)
+in C:\Programmering\xampp\htdocs\blog\index.php (13)
+2012/03/11 00:08:49 [warning] [application] Failed to set unsafe attribute "password2" of "User".
+in C:\Programmering\xampp\htdocs\blog\protected\controllers\UserController.php (51)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php (51)
+in C:\Programmering\xampp\htdocs\blog\index.php (13)
+2012/03/11 00:08:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/users/3".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('files/users/3')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/files/users/3/
+HTTP_REFERER=http://blog/user/view?id=3
+---
+2012/03/11 00:08:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "files/users/3".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('files/users/3')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/files/users/3/
+HTTP_REFERER=http://blog/user/view?id=3
+---

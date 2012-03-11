@@ -102,7 +102,7 @@ return array(
         		'howtos/<tag:.*?>'=>'howto/index',
         		'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 				'profile/*'=>'user/view',
-				'howtos/show/*'=>'howtos/index/show',
+				'howto/show/*'=>'howto/index/show',
 					),
 			'showScriptName'=>false,
 			'caseSensitive'=>false, 

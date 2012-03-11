@@ -42,23 +42,24 @@ class UserController extends Controller
 	 */
 	public function actionRegister()
 	{
-		$model=new User;
+		$model = new User;
 		// Uncomment the following line if AJAX validation is needed
-		 $this->performAjaxValidation($model,'user-form');
+		 $this->performAjaxValidation( $model , 'user-form' );
 	
-		if(isset($_POST['User']))
+		if ( isset ( $_POST['User'] ) )
 		{
-			$model->attributes=$_POST['User'];
+			$model->attributes = $_POST['User'];
 
 		//User::beforeSave() to see what is done with the values from the form
 			if ( $model->validate() )
 				{ if ( $model->save() )
 					{
 						$dir = User::USER_DIR . $model->id; 
-						mkdir($dir); 
+						
+						mkdir($dir,0777,true); 
 						if ( Yii::app()->request->isAjaxRequest )
 							{
-								echo CJSON::encode( array (
+								echo CJSON::encode( array(
 									'status'=>'success', 
 									'div'=>'Sign up successfull, you can login now if you want',
 									'title'=>'',
@@ -66,7 +67,7 @@ class UserController extends Controller
 								exit;             
 							}
 						else{
-							  $this->redirect( array('view','id' => $model->id ) );
+							  $this->redirect( array( 'view','id' => $model->id ) );
 							}
 					}
 				}
