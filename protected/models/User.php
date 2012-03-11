@@ -80,7 +80,8 @@ class User extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'posts' => array( self::HAS_MANY , 'Howto' , 'author_id' ),
+			'howtos' => array( self::HAS_MANY , 'Howto' , 'author_id' ),
+			
 		);
 	}
 		

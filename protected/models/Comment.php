@@ -41,7 +41,7 @@ class Comment extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('content, author, email', 'required'),
+			array('content, author', 'required'),
 			array('author, email, url', 'length', 'max'=>128),
 			array('email','email'),
 			array('url','url'),
@@ -139,6 +139,8 @@ class Comment extends CActiveRecord
 	{
 		if ( parent::beforeSave() )
 		{
+			if ( !$this->isGuest && $this->author == '' )
+				$this->author = $this->user;
 			if ( $this->isNewRecord )
 				$this->create_time = time();
 			return true;

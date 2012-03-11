@@ -63,6 +63,22 @@
 <?php require('_fileLibrary.php'); ?>
 <?php endif; ?>
 
+
+<?php 
+	$this->beginWidget('system.web.widgets.CClipWidget', array( 'id'=>'sidebar' ) );   
+		if ( $model->howtos ):
+			echo "<p> Howtos by " . $model->username . "</p>";
+			foreach( $model->howtos as $howto ) 
+			{
+				echo CHtml::link( $howto->title , array('/howto/' . $howto->id . '/' . $howto->title ) );
+				echo "<br/>";
+			}
+			
+		endif;
+	$this->endWidget(); 
+?>
+
+
 	<script>
 		$(document).ready(function(){
 			$("#user_update").toggle();

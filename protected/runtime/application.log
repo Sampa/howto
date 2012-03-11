@@ -10186,3 +10186,274 @@ Stack trace:
 REQUEST_URI=/files/users/3/
 HTTP_REFERER=http://blog/user/view?id=3
 ---
+2012/03/11 04:33:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "pma/scripts/setup.php".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('pma/scripts/set...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/pma/scripts/setup.php
+---
+2012/03/11 04:33:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "myadmin/scripts/setup.php".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('myadmin/scripts...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/myadmin/scripts/setup.php
+---
+2012/03/11 04:33:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "MyAdmin/scripts/setup.php".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('MyAdmin/scripts...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/MyAdmin/scripts/setup.php
+---
+2012/03/11 07:24:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/index.php".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admin/index.php')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/index.php
+---
+2012/03/11 07:24:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/pma/index.php".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admin/pma/index...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/pma/index.php
+---
+2012/03/11 07:24:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/phpmyadmin/index.php".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admin/phpmyadmi...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/phpmyadmin/index.php
+---
+2012/03/11 07:24:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "db/index.php".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('db/index.php')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/db/index.php
+---
+2012/03/11 07:24:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "dbadmin/index.php".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('dbadmin/index.p...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dbadmin/index.php
+---
+2012/03/11 07:24:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "myadmin/index.php".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('myadmin/index.p...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/myadmin/index.php
+---
+2012/03/11 07:24:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "mysql/index.php".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('mysql/index.php')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/mysql/index.php
+---
+2012/03/11 07:24:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "mysqladmin/index.php".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('mysqladmin/inde...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/mysqladmin/index.php
+---
+2012/03/11 07:24:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "typo3/phpmyadmin/index.php".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('typo3/phpmyadmi...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/typo3/phpmyadmin/index.php
+---
+2012/03/11 07:24:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "phpadmin/index.php".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('phpadmin/index....')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/phpadmin/index.php
+---
+2012/03/11 07:24:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "pma/index.php".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('pma/index.php')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/pma/index.php
+---
+2012/03/11 07:24:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "web/phpMyAdmin/index.php".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('web/phpMyAdmin/...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/web/phpMyAdmin/index.php
+---
+2012/03/11 07:24:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "web/index.php".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('web/index.php')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/web/index.php
+---
+2012/03/11 07:24:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "php-my-admin/index.php".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('php-my-admin/in...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/php-my-admin/index.php
+---
+2012/03/11 07:24:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "websql/index.php".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('websql/index.ph...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/websql/index.php
+---
+2012/03/11 07:24:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "php-my-admin/index.php".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('php-my-admin/in...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/php-my-admin/index.php
+---
+2012/03/11 10:55:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/03/11 10:55:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/03/11 10:55:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/03/11 11:00:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/03/11 13:07:55 [error] [exception.CException] exception 'CException' with message 'Property "HowtoController.user_id" is not defined.' in C:\Programmering\xampp\htdocs\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\blog\protected\views\comment\_form.php(53): CComponent->__get('user_id')
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\Programmerin...')
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Programmerin...', Array, true)
+#3 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Programmerin...', Array, true)
+#4 C:\Programmering\xampp\htdocs\blog\protected\views\howto\view.php(54): CController->renderPartial('/comment/_form', Array)
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\Programmerin...')
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Programmerin...', Array, true)
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Programmerin...', Array, true)
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('view', Array, true)
+#9 C:\Programmering\xampp\htdocs\blog\protected\controllers\HowtoController.php(59): CController->render('view', Array)
+#10 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): HowtoController->actionView()
+#11 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#12 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#13 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#14 C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php(51): CFilter->filter(Object(CFilterChain))
+#15 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#16 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#17 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#18 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#20 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('howto/view')
+#21 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/howto/1/Welcome%21
+HTTP_REFERER=http://blog/site/login
+---
+2012/03/11 13:08:01 [error] [exception.CException] exception 'CException' with message 'Property "HowtoController.userid" is not defined.' in C:\Programmering\xampp\htdocs\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\blog\protected\views\comment\_form.php(53): CComponent->__get('userid')
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\Programmerin...')
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Programmerin...', Array, true)
+#3 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Programmerin...', Array, true)
+#4 C:\Programmering\xampp\htdocs\blog\protected\views\howto\view.php(54): CController->renderPartial('/comment/_form', Array)
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\Programmerin...')
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Programmerin...', Array, true)
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Programmerin...', Array, true)
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('view', Array, true)
+#9 C:\Programmering\xampp\htdocs\blog\protected\controllers\HowtoController.php(59): CController->render('view', Array)
+#10 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): HowtoController->actionView()
+#11 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#12 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#13 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#14 C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php(51): CFilter->filter(Object(CFilterChain))
+#15 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#16 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#17 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#18 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#20 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('howto/view')
+#21 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/howto/1/Welcome%21
+HTTP_REFERER=http://blog/site/login
+---
+2012/03/11 13:13:09 [error] [exception.CException] exception 'CException' with message 'Property "HowtoController.userid" is not defined.' in C:\Programmering\xampp\htdocs\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\blog\protected\views\comment\_form.php(53): CComponent->__get('userid')
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\Programmerin...')
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Programmerin...', Array, true)
+#3 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Programmerin...', Array, true)
+#4 C:\Programmering\xampp\htdocs\blog\protected\views\howto\view.php(54): CController->renderPartial('/comment/_form', Array)
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\Programmerin...')
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Programmerin...', Array, true)
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Programmerin...', Array, true)
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('view', Array, true)
+#9 C:\Programmering\xampp\htdocs\blog\protected\controllers\HowtoController.php(59): CController->render('view', Array)
+#10 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): HowtoController->actionView()
+#11 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#12 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#13 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#14 C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php(51): CFilter->filter(Object(CFilterChain))
+#15 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#16 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#17 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#18 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#20 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('howto/view')
+#21 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/howto/1/Welcome%21
+HTTP_REFERER=http://blog/site/login
+---

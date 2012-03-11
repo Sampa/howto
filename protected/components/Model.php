@@ -7,7 +7,7 @@ class Model extends CActiveRecord
 
 		return new CDbCriteria(
 				array(
-					'condition'=>$ondition,
+					'condition'=>$condition,
 					'order'=>$order,
 				));
 		}

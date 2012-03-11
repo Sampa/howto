@@ -27,6 +27,7 @@ class UserController extends Controller
 		if ( isset ( $_POST['User'] ) )
 			$this->actionUpdate( $_POST['User']['id'] );
 	
+	
 		$this->render( 'view',
 		array(
 			'model'=>$this->loadModel( $id , $u ),

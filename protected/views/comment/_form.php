@@ -16,11 +16,13 @@
 		) );
  ?>
 	<p class="note">Fields with <span class="required">*</span> are required.</p>
-
-	<div class="row">
+	<?php if ( $this->isGuest ): ?>
+	<div class="row">	
 		<?php echo $form->labelEx($model,'author'); ?>
-		<?php echo $form->textField($model,'author',array('size'=>60,'maxlength'=>128)); ?>
+		<?php echo $form->textField($model,'author',
+			array('size'=>60 , 'maxlength'=>128 ) ); ?>
 		<?php echo $form->error($model,'author'); ?>
+	
 	</div>
 
 	<div class="row">
@@ -28,12 +30,8 @@
 		<?php echo $form->textField($model,'email',array('size'=>60,'maxlength'=>128)); ?>
 		<?php echo $form->error($model,'email'); ?>
 	</div>
+	<?php endif; ?>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'url'); ?>
-		<?php echo $form->textField($model,'url',array('size'=>60,'maxlength'=>128)); ?>
-		<?php echo $form->error($model,'url'); ?>
-	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'content'); ?>
@@ -49,10 +47,10 @@
 <?php $this->endWidget(); ?>
 </div><!-- form -->
 <?php 
-	$this->widget('application.extensions.elrte.elRTE', array(
-		'selector'=>'Comment_content',
-		'userid'=>Yii::app()->user->id,
-
+	$this->widget('application.extensions.elrte.elRTE',
+	array(
+		'selector'=>'#Comment_content',
+		'userid'=>$this->userId,
 		'toolbar'=>'tiny',
 	));
 ?>

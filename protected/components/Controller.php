@@ -35,9 +35,10 @@ class Controller extends RController
 		}
 	}
 	
-	public function actionMakePdf(){
+	public function actionMakePdf()
+	{
 		
-   $mPDF1 = Yii::app()->ePdf->mpdf();
+	$mPDF1 = Yii::app()->ePdf->mpdf();
  
         // You can easily override default constructor's params
         $mPDF1 = Yii::app()->ePdf->mpdf('', 'A4');
@@ -58,5 +59,5 @@ class Controller extends RController
        return  $mPDF1;
 
 
-}
+	}
 }
