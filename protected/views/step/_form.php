@@ -1,19 +1,25 @@
 <div class="form">
 
-<?php $form=$this->beginWidget('CActiveForm', array(
+<?php 
+	$form = $this->beginWidget('CActiveForm', array(
 	'id'=>'step-form',
-	'enableAjaxValidation'=>false,
-)); ?>
+	'enableAjaxValidation'=>true,
+	'enableClientValidation'=>true,
+		'clientOptions' =>
+		array(
+		  'validateOnSubmit'=>true,
+		  'validateOnChange'=>true,
+		  'validateOnType'=>true,
+			 ),
+ 		'htmlOptions'=>array( 'class'=>'well' ),
+		) );
+?>
 
 	<p class="note">Fields with <span class="required">*</span> are required.</p>
 
 	<?php echo $form->errorSummary($model); ?>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'howto_id'); ?>
-		<?php echo $form->textField($model,'howto_id'); ?>
-		<?php echo $form->error($model,'howto_id'); ?>
-	</div>
+
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'title'); ?>
@@ -23,24 +29,24 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'text'); ?>
-		<?php echo $form->textArea($model,'text',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->textArea($model,'text',
+		array( 'rows'=>6 , 'cols'=>50 , 'style'=>'display:none' ) ); ?>
+		
 		<?php echo $form->error($model,'text'); ?>
+	<?php 
+		$this->widget('application.extensions.elrte.elRTE', 
+		array(
+			'selector'=>'#Step_text',
+			'userid'=>$this->userId,
+		));
+	?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'position'); ?>
-		<?php echo $form->textField($model,'position'); ?>
-		<?php echo $form->error($model,'position'); ?>
-	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'author'); ?>
-		<?php echo $form->textField($model,'author',array('size'=>60,'maxlength'=>150)); ?>
-		<?php echo $form->error($model,'author'); ?>
-	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save', 
+			array( 'class'=>'btn btn-primary' ) ); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

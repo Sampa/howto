@@ -3,7 +3,7 @@
 		<?php echo CHtml::link(CHtml::encode($data->title), $data->url); ?>
 	</div>
 	<div class="author">
-		Posted by <?php echo $data->author->username . ' on ' . date('F j, Y',$data->create_time); ?>
+		Shared by <?php echo User::getUserLink($data->author->username) . ' on ' . date('F j, Y',$data->create_time); ?>
 	</div>
 	<div class="content">
 		<?php
@@ -24,8 +24,31 @@
 		<?php endif; ?>
 		Last updated on <?php echo date('F j, Y',$data->update_time); ?>     
 		
-		<?= CHtml::link('<i class="icon-print icon-white"></i>Print/Pdf', 
-		array('/howto/viewpdf/id/' . $data->id ), array('class'=>'btn btn-primary') );
-?>
-	</div>
+<!--print--><?= CHtml::link('<i class="icon-print icon-white"></i>Print/Pdf', 
+					array('/howto/viewpdf/id/' . $data->id ), array('class'=>'btn btn-primary') );?>		
+		
+<!--bookmark--><?= CHtml::link('<i class="icon-bookmark icon-white"></i>Bookmark ', 
+					array(''), array(
+						'class'=>'btn btn-primary bookmark',  
+						'name'=>$data->id,
+						) );?> <div id="bookmark_success_<?=$data->id;?>" style="display:none"></div>
+		
+		
+
+	</div><!-- nav -->
 </div>
+
+	<script>
+	$(".bookmark").click(function(){
+		id = $(this).attr('name');
+		url = '/howto/bookmark';
+		jQuery.getJSON(url, {id: id}, function(data) {
+			if (data.status == 'success'){
+					$('#bookmark_success_'+id).html(data.div);
+					$('#bookmark_success_'+id).fadeIn('slow');			
+					$('#bookmark_success_'+id).fadeOut('slow');
+				}
+			});
+			return false;
+		});
+	</script>

@@ -5,13 +5,12 @@
  */
 class Controller extends RController
 {
-	public function actionAjaxDelete( $id , $model )
+	public function ajaxDelete( $id , $model )
 	{
 		if ( Yii::app()->request->isAjaxRequest )
 		{
-			if ( Yii::app()->request->isPostRequest )
-			{
-				if ( $model->loadModel( $id )->delete() )
+			
+				if ( $model::loadModel( $id )->delete() )
 				{
 					echo CJSON::encode(
 						array(
@@ -20,7 +19,7 @@ class Controller extends RController
 							));
 					exit;
 				}
-			}
+			
 		}
 		else
 			throw new CHttpException(400,'Invalid request. Please do not repeat this request again.');

@@ -43,10 +43,10 @@
 <?php 
 	$this->widget('application.extensions.mbmenu.MbMenu',array( 
 		'items'=>array( //Top level
-				array('label'=>'Home', 'url'=>array('/howto/index')),
+				array('label'=>'Home', 'url'=>array('/howto')),
 				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
 				array('label'=>'Contact', 'url'=>array('/site/contact')),
-				array('label'=>'Howtos','url'=>array( '//Howtos/index'),
+				array('label'=>'Howtos','url'=>array( '//howto'),
 							'visible'=>Yii::app()->user->checkAccess( 'Howto.Admin' ),
 								'items'=>array( //submenu under "Howtos" If user has Howto.Admin
 									array(
@@ -73,10 +73,10 @@
 								
 								), 
 							), //End Howtos + submenu
-				array('label'=>$this->user, 'url'=>array( User::getUserLink( $this->user ) ),
+				array('label'=>$this->user, 'url'=>array( User::getUserUrl( $this->user ) ),
 				'visible'=>!$this->isGuest,
                   'items'=>array( //Submenu under the users name
-					array('label'=>'Profile', 'url'=>array( User::getUserLink( $this->user ) ) ),
+					array('label'=>'Profile', 'url'=>array( User::getUserUrl( $this->user ) ) ),
                     array('label'=>'Update','url'=>array( '//user/update/id/' . Yii::app()->user->id ) ), 
 					array('label'=>'Rights', 'url'=>array( '/rights' ),
 							'visible'=>Yii::app()->user->checkAccess(Rights::module()->superuserName ) ),
@@ -110,7 +110,7 @@
 
 	<?php echo $content; ?>
 
-		<div id="footer">
+		<div id="footer" style="clear:both">
 			Copyright &copy; <?php echo date('Y'); ?><br />
 			All Rights Reserved.<br/>
 		</div><!-- footer -->

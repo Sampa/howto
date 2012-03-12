@@ -32,23 +32,21 @@ class CommentController extends Controller
 	 */
 	public function actionUpdate()
 	{
-		$model=$this->loadModel();
+		$model = $this->loadModel();
 
-		if(isset($_POST['ajax']) && $_POST['ajax']==='comment-form')
+		if ( isset ( $_POST['ajax'] ) && $_POST['ajax']==='comment-form' )
 		{
 			echo CActiveForm::validate($model);
 			Yii::app()->end();
 		}
-		if(isset($_POST['Comment']))
+		if ( isset ( $_POST['Comment'] ) )
 		{
-			$model->attributes=$_POST['Comment'];
-			if($model->save())
-				$this->redirect(array('index'));
+			$model->attributes = $_POST['Comment'];
+			if ( $model->save() )
+				$this->redirect( array( 'index') );
 		}
 
-		$this->render('update',array(
-			'model'=>$model,
-		));
+		$this->render('update' , array( 'model'=>$model ) );
 	}
 
 	/**
@@ -75,9 +73,9 @@ class CommentController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Comment', array(
+		$dataProvider = new CActiveDataProvider('Comment', array(
 			'criteria'=>array(
-				'with'=>'post',
+				'with'=>'howto',
 				'order'=>'t.status, t.create_time DESC',
 			),
 		));

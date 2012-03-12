@@ -140,36 +140,16 @@ public function actionUpdate($id)
 			}
             if ( $model->save() )
             {
-                if ( Yii::app()->request->isAjaxRequest )
-                {							                		
-                	$title = $_POST['Step']['titel'];
-                    echo CJSON::encode(array(
-                        'status'=>'success', 
-                        'div'=>$title.' has been updated, you can close now if you want',
-                        'title'=>$title,
-                        ));
-                    exit;             
-                }
-                else{
-                  // $this->redirect(array('view','id'=>$model->id));
-         	 $this->redirect( array( 'howto/update','id'=>$_GET['howtoid'] ) );
+				$this->redirect( array( '/howto/view','id'=>$_GET['howtoid'] ) );
             }
         }
+		$this->render('update',array('model'=>$model,));
 	}
-        if ( Yii::app()->request->isAjaxRequest )
-        {
-            echo CJSON::encode(
-			array(
-                'status'=>'failure', 
-                'div'=>$this->renderPartial( '_form', 
-					array( 'model'=>$model , 'howtoid'=>'' ), true ) ) );
-            exit;               
-        }
-        else{
-            $this->render('update',array('model'=>$model,));
-		}
+       
+        
+		
 	
-}
+
 
 
 	/**

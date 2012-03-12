@@ -4,7 +4,6 @@ $().ready(function() {
 $('input[id*="Step_title"]').show();
 $('label[for="Step_title"]').show();
 
-
 elRTE.prototype.options.panels.myToolbar = ['bold', 'italic', 'underline',
 'strikethrough','justifyleft','justifyright', 'justifycenter', 'justifyfull',
 'insertorderedlist', 'insertunorderedlist', 'docstructure','paste','removeformat','link','unlink', 'elfinder', 'image', 'fullscreen'];

@@ -1,24 +1,18 @@
 <?php
 
 /**
- * This is the model class for table "step".
+ * This is the model class for table "{{bookmark}}".
  *
- * The followings are the available columns in table 'step':
+ * The followings are the available columns in table '{{bookmark}}':
+ * @property integer $user_id
  * @property integer $howto_id
- * @property string $titel
- * @property string $text
- *
- * The followings are the available model relations:
- * @property howto $howto
  */
-class Step extends CActiveRecord
+class Bookmark extends Model
 {
-	
-	public $position;
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
-	 * @return Step the static model class
+	 * @return Bookmark the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
@@ -30,36 +24,35 @@ class Step extends CActiveRecord
 	 */
 	public function tableName()
 	{
-		return '{{step}}';
+		return '{{bookmark}}';
 	}
 
 	/**
 	 * @return array validation rules for model attributes.
 	 */
-	 public function behaviors()
-	{
-		return array(
-				
-			);
-	}
 	public function rules()
 	{
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('text', 'required'),
-			array('title howto_id', 'length', 'max'=>255),
-
+			array('user_id, howto_id', 'required'),
+			array('user_id, howto_id', 'numerical', 'integerOnly'=>true),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('title, text', 'safe', 'on'=>'search'),
+			array('user_id, howto_id', 'safe', 'on'=>'search'),
 		);
 	}
 
 	/**
 	 * @return array relational rules.
 	 */
-
+	public function relations()
+	{
+		// NOTE: you may need to adjust the relation name and the related
+		// class name for the relations automatically generated below.
+		return array(
+		);
+	}
 
 	/**
 	 * @return array customized attribute labels (name=>label)
@@ -67,10 +60,8 @@ class Step extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'howto_id' => 'howto',
-			'titel' => 'Titel',
-			'text' => 'Text',
-			
+			'user_id' => 'User',
+			'howto_id' => 'Howto',
 		);
 	}
 
@@ -85,9 +76,8 @@ class Step extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
+		$criteria->compare('user_id',$this->user_id);
 		$criteria->compare('howto_id',$this->howto_id);
-		$criteria->compare('title',$this->title,true);
-		$criteria->compare('text',$this->text,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

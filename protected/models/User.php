@@ -106,6 +106,12 @@ class User extends CActiveRecord
 	
 	public static function getUserLink( $username ) 
 	{
+		return CHtml::link($username, array( User::USER_LINK . $username ) );
+	
+	}
+	
+	public static function getUserUrl( $username ) 
+	{
 		return User::USER_LINK . $username;
 	
 	}

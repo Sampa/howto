@@ -40,7 +40,7 @@ class HowtoController extends Controller
 	*/
 	public function allowedActions()
 	{
-	 	return 'index, suggestTags';
+	 	return 'index, suggestTags,create,update,eltre';
 	}
 	
 
@@ -68,7 +68,28 @@ class HowtoController extends Controller
 	 * Creates a new model.
 	 * If creation is successful, the browser will be redirected to the 'view' page.
 	 */
-
+	public function actionBookmark()
+	{
+		if ( Yii::app()->request->isAjaxRequest ) 
+		{
+			
+		if ( !Bookmark::model()->findByAttributes(array('howto_id'=>$_GET['id'],'user_id'=>$this->userId) ) )
+			{
+				$model = new Bookmark;
+				$model->howto_id = $_GET['id'];
+				$model->user_id = $this->userId;
+				if ( $model->save() )
+				{
+					echo CJSON::encode( array (
+					'status'=>'success', 
+					'div'=>'Bookmarked',
+					'title'=>'',
+					) );			
+				}
+			}
+		}
+	}
+	
 	public function actionCreate()
 	{
 		Yii::import('ext.multimodelform.MultiModelForm');
@@ -80,13 +101,15 @@ class HowtoController extends Controller
 		if ( isset ( $_POST['Howto'] ) )
 		{
 			$model->attributes = $_POST['Howto'];
-			$masterValues = array ('howto_id'=>$model->id);
-			 if ( MultiModelForm::save($step,$validatedSteps,$deleteSteps,$masterValues) &&
-            $model->save() ){
-				$this->redirect( array( 'update' , 'id'=>$model->id ) );
-				}
+			 if ( $model->save() ){
+					$masterValues = array ('howto_id'=>$model->id);
+
+				
 			
-		} 
+			 if ( MultiModelForm::save($step,$validatedSteps,$deleteSteps,$masterValues ) )
+				$this->redirect( array( 'view' , 'id'=>$model->id ) );
+			}
+		}
 		
 
 		$this->render('create',array(
@@ -139,6 +162,20 @@ class HowtoController extends Controller
 	 */
 	public function actionDelete()
 	{
+		if ( Yii::app()->request->isAjaxRequest )
+		{
+			if ( $this->loadModel()->delete() )
+				{
+					echo CJSON::encode(
+						array(
+							'status'=>'success', 
+							'div'=>"Holy guacamole! You just permently deleted the entire How-to.
+				If you want to make a backup of the text this is the time to do it.",	
+							));
+					exit;
+				}
+			exit;
+		}
 		if ( Yii::app()->request->isPostRequest )
 		{
 			// we only allow deletion via Howto request
