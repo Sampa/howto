@@ -70,11 +70,15 @@
 			echo '<div class="well"><p> Howtos by ' . $model->username . "</p>";
 			foreach( $model->howtos as $howto ) 
 			{
-				echo CHtml::link( $howto->title , array('/howto/' . $howto->id . '/' . $howto->title ) );
+				echo Howto::model()->getLink($howto->id);
 				echo "<br/>";
 			}
+			echo '</div>';
 			
 		endif;
+		
+		
+		
 	$this->endWidget(); 
 ?>
 

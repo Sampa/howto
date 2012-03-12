@@ -79,14 +79,18 @@ class HowtoController extends Controller
 				$model->howto_id = $_GET['id'];
 				$model->user_id = $this->userId;
 				if ( $model->save() )
-				{
-					echo CJSON::encode( array (
-					'status'=>'success', 
-					'div'=>'Bookmarked',
-					'title'=>'',
-					) );			
+				{ $message = 'Woho! Added this Howto to your bookmarks'; 
 				}
-			}
+				else { $message = 'Shit, something went wrong. Could not save this bookmark';
+				}
+							
+			} else { $message = 'Oops! You have already bookmarked this Howto'; }
+			echo CJSON::encode( array (
+					'status'=>'success', 
+					'div'=>$message,
+					'title'=>'',
+					) );
+			
 		}
 	}
 	

@@ -119,7 +119,19 @@ class Howto extends Model
 				'title'=>$this->title,
 			));
 	}
+	
+	public function getLink($id)
+	{
+		$title = $this->getHowtoTitle($id);
+		return CHtml::link($title , array('/howto/' . $id . '/' . $title ) );
 
+	}
+	public function getHowtoTitle($id)
+	{
+		$model = Howto::model()->findByPk($id);
+		return $model->title;	
+	
+	}
 	/**
 	 * @return array a list of links that point to the Howto list filtered by every tag of this Howto
 	 */

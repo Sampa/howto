@@ -1,0 +1,1 @@
+	<?php Yii::app()->user->setFlash('success',"<p>Bookmarked this for ya!</p>"); ?>

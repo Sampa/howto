@@ -46,11 +46,31 @@ class Bookmark extends Model
 	/**
 	 * @return array relational rules.
 	 */
+	public function getBookmarks($user_id)
+	{
+		$bookmarks = Bookmark::findAllByAttributes( array('user_id'=>$user_id) );
+		if ( !$bookmarks == null )
+		{	
+			$links = array();
+			foreach ( $bookmarks as $bookmark )
+			{
+				$links[] = Howto::model()->getLink($bookmark->howto_id);
+			
+			}
+		 return $links;
+		}
+		return false;
+	
+	}
+	
+
 	public function relations()
 	{
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+		'howto' => array( self::BELONGS_TO , 'Howto', 'howto_id' ),
+
 		);
 	}
 

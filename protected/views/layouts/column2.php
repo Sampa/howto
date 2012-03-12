@@ -34,6 +34,18 @@
 			<?php echo $this->renderPartial('//site/_login'); ?> 
 			<?php echo $this->renderPartial('//site/_reg');?>
 			
+			<div class="well"> Your Bookmarks:<br/>
+			<?php
+				$bookmarks = Bookmark::model()->getBookmarks($this->userId);
+					if ( $bookmarks ) 
+					{
+						foreach( $bookmarks as $link )
+						{
+							echo $link . '<br/>';
+						}
+					}
+			?>
+			</div>
 			
 			<?php echo $this->clips['sidebar']; ?>
 

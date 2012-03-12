@@ -31,7 +31,9 @@
 					array(''), array(
 						'class'=>'btn btn-primary bookmark',  
 						'name'=>$data->id,
-						) );?> <div id="bookmark_success_<?=$data->id;?>" style="display:none"></div>
+						) );?>
+
+		<div id="bookmark_success_<?=$data->id;?>" style="display:none"></div>
 		
 		
 
@@ -46,7 +48,6 @@
 			if (data.status == 'success'){
 					$('#bookmark_success_'+id).html(data.div);
 					$('#bookmark_success_'+id).fadeIn('slow');			
-					$('#bookmark_success_'+id).fadeOut('slow');
 				}
 			});
 			return false;
