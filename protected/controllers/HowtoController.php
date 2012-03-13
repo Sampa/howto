@@ -279,12 +279,28 @@ class HowtoController extends Controller
 	
 	public function actionIndex($show="",$category="")
 	{
+		
+		//*** SET THE SORT ORDER IF STATEMENTS ***//
+		$order = 'create_time DESC';
+			switch ($show)
+		{
+			case "show/popular":
+			$order = 'rating.vote_average DESC';
+			break;
+			//case "show/new":
+			//$order = 'rating.vote_average';
+		}
+		
+		//*** INITIATE ***//
 		$criteria = new CDbCriteria(
 		array(
 			'condition'=>'status='.Howto::STATUS_PUBLISHED,
-			'order'=>'update_time DESC',
-			'with'=>'commentCount',
+			'order'=>$order,
+			'with'=>array('commentCount','rating'),
 		));
+		
+		//*** CONDITION IF STATEMENTS ***//
+		
 		if ( isset ( $_GET['tag'] ) )
 			$criteria->addSearchCondition( 'tags',$_GET['tag'] );
 	
@@ -295,29 +311,27 @@ class HowtoController extends Controller
 			$criteria->Compare('categories.category' , $category , true );
 		}
 		
-		if ( isset ( $show ) )
+		switch ($show)
 		{
-		
-			if ( $show == "new" )
-			{
+			case "show/own":
+			if ( Yii::app()->user->isGuest )
+				{
+					$this->redirect( array( '/reg' , 'ref'=>'own' ) );
+				}
+				$criteria->addColumnCondition( array ( 'author_id'=>Yii::app()->user->id ) );
+			break;
+			
+			case "show/new":
 			$today = new DateTime();
 			$today->modify('-1 month'); 
 			
 			$compareDate = $today->format('Y-m-d');
 			$sql = "create_time >".$compareDate;
 			$criteria->addCondition($sql);
-
-			}
-			if ( $show == "own" )
-			{
-				if ( Yii::app()->user->isGuest )
-				{
-					$this->redirect( array( '/reg' , 'ref'=>'own' ) );
-				}
-				$criteria->addColumnCondition( array ( 'author_id'=>Yii::app()->user->id ) );
-			}
+			break;
+			
 		}
-		
+		//*** FIND THE DATA ***
 		$dataProvider = new CActiveDataProvider('Howto', array(
 			'pagination'=>array(
 				'pageSize'=>Yii::app()->params['howtosPerPage'],

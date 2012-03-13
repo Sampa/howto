@@ -38,7 +38,7 @@
 			<?php $this->endWidget(); endif;?>
 
 			<?php if ( !$this->isGuest ):?>
-			<div class="well"> Your Bookmarks:<br/>
+			<div class="well"> <h2>Bookmarks</h2>
 			<?php
 				$bookmarks = Bookmark::model()->getBookmarks($this->userId);
 					if ( $bookmarks ) 

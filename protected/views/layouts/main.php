@@ -53,7 +53,9 @@
 										'url'=>array( '/howto/create' ), 
 										'visible'=>Yii::app()->user->checkAccess( 'Howto.Create' )
 									),
-									array('label'=>'New Howtos!','url'=>array( '/howto/show/new' ), 
+									array('label'=>'New!','url'=>array( '/howto/show/new' ), 
+									),
+									array('label'=>'Popular!','url'=>array( '/howto/show/popular' ), 
 									),
 									array('label'=>'Your Howtos!','url'=>array( '/howto/show/new' ), 
 										'visible'=>!Yii::app()->user->isGuest

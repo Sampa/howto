@@ -5,12 +5,14 @@
 
 <div class="Howto">
 	<div class="title">
-		<?php echo CHtml::link(CHtml::encode($data->title), $data->url); ?>
+		<h2>	
+			<?php echo CHtml::link(CHtml::encode($data->title), $data->url); ?>
+		</h2>
 	</div>
 	<div class="author">
 		
-<?= "Shared by " . User::getUserLink( $data->author->username ) . ' on ' . $created; 
-		echo " and last updated on " . $updated;?>	
+<?= "Shared by " . User::getUserLink( $data->author->username ) . ' on <i>' . $created . '</i>'; 
+		echo " and last updated on <i>" . $updated . "</i>"; ?>	
 	</div>
 		
 	<div id="rating_info_<?=$data->rating_id?>">
@@ -53,9 +55,9 @@
 		<b>Tags:</b>
 		<?php echo implode(', ', $data->tagLinks); ?>
 		<br/>
-<!--permalink--><?=CHtml::link('Permalink', $data->url,array('class'=>'btn btn-primary' ) ); ?> 
+<!--permalink--><?=CHtml::link('<i class="icon-eye-open icon-white"></i> Permalink', $data->url,array('class'=>'btn btn-primary' ) ); ?> 
 
-<!--comments--><?=CHtml::link("Comments ({$data->commentCount})",$data->url.'#comments',
+<!--comments--><?=CHtml::link("<i class='icon-comment icon-white'></i> Comments ({$data->commentCount})",$data->url.'#comments',
 			array('class'=>'btn btn-primary' ) ); ?> 
 		
 <!--print--><?= CHtml::link('<i class="icon-print icon-white"></i> Print/Pdf', 
@@ -71,10 +73,10 @@
 <!--email--><?= CHtml::link('<i class="icon-envelope icon-white"></i> Mail it', 
 					array(), array('class'=>'btn btn-primary mail',
 					'name'=>'?id='.$data->id.'&title='.$data->title) );?>	
-<!--update--><?php 
+<!--edit--><?php 
 			if( Yii::app()->user->checkAccess('HowtoUpdateOwn', 
 				array('userid'=>$data->author_id))): ?>
-			<?=CHtml::link('Update', array('/howto/update','id'=>$data->id),
+			<?=CHtml::link('<i class="icon-edit icon-white"></i> Edit', array('/howto/update','id'=>$data->id),
 			array('class'=>'btn btn-primary' ) ); ?> 
 		<?php endif; ?>   
 		
