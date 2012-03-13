@@ -35,7 +35,7 @@
 
 	
 	<div id="header">
-		<div id="logo"><h1>Howto<h1></div>
+		<div id="logo"><h1>Howto<h1><?=$this->clips['header'];?></div>
 	</div>
 	
 
@@ -47,7 +47,6 @@
 				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
 				array('label'=>'Contact', 'url'=>array('/site/contact')),
 				array('label'=>'Howtos','url'=>array( '//howto'),
-							'visible'=>Yii::app()->user->checkAccess( 'Howto.Admin' ),
 								'items'=>array( //submenu under "Howtos" If user has Howto.Admin
 									array(
 										'label'=>'Create New Howto',
@@ -85,8 +84,7 @@
 						
 						), 
                   ),//End username + submenu
-				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
-				array('label'=>'Register', 'url'=>array('/user/register'), 'visible'=>Yii::app()->user->isGuest),
+				
 			),
 		)); 
 ?>

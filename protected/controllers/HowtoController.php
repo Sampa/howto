@@ -18,6 +18,17 @@ class HowtoController extends Controller
 			'rights',
 		);
 	}
+	public function actions()
+	{
+		return array(
+			// captcha action renders the CAPTCHA image displayed on the contact page
+			'captcha'=>array(
+				'class'=>'CCaptchaAction',
+				'backColor'=>0xFFFFFF,
+			),
+			
+		);
+	}
 	
 	/**
 	 * Filter method for checking whether the currently logged in user
@@ -56,6 +67,39 @@ class HowtoController extends Controller
 			'model'=>$howto,
 			'comment'=>$comment,
 		));
+	}
+	public function actionMail()
+	{
+		$model = new MailHowtoForm;
+		if ( isset ( $_POST['MailHowtoForm'] ) )
+		{
+			$model->attributes = $_POST['MailHowtoForm'];
+			if ( $model->validate() )
+			{	
+				$model->body .= "<br/>" . $model->url;
+				$model->subject = $model->name . " shared a How-to with you";
+				$headers="From: {$model->name}\r\nReply-To: {$model->email}";
+				mail($model->email,$model->subject,$model->body,$headers);
+				
+				if ( Yii::app()->request->isAjaxRequest )
+				{
+				echo CJSON::encode( array (
+							'status'=>'success', 
+							'div'=>'Mail sent',	
+							) );
+				}
+			}
+		}
+		if ( Yii::app()->request->isAjaxRequest )
+		{
+			$link = "http://www.howto.com/howto/".$_GET['id']."/".$_GET['title'];
+			echo CJSON::encode( array (
+				'status'=>'render', 
+				'div'=>$this->renderPartial( 'mailHowtoForm',
+				array( 'model'=>$model,'url'=>$link ),true,true ),	
+						) );
+		}
+	
 	}
 	
 	public function actionEltre()
@@ -109,7 +153,13 @@ class HowtoController extends Controller
 			
 		}
 	}
+	public function actionTest()
+	{
+		$rating = new Rating();
+			$rating->save();
+			echo $rating->id;
 	
+	}
 	public function actionCreate()
 	{
 		Yii::import('ext.multimodelform.MultiModelForm');
@@ -124,11 +174,10 @@ class HowtoController extends Controller
 			$rating = new Rating();
 			$rating->save();
 			$model->rating_id = $rating->id;
+
 			 if ( $model->save() ){
 					$masterValues = array ('howto_id'=>$model->id);
 
-				
-			
 			 if ( MultiModelForm::save($step,$validatedSteps,$deleteSteps,$masterValues ) )
 				$this->redirect( array( 'view' , 'id'=>$model->id ) );
 			}

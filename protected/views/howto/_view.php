@@ -1,10 +1,16 @@
+<?php
+	$created = date('F j, Y',$data->create_time); 
+	$updated = date('F j, Y',$data->update_time);
+?>
+
 <div class="Howto">
 	<div class="title">
 		<?php echo CHtml::link(CHtml::encode($data->title), $data->url); ?>
 	</div>
 	<div class="author">
-		Shared by <?php echo User::getUserLink($data->author->username) . ' on ' .
-		date('F j, Y',$data->create_time); ?>
+		
+<?= "Shared by " . User::getUserLink( $data->author->username ) . ' on ' . $created; 
+		echo " and last updated on " . $updated;?>	
 	</div>
 		
 	<div id="rating_info_<?=$data->rating_id?>">
@@ -32,11 +38,7 @@
 					}
 				});}'
 			));
-			?> 	<div id="rating_success_<?=$data->id;?>" style="display:none"></div>
-			
-
-	
-
+?> 	<div id="rating_success_<?=$data->id;?>" style="display:none"></div>
 
 	<div class="content">
 	<br/><br/>
@@ -51,34 +53,38 @@
 		<b>Tags:</b>
 		<?php echo implode(', ', $data->tagLinks); ?>
 		<br/>
-		<?php echo CHtml::link('Permalink', $data->url); ?> |
-		<?php echo CHtml::link("Comments ({$data->commentCount})",$data->url.'#comments'); ?> |
-		<?php if( Yii::app()->user->checkAccess('HowtoUpdateOwn', array('userid'=>$data->author_id))): ?>
-			<?php echo CHtml::link('Update', array('/howto/update','id'=>$data->id)); ?> |
-		<?php endif; ?>
-		Last updated on <?php echo date('F j, Y',$data->update_time); ?>     
+<!--permalink--><?=CHtml::link('Permalink', $data->url,array('class'=>'btn btn-primary' ) ); ?> 
+
+<!--comments--><?=CHtml::link("Comments ({$data->commentCount})",$data->url.'#comments',
+			array('class'=>'btn btn-primary' ) ); ?> 
 		
-<!--print--><?= CHtml::link('<i class="icon-print icon-white"></i>Print/Pdf', 
+<!--print--><?= CHtml::link('<i class="icon-print icon-white"></i> Print/Pdf', 
 					array('/howto/viewpdf/id/' . $data->id ), array('class'=>'btn btn-primary') );?>		
 		
-<!--bookmark--><?= CHtml::link('<i class="icon-bookmark icon-white"></i>Bookmark ', 
+<!--bookmark--><?= CHtml::link('<i class="icon-bookmark icon-white"></i> Bookmark ', 
 					array(''), array(
 						'class'=>'btn btn-primary bookmark',  
 						'name'=>$data->id,
 						) );?>
-
 		<div id="bookmark_success_<?=$data->id;?>" style="display:none"></div>
 		
+<!--email--><?= CHtml::link('<i class="icon-envelope icon-white"></i> Mail it', 
+					array(), array('class'=>'btn btn-primary mail',
+					'name'=>'?id='.$data->id.'&title='.$data->title) );?>	
+<!--update--><?php 
+			if( Yii::app()->user->checkAccess('HowtoUpdateOwn', 
+				array('userid'=>$data->author_id))): ?>
+			<?=CHtml::link('Update', array('/howto/update','id'=>$data->id),
+			array('class'=>'btn btn-primary' ) ); ?> 
+		<?php endif; ?>   
 		
 
 	</div><!-- nav -->
 </div>
 
 	<script>
-	function rating(id){
-		
 	
-	}
+	
 	$(".bookmark").click(function(){
 		id = $(this).attr('name');
 		url = '/howto/bookmark';
@@ -93,3 +99,4 @@
 			return false;
 		});
 	</script>
+<?php $this->renderPartial('//howto/_mail');?>

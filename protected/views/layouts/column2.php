@@ -21,6 +21,9 @@
 					'maxComments'=>Yii::app()->params['recentCommentCount'],
 				)); 
 			?>
+		<?php 
+			if ( $this->isGuest ):
+			$this->beginWidget('system.web.widgets.CClipWidget', array( 'id'=>'header' ) );   ?>
 
 			<button class="btn btn-primary" id="loginButton"><!-- loginbutton-->
 				Login
@@ -29,11 +32,12 @@
 			<button class="btn btn-primary" id="regButton"><!-- sign up button-->
 				Sign up
 			</button> <!--sign up button-->
-
 			<!-- files with modalwindow, ajax calls etc for easier reading -->
 			<?php echo $this->renderPartial('//site/_login'); ?> 
 			<?php echo $this->renderPartial('//site/_reg');?>
-			
+			<?php $this->endWidget(); endif;?>
+
+			<?php if ( !$this->isGuest ):?>
 			<div class="well"> Your Bookmarks:<br/>
 			<?php
 				$bookmarks = Bookmark::model()->getBookmarks($this->userId);
@@ -46,6 +50,7 @@
 					}
 			?>
 			</div>
+			<?php endif;?>
 			
 			<?php echo $this->clips['sidebar']; ?>
 

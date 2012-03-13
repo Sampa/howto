@@ -3969,3 +3969,835 @@ REQUEST_URI=/howto/rating?id=0&val=7
 in C:\Programmering\xampp\htdocs\blog\protected\controllers\HowtoController.php (71)
 in C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php (51)
 in C:\Programmering\xampp\htdocs\blog\index.php (13)
+2012/03/13 14:29:28 [error] [php] Trying to get property of non-object (C:\Programmering\xampp\htdocs\blog\protected\controllers\HowtoController.php:68)
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): HowtoController->runAction()
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#2 C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php(51): RightsFilter->filter()
+#3 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): HowtoController->filterRights()
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): HowtoController->runActionWithFilters()
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): HowtoController->run()
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\Programmering\xampp\htdocs\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/howto/rating?id=0&val=6
+in C:\Programmering\xampp\htdocs\blog\protected\controllers\HowtoController.php (68)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php (51)
+in C:\Programmering\xampp\htdocs\blog\index.php (13)
+2012/03/13 14:37:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\Programmering\xampp\htdocs\blog\protected\controllers\HowtoController.php:334
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\blog\protected\controllers\HowtoController.php(159): HowtoController->loadModel('52')
+#1 [internal function]: HowtoController->actionUpdate('52')
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(HowtoController), Array)
+#3 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(HowtoController), Object(ReflectionMethod), Array)
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php(51): CFilter->filter(Object(CFilterChain))
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#9 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#11 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('update')
+#13 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('howto/update')
+#14 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/howto/update?id=52
+HTTP_REFERER=http://blog/howto/view?id=52
+---
+2012/03/13 15:13:19 [error] [exception.CException] exception 'CException' with message 'Property "HowtoController.endWidget" is not defined.' in C:\Programmering\xampp\htdocs\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\blog\protected\views\layouts\column2.php(33): CComponent->__get('endWidget')
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\Programmerin...')
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Programmerin...', Array, true)
+#3 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(785): CBaseController->renderFile('C:\Programmerin...', Array, true)
+#4 C:\Programmering\xampp\htdocs\blog\protected\controllers\HowtoController.php(286): CController->render('index', Array)
+#5 [internal function]: HowtoController->actionIndex('', '')
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(HowtoController), Array)
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(HowtoController), Object(ReflectionMethod), Array)
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#10 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#11 C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php(51): CFilter->filter(Object(CFilterChain))
+#12 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#13 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#15 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('')
+#17 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#18 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#19 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/
+HTTP_REFERER=http://blog/index.php
+---
+2012/03/13 15:13:43 [error] [exception.CException] exception 'CException' with message 'Property "HowtoController.clip" is not defined.' in C:\Programmering\xampp\htdocs\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\blog\protected\views\layouts\main.php(38): CComponent->__get('clip')
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\Programmerin...')
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Programmerin...', Array, true)
+#3 C:\Programmering\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(77): CBaseController->renderFile('C:\Programmerin...', Array, true)
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(55): CContentDecorator->decorate('<div class="con...')
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\widgets\COutputProcessor.php(45): CContentDecorator->processOutput('<div class="con...')
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(207): COutputProcessor->run()
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#8 C:\Programmering\xampp\htdocs\blog\protected\views\layouts\column2.php(57): CBaseController->endContent()
+#9 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\Programmerin...')
+#10 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Programmerin...', Array, true)
+#11 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(785): CBaseController->renderFile('C:\Programmerin...', Array, true)
+#12 C:\Programmering\xampp\htdocs\blog\protected\controllers\HowtoController.php(286): CController->render('index', Array)
+#13 [internal function]: HowtoController->actionIndex('', '')
+#14 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(HowtoController), Array)
+#15 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(HowtoController), Object(ReflectionMethod), Array)
+#16 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#17 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#18 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#19 C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php(51): CFilter->filter(Object(CFilterChain))
+#20 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#21 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#22 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#23 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('')
+#25 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#26 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#27 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/
+HTTP_REFERER=http://blog/index.php
+---
+2012/03/13 15:19:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/d024e261/images/smileys/grin.png".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/d024e261...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/d024e261/images/smileys/grin.png
+HTTP_REFERER=http://blog/howto/1/Welcome%21
+---
+2012/03/13 15:19:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/d024e261/images/smileys/wink.png".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/d024e261...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/d024e261/images/smileys/wink.png
+HTTP_REFERER=http://blog/howto/1/Welcome%21
+---
+2012/03/13 15:20:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/d024e261/images/smileys/grin.png".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/d024e261...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/d024e261/images/smileys/grin.png
+HTTP_REFERER=http://blog/howto/1/Welcome%21
+---
+2012/03/13 15:20:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/d024e261/images/smileys/wink.png".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/d024e261...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/d024e261/images/smileys/wink.png
+HTTP_REFERER=http://blog/howto/1/Welcome%21
+---
+2012/03/13 15:21:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/d024e261/images/smileys/wink.png".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/d024e261...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/d024e261/images/smileys/wink.png
+HTTP_REFERER=http://blog/howto/1/Welcome%21
+---
+2012/03/13 15:21:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/d024e261/images/smileys/grin.png".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/d024e261...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/d024e261/images/smileys/grin.png
+HTTP_REFERER=http://blog/howto/1/Welcome%21
+---
+2012/03/13 15:21:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/d024e261/images/smileys/wink.png".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/d024e261...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/d024e261/images/smileys/wink.png
+HTTP_REFERER=http://blog/howto/1/Welcome%21
+---
+2012/03/13 15:22:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/d024e261/images/smileys/grin.png".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/d024e261...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/d024e261/images/smileys/grin.png
+HTTP_REFERER=http://blog/howto/1/Welcome%21
+---
+2012/03/13 15:22:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/d024e261/images/smileys/wink.png".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/d024e261...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/d024e261/images/smileys/wink.png
+HTTP_REFERER=http://blog/howto/1/Welcome%21
+---
+2012/03/13 16:40:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "captcha".' in C:\Programmering\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('captcha')
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('captcha')
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('howto/captcha')
+#3 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/howto/captcha?v=4f5f6a58b059d
+HTTP_REFERER=http://blog/howto/mail
+---
+2012/03/13 16:40:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "captcha".' in C:\Programmering\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('captcha')
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('captcha')
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('howto/captcha')
+#3 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/howto/captcha?v=4f5f6a7092532
+HTTP_REFERER=http://blog/howto
+---
+2012/03/13 16:40:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "captcha".' in C:\Programmering\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('captcha')
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('captcha')
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('howto/captcha')
+#3 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/howto/captcha?v=4f5f6a709e98a
+HTTP_REFERER=http://blog/howto
+---
+2012/03/13 16:41:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "captcha".' in C:\Programmering\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('captcha')
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('captcha')
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('howto/captcha')
+#3 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/howto/captcha?v=4f5f6a709e98a
+---
+2012/03/13 16:42:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "captcha".' in C:\Programmering\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('captcha')
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('captcha')
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('howto/captcha')
+#3 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/howto/captcha?v=4f5f6af2e0d4e
+HTTP_REFERER=http://blog/howto
+---
+2012/03/13 16:42:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "captcha".' in C:\Programmering\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('captcha')
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('captcha')
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('howto/captcha')
+#3 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/howto/captcha?v=4f5f6af2ebe6d
+HTTP_REFERER=http://blog/howto
+---
+2012/03/13 16:44:32 [error] [exception.CException] exception 'CException' with message 'Property "RWebUser.username" is not defined.' in C:\Programmering\xampp\htdocs\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\auth\CWebUser.php(141): CComponent->__get('username')
+#1 C:\Programmering\xampp\htdocs\blog\protected\views\howto\mailHowtoForm.php(17): CWebUser->__get('username')
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\Programmerin...')
+#3 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Programmerin...', Array, true)
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Programmerin...', Array, true)
+#5 C:\Programmering\xampp\htdocs\blog\protected\controllers\HowtoController.php(85): CController->renderPartial('mailHowtoForm', Array, true, true)
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): HowtoController->actionMail()
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#10 C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php(51): CFilter->filter(Object(CFilterChain))
+#11 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#12 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#14 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('mail')
+#16 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('howto/mail')
+#17 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/howto/mail
+HTTP_REFERER=http://blog/howto
+---
+2012/03/13 16:44:32 [error] [exception.CException] exception 'CException' with message 'Property "RWebUser.username" is not defined.' in C:\Programmering\xampp\htdocs\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\auth\CWebUser.php(141): CComponent->__get('username')
+#1 C:\Programmering\xampp\htdocs\blog\protected\views\howto\mailHowtoForm.php(17): CWebUser->__get('username')
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\Programmerin...')
+#3 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Programmerin...', Array, true)
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Programmerin...', Array, true)
+#5 C:\Programmering\xampp\htdocs\blog\protected\controllers\HowtoController.php(85): CController->renderPartial('mailHowtoForm', Array, true, true)
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): HowtoController->actionMail()
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#10 C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php(51): CFilter->filter(Object(CFilterChain))
+#11 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#12 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#14 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('mail')
+#16 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('howto/mail')
+#17 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/howto/mail
+HTTP_REFERER=http://blog/howto
+---
+2012/03/13 16:44:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "captcha".' in C:\Programmering\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('captcha')
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('captcha')
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('howto/captcha')
+#3 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/howto/captcha?v=4f5f6b73e30f4
+HTTP_REFERER=http://blog/howto
+---
+2012/03/13 16:44:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "captcha".' in C:\Programmering\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('captcha')
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('captcha')
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('howto/captcha')
+#3 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/howto/captcha?v=4f5f6b73ec166
+HTTP_REFERER=http://blog/howto
+---
+2012/03/13 16:46:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "captcha".' in C:\Programmering\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('captcha')
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('captcha')
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('howto/captcha')
+#3 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/howto/captcha?v=4f5f6bd1e2080
+HTTP_REFERER=http://blog/howto
+---
+2012/03/13 16:46:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "captcha".' in C:\Programmering\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('captcha')
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('captcha')
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('howto/captcha')
+#3 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/howto/captcha?v=4f5f6bd1eaac5
+HTTP_REFERER=http://blog/howto
+---
+2012/03/13 16:49:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "captcha".' in C:\Programmering\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('captcha')
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('captcha')
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('howto/captcha')
+#3 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/howto/captcha?v=4f5f6c91248c4
+HTTP_REFERER=http://blog/howto
+---
+2012/03/13 16:49:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "captcha".' in C:\Programmering\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('captcha')
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('captcha')
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('howto/captcha')
+#3 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/howto/captcha?v=4f5f6c913820f
+HTTP_REFERER=http://blog/howto
+---
+2012/03/13 16:54:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "captcha".' in C:\Programmering\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('captcha')
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('captcha')
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('howto/captcha')
+#3 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/howto/captcha?v=4f5f6db20da92
+HTTP_REFERER=http://blog/howto
+---
+2012/03/13 16:54:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "captcha".' in C:\Programmering\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('captcha')
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('captcha')
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('howto/captcha')
+#3 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/howto/captcha?v=4f5f6db2177d5
+HTTP_REFERER=http://blog/howto
+---
+2012/03/13 17:02:27 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\Programmering\xampp\htdocs\yii\framework\web\CController.php:337
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php(51): CFilter->filter(Object(CFilterChain))
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('mail')
+#9 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('howto/mail')
+#10 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/howto/mail/
+HTTP_REFERER=http://blog/howto
+---
+2012/03/13 17:02:27 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\Programmering\xampp\htdocs\yii\framework\web\CController.php:337
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php(51): CFilter->filter(Object(CFilterChain))
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('mail')
+#9 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('howto/mail')
+#10 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/howto/mail/
+HTTP_REFERER=http://blog/howto
+---
+2012/03/13 17:02:58 [error] [php] Undefined index: link (C:\Programmering\xampp\htdocs\blog\protected\controllers\HowtoController.php:86)
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): HowtoController->runAction()
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#2 C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php(51): RightsFilter->filter()
+#3 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): HowtoController->filterRights()
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): HowtoController->runActionWithFilters()
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): HowtoController->run()
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\Programmering\xampp\htdocs\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/howto/mail/
+in C:\Programmering\xampp\htdocs\blog\protected\controllers\HowtoController.php (86)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php (51)
+in C:\Programmering\xampp\htdocs\blog\index.php (13)
+2012/03/13 17:02:58 [error] [php] Undefined index: link (C:\Programmering\xampp\htdocs\blog\protected\controllers\HowtoController.php:86)
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): HowtoController->runAction()
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#2 C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php(51): RightsFilter->filter()
+#3 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): HowtoController->filterRights()
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): HowtoController->runActionWithFilters()
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): HowtoController->run()
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\Programmering\xampp\htdocs\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/howto/mail/
+in C:\Programmering\xampp\htdocs\blog\protected\controllers\HowtoController.php (86)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php (51)
+in C:\Programmering\xampp\htdocs\blog\index.php (13)
+2012/03/13 17:03:27 [error] [php] Undefined variable: link (C:\Programmering\xampp\htdocs\blog\protected\controllers\HowtoController.php:86)
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): HowtoController->runAction()
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#2 C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php(51): RightsFilter->filter()
+#3 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): HowtoController->filterRights()
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): HowtoController->runActionWithFilters()
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): HowtoController->run()
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\Programmering\xampp\htdocs\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/howto/mail/
+in C:\Programmering\xampp\htdocs\blog\protected\controllers\HowtoController.php (86)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php (51)
+in C:\Programmering\xampp\htdocs\blog\index.php (13)
+2012/03/13 17:03:27 [error] [php] Undefined variable: link (C:\Programmering\xampp\htdocs\blog\protected\controllers\HowtoController.php:86)
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): HowtoController->runAction()
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#2 C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php(51): RightsFilter->filter()
+#3 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): HowtoController->filterRights()
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): HowtoController->runActionWithFilters()
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): HowtoController->run()
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\Programmering\xampp\htdocs\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/howto/mail/
+in C:\Programmering\xampp\htdocs\blog\protected\controllers\HowtoController.php (86)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php (51)
+in C:\Programmering\xampp\htdocs\blog\index.php (13)
+2012/03/13 17:11:58 [error] [php] Undefined variable: link (C:\Programmering\xampp\htdocs\blog\protected\controllers\HowtoController.php:86)
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): HowtoController->runAction()
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#2 C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php(51): RightsFilter->filter()
+#3 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): HowtoController->filterRights()
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): HowtoController->runActionWithFilters()
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): HowtoController->run()
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\Programmering\xampp\htdocs\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/howto/mail/
+in C:\Programmering\xampp\htdocs\blog\protected\controllers\HowtoController.php (86)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php (51)
+in C:\Programmering\xampp\htdocs\blog\index.php (13)
+2012/03/13 17:11:58 [error] [php] Undefined variable: link (C:\Programmering\xampp\htdocs\blog\protected\controllers\HowtoController.php:86)
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): HowtoController->runAction()
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#2 C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php(51): RightsFilter->filter()
+#3 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): HowtoController->filterRights()
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): HowtoController->runActionWithFilters()
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): HowtoController->run()
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\Programmering\xampp\htdocs\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/howto/mail/
+in C:\Programmering\xampp\htdocs\blog\protected\controllers\HowtoController.php (86)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php (51)
+in C:\Programmering\xampp\htdocs\blog\index.php (13)
+2012/03/13 17:12:49 [error] [php] Undefined variable: link (C:\Programmering\xampp\htdocs\blog\protected\controllers\HowtoController.php:86)
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): HowtoController->runAction()
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#2 C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php(51): RightsFilter->filter()
+#3 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): HowtoController->filterRights()
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): HowtoController->runActionWithFilters()
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): HowtoController->run()
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\Programmering\xampp\htdocs\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/howto/mail/
+in C:\Programmering\xampp\htdocs\blog\protected\controllers\HowtoController.php (86)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php (51)
+in C:\Programmering\xampp\htdocs\blog\index.php (13)
+2012/03/13 17:12:49 [error] [php] Undefined variable: link (C:\Programmering\xampp\htdocs\blog\protected\controllers\HowtoController.php:86)
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): HowtoController->runAction()
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#2 C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php(51): RightsFilter->filter()
+#3 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): HowtoController->filterRights()
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): HowtoController->runActionWithFilters()
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): HowtoController->run()
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\Programmering\xampp\htdocs\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/howto/mail/
+in C:\Programmering\xampp\htdocs\blog\protected\controllers\HowtoController.php (86)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php (51)
+in C:\Programmering\xampp\htdocs\blog\index.php (13)
+2012/03/13 17:13:13 [error] [php] Undefined index: link (C:\Programmering\xampp\htdocs\blog\protected\controllers\HowtoController.php:86)
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): HowtoController->runAction()
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#2 C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php(51): RightsFilter->filter()
+#3 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): HowtoController->filterRights()
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): HowtoController->runActionWithFilters()
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): HowtoController->run()
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\Programmering\xampp\htdocs\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/howto/mail/
+in C:\Programmering\xampp\htdocs\blog\protected\controllers\HowtoController.php (86)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php (51)
+in C:\Programmering\xampp\htdocs\blog\index.php (13)
+2012/03/13 17:13:13 [error] [php] Undefined index: link (C:\Programmering\xampp\htdocs\blog\protected\controllers\HowtoController.php:86)
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): HowtoController->runAction()
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#2 C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php(51): RightsFilter->filter()
+#3 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): HowtoController->filterRights()
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): HowtoController->runActionWithFilters()
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): HowtoController->run()
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\Programmering\xampp\htdocs\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/howto/mail/
+in C:\Programmering\xampp\htdocs\blog\protected\controllers\HowtoController.php (86)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php (51)
+in C:\Programmering\xampp\htdocs\blog\index.php (13)
+2012/03/13 17:16:22 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\Programmering\xampp\htdocs\yii\framework\web\CController.php:337
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php(51): CFilter->filter(Object(CFilterChain))
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('mail')
+#9 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('howto/mail/howt...')
+#10 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/howto/mail/howto/2/A+Test+Post
+HTTP_REFERER=http://blog/howto
+---
+2012/03/13 17:16:22 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\Programmering\xampp\htdocs\yii\framework\web\CController.php:337
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php(51): CFilter->filter(Object(CFilterChain))
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('mail')
+#9 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('howto/mail/howt...')
+#10 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/howto/mail/howto/2/A+Test+Post
+HTTP_REFERER=http://blog/howto
+---
+2012/03/13 17:22:11 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\Programmering\xampp\htdocs\yii\framework\web\CController.php:337
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php(51): CFilter->filter(Object(CFilterChain))
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('mail')
+#9 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('howto/mail')
+#10 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/howto/mail?id=2&title=A%20Test%20Post
+HTTP_REFERER=http://blog/howto
+---
+2012/03/13 17:22:11 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\Programmering\xampp\htdocs\yii\framework\web\CController.php:337
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php(51): CFilter->filter(Object(CFilterChain))
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('mail')
+#9 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('howto/mail')
+#10 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/howto/mail?id=2&title=A%20Test%20Post
+HTTP_REFERER=http://blog/howto
+---
+2012/03/13 17:25:46 [error] [php] Undefined variable: urls (C:\Programmering\xampp\htdocs\blog\protected\views\howto\mailHowtoForm.php:27)
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): HowtoController->renderFile()
+#1 C:\Programmering\xampp\htdocs\blog\protected\controllers\HowtoController.php(87): HowtoController->renderPartial()
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): HowtoController->actionMail()
+#3 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): HowtoController->runAction()
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#6 C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php(51): RightsFilter->filter()
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): HowtoController->filterRights()
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#9 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#10 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): HowtoController->runActionWithFilters()
+#11 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): HowtoController->run()
+#12 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#13 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\Programmering\xampp\htdocs\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/howto/mail?id=2&title=A%20Test%20Post
+in C:\Programmering\xampp\htdocs\blog\protected\views\howto\mailHowtoForm.php (27)
+in C:\Programmering\xampp\htdocs\blog\protected\controllers\HowtoController.php (87)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php (51)
+2012/03/13 17:25:46 [error] [php] Undefined variable: urls (C:\Programmering\xampp\htdocs\blog\protected\views\howto\mailHowtoForm.php:27)
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): HowtoController->renderFile()
+#1 C:\Programmering\xampp\htdocs\blog\protected\controllers\HowtoController.php(87): HowtoController->renderPartial()
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): HowtoController->actionMail()
+#3 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): HowtoController->runAction()
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#6 C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php(51): RightsFilter->filter()
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): HowtoController->filterRights()
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#9 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#10 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): HowtoController->runActionWithFilters()
+#11 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): HowtoController->run()
+#12 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#13 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\Programmering\xampp\htdocs\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/howto/mail?id=2&title=A%20Test%20Post
+in C:\Programmering\xampp\htdocs\blog\protected\views\howto\mailHowtoForm.php (27)
+in C:\Programmering\xampp\htdocs\blog\protected\controllers\HowtoController.php (87)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php (51)
+2012/03/13 17:26:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "captcha".' in C:\Programmering\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('captcha')
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('captcha')
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('howto/captcha')
+#3 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/howto/captcha?v=4f5f75257b911
+HTTP_REFERER=http://blog/howto
+---
+2012/03/13 17:26:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "captcha".' in C:\Programmering\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('captcha')
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('captcha')
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('howto/captcha')
+#3 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/howto/captcha?v=4f5f752581e29
+HTTP_REFERER=http://blog/howto
+---
+2012/03/13 17:26:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "captcha".' in C:\Programmering\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('captcha')
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('captcha')
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('howto/captcha')
+#3 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/howto/captcha?v=4f5f754e653ee
+HTTP_REFERER=http://blog/howto
+---
+2012/03/13 17:26:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "captcha".' in C:\Programmering\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('captcha')
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('captcha')
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('howto/captcha')
+#3 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/howto/captcha?v=4f5f754e6b31f
+HTTP_REFERER=http://blog/howto
+---
+2012/03/13 17:51:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "captcha".' in C:\Programmering\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('captcha')
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('captcha')
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('howto/captcha')
+#3 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/howto/captcha?v=4f5f7b24d62de
+HTTP_REFERER=http://blog/howto
+---
+2012/03/13 17:51:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "captcha".' in C:\Programmering\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('captcha')
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('captcha')
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('howto/captcha')
+#3 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/howto/captcha?v=4f5f7b24dc529
+HTTP_REFERER=http://blog/howto
+---
+2012/03/13 17:53:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "mail[object object]".' in C:\Programmering\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('mail[object obj...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('mail[object obj...')
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('howto/mail[obje...')
+#3 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/howto/mail%5Bobject%20Object%5D
+HTTP_REFERER=http://blog/howto
+---
+2012/03/13 17:53:49 [error] [exception.CException] exception 'CException' with message 'CCaptchaValidator.action "captcha" is invalid. Unable to find such an action in the current controller.' in C:\Programmering\xampp\htdocs\yii\framework\validators\CCaptchaValidator.php:76
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\validators\CCaptchaValidator.php(50): CCaptchaValidator->getCaptchaAction()
+#1 C:\Programmering\xampp\htdocs\yii\framework\validators\CValidator.php(197): CCaptchaValidator->validateAttribute(Object(MailHowtoForm), 'verifyCode')
+#2 C:\Programmering\xampp\htdocs\yii\framework\base\CModel.php(158): CValidator->validate(Object(MailHowtoForm), NULL)
+#3 C:\Programmering\xampp\htdocs\blog\protected\controllers\HowtoController.php(66): CModel->validate()
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): HowtoController->actionMail()
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#8 C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php(51): CFilter->filter(Object(CFilterChain))
+#9 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#10 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#12 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('mail')
+#14 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('howto/mail')
+#15 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/howto/mail?id=2&title=A%20Test%20Post
+HTTP_REFERER=http://blog/howto
+---
+2012/03/13 17:56:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "mail[object object]".' in C:\Programmering\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('mail[object obj...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('mail[object obj...')
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('howto/mail[obje...')
+#3 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/howto/mail%5Bobject%20Object%5D
+HTTP_REFERER=http://blog/howto
+---
+2012/03/13 17:56:57 [error] [php] mail() [<a href='function.mail'>function.mail</a>]: Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() (C:\Programmering\xampp\htdocs\blog\protected\controllers\HowtoController.php:82)
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): HowtoController->runAction()
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php(51): RightsFilter->filter()
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): HowtoController->filterRights()
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): HowtoController->runActionWithFilters()
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): HowtoController->run()
+#9 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#10 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\Programmering\xampp\htdocs\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/howto/mail?id=2&title=A%20Test%20Post
+in C:\Programmering\xampp\htdocs\blog\protected\controllers\HowtoController.php (82)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php (51)
+in C:\Programmering\xampp\htdocs\blog\index.php (13)
