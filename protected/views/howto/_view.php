@@ -6,7 +6,8 @@
 		Shared by <?php echo User::getUserLink($data->author->username) . ' on ' .
 		date('F j, Y',$data->create_time); ?>
 	</div>
-			
+		
+	<div id="rating_info_<?=$data->rating_id?>">
 <?php 
 	if ( $rating = Rating::model()->findByPk($data->rating_id) )
 		{	
@@ -14,18 +15,20 @@
 			echo " " . $rating->vote_count . " votes";
 		}
 ?>
+	</div>
+	
 <?php // rating
 	$this->widget('CStarRating',array(
     'name'=>'rating'.$data->rating_id,
-	'value'=>$rating->vote_average,
     'callback'=>'
         function(){
         	url = "/howto/rating";
 			jQuery.getJSON(url, {id: '.$data->rating_id.', val: $(this).val()}, function(data) {
 				if (data.status == "success"){
-						$("#rating_success_'.$data->rating_id.'").html(data.div);
+					$("#rating_success_'.$data->rating_id.'").html(data.div);
 					$("#rating_success_'.$data->rating_id.'").fadeIn("slow");		
 					var pause = setTimeout("$(\"#rating_success_'.$data->rating_id.'\").fadeOut(\"slow\")",5000);
+					$("#rating_info_'.$data->rating_id.'").html(data.info);
 					}
 				});}'
 			));

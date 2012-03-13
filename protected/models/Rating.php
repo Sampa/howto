@@ -38,7 +38,7 @@ class Rating extends Model
 		// will receive user inputs.
 		return array(
 			array('vote_count, vote_average, vote_sum', 'required'),
-			array('vote_count, vote_sum, vote_average', 'numerical', 'integerOnly'=>true),
+			array('vote_count, vote_sum', 'numerical', 'integerOnly'=>true),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('id, vote_count, vote_average, vote_sum', 'safe', 'on'=>'search'),

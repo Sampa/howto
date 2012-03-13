@@ -64,19 +64,19 @@ class HowtoController extends Controller
 	}
 	public function actionRating()
 	{			
-		if ( Yii::app()->request->isAjaxRequest )
-		{	
-			$rating = Rating::model()->findByPk($_GET['id']);
+		$rating = Rating::model()->findByPk($_GET['id']);
 			$rating->vote_count = $rating->vote_count + 1;
 			$rating->vote_sum = $rating->vote_sum + $_GET['val'];
-			$rating->vote_average = $rating->vote_sum / $rating->vote_count;
-			$rating->vote_average = substr($rating->vote_average,3);
-			
+			$rating->vote_average = round($rating->vote_sum / $rating->vote_count,2);
+		
+		if ( Yii::app()->request->isAjaxRequest )
+		{	
 			if ( $rating->save() ) 
 			{
 			echo CJSON::encode( array (
 						'status'=>'success', 
-						'div'=>'Thank you for voting!',					
+						'div'=>'Thank you for voting!',	
+						'info'=>"Rating: " . $rating->vote_average ." " . $rating->vote_count . " votes",
 						) );
 			}
 		}
@@ -105,7 +105,6 @@ class HowtoController extends Controller
 			echo CJSON::encode( array (
 					'status'=>'success', 
 					'div'=>$message,
-					'title'=>'',
 					) );
 			
 		}
