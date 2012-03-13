@@ -40,7 +40,7 @@ class HowtoController extends Controller
 	*/
 	public function allowedActions()
 	{
-	 	return 'index, suggestTags,create,update,eltre';
+	 	return 'index, suggestTags,create,update,eltre,rating';
 	}
 	
 
@@ -52,7 +52,6 @@ class HowtoController extends Controller
 	{
 		$howto = $this->loadModel();
     	$comment = $this->newComment( $howto );
-
 		$this->render( 'view',array(
 			'model'=>$howto,
 			'comment'=>$comment,
@@ -63,7 +62,25 @@ class HowtoController extends Controller
 	{
 		$this->renderPartial('_eltre');
 	}
-	
+	public function actionRating()
+	{			
+		if ( Yii::app()->request->isAjaxRequest )
+		{	
+			$rating = Rating::model()->findByPk($_GET['id']);
+			$rating->vote_count = $rating->vote_count + 1;
+			$rating->vote_sum = $rating->vote_sum + $_GET['val'];
+			$rating->vote_average = $rating->vote_sum / $rating->vote_count;
+			$rating->vote_average = substr($rating->vote_average,3);
+			
+			if ( $rating->save() ) 
+			{
+			echo CJSON::encode( array (
+						'status'=>'success', 
+						'div'=>'Thank you for voting!',					
+						) );
+			}
+		}
+	}
 	/**
 	 * Creates a new model.
 	 * If creation is successful, the browser will be redirected to the 'view' page.
@@ -105,6 +122,9 @@ class HowtoController extends Controller
 		if ( isset ( $_POST['Howto'] ) )
 		{
 			$model->attributes = $_POST['Howto'];
+			$rating = new Rating();
+			$rating->save();
+			$model->rating_id = $rating->id;
 			 if ( $model->save() ){
 					$masterValues = array ('howto_id'=>$model->id);
 

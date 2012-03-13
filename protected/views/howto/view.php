@@ -47,8 +47,7 @@
 		 ?>
 	
 	</div>
-	
-	
+
 	<div id="comments">
 		<?php if($model->commentCount>=1): ?>
 		<h3>
