@@ -51,7 +51,7 @@ class HowtoController extends Controller
 	*/
 	public function allowedActions()
 	{
-	 	return 'index, suggestTags,create,update,eltre,rating';
+	 	return 'index,view,suggestTags,eltre,rating';
 	}
 	
 

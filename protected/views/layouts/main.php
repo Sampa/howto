@@ -35,7 +35,26 @@
 
 	
 	<div id="header">
-		<div id="logo"><h1>Howto<h1><?=$this->clips['header'];?></div>
+		<div id="logo"><h1>Howto<h1>
+		<?php
+		if ( $this->isGuest ):
+		?>
+
+			<button class="btn btn-primary" id="loginButton"><!-- loginbutton-->
+				Login
+			</button> <!--login button-->
+			
+			<button class="btn btn-primary" id="regButton"><!-- sign up button-->
+				Sign up
+			</button> <!--sign up button-->
+			<!-- files with modalwindow, ajax calls etc for easier reading -->
+			<?php echo $this->renderPartial('//site/_login'); ?> 
+			<?php echo $this->renderPartial('//site/_reg');?>
+		
+		
+		<?php endif;?>
+		<?=$this->clips['header'];?>
+		</div>
 	</div>
 	
 
@@ -116,7 +135,6 @@
 		</div><!-- footer -->
 
 	</div><!-- page -->
-
 
 </body>
 </html>
