@@ -69,7 +69,7 @@
         'text'=>array(
             'type'=>'textarea',
 			'class'=>'eltre',
-			'value'=>'What do now?:)',
+		
         ),
 		 'howto_id'=>array(
             'type'=>'hidden',
@@ -77,21 +77,20 @@
         ),
         
     ));
- 
+
 	$this->widget('ext.multimodelform.MultiModelForm',
 	array(
         'id' => 'id_step', //the unique widget id
         'formConfig' => $stepFormConfig, //the form configuration array
         'model' => $step, //instance of the form model
 		'sortAttribute' => 'position', //if assigned: sortable fieldsets is enabled
-		'jsAfterClone'=>'$(this).focus()',
-		/*'jsAfterNewId'=>"eltre('.eltre'); ;",
-		'jsBeforeNewId' => "alert(this.attr('id'));", 
-	    'jsAfterNewId' => "alert(this.attr('id'));",
-					$("#editorPlaceholder").html("lol"); 
-		'jsAfterClone'=>'$("editorPlaceholde").load("/howto/eltre")',*/ 
+		//'jsAfterClone'=>'testid("run");',
+		//'jsAfterNewId'=>"eltre('.eltre'); ;",
+		//'jsBeforeNewId' => ";", 
+	    'jsAfterNewId' => 'testid(this.attr("id"));',
+		//*'$("editorPlaceholde").load("/howto/eltre")',*/ 
 		'tableView'=>false,
-		'addItemText'=>'Add step',
+		'addItemText'=>'',
         //if submitted not empty from the controller,
         //the form will be rendered with validation errors
         'validatedItems' => $validatedSteps,
@@ -115,13 +114,12 @@
 <script type="text/javascript">
 /*<![CDATA[*/
 function eltre(id) {
-
 	elRTE.prototype.options.panels.myToolbar = ['bold', 'italic', 'underline',
 	'strikethrough','justifyleft','justifyright', 'justifycenter', 'justifyfull',
 	'insertorderedlist', 'insertunorderedlist', 'docstructure','paste','removeformat','link','unlink', 'elfinder', 'image', 'fullscreen'];
 	elRTE.prototype.options.toolbars.myToolbar = ['myToolbar'];
 	var opts = {
-	'doctype': '<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">',
+	'doctype': '',
 	'cssClass':'el-rte',
 	'height': '100px',
 	'width': '500px',
@@ -132,13 +130,13 @@ function eltre(id) {
 	'fmAllow': true,
 	'cssfiles':['/assets/7952073/css/elrte-inner.css'],
 	'fmOpen' : function(callback) {
-	$(".eltre").elfinder({
+	$("#"+id).elfinder({
 	'url' : '/assets/7952073/connectors/php/connector.php?userid=1',
 	'dialog' : { width : 900, modal : true, title : 'Files' },
 	'closeOnEditorCallback' : true,
 	'editorCallback' : callback
 	}) }} ;
-	$('.eltre').elrte(opts);
+	$(".eltre").elrte(opts);
 
 
 
@@ -146,11 +144,16 @@ function eltre(id) {
 /*]]>*/
 </script> 
 	<script>
-$(document).ready(function(){
+function testid(id){
+		if ( id.match("Step_text") ){
+		console.log(id);
+		eltre(id);
+		}}		
+//$(document).ready(function(){
 /*$("#Step_text").hide();
 $("#Step_title").hide();
 $('label[for="Step_title"]').hide();
 $('label[for="Step_text"]').hide();
 });*/
-
+//});
 </script>

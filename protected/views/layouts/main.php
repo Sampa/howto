@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<!-- blueprint CSS framework -->
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/screen.css" media="screen, projection" />
+	<!--<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/screen.css" media="screen, projection" />-->
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/print.css" media="print" />
 	<!--[if lt IE 8]>
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ie.css" media="screen, projection" />
@@ -35,7 +35,7 @@
 
 	
 	<div id="header">
-		<div id="logo"><h1>Howto<h1>
+		<div id="logo" class="span8" style=""><h1>Howto<h1>
 		<?php
 		if ( $this->isGuest ):
 		?>
@@ -53,12 +53,38 @@
 		
 		
 		<?php endif;?>
+		
 		<?=$this->clips['header'];?>
-		</div>
-	</div>
+		</div><!-- logo -->
+		
+		<div id="search" class="span4" style="border: 0px solid black; margin-top: 15px;">
+		<?php $this->widget('CAutoComplete', array(
+			'model'=>new Howto,
+			'id'=>'searchfield',
+			'attribute'=>'tags',
+			'url'=>array('/howto/suggestTags'),
+			'multiple'=>true,
+			'htmlOptions'=>array('size'=>50, 'value'=>'Find Howto\'s by tag'),
+		)); ?>
+		<button class="btn btn-primary" style="margin-top: -7px;" id="searchbutton">
+<!-- search--><i class="icon-search icon-white"></i> Find
+		</button>
+		<script>
+			$("#searchfield").focus(function(){
+				$(this).val('');
+			});
+			$("#searchbutton").click(function(){
+				var val = $("#searchfield").val();
+				val = val.replace(",",'');
+				var url = "/tag/"+val; 
+				$(location).attr('href',"/tag/"+val);
+			})
+		</script>
+		</div><!-- search -->
+	</div><!--header-->
 	
 
-	<div id="mainMenu">
+	<div id="mainMenu" style="clear:both">
 <?php 
 	$this->widget('application.extensions.mbmenu.MbMenu',array( 
 		'items'=>array( //Top level

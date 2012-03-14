@@ -15,15 +15,16 @@
 		echo " and last updated on <i>" . $updated . "</i>"; ?>	
 	</div>
 		
-	<div id="rating_info_<?=$data->rating_id?>">
+	<div  id="rating_info_<?=$data->rating_id?>">
 <?php 
 	if ( $rating = Rating::model()->findByPk($data->rating_id) )
 		{	
-			echo "Rating: " . $rating->vote_average;
+			echo "Rating: <strong>" . $rating->vote_average ."</strong>";
 			echo " " . $rating->vote_count . " votes";
 		}
 ?>
 	</div>
+
 	
 <?php // rating
 	$this->widget('CStarRating',array(
@@ -61,13 +62,13 @@
 		<b>Tags:</b>
 		<?php echo implode(', ', $data->tagLinks); ?>
 		<br/>
-<!--permalink--><?=CHtml::link('<i class="icon-eye-open icon-white"></i> Permalink', $data->url,array('class'=>'btn btn-primary' ) ); ?> 
+<!--Read--><?=CHtml::link('<i class="icon-eye-open icon-white"></i> Read', $data->url,array('class'=>'btn btn-success' ) ); ?> 
 
 <!--comments--><?=CHtml::link("<i class='icon-comment icon-white'></i> Comments ({$data->commentCount})",$data->url.'#comments',
 			array('class'=>'btn btn-primary' ) ); ?> 
 		
 <!--print--><?= CHtml::link('<i class="icon-print icon-white"></i> Print/Pdf', 
-					array('/howto/viewpdf/id/' . $data->id ), array('class'=>'btn btn-primary') );?>		
+					array('/viewpdf/id/' . $data->id ), array('class'=>'btn btn-primary') );?>		
 		
 <!--bookmark--><?= CHtml::link('<i class="icon-bookmark icon-white"></i> Bookmark ', 
 					array(''), array(

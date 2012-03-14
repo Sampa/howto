@@ -105,6 +105,7 @@ return array(
         		'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 				'profile/*'=>'user/view',
 				'howto/<show:.*?>'=>'howto/index/',
+				'viewpdf/*'=>'howto/viewpdf',
 
 
 				//'<controller:\w+>/<id:\d+>'=>'<controller>/view', 

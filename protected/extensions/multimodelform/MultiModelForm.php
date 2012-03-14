@@ -249,6 +249,7 @@ class MultiModelForm extends CWidget
         return "if(this.hasClass('hasDatepicker')) {this.removeClass('hasDatepicker'); this.datepicker(jQuery.extend({showMonthAfterYear:false}, $language {$jsOptions}));};";
     }
 
+	
     /**
      * Support for extension datetimepicker
      * @link http://www.yiiframework.com/extension/datetimepicker/
@@ -1003,15 +1004,16 @@ class MultiModelRenderForm extends CForm
         $output = '';
 
         $elements = $this->getElements();
-
+		
         foreach ($elements as $element)
         {
-            if (isset($element->name)) //element is an attribute of the model
+			$count = $this->index;
+		  if (isset($element->name)) //element is an attribute of the model
             {
                 $elemName = $element->name;
                 $elemLabel = $element->renderLabel(); //get the correct/nice label before changing name
                 $element->label = ''; //no label on $element->render()
-
+			
                 if ($this->isCopyTemplate) // new fieldset
                 {
                     if ($element->visible)
@@ -1026,6 +1028,8 @@ class MultiModelRenderForm extends CForm
                         $elemOutput .= $element->render();
                         //bugfix: v2.1 - don't render hidden inputs in table cell
                         $output .= $element->type == 'hidden' ? $elemOutput : $this->getWrappedRow($elemOutput);
+				
+				
                     }
                 }
                 elseif (!empty($this->primaryKey))
@@ -1033,7 +1037,7 @@ class MultiModelRenderForm extends CForm
 
                     $prefix = 'u__';
                     $element->name = '[' . $prefix . '][' . $this->index . ']' . $elemName;
-
+	//TOG PAUSE					// maybe maybe here we can hustle med editorn $this->index ftw?
                     if ($element->type == 'hidden')
                         $output .= $element->render();
                     else
@@ -1049,7 +1053,9 @@ class MultiModelRenderForm extends CForm
                     {
                         $prefix = 'n__';
                         $element->name = '[' . $prefix . '][' . $this->index . ']' . $elemName;
-
+					
+					
+					
                         if ($element->type == 'hidden')
                             $output .= $element->render();
                         else
@@ -1126,6 +1132,9 @@ class MultiModelRenderForm extends CForm
         $elemOutput = $this->renderBegin();
         $elemOutput .= $this->renderFormElements();
         $elemOutput .= $this->renderEnd();
+		$elemOutput .="";
+	
+					
         // wrap $elemOutput
         $wrapperClass = $this->parentWidget->fieldsetWrapper['htmlOptions']['class'];
 
