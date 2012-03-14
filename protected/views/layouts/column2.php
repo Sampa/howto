@@ -1,11 +1,11 @@
 <?php $this->beginContent('application.views.layouts.main'); ?>
-<div class="container">
-	<div class="span-18">
+<div class="row-fluid">
+	<div class="span9">
 		<div id="content">
 			<?php echo $content; ?>
 		</div><!-- content -->
 	</div>
-	<div class="span-6 last">
+	<div class="span3">
 		<div id="sidebar">
 
 			<?php 

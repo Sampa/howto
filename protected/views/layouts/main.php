@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="language" content="en" />
-
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<!-- blueprint CSS framework -->
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/screen.css" media="screen, projection" />
@@ -63,16 +63,16 @@
 	$this->widget('application.extensions.mbmenu.MbMenu',array( 
 		'items'=>array( //Top level
 				array('label'=>'Home', 'url'=>'//blog'),
-				array('label'=>'About', 'url'=>array('/about')),
-				array('label'=>'Contact', 'url'=>array('/site/contact')),
+				array('label'=>'About', 'url'=>array('//about')),
+				array('label'=>'Contact', 'url'=>array('//contact')),
 				array('label'=>'Howtos','url'=>array( '//howto'),
 								'items'=>array( //submenu under "Howtos" If user has Howto.Admin
 									array(
 										'label'=>'Create New Howto',
-										'url'=>array( '/howto/create' ), 
+										'url'=>array( '//howto/create' ), 
 										'visible'=>Yii::app()->user->checkAccess( 'Howto.Create' )
 									),
-									array('label'=>'New!','url'=>array( '/howto/show/new' ), 
+									array('label'=>'New!','url'=>array( '//howto/show/new' ), 
 									),
 									array('label'=>'Popular!','url'=>array( '/howto/show/popular' ), 
 									),

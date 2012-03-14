@@ -7,7 +7,7 @@
 // CWebApplication properties can be configured here.
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'Howto',
+	'name'=>'Template',
 
 	// preloading 'log' component
 	'preload'=>array(
@@ -24,9 +24,11 @@ return array(
 		'application.modules.rights.components.*',
 		'application.extensions.debugtoolbar.*',
 		'ext.xupload.models.XUploadForm',
+		'ext.wform.*',
 	
 	),
 
+	'defaultController'=>'post',
 
 	// application modules
 	'modules'=>array(
@@ -40,7 +42,7 @@ return array(
 			'password'=>'admin',
 		 	// If removed, Gii defaults to localhost only. Edit carefully to taste.
 			'ipFilters'=>array('127.0.0.1','::1'),
-			'generatorPaths'=>array('ext.bootrap.gii.templates.default',),
+			'generatorPaths'=>array('bootrap.gii',),
 		),
     ),
 
@@ -71,11 +73,19 @@ return array(
         ),
     ),
 
-		'db'=>array(
+		/*'db'=>array(
 			'connectionString' => 'mysql:host=localhost;dbname=blog',
 			'emulatePrepare' => true,
 			'username' => 'root',
 			'password' => '',
+			'charset' => 'utf8',
+			'tablePrefix' => 'tbl_',
+		),*/
+		'db'=>array(
+			'connectionString' => 'mysql:host=blog-144504.mysql.binero.se;dbname=144504-blog',
+			'emulatePrepare' => true,
+			'username' => '144504_ke85586',
+			'password' => '144504_ke85586',
 			'charset' => 'utf8',
 			'tablePrefix' => 'tbl_',
 		),
@@ -97,17 +107,10 @@ return array(
         'urlManager'=>array(
         	'urlFormat'=>'path',
         	'rules'=>array(
-				'page/<view:\w+>/*'=>'site/page',
-				'contact'=>'site/contact',
-				'about'=>'site/page/view/about',
-        		'howto/<id:\d+>/<title:.*?>'=>'howto/view',
-        		'tag/<tag:.*?>'=>'howto/index',
+        		'post/<id:\d+>/<title:.*?>'=>'post/view',
+        		'posts/<tag:.*?>'=>'post/index',
         		'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 				'profile/*'=>'user/view',
-				'howto/<show:.*?>'=>'howto/index/',
-
-
-				//'<controller:\w+>/<id:\d+>'=>'<controller>/view', 
 					),
 			'showScriptName'=>false,
 			'caseSensitive'=>false, 
@@ -138,7 +141,7 @@ return array(
         'class'         => 'ext.yii-pdf.EYiiPdf',
         'params'        => array(
             'mpdf'     => array(
-                'librarySourcePath' => 'application.vendors.mpdf.*',
+                'librarySourcePath' => 'application.extentions.mpdf.*',
                 'constants'         => array(
                     '_MPDF_TEMP_PATH' => Yii::getPathOfAlias('application.runtime'),
                 ),
