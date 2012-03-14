@@ -6122,3 +6122,2180 @@ Stack trace:
 REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
 HTTP_REFERER=http://83.233.118.50/assets/f2e4380d/mbmenu.css
 ---
+2012/03/14 00:26:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://83.233.118.50/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 00:27:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://83.233.118.50/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 00:27:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "announce".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('announce')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/announce?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A&peer_id=-AZ4702-lhG8bmMrfyX5&supportcrypto=1&port=40694&azudp=40694&uploaded=0&downloaded=0&left=0&corrupt=0&event=started&numwant=75&no_peer_id=1&compact=1&key=bOfqx6qg&azver=3
+---
+2012/03/14 00:28:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "announce".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('announce')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/announce?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A&peer_id=-AZ4702-lhG8bmMrfyX5&supportcrypto=1&port=40694&azudp=40694&uploaded=0&downloaded=0&left=0&corrupt=0&event=started&numwant=75&no_peer_id=1&compact=1&key=bOfqx6qg&azver=3
+---
+2012/03/14 00:29:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%11%01%A8%B5%AFB%EFSH%D8%F5%60%A1%83%01%04%96%8D%B3f&info_hash=%E1%BC%8C%8A%FA%24k%0A%DF%5B%FD%3CG%F6%89%2B%97%D4%BAq&info_hash=%ADe%93o%9E%14%B9%E1-%AFJ%8E%D5%D8%FEm%9D%A0%0C%A7&info_hash=%94N%F3%40%21%BE%89v%5CZ%A2%28%9F%86%D5%D6%28%20%FE%2B&info_hash=G%29%A3T%5C%FC%09%B6%EA%EC%15q%24%BAZ%E0%AD%81%FF%40&info_hash=%05%E8j%40%F0%88%FC%BD%9D%DA%ADJ%82k%0Bpe%8E%E1%9F&info_hash=%A4%FD%B0a%1A%98Wj%11c%A6%C8%AD%FA%A6%06%207l-&info_hash=%7B%E3z%C7%F6%5D%C7%8B%F8%B1%15b%9E%60%22%0Cc%7F%E0%D1&info_hash=%FF%F0y%8D%83N%92%60%D1%CCn%97%FF%F4%12pv%60%CD%A9&info_hash=%09%88%FB%D1%A0%97%C0P%88%13%0D%BB%C4%A4%2C%F9*%83%CC%AE&info_hash=%E8%F1%F4%88%15%7D%96v%98y%D4%A4%2C%06%A8%F0%80A%3F%F4&info_hash=%F8%EA%80%DA%0Av_%F4%C6k%3D%28lu5%EB%FF%BF%DC%3B&info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A&info_hash=%CFw%8E-%CF6%A1%8F%AB%F8%83K%29L%2B%C8%FD%AF%26I&info_hash=%C1%29%FC%40r%08V%3E%87l%A4%E6%FF%B7%06%D1%96%10%12%92&info_hash=%F1%0A%D7%7C%88%23u%EC%5D%8F%C3%A9%3BW%15%E5v%DA%D0%21&info_hash=%A2%B8Ag%3B%80%92%E4%00%7B%B5%F9%CD7%9D%3BV%AF%9F%7C&info_hash=J%3BV%2FX%09%D3Xf%EFt%11v%F9X%7D%BB%02%CA%09&info_hash=%12%85U%E9h%5D3%09%1F%21%24o%C0Jb%D2r%C2%8A3&info_hash=h%0C%01%C6%D4J%01%96D%99up%89%CD%21%3F1Y%F4%5D
+---
+2012/03/14 00:30:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "announce".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('announce')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/announce?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A&peer_id=-AZ4702-lhG8bmMrfyX5&supportcrypto=1&port=40694&azudp=40694&uploaded=0&downloaded=0&left=0&corrupt=0&event=started&numwant=75&no_peer_id=1&compact=1&key=bOfqx6qg&azver=3
+---
+2012/03/14 00:30:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%17*J%A2%D5%95%FA%B8%AD%DC%F3Q%BC%89%DA%29%FF%8A%40%87&info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A
+---
+2012/03/14 00:35:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "announce".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('announce')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/announce?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A&peer_id=-AZ4702-lhG8bmMrfyX5&supportcrypto=1&port=40694&azudp=40694&uploaded=5439636&downloaded=0&left=0&corrupt=0&event=started&numwant=61&no_peer_id=1&compact=1&key=bOfqx6qg&azver=3
+---
+2012/03/14 00:41:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A
+---
+2012/03/14 00:46:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "announce".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('announce')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/announce?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A&peer_id=-AZ4702-lhG8bmMrfyX5&supportcrypto=1&port=40694&azudp=40694&uploaded=66464896&downloaded=0&left=0&corrupt=0&event=started&numwant=42&no_peer_id=1&compact=1&key=bOfqx6qg&azver=3
+---
+2012/03/14 00:51:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A
+---
+2012/03/14 01:01:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A
+---
+2012/03/14 01:03:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "announce".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('announce')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/announce?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A&peer_id=-AZ4702-lhG8bmMrfyX5&supportcrypto=1&port=40694&azudp=40694&uploaded=164784624&downloaded=0&left=0&corrupt=0&event=started&numwant=37&no_peer_id=1&compact=1&key=bOfqx6qg&azver=3
+---
+2012/03/14 01:11:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A
+---
+2012/03/14 01:21:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A&info_hash=%E1%BC%8C%8A%FA%24k%0A%DF%5B%FD%3CG%F6%89%2B%97%D4%BAq&info_hash=%ADe%93o%9E%14%B9%E1-%AFJ%8E%D5%D8%FEm%9D%A0%0C%A7&info_hash=%94N%F3%40%21%BE%89v%5CZ%A2%28%9F%86%D5%D6%28%20%FE%2B&info_hash=G%29%A3T%5C%FC%09%B6%EA%EC%15q%24%BAZ%E0%AD%81%FF%40&info_hash=%05%E8j%40%F0%88%FC%BD%9D%DA%ADJ%82k%0Bpe%8E%E1%9F&info_hash=%A4%FD%B0a%1A%98Wj%11c%A6%C8%AD%FA%A6%06%207l-&info_hash=%7B%E3z%C7%F6%5D%C7%8B%F8%B1%15b%9E%60%22%0Cc%7F%E0%D1&info_hash=%FF%F0y%8D%83N%92%60%D1%CCn%97%FF%F4%12pv%60%CD%A9&info_hash=%09%88%FB%D1%A0%97%C0P%88%13%0D%BB%C4%A4%2C%F9*%83%CC%AE&info_hash=%F8%EA%80%DA%0Av_%F4%C6k%3D%28lu5%EB%FF%BF%DC%3B&info_hash=%CFw%8E-%CF6%A1%8F%AB%F8%83K%29L%2B%C8%FD%AF%26I&info_hash=%C1%29%FC%40r%08V%3E%87l%A4%E6%FF%B7%06%D1%96%10%12%92&info_hash=%F1%0A%D7%7C%88%23u%EC%5D%8F%C3%A9%3BW%15%E5v%DA%D0%21&info_hash=%A2%B8Ag%3B%80%92%E4%00%7B%B5%F9%CD7%9D%3BV%AF%9F%7C&info_hash=%12%85U%E9h%5D3%09%1F%21%24o%C0Jb%D2r%C2%8A3&info_hash=h%0C%01%C6%D4J%01%96D%99up%89%CD%21%3F1Y%F4%5D&info_hash=%17*J%A2%D5%95%FA%B8%AD%DC%F3Q%BC%89%DA%29%FF%8A%40%87
+---
+2012/03/14 01:31:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A&info_hash=%E8%F1%F4%88%15%7D%96v%98y%D4%A4%2C%06%A8%F0%80A%3F%F4
+---
+2012/03/14 01:42:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A
+---
+2012/03/14 01:52:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A
+---
+2012/03/14 02:02:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A
+---
+2012/03/14 02:03:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "announce".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('announce')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/announce?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A&peer_id=-AZ4702-lhG8bmMrfyX5&supportcrypto=1&port=40694&azudp=40694&uploaded=466821188&downloaded=0&left=0&corrupt=0&event=started&numwant=28&no_peer_id=1&compact=1&key=bOfqx6qg&azver=3
+---
+2012/03/14 02:12:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A&info_hash=%E1%BC%8C%8A%FA%24k%0A%DF%5B%FD%3CG%F6%89%2B%97%D4%BAq&info_hash=%ADe%93o%9E%14%B9%E1-%AFJ%8E%D5%D8%FEm%9D%A0%0C%A7&info_hash=%94N%F3%40%21%BE%89v%5CZ%A2%28%9F%86%D5%D6%28%20%FE%2B&info_hash=G%29%A3T%5C%FC%09%B6%EA%EC%15q%24%BAZ%E0%AD%81%FF%40&info_hash=%05%E8j%40%F0%88%FC%BD%9D%DA%ADJ%82k%0Bpe%8E%E1%9F&info_hash=%A4%FD%B0a%1A%98Wj%11c%A6%C8%AD%FA%A6%06%207l-&info_hash=%7B%E3z%C7%F6%5D%C7%8B%F8%B1%15b%9E%60%22%0Cc%7F%E0%D1&info_hash=%FF%F0y%8D%83N%92%60%D1%CCn%97%FF%F4%12pv%60%CD%A9&info_hash=%09%88%FB%D1%A0%97%C0P%88%13%0D%BB%C4%A4%2C%F9*%83%CC%AE&info_hash=%F8%EA%80%DA%0Av_%F4%C6k%3D%28lu5%EB%FF%BF%DC%3B&info_hash=%CFw%8E-%CF6%A1%8F%AB%F8%83K%29L%2B%C8%FD%AF%26I&info_hash=%C1%29%FC%40r%08V%3E%87l%A4%E6%FF%B7%06%D1%96%10%12%92&info_hash=%F1%0A%D7%7C%88%23u%EC%5D%8F%C3%A9%3BW%15%E5v%DA%D0%21&info_hash=%A2%B8Ag%3B%80%92%E4%00%7B%B5%F9%CD7%9D%3BV%AF%9F%7C&info_hash=%12%85U%E9h%5D3%09%1F%21%24o%C0Jb%D2r%C2%8A3&info_hash=h%0C%01%C6%D4J%01%96D%99up%89%CD%21%3F1Y%F4%5D&info_hash=%17*J%A2%D5%95%FA%B8%AD%DC%F3Q%BC%89%DA%29%FF%8A%40%87
+---
+2012/03/14 02:22:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A&info_hash=%E8%F1%F4%88%15%7D%96v%98y%D4%A4%2C%06%A8%F0%80A%3F%F4&info_hash=%11%01%A8%B5%AFB%EFSH%D8%F5%60%A1%83%01%04%96%8D%B3f&info_hash=J%3BV%2FX%09%D3Xf%EFt%11v%F9X%7D%BB%02%CA%09
+---
+2012/03/14 02:32:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A
+---
+2012/03/14 02:42:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A
+---
+2012/03/14 02:52:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A
+---
+2012/03/14 03:03:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A&info_hash=%E1%BC%8C%8A%FA%24k%0A%DF%5B%FD%3CG%F6%89%2B%97%D4%BAq&info_hash=%ADe%93o%9E%14%B9%E1-%AFJ%8E%D5%D8%FEm%9D%A0%0C%A7&info_hash=%94N%F3%40%21%BE%89v%5CZ%A2%28%9F%86%D5%D6%28%20%FE%2B&info_hash=G%29%A3T%5C%FC%09%B6%EA%EC%15q%24%BAZ%E0%AD%81%FF%40&info_hash=%05%E8j%40%F0%88%FC%BD%9D%DA%ADJ%82k%0Bpe%8E%E1%9F&info_hash=%A4%FD%B0a%1A%98Wj%11c%A6%C8%AD%FA%A6%06%207l-&info_hash=%7B%E3z%C7%F6%5D%C7%8B%F8%B1%15b%9E%60%22%0Cc%7F%E0%D1&info_hash=%FF%F0y%8D%83N%92%60%D1%CCn%97%FF%F4%12pv%60%CD%A9&info_hash=%09%88%FB%D1%A0%97%C0P%88%13%0D%BB%C4%A4%2C%F9*%83%CC%AE&info_hash=%F8%EA%80%DA%0Av_%F4%C6k%3D%28lu5%EB%FF%BF%DC%3B&info_hash=%CFw%8E-%CF6%A1%8F%AB%F8%83K%29L%2B%C8%FD%AF%26I&info_hash=%C1%29%FC%40r%08V%3E%87l%A4%E6%FF%B7%06%D1%96%10%12%92&info_hash=%F1%0A%D7%7C%88%23u%EC%5D%8F%C3%A9%3BW%15%E5v%DA%D0%21&info_hash=%A2%B8Ag%3B%80%92%E4%00%7B%B5%F9%CD7%9D%3BV%AF%9F%7C&info_hash=%12%85U%E9h%5D3%09%1F%21%24o%C0Jb%D2r%C2%8A3&info_hash=h%0C%01%C6%D4J%01%96D%99up%89%CD%21%3F1Y%F4%5D&info_hash=%17*J%A2%D5%95%FA%B8%AD%DC%F3Q%BC%89%DA%29%FF%8A%40%87
+---
+2012/03/14 03:03:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "announce".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('announce')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/announce?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A&peer_id=-AZ4702-lhG8bmMrfyX5&supportcrypto=1&port=40694&azudp=40694&uploaded=768062242&downloaded=0&left=0&corrupt=0&event=started&numwant=40&no_peer_id=1&compact=1&key=bOfqx6qg&azver=3
+---
+2012/03/14 03:13:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A&info_hash=%E8%F1%F4%88%15%7D%96v%98y%D4%A4%2C%06%A8%F0%80A%3F%F4
+---
+2012/03/14 03:23:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A
+---
+2012/03/14 03:33:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A
+---
+2012/03/14 03:43:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A
+---
+2012/03/14 03:53:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A&info_hash=%E1%BC%8C%8A%FA%24k%0A%DF%5B%FD%3CG%F6%89%2B%97%D4%BAq&info_hash=%ADe%93o%9E%14%B9%E1-%AFJ%8E%D5%D8%FEm%9D%A0%0C%A7&info_hash=%94N%F3%40%21%BE%89v%5CZ%A2%28%9F%86%D5%D6%28%20%FE%2B&info_hash=G%29%A3T%5C%FC%09%B6%EA%EC%15q%24%BAZ%E0%AD%81%FF%40&info_hash=%05%E8j%40%F0%88%FC%BD%9D%DA%ADJ%82k%0Bpe%8E%E1%9F&info_hash=%A4%FD%B0a%1A%98Wj%11c%A6%C8%AD%FA%A6%06%207l-&info_hash=%7B%E3z%C7%F6%5D%C7%8B%F8%B1%15b%9E%60%22%0Cc%7F%E0%D1&info_hash=%FF%F0y%8D%83N%92%60%D1%CCn%97%FF%F4%12pv%60%CD%A9&info_hash=%09%88%FB%D1%A0%97%C0P%88%13%0D%BB%C4%A4%2C%F9*%83%CC%AE&info_hash=%F8%EA%80%DA%0Av_%F4%C6k%3D%28lu5%EB%FF%BF%DC%3B&info_hash=%CFw%8E-%CF6%A1%8F%AB%F8%83K%29L%2B%C8%FD%AF%26I&info_hash=%C1%29%FC%40r%08V%3E%87l%A4%E6%FF%B7%06%D1%96%10%12%92&info_hash=%F1%0A%D7%7C%88%23u%EC%5D%8F%C3%A9%3BW%15%E5v%DA%D0%21&info_hash=%A2%B8Ag%3B%80%92%E4%00%7B%B5%F9%CD7%9D%3BV%AF%9F%7C&info_hash=%12%85U%E9h%5D3%09%1F%21%24o%C0Jb%D2r%C2%8A3&info_hash=h%0C%01%C6%D4J%01%96D%99up%89%CD%21%3F1Y%F4%5D&info_hash=%17*J%A2%D5%95%FA%B8%AD%DC%F3Q%BC%89%DA%29%FF%8A%40%87
+---
+2012/03/14 04:03:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A&info_hash=%E8%F1%F4%88%15%7D%96v%98y%D4%A4%2C%06%A8%F0%80A%3F%F4
+---
+2012/03/14 04:03:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "announce".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('announce')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/announce?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A&peer_id=-AZ4702-lhG8bmMrfyX5&supportcrypto=1&port=40694&azudp=40694&uploaded=1091400207&downloaded=0&left=0&corrupt=0&event=started&numwant=36&no_peer_id=1&compact=1&key=bOfqx6qg&azver=3
+---
+2012/03/14 04:13:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A&info_hash=%11%01%A8%B5%AFB%EFSH%D8%F5%60%A1%83%01%04%96%8D%B3f&info_hash=J%3BV%2FX%09%D3Xf%EFt%11v%F9X%7D%BB%02%CA%09
+---
+2012/03/14 04:23:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A
+---
+2012/03/14 04:33:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A
+---
+2012/03/14 04:43:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A&info_hash=%E1%BC%8C%8A%FA%24k%0A%DF%5B%FD%3CG%F6%89%2B%97%D4%BAq&info_hash=%ADe%93o%9E%14%B9%E1-%AFJ%8E%D5%D8%FEm%9D%A0%0C%A7&info_hash=%94N%F3%40%21%BE%89v%5CZ%A2%28%9F%86%D5%D6%28%20%FE%2B&info_hash=G%29%A3T%5C%FC%09%B6%EA%EC%15q%24%BAZ%E0%AD%81%FF%40&info_hash=%05%E8j%40%F0%88%FC%BD%9D%DA%ADJ%82k%0Bpe%8E%E1%9F&info_hash=%A4%FD%B0a%1A%98Wj%11c%A6%C8%AD%FA%A6%06%207l-&info_hash=%7B%E3z%C7%F6%5D%C7%8B%F8%B1%15b%9E%60%22%0Cc%7F%E0%D1&info_hash=%FF%F0y%8D%83N%92%60%D1%CCn%97%FF%F4%12pv%60%CD%A9&info_hash=%09%88%FB%D1%A0%97%C0P%88%13%0D%BB%C4%A4%2C%F9*%83%CC%AE&info_hash=%F8%EA%80%DA%0Av_%F4%C6k%3D%28lu5%EB%FF%BF%DC%3B&info_hash=%CFw%8E-%CF6%A1%8F%AB%F8%83K%29L%2B%C8%FD%AF%26I&info_hash=%C1%29%FC%40r%08V%3E%87l%A4%E6%FF%B7%06%D1%96%10%12%92&info_hash=%F1%0A%D7%7C%88%23u%EC%5D%8F%C3%A9%3BW%15%E5v%DA%D0%21&info_hash=%A2%B8Ag%3B%80%92%E4%00%7B%B5%F9%CD7%9D%3BV%AF%9F%7C&info_hash=%12%85U%E9h%5D3%09%1F%21%24o%C0Jb%D2r%C2%8A3&info_hash=h%0C%01%C6%D4J%01%96D%99up%89%CD%21%3F1Y%F4%5D&info_hash=%17*J%A2%D5%95%FA%B8%AD%DC%F3Q%BC%89%DA%29%FF%8A%40%87
+---
+2012/03/14 04:53:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A
+---
+2012/03/14 05:03:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A
+---
+2012/03/14 05:03:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "announce".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('announce')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/announce?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A&peer_id=-AZ4702-lhG8bmMrfyX5&supportcrypto=1&port=40694&azudp=40694&uploaded=1382584963&downloaded=0&left=0&corrupt=0&event=started&numwant=34&no_peer_id=1&compact=1&key=bOfqx6qg&azver=3
+---
+2012/03/14 05:13:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A
+---
+2012/03/14 05:23:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A
+---
+2012/03/14 05:33:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A&info_hash=%E1%BC%8C%8A%FA%24k%0A%DF%5B%FD%3CG%F6%89%2B%97%D4%BAq&info_hash=%ADe%93o%9E%14%B9%E1-%AFJ%8E%D5%D8%FEm%9D%A0%0C%A7&info_hash=%94N%F3%40%21%BE%89v%5CZ%A2%28%9F%86%D5%D6%28%20%FE%2B&info_hash=G%29%A3T%5C%FC%09%B6%EA%EC%15q%24%BAZ%E0%AD%81%FF%40&info_hash=%05%E8j%40%F0%88%FC%BD%9D%DA%ADJ%82k%0Bpe%8E%E1%9F&info_hash=%A4%FD%B0a%1A%98Wj%11c%A6%C8%AD%FA%A6%06%207l-&info_hash=%7B%E3z%C7%F6%5D%C7%8B%F8%B1%15b%9E%60%22%0Cc%7F%E0%D1&info_hash=%FF%F0y%8D%83N%92%60%D1%CCn%97%FF%F4%12pv%60%CD%A9&info_hash=%09%88%FB%D1%A0%97%C0P%88%13%0D%BB%C4%A4%2C%F9*%83%CC%AE&info_hash=%E8%F1%F4%88%15%7D%96v%98y%D4%A4%2C%06%A8%F0%80A%3F%F4&info_hash=%F8%EA%80%DA%0Av_%F4%C6k%3D%28lu5%EB%FF%BF%DC%3B&info_hash=%CFw%8E-%CF6%A1%8F%AB%F8%83K%29L%2B%C8%FD%AF%26I&info_hash=%C1%29%FC%40r%08V%3E%87l%A4%E6%FF%B7%06%D1%96%10%12%92&info_hash=%F1%0A%D7%7C%88%23u%EC%5D%8F%C3%A9%3BW%15%E5v%DA%D0%21&info_hash=%A2%B8Ag%3B%80%92%E4%00%7B%B5%F9%CD7%9D%3BV%AF%9F%7C&info_hash=%12%85U%E9h%5D3%09%1F%21%24o%C0Jb%D2r%C2%8A3&info_hash=h%0C%01%C6%D4J%01%96D%99up%89%CD%21%3F1Y%F4%5D&info_hash=%17*J%A2%D5%95%FA%B8%AD%DC%F3Q%BC%89%DA%29%FF%8A%40%87
+---
+2012/03/14 05:43:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A
+---
+2012/03/14 05:53:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A
+---
+2012/03/14 06:03:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "announce".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('announce')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/announce?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A&peer_id=-AZ4702-lhG8bmMrfyX5&supportcrypto=1&port=40694&azudp=40694&uploaded=1663803042&downloaded=0&left=0&corrupt=0&event=started&numwant=27&no_peer_id=1&compact=1&key=bOfqx6qg&azver=3
+---
+2012/03/14 06:03:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A&info_hash=%11%01%A8%B5%AFB%EFSH%D8%F5%60%A1%83%01%04%96%8D%B3f&info_hash=J%3BV%2FX%09%D3Xf%EFt%11v%F9X%7D%BB%02%CA%09
+---
+2012/03/14 06:13:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A
+---
+2012/03/14 06:23:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A&info_hash=%E1%BC%8C%8A%FA%24k%0A%DF%5B%FD%3CG%F6%89%2B%97%D4%BAq&info_hash=%ADe%93o%9E%14%B9%E1-%AFJ%8E%D5%D8%FEm%9D%A0%0C%A7&info_hash=%94N%F3%40%21%BE%89v%5CZ%A2%28%9F%86%D5%D6%28%20%FE%2B&info_hash=G%29%A3T%5C%FC%09%B6%EA%EC%15q%24%BAZ%E0%AD%81%FF%40&info_hash=%05%E8j%40%F0%88%FC%BD%9D%DA%ADJ%82k%0Bpe%8E%E1%9F&info_hash=%A4%FD%B0a%1A%98Wj%11c%A6%C8%AD%FA%A6%06%207l-&info_hash=%7B%E3z%C7%F6%5D%C7%8B%F8%B1%15b%9E%60%22%0Cc%7F%E0%D1&info_hash=%FF%F0y%8D%83N%92%60%D1%CCn%97%FF%F4%12pv%60%CD%A9&info_hash=%09%88%FB%D1%A0%97%C0P%88%13%0D%BB%C4%A4%2C%F9*%83%CC%AE&info_hash=%E8%F1%F4%88%15%7D%96v%98y%D4%A4%2C%06%A8%F0%80A%3F%F4&info_hash=%F8%EA%80%DA%0Av_%F4%C6k%3D%28lu5%EB%FF%BF%DC%3B&info_hash=%CFw%8E-%CF6%A1%8F%AB%F8%83K%29L%2B%C8%FD%AF%26I&info_hash=%C1%29%FC%40r%08V%3E%87l%A4%E6%FF%B7%06%D1%96%10%12%92&info_hash=%F1%0A%D7%7C%88%23u%EC%5D%8F%C3%A9%3BW%15%E5v%DA%D0%21&info_hash=%A2%B8Ag%3B%80%92%E4%00%7B%B5%F9%CD7%9D%3BV%AF%9F%7C&info_hash=%12%85U%E9h%5D3%09%1F%21%24o%C0Jb%D2r%C2%8A3&info_hash=h%0C%01%C6%D4J%01%96D%99up%89%CD%21%3F1Y%F4%5D&info_hash=%17*J%A2%D5%95%FA%B8%AD%DC%F3Q%BC%89%DA%29%FF%8A%40%87
+---
+2012/03/14 06:33:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A
+---
+2012/03/14 06:43:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A
+---
+2012/03/14 06:53:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A
+---
+2012/03/14 07:03:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "announce".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('announce')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/announce?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A&peer_id=-AZ4702-lhG8bmMrfyX5&supportcrypto=1&port=40694&azudp=40694&uploaded=1935826891&downloaded=0&left=0&corrupt=0&event=started&numwant=30&no_peer_id=1&compact=1&key=bOfqx6qg&azver=3
+---
+2012/03/14 07:03:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A
+---
+2012/03/14 07:13:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A&info_hash=%E1%BC%8C%8A%FA%24k%0A%DF%5B%FD%3CG%F6%89%2B%97%D4%BAq&info_hash=%ADe%93o%9E%14%B9%E1-%AFJ%8E%D5%D8%FEm%9D%A0%0C%A7&info_hash=%94N%F3%40%21%BE%89v%5CZ%A2%28%9F%86%D5%D6%28%20%FE%2B&info_hash=G%29%A3T%5C%FC%09%B6%EA%EC%15q%24%BAZ%E0%AD%81%FF%40&info_hash=%05%E8j%40%F0%88%FC%BD%9D%DA%ADJ%82k%0Bpe%8E%E1%9F&info_hash=%A4%FD%B0a%1A%98Wj%11c%A6%C8%AD%FA%A6%06%207l-&info_hash=%7B%E3z%C7%F6%5D%C7%8B%F8%B1%15b%9E%60%22%0Cc%7F%E0%D1&info_hash=%FF%F0y%8D%83N%92%60%D1%CCn%97%FF%F4%12pv%60%CD%A9&info_hash=%09%88%FB%D1%A0%97%C0P%88%13%0D%BB%C4%A4%2C%F9*%83%CC%AE&info_hash=%E8%F1%F4%88%15%7D%96v%98y%D4%A4%2C%06%A8%F0%80A%3F%F4&info_hash=%F8%EA%80%DA%0Av_%F4%C6k%3D%28lu5%EB%FF%BF%DC%3B&info_hash=%CFw%8E-%CF6%A1%8F%AB%F8%83K%29L%2B%C8%FD%AF%26I&info_hash=%C1%29%FC%40r%08V%3E%87l%A4%E6%FF%B7%06%D1%96%10%12%92&info_hash=%F1%0A%D7%7C%88%23u%EC%5D%8F%C3%A9%3BW%15%E5v%DA%D0%21&info_hash=%A2%B8Ag%3B%80%92%E4%00%7B%B5%F9%CD7%9D%3BV%AF%9F%7C&info_hash=%12%85U%E9h%5D3%09%1F%21%24o%C0Jb%D2r%C2%8A3&info_hash=h%0C%01%C6%D4J%01%96D%99up%89%CD%21%3F1Y%F4%5D&info_hash=%17*J%A2%D5%95%FA%B8%AD%DC%F3Q%BC%89%DA%29%FF%8A%40%87
+---
+2012/03/14 07:23:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A
+---
+2012/03/14 07:33:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A
+---
+2012/03/14 07:43:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A
+---
+2012/03/14 07:53:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A&info_hash=%11%01%A8%B5%AFB%EFSH%D8%F5%60%A1%83%01%04%96%8D%B3f&info_hash=J%3BV%2FX%09%D3Xf%EFt%11v%F9X%7D%BB%02%CA%09
+---
+2012/03/14 08:03:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "announce".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('announce')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/announce?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A&peer_id=-AZ4702-lhG8bmMrfyX5&supportcrypto=1&port=40694&azudp=40694&uploaded=2227095720&downloaded=0&left=0&corrupt=0&event=started&numwant=27&no_peer_id=1&compact=1&key=bOfqx6qg&azver=3
+---
+2012/03/14 08:03:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A&info_hash=%E1%BC%8C%8A%FA%24k%0A%DF%5B%FD%3CG%F6%89%2B%97%D4%BAq&info_hash=%ADe%93o%9E%14%B9%E1-%AFJ%8E%D5%D8%FEm%9D%A0%0C%A7&info_hash=%94N%F3%40%21%BE%89v%5CZ%A2%28%9F%86%D5%D6%28%20%FE%2B&info_hash=G%29%A3T%5C%FC%09%B6%EA%EC%15q%24%BAZ%E0%AD%81%FF%40&info_hash=%05%E8j%40%F0%88%FC%BD%9D%DA%ADJ%82k%0Bpe%8E%E1%9F&info_hash=%A4%FD%B0a%1A%98Wj%11c%A6%C8%AD%FA%A6%06%207l-&info_hash=%7B%E3z%C7%F6%5D%C7%8B%F8%B1%15b%9E%60%22%0Cc%7F%E0%D1&info_hash=%FF%F0y%8D%83N%92%60%D1%CCn%97%FF%F4%12pv%60%CD%A9&info_hash=%09%88%FB%D1%A0%97%C0P%88%13%0D%BB%C4%A4%2C%F9*%83%CC%AE&info_hash=%E8%F1%F4%88%15%7D%96v%98y%D4%A4%2C%06%A8%F0%80A%3F%F4&info_hash=%F8%EA%80%DA%0Av_%F4%C6k%3D%28lu5%EB%FF%BF%DC%3B&info_hash=%CFw%8E-%CF6%A1%8F%AB%F8%83K%29L%2B%C8%FD%AF%26I&info_hash=%C1%29%FC%40r%08V%3E%87l%A4%E6%FF%B7%06%D1%96%10%12%92&info_hash=%F1%0A%D7%7C%88%23u%EC%5D%8F%C3%A9%3BW%15%E5v%DA%D0%21&info_hash=%A2%B8Ag%3B%80%92%E4%00%7B%B5%F9%CD7%9D%3BV%AF%9F%7C&info_hash=%12%85U%E9h%5D3%09%1F%21%24o%C0Jb%D2r%C2%8A3&info_hash=h%0C%01%C6%D4J%01%96D%99up%89%CD%21%3F1Y%F4%5D&info_hash=%17*J%A2%D5%95%FA%B8%AD%DC%F3Q%BC%89%DA%29%FF%8A%40%87
+---
+2012/03/14 08:13:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A
+---
+2012/03/14 08:24:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A
+---
+2012/03/14 08:34:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A
+---
+2012/03/14 08:44:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A
+---
+2012/03/14 08:54:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A&info_hash=%E1%BC%8C%8A%FA%24k%0A%DF%5B%FD%3CG%F6%89%2B%97%D4%BAq&info_hash=%ADe%93o%9E%14%B9%E1-%AFJ%8E%D5%D8%FEm%9D%A0%0C%A7&info_hash=%94N%F3%40%21%BE%89v%5CZ%A2%28%9F%86%D5%D6%28%20%FE%2B&info_hash=G%29%A3T%5C%FC%09%B6%EA%EC%15q%24%BAZ%E0%AD%81%FF%40&info_hash=%05%E8j%40%F0%88%FC%BD%9D%DA%ADJ%82k%0Bpe%8E%E1%9F&info_hash=%A4%FD%B0a%1A%98Wj%11c%A6%C8%AD%FA%A6%06%207l-&info_hash=%7B%E3z%C7%F6%5D%C7%8B%F8%B1%15b%9E%60%22%0Cc%7F%E0%D1&info_hash=%FF%F0y%8D%83N%92%60%D1%CCn%97%FF%F4%12pv%60%CD%A9&info_hash=%09%88%FB%D1%A0%97%C0P%88%13%0D%BB%C4%A4%2C%F9*%83%CC%AE&info_hash=%F8%EA%80%DA%0Av_%F4%C6k%3D%28lu5%EB%FF%BF%DC%3B&info_hash=%CFw%8E-%CF6%A1%8F%AB%F8%83K%29L%2B%C8%FD%AF%26I&info_hash=%C1%29%FC%40r%08V%3E%87l%A4%E6%FF%B7%06%D1%96%10%12%92&info_hash=%F1%0A%D7%7C%88%23u%EC%5D%8F%C3%A9%3BW%15%E5v%DA%D0%21&info_hash=%A2%B8Ag%3B%80%92%E4%00%7B%B5%F9%CD7%9D%3BV%AF%9F%7C&info_hash=%12%85U%E9h%5D3%09%1F%21%24o%C0Jb%D2r%C2%8A3&info_hash=h%0C%01%C6%D4J%01%96D%99up%89%CD%21%3F1Y%F4%5D&info_hash=%17*J%A2%D5%95%FA%B8%AD%DC%F3Q%BC%89%DA%29%FF%8A%40%87
+---
+2012/03/14 09:03:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "announce".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('announce')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/announce?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A&peer_id=-AZ4702-lhG8bmMrfyX5&supportcrypto=1&port=40694&azudp=40694&uploaded=2486505434&downloaded=0&left=0&corrupt=0&event=started&numwant=34&no_peer_id=1&compact=1&key=bOfqx6qg&azver=3
+---
+2012/03/14 09:04:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A
+---
+2012/03/14 09:14:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A
+---
+2012/03/14 09:24:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A
+---
+2012/03/14 09:34:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A&info_hash=%E8%F1%F4%88%15%7D%96v%98y%D4%A4%2C%06%A8%F0%80A%3F%F4
+---
+2012/03/14 09:43:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://83.233.118.50/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 09:44:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A&info_hash=%E1%BC%8C%8A%FA%24k%0A%DF%5B%FD%3CG%F6%89%2B%97%D4%BAq&info_hash=%ADe%93o%9E%14%B9%E1-%AFJ%8E%D5%D8%FEm%9D%A0%0C%A7&info_hash=%94N%F3%40%21%BE%89v%5CZ%A2%28%9F%86%D5%D6%28%20%FE%2B&info_hash=G%29%A3T%5C%FC%09%B6%EA%EC%15q%24%BAZ%E0%AD%81%FF%40&info_hash=%05%E8j%40%F0%88%FC%BD%9D%DA%ADJ%82k%0Bpe%8E%E1%9F&info_hash=%A4%FD%B0a%1A%98Wj%11c%A6%C8%AD%FA%A6%06%207l-&info_hash=%7B%E3z%C7%F6%5D%C7%8B%F8%B1%15b%9E%60%22%0Cc%7F%E0%D1&info_hash=%FF%F0y%8D%83N%92%60%D1%CCn%97%FF%F4%12pv%60%CD%A9&info_hash=%09%88%FB%D1%A0%97%C0P%88%13%0D%BB%C4%A4%2C%F9*%83%CC%AE&info_hash=%F8%EA%80%DA%0Av_%F4%C6k%3D%28lu5%EB%FF%BF%DC%3B&info_hash=%CFw%8E-%CF6%A1%8F%AB%F8%83K%29L%2B%C8%FD%AF%26I&info_hash=%C1%29%FC%40r%08V%3E%87l%A4%E6%FF%B7%06%D1%96%10%12%92&info_hash=%F1%0A%D7%7C%88%23u%EC%5D%8F%C3%A9%3BW%15%E5v%DA%D0%21&info_hash=%A2%B8Ag%3B%80%92%E4%00%7B%B5%F9%CD7%9D%3BV%AF%9F%7C&info_hash=%11%01%A8%B5%AFB%EFSH%D8%F5%60%A1%83%01%04%96%8D%B3f&info_hash=J%3BV%2FX%09%D3Xf%EFt%11v%F9X%7D%BB%02%CA%09&info_hash=%12%85U%E9h%5D3%09%1F%21%24o%C0Jb%D2r%C2%8A3&info_hash=h%0C%01%C6%D4J%01%96D%99up%89%CD%21%3F1Y%F4%5D&info_hash=%17*J%A2%D5%95%FA%B8%AD%DC%F3Q%BC%89%DA%29%FF%8A%40%87
+---
+2012/03/14 09:47:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://83.233.118.50/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 09:47:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "announce".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('announce')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/announce?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A&peer_id=-AZ4702-lhG8bmMrfyX5&supportcrypto=1&port=40694&azudp=40694&uploaded=2661198388&downloaded=0&left=0&corrupt=0&event=started&numwant=34&no_peer_id=1&compact=1&key=bOfqx6qg&azver=3
+---
+2012/03/14 09:54:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A
+---
+2012/03/14 09:58:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "213.92.8.7:31204".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('213.92.8.7:3120...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=213.92.8.7:31204
+---
+2012/03/14 09:58:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "freenode-proxy-checker.txt".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('freenode-proxy-...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=http://vlad-tepes.bofh.it/freenode-proxy-checker.txt
+---
+2012/03/14 10:06:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "announce".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('announce')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/announce?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A&peer_id=-AZ4702-lhG8bmMrfyX5&supportcrypto=1&port=40694&azudp=40694&uploaded=2700387397&downloaded=0&left=0&corrupt=0&event=started&numwant=43&no_peer_id=1&compact=1&key=bOfqx6qg&azver=3
+---
+2012/03/14 10:14:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A
+---
+2012/03/14 10:24:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A
+---
+2012/03/14 10:34:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A
+---
+2012/03/14 10:39:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://83.233.118.50/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 10:42:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://83.233.118.50/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 10:44:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A
+---
+2012/03/14 10:44:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://83.233.118.50/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 10:44:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://83.233.118.50/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 10:44:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://83.233.118.50/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 10:44:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://83.233.118.50/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 10:45:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://83.233.118.50/
+---
+2012/03/14 10:45:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/03/14 10:54:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A&info_hash=%E1%BC%8C%8A%FA%24k%0A%DF%5B%FD%3CG%F6%89%2B%97%D4%BAq&info_hash=%ADe%93o%9E%14%B9%E1-%AFJ%8E%D5%D8%FEm%9D%A0%0C%A7&info_hash=%94N%F3%40%21%BE%89v%5CZ%A2%28%9F%86%D5%D6%28%20%FE%2B&info_hash=G%29%A3T%5C%FC%09%B6%EA%EC%15q%24%BAZ%E0%AD%81%FF%40&info_hash=%05%E8j%40%F0%88%FC%BD%9D%DA%ADJ%82k%0Bpe%8E%E1%9F&info_hash=%A4%FD%B0a%1A%98Wj%11c%A6%C8%AD%FA%A6%06%207l-&info_hash=%7B%E3z%C7%F6%5D%C7%8B%F8%B1%15b%9E%60%22%0Cc%7F%E0%D1&info_hash=%FF%F0y%8D%83N%92%60%D1%CCn%97%FF%F4%12pv%60%CD%A9&info_hash=%09%88%FB%D1%A0%97%C0P%88%13%0D%BB%C4%A4%2C%F9*%83%CC%AE&info_hash=%E8%F1%F4%88%15%7D%96v%98y%D4%A4%2C%06%A8%F0%80A%3F%F4&info_hash=%F8%EA%80%DA%0Av_%F4%C6k%3D%28lu5%EB%FF%BF%DC%3B&info_hash=%CFw%8E-%CF6%A1%8F%AB%F8%83K%29L%2B%C8%FD%AF%26I&info_hash=%C1%29%FC%40r%08V%3E%87l%A4%E6%FF%B7%06%D1%96%10%12%92&info_hash=%F1%0A%D7%7C%88%23u%EC%5D%8F%C3%A9%3BW%15%E5v%DA%D0%21&info_hash=%A2%B8Ag%3B%80%92%E4%00%7B%B5%F9%CD7%9D%3BV%AF%9F%7C&info_hash=%12%85U%E9h%5D3%09%1F%21%24o%C0Jb%D2r%C2%8A3&info_hash=h%0C%01%C6%D4J%01%96D%99up%89%CD%21%3F1Y%F4%5D&info_hash=%17*J%A2%D5%95%FA%B8%AD%DC%F3Q%BC%89%DA%29%FF%8A%40%87
+---
+2012/03/14 10:59:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://83.233.118.50/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 10:59:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://83.233.118.50/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 10:59:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://83.233.118.50/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 10:59:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://83.233.118.50/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:04:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A
+---
+2012/03/14 11:06:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "announce".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('announce')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/announce?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A&peer_id=-AZ4702-lhG8bmMrfyX5&supportcrypto=1&port=40694&azudp=40694&uploaded=2942884089&downloaded=0&left=0&corrupt=0&event=started&numwant=40&no_peer_id=1&compact=1&key=bOfqx6qg&azver=3
+---
+2012/03/14 11:10:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://83.233.118.50/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:10:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://83.233.118.50/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:13:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://83.233.118.50/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:13:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://83.233.118.50/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:13:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Programmering\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('')
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('')
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#3 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/
+---
+2012/03/14 11:13:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://83.233.118.50/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:13:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Programmering\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('')
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('')
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#3 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/
+---
+2012/03/14 11:13:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://83.233.118.50/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:13:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Programmering\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('')
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('')
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#3 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/
+---
+2012/03/14 11:13:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://83.233.118.50/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:14:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Programmering\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#3 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/index
+---
+2012/03/14 11:14:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://83.233.118.50/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:14:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Programmering\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('')
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('')
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#3 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/
+---
+2012/03/14 11:14:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:14:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\Programmering\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('')
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('')
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#3 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/
+---
+2012/03/14 11:14:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:14:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A
+---
+2012/03/14 11:15:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:16:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:18:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:18:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:18:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:18:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://83.233.118.50/site/contact
+---
+2012/03/14 11:18:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/03/14 11:18:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:18:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://83.233.118.50/howto/show/popular
+---
+2012/03/14 11:18:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/03/14 11:18:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:18:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in C:\Programmering\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('view')
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/view/about')
+#3 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/view/about
+---
+2012/03/14 11:18:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:18:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:20:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "p/about".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('p/about')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/p/about
+---
+2012/03/14 11:20:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:20:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "p/about".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('p/about')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/p/about
+---
+2012/03/14 11:20:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:21:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "page?view=about".' in C:\Programmering\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('page?view=about')
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('page?view=about')
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/page?view=...')
+#3 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/p/view/about
+---
+2012/03/14 11:21:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:21:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "view/about" was not found.' in C:\Programmering\xampp\htdocs\yii\framework\web\actions\CViewAction.php:113
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CViewAction.php(124): CViewAction->resolveView('view/about')
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CAction.php(75): CViewAction->run()
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CAction->runWithParams(Array)
+#3 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CViewAction))
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('page')
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/page')
+#7 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/p/view/about
+---
+2012/03/14 11:21:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:21:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "page/about" was not found.' in C:\Programmering\xampp\htdocs\yii\framework\web\actions\CViewAction.php:113
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CViewAction.php(124): CViewAction->resolveView('page/about')
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CAction.php(75): CViewAction->run()
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CAction->runWithParams(Array)
+#3 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CViewAction))
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('page')
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/page')
+#7 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/p/page/about
+---
+2012/03/14 11:21:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:21:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:21:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:21:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:21:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:21:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:22:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:22:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:22:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:22:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:24:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A
+---
+2012/03/14 11:30:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:31:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "p/about".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('p/about')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/p/about
+---
+2012/03/14 11:31:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:31:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "p/view/about".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('p/view/about')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/p/view/about
+---
+2012/03/14 11:31:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:31:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:34:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:34:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:34:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:34:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A
+---
+2012/03/14 11:35:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:37:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:38:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:38:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:38:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:39:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:39:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "view/about".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('view/about')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/view/about
+---
+2012/03/14 11:39:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:39:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:45:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A&info_hash=%E1%BC%8C%8A%FA%24k%0A%DF%5B%FD%3CG%F6%89%2B%97%D4%BAq&info_hash=%ADe%93o%9E%14%B9%E1-%AFJ%8E%D5%D8%FEm%9D%A0%0C%A7&info_hash=%94N%F3%40%21%BE%89v%5CZ%A2%28%9F%86%D5%D6%28%20%FE%2B&info_hash=G%29%A3T%5C%FC%09%B6%EA%EC%15q%24%BAZ%E0%AD%81%FF%40&info_hash=%05%E8j%40%F0%88%FC%BD%9D%DA%ADJ%82k%0Bpe%8E%E1%9F&info_hash=%A4%FD%B0a%1A%98Wj%11c%A6%C8%AD%FA%A6%06%207l-&info_hash=%7B%E3z%C7%F6%5D%C7%8B%F8%B1%15b%9E%60%22%0Cc%7F%E0%D1&info_hash=%FF%F0y%8D%83N%92%60%D1%CCn%97%FF%F4%12pv%60%CD%A9&info_hash=%09%88%FB%D1%A0%97%C0P%88%13%0D%BB%C4%A4%2C%F9*%83%CC%AE&info_hash=%E8%F1%F4%88%15%7D%96v%98y%D4%A4%2C%06%A8%F0%80A%3F%F4&info_hash=%F8%EA%80%DA%0Av_%F4%C6k%3D%28lu5%EB%FF%BF%DC%3B&info_hash=%CFw%8E-%CF6%A1%8F%AB%F8%83K%29L%2B%C8%FD%AF%26I&info_hash=%C1%29%FC%40r%08V%3E%87l%A4%E6%FF%B7%06%D1%96%10%12%92&info_hash=%F1%0A%D7%7C%88%23u%EC%5D%8F%C3%A9%3BW%15%E5v%DA%D0%21&info_hash=%A2%B8Ag%3B%80%92%E4%00%7B%B5%F9%CD7%9D%3BV%AF%9F%7C&info_hash=%12%85U%E9h%5D3%09%1F%21%24o%C0Jb%D2r%C2%8A3&info_hash=h%0C%01%C6%D4J%01%96D%99up%89%CD%21%3F1Y%F4%5D&info_hash=%17*J%A2%D5%95%FA%B8%AD%DC%F3Q%BC%89%DA%29%FF%8A%40%87
+---
+2012/03/14 11:49:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:49:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:51:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:53:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:53:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:54:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:54:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:54:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:54:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:55:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A
+---
+2012/03/14 11:55:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:55:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:55:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:55:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:55:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:55:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:56:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:56:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "blog".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('blog')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog
+HTTP_REFERER=http://blog/about
+---
+2012/03/14 11:56:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:56:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:56:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://localhost/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:56:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/03/14 11:56:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/03/14 11:56:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/03/14 11:56:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://localhost/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:56:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://localhost/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 11:56:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 12:02:01 [error] [exception.CException] exception 'CException' with message 'The URL pattern "p/<view:+>/*" for route "site/page" is not a valid regular expression.' in C:\Programmering\xampp\htdocs\yii\framework\web\CUrlManager.php:700
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CUrlManager.php(268): CUrlRule->__construct('site/page', 'p/<view:+>/*')
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CUrlManager.php(227): CUrlManager->createUrlRule('site/page', 'p/<view:+>/*')
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CUrlManager.php(207): CUrlManager->processRules()
+#3 C:\Programmering\xampp\htdocs\yii\framework\base\CModule.php(388): CUrlManager->init()
+#4 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(503): CModule->getComponent('urlManager')
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(134): CApplication->getUrlManager()
+#6 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/p/about
+---
+2012/03/14 12:02:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 12:03:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 12:04:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "assets" was not found.' in C:\Programmering\xampp\htdocs\yii\framework\web\actions\CViewAction.php:113
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CViewAction.php(124): CViewAction->resolveView('assets')
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CAction.php(75): CViewAction->run()
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CAction->runWithParams(Array)
+#3 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CViewAction))
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('page')
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/page')
+#7 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 12:04:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "assets" was not found.' in C:\Programmering\xampp\htdocs\yii\framework\web\actions\CViewAction.php:113
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CViewAction.php(124): CViewAction->resolveView('assets')
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CAction.php(75): CViewAction->run()
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CAction->runWithParams(Array)
+#3 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CViewAction))
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('page')
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/page')
+#7 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 12:04:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "assets" was not found.' in C:\Programmering\xampp\htdocs\yii\framework\web\actions\CViewAction.php:113
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CViewAction.php(124): CViewAction->resolveView('assets')
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CAction.php(75): CViewAction->run()
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CAction->runWithParams(Array)
+#3 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CViewAction))
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('page')
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/page')
+#7 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 12:04:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "site" was not found.' in C:\Programmering\xampp\htdocs\yii\framework\web\actions\CViewAction.php:113
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CViewAction.php(124): CViewAction->resolveView('site')
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CAction.php(75): CViewAction->run()
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CAction->runWithParams(Array)
+#3 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CViewAction))
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('page')
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/page')
+#7 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/site/contact
+HTTP_REFERER=http://blog/about
+---
+2012/03/14 12:04:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "assets" was not found.' in C:\Programmering\xampp\htdocs\yii\framework\web\actions\CViewAction.php:113
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CViewAction.php(124): CViewAction->resolveView('assets')
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CAction.php(75): CViewAction->run()
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CAction->runWithParams(Array)
+#3 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CViewAction))
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('page')
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/page')
+#7 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 12:04:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 12:05:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A
+---
+2012/03/14 12:06:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "announce".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('announce')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/announce?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A&peer_id=-AZ4702-lhG8bmMrfyX5&supportcrypto=1&port=40694&azudp=40694&uploaded=3163832284&downloaded=0&left=0&corrupt=0&event=started&numwant=39&no_peer_id=1&compact=1&key=bOfqx6qg&azver=3
+---
+2012/03/14 12:11:53 [error] [exception.CException] exception 'CException' with message 'Property "CStarRating.0" is not defined.' in C:\Programmering\xampp\htdocs\yii\framework\base\CComponent.php:174
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWidgetFactory.php(162): CComponent->__set('0', 'readOnly')
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(HowtoController), 'CStarRating', Array)
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('CStarRating', Array)
+#3 C:\Programmering\xampp\htdocs\blog\protected\views\howto\_view.php(43): CBaseController->widget('CStarRating', Array)
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\Programmerin...')
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Programmerin...', Array, true)
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Programmerin...', Array, true)
+#7 C:\Programmering\xampp\htdocs\yii\framework\zii\widgets\CListView.php(242): CController->renderPartial('_view', Array)
+#8 C:\Programmering\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(158): CListView->renderItems()
+#9 [internal function]: CBaseListView->renderSection(Array)
+#10 C:\Programmering\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(141): preg_replace_callback('/{(\w+)}/', Array, '{items}?{pager}')
+#11 C:\Programmering\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(126): CBaseListView->renderContent()
+#12 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(174): CBaseListView->run()
+#13 C:\Programmering\xampp\htdocs\blog\protected\views\howto\index.php(9): CBaseController->widget('zii.widgets.CLi...', Array)
+#14 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\Programmerin...')
+#15 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Programmerin...', Array, true)
+#16 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Programmerin...', Array, true)
+#17 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#18 C:\Programmering\xampp\htdocs\blog\protected\controllers\HowtoController.php(344): CController->render('index', Array)
+#19 [internal function]: HowtoController->actionIndex('', '')
+#20 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(HowtoController), Array)
+#21 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(HowtoController), Object(ReflectionMethod), Array)
+#22 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#23 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#24 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#25 C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php(51): CFilter->filter(Object(CFilterChain))
+#26 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#27 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#28 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#29 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#30 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('')
+#31 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('howto')
+#32 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#33 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#34 {main}
+REQUEST_URI=/howto
+HTTP_REFERER=http://blog/page/about
+---
+2012/03/14 12:12:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 12:12:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 12:15:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A
+---
+2012/03/14 12:25:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A
+---
+2012/03/14 12:32:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 12:32:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 12:32:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 12:33:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 12:35:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A&info_hash=%E1%BC%8C%8A%FA%24k%0A%DF%5B%FD%3CG%F6%89%2B%97%D4%BAq&info_hash=%ADe%93o%9E%14%B9%E1-%AFJ%8E%D5%D8%FEm%9D%A0%0C%A7&info_hash=%94N%F3%40%21%BE%89v%5CZ%A2%28%9F%86%D5%D6%28%20%FE%2B&info_hash=G%29%A3T%5C%FC%09%B6%EA%EC%15q%24%BAZ%E0%AD%81%FF%40&info_hash=%05%E8j%40%F0%88%FC%BD%9D%DA%ADJ%82k%0Bpe%8E%E1%9F&info_hash=%A4%FD%B0a%1A%98Wj%11c%A6%C8%AD%FA%A6%06%207l-&info_hash=%7B%E3z%C7%F6%5D%C7%8B%F8%B1%15b%9E%60%22%0Cc%7F%E0%D1&info_hash=%FF%F0y%8D%83N%92%60%D1%CCn%97%FF%F4%12pv%60%CD%A9&info_hash=%09%88%FB%D1%A0%97%C0P%88%13%0D%BB%C4%A4%2C%F9*%83%CC%AE&info_hash=%E8%F1%F4%88%15%7D%96v%98y%D4%A4%2C%06%A8%F0%80A%3F%F4&info_hash=%F8%EA%80%DA%0Av_%F4%C6k%3D%28lu5%EB%FF%BF%DC%3B&info_hash=%CFw%8E-%CF6%A1%8F%AB%F8%83K%29L%2B%C8%FD%AF%26I&info_hash=%C1%29%FC%40r%08V%3E%87l%A4%E6%FF%B7%06%D1%96%10%12%92&info_hash=%F1%0A%D7%7C%88%23u%EC%5D%8F%C3%A9%3BW%15%E5v%DA%D0%21&info_hash=%A2%B8Ag%3B%80%92%E4%00%7B%B5%F9%CD7%9D%3BV%AF%9F%7C&info_hash=%12%85U%E9h%5D3%09%1F%21%24o%C0Jb%D2r%C2%8A3&info_hash=h%0C%01%C6%D4J%01%96D%99up%89%CD%21%3F1Y%F4%5D&info_hash=%17*J%A2%D5%95%FA%B8%AD%DC%F3Q%BC%89%DA%29%FF%8A%40%87
+---
+2012/03/14 12:35:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 12:36:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 12:38:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 12:39:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 12:39:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 12:40:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 12:40:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 12:40:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 12:41:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 12:41:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 12:44:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 12:45:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A
+---
+2012/03/14 12:45:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 12:45:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 12:45:28 [error] [exception.CException] exception 'CException' with message 'Property "CStarRating.0" is not defined.' in C:\Programmering\xampp\htdocs\yii\framework\base\CComponent.php:174
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWidgetFactory.php(162): CComponent->__set('0', 5)
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(HowtoController), 'CStarRating', Array)
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('CStarRating', Array)
+#3 C:\Programmering\xampp\htdocs\blog\protected\views\howto\_view.php(46): CBaseController->widget('CStarRating', Array)
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\Programmerin...')
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Programmerin...', Array, true)
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Programmerin...', Array, true)
+#7 C:\Programmering\xampp\htdocs\yii\framework\zii\widgets\CListView.php(242): CController->renderPartial('_view', Array)
+#8 C:\Programmering\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(158): CListView->renderItems()
+#9 [internal function]: CBaseListView->renderSection(Array)
+#10 C:\Programmering\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(141): preg_replace_callback('/{(\w+)}/', Array, '{items}?{pager}')
+#11 C:\Programmering\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(126): CBaseListView->renderContent()
+#12 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(174): CBaseListView->run()
+#13 C:\Programmering\xampp\htdocs\blog\protected\views\howto\index.php(9): CBaseController->widget('zii.widgets.CLi...', Array)
+#14 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\Programmerin...')
+#15 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Programmerin...', Array, true)
+#16 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Programmerin...', Array, true)
+#17 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#18 C:\Programmering\xampp\htdocs\blog\protected\controllers\HowtoController.php(344): CController->render('index', Array)
+#19 [internal function]: HowtoController->actionIndex('', '')
+#20 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(HowtoController), Array)
+#21 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(HowtoController), Object(ReflectionMethod), Array)
+#22 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#23 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#24 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#25 C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php(51): CFilter->filter(Object(CFilterChain))
+#26 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#27 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#28 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#29 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#30 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('')
+#31 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('howto')
+#32 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#33 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#34 {main}
+REQUEST_URI=/howto
+HTTP_REFERER=http://blog/page/about
+---
+2012/03/14 12:45:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 12:46:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 12:47:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 12:51:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 12:52:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 12:54:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 12:55:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A
+---
+2012/03/14 12:55:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---

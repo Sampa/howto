@@ -111,6 +111,11 @@ class SiteController extends Controller
 		$this->redirect( Yii::app()->homeUrl );
 	}
 	
+	public function actionIndex()
+	{
+		$this->render('pages/index');
+	
+	}
 
 	/**
 	 * Restores the database for the demo application.

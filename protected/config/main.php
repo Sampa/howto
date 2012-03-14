@@ -27,7 +27,6 @@ return array(
 	
 	),
 
-	'defaultController'=>'howto',
 
 	// application modules
 	'modules'=>array(
@@ -98,11 +97,13 @@ return array(
         'urlManager'=>array(
         	'urlFormat'=>'path',
         	'rules'=>array(
+				'page/<view:\w+>/*'=>'site/page',
         		'howto/<id:\d+>/<title:.*?>'=>'howto/view',
         		'howtos/<tag:.*?>'=>'howto/index',
         		'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 				'profile/*'=>'user/view',
 				'howto/<show:.*?>'=>'howto/index/',
+
 				//'<controller:\w+>/<id:\d+>'=>'<controller>/view', 
 					),
 			'showScriptName'=>false,

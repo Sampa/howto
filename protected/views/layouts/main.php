@@ -62,8 +62,8 @@
 <?php 
 	$this->widget('application.extensions.mbmenu.MbMenu',array( 
 		'items'=>array( //Top level
-				array('label'=>'Home', 'url'=>array('/howto')),
-				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
+				array('label'=>'Home', 'url'=>'//blog'),
+				array('label'=>'About', 'url'=>array('/about')),
 				array('label'=>'Contact', 'url'=>array('/site/contact')),
 				array('label'=>'Howtos','url'=>array( '//howto'),
 								'items'=>array( //submenu under "Howtos" If user has Howto.Admin

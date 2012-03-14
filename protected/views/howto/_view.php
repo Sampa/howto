@@ -28,6 +28,10 @@
 <?php // rating
 	$this->widget('CStarRating',array(
     'name'=>'rating'.$data->rating_id,
+	'starCount'=>10,
+	'readOnly'=>false,
+	'resetText'=>'',
+	'value'=>round($rating->vote_average,0),
     'callback'=>'
         function(){
         	url = "/howto/rating";
@@ -37,10 +41,12 @@
 					$("#rating_success_'.$data->rating_id.'").fadeIn("slow");		
 					var pause = setTimeout("$(\"#rating_success_'.$data->rating_id.'\").fadeOut(\"slow\")",5000);
 					$("#rating_info_'.$data->rating_id.'").html(data.info);
+					$("input[id*='.$data->rating_id.'_]").rating("readOnly",true);
 					}
 				});}'
 			));
-?> 	<div id="rating_success_<?=$data->id;?>" style="display:none"></div>
+?> 	
+<div id="rating_success_<?=$data->id;?>" style="display:none"></div>
 
 	<div class="content">
 	<br/><br/>
@@ -85,8 +91,6 @@
 </div>
 
 	<script>
-	
-	
 	$(".bookmark").click(function(){
 		id = $(this).attr('name');
 		url = '/howto/bookmark';
