@@ -9107,3 +9107,923 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/announce?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A&peer_id=-AZ4702-lhG8bmMrfyX5&supportcrypto=1&port=40694&azudp=40694&uploaded=3599382113&downloaded=0&left=0&corrupt=0&event=started&numwant=52&no_peer_id=1&compact=1&key=bOfqx6qg&azver=3
 ---
+2012/03/14 14:15:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A&info_hash=%E1%BC%8C%8A%FA%24k%0A%DF%5B%FD%3CG%F6%89%2B%97%D4%BAq&info_hash=%ADe%93o%9E%14%B9%E1-%AFJ%8E%D5%D8%FEm%9D%A0%0C%A7&info_hash=%94N%F3%40%21%BE%89v%5CZ%A2%28%9F%86%D5%D6%28%20%FE%2B&info_hash=G%29%A3T%5C%FC%09%B6%EA%EC%15q%24%BAZ%E0%AD%81%FF%40&info_hash=%05%E8j%40%F0%88%FC%BD%9D%DA%ADJ%82k%0Bpe%8E%E1%9F&info_hash=%A4%FD%B0a%1A%98Wj%11c%A6%C8%AD%FA%A6%06%207l-&info_hash=%7B%E3z%C7%F6%5D%C7%8B%F8%B1%15b%9E%60%22%0Cc%7F%E0%D1&info_hash=%FF%F0y%8D%83N%92%60%D1%CCn%97%FF%F4%12pv%60%CD%A9&info_hash=%09%88%FB%D1%A0%97%C0P%88%13%0D%BB%C4%A4%2C%F9*%83%CC%AE&info_hash=%F8%EA%80%DA%0Av_%F4%C6k%3D%28lu5%EB%FF%BF%DC%3B&info_hash=%CFw%8E-%CF6%A1%8F%AB%F8%83K%29L%2B%C8%FD%AF%26I&info_hash=%C1%29%FC%40r%08V%3E%87l%A4%E6%FF%B7%06%D1%96%10%12%92&info_hash=%F1%0A%D7%7C%88%23u%EC%5D%8F%C3%A9%3BW%15%E5v%DA%D0%21&info_hash=%A2%B8Ag%3B%80%92%E4%00%7B%B5%F9%CD7%9D%3BV%AF%9F%7C&info_hash=%12%85U%E9h%5D3%09%1F%21%24o%C0Jb%D2r%C2%8A3&info_hash=h%0C%01%C6%D4J%01%96D%99up%89%CD%21%3F1Y%F4%5D&info_hash=%17*J%A2%D5%95%FA%B8%AD%DC%F3Q%BC%89%DA%29%FF%8A%40%87
+---
+2012/03/14 14:22:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('css/screen.css')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/screen.css
+HTTP_REFERER=http://blog/
+---
+2012/03/14 14:22:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 14:22:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('css/screen.css')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/screen.css
+HTTP_REFERER=http://blog/
+---
+2012/03/14 14:22:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 14:23:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('css/screen.css')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/screen.css
+HTTP_REFERER=http://blog/
+---
+2012/03/14 14:23:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 14:25:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A&info_hash=%E8%F1%F4%88%15%7D%96v%98y%D4%A4%2C%06%A8%F0%80A%3F%F4
+---
+2012/03/14 14:35:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A
+---
+2012/03/14 14:45:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A
+---
+2012/03/14 14:49:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('css/screen.css')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/screen.css
+HTTP_REFERER=http://blog/
+---
+2012/03/14 14:49:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 14:49:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('css/screen.css')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/screen.css
+HTTP_REFERER=http://blog/about
+---
+2012/03/14 14:49:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 14:49:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('css/screen.css')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/screen.css
+HTTP_REFERER=http://blog/
+---
+2012/03/14 14:49:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 14:50:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('css/screen.css')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/screen.css
+HTTP_REFERER=http://blog/
+---
+2012/03/14 14:50:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 14:50:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('css/screen.css')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/screen.css
+HTTP_REFERER=http://blog/
+---
+2012/03/14 14:50:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 14:51:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('css/screen.css')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/screen.css
+HTTP_REFERER=http://blog/
+---
+2012/03/14 14:51:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 14:52:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('css/screen.css')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/screen.css
+HTTP_REFERER=http://blog/
+---
+2012/03/14 14:52:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 14:52:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('css/screen.css')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/screen.css
+HTTP_REFERER=http://blog/
+---
+2012/03/14 14:52:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 14:53:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('css/screen.css')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/screen.css
+HTTP_REFERER=http://blog/
+---
+2012/03/14 14:53:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 14:53:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('css/screen.css')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/screen.css
+HTTP_REFERER=http://blog/
+---
+2012/03/14 14:53:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 14:53:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('css/screen.css')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/screen.css
+HTTP_REFERER=http://blog/
+---
+2012/03/14 14:53:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 14:53:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('css/screen.css')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/screen.css
+HTTP_REFERER=http://blog/
+---
+2012/03/14 14:53:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 14:53:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('css/screen.css')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/screen.css
+HTTP_REFERER=http://blog/
+---
+2012/03/14 14:53:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 14:54:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('css/screen.css')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/screen.css
+HTTP_REFERER=http://blog/
+---
+2012/03/14 14:54:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 14:54:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('css/screen.css')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/screen.css
+HTTP_REFERER=http://blog/about
+---
+2012/03/14 14:54:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 14:54:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('css/screen.css')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/screen.css
+HTTP_REFERER=http://blog/contact
+---
+2012/03/14 14:54:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 14:54:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('css/screen.css')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/screen.css
+HTTP_REFERER=http://blog/about
+---
+2012/03/14 14:54:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 14:54:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('css/screen.css')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/screen.css
+HTTP_REFERER=http://blog/
+---
+2012/03/14 14:54:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 14:55:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A
+---
+2012/03/14 14:56:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('css/screen.css')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/screen.css
+HTTP_REFERER=http://blog/
+---
+2012/03/14 14:56:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 14:57:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('css/screen.css')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/screen.css
+HTTP_REFERER=http://blog/
+---
+2012/03/14 14:57:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 14:57:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('css/screen.css')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/screen.css
+HTTP_REFERER=http://blog/
+---
+2012/03/14 14:57:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 14:57:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('css/screen.css')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/screen.css
+HTTP_REFERER=http://blog/
+---
+2012/03/14 14:57:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 14:58:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('css/screen.css')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/screen.css
+HTTP_REFERER=http://blog/
+---
+2012/03/14 14:58:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 14:59:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('css/screen.css')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/screen.css
+HTTP_REFERER=http://blog/
+---
+2012/03/14 14:59:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 15:00:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('css/screen.css')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/screen.css
+HTTP_REFERER=http://blog/
+---
+2012/03/14 15:00:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 15:01:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('css/screen.css')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/screen.css
+HTTP_REFERER=http://blog/
+---
+2012/03/14 15:01:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 15:01:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('css/screen.css')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/screen.css
+HTTP_REFERER=http://blog/
+---
+2012/03/14 15:01:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 15:01:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('css/screen.css')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/screen.css
+HTTP_REFERER=http://blog/
+---
+2012/03/14 15:01:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 15:01:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('css/screen.css')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/screen.css
+HTTP_REFERER=http://blog/
+---
+2012/03/14 15:01:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 15:02:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('css/screen.css')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/screen.css
+HTTP_REFERER=http://blog/
+---
+2012/03/14 15:02:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 15:02:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('css/screen.css')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/screen.css
+HTTP_REFERER=http://blog/
+---
+2012/03/14 15:02:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 15:03:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('css/screen.css')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/screen.css
+HTTP_REFERER=http://blog/
+---
+2012/03/14 15:03:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 15:04:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('css/screen.css')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/screen.css
+HTTP_REFERER=http://blog/
+---
+2012/03/14 15:04:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 15:04:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('css/screen.css')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/screen.css
+HTTP_REFERER=http://blog/about
+---
+2012/03/14 15:04:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 15:04:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('css/screen.css')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/screen.css
+HTTP_REFERER=http://blog/contact
+---
+2012/03/14 15:04:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 15:04:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('css/screen.css')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/screen.css
+HTTP_REFERER=http://blog/howto
+---
+2012/03/14 15:04:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 15:04:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('css/screen.css')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/screen.css
+HTTP_REFERER=http://blog/
+---
+2012/03/14 15:04:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 15:05:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A&info_hash=%E1%BC%8C%8A%FA%24k%0A%DF%5B%FD%3CG%F6%89%2B%97%D4%BAq&info_hash=%ADe%93o%9E%14%B9%E1-%AFJ%8E%D5%D8%FEm%9D%A0%0C%A7&info_hash=%94N%F3%40%21%BE%89v%5CZ%A2%28%9F%86%D5%D6%28%20%FE%2B&info_hash=G%29%A3T%5C%FC%09%B6%EA%EC%15q%24%BAZ%E0%AD%81%FF%40&info_hash=%05%E8j%40%F0%88%FC%BD%9D%DA%ADJ%82k%0Bpe%8E%E1%9F&info_hash=%A4%FD%B0a%1A%98Wj%11c%A6%C8%AD%FA%A6%06%207l-&info_hash=%7B%E3z%C7%F6%5D%C7%8B%F8%B1%15b%9E%60%22%0Cc%7F%E0%D1&info_hash=%FF%F0y%8D%83N%92%60%D1%CCn%97%FF%F4%12pv%60%CD%A9&info_hash=%09%88%FB%D1%A0%97%C0P%88%13%0D%BB%C4%A4%2C%F9*%83%CC%AE&info_hash=%F8%EA%80%DA%0Av_%F4%C6k%3D%28lu5%EB%FF%BF%DC%3B&info_hash=%CFw%8E-%CF6%A1%8F%AB%F8%83K%29L%2B%C8%FD%AF%26I&info_hash=%C1%29%FC%40r%08V%3E%87l%A4%E6%FF%B7%06%D1%96%10%12%92&info_hash=%F1%0A%D7%7C%88%23u%EC%5D%8F%C3%A9%3BW%15%E5v%DA%D0%21&info_hash=%A2%B8Ag%3B%80%92%E4%00%7B%B5%F9%CD7%9D%3BV%AF%9F%7C&info_hash=%12%85U%E9h%5D3%09%1F%21%24o%C0Jb%D2r%C2%8A3&info_hash=h%0C%01%C6%D4J%01%96D%99up%89%CD%21%3F1Y%F4%5D&info_hash=%17*J%A2%D5%95%FA%B8%AD%DC%F3Q%BC%89%DA%29%FF%8A%40%87
+---
+2012/03/14 15:06:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('css/screen.css')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/screen.css
+HTTP_REFERER=http://blog/
+---
+2012/03/14 15:06:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 15:06:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('css/screen.css')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/screen.css
+HTTP_REFERER=http://blog/
+---
+2012/03/14 15:06:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 15:06:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('css/screen.css')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/screen.css
+HTTP_REFERER=http://blog/
+---
+2012/03/14 15:06:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 15:06:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "announce".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('announce')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/announce?info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A&peer_id=-AZ4702-lhG8bmMrfyX5&supportcrypto=1&port=40694&azudp=40694&uploaded=3818587577&downloaded=0&left=0&corrupt=0&event=started&numwant=37&no_peer_id=1&compact=1&key=bOfqx6qg&azver=3
+---
+2012/03/14 15:07:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('css/screen.css')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/screen.css
+HTTP_REFERER=http://blog/
+---
+2012/03/14 15:07:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 15:07:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('css/screen.css')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/screen.css
+HTTP_REFERER=http://blog/
+---
+2012/03/14 15:07:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 15:07:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('css/screen.css')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/screen.css
+HTTP_REFERER=http://blog/
+---
+2012/03/14 15:07:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 15:08:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('css/screen.css')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/screen.css
+HTTP_REFERER=http://blog/
+---
+2012/03/14 15:08:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/14 15:08:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('css/screen.css')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/screen.css
+HTTP_REFERER=http://blog/
+---
+2012/03/14 15:08:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---

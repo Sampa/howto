@@ -31,7 +31,7 @@
 
 <body>
 
-<div class="container" id="page">
+<div class="span12" id="page">
 
 	
 	<div id="header">
