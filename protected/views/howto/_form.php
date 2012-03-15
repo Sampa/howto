@@ -32,6 +32,7 @@
 		array(
 			'selector'=>'#Howto_content',
 			'userid'=>Yii::app()->user->id,
+			
 		));
 	?>
 		

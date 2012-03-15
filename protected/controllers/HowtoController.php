@@ -315,9 +315,9 @@ class HowtoController extends Controller
 			$criteria->Compare('categories.name' ,$split[1] , true );
 		}
 		
-		switch ($split[1])
+		switch ($show)
 		{
-			case "own":
+			case "show/own":
 			if ( Yii::app()->user->isGuest )
 				{
 					$this->redirect( array( '/reg' , 'ref'=>'own' ) );
@@ -325,7 +325,7 @@ class HowtoController extends Controller
 				$criteria->addColumnCondition( array ( 'author_id'=>Yii::app()->user->id ) );
 			break;
 			
-			case "new":
+			case "show/new":
 			$today = new DateTime();
 			$today->modify('-1 month'); 
 			

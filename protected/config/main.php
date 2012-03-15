@@ -35,6 +35,7 @@ return array(
 			//'install'=>true,
 			'enableBizRuleData'=>true,
 		),
+	
 		'gii'=>array(
 			'class'=>'system.gii.GiiModule',
 			'password'=>'admin',

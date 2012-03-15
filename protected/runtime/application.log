@@ -6131,3 +6131,909 @@ Stack trace:
 REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
 HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
 ---
+2012/03/15 11:30:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/d024e261/images/smileys/grin.png".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/d024e261...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/d024e261/images/smileys/grin.png
+HTTP_REFERER=http://blog/howto/1/Welcome%21
+---
+2012/03/15 11:30:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/d024e261/images/smileys/wink.png".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/d024e261...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/d024e261/images/smileys/wink.png
+HTTP_REFERER=http://blog/howto/1/Welcome%21
+---
+2012/03/15 11:30:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/d024e261/images/smileys/grin.png".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/d024e261...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/d024e261/images/smileys/grin.png
+HTTP_REFERER=http://blog/howto/1/Welcome%21
+---
+2012/03/15 11:30:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/15 11:31:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/15 12:04:41 [error] [exception.CException] exception 'CException' with message 'Alias "application.extensions.elrte.elRTE" is invalid. Make sure it points to an existing PHP file.' in C:\Programmering\xampp\htdocs\yii\framework\YiiBase.php:318
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWidgetFactory.php(147): YiiBase::import('application.ext...', true)
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(HowtoController), 'application.ext...', Array)
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('application.ext...', Array)
+#3 C:\Programmering\xampp\htdocs\blog\protected\views\howto\_form.php(35): CBaseController->widget('application.ext...', Array)
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\Programmerin...')
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Programmerin...', Array, true)
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Programmerin...', Array, true)
+#7 C:\Programmering\xampp\htdocs\blog\protected\views\howto\update.php(18): CController->renderPartial('_form', Array)
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\Programmerin...')
+#9 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Programmerin...', Array, true)
+#10 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Programmerin...', Array, true)
+#11 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('update', Array, true)
+#12 C:\Programmering\xampp\htdocs\blog\protected\controllers\HowtoController.php(224): CController->render('update', Array)
+#13 [internal function]: HowtoController->actionUpdate('1')
+#14 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(HowtoController), Array)
+#15 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(HowtoController), Object(ReflectionMethod), Array)
+#16 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#17 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#18 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#19 C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php(51): CFilter->filter(Object(CFilterChain))
+#20 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#21 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#22 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#23 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('update')
+#25 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('howto/update')
+#26 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#27 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/howto/update?id=1
+HTTP_REFERER=http://blog/howto/1/Welcome%21
+---
+2012/03/15 12:05:48 [error] [exception.CException] exception 'CException' with message 'Property "elRTE.selector" is not defined.' in C:\Programmering\xampp\htdocs\yii\framework\base\CComponent.php:174
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWidgetFactory.php(162): CComponent->__set('selector', '#Howto_content')
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(HowtoController), 'application.ext...', Array)
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('application.ext...', Array)
+#3 C:\Programmering\xampp\htdocs\blog\protected\views\howto\_form.php(35): CBaseController->widget('application.ext...', Array)
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\Programmerin...')
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Programmerin...', Array, true)
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Programmerin...', Array, true)
+#7 C:\Programmering\xampp\htdocs\blog\protected\views\howto\update.php(18): CController->renderPartial('_form', Array)
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\Programmerin...')
+#9 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Programmerin...', Array, true)
+#10 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Programmerin...', Array, true)
+#11 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('update', Array, true)
+#12 C:\Programmering\xampp\htdocs\blog\protected\controllers\HowtoController.php(224): CController->render('update', Array)
+#13 [internal function]: HowtoController->actionUpdate('1')
+#14 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(HowtoController), Array)
+#15 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(HowtoController), Object(ReflectionMethod), Array)
+#16 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#17 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#18 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#19 C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php(51): CFilter->filter(Object(CFilterChain))
+#20 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#21 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#22 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#23 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('update')
+#25 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('howto/update')
+#26 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#27 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/howto/update?id=1
+HTTP_REFERER=http://blog/howto/1/Welcome%21
+---
+2012/03/15 12:06:53 [error] [exception.CException] exception 'CException' with message 'Property "elRTE.userid" is not defined.' in C:\Programmering\xampp\htdocs\yii\framework\base\CComponent.php:174
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWidgetFactory.php(162): CComponent->__set('userid', '1')
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(HowtoController), 'application.ext...', Array)
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('application.ext...', Array)
+#3 C:\Programmering\xampp\htdocs\blog\protected\views\howto\_form.php(35): CBaseController->widget('application.ext...', Array)
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\Programmerin...')
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Programmerin...', Array, true)
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Programmerin...', Array, true)
+#7 C:\Programmering\xampp\htdocs\blog\protected\views\howto\update.php(18): CController->renderPartial('_form', Array)
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\Programmerin...')
+#9 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Programmerin...', Array, true)
+#10 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Programmerin...', Array, true)
+#11 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('update', Array, true)
+#12 C:\Programmering\xampp\htdocs\blog\protected\controllers\HowtoController.php(224): CController->render('update', Array)
+#13 [internal function]: HowtoController->actionUpdate('1')
+#14 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(HowtoController), Array)
+#15 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(HowtoController), Object(ReflectionMethod), Array)
+#16 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#17 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#18 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#19 C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php(51): CFilter->filter(Object(CFilterChain))
+#20 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#21 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#22 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#23 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('update')
+#25 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('howto/update')
+#26 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#27 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/howto/update?id=1
+HTTP_REFERER=http://blog/howto/1/Welcome%21
+---
+2012/03/15 12:07:18 [error] [exception.CException] exception 'CException' with message 'elRTE must specify "model" and "attribute" or "name" property values.' in C:\Programmering\xampp\htdocs\yii\framework\web\widgets\CInputWidget.php:61
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\blog\protected\extensions\elrtef\elRTE.php(16): CInputWidget->resolveNameID()
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(174): elRTE->run()
+#2 C:\Programmering\xampp\htdocs\blog\protected\views\howto\_form.php(35): CBaseController->widget('application.ext...', Array)
+#3 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\Programmerin...')
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Programmerin...', Array, true)
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Programmerin...', Array, true)
+#6 C:\Programmering\xampp\htdocs\blog\protected\views\howto\update.php(18): CController->renderPartial('_form', Array)
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\Programmerin...')
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Programmerin...', Array, true)
+#9 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Programmerin...', Array, true)
+#10 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('update', Array, true)
+#11 C:\Programmering\xampp\htdocs\blog\protected\controllers\HowtoController.php(224): CController->render('update', Array)
+#12 [internal function]: HowtoController->actionUpdate('1')
+#13 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(HowtoController), Array)
+#14 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(HowtoController), Object(ReflectionMethod), Array)
+#15 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#16 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#17 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#18 C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php(51): CFilter->filter(Object(CFilterChain))
+#19 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#20 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#21 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#22 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('update')
+#24 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('howto/update')
+#25 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#26 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/howto/update?id=1
+HTTP_REFERER=http://blog/howto/1/Welcome%21
+---
+2012/03/15 12:09:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/15 12:09:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/15 12:10:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/15 12:11:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/15 12:12:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/15 12:17:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/15 12:20:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "categories".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('categories')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/categories
+HTTP_REFERER=http://blog/about
+---
+2012/03/15 12:20:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/15 12:20:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/15 12:20:59 [error] [php] Undefined offset: 1 (C:\Programmering\xampp\htdocs\blog\protected\controllers\HowtoController.php:318)
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): HowtoController->runAction()
+#3 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#4 C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php(51): RightsFilter->filter()
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): HowtoController->filterRights()
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): HowtoController->runActionWithFilters()
+#9 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): HowtoController->run()
+#10 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#11 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 C:\Programmering\xampp\htdocs\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/howto
+in C:\Programmering\xampp\htdocs\blog\protected\controllers\HowtoController.php (318)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php (51)
+in C:\Programmering\xampp\htdocs\blog\index.php (13)
+2012/03/15 12:22:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/15 12:23:11 [error] [exception.CException] exception 'CException' with message 'Alias "application.extensions.elrte.elRTE" is invalid. Make sure it points to an existing PHP file.' in C:\Programmering\xampp\htdocs\yii\framework\YiiBase.php:318
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWidgetFactory.php(147): YiiBase::import('application.ext...', true)
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(HowtoController), 'application.ext...', Array)
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('application.ext...', Array)
+#3 C:\Programmering\xampp\htdocs\blog\protected\views\howto\_form.php(35): CBaseController->widget('application.ext...', Array)
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\Programmerin...')
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Programmerin...', Array, true)
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Programmerin...', Array, true)
+#7 C:\Programmering\xampp\htdocs\blog\protected\views\howto\create.php(6): CController->renderPartial('_form', Array)
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\Programmerin...')
+#9 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Programmerin...', Array, true)
+#10 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Programmerin...', Array, true)
+#11 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#12 C:\Programmering\xampp\htdocs\blog\protected\controllers\HowtoController.php(191): CController->render('create', Array)
+#13 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): HowtoController->actionCreate()
+#14 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#15 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#16 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#17 C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php(51): CFilter->filter(Object(CFilterChain))
+#18 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#19 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#20 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#21 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('create')
+#23 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('howto/create')
+#24 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#25 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/howto/create
+HTTP_REFERER=http://blog/howto
+---
+2012/03/15 12:23:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/15 12:48:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/15 12:48:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/15 12:48:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/15 12:50:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/15 12:51:24 [error] [exception.CException] exception 'CException' with message 'Property "elRTE.resizeable" is not defined.' in C:\Programmering\xampp\htdocs\yii\framework\base\CComponent.php:174
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWidgetFactory.php(162): CComponent->__set('resizeable', false)
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(HowtoController), 'application.ext...', Array)
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('application.ext...', Array)
+#3 C:\Programmering\xampp\htdocs\blog\protected\views\howto\_form.php(36): CBaseController->widget('application.ext...', Array)
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\Programmerin...')
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Programmerin...', Array, true)
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Programmerin...', Array, true)
+#7 C:\Programmering\xampp\htdocs\blog\protected\views\howto\create.php(6): CController->renderPartial('_form', Array)
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\Programmerin...')
+#9 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Programmerin...', Array, true)
+#10 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Programmerin...', Array, true)
+#11 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#12 C:\Programmering\xampp\htdocs\blog\protected\controllers\HowtoController.php(191): CController->render('create', Array)
+#13 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): HowtoController->actionCreate()
+#14 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#15 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#16 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#17 C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php(51): CFilter->filter(Object(CFilterChain))
+#18 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#19 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#20 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#21 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('create')
+#23 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('howto/create')
+#24 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#25 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/howto/create
+HTTP_REFERER=http://blog/howto
+---
+2012/03/15 12:52:00 [error] [exception.CException] exception 'CException' with message 'Property "elRTE.styleWithCss" is not defined.' in C:\Programmering\xampp\htdocs\yii\framework\base\CComponent.php:174
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWidgetFactory.php(162): CComponent->__set('styleWithCss', '')
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(HowtoController), 'application.ext...', Array)
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('application.ext...', Array)
+#3 C:\Programmering\xampp\htdocs\blog\protected\views\howto\_form.php(36): CBaseController->widget('application.ext...', Array)
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\Programmerin...')
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Programmerin...', Array, true)
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Programmerin...', Array, true)
+#7 C:\Programmering\xampp\htdocs\blog\protected\views\howto\create.php(6): CController->renderPartial('_form', Array)
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\Programmerin...')
+#9 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Programmerin...', Array, true)
+#10 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Programmerin...', Array, true)
+#11 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#12 C:\Programmering\xampp\htdocs\blog\protected\controllers\HowtoController.php(191): CController->render('create', Array)
+#13 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): HowtoController->actionCreate()
+#14 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#15 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#16 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#17 C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php(51): CFilter->filter(Object(CFilterChain))
+#18 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#19 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#20 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#21 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('create')
+#23 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('howto/create')
+#24 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#25 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/howto/create
+HTTP_REFERER=http://blog/howto
+---
+2012/03/15 12:53:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/15 12:55:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/15 12:55:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/15 12:55:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/15 12:58:16 [error] [exception.CException] exception 'CException' with message 'Alias "application.widgets.elrtef.elRTE" is invalid. Make sure it points to an existing PHP file.' in C:\Programmering\xampp\htdocs\yii\framework\YiiBase.php:318
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWidgetFactory.php(147): YiiBase::import('application.wid...', true)
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(HowtoController), 'application.wid...', Array)
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('application.wid...', Array)
+#3 C:\Programmering\xampp\htdocs\blog\protected\views\howto\_form.php(64): CBaseController->widget('application.wid...', Array)
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\Programmerin...')
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Programmerin...', Array, true)
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Programmerin...', Array, true)
+#7 C:\Programmering\xampp\htdocs\blog\protected\views\howto\create.php(6): CController->renderPartial('_form', Array)
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\Programmerin...')
+#9 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Programmerin...', Array, true)
+#10 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Programmerin...', Array, true)
+#11 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#12 C:\Programmering\xampp\htdocs\blog\protected\controllers\HowtoController.php(191): CController->render('create', Array)
+#13 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): HowtoController->actionCreate()
+#14 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#15 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#16 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#17 C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php(51): CFilter->filter(Object(CFilterChain))
+#18 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#19 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#20 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#21 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('create')
+#23 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('howto/create')
+#24 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#25 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/howto/create
+HTTP_REFERER=http://blog/howto
+---
+2012/03/15 12:59:23 [error] [exception.CException] exception 'CException' with message 'Alias "application.extentions.elrtef.elRTE" is invalid. Make sure it points to an existing PHP file.' in C:\Programmering\xampp\htdocs\yii\framework\YiiBase.php:318
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWidgetFactory.php(147): YiiBase::import('application.ext...', true)
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(HowtoController), 'application.ext...', Array)
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('application.ext...', Array)
+#3 C:\Programmering\xampp\htdocs\blog\protected\views\howto\_form.php(64): CBaseController->widget('application.ext...', Array)
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\Programmerin...')
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Programmerin...', Array, true)
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Programmerin...', Array, true)
+#7 C:\Programmering\xampp\htdocs\blog\protected\views\howto\create.php(6): CController->renderPartial('_form', Array)
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\Programmerin...')
+#9 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Programmerin...', Array, true)
+#10 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Programmerin...', Array, true)
+#11 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#12 C:\Programmering\xampp\htdocs\blog\protected\controllers\HowtoController.php(191): CController->render('create', Array)
+#13 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): HowtoController->actionCreate()
+#14 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#15 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#16 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#17 C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php(51): CFilter->filter(Object(CFilterChain))
+#18 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#19 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#20 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#21 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('create')
+#23 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('howto/create')
+#24 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#25 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/howto/create
+HTTP_REFERER=http://blog/howto
+---
+2012/03/15 12:59:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/15 13:00:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/15 13:00:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/15 13:00:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/15 13:02:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/15 13:04:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/15 13:06:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/d68f5671/elfinder/js/i18n/elfinder.en.js".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/d68f5671...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/d68f5671/elfinder/js/i18n/elfinder.en.js
+HTTP_REFERER=http://blog/howto/create
+---
+2012/03/15 13:06:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/d68f5671/elfinder/js/i18n/elfinder.en.js".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/d68f5671...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/d68f5671/elfinder/js/i18n/elfinder.en.js
+HTTP_REFERER=http://blog/howto/create
+---
+2012/03/15 13:06:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/15 13:06:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/d68f5671/elfinder/js/i18n/elfinder.en.js".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/d68f5671...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/d68f5671/elfinder/js/i18n/elfinder.en.js
+HTTP_REFERER=http://blog/howto/create
+---
+2012/03/15 13:06:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/d68f5671/elfinder/js/i18n/elfinder.en.js".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/d68f5671...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/d68f5671/elfinder/js/i18n/elfinder.en.js
+HTTP_REFERER=http://blog/howto/create
+---
+2012/03/15 13:06:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/15 13:08:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/d68f5671/elrte/js/jquery-ui-1.8.7.custom.min.js".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/d68f5671...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/d68f5671/elrte/js/jquery-ui-1.8.7.custom.min.js
+HTTP_REFERER=http://blog/howto/create
+---
+2012/03/15 13:08:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/d68f5671/elfinder/js/i18n/elfinder.en.js".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/d68f5671...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/d68f5671/elfinder/js/i18n/elfinder.en.js
+HTTP_REFERER=http://blog/howto/create
+---
+2012/03/15 13:08:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/d68f5671/elrte/js/jquery-1.4.4.min.js".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/d68f5671...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/d68f5671/elrte/js/jquery-1.4.4.min.js
+HTTP_REFERER=http://blog/howto/create
+---
+2012/03/15 13:08:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/d68f5671/elfinder/js/i18n/elfinder.en.js".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/d68f5671...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/d68f5671/elfinder/js/i18n/elfinder.en.js
+HTTP_REFERER=http://blog/howto/create
+---
+2012/03/15 13:08:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/15 13:08:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/d68f5671/elrte/js/jquery-ui-1.8.7.custom.min.js".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/d68f5671...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/d68f5671/elrte/js/jquery-ui-1.8.7.custom.min.js
+HTTP_REFERER=http://blog/howto/create
+---
+2012/03/15 13:08:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/d68f5671/elfinder/js/i18n/elfinder.en.js".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/d68f5671...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/d68f5671/elfinder/js/i18n/elfinder.en.js
+HTTP_REFERER=http://blog/howto/create
+---
+2012/03/15 13:08:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/d68f5671/elrte/js/jquery-1.4.4.min.js".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/d68f5671...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/d68f5671/elrte/js/jquery-1.4.4.min.js
+HTTP_REFERER=http://blog/howto/create
+---
+2012/03/15 13:08:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/d68f5671/elrte/js/jquery-1.4.4.min.js".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/d68f5671...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/d68f5671/elrte/js/jquery-1.4.4.min.js
+HTTP_REFERER=http://blog/howto/create
+---
+2012/03/15 13:08:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/d68f5671/elrte/js/jquery-ui-1.8.7.custom.min.js".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/d68f5671...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/d68f5671/elrte/js/jquery-ui-1.8.7.custom.min.js
+HTTP_REFERER=http://blog/howto/create
+---
+2012/03/15 13:08:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/d68f5671/elfinder/js/i18n/elfinder.en.js".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/d68f5671...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/d68f5671/elfinder/js/i18n/elfinder.en.js
+HTTP_REFERER=http://blog/howto/create
+---
+2012/03/15 13:08:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/15 13:09:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/15 13:10:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/15 13:10:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/15 13:10:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/15 13:19:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "amfGateway".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('amfGateway')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/amfGateway
+---
+2012/03/15 13:19:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/15 13:21:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/15 13:22:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/15 13:22:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "amfGateway".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('amfGateway')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/amfGateway
+---
+2012/03/15 13:22:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/15 13:30:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/15 17:06:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/d024e261/images/smileys/grin.png".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/d024e261...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/d024e261/images/smileys/grin.png
+HTTP_REFERER=http://blog/howto/1/Welcome%21
+---
+2012/03/15 17:06:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/d024e261/images/smileys/wink.png".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/d024e261...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/d024e261/images/smileys/wink.png
+HTTP_REFERER=http://blog/howto/1/Welcome%21
+---
+2012/03/15 17:06:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/d024e261/images/smileys/wink.png".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/d024e261...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/d024e261/images/smileys/wink.png
+HTTP_REFERER=http://blog/howto/1/Welcome%21
+---
+2012/03/15 17:06:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/d024e261/images/smileys/grin.png".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/d024e261...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/d024e261/images/smileys/grin.png
+HTTP_REFERER=http://blog/howto/1/Welcome%21
+---
+2012/03/15 17:06:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/15 19:27:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
+2012/03/15 19:27:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/f2e4380d/nav1_sep.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/f2e4380d...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f2e4380d/nav1_sep.gif
+HTTP_REFERER=http://blog/assets/f2e4380d/mbmenu.css
+---
