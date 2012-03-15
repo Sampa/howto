@@ -10,11 +10,17 @@
 		</h2>
 	</div>
 	<div class="author">
-		
 <?= "Shared by " . User::getUserLink( $data->author->username ) . ' on <i>' . $created . '</i>'; 
 		echo " and last updated on <i>" . $updated . "</i>"; ?>	
 	</div>
-		
+<!-- Categories-->
+<?php 
+	if ( $data->categories ):
+		foreach ( $data->categories as $category ):
+			echo $category->name;
+		endforeach; 
+	endif;
+?>
 	<div  id="rating_info_<?=$data->rating_id?>">
 <?php 
 	if ( $rating = Rating::model()->findByPk($data->rating_id) )

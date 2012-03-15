@@ -35,7 +35,7 @@
 
 	
 	<div id="header">
-		<div id="logo" class="span8" style=""><h1>Howto<h1>
+		<div id="logo" class="span7" style=""><h1>Howto<h1>
 		<?php
 		if ( $this->isGuest ):
 		?>
@@ -57,7 +57,25 @@
 		<?=$this->clips['header'];?>
 		</div><!-- logo -->
 		
-		<div id="search" class="span4" style="border: 0px solid black; margin-top: 15px;">
+	<div class="btn-toolbar span2" style="margin-top: 15px;"><!--category select-->
+	<?php 
+		$categories = array();
+		$list = Category::model()->findAll();
+		foreach ( $list as $category )
+		{
+			$categories[] = array('label'=>$category->name, 'url'=>'/howto/category/'.$category->name);
+		
+		}
+		$this->widget('bootstrap.widgets.BootButtonGroup',
+		array( 'type'=>'primary', 
+        'buttons'=>array(
+            array('label'=>'Categories', 'url'=>'/categories' ,'icon'=>'icon-edit icon-white'),
+            array('items'=>$categories) ),
+			)); 
+		?>
+		</div>
+		
+		<div id="search" class="span4" style="margin-top: 15px;">
 		<?php $this->widget('CAutoComplete', array(
 			'model'=>new Howto,
 			'id'=>'searchfield',

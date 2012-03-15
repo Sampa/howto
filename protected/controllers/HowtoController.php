@@ -277,20 +277,24 @@ class HowtoController extends Controller
 		$this->forward('index');
 	}
 	
+
 	public function actionIndex($show="",$category="")
 	{
 		
 		//*** SET THE SORT ORDER IF STATEMENTS ***//
 		$order = 'create_time DESC';
-			switch ($show)
-		{
-			case "show/popular":
-			$order = 'rating.vote_average DESC';
-			break;
-			//case "show/new":
-			//$order = 'rating.vote_average';
-		}
+		$split = explode("/",$show);
 		
+		if ( $split[0] == "show" )
+		{
+			switch ($split[1])
+			{
+				case "popular":
+				$order = 'rating.vote_average DESC';
+				break;
+
+			}
+		}
 		//*** INITIATE ***//
 		$criteria = new CDbCriteria(
 		array(
@@ -304,16 +308,16 @@ class HowtoController extends Controller
 		if ( isset ( $_GET['tag'] ) )
 			$criteria->addSearchCondition( 'tags',$_GET['tag'] );
 	
-		if ( isset ( $_GET['category'] ) )
+		if ( $split[0] == "category" ) 
 		{
 			$criteria->together = true;
 			$criteria->with = 'categories';
-			$criteria->Compare('categories.category' , $category , true );
+			$criteria->Compare('categories.name' ,$split[1] , true );
 		}
 		
-		switch ($show)
+		switch ($split[1])
 		{
-			case "show/own":
+			case "own":
 			if ( Yii::app()->user->isGuest )
 				{
 					$this->redirect( array( '/reg' , 'ref'=>'own' ) );
@@ -321,7 +325,7 @@ class HowtoController extends Controller
 				$criteria->addColumnCondition( array ( 'author_id'=>Yii::app()->user->id ) );
 			break;
 			
-			case "show/new":
+			case "new":
 			$today = new DateTime();
 			$today->modify('-1 month'); 
 			
@@ -383,9 +387,11 @@ class HowtoController extends Controller
 			if ( isset ( $_GET['id'] ) )
 			{
 				if ( Yii::app()->user->isGuest )
+				{
 					$condition='status='.Howto::STATUS_PUBLISHED.' OR status='.Howto::STATUS_ARCHIVED;
-				else
+				}else{
 					$condition='';
+				}	
 				$this->_model=Howto::model()->with('steps')->findByPk($_GET['id'], $condition);
 			}
 			if ( $this->_model === null )

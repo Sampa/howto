@@ -21,6 +21,8 @@
 			?>
 			</div>
 			<?php endif;?>
+<!-- siderbar clip--><?php echo $this->clips['sidebar']; ?>
+
 			<?php 
 				$this->widget('TagCloud', 
 				array(
@@ -34,12 +36,6 @@
 					'maxComments'=>Yii::app()->params['recentCommentCount'],
 				)); 
 			?>
-
-
-			
-			
-			<?php echo $this->clips['sidebar']; ?>
-
 
 		</div><!-- sidebar -->
 	</div>

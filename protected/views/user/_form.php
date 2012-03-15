@@ -3,7 +3,7 @@
 <?php if ( !$model->isNewRecord ): ?>
 	<div id="avatar_upload" style="">
 	 <h3> Upload an avatar </h3>
-<?php 
+<?php /* 
 	$XUpload = new XUploadForm;
 	$this->widget('ext.xupload.XUploadWidget', 
 			array(
@@ -17,7 +17,7 @@
 							$("#User_avatar").val(\'\'+handler.response.name + \'\' );
 							}'),
 		       ));
-?>
+*/?>
 	</div>
 <?php endif;?>
 

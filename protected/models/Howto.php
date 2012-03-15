@@ -35,6 +35,7 @@ class Howto extends Model
 			'steps' => array(self::HAS_MANY, 'Step', 'howto_id', 'order'=>'position','together' => true,),
 			'stepCount' => array( self::STAT , 'Step', 'howto_id', 'condition'=>''),
 			'rating'=>array( self::BELONGS_TO, 'Rating', 'rating_id'),
+			'categories'=>array(self::MANY_MANY, 'Category', 'tbl_howto_category(howto_id, category_id)'),
 
 	);
 	}

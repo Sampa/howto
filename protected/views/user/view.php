@@ -6,13 +6,25 @@
 ?>
 	<h1><?php echo $model->username; ?></h1>
 	
-	<a target="_blank" href="<?= User::USER_DIR . $model->id . '/' . $model->avatar;?>">
-		<img class="user_avatar"
+	<div  style="width:170px; height:130px; float:left;">
+		<a target="_blank" href="<?= User::USER_DIR . $model->id . '/' . $model->avatar;?>">
+<!--avatar--><img class="user_avatar"
 			src="<?=User::USER_DIR . $model->id . '/' . $model->avatar;?>" 
 			alt="Avatar"/>
-	</a>
+		</a>
+<!-- update--><?php if ( Yii::app()->user->id == $model->id ): ?>
+		<button class="update_toggle btn btn-primary" id="update_button" style="float:left;">
+			<i class="icon-ok icon-white"></i>Update
+		</button> 
+  
+		<button class="update_toggle btn btn-danger" id="cancel_button" style="float:left; display:none;">
+<!--cancel--><i class="icon-ban-circle icon-white"></i>Cancel 
+		</button>
+
+	</div>
+	<?php endif;?>	
 	
-	<div id="profile_detail_view">
+	<div id="profile_detail_view" style="width: 300px; border: 1 px solid black;">
 <?php
 	$this->widget('bootstrap.widgets.BootDetailView',
 	array(
@@ -23,62 +35,39 @@
 		'created',
 		'last_activity',
 		),
+	'htmlOptions'=>array('style'=>'width: 300px'),
 	)); 
 ?>
 	</div>
-<?php
-	if ( Yii::app()->user->id == $model->id ):
-?>
-	<button class="update_toggle btn btn-primary" id="update_button" style="float:left;">
-		<i class="icon-ok icon-white"></i>Update
-	</button> 
-  
-	<button class="update_toggle btn btn-danger" id="cancel_button" style="float:left; display:none;">
-		<i class="icon-ban-circle icon-white"></i>Cancel 
-	</button>
+	
 
-
-	<div id="user_update" style="clear:both;">
-		<?=$this->renderPartial('update',array('model'=>$model));?>
+		<div id="user_update" style="clear:both;">
+<!--update form--><?=$this->renderPartial('update',array('model'=>$model));?>
 	</div>
 
-<?php endif;?>
 
-	<div id="user_presentation" style="clear:both"> <?= $model->presentation; ?> </div>
+
+<div id="user_presentation" style="clear:both"> <?= $model->presentation; ?> </div>
 
 <?php if ( $this->userId == $model->id || $model->public_library == User::PUBLIC_LIBRARY ): ?>
 	<h4> <?= $this->user;?> file library  </h4>
-	
 
-<?php 
-	Yii::app()->user->setFlash('success',"<p>If you have any images in your library,
-		you can press them to view them in a fancybox gallery.</p>
-		You can reach these files whenever you see the text-editor, 
-		You can see the text-editor when you're creating/updating a post
-		or if you are editing your profile");
-?>		
-<?php $this->widget('bootstrap.widgets.BootAlert'); ?>
-	
-
-<?php require('_fileLibrary.php'); ?>
+<?php //require('_fileLibrary.php'); ?>
 <?php endif; ?>
 
 
 <?php 
-	$this->beginWidget('system.web.widgets.CClipWidget', array( 'id'=>'sidebar' ) );   
-		if ( $model->howtos ):
-			echo '<div class="well"><p> Howtos by ' . $model->username . "</p>";
+	$this->beginWidget('system.web.widgets.CClipWidget', array( 'id'=>'sidebar' ) );  
+//<!--user howtos-->
+	if ( $model->howtos ):
+			echo '<div class="well"><h3> Howtos by ' . $model->username . "</h3>";
 			foreach( $model->howtos as $howto ) 
 			{
 				echo Howto::model()->getLink($howto->id);
 				echo "<br/>";
 			}
-			echo '</div>';
-			
-		endif;
-		
-		
-		
+			echo '</div>';	
+	endif;	
 	$this->endWidget(); 
 ?>
 
