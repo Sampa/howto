@@ -6,7 +6,7 @@ class CategoryController extends Controller
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
 	 * using two-column layout. See 'protected/views/layouts/column2.php'.
 	 */
-	public $layout='//layouts/tripple';
+	public $layout='//layouts/column2';
 
 	/**
 	 * @return array action filters
@@ -61,15 +61,15 @@ class CategoryController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new Category;
+		$model = new Category;
 
 		// Uncomment the following line if AJAX validation is needed
-		$this->performAjaxValidation($model);
+		$this->performAjaxValidation($model,'category-form');
 
-		if(isset($_POST['Category']))
+		if ( isset ( $_POST['Category'] ) )
 		{
-			$model->attributes=$_POST['Category'];
-			if($model->save())
+			$model->attributes = $_POST['Category'];
+			if ( $model->save() )
 				
 				$this->redirect(array('create','id'=>$model->id));
 		}
@@ -86,10 +86,10 @@ class CategoryController extends Controller
 	 */
 	public function actionUpdate($id)
 	{
-		$model=$this->loadModel($id);
+		$model = $this->loadModel($id);
 
 		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
+		 $this->performAjaxValidation($model,'category-form');
 
 		if(isset($_POST['Category']))
 		{
@@ -162,16 +162,5 @@ class CategoryController extends Controller
 		return $model;
 	}
 
-	/**
-	 * Performs the AJAX validation.
-	 * @param CModel the model to be validated
-	 */
-	protected function performAjaxValidation($model)
-	{
-		if(isset($_POST['ajax']) && $_POST['ajax']==='category-form')
-		{
-			echo CActiveForm::validate($model);
-			Yii::app()->end();
-		}
-	}
+
 }

@@ -107,7 +107,7 @@ return array(
 				'profile/*'=>'user/view',
 				'howto/<show:.*?>'=>'howto/index/',
 				'viewpdf/*'=>'howto/viewpdf',
-				'cat/*'=>'howto/index',
+				'categories'=>'category/index',
 
 
 				//'<controller:\w+>/<id:\d+>'=>'<controller>/view', 
