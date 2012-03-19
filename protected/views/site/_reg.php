@@ -11,7 +11,7 @@
 		),
 	)); 
 ?>
-<div id="modal_registration" class="divForForm"></div>
+<div id="modal_registration" class="divForForm well" style="padding:15px;"></div>
 <script>
 function getReg(){
   <?php echo CHtml::ajax(array(

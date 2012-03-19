@@ -3,7 +3,7 @@
 	$this->pageTitle = $model->title;
 	$this->layout = "column1";
 ?>
-<div id="howto_container" style="padding-left: 20px;">
+<div id="howto_container" style="padding-left: 20px; float:left;">
 	<div id="left" class="span7" style="float:left;" >
 <?php 
 	$this->renderPartial('_view',
@@ -33,27 +33,7 @@
 			)
 		);
 ?> 	 	</div><!--left-->
-	<div id="right" class="span6" style="margin-left:60px;"  >
-	<?php $this->widget('bootstrap.widgets.BootCarousel', array(
-		'items'=>array(
-			array('image'=>'http://placehold.it/770x400&text=First+thumbnail', 'label'=>'First Thumbnail label', 'caption'=>'Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.'),
-			array('image'=>'http://placehold.it/770x400&text=Second+thumbnail', 'label'=>'Second Thumbnail label', 'caption'=>'Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.'),
-			array('image'=>'http://placehold.it/770x400&text=Third+thumbnail', 'label'=>'Third Thumbnail label', 'caption'=>'Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.'),
-		),
-		'events'=>array(
-			'slide'=>"js:function() { console.log('Carousel slide.'); }",
-			'slid'=>"js:function() { console.log('Carousel slid.'); }",
-		),
-	)); ?>
-
-			lorum något annat här ipsum lorum något annat här ipsum
-			lorum något annat här ipsum lorum något annat här ipsum
-			lorum något annat här ipsumlorum något annat här ipsum
-			lorum något annat här ipsumlorum något annat här ipsumlorum
-			lorum något annat här ipsumlorum något annat här ipsum
-			lorum något annat här ipsumlorum något annat här ipsum
-			lorum något annat här ipsumlorum något annat här ipsumlorum något annat här ipsum
-	</div>
+	
 	
 	<div id="steps" class="span7" style="clear:both; float:left;">
 		<?php if ( $model->stepCount >= 1 ): ?>
@@ -71,30 +51,9 @@
 	</div>
 
 
+</div><!-- container-->
+	<div id="comments" style="margin-top: 30px" class="span4" >
+			<div id="disqus_thread"></div>
 
-	<div id="comments" style="" class="span5" >
-		<?php if($model->commentCount>=1): ?>
-		<h3>
-			<?php echo $model->commentCount>1 ? $model->commentCount . ' comments' : 'One comment'; ?>
-		</h3>
-
-		<?php $this->renderPartial('_comments',array(
-			'howto'=>$model,
-			'comments'=>$model->comments,
-		)); ?>
-	<?php endif; ?>
-
-	<h3>Leave a Comment</h3>
-
-	<?php if(Yii::app()->user->hasFlash('commentSubmitted')): ?>
-		<div class="flash-success">
-			<?php echo Yii::app()->user->getFlash('commentSubmitted'); ?>
-		</div>
-	<?php else: ?>
-		<?php $this->renderPartial('/comment/_form',array(
-			'model'=>$comment,
-		)); ?>
-	<?php endif; ?>
 
 	</div><!-- comments -->
-</div><!-- container-->

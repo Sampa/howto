@@ -35,7 +35,7 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'content'); ?>
-		<?php echo $form->hiddenField($model,'content'); ?>
+		<?php echo $form->textArea($model,'content'); ?>
 		<?php echo $form->error($model,'content'); ?>
 	</div>
 

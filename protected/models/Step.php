@@ -47,7 +47,7 @@ class Step extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('text', 'required'),
+			array('text', 'safe'),
 			array('title howto_id', 'length', 'max'=>255),
 
 			// The following rule is used by search().
@@ -69,7 +69,7 @@ class Step extends CActiveRecord
 		return array(
 			'howto_id' => 'howto',
 			'titel' => 'Titel',
-			'text' => 'Text',
+			'text' => '',
 			
 		);
 	}

@@ -13,7 +13,10 @@ body
 /** User/view **/
 .user_avatar{width:150px;height:100px;float:left;}
 .fileName{text-decoration:none;	background: #ececec; }
+.elrte{display:none;}
 #profile_detail_view{width: 300px; float:left}
+#stepContentArea{position:fixed;left:42%;z-index:10;}
+
 /**Yii default css**/
 
 #page

@@ -5,16 +5,12 @@
 	<meta name="language" content="en" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<!-- blueprint CSS framework -->
-	<!--<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/screen.css" media="screen, projection" />-->
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/print.css" media="print" />
 	<!--[if lt IE 8]>
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ie.css" media="screen, projection" />
 	<![endif]-->
 
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/style.css" />
+
 <?php  //to be able to use xupload and eltre on the same page we need this scriptmap
 	$scriptmap=Yii::app()->clientScript;
 	$scriptmap->scriptMap=array(
@@ -31,11 +27,11 @@
 
 <body>
 
-<div class="span12" id="page">
+<div id="page" >
 
 	
 	<div id="header">
-		<div id="logo" class="span7" style=""><h1>Howto<h1>
+		<div id="logo" class="span2" style="border:0px solid black"><h1>Howto<h1>
 		<?php
 		if ( $this->isGuest ):
 		?>
@@ -56,8 +52,9 @@
 		
 		<?=$this->clips['header'];?>
 		</div><!-- logo -->
-		
-	<div class="btn-toolbar span2" style="margin-top: 15px;"><!--category select-->
+	<div class="" style="border: 0px solid red; height:50px; float:left; width:28%"></div>
+	<div class="span6" style="border:0px solid blue; margin: 3% 0 0 5%; padding:0px;">
+	<div class="btn-toolbar span2" style="border:0px solid green; margin-left:-5px;"><!--category select-->
 	<?php 
 		$categories = array();
 		$list = Category::model()->findAll();
@@ -75,18 +72,19 @@
 		?>
 		</div>
 		
-		<div id="search" class="span4" style="margin-top: 15px;">
+		<div id="search" class="span4" style="border: 0px solid black; margin-left:30px;">
 		<?php $this->widget('CAutoComplete', array(
 			'model'=>new Howto,
 			'id'=>'searchfield',
 			'attribute'=>'tags',
 			'url'=>array('/howto/suggestTags'),
 			'multiple'=>true,
-			'htmlOptions'=>array('size'=>50, 'value'=>'Find Howto\'s by tag'),
+			'htmlOptions'=>array('size'=>20, 'value'=>'Find Howto\'s by tag','style'=>'margin-top:7px'),
 		)); ?>
-		<button class="btn btn-primary" style="margin-top: -7px;" id="searchbutton">
+		<button class="btn btn-primary" style="margin-top: 0px;" id="searchbutton">
 <!-- search--><i class="icon-search icon-white"></i> Find
 		</button>
+		</div>
 		<script>
 			$("#searchfield").focus(function(){
 				$(this).val('');
@@ -106,7 +104,7 @@
 <?php 
 	$this->widget('application.extensions.mbmenu.MbMenu',array( 
 		'items'=>array( //Top level
-				array('label'=>'Home', 'url'=>'//blog'),
+				array('label'=>'Home', 'url'=>'/site/index'),
 				array('label'=>'About', 'url'=>array('//about')),
 				array('label'=>'Contact', 'url'=>array('//contact')),
 				array('label'=>'Howtos','url'=>array( '//howto'),

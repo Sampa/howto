@@ -8,7 +8,7 @@
         'hidden'=>"js:function() { console.log('dialogLogin hidden.'); }",
     ),
 )); ?>
-<div id="modal_login" class="divForForm"></div>
+<div id="modal_login" class="divForForm well" style="padding:25px;"></div>
 <?php $this->endWidget(); ?> 
 <script>
 function getLogin(){

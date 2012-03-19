@@ -15,7 +15,7 @@
 ?>	
 	<div class="modal-header">
 		<a class="close" data-dismiss="modal">&times;</a>
-		<h3>Sign up</h3>
+		<h2>Sign up</h2>
 	</div>
 
 	<div class="modal-body">

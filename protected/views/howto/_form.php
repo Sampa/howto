@@ -1,4 +1,4 @@
-<div class="form">
+<div class="form" >
 
 <?php 
 	$form = $this->beginWidget('BootActiveForm', 
@@ -12,19 +12,19 @@
 		  'validateOnChange'=>true,
 		  'validateOnType'=>true,
 			 ),
- 		'htmlOptions'=>array( 'class'=>'well' ),
+ 		'htmlOptions'=>array( 'class'=>'well span5','style'=>'float:left;' ),
 		) );
  ?>
 
 	<?php     echo $form->errorSummary(array_merge(array($model),$validatedSteps));?>
 
-	<div class="row">
+	<div class="row-fluid">
 		<?php echo $form->labelEx($model,'title'); ?>
 		<?php echo $form->textField($model,'title',array('size'=>80,'maxlength'=>128)); ?>
 		<?php echo $form->error($model,'title'); ?>
 	</div>
 
-	<div class="row">
+	<div class="row-fluid">
 	<?php echo $form->error($model,'content'); ?>
 	<?php echo $form->textArea($model,'content',array('style'=>'display:none'));?>
 	<?php 
@@ -32,13 +32,12 @@
 		array(
 			'selector'=>'#Howto_content',
 			'userid'=>Yii::app()->user->id,
-			
 		));
 	?>
 		
 	</div>
 
-	<div class="row">
+	<div class="row-fluid">
 		<?php echo $form->labelEx($model,'tags'); ?>
 		<?php $this->widget('CAutoComplete', array(
 			'model'=>$model,
@@ -51,15 +50,17 @@
 		<?php echo $form->error($model,'tags'); ?>
 	</div>
 
-	<div class="row">
+	<div class="row-fluid">
 		<?php echo $form->labelEx($model,'status'); ?>
 		<?php echo $form->dropDownList($model,'status',Lookup::items('HowtoStatus')); ?>
 		<?php echo $form->error($model,'status'); ?>
 	</div>
 	
-	<a onClick="$('#stepContainer').show();" rel=".id_step_copy" href="" id="id_step">Manage Steps</a>
 	
-	<div id="stepContainer" style="display:block">
+	<div id="stepContainer" class="span3" style="display:block;">
+<!-- add step--><button class="btn btn-primary" rel=".id_step_copy" href="#" id="id_step">
+					<i class="icon-plus-sign icon-white"></i>Add step
+				</button>
 <?php 
 	$stepFormConfig = array(
       'elements'=>array(
@@ -69,7 +70,7 @@
         ),
         'text'=>array(
             'type'=>'textarea',
-			'class'=>'eltre',
+			'class'=>'elrte',
 		
         ),
 		 'howto_id'=>array(
@@ -86,10 +87,9 @@
         'model' => $step, //instance of the form model
 		'sortAttribute' => 'position', //if assigned: sortable fieldsets is enabled
 		//'jsAfterClone'=>'testid("run");',
-		//'jsAfterNewId'=>"eltre('.eltre'); ;",
-		//'jsBeforeNewId' => ";", 
-	    'jsAfterNewId' => 'testid(this.attr("id"));',
-		//*'$("editorPlaceholde").load("/howto/eltre")',*/ 
+		//'jsAfterNewId'=>"",
+		//'jsBeforeNewId' => "", 
+	    'jsAfterNewId' => '',
 		'tableView'=>false,
 		'addItemText'=>'',
         //if submitted not empty from the controller,
@@ -101,10 +101,9 @@
     ));
 ?>
 
-	<div id="editorPlaceholder"></div>
 		
 	
-	<div class="row buttons">
+	<div class="row-fluid buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save', 
 			array( 'class'=>'btn btn-primary' ) ); ?>
 	</div>
@@ -112,49 +111,42 @@
 <?php $this->endWidget(); ?>
 		</div><!-- stepContainer-->
 	</div><!-- form -->
-<script type="text/javascript">
-/*<![CDATA[*/
-function eltre(id) {
-	elRTE.prototype.options.panels.myToolbar = ['bold', 'italic', 'underline',
-	'strikethrough','justifyleft','justifyright', 'justifycenter', 'justifyfull',
-	'insertorderedlist', 'insertunorderedlist', 'docstructure','paste','removeformat','link','unlink', 'elfinder', 'image', 'fullscreen'];
-	elRTE.prototype.options.toolbars.myToolbar = ['myToolbar'];
-	var opts = {
-	'doctype': '',
-	'cssClass':'el-rte',
-	'height': '100px',
-	'width': '500px',
-	'toolbar': 'tiny',
-	'absoluteURLs': false,
-	'allowSource': false,
-	'styleWithCSS': false,
-	'fmAllow': true,
-	'cssfiles':['/assets/7952073/css/elrte-inner.css'],
-	'fmOpen' : function(callback) {
-	$("#"+id).elfinder({
-	'url' : '/assets/7952073/connectors/php/connector.php?userid=1',
-	'dialog' : { width : 900, modal : true, title : 'Files' },
-	'closeOnEditorCallback' : true,
-	'editorCallback' : callback
-	}) }} ;
-	$(".eltre").elrte(opts);
-
-
-
-};
-/*]]>*/
-</script> 
+	
+	
+		<div id="stepContentArea" class="span5 well">
+			<h2> Edit step <i id="thisstep">1</i> </h2>
+				<?php 
+					echo CHtml::textArea('stepcontent','',
+					array( 'style'=>'clear:both' , 'id'=>'stepcontent' ) );
+				?>
+				<?php 
+					$this->widget('application.extensions.elrte.elRTE', 
+					array(
+						'selector'=>'#stepcontent',
+						'userid'=>Yii::app()->user->id,
+					));
+				?>
+		</div>
+		
+<div id="currentStep" style="display:none;">Step_text</div>
 	<script>
-function testid(id){
-		if ( id.match("Step_text") ){
-		console.log(id);
-		eltre(id);
-		}}		
-//$(document).ready(function(){
-/*$("#Step_text").hide();
-$("#Step_title").hide();
-$('label[for="Step_title"]').hide();
-$('label[for="Step_text"]').hide();
-});*/
-//});
+$(document).ready(function(){
+$('input[id*="Step"]').focus(function(){
+	console.log($(this).attr("id"));
+	var step_title_id = $(this).attr("id");
+	var _number = step_title_id.substring(10);
+	if (_number > 1){
+		step_textarea_id = 'Step_text'+_number;
+	}else{
+		var step_textarea_id = 'Step_text';
+		var _number = 1;
+	}
+	var before = $("#currentStep").html();
+	$('#'+before).val($('#stepcontent').elrte('val'));
+	$('#currentStep').html(step_textarea_id);
+	$('#thisstep').html(_number);
+	$('#stepcontent').elrte('val',$("#"+step_textarea_id).val());
+	
+});
+});
 </script>

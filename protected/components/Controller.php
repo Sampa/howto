@@ -5,6 +5,7 @@
  */
 class Controller extends RController
 {
+	public $clip = "system.web.widgets.CClipWidget";
 	public function ajaxDelete( $id , $model )
 	{
 		if ( Yii::app()->request->isAjaxRequest )
