@@ -30,6 +30,12 @@ return array(
 
 	// application modules
 	'modules'=>array(
+		'message' => array(
+            'userModel' => 'User',
+            'getNameMethod' => 'getFullName',
+            'getSuggestMethod' => 'getSuggest',
+			'viewPath' => '//messageModuleCustom',
+        ),
 		'rights'=>array(
 			'debug'=>true,
 			//'install'=>true,

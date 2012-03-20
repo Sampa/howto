@@ -63,10 +63,8 @@ body
 
 #logo
 {
-	padding: 10px 20px;
-	font-size: 200%;
+	padding: 0px 0px;
 }
-
 #mainmenu
 {
 	background:white url(bg.gif) repeat-x left top;
@@ -100,49 +98,6 @@ body
 	text-decoration:none;
 }
 
-div.flash-error, div.flash-notice, div.flash-success
-{
-	padding:.8em;
-	margin-bottom:1em;
-	border:2px solid #ddd;
-}
-
-div.flash-error
-{
-	background:#FBE3E4;
-	color:#8a1f11;
-	border-color:#FBC2C4;
-}
-
-div.flash-notice
-{
-	background:#FFF6BF;
-	color:#514721;
-	border-color:#FFD324;
-}
-
-div.flash-success
-{
-	background:#E6EFC2;
-	color:#264409;
-	border-color:#C6D880;
-}
-
-div.flash-error a
-{
-	color:#8a1f11;
-}
-
-div.flash-notice a
-{
-	color:#514721;
-}
-
-div.flash-success a
-{
-	color:#264409;
-}
-
 div.form .rememberMe label
 {
 	display: inline;
@@ -155,16 +110,7 @@ div.view
 	border: 1px solid #C9E0ED;
 }
 
-div.breadcrumbs
-{
-	font-size: 0.9em;
-	padding: 5px 20px;
-}
 
-div.breadcrumbs span
-{
-	font-weight: bold;
-}
 
 .portlet
 {

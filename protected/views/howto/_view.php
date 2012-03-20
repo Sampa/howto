@@ -6,7 +6,7 @@
 <div class="Howto">
 	<div class="title">
 		<h2>	
-			<?php echo CHtml::link(CHtml::encode($data->title), $data->url); ?>
+			<?= CHtml::link(CHtml::encode($data->title), $data->url); ?>
 		</h2>
 	</div>
 	<div class="author">
@@ -64,9 +64,9 @@
 		?>
 	</div>
 	<div class="nav">
-		<?php echo $data->stepCount;?> Steps
+		<?= $data->stepCount;?> Steps
 		<b>Tags:</b>
-		<?php echo implode(', ', $data->tagLinks); ?>
+		<?= implode(', ', $data->tagLinks); ?>
 		<br/>
 <!--Read--><?=CHtml::link('<i class="icon-eye-open icon-white"></i> Read', $data->url,array('class'=>'btn btn-success' ) ); ?> 
 
@@ -96,10 +96,11 @@
 
 	</div><!-- nav -->
 </div>
+
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
     var disqus_shortname = 'howtos'; // required: replace example with your forum shortname
-	var disqus_url = <?= $data->url;?>
+//	var disqus_url = <?= $data->url;?>;
 
     /* * * DON'T EDIT BELOW THIS LINE * * */
     (function() {
@@ -109,19 +110,7 @@
     })();
 </script>
 
-<script type="text/javascript">
 
-    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = 'howtos'; // required: replace example with your forum shortname
-
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function () {
-        var s = document.createElement('script'); s.async = true;
-        s.type = 'text/javascript';
-        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-    }());
-</script>
 	<script>
 	$(".bookmark").click(function(){
 		id = $(this).attr('name');

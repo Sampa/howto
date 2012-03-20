@@ -44,6 +44,18 @@ class User extends CActiveRecord
 	{
 		return '{{user}}';
 	}
+	public function getFullName()
+	{
+		return $this->username;
+	}
+
+	public function getSuggest($q) 
+	{
+		$c = new CDbCriteria();
+		$c->addSearchCondition('username', $q, true, 'OR');
+		$c->addSearchCondition('email', $q, true, 'OR');
+		return $this->findAll($c);
+	}
 
 
 	/**

@@ -38,7 +38,7 @@
 	<div id="steps" class="span7" style="clear:both; float:left;">
 		<?php if ( $model->stepCount >= 1 ): ?>
 			<h3>
-				<?php echo $model->stepCount>1 ? $model->stepCount . ' steps' : 'One step'; ?>
+				<?= $model->stepCount>1 ? $model->stepCount . ' steps' : 'One step'; ?>
 			</h3>
 		<?php endif; ?>
 		<?php
@@ -53,7 +53,5 @@
 
 </div><!-- container-->
 	<div id="comments" style="margin-top: 30px" class="span4" >
-			<div id="disqus_thread"></div>
-
-
+				<div id="disqus_thread"></div>
 	</div><!-- comments -->

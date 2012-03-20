@@ -1,7 +1,6 @@
 <?php
 	$this->breadcrumbs=array(
-		'Users'=>array('index'),
-		$model->id,
+		$model->username,
 	);
 ?>
 	<h1><?php echo $model->username; ?></h1>
