@@ -15,6 +15,8 @@
 			'slid'=>"js:function() { console.log('Carousel slid.'); }",
 		),
 	)); ?>
+			<!-- siderbar clip--><?php echo $this->clips['sidebar']; ?>
+
 			<?php if ( !$this->isGuest ):?>
 			<div class="well" style=""> <h2>Bookmarks</h2>
 			<?php
@@ -42,7 +44,6 @@
 					'maxComments'=>Yii::app()->params['recentCommentCount'],
 				)); 
 			?>
-<!-- siderbar clip--><?php echo $this->clips['sidebar']; ?>
 
 
 		</div><!-- sidebar -->

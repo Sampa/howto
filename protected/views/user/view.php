@@ -3,7 +3,10 @@
 		$model->username,
 	);
 ?>
-	<h1><?php echo $model->username; ?></h1>
+	<h1><?=$model->username; ?></h1>
+	<a class="btn btn-primary" href="/message/compose?id=<?=$model->id;?>">
+		<i class="icon-white icon-envelope"></i> Message
+	</a>
 	
 	<div  style="width:170px; height:130px; float:left;">
 		<a target="_blank" href="<?= User::USER_DIR . $model->id . '/' . $model->avatar;?>">
@@ -59,7 +62,7 @@
 	$this->beginWidget('system.web.widgets.CClipWidget', array( 'id'=>'sidebar' ) );  
 //<!--user howtos-->
 	if ( $model->howtos ):
-			echo '<div class="well"><h3> Howtos by ' . $model->username . "</h3>";
+			echo '<div class="well"><h2> Howtos by ' . $model->username . "</h2>";
 			foreach( $model->howtos as $howto ) 
 			{
 				echo Howto::model()->getLink($howto->id);

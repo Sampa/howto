@@ -168,9 +168,13 @@
 			});
 			$("#searchbutton").click(function(){
 				var val = $("#searchfield").val();
+				if(val === 'Find Howto\'s by tag' || val===''){
+				alert('Perhaps you should search something real instead ;\)');
+				}else{
 				val = val.replace(",",'');
 				var url = "/tag/"+val; 
 				$(location).attr('href',"/tag/"+val);
+				}
 			})
 		</script>
 				</div>

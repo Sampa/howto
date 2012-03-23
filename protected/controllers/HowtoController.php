@@ -102,10 +102,7 @@ class HowtoController extends Controller
 	
 	}
 	
-	public function actionEltre()
-	{
-		$this->renderPartial('_eltre');
-	}
+	
 	public function actionRating()
 	{			
 		$rating = Rating::model()->findByPk($_GET['id']);
@@ -153,13 +150,7 @@ class HowtoController extends Controller
 			
 		}
 	}
-	public function actionTest()
-	{
-		$rating = new Rating();
-			$rating->save();
-			echo $rating->id;
-	
-	}
+
 	public function actionCreate()
 	{
 		Yii::import('ext.multimodelform.MultiModelForm');
@@ -323,6 +314,14 @@ class HowtoController extends Controller
 					$this->redirect( array( '/reg' , 'ref'=>'own' ) );
 				}
 				$criteria->addColumnCondition( array ( 'author_id'=>Yii::app()->user->id ) );
+			break;
+			case "show/by":
+			if ( Yii::app()->user->isGuest )
+				{
+					$this->redirect( array( '/reg' , 'ref'=>'own' ) );
+				}
+				$user = User::model()->find("username = '" . $_GET['user'] ."'");
+				$criteria->addColumnCondition( array ( 'author_id'=>$user->id ) );
 			break;
 			
 			case "show/new":

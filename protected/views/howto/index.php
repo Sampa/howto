@@ -7,3 +7,4 @@
 	'itemView'=>'_view',
 	'template'=>"{items}\n{pager}",
 )); ?>
+

@@ -20,7 +20,6 @@
 			'enableAjaxValidation'=>false,
 			'action' => $this->createUrl('delete/', array('id' => $viewedMessage->id))
 		)); ?>
-		<button class="btn btn-danger"><?= MessageModule::t("Delete") ?></button>
 		<?php $this->endWidget(); ?>
 
 		<table class="bordered-table zebra-striped">
@@ -75,7 +74,9 @@
 			</div>
 
 			<div class="buttons">
-				<button class="btn btn-primary"><?= MessageModule::t("Reply") ?></button>
+				<button class="btn btn-primary"><i class="icon-white icon-repeat"></i> <?= MessageModule::t("Reply") ?></button>
+				<button class="btn btn-danger"><i class="icon-white icon-remove"></i> <?= MessageModule::t("Delete") ?></button>
+
 			</div>
 
 			<?php $this->endWidget(); ?>
