@@ -27,7 +27,10 @@ return array(
 	
 	),
 
-
+	'aliases' => array(
+    //assuming you extracted the files to the extensions folder
+    'xupload' => 'ext.xupload'
+),
 	// application modules
 	'modules'=>array(
 		'message' => array(

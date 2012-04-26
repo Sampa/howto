@@ -83,12 +83,14 @@
 <div id="rating_success_<?=$data->id;?>" style="display:none"></div>
 
 	<div class="content">
-	<br/><br/>
+		<br/>
+		<div class="edit_area">
 		<?php
 			$this->beginWidget('CMarkdown', array('purifyOutput'=>true));
 			echo $data->content;
 			$this->endWidget();
 		?>
+		</div>
 	</div>
 	<div class="nav">
 		<?= $data->stepCount;?> Steps
@@ -97,9 +99,15 @@
 		<br/>
 <!--Read--><?=CHtml::link('<i class="icon-eye-open icon-white"></i> Read', $data->url,array('class'=>'btn btn-success' ) ); ?> 
 
-<!--comments--><?=CHtml::link("<i class='icon-comment icon-white'></i> Comments ({$data->commentCount})",$data->url.'#comments',
-			array('class'=>'btn btn-primary' ) ); ?> 
-		
+<!--comments--><?php
+		/*CHtml::link("<i class='icon-comment icon-white'></i> Comments ({$data->commentCount})",$data->url.'#comments',
+			array('class'=>'btn btn-primary' ) ); */
+			 //
+			 ?>
+			
+<!--excel--><?= CHtml::link('<i class="icon-book icon-white"></i> Excel', 
+					array('/howto/excel/id/' . $data->id ), array('class'=>'btn btn-primary') );?>	
+
 <!--print--><?= CHtml::link('<i class="icon-print icon-white"></i> Print/Pdf', 
 					array('/viewpdf/id/' . $data->id ), array('class'=>'btn btn-primary') );?>		
 		
@@ -142,5 +150,30 @@
 			});
 			return false;
 		});
+		</script>
+		
+	<?php if ( $this->user == $data->author->username):?>
+	<script>
+	 $(document).ready(function() {
+     $('.edit_area').editable('/howto/inlineEdit?id=<?=$data->id;?>', { 
+         type      : 'textarea',
+		 data	   : $(this).html(),
+         cancel    : 'Cancel',
+         submit    : 'OK',
+         indicator : '<img src="img/indicator.gif">',
+         tooltip   : 'Click to edit...',
+		callback : function(value, settings) {
+
+         console.log(value);
+     },
+     });
+	 $('edit_area').click(function(){
+		
+	});
+ });
+	
 	</script>
+
+	<?php endif;?>
+	
 <?php $this->renderPartial('//howto/_mail');?>

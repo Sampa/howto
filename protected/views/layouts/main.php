@@ -20,6 +20,8 @@
 ?>
 	<?php  Yii::app()->clientScript->registerScriptFile('/js/jquery.multiplyforms.js');?>
 	<?php  Yii::app()->clientScript->registerScriptFile('/js/common.js');?>
+		<?php  Yii::app()->clientScript->registerScriptFile('/js/jeditable.js');?>
+
 
 
 	<title><?= CHtml::encode( $this->pageTitle ); ?></title>

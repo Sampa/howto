@@ -3,21 +3,31 @@
 <?php if ( !$model->isNewRecord ): ?>
 	<div id="avatar_upload" style="">
 	 <h3> Upload an avatar </h3>
-<?php /* 
+<?php 
 	$XUpload = new XUploadForm;
-	$this->widget('ext.xupload.XUploadWidget', 
-			array(
-						'url' => Yii::app()->createUrl("file/upload", 
-					array("parent_id" =>User::USER_DIR . Yii::app()->user->id ) ),
-						'model' => $XUpload,
-						'attribute' => 'file',
-						'options'=>array(
-                        'acceptFileTypes' => '/(\.|\/)(gif|jpeg|png)$/i',
-						'onComplete' => 'js:function (event, files, index, xhr, handler, callBack) {
-							$("#User_avatar").val(\'\'+handler.response.name + \'\' );
-							}'),
-		       ));
-*/?>
+	// $this->widget('ext.xupload.XUpload', 
+			// array(
+					// 'url' => Yii::app()->createUrl("file/upload", 
+					// array("parent_id" =>User::USER_DIR . Yii::app()->user->id ) ),
+						// 'model' => $XUpload,
+						// 'attribute' => 'file',
+						// 'options'=>array(
+                     //  'acceptFileTypes' => '/(\.|\/)(gif|jpeg|png)$/i',
+						// 'onComplete' => 'js:function (event, files, index, xhr, handler, callBack) {
+							// $("#User_avatar").val(\'\'+handler.response.name + \'\' );
+							// }'),
+		       // ));
+
+			   
+?>
+<?php
+$this->widget('xupload.XUpload', array(
+                    'url' => Yii::app()->createUrl("file/upload"),
+                    'model' => $XUpload,
+                    'attribute' => 'file',
+                    'multiple' => true,
+));
+?>
 	</div>
 <?php endif;?>
 

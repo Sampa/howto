@@ -29,7 +29,14 @@ class HowtoController extends Controller
 			
 		);
 	}
-	
+	  public function behaviors()
+    {
+        return array(
+            'eexcelview'=>array(
+                'class'=>'ext.eexcelview.EExcelBehavior',
+            ),
+        );
+    }
 	/**
 	 * Filter method for checking whether the currently logged in user
 	 * is the author of the Howto being accessed.
@@ -122,6 +129,26 @@ class HowtoController extends Controller
 			}
 		}
 	}
+	
+	public function actionInlineEdit()
+	{			
+			$model = Howto::model()->findByPk($_GET['id']);
+		
+		if ( Yii::app()->request->isAjaxRequest )
+		{				$model->content = $_POST['value'];
+
+			if ( $model->save() ) 
+			{
+
+			echo CJSON::encode( $value);
+			}
+			
+			
+		}
+	}
+	
+	
+	
 	/**
 	 * Creates a new model.
 	 * If creation is successful, the browser will be redirected to the 'view' page.
@@ -252,6 +279,7 @@ class HowtoController extends Controller
 			throw new CHttpException(400,'Invalid request. Please do not repeat this request again.');
 	}
 	
+	//**PDF/PRINT**
 	public function actionviewPdf( $id )
 	{
 		$mPDF1 = $this->actionMakePdf();
@@ -260,6 +288,36 @@ class HowtoController extends Controller
 		return $mPDF1->outPut();
 	}
 	
+	//**EXCEL**
+	public function actionexcel( $id )
+	{
+		$model = $this->loadModel();
+		$model = new CActiveDataProvider($model,
+		array(
+			'criteria'=>array(
+				'condition'=>'id='.$id,
+			),));
+ 
+    // Export it (note the way we define columns, the same as in CGridView, thanks to EExcelView)
+    $this->toExcel($model,
+        array(
+            'id',
+            'title::Title', // Note the custom header
+            'content::Howto',
+			'tags',
+			//'rating',
+			'create_time',
+			'status',
+
+        ),
+        'Random file',
+        array(
+            'creator' =>'',
+			//'autoWidth'=>false,
+        ),
+        'Excel2007' // This is the default value, so you can omit it. You can export to CSV, PDF or HTML too
+    );
+}
 	/**
 	 * Lists all models.
 	 */

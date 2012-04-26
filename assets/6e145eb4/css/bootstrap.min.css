@@ -343,7 +343,7 @@ table .span12{float:none;width:924px;margin-left:0;}
 .icon-resize-vertical{background-position:-432px -119px;}
 .icon-resize-horizontal{background-position:-456px -118px;}
 .dropdown{position:relative;}
-.dropdown-toggle{*margin-bottom:-3px;}
+.dropdown-toggle{*margin-bottom:-3px; height:18px;}
 .dropdown-toggle:active,.open .dropdown-toggle{outline:0;}
 .caret{display:inline-block;width:0;height:0;text-indent:-99999px;*text-indent:0;vertical-align:top;border-left:4px solid transparent;border-right:4px solid transparent;border-top:4px solid #000000;opacity:0.3;filter:alpha(opacity=30);content:"\2193";}
 .dropdown .caret{margin-top:8px;margin-left:2px;}
