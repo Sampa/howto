@@ -9526,3 +9526,893 @@ Stack trace:
 REQUEST_URI=/assets/d024e261/images/smileys/wink.png
 HTTP_REFERER=http://83.233.118.50/howto/1/Welcome%21
 ---
+2012/04/26 22:41:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/d024e261/images/smileys/grin.png".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/d024e261...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/d024e261/images/smileys/grin.png
+HTTP_REFERER=http://83.233.118.50/howto/1/Welcome%21
+---
+2012/04/26 22:41:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/d024e261/images/smileys/wink.png".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/d024e261...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/d024e261/images/smileys/wink.png
+HTTP_REFERER=http://83.233.118.50/howto/1/Welcome%21
+---
+2012/04/26 22:41:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/d024e261/images/smileys/wink.png".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/d024e261...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/d024e261/images/smileys/wink.png
+HTTP_REFERER=http://83.233.118.50/howto/1/Welcome%21
+---
+2012/04/26 22:41:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/d024e261/images/smileys/grin.png".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/d024e261...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/d024e261/images/smileys/grin.png
+HTTP_REFERER=http://83.233.118.50/howto/1/Welcome%21
+---
+2012/04/26 22:42:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/d024e261/images/smileys/grin.png".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/d024e261...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/d024e261/images/smileys/grin.png
+HTTP_REFERER=http://83.233.118.50/howto/1/Welcome%21
+---
+2012/04/26 22:42:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/d024e261/images/smileys/wink.png".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/d024e261...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/d024e261/images/smileys/wink.png
+HTTP_REFERER=http://83.233.118.50/howto/1/Welcome%21
+---
+2012/04/26 22:42:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/d024e261/images/smileys/grin.png".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/d024e261...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/d024e261/images/smileys/grin.png
+HTTP_REFERER=http://83.233.118.50/howto/1/Welcome%21
+---
+2012/04/26 23:11:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/26 23:11:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/26 23:11:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/26 23:11:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/26 23:11:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/26 23:11:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/26 23:11:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/26 23:11:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/26 23:11:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/26 23:11:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/26 23:11:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/26 23:11:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/26 23:11:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/26 23:11:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/26 23:12:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/26 23:12:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/26 23:13:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/26 23:13:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/26 23:13:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/26 23:13:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/26 23:13:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/26 23:13:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/26 23:13:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/26 23:13:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/26 23:13:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/26 23:13:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/26 23:13:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/26 23:13:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/26 23:13:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/27 07:29:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "soapcaller.bs".' in C:\Programmering\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('soapcaller.bs')
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('soapcaller.bs')
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('user/soapCaller...')
+#3 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/user/soapCaller.bs
+---
+2012/04/27 08:47:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "216.86.158.116:6667".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('216.86.158.116:...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=216.86.158.116:6667
+---
+2012/04/27 10:18:21 [error] [exception.CException] exception 'CException' with message 'Alias "extensions.facebook-opengraph.plugins.LoginButton" is invalid. Make sure it points to an existing directory or file.' in C:\Programmering\xampp\htdocs\yii\framework\YiiBase.php:343
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWidgetFactory.php(147): YiiBase::import('extensions.face...', true)
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'extensions.face...', Array)
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('extensions.face...', Array)
+#3 C:\Programmering\xampp\htdocs\blog\protected\views\site\pages\about.php(12): CBaseController->widget('extensions.face...', Array)
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\Programmerin...')
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Programmerin...', NULL, true)
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Programmerin...', NULL, true)
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('pages/about', NULL, true)
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CViewAction.php(141): CController->render('pages/about')
+#9 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CAction.php(75): CViewAction->run()
+#10 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CAction->runWithParams(Array)
+#11 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CViewAction))
+#12 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#13 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('page')
+#14 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/page/view/...')
+#15 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/about
+HTTP_REFERER=http://83.233.118.50/profile/u/Admin
+---
+2012/04/27 10:18:45 [error] [exception.CException] exception 'CException' with message 'Alias "extensions.facebook-opengraph.plugins.loginutton" is invalid. Make sure it points to an existing directory or file.' in C:\Programmering\xampp\htdocs\yii\framework\YiiBase.php:343
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWidgetFactory.php(147): YiiBase::import('extensions.face...', true)
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'extensions.face...', Array)
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('extensions.face...', Array)
+#3 C:\Programmering\xampp\htdocs\blog\protected\views\site\pages\about.php(12): CBaseController->widget('extensions.face...', Array)
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\Programmerin...')
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Programmerin...', NULL, true)
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Programmerin...', NULL, true)
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('pages/about', NULL, true)
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CViewAction.php(141): CController->render('pages/about')
+#9 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CAction.php(75): CViewAction->run()
+#10 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CAction->runWithParams(Array)
+#11 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CViewAction))
+#12 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#13 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('page')
+#14 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/page/view/...')
+#15 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/about
+HTTP_REFERER=http://83.233.118.50/profile/u/Admin
+---
+2012/04/27 10:18:47 [error] [exception.CException] exception 'CException' with message 'Alias "extensions.facebook-opengraph.plugins.loginutton" is invalid. Make sure it points to an existing directory or file.' in C:\Programmering\xampp\htdocs\yii\framework\YiiBase.php:343
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWidgetFactory.php(147): YiiBase::import('extensions.face...', true)
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'extensions.face...', Array)
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('extensions.face...', Array)
+#3 C:\Programmering\xampp\htdocs\blog\protected\views\site\pages\about.php(12): CBaseController->widget('extensions.face...', Array)
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\Programmerin...')
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Programmerin...', NULL, true)
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Programmerin...', NULL, true)
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('pages/about', NULL, true)
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CViewAction.php(141): CController->render('pages/about')
+#9 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CAction.php(75): CViewAction->run()
+#10 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CAction->runWithParams(Array)
+#11 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CViewAction))
+#12 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#13 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('page')
+#14 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/page/view/...')
+#15 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/about
+HTTP_REFERER=http://83.233.118.50/profile/u/Admin
+---
+2012/04/27 10:18:51 [error] [exception.CException] exception 'CException' with message 'Alias "extensions.facebook-opengraph.plugins.loginbutton" is invalid. Make sure it points to an existing directory or file.' in C:\Programmering\xampp\htdocs\yii\framework\YiiBase.php:343
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWidgetFactory.php(147): YiiBase::import('extensions.face...', true)
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'extensions.face...', Array)
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('extensions.face...', Array)
+#3 C:\Programmering\xampp\htdocs\blog\protected\views\site\pages\about.php(12): CBaseController->widget('extensions.face...', Array)
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\Programmerin...')
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Programmerin...', NULL, true)
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Programmerin...', NULL, true)
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('pages/about', NULL, true)
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CViewAction.php(141): CController->render('pages/about')
+#9 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CAction.php(75): CViewAction->run()
+#10 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CAction->runWithParams(Array)
+#11 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CViewAction))
+#12 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#13 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('page')
+#14 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/page/view/...')
+#15 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/about
+HTTP_REFERER=http://83.233.118.50/profile/u/Admin
+---
+2012/04/27 10:19:21 [error] [exception.CException] exception 'CException' with message 'Alias "extensions.facebook-opengraph.plugins.Comments" is invalid. Make sure it points to an existing directory or file.' in C:\Programmering\xampp\htdocs\yii\framework\YiiBase.php:343
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWidgetFactory.php(147): YiiBase::import('extensions.face...', true)
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'extensions.face...', Array)
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('extensions.face...', Array)
+#3 C:\Programmering\xampp\htdocs\blog\protected\views\site\pages\about.php(12): CBaseController->widget('extensions.face...', Array)
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\Programmerin...')
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Programmerin...', NULL, true)
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Programmerin...', NULL, true)
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('pages/about', NULL, true)
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CViewAction.php(141): CController->render('pages/about')
+#9 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CAction.php(75): CViewAction->run()
+#10 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CAction->runWithParams(Array)
+#11 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CViewAction))
+#12 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#13 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('page')
+#14 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/page/view/...')
+#15 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/about
+HTTP_REFERER=http://83.233.118.50/profile/u/Admin
+---
+2012/04/27 10:19:49 [error] [exception.CException] exception 'CException' with message 'Alias "extensions.yii-facebook-opengraph.plugins.LoginButton" is invalid. Make sure it points to an existing directory or file.' in C:\Programmering\xampp\htdocs\yii\framework\YiiBase.php:343
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWidgetFactory.php(147): YiiBase::import('extensions.yii-...', true)
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'extensions.yii-...', Array)
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('extensions.yii-...', Array)
+#3 C:\Programmering\xampp\htdocs\blog\protected\views\site\pages\about.php(12): CBaseController->widget('extensions.yii-...', Array)
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\Programmerin...')
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Programmerin...', NULL, true)
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Programmerin...', NULL, true)
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('pages/about', NULL, true)
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CViewAction.php(141): CController->render('pages/about')
+#9 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CAction.php(75): CViewAction->run()
+#10 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CAction->runWithParams(Array)
+#11 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CViewAction))
+#12 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#13 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('page')
+#14 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/page/view/...')
+#15 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/about
+HTTP_REFERER=http://83.233.118.50/profile/u/Admin
+---
+2012/04/27 10:20:21 [error] [exception.CException] exception 'CException' with message 'Alias "extensions.yii-facebook-opengraph.plugins.LoginButton" is invalid. Make sure it points to an existing directory or file.' in C:\Programmering\xampp\htdocs\yii\framework\YiiBase.php:343
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWidgetFactory.php(147): YiiBase::import('extensions.yii-...', true)
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'extensions.yii-...', Array)
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('extensions.yii-...', Array)
+#3 C:\Programmering\xampp\htdocs\blog\protected\views\site\pages\about.php(12): CBaseController->widget('extensions.yii-...', Array)
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\Programmerin...')
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Programmerin...', NULL, true)
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Programmerin...', NULL, true)
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('pages/about', NULL, true)
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CViewAction.php(141): CController->render('pages/about')
+#9 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CAction.php(75): CViewAction->run()
+#10 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CAction->runWithParams(Array)
+#11 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CViewAction))
+#12 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#13 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('page')
+#14 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/page/view/...')
+#15 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/about
+HTTP_REFERER=http://83.233.118.50/profile/u/Admin
+---
+2012/04/27 10:20:30 [error] [exception.CException] exception 'CException' with message 'Alias "extensions.yii-facebook-opengraph.plugins.Comments" is invalid. Make sure it points to an existing directory or file.' in C:\Programmering\xampp\htdocs\yii\framework\YiiBase.php:343
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWidgetFactory.php(147): YiiBase::import('extensions.yii-...', true)
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'extensions.yii-...', Array)
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('extensions.yii-...', Array)
+#3 C:\Programmering\xampp\htdocs\blog\protected\views\site\pages\about.php(12): CBaseController->widget('extensions.yii-...', Array)
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\Programmerin...')
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Programmerin...', NULL, true)
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Programmerin...', NULL, true)
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('pages/about', NULL, true)
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CViewAction.php(141): CController->render('pages/about')
+#9 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CAction.php(75): CViewAction->run()
+#10 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CAction->runWithParams(Array)
+#11 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CViewAction))
+#12 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#13 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('page')
+#14 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/page/view/...')
+#15 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/about
+HTTP_REFERER=http://83.233.118.50/profile/u/Admin
+---
+2012/04/27 10:20:38 [error] [exception.CException] exception 'CException' with message 'Alias "extensions.yii-facebook-opengraph.plugins.comments" is invalid. Make sure it points to an existing directory or file.' in C:\Programmering\xampp\htdocs\yii\framework\YiiBase.php:343
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWidgetFactory.php(147): YiiBase::import('extensions.yii-...', true)
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'extensions.yii-...', Array)
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('extensions.yii-...', Array)
+#3 C:\Programmering\xampp\htdocs\blog\protected\views\site\pages\about.php(12): CBaseController->widget('extensions.yii-...', Array)
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\Programmerin...')
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Programmerin...', NULL, true)
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Programmerin...', NULL, true)
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('pages/about', NULL, true)
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CViewAction.php(141): CController->render('pages/about')
+#9 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CAction.php(75): CViewAction->run()
+#10 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CAction->runWithParams(Array)
+#11 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CViewAction))
+#12 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#13 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('page')
+#14 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/page/view/...')
+#15 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/about
+HTTP_REFERER=http://83.233.118.50/profile/u/Admin
+---
+2012/04/27 10:20:39 [error] [exception.CException] exception 'CException' with message 'Alias "extensions.yii-facebook-opengraph.plugins.comments" is invalid. Make sure it points to an existing directory or file.' in C:\Programmering\xampp\htdocs\yii\framework\YiiBase.php:343
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWidgetFactory.php(147): YiiBase::import('extensions.yii-...', true)
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'extensions.yii-...', Array)
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('extensions.yii-...', Array)
+#3 C:\Programmering\xampp\htdocs\blog\protected\views\site\pages\about.php(12): CBaseController->widget('extensions.yii-...', Array)
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\Programmerin...')
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Programmerin...', NULL, true)
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Programmerin...', NULL, true)
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('pages/about', NULL, true)
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CViewAction.php(141): CController->render('pages/about')
+#9 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CAction.php(75): CViewAction->run()
+#10 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CAction->runWithParams(Array)
+#11 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CViewAction))
+#12 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#13 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('page')
+#14 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/page/view/...')
+#15 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/about
+HTTP_REFERER=http://83.233.118.50/profile/u/Admin
+---
+2012/04/27 10:20:40 [error] [exception.CException] exception 'CException' with message 'Alias "extensions.yii-facebook-opengraph.plugins.comments" is invalid. Make sure it points to an existing directory or file.' in C:\Programmering\xampp\htdocs\yii\framework\YiiBase.php:343
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWidgetFactory.php(147): YiiBase::import('extensions.yii-...', true)
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'extensions.yii-...', Array)
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('extensions.yii-...', Array)
+#3 C:\Programmering\xampp\htdocs\blog\protected\views\site\pages\about.php(12): CBaseController->widget('extensions.yii-...', Array)
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\Programmerin...')
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Programmerin...', NULL, true)
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Programmerin...', NULL, true)
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('pages/about', NULL, true)
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CViewAction.php(141): CController->render('pages/about')
+#9 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CAction.php(75): CViewAction->run()
+#10 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CAction->runWithParams(Array)
+#11 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CViewAction))
+#12 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#13 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('page')
+#14 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/page/view/...')
+#15 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/about
+HTTP_REFERER=http://83.233.118.50/profile/u/Admin
+---
+2012/04/27 10:24:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "register".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('register')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/register
+---
+2012/04/27 10:24:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "register".' in C:\Programmering\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('register')
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('register')
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/register')
+#3 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/register
+---
+2012/04/27 10:24:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "reg".' in C:\Programmering\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('reg')
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('reg')
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/reg')
+#3 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/reg
+---
+2012/04/27 10:24:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "reg".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('reg')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/reg
+---
+2012/04/27 10:25:13 [error] [exception.CException] exception 'CException' with message 'Property "LoginButton.registration-url" is not defined.' in C:\Programmering\xampp\htdocs\yii\framework\base\CComponent.php:174
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWidgetFactory.php(162): CComponent->__set('registration-ur...', '/register')
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'ext.yii-faceboo...', Array)
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('ext.yii-faceboo...', Array)
+#3 C:\Programmering\xampp\htdocs\blog\protected\views\site\pages\about.php(12): CBaseController->widget('ext.yii-faceboo...', Array)
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\Programmerin...')
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Programmerin...', NULL, true)
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Programmerin...', NULL, true)
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('pages/about', NULL, true)
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CViewAction.php(141): CController->render('pages/about')
+#9 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CAction.php(75): CViewAction->run()
+#10 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CAction->runWithParams(Array)
+#11 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CViewAction))
+#12 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#13 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('page')
+#14 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/page/view/...')
+#15 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/about
+HTTP_REFERER=http://83.233.118.50/site/login
+---
+2012/04/27 10:33:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "guide/view".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('guide/view')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/guide/view?id=1
+---
+2012/04/27 10:39:01 [error] [exception.Exception] exception 'Exception' with message 'Facebook needs the CURL PHP extension.' in C:\Programmering\xampp\htdocs\blog\protected\extensions\yii-facebook-opengraph\php-sdk-3.1.1\base_facebook.php:19
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\blog\protected\extensions\yii-facebook-opengraph\SBaseFacebook.php(18): require_once()
+#1 C:\Programmering\xampp\htdocs\yii\framework\YiiBase.php(397): include('C:\Programmerin...')
+#2 [internal function]: YiiBase::autoload('SBaseFacebook')
+#3 C:\Programmering\xampp\htdocs\blog\protected\extensions\yii-facebook-opengraph\SFacebook.php(436): spl_autoload_call('SBaseFacebook')
+#4 C:\Programmering\xampp\htdocs\blog\protected\extensions\yii-facebook-opengraph\SFacebook.php(462): SFacebook->_getFacebook()
+#5 C:\Programmering\xampp\htdocs\blog\protected\views\site\pages\about.php(23): SFacebook->getUser()
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\Programmerin...')
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Programmerin...', NULL, true)
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Programmerin...', NULL, true)
+#9 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('pages/about', NULL, true)
+#10 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CViewAction.php(141): CController->render('pages/about')
+#11 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CAction.php(75): CViewAction->run()
+#12 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CAction->runWithParams(Array)
+#13 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CViewAction))
+#14 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#15 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('page')
+#16 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/page/view/...')
+#17 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/about
+HTTP_REFERER=http://83.233.118.50/index.php
+---
+2012/04/27 10:43:08 [error] [exception.Exception] exception 'Exception' with message 'Facebook needs the CURL PHP extension.' in C:\Programmering\xampp\htdocs\blog\protected\extensions\yii-facebook-opengraph\php-sdk-3.1.1\base_facebook.php:19
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\blog\protected\extensions\yii-facebook-opengraph\SBaseFacebook.php(18): require_once()
+#1 C:\Programmering\xampp\htdocs\yii\framework\YiiBase.php(397): include('C:\Programmerin...')
+#2 [internal function]: YiiBase::autoload('SBaseFacebook')
+#3 C:\Programmering\xampp\htdocs\blog\protected\extensions\yii-facebook-opengraph\SFacebook.php(436): spl_autoload_call('SBaseFacebook')
+#4 C:\Programmering\xampp\htdocs\blog\protected\extensions\yii-facebook-opengraph\SFacebook.php(462): SFacebook->_getFacebook()
+#5 C:\Programmering\xampp\htdocs\blog\protected\views\site\pages\about.php(23): SFacebook->getUser()
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\Programmerin...')
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Programmerin...', NULL, true)
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Programmerin...', NULL, true)
+#9 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('pages/about', NULL, true)
+#10 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CViewAction.php(141): CController->render('pages/about')
+#11 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CAction.php(75): CViewAction->run()
+#12 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CAction->runWithParams(Array)
+#13 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CViewAction))
+#14 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#15 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('page')
+#16 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/page/view/...')
+#17 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/about
+HTTP_REFERER=http://83.233.118.50/index.php
+---
+2012/04/27 10:43:09 [error] [exception.Exception] exception 'Exception' with message 'Facebook needs the CURL PHP extension.' in C:\Programmering\xampp\htdocs\blog\protected\extensions\yii-facebook-opengraph\php-sdk-3.1.1\base_facebook.php:19
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\blog\protected\extensions\yii-facebook-opengraph\SBaseFacebook.php(18): require_once()
+#1 C:\Programmering\xampp\htdocs\yii\framework\YiiBase.php(397): include('C:\Programmerin...')
+#2 [internal function]: YiiBase::autoload('SBaseFacebook')
+#3 C:\Programmering\xampp\htdocs\blog\protected\extensions\yii-facebook-opengraph\SFacebook.php(436): spl_autoload_call('SBaseFacebook')
+#4 C:\Programmering\xampp\htdocs\blog\protected\extensions\yii-facebook-opengraph\SFacebook.php(462): SFacebook->_getFacebook()
+#5 C:\Programmering\xampp\htdocs\blog\protected\views\site\pages\about.php(23): SFacebook->getUser()
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\Programmerin...')
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Programmerin...', NULL, true)
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Programmerin...', NULL, true)
+#9 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('pages/about', NULL, true)
+#10 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CViewAction.php(141): CController->render('pages/about')
+#11 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CAction.php(75): CViewAction->run()
+#12 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CAction->runWithParams(Array)
+#13 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CViewAction))
+#14 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#15 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('page')
+#16 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/page/view/...')
+#17 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/about
+HTTP_REFERER=http://83.233.118.50/index.php
+---
+2012/04/27 10:43:10 [error] [exception.Exception] exception 'Exception' with message 'Facebook needs the CURL PHP extension.' in C:\Programmering\xampp\htdocs\blog\protected\extensions\yii-facebook-opengraph\php-sdk-3.1.1\base_facebook.php:19
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\blog\protected\extensions\yii-facebook-opengraph\SBaseFacebook.php(18): require_once()
+#1 C:\Programmering\xampp\htdocs\yii\framework\YiiBase.php(397): include('C:\Programmerin...')
+#2 [internal function]: YiiBase::autoload('SBaseFacebook')
+#3 C:\Programmering\xampp\htdocs\blog\protected\extensions\yii-facebook-opengraph\SFacebook.php(436): spl_autoload_call('SBaseFacebook')
+#4 C:\Programmering\xampp\htdocs\blog\protected\extensions\yii-facebook-opengraph\SFacebook.php(462): SFacebook->_getFacebook()
+#5 C:\Programmering\xampp\htdocs\blog\protected\views\site\pages\about.php(23): SFacebook->getUser()
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\Programmerin...')
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Programmerin...', NULL, true)
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Programmerin...', NULL, true)
+#9 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('pages/about', NULL, true)
+#10 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CViewAction.php(141): CController->render('pages/about')
+#11 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CAction.php(75): CViewAction->run()
+#12 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CAction->runWithParams(Array)
+#13 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CViewAction))
+#14 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#15 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('page')
+#16 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/page/view/...')
+#17 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/about
+HTTP_REFERER=http://83.233.118.50/index.php
+---
+2012/04/27 10:43:11 [error] [exception.Exception] exception 'Exception' with message 'Facebook needs the CURL PHP extension.' in C:\Programmering\xampp\htdocs\blog\protected\extensions\yii-facebook-opengraph\php-sdk-3.1.1\base_facebook.php:19
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\blog\protected\extensions\yii-facebook-opengraph\SBaseFacebook.php(18): require_once()
+#1 C:\Programmering\xampp\htdocs\yii\framework\YiiBase.php(397): include('C:\Programmerin...')
+#2 [internal function]: YiiBase::autoload('SBaseFacebook')
+#3 C:\Programmering\xampp\htdocs\blog\protected\extensions\yii-facebook-opengraph\SFacebook.php(436): spl_autoload_call('SBaseFacebook')
+#4 C:\Programmering\xampp\htdocs\blog\protected\extensions\yii-facebook-opengraph\SFacebook.php(462): SFacebook->_getFacebook()
+#5 C:\Programmering\xampp\htdocs\blog\protected\views\site\pages\about.php(23): SFacebook->getUser()
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\Programmerin...')
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Programmerin...', NULL, true)
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Programmerin...', NULL, true)
+#9 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('pages/about', NULL, true)
+#10 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CViewAction.php(141): CController->render('pages/about')
+#11 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CAction.php(75): CViewAction->run()
+#12 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CAction->runWithParams(Array)
+#13 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CViewAction))
+#14 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#15 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('page')
+#16 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/page/view/...')
+#17 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/about
+HTTP_REFERER=http://83.233.118.50/index.php
+---
+2012/04/27 10:43:12 [error] [exception.Exception] exception 'Exception' with message 'Facebook needs the CURL PHP extension.' in C:\Programmering\xampp\htdocs\blog\protected\extensions\yii-facebook-opengraph\php-sdk-3.1.1\base_facebook.php:19
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\blog\protected\extensions\yii-facebook-opengraph\SBaseFacebook.php(18): require_once()
+#1 C:\Programmering\xampp\htdocs\yii\framework\YiiBase.php(397): include('C:\Programmerin...')
+#2 [internal function]: YiiBase::autoload('SBaseFacebook')
+#3 C:\Programmering\xampp\htdocs\blog\protected\extensions\yii-facebook-opengraph\SFacebook.php(436): spl_autoload_call('SBaseFacebook')
+#4 C:\Programmering\xampp\htdocs\blog\protected\extensions\yii-facebook-opengraph\SFacebook.php(462): SFacebook->_getFacebook()
+#5 C:\Programmering\xampp\htdocs\blog\protected\views\site\pages\about.php(23): SFacebook->getUser()
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\Programmerin...')
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Programmerin...', NULL, true)
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Programmerin...', NULL, true)
+#9 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('pages/about', NULL, true)
+#10 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CViewAction.php(141): CController->render('pages/about')
+#11 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CAction.php(75): CViewAction->run()
+#12 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CAction->runWithParams(Array)
+#13 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CViewAction))
+#14 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#15 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('page')
+#16 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/page/view/...')
+#17 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/about
+HTTP_REFERER=http://83.233.118.50/index.php
+---
+2012/04/27 10:43:14 [error] [exception.Exception] exception 'Exception' with message 'Facebook needs the CURL PHP extension.' in C:\Programmering\xampp\htdocs\blog\protected\extensions\yii-facebook-opengraph\php-sdk-3.1.1\base_facebook.php:19
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\blog\protected\extensions\yii-facebook-opengraph\SBaseFacebook.php(18): require_once()
+#1 C:\Programmering\xampp\htdocs\yii\framework\YiiBase.php(397): include('C:\Programmerin...')
+#2 [internal function]: YiiBase::autoload('SBaseFacebook')
+#3 C:\Programmering\xampp\htdocs\blog\protected\extensions\yii-facebook-opengraph\SFacebook.php(436): spl_autoload_call('SBaseFacebook')
+#4 C:\Programmering\xampp\htdocs\blog\protected\extensions\yii-facebook-opengraph\SFacebook.php(462): SFacebook->_getFacebook()
+#5 C:\Programmering\xampp\htdocs\blog\protected\views\site\pages\about.php(23): SFacebook->getUser()
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\Programmerin...')
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Programmerin...', NULL, true)
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Programmerin...', NULL, true)
+#9 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('pages/about', NULL, true)
+#10 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CViewAction.php(141): CController->render('pages/about')
+#11 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CAction.php(75): CViewAction->run()
+#12 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CAction->runWithParams(Array)
+#13 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CViewAction))
+#14 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#15 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('page')
+#16 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/page/view/...')
+#17 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/about
+HTTP_REFERER=http://83.233.118.50/index.php
+---
+2012/04/27 10:45:41 [error] [exception.Exception] exception 'Exception' with message 'Facebook needs the CURL PHP extension.' in C:\Programmering\xampp\htdocs\blog\protected\extensions\yii-facebook-opengraph\php-sdk-3.1.1\base_facebook.php:19
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\blog\protected\extensions\yii-facebook-opengraph\SBaseFacebook.php(18): require_once()
+#1 C:\Programmering\xampp\htdocs\yii\framework\YiiBase.php(397): include('C:\Programmerin...')
+#2 [internal function]: YiiBase::autoload('SBaseFacebook')
+#3 C:\Programmering\xampp\htdocs\blog\protected\extensions\yii-facebook-opengraph\SFacebook.php(436): spl_autoload_call('SBaseFacebook')
+#4 C:\Programmering\xampp\htdocs\blog\protected\extensions\yii-facebook-opengraph\SFacebook.php(462): SFacebook->_getFacebook()
+#5 C:\Programmering\xampp\htdocs\blog\protected\views\site\pages\about.php(23): SFacebook->getUser()
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\Programmerin...')
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Programmerin...', NULL, true)
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Programmerin...', NULL, true)
+#9 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('pages/about', NULL, true)
+#10 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CViewAction.php(141): CController->render('pages/about')
+#11 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CAction.php(75): CViewAction->run()
+#12 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CAction->runWithParams(Array)
+#13 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CViewAction))
+#14 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#15 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('page')
+#16 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/page/view/...')
+#17 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/about
+HTTP_REFERER=http://83.233.118.50/index.php
+---
+2012/04/27 10:45:43 [error] [exception.Exception] exception 'Exception' with message 'Facebook needs the CURL PHP extension.' in C:\Programmering\xampp\htdocs\blog\protected\extensions\yii-facebook-opengraph\php-sdk-3.1.1\base_facebook.php:19
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\blog\protected\extensions\yii-facebook-opengraph\SBaseFacebook.php(18): require_once()
+#1 C:\Programmering\xampp\htdocs\yii\framework\YiiBase.php(397): include('C:\Programmerin...')
+#2 [internal function]: YiiBase::autoload('SBaseFacebook')
+#3 C:\Programmering\xampp\htdocs\blog\protected\extensions\yii-facebook-opengraph\SFacebook.php(436): spl_autoload_call('SBaseFacebook')
+#4 C:\Programmering\xampp\htdocs\blog\protected\extensions\yii-facebook-opengraph\SFacebook.php(462): SFacebook->_getFacebook()
+#5 C:\Programmering\xampp\htdocs\blog\protected\views\site\pages\about.php(23): SFacebook->getUser()
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\Programmerin...')
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Programmerin...', NULL, true)
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Programmerin...', NULL, true)
+#9 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('pages/about', NULL, true)
+#10 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CViewAction.php(141): CController->render('pages/about')
+#11 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CAction.php(75): CViewAction->run()
+#12 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CAction->runWithParams(Array)
+#13 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CViewAction))
+#14 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#15 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('page')
+#16 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/page/view/...')
+#17 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/about
+HTTP_REFERER=http://83.233.118.50/index.php
+---
+2012/04/27 10:59:09 [error] [php] Undefined index: url (C:\Programmering\xampp\htdocs\blog\protected\views\site\pages\about.php:31)
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CViewAction.php(141): SiteController->render()
+#3 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CAction.php(75): CViewAction->run()
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CViewAction->runWithParams()
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\Programmering\xampp\htdocs\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/about
+in C:\Programmering\xampp\htdocs\blog\protected\views\site\pages\about.php (31)
+in C:\Programmering\xampp\htdocs\blog\index.php (13)
+2012/04/27 10:59:24 [error] [php] Undefined index:  (C:\Programmering\xampp\htdocs\blog\protected\views\site\pages\about.php:31)
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CViewAction.php(141): SiteController->render()
+#3 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CAction.php(75): CViewAction->run()
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CViewAction->runWithParams()
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\Programmering\xampp\htdocs\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/about
+in C:\Programmering\xampp\htdocs\blog\protected\views\site\pages\about.php (31)
+in C:\Programmering\xampp\htdocs\blog\index.php (13)

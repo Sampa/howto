@@ -8,6 +8,12 @@
 		<i class="icon-white icon-envelope"></i> Message
 	</a>
 	
+<!-- FACEBOOK INFO -->
+	<?php $facebook = Yii::app()->facebook->api('/me');?>
+	<a href="<?=$facebook['link'];?>"><?= $facebook['name'];?></a>;
+	From <?=$facebook['location']['name'];?>
+
+	
 	<div  style="width:170px; height:130px; float:left;">
 		<a target="_blank" href="<?= User::USER_DIR . $model->id . '/' . $model->avatar;?>">
 <!--avatar--><img class="user_avatar"
@@ -32,7 +38,6 @@
 	array(
 	'data'=>$model,
 	'attributes'=>array(
-		'username',
 		'email',
 		'created',
 		'last_activity',

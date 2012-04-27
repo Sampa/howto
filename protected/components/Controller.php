@@ -6,6 +6,14 @@
 class Controller extends RController
 {
 	public $clip = "system.web.widgets.CClipWidget";
+	protected function afterRender($view, &$output)
+{
+    parent::afterRender($view,$output);
+    //Yii::app()->facebook->addJsCallback($js); // use this if you are registering any $js code you want to run asyc
+    Yii::app()->facebook->initJs($output); // this initializes the Facebook JS SDK on all pages
+    Yii::app()->facebook->renderOGMetaTags(); // this renders the OG tags
+    return true;
+}
 	public function ajaxDelete( $id , $model )
 	{
 		if ( Yii::app()->request->isAjaxRequest )

@@ -49,20 +49,20 @@
 
 
 <!--recent comments-->
-			<div class="well" style=""> <h2>Recent Comments</h2>
+		<!--	<div class="well" style=""> <h2>Recent Comments</h2>
 				<?php 
-					$comments = Comment::model()->findRecentComments(10);
-					if ( $comments )
-					{
-						foreach( $comments as $comment )
-						{
-							echo $comment->authorLink .' on ';
-							echo CHtml::link ( CHtml::encode ($comment->howto->title ) , $comment->getUrl() ) .'<br/>' ; 
-						}
+					// $comments = Comment::model()->findRecentComments(10);
+					// if ( $comments )
+					// {
+						// foreach( $comments as $comment )
+						// {
+							// echo $comment->authorLink .' on ';
+							// echo CHtml::link ( CHtml::encode ($comment->howto->title ) , $comment->getUrl() ) .'<br/>' ; 
+						// }
 					
-					}
+					// }
 				?>
-			</div>
+			</div>-->
 		</div><!-- sidebar -->
 </div>
 <?php $this->endContent(); ?>

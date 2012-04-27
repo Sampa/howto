@@ -22,6 +22,10 @@
 	<b><?php echo CHtml::encode($data->getAttributeLabel('last_activity')); ?>:</b>
 	<?php echo CHtml::encode($data->last_activity); ?>
 	<br />
+ <?php $facebook = Yii::app()->facebook->api('/me');?>
+ 
+ <a href="<?=$facebook['link'];?>"><?= $facebook['name'];?></a><br/>;
+ From <?=$facebook['location']['name'];?>
 
 <?php 
 	if ( $data->avatar ) 
