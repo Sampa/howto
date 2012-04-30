@@ -68,15 +68,33 @@ class CategoryController extends Controller
 
 		if ( isset ( $_POST['Category'] ) )
 		{
-			$model->attributes = $_POST['Category'];
+			if ( $_POST['categories'] )
+				{
+					$parentModel = $this->loadModel($_POST['categories']);
+					$model->parent = $parentModel->name;
+				}
+			else {
+				$name = $_POST['Category']['parent'];
+				$parent = new Category;
+				$parent->name = $name;
+				$parent->parent ="no parent";
+				$parent->save();
+				$model->parent = $name;
+				}
+			
+			$model->name = $_POST['Category']['name'];
+			
 			if ( $model->save() )
 				
 				$this->redirect(array('create','id'=>$model->id));
+				
+			
 		}
-
+		if ( !Yii::app()->request->isAjaxRequest){
 		$this->render('create',array(
 			'model'=>$model,
 		));
+		}
 	}
 
 	/**
@@ -127,10 +145,10 @@ class CategoryController extends Controller
 	 * Lists all models.
 	 */
 	public function actionIndex()
-	{
-		$dataProvider=new CActiveDataProvider('Category');
+	{		$parents = Category::model()->findAll('parent="no parent"');
+
 		$this->render('index',array(
-			'dataProvider'=>$dataProvider,
+			'parents'=>$parents,
 		));
 	}
 

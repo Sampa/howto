@@ -136,6 +136,7 @@ return array(
 				'howto/<show:.*?>'=>'howto/index/',
 				'viewpdf/*'=>'howto/viewpdf',
 				'categories'=>'category/index',
+				'register'=>'user/register',
 
 
 				//'<controller:\w+>/<id:\d+>'=>'<controller>/view', 
@@ -158,11 +159,11 @@ return array(
 					'allowedIPs'=>array('127.0.0.1'),
 				),
 				// uncomment the following to show log messages on web pages
-				/*
+				
 				array(
 					'class'=>'CWebLogRoute',
 				),
-				*/
+				
 			),
 		),
 		'ePdf' => array(

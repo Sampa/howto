@@ -68,6 +68,7 @@ body
 #mainmenu
 {
 	background:white url(bg.gif) repeat-x left top;
+	background-color:black;
 }
 
 #mainmenu ul

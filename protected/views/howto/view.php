@@ -53,7 +53,7 @@
 
 </div><!-- container-->
 	<div id="comments" style="margin-top: 30px" class="span4" >
-				<div id="disqus_thread"></div>
+<div id="disqus_thread"></div>
 	</div><!-- comments -->
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */

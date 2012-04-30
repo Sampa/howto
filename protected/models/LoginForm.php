@@ -47,9 +47,13 @@ class LoginForm extends CFormModel
 	public function authenticate($attribute,$params)
 	{
 		$this->_identity=new UserIdentity($this->username,$this->password);
-		if(!$this->_identity->authenticate())
+		if ( !$this->_identity->authenticate() )
+		{
+			
 			$this->addError('password','Incorrect username or password.');
-	}
+		}
+	
+	}	
 
 	/**
 	 * Logs in the user using the given username and password in the model.
@@ -58,7 +62,9 @@ class LoginForm extends CFormModel
 	public function login()
 	{
 		if($this->_identity===null)
-		{
+		{	
+
+			
 			$this->_identity=new UserIdentity($this->username,$this->password);
 			$this->_identity->authenticate();
 		}

@@ -8,6 +8,7 @@
 	<div class="modal-header">
 		<a class="close" data-dismiss="modal">&times;</a>
 		<h3>Please fill out the following form with your login credentials</h3>
+
 	</div>
 
 	<div class="modal-body">
@@ -36,9 +37,10 @@
 
 	</div>
 	<div class="modal-footer">
-		<?php echo CHtml::submitButton('Login',array('class'=>'btn btn-primary')); ?>
+		<?php echo CHtml::submitButton('Login',array('id'=>'log', 'class'=>'btn btn-primary')); ?>
 		<?php echo CHtml::link('Close', '#', array('class'=>'btn', 'data-dismiss'=>'modal')); ?>
 	</div>
 
 <?php $this->endWidget(); ?>
+
 </div><!-- form -->

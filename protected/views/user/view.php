@@ -9,15 +9,43 @@
 	</a>
 	
 <!-- FACEBOOK INFO -->
-	<?php $facebook = Yii::app()->facebook->api('/me');?>
-	<a href="<?=$facebook['link'];?>"><?= $facebook['name'];?></a>;
-	From <?=$facebook['location']['name'];?>
+
+	 <?php
+
+	$userid = $model->facebook;
+	
+	if ( $userid )
+	{ 
+	$imageUrl = Yii::app()->facebook->getProfilePictureById($userid);
+	$fql = 'SELECT name,username from user where uid = ' . $userid;
+        $facebook = Yii::app()->facebook->api(array(
+                                   'method' => 'fql.query',
+                                   'query' => $fql,
+                                 ));
+        // FQL queries return the results in an array, so we have
+        //  to get the user's name from the first element in the array.
+       	?>
+
+	<h5>
+		Visit <a target="_blank" href="http://www.facebook.com/<?=$model->facebook;?>"><?= $facebook[0]['name']?></a>
+		<?php if ( $facebook['0']['username'] !== "")
+				echo " ( also known as ". $facebook['0']['username'] . ")";?>
+		on facebook 
+	</h5>
+
+	<?php
+	}
+	else { $imageUrl = User::USER_DIR . $model->id . '/' . $model->avatar;}
+	
+	?>
+	
+
 
 	
 	<div  style="width:170px; height:130px; float:left;">
 		<a target="_blank" href="<?= User::USER_DIR . $model->id . '/' . $model->avatar;?>">
 <!--avatar--><img class="user_avatar"
-			src="<?=User::USER_DIR . $model->id . '/' . $model->avatar;?>" 
+			src="<?=$imageUrl;?>" 
 			alt="Avatar"/>
 		</a>
 <!-- update--><?php if ( Yii::app()->user->id == $model->id ): ?>

@@ -48,7 +48,7 @@ class User extends CActiveRecord
 	{
 		return $this->username;
 	}
-
+	
 	public function getSuggest($q) 
 	{
 		$c = new CDbCriteria();

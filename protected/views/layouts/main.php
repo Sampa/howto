@@ -35,25 +35,32 @@
 	<div id="header" style="border:0px solid yellow; height:40px;">
 		<div id="logo" class="span2" style="border:0px solid black;"><h1>Howto<h1>
 		</div>
-		<div class="" style="border: 0px solid red; height:35px; float:left; width:28%; padding: 0px;">
-		<?php
-		if ( $this->isGuest ):
-		?>	<button class="btn btn-primary" id="loginButton"><!-- loginbutton-->
+
+		<div class="" style="border: 0px solid red; height:27px; float:left; width:28%; padding: 0px;">
+
+		<?php if ( $this->isGuest ):?>	
+			<button class="btn btn-primary" id="loginButton"><!-- loginbutton-->
 				Login
 			</button> <!--login button-->
-			
+
 			<button class="btn btn-primary" id="regButton"><!-- sign up button-->
 				Sign up
 			</button> <!--sign up button-->
+			
 			<!-- files with modalwindow, ajax calls etc for easier reading -->
 		<?php $this->renderPartial('//site/_login'); 
-		      $this->renderPartial('//site/_reg');
-		endif;
+		      $this->renderPartial('//site/_reg');?>
+			  
 		
-		if ( !$this->isGuest ):
-		?>	
+		<?php endif;?>
+		
+	
+		<!--om man är inloggad -->
+		<?php if ( !$this->isGuest ):?>
 		<div class="btn-toolbar" style="margin-top:0px;">
-<!--userbutton--><div style="float:left;"><?php
+		<!--userbutton-->
+		<div style="float:left;">
+		<?php
 		$this->widget('bootstrap.widgets.BootButtonGroup', 
 		array(
 			'type'=>'primary', 
@@ -67,11 +74,15 @@
 						array('label'=>'Update','url'=>array( '//user/update/id/' . Yii::app()->user->id ) ), 
 						array('label'=>'Rights', 'url'=>array( '/rights' ),
 								'visible'=>Yii::app()->user->checkAccess(Rights::module()->superuserName ) ),
-						array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 
-						)),
+						array('label'=>'Logout from How-to('.Yii::app()->user->name.')', 'url'=>array('/site/logout')), 
+						array('label'=>'Logout from facebook('.Yii::app()->user->name.')',
+	'url'=>'https://www.facebook.com/logout.php?access_token='.Yii::app()->facebook->getAccessToken().'&confirm=1&next=http://83.233.118.50/site/logout',
+
+
+						),
 					),
 				)
-			)); 
+			))); 
 	?>
 		</div>
 <!-- messagebutton--><div style=""><?php 
@@ -105,6 +116,13 @@
 		
 		
 		<?=$this->clips['header'];?>
+		<!-- facebook login-->
+			<div style="border: 0px solid black; position:absolute; left:120px; top:0px;">
+		
+	<a  id="fb-login"><img src="http://worldthissecond.com/wp-content/themes/tribune/images/icons/facebook.png"/></a>
+
+
+			</div>
 	</div>
 	
 	<div class="btn-toolbar span7" style="border:0px solid green; margin:-0px 0 0 -5px; height:auto;">
@@ -216,11 +234,32 @@
 	<?= $content; ?>
 
 		<div id="footer" style="clear:both">
-			Copyright &copy; <?= date('Y'); ?><br />
-			All Rights Reserved.<br/>
+	<?php $this->widget('ext.yii-facebook-opengraph.plugins.LikeButton', array(
+   //'href' => 'YOUR_URL', // if omitted Facebook will use the OG meta tag
+   'show_faces'=>true,
+   'send' => true
+)); ?>
+		<br/>
+		Copyright &copy; <?= date('Y'); ?><br />
+
 		</div><!-- footer -->
 
 	</div><!-- page -->
 
+	<script>
+ $("#fb-login").click(function(){
+ FB.login(function(response) {
+   if (response.authResponse) {
+     $("#conf").html('Welcome!  Fetching your information.... ');
+     FB.api('/me', function(response) {
+       $("#conf").append('Good to see you, ' + response.name + '.');
+	   window.location.replace('/about');
+     });
+   } else {
+  /*   console.log('User cancelled login or did not fully authorize.');*/
+   }
+ });
+ });
+ </script>
 </body>
 </html>

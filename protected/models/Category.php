@@ -41,12 +41,12 @@ public function behaviors(){
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('category', 'required'),
-			array('category', 'length', 'max'=>255),
-			array('category','unique'),
+			array('name', 'required'),
+			array('name', 'length', 'max'=>255),
+			array('name','unique'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, category', 'safe', 'on'=>'search'),
+			array('id, category, parent', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -70,6 +70,7 @@ public function behaviors(){
 		return array(
 			'id' => 'ID',
 			'name' => 'Name',
+			'parent'=>'Parent',
 		);
 	}
 
@@ -85,7 +86,8 @@ public function behaviors(){
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
-		$criteria->compare('category',$this->category,true);
+		$criteria->compare('name',$this->name,true);
+		$criteria->compare('parent',$this->parent,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
