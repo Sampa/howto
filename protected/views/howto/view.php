@@ -44,7 +44,7 @@
 		<?php
 		foreach ( $model->steps as $step ):
 			echo CHtml::link( $step->title, array('/step/update?id=' . $step->id .'&howtoid=' . $model->id ) );
-			echo '<br/><div class="well edit_area" ">' . $step->text .'</div>';
+			echo '<br/><div class="well edit_step" ">' . $step->text .'</div>';
 		 endforeach; 
 		 ?>
 	

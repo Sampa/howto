@@ -15,8 +15,38 @@ class UserController extends Controller
 			'rights', // perform access control for CRUD operations
 		);
 	}
-
-
+		public function allowedActions()
+	{
+	 	return 'register,adduser,view,reputation';
+	}
+	
+	public function actionReputation($id){
+		$user = $this->loadModel($id);
+		$user->reputation = $user->reputation + 1;
+		$user->save();
+		echo $this->renderPartial('reputation',array('reputation'=>$user->reputation,'id'=>$id));
+	
+	}
+	public function actionaddUser(){
+			$userid = Yii::app()->facebook->getUser();
+						$user = new User('noValidation');
+						$user->facebook = $userid;
+					
+						// Save to get an id
+						//Set id as username temporarely						
+						$user->email ="temp@temp.com";
+						$user->username = $userid;
+						//save again
+						if ( $user->save() ){
+						$dir = User::USER_DIR . $user->id; //specifies a path for the users unique file dir
+						mkdir($dir,0777,true);  // creates the dir
+						$this->autoLogin($user);//logs in the user
+						$this->redirect('/profile/u/'.$userid);
+						}
+					
+		
+	
+	}
 	/**
 	 * Displays a particular model.
 	 * @param integer $id the ID of the model to be displayed
@@ -32,10 +62,7 @@ class UserController extends Controller
 			'model'=>$this->loadModel( $id , $u ),
 			));
 	}
-	public function allowedActions(){
-		return 'register,view';
 	
-	}
 	/**
 	 * Creates a new model.
 	 * If creation is successful, the browser will be redirected to the 'view' page.
@@ -44,7 +71,7 @@ class UserController extends Controller
 	{
 	
 		
-		$model = new User;
+		$model = new User('validation');
 		// Uncomment the following line if AJAX validation is needed
 		 $this->performAjaxValidation( $model , 'user-form' );
 	

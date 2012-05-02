@@ -25,6 +25,7 @@
 						<li><a href="<?= User::getUserUrl($data->author->username);?>">View Profile</a></li>
 						<li><a href="/message/compose?id=<?=$data->author->id;?>">Send message</a></li>
 						<li><a href="/howto/show/by?user=<?=$data->author->username;?>">More by <?=$data->author->username;?></a></li>
+						<li><?=$this->renderPartial('/user/reputation',array('id'=>$data->author->id,'reputation'=>$data->author->reputation));?></li>
 					</ul>
 				</li>
 			</ul>
@@ -86,9 +87,7 @@
 		<br/>
 		<div class="edit_area">
 		<?php
-			$this->beginWidget('CMarkdown', array('purifyOutput'=>true));
-			echo $data->content;
-			$this->endWidget();
+			echo CHtml::encode($data->content);
 		?>
 		</div>
 	</div>
@@ -168,6 +167,21 @@
      },
      });
 	 $('edit_area').click(function(){
+		
+	});
+	 $('.edit_step').editable('/step/inlineEdit?id=<?=$data->id;?>&url=<?=$data->url;?>', { 
+         type      : 'textarea',
+		 data	   : $(this).html(),
+         cancel    : 'Cancel',
+         submit    : 'OK',
+         indicator : '<img src="img/indicator.gif">',
+         tooltip   : 'Click to edit...',
+		callback : function(value, settings) {
+
+         console.log(value);
+     },
+     });
+	 $('edit_step').click(function(){
 		
 	});
  });

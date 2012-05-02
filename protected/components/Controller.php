@@ -9,7 +9,9 @@ class Controller extends RController
 	public function init()
     {
 	parent::init();
-	$this->facebookCheck();
+
+	if ( isset($_GET['logout']) && $_GET['logout'] !== "true" )
+			$this->facebookCheck();
 	}
 	protected function afterRender($view, &$output)
 	{
@@ -23,30 +25,13 @@ class Controller extends RController
 	{
 	if ( Yii::app()->user->isGuest ){
 		$userid = Yii::app()->facebook->getUser();
-		if ( !$userid == "") //if the user is logged in vya facebook
+
+		if ( $userid !== "") //if the user is logged in vya facebook
 			{
 				$user = User::model()->find('facebook='.$userid); 
-				if( $user ==="" ) //if there is not an user account associated with the fb id we create new one
-					{
-						$user = new User;
-						$user->facebook = $userid;	
-						$password = rand(1,9);
-						$user->password = $password;
-						// Save to get an id
-						//Set id as username temporarely
-						if ( $user->save() )
-							{ $user->username = $user->id;}
-						//save again
-						if ( $user->save ){
-						$dir = User::USER_DIR . $user->id; //specifies a path for the users unique file dir
-						mkdir($dir,0777,true);  // creates the dir
-						$this->autoLogin($user);//logs in the user
-
-						}
-					}
-				else{ //there is already a user account with the fb id, so log him in.
-				$this->autoLogin($user); 
-				}
+				if( $user )
+					$this->autoLogin($user); 
+				
 			}
 		}
 	}

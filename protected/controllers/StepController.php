@@ -185,7 +185,24 @@ public function actionUpdate($id)
 	
 	
 	}
+	public function actionInlineEdit()
+	{			
+			$model = Step::model()->findByPk($_GET['id']);
+		
+		if ( Yii::app()->request->isAjaxRequest )
+		{				$model->text = $_POST['value'];
 
+			if ( $model->save() ) 
+			{
+			echo CJSON::encode(
+						$model->text
+						);
+					exit;
+			}
+			
+			
+		}
+	}
 	/**
 	 * Lists all models.
 	 */

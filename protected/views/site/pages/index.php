@@ -8,11 +8,12 @@ $this->layout = "column1";
 			We also focus on learning and understanding. 
 			Create a how-to and share it with your intended readers.
 			Save it as pdf for offline use at your company or 
-			print it and put it up on the wall.
+			print it and put it up on the wall.<br/>
+			Here you can find step-by-step Howto's for anything.
 		</p>
 		<p>
 			<a class="btn btn-primary btn-large" href="/about">
-				<i class="icon-white icon-book"></i> Learn more 
+				<i class="icon-white icon-book"></i> Why use Howto 
 				<i class="icon-white icon-arrow-right"></i>
 			</a>
 		</p>
@@ -22,14 +23,13 @@ $this->layout = "column1";
         <div class="span4">
         <h2>Creating</h2>
             <p>
-			   Donec id elit non mi porta gravida at eget metus. 
-			   Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, 
-			   ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna
-			   mollis euismod. Donec sed odio dui. 
+			 Create Howto's easily thrue our user-friendly interface.
+			 Easily add steps,images,references,while formatting the text with our powerfull text editor.<br/>
+			 
 			</p>
 			<p>
-				<a class="btn btn-primary" href="#">
-					View details 
+				<a class="btn btn-primary" href="/creating">
+					Read more 
 					<i class="icon-white icon-arrow-right"></i>
 				</a>
 			</p>
@@ -38,15 +38,13 @@ $this->layout = "column1";
     <div class="span4">
         <h2>Reading</h2>
         <p>
-			Donec id elit non mi porta gravida at eget metus. 
-			Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
-			ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna 
-			mollis euismod. Donec sed odio dui.
+			Find Howto's by tags,category,rating or why not browse the most recently created knowledge.
+			You can Bookmark,print and save the Howto as pdf. You can also comment and give feedback. 
 		</p>		
 		<p>
-			<a class="btn btn-primary" href="#">
-				View details
-				<i class="icon-white icon-arrow-right"></i>
+			<a class="btn btn-primary" href="/reading">
+			Read more
+			<i class="icon-white icon-arrow-right"></i>
 			</a>
 		</p>
     </div>
@@ -54,14 +52,11 @@ $this->layout = "column1";
     <div class="span4">
         <h2>Sharing</h2>
 			<p>
-				Donec sed odio dui. Cras justo odio, dapibus ac facilisis in,
-				egestas eget quam. Vestibulum id ligula porta felis euismod semper. 
-				Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
-				ut fermentum massa justo sit amet risus.
+				Mail the knowledge to a friend, share on facebook, twitter or google+. Save them to your computer and share with your collegues or family. Print and set up in your office.
 			</p>
 			<p>
-				<a class="btn btn-primary" href="#">
-					View details 
+				<a class="btn btn-primary" href="/sharing">
+					Read more
 					<i class="icon-white icon-arrow-right"></i>
 				</a>
 			</p>

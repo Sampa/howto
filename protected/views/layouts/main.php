@@ -232,7 +232,7 @@
 ?>
 
 	<?= $content; ?>
-
+<a href="https://www.facebook.com/logout.php?access_token=<?=Yii::app()->facebook->getAccessToken();?>&confirm=1&next=http://83.233.118.50/site/logout">hej</a>
 		<div id="footer" style="clear:both">
 	<?php $this->widget('ext.yii-facebook-opengraph.plugins.LikeButton', array(
    //'href' => 'YOUR_URL', // if omitted Facebook will use the OG meta tag
@@ -241,7 +241,7 @@
 )); ?>
 		<br/>
 		Copyright &copy; <?= date('Y'); ?><br />
-
+		<div id="conf"></div>
 		</div><!-- footer -->
 
 	</div><!-- page -->
@@ -253,7 +253,8 @@
      $("#conf").html('Welcome!  Fetching your information.... ');
      FB.api('/me', function(response) {
        $("#conf").append('Good to see you, ' + response.name + '.');
-	   window.location.replace('/about');
+	  
+	   window.location.replace('/user/addUser');
      });
    } else {
   /*   console.log('User cancelled login or did not fully authorize.');*/

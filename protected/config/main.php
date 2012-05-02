@@ -137,6 +137,10 @@ return array(
 				'viewpdf/*'=>'howto/viewpdf',
 				'categories'=>'category/index',
 				'register'=>'user/register',
+				'sharing'=>'site/page/view/sharing',
+				'reading'=>'site/page/view/reading',
+				'creating'=>'site/page/view/creating',
+
 
 
 				//'<controller:\w+>/<id:\d+>'=>'<controller>/view', 

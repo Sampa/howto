@@ -69,10 +69,8 @@ class HowtoController extends Controller
 	public function actionView()
 	{
 		$howto = $this->loadModel();
-    	$comment = $this->newComment( $howto );
 		$this->render( 'view',array(
 			'model'=>$howto,
-			'comment'=>$comment,
 		));
 	}
 	public function actionMail()
@@ -139,8 +137,10 @@ class HowtoController extends Controller
 
 			if ( $model->save() ) 
 			{
-
-			echo CJSON::encode( $value);
+					echo CJSON::encode(
+						$model->content
+						);
+					exit;
 			}
 			
 			
@@ -260,7 +260,7 @@ class HowtoController extends Controller
 						array(
 							'status'=>'success', 
 							'div'=>"Holy guacamole! You just permently deleted the entire How-to.
-				If you want to make a backup of the text this is the time to do it.",	
+							If you want to make a backup of the text this is the time to do it.",	
 							));
 					exit;
 				}

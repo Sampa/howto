@@ -7,6 +7,8 @@
 	<a class="btn btn-primary" href="/message/compose?id=<?=$model->id;?>">
 		<i class="icon-white icon-envelope"></i> Message
 	</a>
+
+	<?=$this->renderPartial('reputation',array('reputation'=>$model->reputation,'id'=>$model->id));?>
 	
 <!-- FACEBOOK INFO -->
 
@@ -48,6 +50,7 @@
 			src="<?=$imageUrl;?>" 
 			alt="Avatar"/>
 		</a>
+
 <!-- update--><?php if ( Yii::app()->user->id == $model->id ): ?>
 		<button class="update_toggle btn btn-primary" id="update_button" style="float:left;">
 			<i class="icon-ok icon-white"></i>Update
@@ -57,8 +60,9 @@
 <!--cancel--><i class="icon-ban-circle icon-white"></i>Cancel 
 		</button>
 
+	<?php endif;?>
 	</div>
-	<?php endif;?>	
+	
 	
 	<div id="profile_detail_view" style="width: 300px; border: 1 px solid black;">
 <?php
@@ -116,6 +120,10 @@
 			$("#user_presentation").toggle();
 			$("#update_button").toggle();
 			$("#cancel_button").toggle();
+		});
+		$("#reputation").click(function(){
+			
+		
 		});
 	</script>	
 
