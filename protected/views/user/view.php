@@ -111,7 +111,7 @@
 ?>
 
 
-	<script>
+	<script type="text/javascript">
 		$(document).ready(function(){
 			$("#user_update").toggle();
 		});

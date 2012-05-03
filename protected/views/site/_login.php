@@ -10,7 +10,7 @@
 )); ?>
 <div id="modal_login" class="divForForm well" style="padding:25px;"></div>
 <?php $this->endWidget(); ?> 
-<script>
+<script type="text/javascript">
 function getLogin(){
   <?php echo CHtml::ajax(array(
             'url'=>array('/site/login'),

@@ -129,7 +129,7 @@
 		</div>
 		
 <div id="currentStep" style="display:none;">Step_text</div>
-	<script>
+	<script type="text/javascript">
 $(document).ready(function(){
 $('input[id*="Step"]').focus(function(){
 	console.log($(this).attr("id"));

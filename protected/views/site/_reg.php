@@ -12,7 +12,7 @@
 	)); 
 ?>
 <div id="modal_registration" class="divForForm well" style="padding:15px;"></div>
-<script>
+<script type="text/javascript">
 function getReg(){
   <?php echo CHtml::ajax(array(
             'url'=>array('/user/register'),
@@ -38,7 +38,7 @@ function getReg(){
 </script>
 
 <?php $this->endWidget(); ?> 
-<script>
+<script type="text/javascript">
 
 $("#regButton").click(function(){
 getReg();

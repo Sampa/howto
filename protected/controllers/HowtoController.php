@@ -69,9 +69,17 @@ class HowtoController extends Controller
 	public function actionView()
 	{
 		$howto = $this->loadModel();
+		if ( isset( $_GET['embed'] ) && $_GET['embed'] == "true" )
+		{
+		$this->renderPartial( 'embed',array(
+			'model'=>$howto,
+		));
+		
+		}else{
 		$this->render( 'view',array(
 			'model'=>$howto,
 		));
+		}
 	}
 	public function actionMail()
 	{

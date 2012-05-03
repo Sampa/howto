@@ -18,7 +18,7 @@ $this->breadcrumbs=array(
 		array( 'model'=>$model,'step'=>$step,'validatedSteps'=>$validatedSteps ) );
 ?>
 
-	<script>
+	<script type="text/javascript">
 			$("#howtodelete").click(function(){
 				deletehowto(<?php echo $model->id;?>);
 			});

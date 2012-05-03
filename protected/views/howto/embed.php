@@ -1,12 +1,9 @@
-<?php
-	$this->breadcrumbs = array( $model->title, );
-	$this->pageTitle = $model->title;
-	$this->layout = "column1";
-?>
+<link rel="stylesheet" type="text/css" href="<?= Yii::app()->request->baseUrl; ?>/embed/css/bootstrap.css" />
+
 <div id="howto_container" style="padding-left: 20px; float:left;">
-	<div id="left" class="span7" style="float:left;" >
+	<div id="left" class="span5" style="float:left;" >
 <?php 
-	$this->renderPartial('_view',
+	$this->renderPartial('_embed',
 	array(
 		'data'=>$model,
 	) ); 
@@ -35,7 +32,7 @@
 ?> 	 	</div><!--left-->
 	
 	
-	<div id="steps" class="span7" style="clear:both; float:left;">
+	<div id="steps" class="span5" style="clear:both; float:left;">
 		<?php if ( $model->stepCount >= 1 ): ?>
 			<h3>
 				<?= $model->stepCount>1 ? $model->stepCount . ' steps' : 'One step'; ?>
@@ -66,5 +63,4 @@
         dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
-	
 </script>

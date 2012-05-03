@@ -3,11 +3,8 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="language" content="en" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-	<!--[if lt IE 8]>
-	<link rel="stylesheet" type="text/css" href="<?= Yii::app()->request->baseUrl; ?>/css/ie.css" media="screen, projection" />
-	<![endif]-->
 
 	<link rel="stylesheet" type="text/css" href="<?= Yii::app()->request->baseUrl; ?>/css/main.css" />
 
@@ -33,9 +30,15 @@
 
 	
 	<div id="header" style="border:0px solid yellow; height:40px;">
-		<div id="logo" class="span2" style="border:0px solid black;"><h1>Howto<h1>
+		<div id="logo" class="span2" style="border:0px solid black;"><h1>Howto</h1>
 		</div>
+		<!-- facebook login-->
+			<div style="border: 0px solid black; position:absolute; left:120px; top:0px;">
+		
+	<a  id="fb-login"><img src="http://worldthissecond.com/wp-content/themes/tribune/images/icons/facebook.png" alt="facebook"/></a>
 
+
+			</div>
 		<div class="" style="border: 0px solid red; height:27px; float:left; width:28%; padding: 0px;">
 
 		<?php if ( $this->isGuest ):?>	
@@ -55,7 +58,7 @@
 		<?php endif;?>
 		
 	
-		<!--om man är inloggad -->
+		<!--om man Ã¤r inloggad -->
 		<?php if ( !$this->isGuest ):?>
 		<div class="btn-toolbar" style="margin-top:0px;">
 		<!--userbutton-->
@@ -76,7 +79,7 @@
 								'visible'=>Yii::app()->user->checkAccess(Rights::module()->superuserName ) ),
 						array('label'=>'Logout from How-to('.Yii::app()->user->name.')', 'url'=>array('/site/logout')), 
 						array('label'=>'Logout from facebook('.Yii::app()->user->name.')',
-	'url'=>'https://www.facebook.com/logout.php?access_token='.Yii::app()->facebook->getAccessToken().'&confirm=1&next=http://83.233.118.50/site/logout',
+	'url'=>'https://www.facebook.com/logout.php?access_token='.Yii::app()->facebook->getAccessToken().'&amp;confirm=1&amp;next=http://83.233.118.50/site/logout',
 
 
 						),
@@ -116,13 +119,7 @@
 		
 		
 		<?=$this->clips['header'];?>
-		<!-- facebook login-->
-			<div style="border: 0px solid black; position:absolute; left:120px; top:0px;">
 		
-	<a  id="fb-login"><img src="http://worldthissecond.com/wp-content/themes/tribune/images/icons/facebook.png"/></a>
-
-
-			</div>
 	</div>
 	
 	<div class="btn-toolbar span7" style="border:0px solid green; margin:-0px 0 0 -5px; height:auto;">
@@ -161,7 +158,11 @@
 		$list = Category::model()->findAll();
 		foreach ( $list as $category )
 		{
-			$categories[] = array('label'=>$category->name, 'url'=>'/howto/category/'.$category->name);
+			if ( $category->parent == "no parent" )
+				$label = "--".$category->name."--";
+				else
+				$label = $category->name;
+			$categories[] = array('label'=>$label, 'url'=>'/howto/category/'.$category->name);
 		
 		}
 		$this->widget('bootstrap.widgets.BootButtonGroup',
@@ -182,7 +183,7 @@
 		<button class="btn btn-primary" style="margin-top: -20px;" id="searchbutton">
 <!-- search--><i class="icon-search icon-white"></i> Find
 		</button>
-		<script>
+		<script type="text/javascript">
 			$("#searchfield").focus(function(){
 				$(this).val('');
 			});
@@ -232,7 +233,7 @@
 ?>
 
 	<?= $content; ?>
-<a href="https://www.facebook.com/logout.php?access_token=<?=Yii::app()->facebook->getAccessToken();?>&confirm=1&next=http://83.233.118.50/site/logout">hej</a>
+<a href="https://www.facebook.com/logout.php?access_token=<?=Yii::app()->facebook->getAccessToken();?>&amp;confirm=1&amp;next=http://83.233.118.50/site/logout">hej</a>
 		<div id="footer" style="clear:both">
 	<?php $this->widget('ext.yii-facebook-opengraph.plugins.LikeButton', array(
    //'href' => 'YOUR_URL', // if omitted Facebook will use the OG meta tag
@@ -246,7 +247,7 @@
 
 	</div><!-- page -->
 
-	<script>
+	<script type="text/javascript">
  $("#fb-login").click(function(){
  FB.login(function(response) {
    if (response.authResponse) {

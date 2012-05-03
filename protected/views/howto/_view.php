@@ -92,17 +92,21 @@
 		</div>
 	</div>
 	<div class="nav">
-		<?= $data->stepCount;?> Steps
+		<?php
+		$steps ="";
+		if (count($data->steps) < 1)
+			$steps = "This howto has no steps...";
+		foreach ( $data->steps as $step ):
+			
+			$steps .=  $step->title.'<br/><div class="well edit_step" ">' . $step->text .'</div>';
+		 endforeach; 
+		 ?>
+		<?= CHtml::link($data->stepCount.' Steps', $data->url.'#steps', array('class'=>'btn btn-primary btn-success', 'data-title'=>'Steps preview', 'data-content'=>$steps, 'rel'=>'popover')); ?>
 		<b>Tags:</b>
 		<?= implode(', ', $data->tagLinks); ?>
 		<br/>
 <!--Read--><?=CHtml::link('<i class="icon-eye-open icon-white"></i> Read', $data->url,array('class'=>'btn btn-success' ) ); ?> 
 
-<!--comments--><?php
-		/*CHtml::link("<i class='icon-comment icon-white'></i> Comments ({$data->commentCount})",$data->url.'#comments',
-			array('class'=>'btn btn-primary' ) ); */
-			 //
-			 ?>
 			
 <!--excel--><?= CHtml::link('<i class="icon-book icon-white"></i> Excel', 
 					array('/howto/excel/id/' . $data->id ), array('class'=>'btn btn-primary') );?>	
@@ -126,8 +130,15 @@
 			<?=CHtml::link('<i class="icon-edit icon-white"></i> Edit', array('/howto/update','id'=>$data->id),
 			array('class'=>'btn btn-primary' ) ); ?> 
 		<?php endif; ?>   
-		
+<!-- embed -->
+<?= CHtml::htmlButton('<i class="icon-retweet icon-white"></i> Embed', 
+					 array('class'=>'btn btn-primary embed','id'=>'embedLink'.$data->id,'name'=>$data->id) );?>		
 
+	<div style="display:none;" class="well" id="embedCode<?=$data->id;?>">
+	<h4>Copy this code and paste it into your website</h4>
+	<h6><?php echo CHtml::encode('<iframe 
+   src="http://83.233.118.50/howto/'.$data->id.'/'.$data->title.'!?embed=true" width="550" height="577" marginwidth="0" marginheight="0" frameborder="no"   scrolling="yes"</iframe>');?></h6>
+   </div>
 	</div><!-- nav -->
 	</div><!-- categories and down-->
 </div>
@@ -135,7 +146,11 @@
 
 
 
-	<script>
+	<script type="text/javascript">
+	$("#embedLink<?=$data->id;?>").click(function(){
+		id = <?=$data->id;?>;
+		$("#embedCode"+id).toggle();
+	});
 	$(".bookmark").click(function(){
 		id = $(this).attr('name');
 		url = '/howto/bookmark';
@@ -152,7 +167,7 @@
 		</script>
 		
 	<?php if ( $this->user == $data->author->username):?>
-	<script>
+	<script type="text/javascript">
 	 $(document).ready(function() {
      $('.edit_area').editable('/howto/inlineEdit?id=<?=$data->id;?>', { 
          type      : 'textarea',
