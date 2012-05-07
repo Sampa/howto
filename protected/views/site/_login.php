@@ -1,3 +1,4 @@
+
 <?php $this->beginWidget('bootstrap.widgets.BootModal', array(
     'id'=>'dialogLogin',
     'htmlOptions'=>array('class'=>'hide'),

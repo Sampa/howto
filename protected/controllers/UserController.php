@@ -9,15 +9,61 @@ class UserController extends Controller
 	/**
 	 * @return array action filters
 	 */
+	 public $openid;
 	public function filters()
 	{
 		return array(
 			'rights', // perform access control for CRUD operations
 		);
 	}
-		public function allowedActions()
+	public function allowedActions()
 	{
-	 	return 'register,adduser,view,reputation';
+	 	return 'register,adduser,view,reputation,persona,update';
+	}
+	
+	public function do_post_request($url, $data, $optional_headers = null)
+	{
+	$params = array('http' => array(
+	'method' => 'POST',
+	'content' => $data
+	));
+	if ($optional_headers!== null) {
+	$params['http']['header'] = $optional_headers;
+	}
+	$ctx = stream_context_create($params);
+	$fp = @fopen($url, 'rb', false, $ctx);
+	if (!$fp) {
+	throw new Exception("Problem with $url, $php_errormsg");
+	}
+	$response = @stream_get_contents($fp);
+	if ($response === false) {
+	throw new Exception("Problem reading data from $url, $php_errormsg");
+	}
+	return $response;
+	} 
+	
+	public function actionpersona(){
+		$url = 'https://browserid.org/verify';  
+		$assert = $_POST['assertion'];  
+		$params = 'assertion='.$assert.'&audience=' . urlencode('http://83.233.118.50');  
+		$url = $this->do_post_request( $url , $params );
+		/*
+		create an user, connect the email info etc log in yada yada
+		
+		*/
+		$data = json_decode($url,true);
+		if ( $data['status'] == "okay" )
+		{	
+			$user = User::model()->find('persona="'.$data['email'].'"');
+			if ( $user )
+			{
+				$this->autoLogin( $user );
+				$this->redirect('/profile/id/'.$user->id);				
+			} else{
+			$this->actionaddUser('browserid',$data);
+			}
+			echo $url;
+		}
 	}
 	
 	public function actionReputation($id){
@@ -27,22 +73,38 @@ class UserController extends Controller
 		echo $this->renderPartial('reputation',array('reputation'=>$user->reputation,'id'=>$id));
 	
 	}
-	public function actionaddUser(){
-			$userid = Yii::app()->facebook->getUser();
-						$user = new User('noValidation');
-						$user->facebook = $userid;
-					
-						// Save to get an id
-						//Set id as username temporarely						
-						$user->email ="temp@temp.com";
-						$user->username = $userid;
-						//save again
-						if ( $user->save() ){
-						$dir = User::USER_DIR . $user->id; //specifies a path for the users unique file dir
-						mkdir($dir,0777,true);  // creates the dir
-						$this->autoLogin($user);//logs in the user
-						$this->redirect('/profile/u/'.$userid);
-						}
+	public function actionaddUser($service=null,$data=null)
+	{
+		$user = new User('noValidation');
+		if ( $service == "browserid" )
+		{
+			$user->email = $data['email'];
+			$user->persona = $data['email'];
+			$user->username = $data['email'];
+		}
+		else
+		{
+			$fbuser = Yii::app()->facebook->getUser();
+			$yiiuser = User::model()->find('facebook='.$fbuser);
+			if (!$yiiuser)
+			{
+				$user = new User;
+				$user->facebook = $userid;
+				$user->email ="temp@temp.com";
+				$user->username = $userid;
+			}
+		}		
+				// Save to get an id
+		//Set id as username temporarely						
+	
+		//save again
+		if ( $user->save() )
+		{
+			$dir = User::USER_DIR . $user->id; //specifies a path for the users unique file dir
+			mkdir($dir,0777,true);  // creates the dir
+			$this->autoLogin($user);//logs in the user
+			$this->redirect('/profile/id/'.$user->id);
+		}
 					
 		
 	
@@ -128,6 +190,7 @@ class UserController extends Controller
 		if ( Yii::app()->request->isAjaxRequest )
 			$this->layout = 'ajax';
 		$model = $this->loadModel( $id );
+		$model->scenario = "validation";
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);

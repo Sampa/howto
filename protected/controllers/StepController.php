@@ -194,9 +194,7 @@ public function actionUpdate($id)
 
 			if ( $model->save() ) 
 			{
-			echo CJSON::encode(
-						$model->text
-						);
+			echo $model->text;
 					exit;
 			}
 			

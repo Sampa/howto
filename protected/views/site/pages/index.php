@@ -1,5 +1,15 @@
 <?php $this->pageTitle=Yii::app()->name; 
 $this->layout = "column1";
+?>	
+<?php
+
+if(!Yii::app()->user->isGuest && isset($_GET['tweet'])){
+
+$twitter = new Twitter;
+$tweet_text = rand(1,1000);
+$result = $twitter->post_tweet($tweet_text,Yii::app()->user->id);
+print "Response code: " . $result . "\n";
+}
 ?>
 	<div class="hero-unit">
 		<h1>Hello, knowledge!</h1>

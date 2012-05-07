@@ -1,6 +1,6 @@
 body
 {
-	margin: 0;
+	margin-top: 0px;
 	padding: 0 0 0 1px;
 	color: #555;
 	font: normal 15pt Arial,Helvetica,sans-serif;
@@ -21,7 +21,7 @@ body
 
 #page
 {
-	margin-top: -2px;
+	margin-top: 2px;
 	margin-bottom: 5px;
 	background: white;
 	border: px solid #C9E0ED;

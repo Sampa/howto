@@ -1,5 +1,5 @@
 <?php
-
+Yii::setPathOfAlias( 'pogostick', 'C:\Programmering\xampp\htdocs\blog\protected\extensions\pogostick' );
 // uncomment the following to define a path alias
 // Yii::setPathOfAlias('local','path/to/local-folder');
 
@@ -24,6 +24,16 @@ return array(
 		'application.modules.rights.components.*',
 		'application.extensions.debugtoolbar.*',
 		'ext.xupload.models.XUploadForm',
+        'application.components.*',
+        'ext.pogostick.base.*',
+        'ext.pogostick.behaviors.*',
+        'ext.pogostick.components.*',
+        'ext.pogostick.events.*',
+        'ext.pogostick.helpers.*',
+        'pogostick.widgets.*',
+		 'ext.eoauth.*',
+        'ext.eoauth.lib.*',
+
 	
 	),
 
@@ -61,6 +71,7 @@ return array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
 		),
+
 		'bootstrap'=>array(
         'class'=>'ext.bootstrap.components.Bootstrap', // assuming you extracted bootstrap under extensions
         'coreCss'=>true, // whether to register the Bootstrap core CSS (bootstrap.min.css), defaults to true
@@ -99,7 +110,14 @@ return array(
 			//'image'=>'URL_TO_WEBSITE_LOGO',
 		//),
 		),
-
+		'twitter' => array(
+		'class' => 'ext.pogostick.components.twitter.CPSTwitterApi',
+		'apiKey' => 'rPmGEE1Wvsf56BSyQaWXw',
+		'apiSecretKey' => 'V4SK09O0cPOgkabsxR5AruBSNrc0b1tzoBeWkL7ew0',
+		'apiBaseUrl' => 'http://twitter.com',
+		'callbackUrl' => 'http://83.233.118.50/site/login',
+		'format' => 'array',
+		),
 		'db'=>array(
 			'connectionString' => 'mysql:host=localhost;dbname=blog',
 			'emulatePrepare' => true,

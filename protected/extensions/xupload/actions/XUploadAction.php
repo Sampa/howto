@@ -58,7 +58,8 @@ class XUploadAction extends CAction {
      * @since 0.1
      */
     public $path;
-
+	
+	public $type;
     /**
      * Public path of the main uploading folder.
      * @see XUploadAction::init()
@@ -118,6 +119,7 @@ class XUploadAction extends CAction {
             if ($model -> file !== null) {
                 $model -> mime_type = $model -> file -> getType();
                 $model -> size = $model -> file -> getSize();
+				
                 $model -> name = $model -> file -> getName();
                 header('Vary: Accept');
                 if (isset($_SERVER['HTTP_ACCEPT']) && (strpos($_SERVER['HTTP_ACCEPT'], 'application/json') !== false)) {
@@ -131,6 +133,12 @@ class XUploadAction extends CAction {
                     if (!is_dir($path)) {
                         mkdir($path, 0777, true);
                     }
+					if ( $this->type == "avatar" ){
+						$subject = $model -> name;
+						$pattern = '/\..*/';
+						preg_match($pattern, $subject, $matches, PREG_OFFSET_CAPTURE, 3);
+						$model -> name = 'avatar'.$matches['0']['0'];
+						}
                     $model -> file -> saveAs($path . $model -> name);
                     echo json_encode(array( array("name" => $model -> name, "type" => $model -> mime_type, "size" => $model -> size, "url" => $publicPath . $model -> name, "delete_url" => $this -> getController() -> createUrl("upload", array("_method" => "delete", "file" => $path.$model->name)), "delete_type" => "POST")));
                 } else {

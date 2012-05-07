@@ -138,16 +138,15 @@ class HowtoController extends Controller
 	
 	public function actionInlineEdit()
 	{			
-			$model = Howto::model()->findByPk($_GET['id']);
+		$model = Howto::model()->findByPk($_GET['id']);
 		
 		if ( Yii::app()->request->isAjaxRequest )
 		{				$model->content = $_POST['value'];
 
 			if ( $model->save() ) 
 			{
-					echo CJSON::encode(
-						$model->content
-						);
+					echo $model->content;
+						
 					exit;
 			}
 			
@@ -185,7 +184,22 @@ class HowtoController extends Controller
 			
 		}
 	}
-
+	public function checkFiles($post)
+	{
+		$return = array();
+		$files = explode( ';',$post );
+		foreach( $files as $key=>$file )
+		{
+			if($key==0)
+				continue;
+			if( file_exists ( dirname(__FILE__) . "..\\..\\..\\files\\users\\".Yii::app()->user->id."\\video\\" . $file ) )
+			{
+				$return[] = $file;	
+			}
+		}	
+		return $return;
+	
+	}
 	public function actionCreate()
 	{
 		Yii::import('ext.multimodelform.MultiModelForm');
@@ -196,13 +210,26 @@ class HowtoController extends Controller
 		$this->performAjaxValidation( $model, 'howto-form' );
 		if ( isset ( $_POST['Howto'] ) )
 		{
+			
 			$model->attributes = $_POST['Howto'];
 			$rating = new Rating();
 			$rating->save();
 			$model->rating_id = $rating->id;
 
-			 if ( $model->save() ){
-					$masterValues = array ('howto_id'=>$model->id);
+			if ( $model->save() )
+			{
+				
+				$files = $this->checkFiles($_POST['Howto']['video']);
+				print_r($files);
+					foreach($files as $key=>$file)
+					{
+						$video = new Video;
+						$video->user_id = Yii::app()->user->id;
+						$video->howto_id = $model->id;
+						$video->filename = $file;
+						$video->save();
+					}
+				$masterValues = array ('howto_id'=>$model->id);
 
 			 if ( MultiModelForm::save($step,$validatedSteps,$deleteSteps,$masterValues ) )
 				$this->redirect( array( 'view' , 'id'=>$model->id ) );

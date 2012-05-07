@@ -7,15 +7,25 @@
 	<a class="btn btn-primary" href="/message/compose?id=<?=$model->id;?>">
 		<i class="icon-white icon-envelope"></i> Message
 	</a>
+	<!-- update-->
+	<?php if ( Yii::app()->user->id == $model->id ): ?>
+		<button class="update_toggle btn btn-primary" id="update_button"">
+			<i class="icon-ok icon-white"></i>Update
+		</button> 
+  
+		<button class="update_toggle btn btn-danger" id="cancel_button" style="display:none;">
+<!--cancel--><i class="icon-ban-circle icon-white"></i>Cancel 
+		</button>
 
+	<?php endif;?>
 	<?=$this->renderPartial('reputation',array('reputation'=>$model->reputation,'id'=>$model->id));?>
 	
 <!-- FACEBOOK INFO -->
 
-	 <?php
+<!--AVATAR PHP--><?php
 
 	$userid = $model->facebook;
-	
+	$imageUrl ="";
 	if ( $userid )
 	{ 
 	$imageUrl = Yii::app()->facebook->getProfilePictureById($userid);
@@ -37,30 +47,18 @@
 
 	<?php
 	}
-	else { $imageUrl = User::USER_DIR . $model->id . '/' . $model->avatar;}
+	else { 
+			$imageUrl = "/files/users/".$model->id."/".$model->avatar;
+		}
+		
 	
 	?>
-	
-
-
-	
 	<div  style="width:170px; height:130px; float:left;">
-		<a target="_blank" href="<?= User::USER_DIR . $model->id . '/' . $model->avatar;?>">
-<!--avatar--><img class="user_avatar"
-			src="<?=$imageUrl;?>" 
-			alt="Avatar"/>
-		</a>
-
-<!-- update--><?php if ( Yii::app()->user->id == $model->id ): ?>
-		<button class="update_toggle btn btn-primary" id="update_button" style="float:left;">
-			<i class="icon-ok icon-white"></i>Update
-		</button> 
-  
-		<button class="update_toggle btn btn-danger" id="cancel_button" style="float:left; display:none;">
-<!--cancel--><i class="icon-ban-circle icon-white"></i>Cancel 
-		</button>
-
-	<?php endif;?>
+	<!--avatar html-->
+	<a target="_blank" href="<?=$imageUrl;?>">
+		<img class="user_avatar" style="max-height:130px;" src="<?=$imageUrl;?>" alt="Avatar"/>
+	</a>
+	<!--END AVATAR -->
 	</div>
 	
 	
@@ -80,33 +78,24 @@
 	</div>
 	
 
-		<div id="user_update" style="clear:both;">
+	<div id="user_update" style="clear:both;">
 <!--update form--><?=$this->renderPartial('update',array('model'=>$model));?>
 	</div>
 
 
 
-<div id="user_presentation" style="clear:both"> <?= $model->presentation; ?> </div>
+<div id="user_presentation" style="clear:both; margin-left:120px;"> <?= $model->presentation; ?> </div>
 
-<?php if ( $this->userId == $model->id || $model->public_library == User::PUBLIC_LIBRARY ): ?>
-	<h4> <?= $this->user;?> file library  </h4>
+<?php if ( Yii::app()->user->id == $model->id || $model->public_library == User::PUBLIC_LIBRARY ): ?>
+	<h4> <?= Yii::app()->user->id;?> file library  </h4>
 
-<?php //require('_fileLibrary.php'); ?>
+<?php require('_fileLibrary.php'); ?>
 <?php endif; ?>
 
 
 <?php 
 	$this->beginWidget('system.web.widgets.CClipWidget', array( 'id'=>'sidebar' ) );  
-//<!--user howtos-->
-	if ( $model->howtos ):
-			echo '<div class="well"><h2> Howtos by ' . $model->username . "</h2>";
-			foreach( $model->howtos as $howto ) 
-			{
-				echo Howto::model()->getLink($howto->id);
-				echo "<br/>";
-			}
-			echo '</div>';	
-	endif;	
+		echo "<h1> Profile Sidebar </h1>";
 	$this->endWidget(); 
 ?>
 

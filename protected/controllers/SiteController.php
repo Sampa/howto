@@ -23,6 +23,9 @@ class SiteController extends Controller
 		);
 	}
 
+
+
+
 	/**
 	 * This is the action to handle external exceptions.
 	 */
@@ -61,8 +64,21 @@ class SiteController extends Controller
 	 * Displays the login page
 	 */
 	
+/**
+* post_tweet.php
+* Example of posting a tweet with OAuth
+* Latest copy of this code: 
+* http://140dev.com/twitter-api-programming-tutorials/hello-twitter-oauth-php/
+* @author Adam Green <140dev@gmail.com>
+* @license GNU Public License
+*/
+
+
+
+
+
 	public function actionLogin()
-	{
+	{	
 		$model=new LoginForm;
 		
 		// if it is ajax validation request
@@ -98,6 +114,7 @@ class SiteController extends Controller
                 'div'=>$this->renderPartial('modalLogin', array('model'=>$model), true)));
             exit;               
         } else{
+	
 		// display the login form
 		$this->render('login',array('model'=>$model));
 		}
@@ -117,6 +134,7 @@ class SiteController extends Controller
 		$this->render('pages/index');
 	
 	}
+	
 
 	/**
 	 * Restores the database for the demo application.

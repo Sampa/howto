@@ -1,4 +1,27 @@
 <div class="form" >
+	 <h5> Upload videos </h5>
+<div id="video"></div>
+	 <?php 
+
+	$XUpload = new XUploadForm;
+	$this->widget('xupload.XUpload', 
+			array(
+					'url' => Yii::app()->createUrl("file/upload", 
+					array("parent_id" =>User::USER_DIR . Yii::app()->user->id . '/video') ),
+						'type'=>'video',
+						'model' => $XUpload,
+						'attribute' => 'file',
+						'multiple'=>true,
+						'options'=>array(
+						'completed' => 'js:function (e,data) {
+						$.each(data.files, function (index, file) {
+						$("#Howto_video").val(\'\'+$("#Howto_video").val()+";"+file.name + \'\' );
+						});
+							}'),
+		       ));
+
+			   
+?>
 
 <?php 
 	$form = $this->beginWidget('BootActiveForm', 
@@ -17,6 +40,10 @@
  ?>
 
 	<?php     echo $form->errorSummary(array_merge(array($model),$validatedSteps));?>
+	<div class="row-fluid">
+		<?php echo $form->textField($model,'video',array()); ?>
+		<?php echo $form->error($model,'video'); ?>
+	</div>
 
 	<div class="row-fluid">
 		<?php echo $form->labelEx($model,'title'); ?>
@@ -36,7 +63,7 @@
 	?>
 		
 	</div>
-
+	
 	<div class="row-fluid">
 		<?php echo $form->labelEx($model,'tags'); ?>
 		<?php $this->widget('CAutoComplete', array(

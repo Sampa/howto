@@ -8,6 +8,7 @@ class FileController extends Controller{
                 'class'=>'ext.xupload.actions.XUploadAction',
         		'subfolderVar' => 'parent_id',
         		'path' => realpath(Yii::app()->getBasePath()."/../"),
+				'type'=>'type',
 				//'unique'=>rand(11111,99999999),
 				
             ),

@@ -1,0 +1,91 @@
+
+LightOpenIdYii - A lightopenid Wrapper for Yii
+==============================================
+
+This wrapper class allows to use lightopenid as a component in Yii framework
+applications. The lightopenid project is included as a git submodule. So changes
+made there, can easily be carried over.
+
+Currently it uses only Google for authentication because it's relatively easy to
+just use the URL "https://www.google.com/accounts/o8/id" (no need for user
+action). I haven't found out where to redirect users for login through other
+OpenID providers yet.
+
+
+Links
+-----
+
+Yii framework: http://www.yiiframework.com
+lightopenid on gitorious: http://gitorious.org/lightopenid
+
+
+Usage
+-----
+
+Add as a git submodule:
+git submodule add git://github.com/hofrob/LightOpenIdYii.git
+
+Or download the files and put them in the extension directory.
+
+Import the directory through your Yii config file.
+
+[code]
+'import' => array(
+	[..]
+	'ext.LightOpenIdYii.*',
+	[..]
+),
+[/code]
+
+Configure the component.
+
+[code]
+'components' => array(
+	[..]
+	'openid' => array(
+		'class' => 'LightOpenIdWrapper',
+	),
+	[..]
+),
+[/code]
+
+You can make use of the UserController provided in this package by mapping it in
+the config.
+
+[code]
+'controllerMap' => array(
+	'user' => array(
+		'class' => 'ext.LightOpenIdYii.UserController',
+	),
+),
+[/code]
+
+The following views will need to be created:
+* loggedin
+* cancelled
+* logout
+
+In UserIdentity I invoke a static method of my user model to write/load
+information from my database. Change this to fit your needs.
+
+[code]
+$this->id = User::syncWithDb($this->openid);
+[/code]
+
+IMPORTANT: You can have two different OpenIDs with Google. One is just a
+google.com/accounts[..] link. Everyone with a Google account has it. But if you
+signed up with Google Plus you get a second ID (your Google Plus profile URL). I
+haven't found out when Google returns what ID. Unfortunately it seems to me that
+this is random.
+
+You COULD take care of this problem in your database by using the email address
+as an identifier and connect two IDs where these fields are equal. But don't
+take my word that this will actually work. It's just an idea.
+
+
+TODO
+----
+
+* Configure required fields with Yii config files.
+* Configure OpenID identifier with Yii config files (Wrapper Line 11).
+* Login through other OpenID providers.

@@ -19,7 +19,7 @@ class Howto extends Model
 
 	private $_oldTags;
 	public $image;
-   
+	public $video;
 
 		/**
 	 * @return array relational rules.

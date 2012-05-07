@@ -12,14 +12,11 @@ class UserIdentity extends CUserIdentity
 	ERROR_USERNAME_INVALID = 1;
 	ERROR_PASSWORD_INVALID = 2;
 	ERROR_UNKNOWN_IDENTITY = 100;
-	*/
-	/**
-	 * Authenticates a user.
-	 * @return boolean whether authentication succeeds.
-	 */
-	public function facebook()
+		*/
+
+	public function social($username)
 	{
-		$user=User::model()->find("username = '" . $this->username . "'");
+		$user=User::model()->find("username = '" . $username . "'");
 		if ( $user === null ) 
 			$this->errorCode = self::ERROR_USERNAME_INVALID;
 		else
@@ -30,6 +27,10 @@ class UserIdentity extends CUserIdentity
 		}
 		return $this->errorCode == self::ERROR_NONE;
 	}
+	/**
+	 * Authenticates a user.
+	 * @return boolean whether authentication succeeds.
+	 */
 	public function authenticate()
 	{
 		$user=User::model()->find("username = '" . $this->username . "'");

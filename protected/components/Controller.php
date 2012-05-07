@@ -5,13 +5,22 @@
  */
 class Controller extends RController
 {
+
 	public $clip = "system.web.widgets.CClipWidget";
 	public function init()
     {
 	parent::init();
-
-	if ( isset($_GET['logout']) && $_GET['logout'] !== "true" )
+	if ( !isset($_GET['logout']) )
+		{
 			$this->facebookCheck();
+
+		}else
+		{
+			if( isset($_GET['logout']) && $_GET['logout'] == "true" )
+			{
+
+			}
+		}
 	}
 	protected function afterRender($view, &$output)
 	{
@@ -23,15 +32,14 @@ class Controller extends RController
 	}
 	public function facebookCheck()
 	{
-	if ( Yii::app()->user->isGuest ){
-		$userid = Yii::app()->facebook->getUser();
-
-		if ( $userid !== "") //if the user is logged in vya facebook
+		if ( Yii::app()->user->isGuest )
+		{
+			$userid = Yii::app()->facebook->getUser();
+			if ( $userid > 0) //if the user is logged in vya facebook
 			{
 				$user = User::model()->find('facebook='.$userid); 
 				if( $user )
 					$this->autoLogin($user); 
-				
 			}
 		}
 	}
@@ -39,8 +47,8 @@ class Controller extends RController
 	public function autoLogin($user)
 	{
 	$identity=new UserIdentity($user->username, "");
-	$identity->facebook();
-	
+	$identity->authenticate();
+	$identity->social($user->username);
 	if ( $identity->errorCode == UserIdentity::ERROR_NONE )
 		{
 			$duration= 3600*24*30; // 30 days
@@ -49,7 +57,7 @@ class Controller extends RController
 		}
 		else
 		{
-		 //echo $identity->errorCode;
+		 echo $identity->errorCode;
 		}
 	
 	}

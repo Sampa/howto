@@ -8,7 +8,7 @@
 
 	<link rel="stylesheet" type="text/css" href="<?= Yii::app()->request->baseUrl; ?>/css/main.css" />
 
-<?php  //to be able to use xupload and eltre on the same page we need this scriptmap
+<?php  //helps using more jQuery stuff on same page 
 	$scriptmap=Yii::app()->clientScript;
 	$scriptmap->scriptMap=array(
 	        'jquery.min.js'=>'http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js',
@@ -18,7 +18,7 @@
 	<?php  Yii::app()->clientScript->registerScriptFile('/js/jquery.multiplyforms.js');?>
 	<?php  Yii::app()->clientScript->registerScriptFile('/js/common.js');?>
 		<?php  Yii::app()->clientScript->registerScriptFile('/js/jeditable.js');?>
-
+    <script src="https://browserid.org/include.js" type="text/javascript"></script>  
 
 
 	<title><?= CHtml::encode( $this->pageTitle ); ?></title>
@@ -30,15 +30,19 @@
 
 	
 	<div id="header" style="border:0px solid yellow; height:40px;">
-		<div id="logo" class="span2" style="border:0px solid black;"><h1>Howto</h1>
+		<div id="logo" class="span2" style="border:0px solid black;">
+		<img src="/images/logo.png" alt="Howto"/>
 		</div>
 		<!-- facebook login-->
-			<div style="border: 0px solid black; position:absolute; left:120px; top:0px;">
-		
-	<a  id="fb-login"><img src="http://worldthissecond.com/wp-content/themes/tribune/images/icons/facebook.png" alt="facebook"/></a>
+	<div style="border: 0px solid black; position:absolute; left:120px; top:0px;">
+		<a  id="fb-login"><img src="http://worldthissecond.com/wp-content/themes/tribune/images/icons/facebook.png" 
+		alt="facebook"/></a><br/>
+		<a href="#" id="browserid" title="Sign-in with BrowserID">  
+      <img src="/images/sign_in_blue.png" alt="Sign in">  
+    </a>  
+	</div>
 
-
-			</div>
+	</script>
 		<div class="" style="border: 0px solid red; height:27px; float:left; width:28%; padding: 0px;">
 
 		<?php if ( $this->isGuest ):?>	
@@ -77,11 +81,9 @@
 						array('label'=>'Update','url'=>array( '//user/update/id/' . Yii::app()->user->id ) ), 
 						array('label'=>'Rights', 'url'=>array( '/rights' ),
 								'visible'=>Yii::app()->user->checkAccess(Rights::module()->superuserName ) ),
-						array('label'=>'Logout from How-to('.Yii::app()->user->name.')', 'url'=>array('/site/logout')), 
-						array('label'=>'Logout from facebook('.Yii::app()->user->name.')',
-	'url'=>'https://www.facebook.com/logout.php?access_token='.Yii::app()->facebook->getAccessToken().'&amp;confirm=1&amp;next=http://83.233.118.50/site/logout',
-
-
+						array('label'=>'Logout', 'url'=>array('/site/logout'),'id'=>'loggaut'), 
+						array('label'=>'Logout from facebook',
+	'url'=>'https://www.facebook.com/logout.php?access_token='.Yii::app()->facebook->getAccessToken().'&amp;confirm=1&amp;next=http://83.233.118.50/site/logout','visible'=>Yii::app()->facebook->getUser(),
 						),
 					),
 				)
@@ -210,7 +212,8 @@
 		'items'=>array( //Top level
 				array('label'=>'Home', 'url'=>'/site/index'),
 				array('label'=>'About', 'url'=>array('//about')),
-				array('label'=>'Contact', 'url'=>array('//contact')),		
+				array('label'=>'Contact', 'url'=>array('//contact')),
+				//array('label'=>'Twitter', 'url'=>array('/twitter/index')),
 					),
 		)); 
 ?>
@@ -236,10 +239,10 @@
 <a href="https://www.facebook.com/logout.php?access_token=<?=Yii::app()->facebook->getAccessToken();?>&amp;confirm=1&amp;next=http://83.233.118.50/site/logout">hej</a>
 		<div id="footer" style="clear:both">
 	<?php $this->widget('ext.yii-facebook-opengraph.plugins.LikeButton', array(
-   //'href' => 'YOUR_URL', // if omitted Facebook will use the OG meta tag
-   'show_faces'=>true,
-   'send' => true
-)); ?>
+	   //'href' => 'YOUR_URL', // if omitted Facebook will use the OG meta tag
+	   'show_faces'=>true,
+	   'send' => true
+	)); ?>
 		<br/>
 		Copyright &copy; <?= date('Y'); ?><br />
 		<div id="conf"></div>
@@ -247,6 +250,56 @@
 
 	</div><!-- page -->
 
+	<script type="text/javascript">
+
+jQuery(function($) {  
+  var loggedIn = function(res) {
+
+    if (res.returnURI) {
+      window.location.assign(res.returnURI);
+    } else {
+      window.location.reload(true);
+    }
+  };
+  var loggedOut = function(res) {
+  };
+
+  var gotAssertion = function(assertion) {
+    // got an assertion, now send it up to the server for verification
+    if (assertion) {
+      $.ajax({
+        type: 'POST',
+        url: '/user/persona',
+        data: { assertion: assertion },
+        success: function(res, status, xhr) {
+          if (res === null) {
+            loggedOut();
+          }
+          else {
+            loggedIn(res);
+          }
+        },
+        error: function(res, status, xhr) {
+          alert("Whoops, I failed to authenticate you! " + res.responseText);
+        }
+      });
+    } else {
+      loggedOut();
+    }
+  }
+
+  $('#browserid').click(function() {
+    navigator.id.get(gotAssertion, {allowPersistent: true});
+    return false;
+  });
+
+  // Query persistent login.
+  var login = $('head').attr('data-logged-in');
+  if (login === "false") {
+    navigator.id.get(gotAssertion, {silent: true});
+  }
+});
+</script>
 	<script type="text/javascript">
  $("#fb-login").click(function(){
  FB.login(function(response) {

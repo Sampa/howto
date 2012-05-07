@@ -19,7 +19,7 @@ class XUpload extends CJuiInputWidget {
      * @var string
      */
     public $url;
-
+	public $type;
     /**
      * set to true to use multiple file upload
      * @var boolean
