@@ -2598,3 +2598,53 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/announce?info_hash=l%2C%F8%98%A8%8CL%5B%AE%D9%8A%99%1FL%27%25%BF%8B%A1%A4&peer_id=-AZ4702-Vou5yJ5hHDY3&supportcrypto=1&port=40694&azudp=40694&uploaded=11432033918&downloaded=205039036&left=0&corrupt=0&event=started&numwant=58&no_peer_id=1&compact=1&key=T9Q2uoS1&azver=3
 ---
+2012/05/08 10:14:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/08 10:14:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/08 10:14:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/08 10:14:20 [error] [php] Missing argument 3 for File::getFiles(), called in C:\Programmering\xampp\htdocs\blog\protected\views\user\_fileLibrary.php on line 4 and defined (C:\Programmering\xampp\htdocs\blog\protected\models\File.php:4)
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(127): require()
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): UserController->renderInternal()
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): UserController->renderFile()
+#3 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(783): UserController->renderPartial()
+#4 C:\Programmering\xampp\htdocs\blog\protected\controllers\UserController.php(125): UserController->render()
+#5 unknown(0): UserController->actionView()
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#9 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): UserController->runAction()
+#10 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#11 C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php(51): RightsFilter->filter()
+#12 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): UserController->filterRights()
+#13 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#14 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#15 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): UserController->runActionWithFilters()
+#16 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): UserController->run()
+#17 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#18 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#19 C:\Programmering\xampp\htdocs\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/profile/u/522637332
+in C:\Programmering\xampp\htdocs\blog\protected\models\File.php (4)
+in C:\Programmering\xampp\htdocs\blog\protected\views\user\_fileLibrary.php (4)
+in C:\Programmering\xampp\htdocs\blog\protected\views\user\view.php (92)
