@@ -111,7 +111,7 @@ class SiteController extends Controller
         {
             echo CJSON::encode(array(
                 'status'=>'render', 
-                'div'=>$this->renderPartial('modalLogin', array('model'=>$model), true)));
+                'div'=>$this->renderPartial('/site/modalLogin', array('model'=>$model), true)));
             exit;               
         } else{
 	

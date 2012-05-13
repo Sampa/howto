@@ -1,0 +1,14 @@
+# use glob syntax.
+syntax: glob
+
+*.log
+*.kpf
+*.komodoproject
+*~
+models/Badge.php
+assets/css/badger.css
+controllers/BadgeController.php
+views/badge/_list.php
+views/badge/list.php
+views/badge/my.php
+

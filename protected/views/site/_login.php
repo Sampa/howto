@@ -1,5 +1,5 @@
 
-<?php $this->beginWidget('bootstrap.widgets.BootModal', array(
+<?php $this->beginWidget('BootModal', array(
     'id'=>'dialogLogin',
     'htmlOptions'=>array('class'=>'hide'),
     'events'=>array(

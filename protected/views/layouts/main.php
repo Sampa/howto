@@ -9,11 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="<?= Yii::app()->request->baseUrl; ?>/css/main.css" />
 
 <?php  //helps using more jQuery stuff on same page 
-	$scriptmap=Yii::app()->clientScript;
-	$scriptmap->scriptMap=array(
-	        'jquery.min.js'=>'http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js',
 
-			);
 ?>
 	<?php  Yii::app()->clientScript->registerScriptFile('/js/jquery.multiplyforms.js');?>
 	<?php  Yii::app()->clientScript->registerScriptFile('/js/common.js');?>
@@ -22,6 +18,7 @@
 
 
 	<title><?= CHtml::encode( $this->pageTitle ); ?></title>
+
 </head>
 
 <body>
@@ -41,8 +38,6 @@
       <img src="/images/sign_in_blue.png" alt="Sign in">  
     </a>  
 	</div>
-
-	</script>
 		<div class="" style="border: 0px solid red; height:27px; float:left; width:28%; padding: 0px;">
 
 		<?php if ( $this->isGuest ):?>	
@@ -82,8 +77,8 @@
 						array('label'=>'Rights', 'url'=>array( '/rights' ),
 								'visible'=>Yii::app()->user->checkAccess(Rights::module()->superuserName ) ),
 						array('label'=>'Logout', 'url'=>array('/site/logout'),'id'=>'loggaut'), 
-						array('label'=>'Logout from facebook',
-	'url'=>'https://www.facebook.com/logout.php?access_token='.Yii::app()->facebook->getAccessToken().'&amp;confirm=1&amp;next=http://83.233.118.50/site/logout','visible'=>Yii::app()->facebook->getUser(),
+						
+						array('label'=>'Logout from facebook','url'=>'https://www.facebook.com/logout.php?access_token=<?=Yii::app()->facebook->getAccessToken();?>&amp;confirm=1&amp;next=http://83.233.118.50/site/logoutt','visible'=>Yii::app()->facebook->getUser(),
 						),
 					),
 				)
@@ -206,6 +201,7 @@
 	
 
 	<div id="mainMenu" style="clear:both">
+	
 <?php 
 	$this->widget('application.extensions.mbmenu.MbMenu',
 	array( 
@@ -233,6 +229,9 @@
 	$this->widget('bootstrap.widgets.BootBreadcrumbs', 
 		array(	'links'=>$this->breadcrumbs,
 	)); 
+	//$Badge = new Badge;
+//$Badge->onSuccess = array( $object, 'notifyUser'); // add custom event after giving badge to user
+//$Badge->checkAndGiveGroup( 'Login' );
 ?>
 
 	<?= $content; ?>

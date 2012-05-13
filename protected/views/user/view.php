@@ -102,7 +102,7 @@
 
 	<script type="text/javascript">
 		$(document).ready(function(){
-			$("#user_update").toggle();
+			$("#user_update").hide();
 		});
 		$(".update_toggle").click(function(){
 			$("#user_update").toggle();

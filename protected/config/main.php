@@ -31,8 +31,10 @@ return array(
         'ext.pogostick.events.*',
         'ext.pogostick.helpers.*',
         'pogostick.widgets.*',
-		 'ext.eoauth.*',
+		'ext.eoauth.*',
         'ext.eoauth.lib.*',
+		'application.extensions.jtogglecolumn.*', 
+		'application.modules.badger.models.*',
 
 	
 	),
@@ -43,6 +45,16 @@ return array(
 ),
 	// application modules
 	'modules'=>array(
+		'badger' => array(
+		  'layout' => '//layouts/main', //default: "//layouts/main"
+		  //'userTable' => 'userx', // default: "user"
+		  'cacheSec' => 3600 * 24, // cache duration. default: 3600
+
+		  // Creates tables and copy necessary files
+		  //'install' => true, // remove/comment after succesful install
+		   // drop all badger tables before installing (fresh install)
+		  'dropBeforeInstall' => false, 
+            ),
 		'message' => array(
             'userModel' => 'User',
             'getNameMethod' => 'getFullName',
@@ -60,9 +72,12 @@ return array(
 			'password'=>'admin',
 		 	// If removed, Gii defaults to localhost only. Edit carefully to taste.
 			'ipFilters'=>array('127.0.0.1','::1'),
-			'generatorPaths'=>array('ext.bootrap.gii.templates.default',),
+		'generatorPaths' => array(
+                'ext.bootstrap.gii',
+				'application.gii',  //Ajax Crud template path
+				),
+			),
 		),
-    ),
 
 	// application components
 	'components'=>array(

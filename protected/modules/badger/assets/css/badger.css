@@ -1,0 +1,51 @@
+.badges {
+      padding:10px;
+}
+
+.badges .clear-both {
+      clear:both;
+      display:block;
+
+}
+
+.badges .badge {
+      padding:10px 15px;height:60px;
+      margin:5px;
+      float:left;
+      width:250px;
+      background-color:#fafafa;
+      border:2px solid #fff;
+
+      -moz-border-radius: 7px;
+      -webkit-border-radius: 7px;
+      border-radius: 7px;
+
+      -moz-box-shadow:    0 1px 5px #ccc;
+      -webkit-box-shadow: 0 1px 5px #ccc;
+      box-shadow:         0 1px 5px #ccc;
+
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff', endColorstr='#eee'); /* for IE */
+      background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee)); /* for webkit browsers */
+      background: -moz-linear-gradient(top,  #fff,  #eee); /* for firefox 3.6+ */
+
+}
+.badges .badge .count {
+      background-color:#7599C4;
+      color:#fff;
+      font-size:12px;
+      padding:1px 4px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      border-radius: 5px;
+}
+
+.badges .badge .name {
+      font-size:16px;
+      font-weight:bold;
+}
+
+.badges .badge .description {
+      font-size:13px;
+      color:#888;
+      margin-top:5px;
+}

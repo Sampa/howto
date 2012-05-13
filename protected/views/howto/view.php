@@ -3,6 +3,52 @@
 	$this->pageTitle = $model->title;
 	$this->layout = "column1";
 ?>
+	<script type="text/javascript" src="/js/jquery-easing-1.3.pack.js"></script>
+	<script type="text/javascript" src="/js/jquery-easing-compatibility.1.2.pack.js"></script>
+	<script type="text/javascript" src="/js/coda-slider.1.1.1.pack.js"></script>
+		<script type="text/javascript">
+	
+		var theInt = null;
+		var $crosslink, $navthumb;
+		var curclicked = 0;
+		
+		theInterval = function(cur){
+			clearInterval(theInt);
+			
+			if( typeof cur != 'undefined' )
+				curclicked = cur;
+			
+			$crosslink.removeClass("active-thumb");
+			$navthumb.eq(curclicked).parent().addClass("active-thumb");
+				$(".stripNav ul li a").eq(curclicked).trigger('click');
+			
+			theInt = setInterval(function(){
+				$crosslink.removeClass("active-thumb");
+				$navthumb.eq(curclicked).parent().addClass("active-thumb");
+				$(".stripNav ul li a").eq(curclicked).trigger('click');
+				curclicked++;
+				if( 6 == curclicked )
+					curclicked = 0;
+				
+			}, 3000);
+		};
+		
+		$(function(){
+			
+			$("#main-photo-slider").codaSlider();
+			
+			$navthumb = $(".nav-thumb");
+			$crosslink = $(".cross-link");
+			
+			$navthumb.click(function() {
+				var $this = $(this);
+				theInterval($this.parent().attr('href').slice(1) - 1);
+				return false;
+			});
+			
+			theInterval();
+		});
+	</script>
 <div id="howto_container" style="padding-left: 20px; float:left;">
 	<div id="left" class="span7" style="float:left;" >
 <?php 
@@ -53,7 +99,8 @@
 
 </div><!-- container-->
 	<div id="comments" style="margin-top: 30px" class="span4" >
-<div id="disqus_thread"></div>
+	<?php $this->renderPartial('_slide',array('howto'=>$model->id));?>
+<div id="disqus_thread" style="clear:both;"></div>
 	</div><!-- comments -->
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
