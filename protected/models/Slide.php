@@ -85,10 +85,9 @@ class Slide extends Model
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('id',$this->id);
 		$criteria->compare('title',$this->title,true);
 		$criteria->compare('text',$this->text,true);
-		$criteria->compare('howto_id',$this->howto_id);
+		$criteria->compare('howto_id',$_GET['id']);
 		$criteria->compare('picture',$this->picture,true);
 
 		return new CActiveDataProvider($this, array(

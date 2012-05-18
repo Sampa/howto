@@ -13,15 +13,16 @@ $this->breadcrumbs=array(
 );*/
 ?>
 
-<h1>View Slide #<?php echo $model->id; ?></h1>
+<h1>View <?php echo $model->title; ?></h1>
 
-<?php $this->widget('zii.widgets.CDetailView', array(
+<?php $this->widget('bootstrap.widgets.BootDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
-		'id',
-		'title',
 		'text',
-		'howto_id',
-		'picture',
+		array(
+		'name'=>'picture',
+		'type'=>'html', 
+		'value'=>(!empty($model->picture))?CHtml::image("/images/howto/92/slide/".$model->picture,"panel  picture",array("style"=>"width:auto;height:auto;")):"no image"
+	),
 	),
 )); ?>

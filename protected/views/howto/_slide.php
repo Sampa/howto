@@ -3,7 +3,6 @@
 	<div id="main-photo-slider" class="csw">
 		<div class="panelContainer">
 <?php 	$content ='';
-		$panels = Slide::model()->findAll('howto_id='.$howto);
 		foreach ($panels as $panel):?>
 			<div class="panel" title="<?=$panel->title;?>">
 				<div class="wrapper">
@@ -30,7 +29,7 @@ foreach ($panels as $panel)
 	?>
 	<div id="movers-row">
 		<div>
-		<a href="#2" class="cross-link">
+		<a href="#<?=$loop;?>" class="cross-link">
 <img src="/images/howto/<?=$howto;?>/slide/<?=$panel->picture;?>" class="nav-thumb" alt="temp-thumb" />		   </a>
 		</div>
 	</div>

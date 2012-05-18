@@ -10,9 +10,11 @@
  -->
 
 <div id="slide_form_con" class="client-val-form">
-    <?php if ($model->isNewRecord) : ?>    <h3 id="create_header">Create New Slide</h3>
-    <?php  elseif (!$model->isNewRecord):  ?>    <h3 id="update_header">Update Slide <?php  echo
-        $model->id;  ?>  </h3>
+    <?php if ($model->isNewRecord) : ?>    
+	<h3 id="create_header">Create New Slide</h3>
+    <?php  elseif (!$model->isNewRecord):  ?>    
+	<h3 id="update_header">Update Slide 
+	<?php  echo $model->id;  ?>  </h3>
     <?php   endif;  ?>
     <?php      $val_error_msg = 'Error.Slide was not saved.';
     $val_success_message = ($model->isNewRecord) ?
@@ -40,8 +42,7 @@
 
     <div id="ajax-form"  class='form'>
 <?php   $formId='slide-form';
-   $actionUrl =
-   ($model->isNewRecord)?CController::createUrl('slide/ajax_create')
+   $actionUrl = ($model->isNewRecord)?CController::createUrl('slide/ajax_create')
                                                                  :CController::createUrl('slide/ajax_update');
 
 	$js_afterValidate = null;
@@ -103,15 +104,8 @@
             <?php echo $form->error($model,'text'); ?>
     </div>
 
-        <div class="row-fluid">
-            <?php echo $form->labelEx($model,'howto_id'); ?>
-            <?php echo $form->textField($model,'howto_id'); ?>
-        <span id="success-Slide_howto_id"
-              class="hid input-notification-success  success png_bg right"></span>
-        <div>
-            <small></small>
-        </div>
-            <?php echo $form->error($model,'howto_id'); ?>
+    <div class="row-fluid">
+	<?php echo $form->textField($model,'howto_id',array('value'=>'hejs') ); ?>
     </div>
 
     

@@ -135,7 +135,8 @@ public function   init() {
         $this->renderPartial('view',array('model'=>$model),false, true);
       }
 
-        public function actionreturnForm(){
+        public function actionreturnForm($howto="")
+		{
 
               //Figure out if we are updating a Model or creating a new one.
              if(isset($_POST['update_id']))$model= $this->loadModel($_POST['update_id']);else $model=new Slide;
@@ -162,50 +163,49 @@ public function   init() {
         );
 
 
-        $this->renderPartial('_ajax_form', array('model'=>$model), false, true);
+        $this->renderPartial('_ajax_form', array('model'=>$model,'howto'=>$_GET['howto']), false, true);
       }
 
-        	public function actionIndex(){
+    public function actionIndex()
+	{
 
 		$model=new Slide('search');
 		$model->unsetAttributes();  // clear any default values
 		if(isset($_GET['Slide']))
 			$model->attributes=$_GET['Slide'];
 
-		$this->render('index',array('model'=>$model));
+		$this->render('index',array('model'=>$model,'howto'=>$_GET['howto']));
 		
 	}
 
-
-        public function actionAjax_Update(){
+	
+    public function actionAjax_Update()
+	{
 		if(isset($_POST['Slide']))
 		{
-           $model=$this->loadModel($_POST['update_id']);
+            $model=$this->loadModel($_POST['update_id']);
 			$model->attributes=$_POST['Slide'];
+			$model->picture = $this->saveImage($model);
+
 			if( $model->save(false)){
                          echo json_encode(array('success'=>true));
 		             }else
                      echo json_encode(array('success'=>false));
-                }
+        }
 
-}
+	}
 
-
-  public function actionAjax_Create(){
+	
+	public function actionAjax_Create()
+	{
 
                if(isset($_POST['Slide']))
 		{
                        $model=new Slide;
                       //set the submitted values
                         $model->attributes=$_POST['Slide'];
-						$path = Yii::app()->basePath .'../../images/howto/'.$model->howto_id.'/slide/';
-
-						$picture=CUploadedFile::getInstance($model,'picture');
-							if(!file_exists($path)){
-								mkdir($path,0777,true);
-							}
-							$picture->saveAs($path.$picture->getName());
-							$model->picture = $picture->getName();
+						$model->picture = $this->saveImage($model);
+						
 						if($model->save(false))
 						{		
 						
@@ -216,9 +216,19 @@ public function   init() {
                             echo json_encode(array('success'=>false));
                         }
 		}
-  }
+	}
 
-     public function actionAjax_delete(){
+	private function saveImage($model)
+	{
+	$path = Yii::app()->basePath .'../../images/howto/'.$model->howto_id.'/slide/';
+	$picture=CUploadedFile::getInstance($model,'picture');
+		if(!file_exists($path)){
+			mkdir($path,0777,true);
+		}
+	$picture->saveAs( $path.$picture->getName() );
+	return $picture->getName();	
+	}
+    public function actionAjax_delete(){
                  $id=$_POST['id'];
                  $deleted=$this->loadModel($id);
                 if ($deleted->delete() ){

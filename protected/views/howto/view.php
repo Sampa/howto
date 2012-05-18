@@ -6,7 +6,7 @@
 	<script type="text/javascript" src="/js/jquery-easing-1.3.pack.js"></script>
 	<script type="text/javascript" src="/js/jquery-easing-compatibility.1.2.pack.js"></script>
 	<script type="text/javascript" src="/js/coda-slider.1.1.1.pack.js"></script>
-		<script type="text/javascript">
+	<script type="text/javascript">
 	
 		var theInt = null;
 		var $crosslink, $navthumb;
@@ -80,7 +80,7 @@
 		);
 ?> 	 	</div><!--left-->
 	
-	
+	<!-- steps-->
 	<div id="steps" class="span7" style="clear:both; float:left;">
 		<?php if ( $model->stepCount >= 1 ): ?>
 			<h3>
@@ -96,10 +96,31 @@
 	
 	</div>
 
-
 </div><!-- container-->
 	<div id="comments" style="margin-top: 30px" class="span4" >
-	<?php $this->renderPartial('_slide',array('howto'=>$model->id));?>
+<?php
+	if ( $owner )
+	{
+		echo CHtml::button("Manage Slides",array('class'=>'btn btn-primary','id'=>'manage_slide'));
+		$this->registerAssets();	
+		$slide = new Slide('search');
+		echo $this->renderPartial('//slide/index' , array( 'model'=>$slide,'howto'=>$model->id ) );
+	}
+	$panels = Slide::model()->findAll('howto_id='.$model->id);
+	if ( $panels )
+	{
+		$this->renderPartial('_slide',array('howto'=>$model->id,'panels'=>$panels));
+	}
+	
+	
+	?>
+	<script type="text/javascript">
+	$(document).ready(function(){
+	});
+		$("#manage_slide").click(function(){
+			$("#slide_div").toggle();
+		});
+	</script>
 <div id="disqus_thread" style="clear:both;"></div>
 	</div><!-- comments -->
 <script type="text/javascript">

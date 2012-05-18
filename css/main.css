@@ -3,7 +3,7 @@ body
 	margin-top: 0px;
 	padding: 0 0 0 1px;
 	color: #555;
-	font: normal 15pt Arial,Helvetica,sans-serif;
+	font: normal 15pt verdana,Helvetica,sans-serif;
 	background: #EFEFEF;
 	min-width:100%;
 }
@@ -16,7 +16,12 @@ body
 .elrte{display:none;}
 #profile_detail_view{width: 300px; float:left}
 #stepContentArea{position:fixed;left:42%;z-index:10;}
+.help-inline{
+background-color:#efefef;
+color:red;
+font: bold 11pt :verdana,Helvetica,sans-serif;
 
+}
 /**Yii default css**/
 
 #page
@@ -243,9 +248,9 @@ div.view
 .stripViewer .panelContainer .panel			{ float: left; height: 100%; position: relative; width: 419px; }
 .stripNavL, .stripNavR, .stripNav			{ display: none; }
 .nav-thumb 									{ border: 1px solid black; margin-right: 5px; }
-#movers-row									{ margin: -43px 0 0 62px; }
+#movers-row									{ margin: -73px 0 0 62px; }
 #movers-row div								{ width: 20%; float: left; }
-#movers-row div a.cross-link 				{ float: right; }
+#movers-row div a.cross-link 					{ float: right; }
 .photo-meta-data							{ background: url(/images/transpBlack.png); padding: 10px; height: 30px; 
 											  margin-top: -50px; position: relative; z-index: 9999; color: white; }
 .photo-meta-data span 						{ font-size: 13px; }

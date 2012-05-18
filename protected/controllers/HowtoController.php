@@ -29,7 +29,8 @@ class HowtoController extends Controller
 			
 		);
 	}
-	  public function behaviors()
+	
+	public function behaviors()
     {
         return array(
             'eexcelview'=>array(
@@ -69,6 +70,10 @@ class HowtoController extends Controller
 	public function actionView()
 	{
 		$howto = $this->loadModel();
+		$owner = false;
+		if ( $howto->author->id == Yii::app()->user->id )
+		$owner = true;
+		
 		if ( isset( $_GET['embed'] ) && $_GET['embed'] == "true" )
 		{
 		$this->renderPartial( 'embed',array(
@@ -78,6 +83,7 @@ class HowtoController extends Controller
 		}else{
 		$this->render( 'view',array(
 			'model'=>$howto,
+			'owner'=>$owner,
 		));
 		}
 	}
@@ -520,4 +526,32 @@ class HowtoController extends Controller
 		}
 		return $comment;
 	}
+	 public function registerAssets(){
+
+            Yii::app()->clientScript->registerCoreScript('jquery');
+
+         //IMPORTANT about Fancybox.You can use the newest 2.0 version or the old one
+        //If you use the new one,as below,you can use it for free only for your personal non-commercial site.For more info see
+		//If you decide to switch back to fancybox 1 you must do a search and replace in index view file for "beforeClose" and replace with 
+		//"onClosed"
+        // http://fancyapps.com/fancybox/#license
+          // FancyBox2
+        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js_plugins/fancybox2/jquery.fancybox.js', CClientScript::POS_HEAD);
+        Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/js_plugins/fancybox2/jquery.fancybox.css', 'screen');
+         // FancyBox
+         //Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js_plugins/fancybox/jquery.fancybox-1.3.4.js', CClientScript::POS_HEAD);
+         // Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl.'/js_plugins/fancybox/jquery.fancybox-1.3.4.css','screen');
+        //JQueryUI (for delete confirmation  dialog)
+         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js_plugins/jqui1812/js/jquery-ui-1.8.12.custom.min.js', CClientScript::POS_HEAD);
+         Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl.'/js_plugins/jqui1812/css/dark-hive/jquery-ui-1.8.12.custom.css','screen');
+          ///JSON2JS
+         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js_plugins/json2/json2.js');
+       
+
+           //jqueryform js
+               Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js_plugins/ajaxform/jquery.form.js', CClientScript::POS_HEAD);
+              Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js_plugins/ajaxform/form_ajax_binding.js', CClientScript::POS_HEAD);
+              Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl.'/js_plugins/ajaxform/client_val_form.css','screen');
+
+ }
 }

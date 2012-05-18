@@ -145,7 +145,10 @@
 
 
 
+<style type="text/css">
+.style{min-height:200px;}
 
+</style>
 	<script type="text/javascript">
 	$("#embedLink<?=$data->id;?>").click(function(){
 		id = <?=$data->id;?>;
@@ -167,8 +170,10 @@
 		</script>
 		
 	<?php if ( $this->user == $data->author->username):?>
+	<div id="holder"></div>
 	<script type="text/javascript">
 	 $(document).ready(function() {
+
      $('.edit_area').editable('/howto/inlineEdit?id=<?=$data->id;?>', { 
          type      : 'textarea',
 		 data	   : $(this).html(),
@@ -181,9 +186,11 @@
          console.log(value);
      },
      });
-	 $('edit_area').click(function(){
-		
-	});
+	
+	 $('.edit_area').click(function(){
+	 $('.edit_area textarea').addClass('style');
+
+});
 	 $('.edit_step').editable('/step/inlineEdit?id=<?=$data->id;?>&url=<?=$data->url;?>', { 
          type      : 'textarea',
 		 data	   : $(this).html(),

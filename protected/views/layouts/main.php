@@ -28,19 +28,21 @@
 	
 	<div id="header" style="border:0px solid yellow; height:40px;">
 		<div id="logo" class="span2" style="border:0px solid black;">
-		<img src="/images/logo.png" alt="Howto"/>
+			<a href="<?=Yii::app()->homeUrl;?>">
+				<img src="/images/logo.png" alt="Howto"/>
+			</a>
 		</div>
+	<?php if ( $this->isGuest ):?>	
 		<!-- facebook login-->
-	<div style="border: 0px solid black; position:absolute; left:120px; top:0px;">
+	<div style="position:absolute; left:120px; top:0px;">
 		<a  id="fb-login"><img src="http://worldthissecond.com/wp-content/themes/tribune/images/icons/facebook.png" 
 		alt="facebook"/></a><br/>
 		<a href="#" id="browserid" title="Sign-in with BrowserID">  
-      <img src="/images/sign_in_blue.png" alt="Sign in">  
-    </a>  
+			<img src="/images/sign_in_blue.png" alt="Sign in">  
+		</a>  
 	</div>
-		<div class="" style="border: 0px solid red; height:27px; float:left; width:28%; padding: 0px;">
+		<div class="" style="height:27px; float:left; width:28%; padding: 0px;">
 
-		<?php if ( $this->isGuest ):?>	
 			<button class="btn btn-primary" id="loginButton"><!-- loginbutton-->
 				Login
 			</button> <!--login button-->
@@ -72,8 +74,7 @@
 						'url'=>User::getUserUrl( $this->user )),
 				array('items'=>
 					array(
-						array('label'=>'Profile', 'url'=>array( User::getUserUrl( $this->user ) ) ),
-						array('label'=>'Update','url'=>array( '//user/update/id/' . Yii::app()->user->id ) ), 
+
 						array('label'=>'Rights', 'url'=>array( '/rights' ),
 								'visible'=>Yii::app()->user->checkAccess(Rights::module()->superuserName ) ),
 						array('label'=>'Logout', 'url'=>array('/site/logout'),'id'=>'loggaut'), 
@@ -119,8 +120,8 @@
 		
 	</div>
 	
-	<div class="btn-toolbar span7" style="border:0px solid green; margin:-0px 0 0 -5px; height:auto;">
-	<!--howtos--><?php 
+	<div class="btn-toolbar span7" style="position:absolute; top:2px;right:10px;border:0px solid green; margin:-0px 0 0 -5px; height:auto;">
+<!--howtos--><?php 
 		$this->widget('bootstrap.widgets.BootButtonGroup', 
 		array(
 			'type'=>'primary', 
@@ -132,7 +133,7 @@
 						array(
 							'label'=>'Create New Howto',
 							'url'=>array( '//howto/create' ), 
-							'visible'=>Yii::app()->user->checkAccess( 'Howto.Create' )
+							'visible'=>!Yii::app()->user->isGuest,
 							),
 						array('label'=>'New!','url'=>array( '/howto/show/new' ),),
 						array('label'=>'Popular!','url'=>array( '/howto/show/popular' ), ),
@@ -168,7 +169,8 @@
             array('label'=>'Categories', 'url'=>'/categories' ,'icon'=>'icon-edit icon-white'),
             array('items'=>$categories) ),
 			)); 
-		?>		
+		?>	
+<!-- search-->		
 		<?php $this->widget('CAutoComplete', array(
 			'model'=>new Howto,
 			'id'=>'searchfield',
@@ -178,7 +180,7 @@
 			'htmlOptions'=>array('size'=>20, 'value'=>'Find Howto\'s by tag','style'=>'margin-top:-11px'),
 		)); ?>
 		<button class="btn btn-primary" style="margin-top: -20px;" id="searchbutton">
-<!-- search--><i class="icon-search icon-white"></i> Find
+			<i class="icon-search icon-white"></i> Find
 		</button>
 		<script type="text/javascript">
 			$("#searchfield").focus(function(){
@@ -200,20 +202,19 @@
 	</div><!--header-->
 	
 
-	<div id="mainMenu" style="clear:both">
+<!-- main menu --><div id="mainMenu" style="clear:both">
 	
 <?php 
 	$this->widget('application.extensions.mbmenu.MbMenu',
 	array( 
 		'items'=>array( //Top level
-				array('label'=>'Home', 'url'=>'/site/index'),
 				array('label'=>'About', 'url'=>array('//about')),
-				array('label'=>'Contact', 'url'=>array('//contact')),
+				array('label'=>'Contact', 'url'=>array('/contact')),
 				//array('label'=>'Twitter', 'url'=>array('/twitter/index')),
 					),
 		)); 
 ?>
-	</div><!-- mainmenu -->
+	</div><!-- //mainmenu -->
 	
 	<!-- flashes -->
 <?php 

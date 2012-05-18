@@ -29,37 +29,37 @@ $('.search-form form').submit(function(){
 });
 ");
 ?>
-<h1>Slides </h1>
-
-  <p class="left">You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
-or <b>=</b>) at the beginning of each of your search values to specify how the comparison should be done.</p><?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button')); ?><div class="search-form" style="display:none">
-<?php $this->renderPartial('_search',array(
-	'model'=>$model,
-)); ?>
-</div><!-- search-form -->
-
+<div id="slide_div" style="display:none;">
 <div class="right">
     <input id="add_slide" type="button" style="display:block; clear: both;"
            value="Add Slide" class="btn btn-primary">
 </div>
 
 <?php
+
 //Strings for the delete confirmation dialog.
 $del_con = Yii::t('admin_slide', 'Are you sure you want to delete this slide?');
 $del_title=Yii::t('admin_slide', 'Delete Confirmation');
  $del=Yii::t('admin_slide', 'Delete');
  $cancel=Yii::t('admin_slide', 'Cancel');
+ echo $model->picture;
    ?>
 <?php
+
     $this->widget('BootGridView', array(
          'id' => 'slide-grid',
          'dataProvider' => $model->search(),
-         'filter' => $model,
+         'filter' => $model->howto_id ,
          'htmlOptions'=>array('class'=>'grid-view clear'),
           'columns' => array(
 		'title',
 		'text',
-
+		array(
+		'name'=>'picture',
+		'type'=>'html',
+        'value'=>'(!empty($data->picture))?CHtml::image("/images/howto/'.$howto.'/slide/$data->picture","panel picture",array("style"=>"width:25px;height:25px;")):"no image"'
+		),
+			
     array(
                    'class' => 'CButtonColumn',
                     'buttons' => array(
@@ -91,6 +91,7 @@ $del_title=Yii::t('admin_slide', 'Delete Confirmation');
 
 
    ?>
+</div>
 <script type="text/javascript">
 //document ready
 $(function() {
@@ -236,8 +237,8 @@ $(function() {
     $('#add_slide ').bind('click', function() {
         $.ajax({
             type: "POST",
-            url: "<?php echo Yii::app()->request->baseUrl;?>/slide/returnForm",
-            data:{"YII_CSRF_TOKEN":"<?php echo Yii::app()->request->csrfToken;?>"},
+            url: "<?=Yii::app()->request->baseUrl;?>/slide/returnForm?howto=",
+            data:{"YII_CSRF_TOKEN":"<?=Yii::app()->request->csrfToken;?>"},
                 beforeSend : function() {
                     $("#slide-grid").addClass("ajax-sending");
                 },
