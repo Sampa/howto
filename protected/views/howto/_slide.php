@@ -1,4 +1,3 @@
-
 <div class="slider-wrap">
 	<div id="main-photo-slider" class="csw">
 		<div class="panelContainer">

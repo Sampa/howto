@@ -237,7 +237,7 @@ $(function() {
     $('#add_slide ').bind('click', function() {
         $.ajax({
             type: "POST",
-            url: "<?=Yii::app()->request->baseUrl;?>/slide/returnForm?howto=",
+            url: "<?=Yii::app()->request->baseUrl;?>/slide/returnForm?howto=<?=$howto;?>",
             data:{"YII_CSRF_TOKEN":"<?=Yii::app()->request->csrfToken;?>"},
                 beforeSend : function() {
                     $("#slide-grid").addClass("ajax-sending");

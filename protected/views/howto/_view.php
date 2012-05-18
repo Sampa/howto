@@ -105,12 +105,6 @@
 		<b>Tags:</b>
 		<?= implode(', ', $data->tagLinks); ?>
 		<br/>
-<!--Read--><?=CHtml::link('<i class="icon-eye-open icon-white"></i> Read', $data->url,array('class'=>'btn btn-success' ) ); ?> 
-
-			
-<!--excel--><?= CHtml::link('<i class="icon-book icon-white"></i> Excel', 
-					array('/howto/excel/id/' . $data->id ), array('class'=>'btn btn-primary') );?>	
-
 <!--print--><?= CHtml::link('<i class="icon-print icon-white"></i> Print/Pdf', 
 					array('/viewpdf/id/' . $data->id ), array('class'=>'btn btn-primary') );?>		
 		

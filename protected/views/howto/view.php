@@ -49,7 +49,7 @@
 			theInterval();
 		});
 	</script>
-<div id="howto_container" style="padding-left: 20px; float:left;">
+<div id="howto_container" style="padding-left: 0px; float:left;">
 	<div id="left" class="span7" style="float:left;" >
 <?php 
 	$this->renderPartial('_view',
@@ -81,7 +81,7 @@
 ?> 	 	</div><!--left-->
 	
 	<!-- steps-->
-	<div id="steps" class="span7" style="clear:both; float:left;">
+	<div id="steps" class="span8" style="clear:both; float:left;">
 		<?php if ( $model->stepCount >= 1 ): ?>
 			<h3>
 				<?= $model->stepCount>1 ? $model->stepCount . ' steps' : 'One step'; ?>
@@ -97,19 +97,20 @@
 	</div>
 
 </div><!-- container-->
-	<div id="comments" style="margin-top: 30px" class="span4" >
+	<div id="comments" style="margin-top: 30px" class="span3" >
 <?php
-	if ( $owner )
-	{
-		echo CHtml::button("Manage Slides",array('class'=>'btn btn-primary','id'=>'manage_slide'));
-		$this->registerAssets();	
-		$slide = new Slide('search');
-		echo $this->renderPartial('//slide/index' , array( 'model'=>$slide,'howto'=>$model->id ) );
-	}
+	
 	$panels = Slide::model()->findAll('howto_id='.$model->id);
 	if ( $panels )
 	{
 		$this->renderPartial('_slide',array('howto'=>$model->id,'panels'=>$panels));
+	}
+	if ( $owner )
+	{
+		echo "<br/>".CHtml::button("Manage Slides",array('class'=>'btn btn-primary manage_slide'));
+		$this->registerAssets();	
+		$slide = new Slide('search');
+		echo $this->renderPartial('//slide/index' , array( 'model'=>$slide,'howto'=>$model->id ) );
 	}
 	
 	
@@ -117,7 +118,7 @@
 	<script type="text/javascript">
 	$(document).ready(function(){
 	});
-		$("#manage_slide").click(function(){
+		$(".manage_slide").click(function(){
 			$("#slide_div").toggle();
 		});
 	</script>

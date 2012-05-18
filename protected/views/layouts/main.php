@@ -32,6 +32,7 @@
 				<img src="/images/logo.png" alt="Howto"/>
 			</a>
 		</div>
+		
 	<?php if ( $this->isGuest ):?>	
 		<!-- facebook login-->
 	<div style="position:absolute; left:120px; top:0px;">
@@ -197,23 +198,23 @@
 				}
 			})
 		</script>
-				</div>
-
+		</div>
+<div style="position:absolute; top:48px;left:25%;">
+<?php $this->widget('bootstrap.widgets.BootTabbable', array(
+    'type'=>'tabs',
+    'placement'=>'below', // 'above', 'right', 'below' or 'left'
+    'tabs'=>array(
+        array('label'=>'Section 1', 'content'=>'<p>I\'m in Section 1.</p>', 'active'=>true),
+        array('label'=>'Section 2', 'content'=>'<p>Howdy, I\'m in Section 2.</p>'),
+        array('label'=>'Section 3', 'content'=>'<p>What up girl, this is Section 3.</p>'),
+    ),
+)); ?>
+</div>
 	</div><!--header-->
 	
 
-<!-- main menu --><div id="mainMenu" style="clear:both">
-	
-<?php 
-	$this->widget('application.extensions.mbmenu.MbMenu',
-	array( 
-		'items'=>array( //Top level
-				array('label'=>'About', 'url'=>array('//about')),
-				array('label'=>'Contact', 'url'=>array('/contact')),
-				//array('label'=>'Twitter', 'url'=>array('/twitter/index')),
-					),
-		)); 
-?>
+<!-- main menu --><div id="mainmenu_container" style="clear:both">
+
 	</div><!-- //mainmenu -->
 	
 	<!-- flashes -->
@@ -230,23 +231,58 @@
 	$this->widget('bootstrap.widgets.BootBreadcrumbs', 
 		array(	'links'=>$this->breadcrumbs,
 	)); 
-	//$Badge = new Badge;
+?>
+	<!-- search -->
+<?php $this->widget('application.extensions.search.GoogleSearch'); ?>
+
+<?php
+//$Badge = new Badge;
 //$Badge->onSuccess = array( $object, 'notifyUser'); // add custom event after giving badge to user
 //$Badge->checkAndGiveGroup( 'Login' );
 ?>
-
 	<?= $content; ?>
 <a href="https://www.facebook.com/logout.php?access_token=<?=Yii::app()->facebook->getAccessToken();?>&amp;confirm=1&amp;next=http://83.233.118.50/site/logout">hej</a>
-		<div id="footer" style="clear:both">
+
+	<div id="footer" style="clear:both;min-height:130px;"><!-- footer-->
+		<div style="float:left; margin-top:px;"><!-- contact -->
+				<ul class="nav nav-pills">
+					<li class="dropdown" id="contact">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#contact">
+							Contact us
+							<b class="caret"></b>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="/contact">Ask Question</a></li>
+							<li><a href="http://www.facebook.com/worldofhowto">On Facebook</a></li>
+						</ul>
+					</li>
+				</ul>
+		</div>
+		<div style="float:left; margin-top:px;"><!-- info -->
+			<ul class="nav nav-pills">
+				<li class="dropdown" id="information">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#information">
+						Information
+						<b class="caret"></b>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="/faq">Faq</a></li>
+						<li><a href="/about">About Howto</a></li>
+						<li><a href="/feedback">Feedback</a></li>
+						<li><a href="/rules">Rules</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<br/>
 	<?php $this->widget('ext.yii-facebook-opengraph.plugins.LikeButton', array(
-	   //'href' => 'YOUR_URL', // if omitted Facebook will use the OG meta tag
+	   'href' => 'http://83.233.118.50/', // if omitted Facebook will use the OG meta tag
 	   'show_faces'=>true,
 	   'send' => true
 	)); ?>
-		<br/>
-		Copyright &copy; <?= date('Y'); ?><br />
+
 		<div id="conf"></div>
-		</div><!-- footer -->
+	</div><!-- footer -->
 
 	</div><!-- page -->
 

@@ -208,8 +208,6 @@ public function   init() {
 						
 						if($model->save(false))
 						{		
-						
-								
 							echo json_encode(array('success'=>true,'id'=>$model->primaryKey) );
                         } else
                         {

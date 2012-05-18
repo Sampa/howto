@@ -103,9 +103,10 @@
         </div>
             <?php echo $form->error($model,'text'); ?>
     </div>
-
+	
     <div class="row-fluid">
-	<?php echo $form->textField($model,'howto_id',array('value'=>'hejs') ); ?>
+	<?php 
+	echo $form->hiddenField($model,'howto_id',array('value'=>$howto) ); ?>
     </div>
 
     
