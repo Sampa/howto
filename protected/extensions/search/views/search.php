@@ -1,27 +1,15 @@
 
     <form id="searchForm" method="post">
-		<fieldset>
-        
-           	<input id="s" type="text" />
-            
-            <input type="submit" value="Submit" id="submitButton" />
-            
-            <div id="searchInContainer">
-                <input type="radio" name="check" value="site" id="searchSite" checked />
-                <label for="searchSite" id="siteNameLabel">Search</label>
-                
-                <input type="radio" name="check" value="web" id="searchWeb" />
-                <label for="searchWeb">Search The Web</label>
-			</div>
-                        
-            <ul class="icons">
-                <li class="web" title="Web Search" data-searchType="web">Web</li>
-                <li class="images" title="Image Search" data-searchType="images">Images</li>
-                <li class="news" title="News Search" data-searchType="news">News</li>
-                <li class="videos" title="Video Search" data-searchType="video">Videos</li>
-            </ul>
-            
-        </fieldset>
+           	<input id="search" type="text" style="float:left;" class="ac_input" style="" 
+			value="Search how2.com"  />
+            <button class="btn btn-primary" id="searchbutton" style="position:absolute; right:9px;">
+				<i class="icon-search icon-white"></i> Search
+			</button>            
     </form>
 
     <div id="resultsDiv"></div>
+	<script type="text/javascript">
+	$("#search").click(function(){
+		$("#search").val('');
+	});
+	</script>

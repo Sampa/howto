@@ -50,7 +50,7 @@
 		});
 	</script>
 <div id="howto_container" style="padding-left: 0px; float:left;">
-	<div id="left" class="span7" style="float:left;" >
+	<div id="left" class="span6" style="float:left;" >
 <?php 
 	$this->renderPartial('_view',
 	array(
@@ -81,7 +81,7 @@
 ?> 	 	</div><!--left-->
 	
 	<!-- steps-->
-	<div id="steps" class="span8" style="clear:both; float:left;">
+	<div id="steps" class="span7" style="clear:both; float:left;">
 		<?php if ( $model->stepCount >= 1 ): ?>
 			<h3>
 				<?= $model->stepCount>1 ? $model->stepCount . ' steps' : 'One step'; ?>
@@ -97,7 +97,7 @@
 	</div>
 
 </div><!-- container-->
-	<div id="comments" style="margin-top: 30px" class="span3" >
+	<div id="comments" style="margin: 30px 0px 0 20px;" class="span4" >
 <?php
 	
 	$panels = Slide::model()->findAll('howto_id='.$model->id);
@@ -122,7 +122,7 @@
 			$("#slide_div").toggle();
 		});
 	</script>
-<div id="disqus_thread" style="clear:both;"></div>
+<div id="disqus_thread" style="clear:both; margin-top:50px"></div>
 	</div><!-- comments -->
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */

@@ -1,5 +1,4 @@
 <?php
-Yii::setPathOfAlias( 'pogostick', 'C:\Programmering\xampp\htdocs\blog\protected\extensions\pogostick' );
 // uncomment the following to define a path alias
 // Yii::setPathOfAlias('local','path/to/local-folder');
 
@@ -25,14 +24,7 @@ return array(
 		'application.extensions.debugtoolbar.*',
 		'ext.xupload.models.XUploadForm',
         'application.components.*',
-        'ext.pogostick.base.*',
-        'ext.pogostick.behaviors.*',
-        'ext.pogostick.components.*',
-        'ext.pogostick.events.*',
-        'ext.pogostick.helpers.*',
-        'pogostick.widgets.*',
-		'ext.eoauth.*',
-        'ext.eoauth.lib.*',
+		'application.modules.yiiauth.components.*',
 		'application.extensions.jtogglecolumn.*', 
 		'application.modules.badger.models.*',
 
@@ -55,6 +47,8 @@ return array(
 		   // drop all badger tables before installing (fresh install)
 		  'dropBeforeInstall' => false, 
             ),
+		'yiiauth',
+
 		'message' => array(
             'userModel' => 'User',
             'getNameMethod' => 'getFullName',
@@ -106,33 +100,8 @@ return array(
             // http://twitter.github.com/bootstrap/javascript.html
         ),
     ),
-		'facebook'=>array(
-		'class' => 'ext.yii-facebook-opengraph.SFacebook',
-		'appId'=>'324349220969408', // needed for JS SDK, Social Plugins and PHP SDK
-		'secret'=>'5178fb0ce11cdf64f2e18184f1146ad6', // needed for the PHP SDK 
-		//'locale'=>'en_US', // override locale setting (defaults to en_US)
-		//'jsSdk'=>true, // don't include JS SDK
-		//'async'=>true, // load JS SDK asynchronously
-		//'jsCallback'=>false, // declare if you are going to be inserting any JS callbacks to the async JS SDK loader
-		//'status'=>true, // JS SDK - check login status
-		//'cookie'=>true, // JS SDK - enable cookies to allow the server to access the session
-		//'oauth'=>true,  // JS SDK -enable OAuth 2.0
-		//'xfbml'=>true,  // JS SDK - parse XFBML / html5 Social Plugins
-		//'html5'=>true,  // use html5 Social Plugins instead of XFBML
-		//'ogTags'=>array(  // set default OG tags
-			//'title'=>'MY_WEBSITE_NAME',
-			//'description'=>'MY_WEBSITE_DESCRIPTION',
-			//'image'=>'URL_TO_WEBSITE_LOGO',
-		//),
-		),
-		'twitter' => array(
-		'class' => 'ext.pogostick.components.twitter.CPSTwitterApi',
-		'apiKey' => 'rPmGEE1Wvsf56BSyQaWXw',
-		'apiSecretKey' => 'V4SK09O0cPOgkabsxR5AruBSNrc0b1tzoBeWkL7ew0',
-		'apiBaseUrl' => 'http://twitter.com',
-		'callbackUrl' => 'http://83.233.118.50/site/login',
-		'format' => 'array',
-		),
+		
+	
 		'db'=>array(
 			'connectionString' => 'mysql:host=localhost;dbname=blog',
 			'emulatePrepare' => true,
@@ -173,7 +142,7 @@ return array(
 				'sharing'=>'site/page/view/sharing',
 				'reading'=>'site/page/view/reading',
 				'creating'=>'site/page/view/creating',
-
+		
 
 
 				//'<controller:\w+>/<id:\d+>'=>'<controller>/view', 

@@ -9,7 +9,9 @@ class UserController extends Controller
 	/**
 	 * @return array action filters
 	 */
-	 public $openid;
+	public $openid;
+	public $hybridauth_provider_name;
+	public $hybridauth_provider_uid;
 	public function filters()
 	{
 		return array(
@@ -18,29 +20,45 @@ class UserController extends Controller
 	}
 	public function allowedActions()
 	{
-	 	return 'register,adduser,view,reputation,persona,update';
+	 	return 'register,adduser,view,reputation,persona,update,sociallogin';
 	}
 	
-	public function do_post_request($url, $data, $optional_headers = null)
+
+	public function actionSocialLogin($provider)
 	{
-	$params = array('http' => array(
-	'method' => 'POST',
-	'content' => $data
-	));
-	if ($optional_headers!== null) {
-	$params['http']['header'] = $optional_headers;
+    // change the following paths if necessary
+	$config = $this->hybridAuthConfig();
+ 
+    // initialize Hybrid_Auth with a given file
+    $hybridauth = new Hybrid_Auth( $config );
+     
+    // try to authenticate with the selected provider
+    $adapter = $hybridauth->authenticate( $provider );
+     
+    // then grab the user profile
+    $user_profile = $adapter->getUserProfile();
+     
+    # and that's it!
+     
+    # beyond that, its up to you sign-in the user if he already exist on your database
+    # or sign-up the user if not.
+     
+    # the following pseudocode is provided only as an example:
+     echo $user_profile->identifier;
+    $user_id = User::model()->find("hybridAuth_provider_name = '".$provider."'");
+     
+    if( $user_id ){ // if user exist on database
+    // create a session for the user whithin your application
+    // and redirect him back to the profile or dashboard page
+    // ...
+    }
+    else{ // if not, create a new one
+   // create_new_user( $provider, $user_profile->identifier, $user_profile->email, ... );
+    }
+    
+   
+	
 	}
-	$ctx = stream_context_create($params);
-	$fp = @fopen($url, 'rb', false, $ctx);
-	if (!$fp) {
-	throw new Exception("Problem with $url, $php_errormsg");
-	}
-	$response = @stream_get_contents($fp);
-	if ($response === false) {
-	throw new Exception("Problem reading data from $url, $php_errormsg");
-	}
-	return $response;
-	} 
 	
 	public function actionpersona(){
 		$url = 'https://browserid.org/verify';  
@@ -65,6 +83,26 @@ class UserController extends Controller
 			echo $url;
 		}
 	}
+	public function do_post_request($url, $data, $optional_headers = null)
+	{
+	$params = array('http' => array(
+	'method' => 'POST',
+	'content' => $data
+	));
+	if ($optional_headers!== null) {
+	$params['http']['header'] = $optional_headers;
+	}
+	$ctx = stream_context_create($params);
+	$fp = @fopen($url, 'rb', false, $ctx);
+	if (!$fp) {
+	throw new Exception("Problem with $url, $php_errormsg");
+	}
+	$response = @stream_get_contents($fp);
+	if ($response === false) {
+	throw new Exception("Problem reading data from $url, $php_errormsg");
+	}
+	return $response;
+	} 
 	
 	public function actionReputation($id){
 		$user = $this->loadModel($id);

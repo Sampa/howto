@@ -5,11 +5,8 @@ $this->breadcrumbs=array(
 	'Login',
 );
 ?>
-
-<p>Please fill out the following form with your login credentials:</p>
-
 <div class="well">
-<?php $form=$this->beginWidget('CActiveForm', array(
+<?php $form=$this->beginWidget('BootActiveForm', array(
 	'id'=>'login-form',
 	'enableAjaxValidation'=>true,
 )); ?>
@@ -43,4 +40,5 @@ $this->breadcrumbs=array(
 	</div>
 
 <?php $this->endWidget(); ?>
+
 </div><!-- form -->

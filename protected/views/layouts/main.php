@@ -13,7 +13,7 @@
 ?>
 	<?php  Yii::app()->clientScript->registerScriptFile('/js/jquery.multiplyforms.js');?>
 	<?php  Yii::app()->clientScript->registerScriptFile('/js/common.js');?>
-		<?php  Yii::app()->clientScript->registerScriptFile('/js/jeditable.js');?>
+	<?php  Yii::app()->clientScript->registerScriptFile('/js/jeditable.js');?>
     <script src="https://browserid.org/include.js" type="text/javascript"></script>  
 
 
@@ -34,14 +34,7 @@
 		</div>
 		
 	<?php if ( $this->isGuest ):?>	
-		<!-- facebook login-->
-	<div style="position:absolute; left:120px; top:0px;">
-		<a  id="fb-login"><img src="http://worldthissecond.com/wp-content/themes/tribune/images/icons/facebook.png" 
-		alt="facebook"/></a><br/>
-		<a href="#" id="browserid" title="Sign-in with BrowserID">  
-			<img src="/images/sign_in_blue.png" alt="Sign in">  
-		</a>  
-	</div>
+	
 		<div class="" style="height:27px; float:left; width:28%; padding: 0px;">
 
 			<button class="btn btn-primary" id="loginButton"><!-- loginbutton-->
@@ -80,8 +73,7 @@
 								'visible'=>Yii::app()->user->checkAccess(Rights::module()->superuserName ) ),
 						array('label'=>'Logout', 'url'=>array('/site/logout'),'id'=>'loggaut'), 
 						
-						array('label'=>'Logout from facebook','url'=>'https://www.facebook.com/logout.php?access_token=<?=Yii::app()->facebook->getAccessToken();?>&amp;confirm=1&amp;next=http://83.233.118.50/site/logoutt','visible'=>Yii::app()->facebook->getUser(),
-						),
+						
 					),
 				)
 			))); 
@@ -112,17 +104,14 @@
 		)); 
 	?>
 
+
 			</div>
 		</div>
 		<?php endif;?>	
-		
-		
-		<?=$this->clips['header'];?>
-		
-	</div>
-	
-	<div class="btn-toolbar span7" style="position:absolute; top:2px;right:10px;border:0px solid green; margin:-0px 0 0 -5px; height:auto;">
-<!--howtos--><?php 
+		</div>
+
+	<div style=" position:absolute;top:2px;left:350px;">
+			<!--howtos--><?php 
 		$this->widget('bootstrap.widgets.BootButtonGroup', 
 		array(
 			'type'=>'primary', 
@@ -151,63 +140,35 @@
 			)
 		); 
 	?>
-<!--category select-->
-	<?php 
-		$categories = array();
-		$list = Category::model()->findAll();
-		foreach ( $list as $category )
+	</div>
+	
+	<div class="btn-toolbar span8" style="position:absolute; top:2px;right:10px;border:0px solid green; margin:-0px 0 0 -5px; height:auto;">
+	<!-- search -->
+	<?php $this->widget('application.extensions.search.GoogleSearch'); ?>
+	</div>
+<div style="position:absolute; top:34px;left:150px;">
+<style type="text/css">
+.tab_content{max-width:900px;min-height:36px;;padding: 4px 9px 0px 9px;}
+.tab_content a{padding:0px 3px 0px; }
+</style>
+<?php 
+		$tabs = array();
+		$parents = Category::model()->findAll("parent='no parent'");
+		foreach($parents as $cat)
 		{
-			if ( $category->parent == "no parent" )
-				$label = "--".$category->name."--";
-				else
-				$label = $category->name;
-			$categories[] = array('label'=>$label, 'url'=>'/howto/category/'.$category->name);
-		
+		$tab_content = '<div class="tab_content">';
+		$children = Category::model()->findAll("parent='".$cat->name."'");
+			foreach($children as $child)
+			{
+				$tab_content .= '<a href="/howto/category/'.$child->name.'">'.$child->name.'</a>';
+			}
+		$tab_content .= '</div>';
+		$tabs[] = array('label'=>$cat->name,'content'=>$tab_content);		
 		}
-		$this->widget('bootstrap.widgets.BootButtonGroup',
-		array( 'type'=>'primary', 
-        'buttons'=>array(
-            array('label'=>'Categories', 'url'=>'/categories' ,'icon'=>'icon-edit icon-white'),
-            array('items'=>$categories) ),
-			)); 
-		?>	
-<!-- search-->		
-		<?php $this->widget('CAutoComplete', array(
-			'model'=>new Howto,
-			'id'=>'searchfield',
-			'attribute'=>'tags',
-			'url'=>array('/howto/suggestTags'),
-			'multiple'=>true,
-			'htmlOptions'=>array('size'=>20, 'value'=>'Find Howto\'s by tag','style'=>'margin-top:-11px'),
-		)); ?>
-		<button class="btn btn-primary" style="margin-top: -20px;" id="searchbutton">
-			<i class="icon-search icon-white"></i> Find
-		</button>
-		<script type="text/javascript">
-			$("#searchfield").focus(function(){
-				$(this).val('');
-			});
-			$("#searchbutton").click(function(){
-				var val = $("#searchfield").val();
-				if(val === 'Find Howto\'s by tag' || val===''){
-				alert('Perhaps you should search something real instead ;\)');
-				}else{
-				val = val.replace(",",'');
-				var url = "/tag/"+val; 
-				$(location).attr('href',"/tag/"+val);
-				}
-			})
-		</script>
-		</div>
-<div style="position:absolute; top:48px;left:25%;">
-<?php $this->widget('bootstrap.widgets.BootTabbable', array(
+$this->widget('bootstrap.widgets.BootTabbable', array(
     'type'=>'tabs',
     'placement'=>'below', // 'above', 'right', 'below' or 'left'
-    'tabs'=>array(
-        array('label'=>'Section 1', 'content'=>'<p>I\'m in Section 1.</p>', 'active'=>true),
-        array('label'=>'Section 2', 'content'=>'<p>Howdy, I\'m in Section 2.</p>'),
-        array('label'=>'Section 3', 'content'=>'<p>What up girl, this is Section 3.</p>'),
-    ),
+    'tabs'=>$tabs,
 )); ?>
 </div>
 	</div><!--header-->
@@ -232,8 +193,7 @@
 		array(	'links'=>$this->breadcrumbs,
 	)); 
 ?>
-	<!-- search -->
-<?php $this->widget('application.extensions.search.GoogleSearch'); ?>
+
 
 <?php
 //$Badge = new Badge;
@@ -241,7 +201,7 @@
 //$Badge->checkAndGiveGroup( 'Login' );
 ?>
 	<?= $content; ?>
-<a href="https://www.facebook.com/logout.php?access_token=<?=Yii::app()->facebook->getAccessToken();?>&amp;confirm=1&amp;next=http://83.233.118.50/site/logout">hej</a>
+
 
 	<div id="footer" style="clear:both;min-height:130px;"><!-- footer-->
 		<div style="float:left; margin-top:px;"><!-- contact -->
@@ -274,83 +234,11 @@
 				</li>
 			</ul>
 		</div>
-		<br/>
-	<?php $this->widget('ext.yii-facebook-opengraph.plugins.LikeButton', array(
-	   'href' => 'http://83.233.118.50/', // if omitted Facebook will use the OG meta tag
-	   'show_faces'=>true,
-	   'send' => true
-	)); ?>
 
 		<div id="conf"></div>
 	</div><!-- footer -->
 
 	</div><!-- page -->
 
-	<script type="text/javascript">
-
-jQuery(function($) {  
-  var loggedIn = function(res) {
-
-    if (res.returnURI) {
-      window.location.assign(res.returnURI);
-    } else {
-      window.location.reload(true);
-    }
-  };
-  var loggedOut = function(res) {
-  };
-
-  var gotAssertion = function(assertion) {
-    // got an assertion, now send it up to the server for verification
-    if (assertion) {
-      $.ajax({
-        type: 'POST',
-        url: '/user/persona',
-        data: { assertion: assertion },
-        success: function(res, status, xhr) {
-          if (res === null) {
-            loggedOut();
-          }
-          else {
-            loggedIn(res);
-          }
-        },
-        error: function(res, status, xhr) {
-          alert("Whoops, I failed to authenticate you! " + res.responseText);
-        }
-      });
-    } else {
-      loggedOut();
-    }
-  }
-
-  $('#browserid').click(function() {
-    navigator.id.get(gotAssertion, {allowPersistent: true});
-    return false;
-  });
-
-  // Query persistent login.
-  var login = $('head').attr('data-logged-in');
-  if (login === "false") {
-    navigator.id.get(gotAssertion, {silent: true});
-  }
-});
-</script>
-	<script type="text/javascript">
- $("#fb-login").click(function(){
- FB.login(function(response) {
-   if (response.authResponse) {
-     $("#conf").html('Welcome!  Fetching your information.... ');
-     FB.api('/me', function(response) {
-       $("#conf").append('Good to see you, ' + response.name + '.');
-	  
-	   window.location.replace('/user/addUser');
-     });
-   } else {
-  /*   console.log('User cancelled login or did not fully authorize.');*/
-   }
- });
- });
- </script>
 </body>
 </html>

@@ -30,14 +30,7 @@ class HowtoController extends Controller
 		);
 	}
 	
-	public function behaviors()
-    {
-        return array(
-            'eexcelview'=>array(
-                'class'=>'ext.eexcelview.EExcelBehavior',
-            ),
-        );
-    }
+	
 	/**
 	 * Filter method for checking whether the currently logged in user
 	 * is the author of the Howto being accessed.

@@ -21,7 +21,8 @@ class User extends CActiveRecord
 	public $password2;
 	public $verifyCode;
 	public $usernameLegal;
-	
+	public $hybridauth_provider_uid;
+	public $hybridauth_provider_name;
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
