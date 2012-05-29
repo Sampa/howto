@@ -12,8 +12,15 @@
  *
  */
 class LoginWidget extends CWidget {
-
-	public $icon = "32";
+	//where your preferred login icons/buttons are located (providers must be named named as provider.png)
+	public $path = "/images/login_icons/";
+	//authenticate action url
+	public $url = "/yiiauth/default/authenticatewith";
+	//These you have to set up in your config with appkey and secret obtained from their sites
+	public $providers = array('twitter','facebook','google','linkedin','live','myspace');
+	//Open id servers in format 'name on image'=>'providerServer'
+	public $openid_servers = array('yahoo'=>'https://me.yahoo.com',
+	'livejournal'=>'http://www.livejournal.com/openid/server.bml');
     /**
      * Publishes the required assets
      */
@@ -21,12 +28,14 @@ class LoginWidget extends CWidget {
         parent::init();
     }
 
-    /**
-     * Generates the required HTML and Javascript
-     */
     public function run() {
-
-        $this->render("LoginWidget",array('icon'=>$this->icon));
+	
+        $this->render("LoginWidget",array(
+			'path'=>$this->path,
+			'url'=>$this->url,
+			'providers'=>$this->providers,
+			'openid_servers'=>$this->openid_servers,
+		));
     }
 
     /**

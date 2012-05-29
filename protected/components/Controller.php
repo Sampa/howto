@@ -99,23 +99,7 @@ return
 	}
 	
 	
-	public function autoLogin($user)
-	{
-	$identity=new UserIdentity($user->username, "");
-	$identity->authenticate();
-	$identity->social($user->username);
-	if ( $identity->errorCode == UserIdentity::ERROR_NONE )
-		{
-			$duration= 3600*24*30; // 30 days
-			Yii::app()->user->login($identity,$duration);
-			$this->redirect("/profile/u/".$user->username);
-		}
-		else
-		{
-		 echo $identity->errorCode;
-		}
 	
-	}
 	public function ajaxDelete( $id , $model )
 	{
 		if ( Yii::app()->request->isAjaxRequest )

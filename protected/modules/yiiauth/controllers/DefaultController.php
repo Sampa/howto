@@ -52,8 +52,63 @@ class DefaultController extends Controller
 		$provider; // the provider name
 		$_GET['openid'];//the extra_info
 		**/
-		$this->render('authenticatewith',array('error'=>$error, 'user_profile'=>$user_profile ) );
-
+		
+		// workOnUser returns an user object
+		$user = $this->workOnUser($provider,$user_profile->identifier); 
+		if ( $this->autoLogin($user) ){
+			$this->render('profile',
+				array(
+				'error'=>$error, 
+				'provideruser'=>$user_profile,
+				'yiiuser'=>$user,
+				'provider'=>$provider,	
+				) );
+			}else{
+			$this->render('authenticatewith',array('error'=>$error,'user_profile'=>$user_profile ) );
+		}
 	} 
+
+	public function workOnUser($provider,$provideruser){
+		$social = Social::model()->find("provider='".$provider."' AND provideruser='".$provideruser."'");
+		if ( $social ){
+			 $user = User::model()->find("id=".$social->yiiuser);
+			 return $user;
+		}else{
+			// we want to create a new user, but since we get no user input the validation rules will cause
+			//errors on save to counter this i added 'on'=>'validation' to all my user validation rules
+			//example: 	array('username, password', 'required','on'=>'validation'),
+			// on normal user registration with user input I use: new User('validation') 
+			$user = new User;
+			$user->username = $provideruser; 
+			
+			if ( $user->save() ){ //we get an user id
+			//add a social connection between the newly created yii user and the provider user account to avoid double regestrations and enable the same yii user to have many providers associated with it.
+				$social = new Social;
+				$social->yiiuser = $user->id;
+				$social->provider = $provider;
+				$social->provideruser = $provideruser;
+				if($social->save())
+					return $user;
+			}
+		}
 	
+	}
+	
+	public function autoLogin($user) //accepts a user object
+	{
+	$identity=new UserIdentity($user->username, "");
+	$identity->hybridauth($user->username);
+	if ( $identity->errorCode == UserIdentity::ERROR_NONE )
+		{
+			$duration= 3600*24*30; // 30 days
+			Yii::app()->user->login($identity,$duration);
+			return true;
+		}
+		else
+		{
+			echo $identity->errorCode;
+			return false;
+		}
+	
+	}
 }?>

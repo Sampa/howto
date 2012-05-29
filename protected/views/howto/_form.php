@@ -2,7 +2,6 @@
 	 <h5> Upload videos </h5>
 <div id="video"></div>
 	 <?php 
-
 	$XUpload = new XUploadForm;
 	$this->widget('xupload.XUpload', 
 			array(
@@ -41,7 +40,7 @@
 
 	<?php     echo $form->errorSummary(array_merge(array($model),$validatedSteps));?>
 	<div class="row-fluid">
-		<?php echo $form->textField($model,'video',array()); ?>
+		<?php echo $form->hiddenField($model,'video',array()); ?>
 		<?php echo $form->error($model,'video'); ?>
 	</div>
 
@@ -158,6 +157,7 @@
 <div id="currentStep" style="display:none;">Step_text</div>
 	<script type="text/javascript">
 $(document).ready(function(){
+
 $('input[id*="Step"]').focus(function(){
 	console.log($(this).attr("id"));
 	var step_title_id = $(this).attr("id");

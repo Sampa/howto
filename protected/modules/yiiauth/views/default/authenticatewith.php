@@ -6,7 +6,6 @@
 		echo "none";
 	}
 ?>
-<h3>User profile</h3>
 <?php
 	if( isset( $user_profile ) ){
 		var_dump( $user_profile );

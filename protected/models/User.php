@@ -144,6 +144,12 @@ class User extends CActiveRecord
 			'avatar' => 'Avatar',
 		);
 	}
+	protected function afterSave()
+	{
+		$dir = User::USER_DIR . $this->id; //specifies a path for the users unique file dir
+		if(!file_exists($dir))
+			mkdir($dir,0777,true);  // creates the dir
+	}
 	protected function beforeSave()
 	{
 		if ( parent::beforeSave() )

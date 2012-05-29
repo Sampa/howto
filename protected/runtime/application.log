@@ -7852,3 +7852,1145 @@ Stack trace:
 REQUEST_URI=/assets/d024e261/images/smileys/wink.png
 HTTP_REFERER=http://83.233.118.50/howto/1/Welcome%21
 ---
+2012/05/25 17:37:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "robots.txt".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('robots.txt')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+---
+2012/05/25 23:17:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/translators.html".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admin/translato...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/translators.html
+---
+2012/05/25 23:18:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/phpmyadmin/translators.html".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admin/phpmyadmi...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/phpmyadmin/translators.html
+---
+2012/05/25 23:19:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/pma/translators.html".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('admin/pma/trans...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/pma/translators.html
+---
+2012/05/25 23:20:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "db/translators.html".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('db/translators....')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/db/translators.html
+---
+2012/05/25 23:22:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "dbadmin/translators.html".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('dbadmin/transla...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dbadmin/translators.html
+---
+2012/05/25 23:23:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "translators.html".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('translators.htm...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/translators.html
+---
+2012/05/25 23:24:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "myadmin/translators.html".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('myadmin/transla...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/myadmin/translators.html
+---
+2012/05/25 23:25:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "mysql/translators.html".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('mysql/translato...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/mysql/translators.html
+---
+2012/05/25 23:26:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "mysqladmin/translators.html".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('mysqladmin/tran...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/mysqladmin/translators.html
+---
+2012/05/25 23:27:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "p/m/a/translators.html".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('p/m/a/translato...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/p/m/a/translators.html
+---
+2012/05/25 23:28:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "php-my-admin/translators.html".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('php-my-admin/tr...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/php-my-admin/translators.html
+---
+2012/05/25 23:46:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "phpadmin/translators.html".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('phpadmin/transl...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/phpadmin/translators.html
+---
+2012/05/25 23:48:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "robots.txt".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('robots.txt')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+---
+2012/05/25 23:49:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "websites/legiontd/school".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('websites/legion...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/websites/legiontd/school
+---
+2012/05/25 23:51:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "pma/translators.html".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('pma/translators...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/pma/translators.html
+---
+2012/05/25 23:52:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "typo3/phpmyadmin/translators.html".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('typo3/phpmyadmi...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/typo3/phpmyadmin/translators.html
+---
+2012/05/25 23:53:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "web/translators.html".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('web/translators...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/web/translators.html
+---
+2012/05/25 23:54:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "web/phpMyAdmin/translators.html".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('web/phpMyAdmin/...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/web/phpMyAdmin/translators.html
+---
+2012/05/25 23:55:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "websql/translators.html".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('websql/translat...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/websql/translators.html
+---
+2012/05/28 11:53:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/28 12:00:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "robots.txt".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('robots.txt')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+---
+2012/05/28 12:01:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "websites/legiontd/register".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('websites/legion...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/websites/legiontd/register
+---
+2012/05/28 12:16:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "robots.txt".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('robots.txt')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+---
+2012/05/28 12:45:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%ADe%93o%9E%14%B9%E1-%AFJ%8E%D5%D8%FEm%9D%A0%0C%A7&info_hash=%F2%FB%7E%BB%10%F2%3F%18w%7F%29%FA%E6%F3Ne%16%28%96u&info_hash=%8Cl%93%B2-%12R%05%19%ECx%CAI%3D%C0os%EE%94%C7&info_hash=%94N%F3%40%21%BE%89v%5CZ%A2%28%9F%86%D5%D6%28%20%FE%2B&info_hash=%05%E8j%40%F0%88%FC%BD%9D%DA%ADJ%82k%0Bpe%8E%E1%9F&info_hash=G%29%A3T%5C%FC%09%B6%EA%EC%15q%24%BAZ%E0%AD%81%FF%40&info_hash=%0E2%F5%DD%F6M%BA%B0%81%96%80R%26D%3C%A4%7BMu%F9&info_hash=%A4%FD%B0a%1A%98Wj%11c%A6%C8%AD%FA%A6%06%207l-&info_hash=%A0%1C%8A%85%22%EF%20V%C3%7F_%B2%C1%84%DBE%7Cx5%F2&info_hash=%7B%E3z%C7%F6%5D%C7%8B%F8%B1%15b%9E%60%22%0Cc%7F%E0%D1&info_hash=%09%88%FB%D1%A0%97%C0P%88%13%0D%BB%C4%A4%2C%F9*%83%CC%AE&info_hash=%08%28%95%CE%93%D43-r%0A%EE%BDF%B3YQ%12%AF%10%F0&info_hash=%93%1C%9E%84%A9%9AgPt%7E%EE%AA%83%94%B5%95%23dJ%0A&info_hash=%84%B7Y%F5c%94%F6%E4i%895n%CE%02%EE%C4%14%C7%08M&info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A&info_hash=%F1%0A%D7%7C%88%23u%EC%5D%8F%C3%A9%3BW%15%E5v%DA%D0%21&info_hash=4%0C%B9%25%16%A9a%A08qSw%7E3%CF%F5%1Fu%2C%97&info_hash=%D2%0B%CB%5DPv6%12%16d%F6%C1_%02%89W%9ET%F9%A6&info_hash=%AA%E7%E8%A5%96%87%B38%C4F%601%DD%A4%9D%AD%00%D8r%97&info_hash=%F7%DCL%EA%85%8D%87%13%07r%99%7DE%B2%AF1%19%94%C9%83
+---
+2012/05/28 12:45:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%9Cr%FA%A80%B6M%9B%9C%1Bh%CBG%B1%C2V%C6%3B%871&info_hash=%12%85U%E9h%5D3%09%1F%21%24o%C0Jb%D2r%C2%8A3&info_hash=%E1%BC%8C%8A%FA%24k%0A%DF%5B%FD%3CG%F6%89%2B%97%D4%BAq&info_hash=%E7T%7F.%B4%BB%40%9C%AAq%B3%28%B9L%BA6%BC%E2B%7D&info_hash=%D8%D3%F3s%93%3D%28%C2%D9%BD%A4%F9%19%7F%8E%0DI%FF%A3%0A&info_hash=%FF%F0y%8D%83N%92%60%D1%CCn%97%FF%F4%12pv%60%CD%A9&info_hash=%2B%BC%C8%07%84%12%FANR%5By%9A%86%9Fs%B8%C85%FC%D7&info_hash=%A9%17%D5%60%E7%9DW%89%E8%D8f%3E%D9%25%B9mB%88%D9%BC&info_hash=%E8%F1%F4%88%15%7D%96v%98y%D4%A4%2C%06%A8%F0%80A%3F%F4&info_hash=%F8%EA%80%DA%0Av_%F4%C6k%3D%28lu5%EB%FF%BF%DC%3B&info_hash=%C8%97B%A5%2F%0AN%93%23%240%14%D9%0E%EF%FF%F8%BD%11%1A&info_hash=%12o%EF%2C%CC%94k%21%03%D5%17%CD%7FK%3E%8E%5EB%F9v&info_hash=%1C%EFQ%23iB-%93Jq%3D%E3%5EN9%87%D0%5Cb%C0&info_hash=D%DFKPm0v%A0i%21S%7EcxzxU%20%9B%F3&info_hash=%C1%29%FC%40r%08V%3E%87l%A4%E6%FF%B7%06%D1%96%10%12%92&info_hash=%CFw%8E-%CF6%A1%8F%AB%F8%83K%29L%2B%C8%FD%AF%26I&info_hash=%A2%B8Ag%3B%80%92%E4%00%7B%B5%F9%CD7%9D%3BV%AF%9F%7C&info_hash=%01%89%06M%10wA%E0*%21J%0B%95%DE%3C%D1p%9B%EA%EB&info_hash=%99%3D%FE%FBu%81bL%9D%03%D2%05%E5%2B%3E%3D%D0%2F%C2%07&info_hash=%1A%B9%E9%D6%F6pA%D5g%8Be%ABx%5C%F0%21%AE%9B%D7%27
+---
+2012/05/28 12:46:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=l%2C%F8%98%A8%8CL%5B%AE%D9%8A%99%1FL%27%25%BF%8B%A1%A4&info_hash=%20%B8%3C%C3%AF%1B%06a%C5%21Nj%97%0F%24%AC%F0%04%B7%AC&info_hash=%8D%EB%2F%7D%18%03l%E6%86%3E%C5%8A%0E%26i%7D%BC%B3x%E9&info_hash=Ta%08%82%BAA%DE%FEC%E5%F8%02%B9%92%9BR%B2%40%04%7B&info_hash=h%0C%01%C6%D4J%01%96D%99up%89%CD%21%3F1Y%F4%5D&info_hash=%17*J%A2%D5%95%FA%B8%AD%DC%F3Q%BC%89%DA%29%FF%8A%40%87
+---
+2012/05/28 12:48:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%E9b%AD%D0L%10%0CJ6l%FC%AD6*%D3%12%17d%82*
+---
+2012/05/28 13:45:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%ADe%93o%9E%14%B9%E1-%AFJ%8E%D5%D8%FEm%9D%A0%0C%A7&info_hash=%F2%FB%7E%BB%10%F2%3F%18w%7F%29%FA%E6%F3Ne%16%28%96u&info_hash=%8Cl%93%B2-%12R%05%19%ECx%CAI%3D%C0os%EE%94%C7&info_hash=%94N%F3%40%21%BE%89v%5CZ%A2%28%9F%86%D5%D6%28%20%FE%2B&info_hash=%05%E8j%40%F0%88%FC%BD%9D%DA%ADJ%82k%0Bpe%8E%E1%9F&info_hash=G%29%A3T%5C%FC%09%B6%EA%EC%15q%24%BAZ%E0%AD%81%FF%40&info_hash=%0E2%F5%DD%F6M%BA%B0%81%96%80R%26D%3C%A4%7BMu%F9&info_hash=%A4%FD%B0a%1A%98Wj%11c%A6%C8%AD%FA%A6%06%207l-&info_hash=%A0%1C%8A%85%22%EF%20V%C3%7F_%B2%C1%84%DBE%7Cx5%F2&info_hash=%7B%E3z%C7%F6%5D%C7%8B%F8%B1%15b%9E%60%22%0Cc%7F%E0%D1&info_hash=%09%88%FB%D1%A0%97%C0P%88%13%0D%BB%C4%A4%2C%F9*%83%CC%AE&info_hash=%08%28%95%CE%93%D43-r%0A%EE%BDF%B3YQ%12%AF%10%F0&info_hash=%93%1C%9E%84%A9%9AgPt%7E%EE%AA%83%94%B5%95%23dJ%0A&info_hash=%84%B7Y%F5c%94%F6%E4i%895n%CE%02%EE%C4%14%C7%08M&info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A&info_hash=%F1%0A%D7%7C%88%23u%EC%5D%8F%C3%A9%3BW%15%E5v%DA%D0%21&info_hash=4%0C%B9%25%16%A9a%A08qSw%7E3%CF%F5%1Fu%2C%97&info_hash=%D2%0B%CB%5DPv6%12%16d%F6%C1_%02%89W%9ET%F9%A6&info_hash=%AA%E7%E8%A5%96%87%B38%C4F%601%DD%A4%9D%AD%00%D8r%97&info_hash=%F7%DCL%EA%85%8D%87%13%07r%99%7DE%B2%AF1%19%94%C9%83
+---
+2012/05/28 13:45:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%9Cr%FA%A80%B6M%9B%9C%1Bh%CBG%B1%C2V%C6%3B%871&info_hash=%12%85U%E9h%5D3%09%1F%21%24o%C0Jb%D2r%C2%8A3&info_hash=%E1%BC%8C%8A%FA%24k%0A%DF%5B%FD%3CG%F6%89%2B%97%D4%BAq&info_hash=%E7T%7F.%B4%BB%40%9C%AAq%B3%28%B9L%BA6%BC%E2B%7D&info_hash=%D8%D3%F3s%93%3D%28%C2%D9%BD%A4%F9%19%7F%8E%0DI%FF%A3%0A&info_hash=%FF%F0y%8D%83N%92%60%D1%CCn%97%FF%F4%12pv%60%CD%A9&info_hash=%2B%BC%C8%07%84%12%FANR%5By%9A%86%9Fs%B8%C85%FC%D7&info_hash=%A9%17%D5%60%E7%9DW%89%E8%D8f%3E%D9%25%B9mB%88%D9%BC&info_hash=%E8%F1%F4%88%15%7D%96v%98y%D4%A4%2C%06%A8%F0%80A%3F%F4&info_hash=%F8%EA%80%DA%0Av_%F4%C6k%3D%28lu5%EB%FF%BF%DC%3B&info_hash=%C8%97B%A5%2F%0AN%93%23%240%14%D9%0E%EF%FF%F8%BD%11%1A&info_hash=%12o%EF%2C%CC%94k%21%03%D5%17%CD%7FK%3E%8E%5EB%F9v&info_hash=%1C%EFQ%23iB-%93Jq%3D%E3%5EN9%87%D0%5Cb%C0&info_hash=D%DFKPm0v%A0i%21S%7EcxzxU%20%9B%F3&info_hash=%C1%29%FC%40r%08V%3E%87l%A4%E6%FF%B7%06%D1%96%10%12%92&info_hash=%CFw%8E-%CF6%A1%8F%AB%F8%83K%29L%2B%C8%FD%AF%26I&info_hash=%A2%B8Ag%3B%80%92%E4%00%7B%B5%F9%CD7%9D%3BV%AF%9F%7C&info_hash=%01%89%06M%10wA%E0*%21J%0B%95%DE%3C%D1p%9B%EA%EB&info_hash=%99%3D%FE%FBu%81bL%9D%03%D2%05%E5%2B%3E%3D%D0%2F%C2%07&info_hash=%1A%B9%E9%D6%F6pA%D5g%8Be%ABx%5C%F0%21%AE%9B%D7%27
+---
+2012/05/28 13:46:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=l%2C%F8%98%A8%8CL%5B%AE%D9%8A%99%1FL%27%25%BF%8B%A1%A4&info_hash=%20%B8%3C%C3%AF%1B%06a%C5%21Nj%97%0F%24%AC%F0%04%B7%AC&info_hash=%8D%EB%2F%7D%18%03l%E6%86%3E%C5%8A%0E%26i%7D%BC%B3x%E9&info_hash=Ta%08%82%BAA%DE%FEC%E5%F8%02%B9%92%9BR%B2%40%04%7B&info_hash=h%0C%01%C6%D4J%01%96D%99up%89%CD%21%3F1Y%F4%5D&info_hash=%17*J%A2%D5%95%FA%B8%AD%DC%F3Q%BC%89%DA%29%FF%8A%40%87
+---
+2012/05/28 13:49:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%E9b%AD%D0L%10%0CJ6l%FC%AD6*%D3%12%17d%82*
+---
+2012/05/28 14:46:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%ADe%93o%9E%14%B9%E1-%AFJ%8E%D5%D8%FEm%9D%A0%0C%A7&info_hash=%F2%FB%7E%BB%10%F2%3F%18w%7F%29%FA%E6%F3Ne%16%28%96u&info_hash=%8Cl%93%B2-%12R%05%19%ECx%CAI%3D%C0os%EE%94%C7&info_hash=%94N%F3%40%21%BE%89v%5CZ%A2%28%9F%86%D5%D6%28%20%FE%2B&info_hash=%05%E8j%40%F0%88%FC%BD%9D%DA%ADJ%82k%0Bpe%8E%E1%9F&info_hash=G%29%A3T%5C%FC%09%B6%EA%EC%15q%24%BAZ%E0%AD%81%FF%40&info_hash=%0E2%F5%DD%F6M%BA%B0%81%96%80R%26D%3C%A4%7BMu%F9&info_hash=%A4%FD%B0a%1A%98Wj%11c%A6%C8%AD%FA%A6%06%207l-&info_hash=%A0%1C%8A%85%22%EF%20V%C3%7F_%B2%C1%84%DBE%7Cx5%F2&info_hash=%7B%E3z%C7%F6%5D%C7%8B%F8%B1%15b%9E%60%22%0Cc%7F%E0%D1&info_hash=%09%88%FB%D1%A0%97%C0P%88%13%0D%BB%C4%A4%2C%F9*%83%CC%AE&info_hash=%08%28%95%CE%93%D43-r%0A%EE%BDF%B3YQ%12%AF%10%F0&info_hash=%93%1C%9E%84%A9%9AgPt%7E%EE%AA%83%94%B5%95%23dJ%0A&info_hash=%84%B7Y%F5c%94%F6%E4i%895n%CE%02%EE%C4%14%C7%08M&info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A&info_hash=%F1%0A%D7%7C%88%23u%EC%5D%8F%C3%A9%3BW%15%E5v%DA%D0%21&info_hash=4%0C%B9%25%16%A9a%A08qSw%7E3%CF%F5%1Fu%2C%97&info_hash=%D2%0B%CB%5DPv6%12%16d%F6%C1_%02%89W%9ET%F9%A6&info_hash=%AA%E7%E8%A5%96%87%B38%C4F%601%DD%A4%9D%AD%00%D8r%97&info_hash=%F7%DCL%EA%85%8D%87%13%07r%99%7DE%B2%AF1%19%94%C9%83
+---
+2012/05/28 14:46:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%9Cr%FA%A80%B6M%9B%9C%1Bh%CBG%B1%C2V%C6%3B%871&info_hash=%12%85U%E9h%5D3%09%1F%21%24o%C0Jb%D2r%C2%8A3&info_hash=%E1%BC%8C%8A%FA%24k%0A%DF%5B%FD%3CG%F6%89%2B%97%D4%BAq&info_hash=%E7T%7F.%B4%BB%40%9C%AAq%B3%28%B9L%BA6%BC%E2B%7D&info_hash=%D8%D3%F3s%93%3D%28%C2%D9%BD%A4%F9%19%7F%8E%0DI%FF%A3%0A&info_hash=%FF%F0y%8D%83N%92%60%D1%CCn%97%FF%F4%12pv%60%CD%A9&info_hash=%2B%BC%C8%07%84%12%FANR%5By%9A%86%9Fs%B8%C85%FC%D7&info_hash=%A9%17%D5%60%E7%9DW%89%E8%D8f%3E%D9%25%B9mB%88%D9%BC&info_hash=%E8%F1%F4%88%15%7D%96v%98y%D4%A4%2C%06%A8%F0%80A%3F%F4&info_hash=%F8%EA%80%DA%0Av_%F4%C6k%3D%28lu5%EB%FF%BF%DC%3B&info_hash=%C8%97B%A5%2F%0AN%93%23%240%14%D9%0E%EF%FF%F8%BD%11%1A&info_hash=%12o%EF%2C%CC%94k%21%03%D5%17%CD%7FK%3E%8E%5EB%F9v&info_hash=%1C%EFQ%23iB-%93Jq%3D%E3%5EN9%87%D0%5Cb%C0&info_hash=D%DFKPm0v%A0i%21S%7EcxzxU%20%9B%F3&info_hash=%C1%29%FC%40r%08V%3E%87l%A4%E6%FF%B7%06%D1%96%10%12%92&info_hash=%CFw%8E-%CF6%A1%8F%AB%F8%83K%29L%2B%C8%FD%AF%26I&info_hash=%A2%B8Ag%3B%80%92%E4%00%7B%B5%F9%CD7%9D%3BV%AF%9F%7C&info_hash=%01%89%06M%10wA%E0*%21J%0B%95%DE%3C%D1p%9B%EA%EB&info_hash=%99%3D%FE%FBu%81bL%9D%03%D2%05%E5%2B%3E%3D%D0%2F%C2%07&info_hash=%1A%B9%E9%D6%F6pA%D5g%8Be%ABx%5C%F0%21%AE%9B%D7%27
+---
+2012/05/28 14:46:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=l%2C%F8%98%A8%8CL%5B%AE%D9%8A%99%1FL%27%25%BF%8B%A1%A4&info_hash=%20%B8%3C%C3%AF%1B%06a%C5%21Nj%97%0F%24%AC%F0%04%B7%AC&info_hash=%8D%EB%2F%7D%18%03l%E6%86%3E%C5%8A%0E%26i%7D%BC%B3x%E9&info_hash=Ta%08%82%BAA%DE%FEC%E5%F8%02%B9%92%9BR%B2%40%04%7B&info_hash=h%0C%01%C6%D4J%01%96D%99up%89%CD%21%3F1Y%F4%5D&info_hash=%17*J%A2%D5%95%FA%B8%AD%DC%F3Q%BC%89%DA%29%FF%8A%40%87
+---
+2012/05/28 14:49:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%E9b%AD%D0L%10%0CJ6l%FC%AD6*%D3%12%17d%82*
+---
+2012/05/28 15:46:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%ADe%93o%9E%14%B9%E1-%AFJ%8E%D5%D8%FEm%9D%A0%0C%A7&info_hash=%F2%FB%7E%BB%10%F2%3F%18w%7F%29%FA%E6%F3Ne%16%28%96u&info_hash=%8Cl%93%B2-%12R%05%19%ECx%CAI%3D%C0os%EE%94%C7&info_hash=%94N%F3%40%21%BE%89v%5CZ%A2%28%9F%86%D5%D6%28%20%FE%2B&info_hash=%05%E8j%40%F0%88%FC%BD%9D%DA%ADJ%82k%0Bpe%8E%E1%9F&info_hash=G%29%A3T%5C%FC%09%B6%EA%EC%15q%24%BAZ%E0%AD%81%FF%40&info_hash=%0E2%F5%DD%F6M%BA%B0%81%96%80R%26D%3C%A4%7BMu%F9&info_hash=%A4%FD%B0a%1A%98Wj%11c%A6%C8%AD%FA%A6%06%207l-&info_hash=%A0%1C%8A%85%22%EF%20V%C3%7F_%B2%C1%84%DBE%7Cx5%F2&info_hash=%7B%E3z%C7%F6%5D%C7%8B%F8%B1%15b%9E%60%22%0Cc%7F%E0%D1&info_hash=%09%88%FB%D1%A0%97%C0P%88%13%0D%BB%C4%A4%2C%F9*%83%CC%AE&info_hash=%08%28%95%CE%93%D43-r%0A%EE%BDF%B3YQ%12%AF%10%F0&info_hash=%93%1C%9E%84%A9%9AgPt%7E%EE%AA%83%94%B5%95%23dJ%0A&info_hash=%84%B7Y%F5c%94%F6%E4i%895n%CE%02%EE%C4%14%C7%08M&info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A&info_hash=%F1%0A%D7%7C%88%23u%EC%5D%8F%C3%A9%3BW%15%E5v%DA%D0%21&info_hash=4%0C%B9%25%16%A9a%A08qSw%7E3%CF%F5%1Fu%2C%97&info_hash=%D2%0B%CB%5DPv6%12%16d%F6%C1_%02%89W%9ET%F9%A6&info_hash=%AA%E7%E8%A5%96%87%B38%C4F%601%DD%A4%9D%AD%00%D8r%97&info_hash=%F7%DCL%EA%85%8D%87%13%07r%99%7DE%B2%AF1%19%94%C9%83
+---
+2012/05/28 15:46:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%9Cr%FA%A80%B6M%9B%9C%1Bh%CBG%B1%C2V%C6%3B%871&info_hash=%12%85U%E9h%5D3%09%1F%21%24o%C0Jb%D2r%C2%8A3&info_hash=%E1%BC%8C%8A%FA%24k%0A%DF%5B%FD%3CG%F6%89%2B%97%D4%BAq&info_hash=%E7T%7F.%B4%BB%40%9C%AAq%B3%28%B9L%BA6%BC%E2B%7D&info_hash=%D8%D3%F3s%93%3D%28%C2%D9%BD%A4%F9%19%7F%8E%0DI%FF%A3%0A&info_hash=%FF%F0y%8D%83N%92%60%D1%CCn%97%FF%F4%12pv%60%CD%A9&info_hash=%2B%BC%C8%07%84%12%FANR%5By%9A%86%9Fs%B8%C85%FC%D7&info_hash=%A9%17%D5%60%E7%9DW%89%E8%D8f%3E%D9%25%B9mB%88%D9%BC&info_hash=%E8%F1%F4%88%15%7D%96v%98y%D4%A4%2C%06%A8%F0%80A%3F%F4&info_hash=%F8%EA%80%DA%0Av_%F4%C6k%3D%28lu5%EB%FF%BF%DC%3B&info_hash=%C8%97B%A5%2F%0AN%93%23%240%14%D9%0E%EF%FF%F8%BD%11%1A&info_hash=%12o%EF%2C%CC%94k%21%03%D5%17%CD%7FK%3E%8E%5EB%F9v&info_hash=%1C%EFQ%23iB-%93Jq%3D%E3%5EN9%87%D0%5Cb%C0&info_hash=D%DFKPm0v%A0i%21S%7EcxzxU%20%9B%F3&info_hash=%C1%29%FC%40r%08V%3E%87l%A4%E6%FF%B7%06%D1%96%10%12%92&info_hash=%CFw%8E-%CF6%A1%8F%AB%F8%83K%29L%2B%C8%FD%AF%26I&info_hash=%A2%B8Ag%3B%80%92%E4%00%7B%B5%F9%CD7%9D%3BV%AF%9F%7C&info_hash=%01%89%06M%10wA%E0*%21J%0B%95%DE%3C%D1p%9B%EA%EB&info_hash=%99%3D%FE%FBu%81bL%9D%03%D2%05%E5%2B%3E%3D%D0%2F%C2%07&info_hash=%1A%B9%E9%D6%F6pA%D5g%8Be%ABx%5C%F0%21%AE%9B%D7%27
+---
+2012/05/28 15:46:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=l%2C%F8%98%A8%8CL%5B%AE%D9%8A%99%1FL%27%25%BF%8B%A1%A4&info_hash=%20%B8%3C%C3%AF%1B%06a%C5%21Nj%97%0F%24%AC%F0%04%B7%AC&info_hash=%8D%EB%2F%7D%18%03l%E6%86%3E%C5%8A%0E%26i%7D%BC%B3x%E9&info_hash=Ta%08%82%BAA%DE%FEC%E5%F8%02%B9%92%9BR%B2%40%04%7B&info_hash=h%0C%01%C6%D4J%01%96D%99up%89%CD%21%3F1Y%F4%5D&info_hash=%17*J%A2%D5%95%FA%B8%AD%DC%F3Q%BC%89%DA%29%FF%8A%40%87
+---
+2012/05/28 15:46:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "robots.txt".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('robots.txt')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+---
+2012/05/28 15:49:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%E9b%AD%D0L%10%0CJ6l%FC%AD6*%D3%12%17d%82*
+---
+2012/05/28 16:47:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%DA%DF%7F%C2%E6%B1%DA%C9%17j%1E%8B%27t%84%12%D9%2C3%F5&info_hash=%E9b%AD%D0L%10%0CJ6l%FC%AD6*%D3%12%17d%82*
+---
+2012/05/28 16:54:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "freenode-proxy-checker.txt".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('freenode-proxy-...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=http://vlad-tepes.bofh.it/freenode-proxy-checker.txt
+---
+2012/05/28 16:54:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "213.92.8.7:31204".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('213.92.8.7:3120...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=213.92.8.7:31204
+---
+2012/05/28 16:54:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "213.92.8.7:31204".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('213.92.8.7:3120...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=213.92.8.7:31204
+---
+2012/05/28 20:59:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "false".' in C:\Programmering\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('false')
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('false')
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('howto/false')
+#3 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/howto/false
+HTTP_REFERER=http://83.233.118.50/howto/create
+---
+2012/05/28 21:06:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "tmp/images//images/8943dbc475fae308136344d5b8e87466.jpg".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('tmp/images//ima...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tmp/images//images/8943dbc475fae308136344d5b8e87466.jpg
+HTTP_REFERER=http://83.233.118.50/file/redactor
+---
+2012/05/28 21:06:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "tmp/images//images/8943dbc475fae308136344d5b8e87466.jpg".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('tmp/images//ima...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tmp/images//images/8943dbc475fae308136344d5b8e87466.jpg
+HTTP_REFERER=http://83.233.118.50/howto/create
+---
+2012/05/28 21:11:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/d024e261/images/smileys/wink.png".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/d024e261...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/d024e261/images/smileys/wink.png
+HTTP_REFERER=http://83.233.118.50/howto/1/Welcome%21
+---
+2012/05/28 21:11:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/d024e261/images/smileys/wink.png".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/d024e261...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/d024e261/images/smileys/wink.png
+HTTP_REFERER=http://83.233.118.50/howto/1/Welcome%21
+---
+2012/05/28 21:11:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/d024e261/images/smileys/wink.png".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/d024e261...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/d024e261/images/smileys/wink.png
+HTTP_REFERER=http://83.233.118.50/howto/1/Welcome%21
+---
+2012/05/28 21:12:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/howto/92/slide/1336056609530.gif".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('images/howto/92...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/howto/92/slide/1336056609530.gif
+HTTP_REFERER=http://83.233.118.50/howto/1/Welcome%21
+---
+2012/05/28 21:12:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/d024e261/images/smileys/wink.png".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/d024e261...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/d024e261/images/smileys/wink.png
+HTTP_REFERER=http://83.233.118.50/howto/1/Welcome%21
+---
+2012/05/28 21:13:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/d024e261/images/smileys/wink.png".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/d024e261...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/d024e261/images/smileys/wink.png
+HTTP_REFERER=http://83.233.118.50/howto/1/Welcome%21
+---
+2012/05/28 21:13:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/d024e261/images/smileys/wink.png".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/d024e261...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/d024e261/images/smileys/wink.png
+HTTP_REFERER=http://83.233.118.50/howto/1/Welcome%21
+---
+2012/05/28 21:15:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/d024e261/images/smileys/wink.png".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/d024e261...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/d024e261/images/smileys/wink.png
+HTTP_REFERER=http://83.233.118.50/howto/1/Welcome%21
+---
+2012/05/28 21:15:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/d024e261/images/smileys/wink.png".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/d024e261...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/d024e261/images/smileys/wink.png
+HTTP_REFERER=http://83.233.118.50/howto/1/Welcome%21
+---
+2012/05/28 21:16:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/d024e261/images/smileys/wink.png".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/d024e261...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/d024e261/images/smileys/wink.png
+HTTP_REFERER=http://83.233.118.50/howto/1/Welcome%21
+---
+2012/05/28 21:16:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/d024e261/images/smileys/wink.png".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/d024e261...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/d024e261/images/smileys/wink.png
+HTTP_REFERER=http://83.233.118.50/howto/1/Welcome%21
+---
+2012/05/28 21:16:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/d024e261/images/smileys/wink.png".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/d024e261...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/d024e261/images/smileys/wink.png
+HTTP_REFERER=http://83.233.118.50/howto/1/Welcome%21
+---
+2012/05/28 21:16:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/d024e261/images/smileys/wink.png".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('assets/d024e261...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/d024e261/images/smileys/wink.png
+HTTP_REFERER=http://83.233.118.50/howto/1/Welcome%21
+---
+2012/05/28 21:20:46 [warning] [application] Failed to set unsafe attribute "video" of "Howto".
+in C:\Programmering\xampp\htdocs\blog\protected\components\Controller.php (143)
+in C:\Programmering\xampp\htdocs\blog\protected\controllers\HowtoController.php (209)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php (51)
+2012/05/28 21:22:28 [warning] [application] Failed to set unsafe attribute "video" of "Howto".
+in C:\Programmering\xampp\htdocs\blog\protected\components\Controller.php (143)
+in C:\Programmering\xampp\htdocs\blog\protected\controllers\HowtoController.php (209)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php (51)
+2012/05/29 01:13:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "soapcaller.bs".' in C:\Programmering\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('soapcaller.bs')
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('soapcaller.bs')
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('user/soapCaller...')
+#3 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/user/soapCaller.bs
+---
+2012/05/29 03:31:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "213.92.8.7:31204".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('213.92.8.7:3120...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=213.92.8.7:31204
+---
+2012/05/29 03:31:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "freenode-proxy-checker.txt".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('freenode-proxy-...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=http://vlad-tepes.bofh.it/freenode-proxy-checker.txt
+---
+2012/05/29 03:31:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "freenode-proxy-checker.txt".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('freenode-proxy-...')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=http://vlad-tepes.bofh.it/freenode-proxy-checker.txt
+---
+2012/05/29 05:45:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "robots.txt".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('robots.txt')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+---
+2012/05/29 12:45:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "announce".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('announce')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/announce?info_hash=%9A7%B7%8AL%8D%D1%BE%05e%E5%E1%7C%27%0A%AC%AB%1D%E8h&peer_id=-AZ4702-x9EjweYEnCFZ&supportcrypto=1&port=40694&azudp=40694&uploaded=0&downloaded=0&left=1767410183&corrupt=0&event=started&numwant=100&no_peer_id=1&compact=1&key=GgcvsYE5&azver=3
+---
+2012/05/29 12:45:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%E7T%7F.%B4%BB%40%9C%AAq%B3%28%B9L%BA6%BC%E2B%7D&info_hash=%ADe%93o%9E%14%B9%E1-%AFJ%8E%D5%D8%FEm%9D%A0%0C%A7&info_hash=%F2%FB%7E%BB%10%F2%3F%18w%7F%29%FA%E6%F3Ne%16%28%96u&info_hash=%8Cl%93%B2-%12R%05%19%ECx%CAI%3D%C0os%EE%94%C7&info_hash=%94N%F3%40%21%BE%89v%5CZ%A2%28%9F%86%D5%D6%28%20%FE%2B&info_hash=%05%E8j%40%F0%88%FC%BD%9D%DA%ADJ%82k%0Bpe%8E%E1%9F&info_hash=G%29%A3T%5C%FC%09%B6%EA%EC%15q%24%BAZ%E0%AD%81%FF%40&info_hash=%0E2%F5%DD%F6M%BA%B0%81%96%80R%26D%3C%A4%7BMu%F9&info_hash=%A4%FD%B0a%1A%98Wj%11c%A6%C8%AD%FA%A6%06%207l-&info_hash=%A0%1C%8A%85%22%EF%20V%C3%7F_%B2%C1%84%DBE%7Cx5%F2&info_hash=%7B%E3z%C7%F6%5D%C7%8B%F8%B1%15b%9E%60%22%0Cc%7F%E0%D1&info_hash=%09%88%FB%D1%A0%97%C0P%88%13%0D%BB%C4%A4%2C%F9*%83%CC%AE&info_hash=%08%28%95%CE%93%D43-r%0A%EE%BDF%B3YQ%12%AF%10%F0&info_hash=%93%1C%9E%84%A9%9AgPt%7E%EE%AA%83%94%B5%95%23dJ%0A&info_hash=%84%B7Y%F5c%94%F6%E4i%895n%CE%02%EE%C4%14%C7%08M&info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A&info_hash=%F1%0A%D7%7C%88%23u%EC%5D%8F%C3%A9%3BW%15%E5v%DA%D0%21&info_hash=%D2%0B%CB%5DPv6%12%16d%F6%C1_%02%89W%9ET%F9%A6&info_hash=4%0C%B9%25%16%A9a%A08qSw%7E3%CF%F5%1Fu%2C%97&info_hash=%AA%E7%E8%A5%96%87%B38%C4F%601%DD%A4%9D%AD%00%D8r%97
+---
+2012/05/29 12:45:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%F7%DCL%EA%85%8D%87%13%07r%99%7DE%B2%AF1%19%94%C9%83&info_hash=%9Cr%FA%A80%B6M%9B%9C%1Bh%CBG%B1%C2V%C6%3B%871&info_hash=%12%85U%E9h%5D3%09%1F%21%24o%C0Jb%D2r%C2%8A3&info_hash=%E1%BC%8C%8A%FA%24k%0A%DF%5B%FD%3CG%F6%89%2B%97%D4%BAq&info_hash=%D8%D3%F3s%93%3D%28%C2%D9%BD%A4%F9%19%7F%8E%0DI%FF%A3%0A&info_hash=%FF%F0y%8D%83N%92%60%D1%CCn%97%FF%F4%12pv%60%CD%A9&info_hash=%2B%BC%C8%07%84%12%FANR%5By%9A%86%9Fs%B8%C85%FC%D7&info_hash=%A9%17%D5%60%E7%9DW%89%E8%D8f%3E%D9%25%B9mB%88%D9%BC&info_hash=%E8%F1%F4%88%15%7D%96v%98y%D4%A4%2C%06%A8%F0%80A%3F%F4&info_hash=%F8%EA%80%DA%0Av_%F4%C6k%3D%28lu5%EB%FF%BF%DC%3B&info_hash=%12o%EF%2C%CC%94k%21%03%D5%17%CD%7FK%3E%8E%5EB%F9v&info_hash=%C8%97B%A5%2F%0AN%93%23%240%14%D9%0E%EF%FF%F8%BD%11%1A&info_hash=%1C%EFQ%23iB-%93Jq%3D%E3%5EN9%87%D0%5Cb%C0&info_hash=D%DFKPm0v%A0i%21S%7EcxzxU%20%9B%F3&info_hash=%C1%29%FC%40r%08V%3E%87l%A4%E6%FF%B7%06%D1%96%10%12%92&info_hash=%CFw%8E-%CF6%A1%8F%AB%F8%83K%29L%2B%C8%FD%AF%26I&info_hash=%A2%B8Ag%3B%80%92%E4%00%7B%B5%F9%CD7%9D%3BV%AF%9F%7C&info_hash=%01%89%06M%10wA%E0*%21J%0B%95%DE%3C%D1p%9B%EA%EB&info_hash=%1A%B9%E9%D6%F6pA%D5g%8Be%ABx%5C%F0%21%AE%9B%D7%27&info_hash=%99%3D%FE%FBu%81bL%9D%03%D2%05%E5%2B%3E%3D%D0%2F%C2%07
+---
+2012/05/29 12:45:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "announce".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('announce')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/announce?info_hash=%9A7%B7%8AL%8D%D1%BE%05e%E5%E1%7C%27%0A%AC%AB%1D%E8h&peer_id=-AZ4702-x9EjweYEnCFZ&supportcrypto=1&port=40694&azudp=40694&uploaded=0&downloaded=0&left=1767410183&corrupt=0&event=started&numwant=100&no_peer_id=1&compact=1&key=GgcvsYE5&azver=3
+---
+2012/05/29 12:45:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=l%2C%F8%98%A8%8CL%5B%AE%D9%8A%99%1FL%27%25%BF%8B%A1%A4&info_hash=%20%B8%3C%C3%AF%1B%06a%C5%21Nj%97%0F%24%AC%F0%04%B7%AC&info_hash=%8D%EB%2F%7D%18%03l%E6%86%3E%C5%8A%0E%26i%7D%BC%B3x%E9&info_hash=h%0C%01%C6%D4J%01%96D%99up%89%CD%21%3F1Y%F4%5D&info_hash=Ta%08%82%BAA%DE%FEC%E5%F8%02%B9%92%9BR%B2%40%04%7B&info_hash=%17*J%A2%D5%95%FA%B8%AD%DC%F3Q%BC%89%DA%29%FF%8A%40%87
+---
+2012/05/29 12:46:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "announce".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('announce')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/announce?info_hash=%9A7%B7%8AL%8D%D1%BE%05e%E5%E1%7C%27%0A%AC%AB%1D%E8h&peer_id=-AZ4702-x9EjweYEnCFZ&supportcrypto=1&port=40694&azudp=40694&uploaded=0&downloaded=996652&left=1767410183&corrupt=0&event=started&numwant=100&no_peer_id=1&compact=1&key=GgcvsYE5&azver=3
+---
+2012/05/29 12:47:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "announce".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('announce')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/announce?info_hash=%9A7%B7%8AL%8D%D1%BE%05e%E5%E1%7C%27%0A%AC%AB%1D%E8h&peer_id=-AZ4702-x9EjweYEnCFZ&supportcrypto=1&port=40694&azudp=40694&uploaded=0&downloaded=2155528&left=1767410183&corrupt=0&event=started&numwant=100&no_peer_id=1&compact=1&key=GgcvsYE5&azver=3
+---
+2012/05/29 12:48:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "announce".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('announce')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/announce?info_hash=%9A7%B7%8AL%8D%D1%BE%05e%E5%E1%7C%27%0A%AC%AB%1D%E8h&peer_id=-AZ4702-x9EjweYEnCFZ&supportcrypto=1&port=40694&azudp=40694&uploaded=0&downloaded=3561727&left=1767410183&corrupt=0&event=started&numwant=100&no_peer_id=1&compact=1&key=GgcvsYE5&azver=3
+---
+2012/05/29 12:49:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "announce".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('announce')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/announce?info_hash=%9A7%B7%8AL%8D%D1%BE%05e%E5%E1%7C%27%0A%AC%AB%1D%E8h&peer_id=-AZ4702-x9EjweYEnCFZ&supportcrypto=1&port=40694&azudp=40694&uploaded=377016&downloaded=4731636&left=1765313031&corrupt=0&event=started&numwant=100&no_peer_id=1&compact=1&key=GgcvsYE5&azver=3
+---
+2012/05/29 12:51:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "announce".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('announce')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/announce?info_hash=%9A7%B7%8AL%8D%D1%BE%05e%E5%E1%7C%27%0A%AC%AB%1D%E8h&peer_id=-AZ4702-x9EjweYEnCFZ&supportcrypto=1&port=40694&azudp=40694&uploaded=622896&downloaded=5855261&left=1765313031&corrupt=0&event=started&numwant=100&no_peer_id=1&compact=1&key=GgcvsYE5&azver=3
+---
+2012/05/29 12:54:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "announce".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('announce')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/announce?info_hash=%9A7%B7%8AL%8D%D1%BE%05e%E5%E1%7C%27%0A%AC%AB%1D%E8h&peer_id=-AZ4702-x9EjweYEnCFZ&supportcrypto=1&port=40694&azudp=40694&uploaded=852384&downloaded=8263850&left=1765313031&corrupt=0&event=started&numwant=100&no_peer_id=1&compact=1&key=GgcvsYE5&azver=3
+---
+2012/05/29 12:59:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "announce".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('announce')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/announce?info_hash=%9A7%B7%8AL%8D%D1%BE%05e%E5%E1%7C%27%0A%AC%AB%1D%E8h&peer_id=-AZ4702-x9EjweYEnCFZ&supportcrypto=1&port=40694&azudp=40694&uploaded=1327752&downloaded=13056728&left=1761118727&corrupt=0&event=started&numwant=100&no_peer_id=1&compact=1&key=GgcvsYE5&azver=3
+---
+2012/05/29 12:59:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "announce".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('announce')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/announce?info_hash=%9A7%B7%8AL%8D%D1%BE%05e%E5%E1%7C%27%0A%AC%AB%1D%E8h&peer_id=-AZ4702-x9EjweYEnCFZ&supportcrypto=1&port=40694&azudp=40694&uploaded=2966952&downloaded=14208853&left=1759021575&corrupt=0&event=started&numwant=100&no_peer_id=1&compact=1&key=GgcvsYE5&azver=3
+---
+2012/05/29 13:05:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "announce".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('announce')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/announce?info_hash=%9A7%B7%8AL%8D%D1%BE%05e%E5%E1%7C%27%0A%AC%AB%1D%E8h&peer_id=-AZ4702-x9EjweYEnCFZ&supportcrypto=1&port=40694&azudp=40694&uploaded=7342370&downloaded=24249408&left=1748535815&corrupt=0&event=started&numwant=100&no_peer_id=1&compact=1&key=GgcvsYE5&azver=3
+---
+2012/05/29 13:12:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "announce".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('announce')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/announce?info_hash=%9A7%B7%8AL%8D%D1%BE%05e%E5%E1%7C%27%0A%AC%AB%1D%E8h&peer_id=-AZ4702-x9EjweYEnCFZ&supportcrypto=1&port=40694&azudp=40694&uploaded=64386530&downloaded=258488444&left=1519946247&corrupt=6291456&event=started&numwant=100&no_peer_id=1&compact=1&key=GgcvsYE5&azver=3
+---
+2012/05/29 13:20:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "announce".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('announce')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/announce?info_hash=%9A7%B7%8AL%8D%D1%BE%05e%E5%E1%7C%27%0A%AC%AB%1D%E8h&peer_id=-AZ4702-x9EjweYEnCFZ&supportcrypto=1&port=40694&azudp=40694&uploaded=182917082&downloaded=691817506&left=1092127239&corrupt=6291456&event=started&numwant=100&no_peer_id=1&compact=1&key=GgcvsYE5&azver=3
+---
+2012/05/29 13:29:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "announce".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('announce')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/announce?info_hash=%9A7%B7%8AL%8D%D1%BE%05e%E5%E1%7C%27%0A%AC%AB%1D%E8h&peer_id=-AZ4702-x9EjweYEnCFZ&supportcrypto=1&port=40694&azudp=40694&uploaded=349574546&downloaded=1228426180&left=553159175&corrupt=6291456&event=started&numwant=100&no_peer_id=1&compact=1&key=GgcvsYE5&azver=3
+---
+2012/05/29 13:39:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "announce".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('announce')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/announce?info_hash=%9A7%B7%8AL%8D%D1%BE%05e%E5%E1%7C%27%0A%AC%AB%1D%E8h&peer_id=-AZ4702-x9EjweYEnCFZ&supportcrypto=1&port=40694&azudp=40694&uploaded=403757675&downloaded=1769619471&left=0&corrupt=6291456&event=started&numwant=49&no_peer_id=1&compact=1&key=GgcvsYE5&azver=3
+---
+2012/05/29 13:45:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%E7T%7F.%B4%BB%40%9C%AAq%B3%28%B9L%BA6%BC%E2B%7D&info_hash=%ADe%93o%9E%14%B9%E1-%AFJ%8E%D5%D8%FEm%9D%A0%0C%A7&info_hash=%F2%FB%7E%BB%10%F2%3F%18w%7F%29%FA%E6%F3Ne%16%28%96u&info_hash=%8Cl%93%B2-%12R%05%19%ECx%CAI%3D%C0os%EE%94%C7&info_hash=%94N%F3%40%21%BE%89v%5CZ%A2%28%9F%86%D5%D6%28%20%FE%2B&info_hash=%05%E8j%40%F0%88%FC%BD%9D%DA%ADJ%82k%0Bpe%8E%E1%9F&info_hash=G%29%A3T%5C%FC%09%B6%EA%EC%15q%24%BAZ%E0%AD%81%FF%40&info_hash=%0E2%F5%DD%F6M%BA%B0%81%96%80R%26D%3C%A4%7BMu%F9&info_hash=%A4%FD%B0a%1A%98Wj%11c%A6%C8%AD%FA%A6%06%207l-&info_hash=%A0%1C%8A%85%22%EF%20V%C3%7F_%B2%C1%84%DBE%7Cx5%F2&info_hash=%7B%E3z%C7%F6%5D%C7%8B%F8%B1%15b%9E%60%22%0Cc%7F%E0%D1&info_hash=%09%88%FB%D1%A0%97%C0P%88%13%0D%BB%C4%A4%2C%F9*%83%CC%AE&info_hash=%08%28%95%CE%93%D43-r%0A%EE%BDF%B3YQ%12%AF%10%F0&info_hash=%93%1C%9E%84%A9%9AgPt%7E%EE%AA%83%94%B5%95%23dJ%0A&info_hash=%84%B7Y%F5c%94%F6%E4i%895n%CE%02%EE%C4%14%C7%08M&info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A&info_hash=%F1%0A%D7%7C%88%23u%EC%5D%8F%C3%A9%3BW%15%E5v%DA%D0%21&info_hash=%D2%0B%CB%5DPv6%12%16d%F6%C1_%02%89W%9ET%F9%A6&info_hash=4%0C%B9%25%16%A9a%A08qSw%7E3%CF%F5%1Fu%2C%97&info_hash=%AA%E7%E8%A5%96%87%B38%C4F%601%DD%A4%9D%AD%00%D8r%97
+---
+2012/05/29 13:45:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%F7%DCL%EA%85%8D%87%13%07r%99%7DE%B2%AF1%19%94%C9%83&info_hash=%9Cr%FA%A80%B6M%9B%9C%1Bh%CBG%B1%C2V%C6%3B%871&info_hash=%12%85U%E9h%5D3%09%1F%21%24o%C0Jb%D2r%C2%8A3&info_hash=%E1%BC%8C%8A%FA%24k%0A%DF%5B%FD%3CG%F6%89%2B%97%D4%BAq&info_hash=%D8%D3%F3s%93%3D%28%C2%D9%BD%A4%F9%19%7F%8E%0DI%FF%A3%0A&info_hash=%FF%F0y%8D%83N%92%60%D1%CCn%97%FF%F4%12pv%60%CD%A9&info_hash=%2B%BC%C8%07%84%12%FANR%5By%9A%86%9Fs%B8%C85%FC%D7&info_hash=%A9%17%D5%60%E7%9DW%89%E8%D8f%3E%D9%25%B9mB%88%D9%BC&info_hash=%E8%F1%F4%88%15%7D%96v%98y%D4%A4%2C%06%A8%F0%80A%3F%F4&info_hash=%F8%EA%80%DA%0Av_%F4%C6k%3D%28lu5%EB%FF%BF%DC%3B&info_hash=%12o%EF%2C%CC%94k%21%03%D5%17%CD%7FK%3E%8E%5EB%F9v&info_hash=%C8%97B%A5%2F%0AN%93%23%240%14%D9%0E%EF%FF%F8%BD%11%1A&info_hash=%1C%EFQ%23iB-%93Jq%3D%E3%5EN9%87%D0%5Cb%C0&info_hash=D%DFKPm0v%A0i%21S%7EcxzxU%20%9B%F3&info_hash=%C1%29%FC%40r%08V%3E%87l%A4%E6%FF%B7%06%D1%96%10%12%92&info_hash=%CFw%8E-%CF6%A1%8F%AB%F8%83K%29L%2B%C8%FD%AF%26I&info_hash=%A2%B8Ag%3B%80%92%E4%00%7B%B5%F9%CD7%9D%3BV%AF%9F%7C&info_hash=%01%89%06M%10wA%E0*%21J%0B%95%DE%3C%D1p%9B%EA%EB&info_hash=%1A%B9%E9%D6%F6pA%D5g%8Be%ABx%5C%F0%21%AE%9B%D7%27&info_hash=%99%3D%FE%FBu%81bL%9D%03%D2%05%E5%2B%3E%3D%D0%2F%C2%07
+---
+2012/05/29 13:45:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=l%2C%F8%98%A8%8CL%5B%AE%D9%8A%99%1FL%27%25%BF%8B%A1%A4&info_hash=%20%B8%3C%C3%AF%1B%06a%C5%21Nj%97%0F%24%AC%F0%04%B7%AC&info_hash=%8D%EB%2F%7D%18%03l%E6%86%3E%C5%8A%0E%26i%7D%BC%B3x%E9&info_hash=h%0C%01%C6%D4J%01%96D%99up%89%CD%21%3F1Y%F4%5D&info_hash=Ta%08%82%BAA%DE%FEC%E5%F8%02%B9%92%9BR%B2%40%04%7B&info_hash=%17*J%A2%D5%95%FA%B8%AD%DC%F3Q%BC%89%DA%29%FF%8A%40%87
+---
+2012/05/29 13:49:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "announce".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('announce')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/announce?info_hash=%9A7%B7%8AL%8D%D1%BE%05e%E5%E1%7C%27%0A%AC%AB%1D%E8h&peer_id=-AZ4702-x9EjweYEnCFZ&supportcrypto=1&port=40694&azudp=40694&uploaded=481387192&downloaded=1769619471&left=0&corrupt=6291456&event=started&numwant=79&no_peer_id=1&compact=1&key=GgcvsYE5&azver=3
+---
+2012/05/29 14:14:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "announce".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('announce')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/announce?info_hash=%9A7%B7%8AL%8D%D1%BE%05e%E5%E1%7C%27%0A%AC%AB%1D%E8h&peer_id=-AZ4702-x9EjweYEnCFZ&supportcrypto=1&port=40694&azudp=40694&uploaded=887575501&downloaded=1769619471&left=0&corrupt=6291456&event=started&numwant=85&no_peer_id=1&compact=1&key=GgcvsYE5&azver=3
+---
+2012/05/29 14:55:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 14:55:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 14:55:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 15:10:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "announce".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('announce')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/announce?info_hash=%9A7%B7%8AL%8D%D1%BE%05e%E5%E1%7C%27%0A%AC%AB%1D%E8h&peer_id=-AZ4702-x9EjweYEnCFZ&supportcrypto=1&port=40694&azudp=40694&uploaded=1113358909&downloaded=1769619471&left=0&corrupt=6291456&event=started&numwant=85&no_peer_id=1&compact=1&key=GgcvsYE5&azver=3
+---
+2012/05/29 15:45:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%ADe%93o%9E%14%B9%E1-%AFJ%8E%D5%D8%FEm%9D%A0%0C%A7&info_hash=%F2%FB%7E%BB%10%F2%3F%18w%7F%29%FA%E6%F3Ne%16%28%96u&info_hash=%8Cl%93%B2-%12R%05%19%ECx%CAI%3D%C0os%EE%94%C7&info_hash=%94N%F3%40%21%BE%89v%5CZ%A2%28%9F%86%D5%D6%28%20%FE%2B&info_hash=%05%E8j%40%F0%88%FC%BD%9D%DA%ADJ%82k%0Bpe%8E%E1%9F&info_hash=G%29%A3T%5C%FC%09%B6%EA%EC%15q%24%BAZ%E0%AD%81%FF%40&info_hash=%0E2%F5%DD%F6M%BA%B0%81%96%80R%26D%3C%A4%7BMu%F9&info_hash=%A4%FD%B0a%1A%98Wj%11c%A6%C8%AD%FA%A6%06%207l-&info_hash=%A0%1C%8A%85%22%EF%20V%C3%7F_%B2%C1%84%DBE%7Cx5%F2&info_hash=%7B%E3z%C7%F6%5D%C7%8B%F8%B1%15b%9E%60%22%0Cc%7F%E0%D1&info_hash=%09%88%FB%D1%A0%97%C0P%88%13%0D%BB%C4%A4%2C%F9*%83%CC%AE&info_hash=%08%28%95%CE%93%D43-r%0A%EE%BDF%B3YQ%12%AF%10%F0&info_hash=%93%1C%9E%84%A9%9AgPt%7E%EE%AA%83%94%B5%95%23dJ%0A&info_hash=%84%B7Y%F5c%94%F6%E4i%895n%CE%02%EE%C4%14%C7%08M&info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A&info_hash=%F1%0A%D7%7C%88%23u%EC%5D%8F%C3%A9%3BW%15%E5v%DA%D0%21&info_hash=%D2%0B%CB%5DPv6%12%16d%F6%C1_%02%89W%9ET%F9%A6&info_hash=4%0C%B9%25%16%A9a%A08qSw%7E3%CF%F5%1Fu%2C%97&info_hash=%AA%E7%E8%A5%96%87%B38%C4F%601%DD%A4%9D%AD%00%D8r%97&info_hash=%F7%DCL%EA%85%8D%87%13%07r%99%7DE%B2%AF1%19%94%C9%83
+---
+2012/05/29 15:46:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%9Cr%FA%A80%B6M%9B%9C%1Bh%CBG%B1%C2V%C6%3B%871&info_hash=%12%85U%E9h%5D3%09%1F%21%24o%C0Jb%D2r%C2%8A3&info_hash=%E1%BC%8C%8A%FA%24k%0A%DF%5B%FD%3CG%F6%89%2B%97%D4%BAq&info_hash=%E7T%7F.%B4%BB%40%9C%AAq%B3%28%B9L%BA6%BC%E2B%7D&info_hash=%D8%D3%F3s%93%3D%28%C2%D9%BD%A4%F9%19%7F%8E%0DI%FF%A3%0A&info_hash=%FF%F0y%8D%83N%92%60%D1%CCn%97%FF%F4%12pv%60%CD%A9&info_hash=%2B%BC%C8%07%84%12%FANR%5By%9A%86%9Fs%B8%C85%FC%D7&info_hash=%A9%17%D5%60%E7%9DW%89%E8%D8f%3E%D9%25%B9mB%88%D9%BC&info_hash=%E8%F1%F4%88%15%7D%96v%98y%D4%A4%2C%06%A8%F0%80A%3F%F4&info_hash=%F8%EA%80%DA%0Av_%F4%C6k%3D%28lu5%EB%FF%BF%DC%3B&info_hash=%12o%EF%2C%CC%94k%21%03%D5%17%CD%7FK%3E%8E%5EB%F9v&info_hash=%C8%97B%A5%2F%0AN%93%23%240%14%D9%0E%EF%FF%F8%BD%11%1A&info_hash=%1C%EFQ%23iB-%93Jq%3D%E3%5EN9%87%D0%5Cb%C0&info_hash=D%DFKPm0v%A0i%21S%7EcxzxU%20%9B%F3&info_hash=%C1%29%FC%40r%08V%3E%87l%A4%E6%FF%B7%06%D1%96%10%12%92&info_hash=%CFw%8E-%CF6%A1%8F%AB%F8%83K%29L%2B%C8%FD%AF%26I&info_hash=%A2%B8Ag%3B%80%92%E4%00%7B%B5%F9%CD7%9D%3BV%AF%9F%7C&info_hash=%01%89%06M%10wA%E0*%21J%0B%95%DE%3C%D1p%9B%EA%EB&info_hash=%1A%B9%E9%D6%F6pA%D5g%8Be%ABx%5C%F0%21%AE%9B%D7%27&info_hash=%99%3D%FE%FBu%81bL%9D%03%D2%05%E5%2B%3E%3D%D0%2F%C2%07
+---
+2012/05/29 15:46:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=l%2C%F8%98%A8%8CL%5B%AE%D9%8A%99%1FL%27%25%BF%8B%A1%A4&info_hash=%20%B8%3C%C3%AF%1B%06a%C5%21Nj%97%0F%24%AC%F0%04%B7%AC&info_hash=%8D%EB%2F%7D%18%03l%E6%86%3E%C5%8A%0E%26i%7D%BC%B3x%E9&info_hash=h%0C%01%C6%D4J%01%96D%99up%89%CD%21%3F1Y%F4%5D&info_hash=Ta%08%82%BAA%DE%FEC%E5%F8%02%B9%92%9BR%B2%40%04%7B&info_hash=%17*J%A2%D5%95%FA%B8%AD%DC%F3Q%BC%89%DA%29%FF%8A%40%87
+---
+2012/05/29 16:45:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%ADe%93o%9E%14%B9%E1-%AFJ%8E%D5%D8%FEm%9D%A0%0C%A7&info_hash=%F2%FB%7E%BB%10%F2%3F%18w%7F%29%FA%E6%F3Ne%16%28%96u&info_hash=%8Cl%93%B2-%12R%05%19%ECx%CAI%3D%C0os%EE%94%C7&info_hash=%94N%F3%40%21%BE%89v%5CZ%A2%28%9F%86%D5%D6%28%20%FE%2B&info_hash=%05%E8j%40%F0%88%FC%BD%9D%DA%ADJ%82k%0Bpe%8E%E1%9F&info_hash=G%29%A3T%5C%FC%09%B6%EA%EC%15q%24%BAZ%E0%AD%81%FF%40&info_hash=%0E2%F5%DD%F6M%BA%B0%81%96%80R%26D%3C%A4%7BMu%F9&info_hash=%A4%FD%B0a%1A%98Wj%11c%A6%C8%AD%FA%A6%06%207l-&info_hash=%A0%1C%8A%85%22%EF%20V%C3%7F_%B2%C1%84%DBE%7Cx5%F2&info_hash=%7B%E3z%C7%F6%5D%C7%8B%F8%B1%15b%9E%60%22%0Cc%7F%E0%D1&info_hash=%09%88%FB%D1%A0%97%C0P%88%13%0D%BB%C4%A4%2C%F9*%83%CC%AE&info_hash=%08%28%95%CE%93%D43-r%0A%EE%BDF%B3YQ%12%AF%10%F0&info_hash=%93%1C%9E%84%A9%9AgPt%7E%EE%AA%83%94%B5%95%23dJ%0A&info_hash=%84%B7Y%F5c%94%F6%E4i%895n%CE%02%EE%C4%14%C7%08M&info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A&info_hash=%F1%0A%D7%7C%88%23u%EC%5D%8F%C3%A9%3BW%15%E5v%DA%D0%21&info_hash=%D2%0B%CB%5DPv6%12%16d%F6%C1_%02%89W%9ET%F9%A6&info_hash=4%0C%B9%25%16%A9a%A08qSw%7E3%CF%F5%1Fu%2C%97&info_hash=%AA%E7%E8%A5%96%87%B38%C4F%601%DD%A4%9D%AD%00%D8r%97&info_hash=%F7%DCL%EA%85%8D%87%13%07r%99%7DE%B2%AF1%19%94%C9%83
+---
+2012/05/29 16:46:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%9Cr%FA%A80%B6M%9B%9C%1Bh%CBG%B1%C2V%C6%3B%871&info_hash=%12%85U%E9h%5D3%09%1F%21%24o%C0Jb%D2r%C2%8A3&info_hash=%E1%BC%8C%8A%FA%24k%0A%DF%5B%FD%3CG%F6%89%2B%97%D4%BAq&info_hash=%E7T%7F.%B4%BB%40%9C%AAq%B3%28%B9L%BA6%BC%E2B%7D&info_hash=%D8%D3%F3s%93%3D%28%C2%D9%BD%A4%F9%19%7F%8E%0DI%FF%A3%0A&info_hash=%FF%F0y%8D%83N%92%60%D1%CCn%97%FF%F4%12pv%60%CD%A9&info_hash=%2B%BC%C8%07%84%12%FANR%5By%9A%86%9Fs%B8%C85%FC%D7&info_hash=%A9%17%D5%60%E7%9DW%89%E8%D8f%3E%D9%25%B9mB%88%D9%BC&info_hash=%E8%F1%F4%88%15%7D%96v%98y%D4%A4%2C%06%A8%F0%80A%3F%F4&info_hash=%F8%EA%80%DA%0Av_%F4%C6k%3D%28lu5%EB%FF%BF%DC%3B&info_hash=%12o%EF%2C%CC%94k%21%03%D5%17%CD%7FK%3E%8E%5EB%F9v&info_hash=%C8%97B%A5%2F%0AN%93%23%240%14%D9%0E%EF%FF%F8%BD%11%1A&info_hash=%1C%EFQ%23iB-%93Jq%3D%E3%5EN9%87%D0%5Cb%C0&info_hash=D%DFKPm0v%A0i%21S%7EcxzxU%20%9B%F3&info_hash=%C1%29%FC%40r%08V%3E%87l%A4%E6%FF%B7%06%D1%96%10%12%92&info_hash=%CFw%8E-%CF6%A1%8F%AB%F8%83K%29L%2B%C8%FD%AF%26I&info_hash=%A2%B8Ag%3B%80%92%E4%00%7B%B5%F9%CD7%9D%3BV%AF%9F%7C&info_hash=%01%89%06M%10wA%E0*%21J%0B%95%DE%3C%D1p%9B%EA%EB&info_hash=%1A%B9%E9%D6%F6pA%D5g%8Be%ABx%5C%F0%21%AE%9B%D7%27&info_hash=%99%3D%FE%FBu%81bL%9D%03%D2%05%E5%2B%3E%3D%D0%2F%C2%07
+---
+2012/05/29 16:46:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=l%2C%F8%98%A8%8CL%5B%AE%D9%8A%99%1FL%27%25%BF%8B%A1%A4&info_hash=%20%B8%3C%C3%AF%1B%06a%C5%21Nj%97%0F%24%AC%F0%04%B7%AC&info_hash=%8D%EB%2F%7D%18%03l%E6%86%3E%C5%8A%0E%26i%7D%BC%B3x%E9&info_hash=h%0C%01%C6%D4J%01%96D%99up%89%CD%21%3F1Y%F4%5D&info_hash=Ta%08%82%BAA%DE%FEC%E5%F8%02%B9%92%9BR%B2%40%04%7B&info_hash=%17*J%A2%D5%95%FA%B8%AD%DC%F3Q%BC%89%DA%29%FF%8A%40%87
+---
+2012/05/29 17:45:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%ADe%93o%9E%14%B9%E1-%AFJ%8E%D5%D8%FEm%9D%A0%0C%A7&info_hash=%F2%FB%7E%BB%10%F2%3F%18w%7F%29%FA%E6%F3Ne%16%28%96u&info_hash=%8Cl%93%B2-%12R%05%19%ECx%CAI%3D%C0os%EE%94%C7&info_hash=%94N%F3%40%21%BE%89v%5CZ%A2%28%9F%86%D5%D6%28%20%FE%2B&info_hash=%05%E8j%40%F0%88%FC%BD%9D%DA%ADJ%82k%0Bpe%8E%E1%9F&info_hash=G%29%A3T%5C%FC%09%B6%EA%EC%15q%24%BAZ%E0%AD%81%FF%40&info_hash=%0E2%F5%DD%F6M%BA%B0%81%96%80R%26D%3C%A4%7BMu%F9&info_hash=%A4%FD%B0a%1A%98Wj%11c%A6%C8%AD%FA%A6%06%207l-&info_hash=%A0%1C%8A%85%22%EF%20V%C3%7F_%B2%C1%84%DBE%7Cx5%F2&info_hash=%7B%E3z%C7%F6%5D%C7%8B%F8%B1%15b%9E%60%22%0Cc%7F%E0%D1&info_hash=%09%88%FB%D1%A0%97%C0P%88%13%0D%BB%C4%A4%2C%F9*%83%CC%AE&info_hash=%08%28%95%CE%93%D43-r%0A%EE%BDF%B3YQ%12%AF%10%F0&info_hash=%93%1C%9E%84%A9%9AgPt%7E%EE%AA%83%94%B5%95%23dJ%0A&info_hash=%84%B7Y%F5c%94%F6%E4i%895n%CE%02%EE%C4%14%C7%08M&info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A&info_hash=%F1%0A%D7%7C%88%23u%EC%5D%8F%C3%A9%3BW%15%E5v%DA%D0%21&info_hash=%D2%0B%CB%5DPv6%12%16d%F6%C1_%02%89W%9ET%F9%A6&info_hash=4%0C%B9%25%16%A9a%A08qSw%7E3%CF%F5%1Fu%2C%97&info_hash=%AA%E7%E8%A5%96%87%B38%C4F%601%DD%A4%9D%AD%00%D8r%97&info_hash=%F7%DCL%EA%85%8D%87%13%07r%99%7DE%B2%AF1%19%94%C9%83
+---
+2012/05/29 17:46:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%9Cr%FA%A80%B6M%9B%9C%1Bh%CBG%B1%C2V%C6%3B%871&info_hash=%12%85U%E9h%5D3%09%1F%21%24o%C0Jb%D2r%C2%8A3&info_hash=%E1%BC%8C%8A%FA%24k%0A%DF%5B%FD%3CG%F6%89%2B%97%D4%BAq&info_hash=%E7T%7F.%B4%BB%40%9C%AAq%B3%28%B9L%BA6%BC%E2B%7D&info_hash=%D8%D3%F3s%93%3D%28%C2%D9%BD%A4%F9%19%7F%8E%0DI%FF%A3%0A&info_hash=%FF%F0y%8D%83N%92%60%D1%CCn%97%FF%F4%12pv%60%CD%A9&info_hash=%2B%BC%C8%07%84%12%FANR%5By%9A%86%9Fs%B8%C85%FC%D7&info_hash=%A9%17%D5%60%E7%9DW%89%E8%D8f%3E%D9%25%B9mB%88%D9%BC&info_hash=%E8%F1%F4%88%15%7D%96v%98y%D4%A4%2C%06%A8%F0%80A%3F%F4&info_hash=%F8%EA%80%DA%0Av_%F4%C6k%3D%28lu5%EB%FF%BF%DC%3B&info_hash=%12o%EF%2C%CC%94k%21%03%D5%17%CD%7FK%3E%8E%5EB%F9v&info_hash=%C8%97B%A5%2F%0AN%93%23%240%14%D9%0E%EF%FF%F8%BD%11%1A&info_hash=%1C%EFQ%23iB-%93Jq%3D%E3%5EN9%87%D0%5Cb%C0&info_hash=D%DFKPm0v%A0i%21S%7EcxzxU%20%9B%F3&info_hash=%C1%29%FC%40r%08V%3E%87l%A4%E6%FF%B7%06%D1%96%10%12%92&info_hash=%CFw%8E-%CF6%A1%8F%AB%F8%83K%29L%2B%C8%FD%AF%26I&info_hash=%A2%B8Ag%3B%80%92%E4%00%7B%B5%F9%CD7%9D%3BV%AF%9F%7C&info_hash=%01%89%06M%10wA%E0*%21J%0B%95%DE%3C%D1p%9B%EA%EB&info_hash=%1A%B9%E9%D6%F6pA%D5g%8Be%ABx%5C%F0%21%AE%9B%D7%27&info_hash=%99%3D%FE%FBu%81bL%9D%03%D2%05%E5%2B%3E%3D%D0%2F%C2%07
+---
+2012/05/29 17:46:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=l%2C%F8%98%A8%8CL%5B%AE%D9%8A%99%1FL%27%25%BF%8B%A1%A4&info_hash=%20%B8%3C%C3%AF%1B%06a%C5%21Nj%97%0F%24%AC%F0%04%B7%AC&info_hash=%8D%EB%2F%7D%18%03l%E6%86%3E%C5%8A%0E%26i%7D%BC%B3x%E9&info_hash=h%0C%01%C6%D4J%01%96D%99up%89%CD%21%3F1Y%F4%5D&info_hash=Ta%08%82%BAA%DE%FEC%E5%F8%02%B9%92%9BR%B2%40%04%7B&info_hash=%17*J%A2%D5%95%FA%B8%AD%DC%F3Q%BC%89%DA%29%FF%8A%40%87
+---
+2012/05/29 17:50:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 17:50:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 17:50:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/05/29 18:22:13 [error] [php] Undefined variable: user_profile (C:\Programmering\xampp\htdocs\blog\protected\modules\yiiauth\controllers\DefaultController.php:73)
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(287): DefaultController->runAction()
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): DefaultController->runActionWithFilters()
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): DefaultController->run()
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#7 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\Programmering\xampp\htdocs\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiiauth/default/authenticatewith/provider/twitter
+in C:\Programmering\xampp\htdocs\blog\protected\modules\yiiauth\controllers\DefaultController.php (73)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\yiiauth\controllers\DefaultController.php (55)
+in C:\Programmering\xampp\htdocs\blog\index.php (13)
+2012/05/29 18:22:59 [error] [php] Undefined variable: user (C:\Programmering\xampp\htdocs\blog\protected\models\User.php:149)
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\blog\protected\modules\yiiauth\controllers\DefaultController.php(76): User->save()
+#1 C:\Programmering\xampp\htdocs\blog\protected\modules\yiiauth\controllers\DefaultController.php(55): DefaultController->isNewUser()
+#2 unknown(0): DefaultController->actionauthenticatewith()
+#3 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(287): DefaultController->runAction()
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): DefaultController->runActionWithFilters()
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): DefaultController->run()
+#9 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#10 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\Programmering\xampp\htdocs\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiiauth/default/authenticatewith/provider/twitter
+in C:\Programmering\xampp\htdocs\blog\protected\models\User.php (149)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\yiiauth\controllers\DefaultController.php (76)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\yiiauth\controllers\DefaultController.php (55)
+2012/05/29 18:25:03 [error] [php] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists (C:\Programmering\xampp\htdocs\blog\protected\models\User.php:150)
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(787): User->insert()
+#1 C:\Programmering\xampp\htdocs\blog\protected\modules\yiiauth\controllers\DefaultController.php(76): User->save()
+#2 C:\Programmering\xampp\htdocs\blog\protected\modules\yiiauth\controllers\DefaultController.php(55): DefaultController->isNewUser()
+#3 unknown(0): DefaultController->actionauthenticatewith()
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(287): DefaultController->runAction()
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): DefaultController->runActionWithFilters()
+#9 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): DefaultController->run()
+#10 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#11 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 C:\Programmering\xampp\htdocs\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiiauth/default/authenticatewith/provider/twitter
+in C:\Programmering\xampp\htdocs\blog\protected\models\User.php (150)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\yiiauth\controllers\DefaultController.php (76)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\yiiauth\controllers\DefaultController.php (55)
+2012/05/29 18:25:57 [error] [php] Undefined variable: user_profile (C:\Programmering\xampp\htdocs\blog\protected\modules\yiiauth\controllers\DefaultController.php:81)
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(287): DefaultController->runAction()
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): DefaultController->runActionWithFilters()
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): DefaultController->run()
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#7 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\Programmering\xampp\htdocs\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiiauth/default/authenticatewith/provider/twitter
+in C:\Programmering\xampp\htdocs\blog\protected\modules\yiiauth\controllers\DefaultController.php (81)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\yiiauth\controllers\DefaultController.php (55)
+in C:\Programmering\xampp\htdocs\blog\index.php (13)
+2012/05/29 18:46:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%ADe%93o%9E%14%B9%E1-%AFJ%8E%D5%D8%FEm%9D%A0%0C%A7&info_hash=%F2%FB%7E%BB%10%F2%3F%18w%7F%29%FA%E6%F3Ne%16%28%96u&info_hash=%8Cl%93%B2-%12R%05%19%ECx%CAI%3D%C0os%EE%94%C7&info_hash=%94N%F3%40%21%BE%89v%5CZ%A2%28%9F%86%D5%D6%28%20%FE%2B&info_hash=%05%E8j%40%F0%88%FC%BD%9D%DA%ADJ%82k%0Bpe%8E%E1%9F&info_hash=G%29%A3T%5C%FC%09%B6%EA%EC%15q%24%BAZ%E0%AD%81%FF%40&info_hash=%0E2%F5%DD%F6M%BA%B0%81%96%80R%26D%3C%A4%7BMu%F9&info_hash=%A4%FD%B0a%1A%98Wj%11c%A6%C8%AD%FA%A6%06%207l-&info_hash=%A0%1C%8A%85%22%EF%20V%C3%7F_%B2%C1%84%DBE%7Cx5%F2&info_hash=%7B%E3z%C7%F6%5D%C7%8B%F8%B1%15b%9E%60%22%0Cc%7F%E0%D1&info_hash=%09%88%FB%D1%A0%97%C0P%88%13%0D%BB%C4%A4%2C%F9*%83%CC%AE&info_hash=%08%28%95%CE%93%D43-r%0A%EE%BDF%B3YQ%12%AF%10%F0&info_hash=%93%1C%9E%84%A9%9AgPt%7E%EE%AA%83%94%B5%95%23dJ%0A&info_hash=%84%B7Y%F5c%94%F6%E4i%895n%CE%02%EE%C4%14%C7%08M&info_hash=%EA4%3A%7B%E0e%C5k%40%E1%8B%8E%2C%C3%20%D0c%05%0B%3A&info_hash=%F1%0A%D7%7C%88%23u%EC%5D%8F%C3%A9%3BW%15%E5v%DA%D0%21&info_hash=%D2%0B%CB%5DPv6%12%16d%F6%C1_%02%89W%9ET%F9%A6&info_hash=4%0C%B9%25%16%A9a%A08qSw%7E3%CF%F5%1Fu%2C%97&info_hash=%AA%E7%E8%A5%96%87%B38%C4F%601%DD%A4%9D%AD%00%D8r%97&info_hash=%F7%DCL%EA%85%8D%87%13%07r%99%7DE%B2%AF1%19%94%C9%83
+---
+2012/05/29 18:46:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=%9Cr%FA%A80%B6M%9B%9C%1Bh%CBG%B1%C2V%C6%3B%871&info_hash=%12%85U%E9h%5D3%09%1F%21%24o%C0Jb%D2r%C2%8A3&info_hash=%E1%BC%8C%8A%FA%24k%0A%DF%5B%FD%3CG%F6%89%2B%97%D4%BAq&info_hash=%E7T%7F.%B4%BB%40%9C%AAq%B3%28%B9L%BA6%BC%E2B%7D&info_hash=%D8%D3%F3s%93%3D%28%C2%D9%BD%A4%F9%19%7F%8E%0DI%FF%A3%0A&info_hash=%FF%F0y%8D%83N%92%60%D1%CCn%97%FF%F4%12pv%60%CD%A9&info_hash=%2B%BC%C8%07%84%12%FANR%5By%9A%86%9Fs%B8%C85%FC%D7&info_hash=%A9%17%D5%60%E7%9DW%89%E8%D8f%3E%D9%25%B9mB%88%D9%BC&info_hash=%E8%F1%F4%88%15%7D%96v%98y%D4%A4%2C%06%A8%F0%80A%3F%F4&info_hash=%F8%EA%80%DA%0Av_%F4%C6k%3D%28lu5%EB%FF%BF%DC%3B&info_hash=%12o%EF%2C%CC%94k%21%03%D5%17%CD%7FK%3E%8E%5EB%F9v&info_hash=%C8%97B%A5%2F%0AN%93%23%240%14%D9%0E%EF%FF%F8%BD%11%1A&info_hash=%1C%EFQ%23iB-%93Jq%3D%E3%5EN9%87%D0%5Cb%C0&info_hash=D%DFKPm0v%A0i%21S%7EcxzxU%20%9B%F3&info_hash=%C1%29%FC%40r%08V%3E%87l%A4%E6%FF%B7%06%D1%96%10%12%92&info_hash=%CFw%8E-%CF6%A1%8F%AB%F8%83K%29L%2B%C8%FD%AF%26I&info_hash=%A2%B8Ag%3B%80%92%E4%00%7B%B5%F9%CD7%9D%3BV%AF%9F%7C&info_hash=%01%89%06M%10wA%E0*%21J%0B%95%DE%3C%D1p%9B%EA%EB&info_hash=%1A%B9%E9%D6%F6pA%D5g%8Be%ABx%5C%F0%21%AE%9B%D7%27&info_hash=%99%3D%FE%FBu%81bL%9D%03%D2%05%E5%2B%3E%3D%D0%2F%C2%07
+---
+2012/05/29 18:46:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('scrape')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=l%2C%F8%98%A8%8CL%5B%AE%D9%8A%99%1FL%27%25%BF%8B%A1%A4&info_hash=%20%B8%3C%C3%AF%1B%06a%C5%21Nj%97%0F%24%AC%F0%04%B7%AC&info_hash=%8D%EB%2F%7D%18%03l%E6%86%3E%C5%8A%0E%26i%7D%BC%B3x%E9&info_hash=h%0C%01%C6%D4J%01%96D%99up%89%CD%21%3F1Y%F4%5D&info_hash=Ta%08%82%BAA%DE%FEC%E5%F8%02%B9%92%9BR%B2%40%04%7B&info_hash=%17*J%A2%D5%95%FA%B8%AD%DC%F3Q%BC%89%DA%29%FF%8A%40%87
+---
+2012/05/29 18:54:34 [error] [php] Missing argument 1 for DefaultController::authenticate(), called in C:\Programmering\xampp\htdocs\blog\protected\modules\yiiauth\controllers\DefaultController.php on line 95 and defined (C:\Programmering\xampp\htdocs\blog\protected\modules\yiiauth\controllers\DefaultController.php:109)
+Stack trace:
+#0 unknown(0): DefaultController->actionauthenticatewith()
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#3 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(287): DefaultController->runAction()
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): DefaultController->runActionWithFilters()
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): DefaultController->run()
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#8 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\Programmering\xampp\htdocs\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiiauth/default/authenticatewith/provider/twitter
+in C:\Programmering\xampp\htdocs\blog\protected\modules\yiiauth\controllers\DefaultController.php (109)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\yiiauth\controllers\DefaultController.php (95)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\yiiauth\controllers\DefaultController.php (58)
+2012/05/29 18:55:09 [error] [exception.CException] exception 'CException' with message 'Property "DefaultController._id" is not defined.' in C:\Programmering\xampp\htdocs\yii\framework\base\CComponent.php:174
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\blog\protected\modules\yiiauth\controllers\DefaultController.php(116): CComponent->__set('_id', '25')
+#1 C:\Programmering\xampp\htdocs\blog\protected\modules\yiiauth\controllers\DefaultController.php(95): DefaultController->authenticate('105101246')
+#2 C:\Programmering\xampp\htdocs\blog\protected\modules\yiiauth\controllers\DefaultController.php(58): DefaultController->autoLogin(Object(User))
+#3 [internal function]: DefaultController->actionauthenticatewith('twitter')
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(DefaultController), Array)
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(DefaultController), Object(ReflectionMethod), Array)
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('authenticatewit...')
+#10 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('yiiauth/default...')
+#11 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/yiiauth/default/authenticatewith/provider/twitter
+HTTP_REFERER=http://83.233.118.50/yiiauth/default/authenticatewith/provider/twitter
+---
+2012/05/29 18:56:37 [error] [exception.CException] exception 'CException' with message 'UserIdentity and its behaviors do not have a method or closure named "hybridauth".' in C:\Programmering\xampp\htdocs\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\blog\protected\modules\yiiauth\controllers\DefaultController.php(95): CComponent->__call('hybridauth', Array)
+#1 C:\Programmering\xampp\htdocs\blog\protected\modules\yiiauth\controllers\DefaultController.php(95): UserIdentity->hybridauth()
+#2 C:\Programmering\xampp\htdocs\blog\protected\modules\yiiauth\controllers\DefaultController.php(58): DefaultController->autoLogin(Object(User))
+#3 [internal function]: DefaultController->actionauthenticatewith('twitter')
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(DefaultController), Array)
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(DefaultController), Object(ReflectionMethod), Array)
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('authenticatewit...')
+#10 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('yiiauth/default...')
+#11 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/yiiauth/default/authenticatewith/provider/twitter
+HTTP_REFERER=http://83.233.118.50/yiiauth/default/authenticatewith/provider/twitter
+---
+2012/05/29 18:57:08 [error] [php] Missing argument 1 for UserIdentity::hybridauth(), called in C:\Programmering\xampp\htdocs\blog\protected\modules\yiiauth\controllers\DefaultController.php on line 95 and defined (C:\Programmering\xampp\htdocs\blog\protected\components\UserIdentity.php:20)
+Stack trace:
+#0 unknown(0): DefaultController->actionauthenticatewith()
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#3 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(287): DefaultController->runAction()
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): DefaultController->runActionWithFilters()
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): DefaultController->run()
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#8 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\Programmering\xampp\htdocs\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiiauth/default/authenticatewith/provider/twitter
+in C:\Programmering\xampp\htdocs\blog\protected\components\UserIdentity.php (20)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\yiiauth\controllers\DefaultController.php (95)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\yiiauth\controllers\DefaultController.php (58)
+2012/05/29 18:57:30 [error] [php] Undefined variable: user_profile (C:\Programmering\xampp\htdocs\blog\protected\modules\yiiauth\views\default\profile.php:10)
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): DefaultController->renderFile()
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(783): DefaultController->renderPartial()
+#2 C:\Programmering\xampp\htdocs\blog\protected\modules\yiiauth\controllers\DefaultController.php(59): DefaultController->render()
+#3 unknown(0): DefaultController->actionauthenticatewith()
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(287): DefaultController->runAction()
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): DefaultController->runActionWithFilters()
+#9 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): DefaultController->run()
+#10 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#11 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 C:\Programmering\xampp\htdocs\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiiauth/default/authenticatewith/provider/twitter
+in C:\Programmering\xampp\htdocs\blog\protected\modules\yiiauth\views\default\profile.php (10)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\yiiauth\controllers\DefaultController.php (59)
+in C:\Programmering\xampp\htdocs\blog\index.php (13)
+2012/05/29 18:59:39 [error] [php] Undefined variable: error (C:\Programmering\xampp\htdocs\blog\protected\modules\yiiauth\controllers\DefaultController.php:67)
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(287): DefaultController->runAction()
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): DefaultController->runActionWithFilters()
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(748): DefaultController->run()
+#3 C:\Programmering\xampp\htdocs\blog\protected\modules\yiiauth\controllers\DefaultController.php(59): DefaultController->forward()
+#4 unknown(0): DefaultController->actionauthenticatewith()
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(287): DefaultController->runAction()
+#9 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): DefaultController->runActionWithFilters()
+#10 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): DefaultController->run()
+#11 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#12 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 C:\Programmering\xampp\htdocs\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiiauth/default/authenticatewith/provider/twitter
+in C:\Programmering\xampp\htdocs\blog\protected\modules\yiiauth\controllers\DefaultController.php (67)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\yiiauth\controllers\DefaultController.php (59)
+in C:\Programmering\xampp\htdocs\blog\index.php (13)
+2012/05/29 19:04:49 [error] [exception.CException] exception 'CException' with message 'Property "User.facebook" is not defined.' in C:\Programmering\xampp\htdocs\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('facebook')
+#1 C:\Programmering\xampp\htdocs\blog\protected\views\user\view.php(27): CActiveRecord->__get('facebook')
+#2 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\Programmerin...')
+#3 C:\Programmering\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Programmerin...', Array, true)
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Programmerin...', Array, true)
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('view', Array, true)
+#6 C:\Programmering\xampp\htdocs\blog\protected\controllers\UserController.php(79): CController->render('view', Array)
+#7 [internal function]: UserController->actionView(NULL, '105101246')
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#9 C:\Programmering\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#10 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#13 C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php(51): CFilter->filter(Object(CFilterChain))
+#14 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#15 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#17 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#19 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('user/view')
+#20 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/profile/u/105101246
+HTTP_REFERER=http://83.233.118.50/yiiauth/default/authenticatewith/provider/twitter
+---
+2012/05/29 19:06:32 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php:71
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RightsFilter.php(57): RController->accessDenied()
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilter.php(39): RightsFilter->preFilter(Object(CFilterChain))
+#2 C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php(51): CFilter->filter(Object(CFilterChain))
+#3 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(XUploadAction), Array)
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('upload')
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('file/upload')
+#9 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/file/upload?parent_id=%2Ffiles%2Fusers%2F25
+HTTP_REFERER=http://83.233.118.50/profile/u/105101246
+---
+2012/05/29 19:06:46 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php:71
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RightsFilter.php(57): RController->accessDenied()
+#1 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilter.php(39): RightsFilter->preFilter(Object(CFilterChain))
+#2 C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php(51): CFilter->filter(Object(CFilterChain))
+#3 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#4 C:\Programmering\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\Programmering\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(XUploadAction), Array)
+#7 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CController->run('upload')
+#8 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('file/upload')
+#9 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/file/upload?parent_id=%2Ffiles%2Fusers%2F25
+HTTP_REFERER=http://83.233.118.50/profile/u/105101246
+---
+2012/05/29 19:07:37 [warning] [application] Failed to set unsafe attribute "public_library" of "User".
+in C:\Programmering\xampp\htdocs\blog\protected\controllers\UserController.php (154)
+in C:\Programmering\xampp\htdocs\blog\protected\controllers\UserController.php (73)
+in C:\Programmering\xampp\htdocs\blog\protected\modules\rights\components\RController.php (51)
+2012/05/29 19:13:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "robots.txt".' in C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\Programmering\xampp\htdocs\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('robots.txt')
+#1 C:\Programmering\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Programmering\xampp\htdocs\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+---

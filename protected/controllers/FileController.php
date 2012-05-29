@@ -22,7 +22,7 @@ class FileController extends Controller{
 	}
 	public function allowedActions()
 	{
-	 	return '';
+	 	return 'upload';
 	}
 	/**
 	 * This is the default 'index' action that is invoked
@@ -39,25 +39,7 @@ class FileController extends Controller{
 		
 	}
 
-	/**
-	 * Single queued file upload
-	 */
-	public function actionQueue(){
-		$model = new XUploadForm;
-		$this->render('queue', array(
-			'model' => $model,
-		));
-	}
 
-	/**
-	 * Single queued file upload
-	 */
-	public function actionMultiple(){
-		$model = new XUploadForm;
-		$this->render('multiple', array(
-			'model' => $model,
-		));
-	}
 	
 		/**
 	 * This is the action to handle external exceptions.

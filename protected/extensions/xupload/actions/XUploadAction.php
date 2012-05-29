@@ -140,7 +140,7 @@ class XUploadAction extends CAction {
 						$model -> name = 'avatar'.$matches['0']['0'];
 						}
                     $model -> file -> saveAs($path . $model -> name);
-                    echo json_encode(array( array("name" => $model -> name, "type" => $model -> mime_type, "size" => $model -> size, "url" => $publicPath . $model -> name, "delete_url" => $this -> getController() -> createUrl("upload", array("_method" => "delete", "file" => $path.$model->name)), "delete_type" => "POST")));
+                    echo json_encode(array( array("name" => $model -> name, "type" => $model -> mime_type, "size" => $model -> size, "url" => 'http://83.233.118.50/'.$publicPath . $model -> name, "delete_url" => $this -> getController() -> createUrl("upload", array("_method" => "delete", "file" => $path.$model->name)), "delete_type" => "POST")));
                 } else {
                     echo json_encode(array( array("error" => $model -> getErrors('file'), )));
                     Yii::log("XUploadAction: " . CVarDumper::dumpAsString($model -> getErrors()), CLogger::LEVEL_ERROR, "xupload.actions.XUploadAction");

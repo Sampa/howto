@@ -63,20 +63,6 @@ class SiteController extends Controller
 	/**
 	 * Displays the login page
 	 */
-	
-/**
-* post_tweet.php
-* Example of posting a tweet with OAuth
-* Latest copy of this code: 
-* http://140dev.com/twitter-api-programming-tutorials/hello-twitter-oauth-php/
-* @author Adam Green <140dev@gmail.com>
-* @license GNU Public License
-*/
-
-
-
-
-
 	public function actionLogin()
 	{	
 		$model=new LoginForm;

@@ -3,7 +3,7 @@
 class DefaultController extends Controller
 {
 	public function actionIndex(){
-		$this->render('index');	
+		$this->renderPartial('index');	
 	}
 	public function actionauthenticatewith( $provider="" ) {   
 		require_once( '/hybridauth/Hybrid/Auth.php' );
@@ -48,6 +48,10 @@ class DefaultController extends Controller
 			$error .= "<hr /><pre>Trace:<br />" . $e->getTraceAsString() . "</pre>";  
 
 		}
+		/**$user_profile->identifier; //unique id
+		$provider; // the provider name
+		$_GET['openid'];//the extra_info
+		**/
 		$this->render('authenticatewith',array('error'=>$error, 'user_profile'=>$user_profile ) );
 
 	} 

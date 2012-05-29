@@ -9,9 +9,6 @@ class UserController extends Controller
 	/**
 	 * @return array action filters
 	 */
-	public $openid;
-	public $hybridauth_provider_name;
-	public $hybridauth_provider_uid;
 	public function filters()
 	{
 		return array(
@@ -24,85 +21,6 @@ class UserController extends Controller
 	}
 	
 
-	public function actionSocialLogin($provider)
-	{
-    // change the following paths if necessary
-	$config = $this->hybridAuthConfig();
- 
-    // initialize Hybrid_Auth with a given file
-    $hybridauth = new Hybrid_Auth( $config );
-     
-    // try to authenticate with the selected provider
-    $adapter = $hybridauth->authenticate( $provider );
-     
-    // then grab the user profile
-    $user_profile = $adapter->getUserProfile();
-     
-    # and that's it!
-     
-    # beyond that, its up to you sign-in the user if he already exist on your database
-    # or sign-up the user if not.
-     
-    # the following pseudocode is provided only as an example:
-     echo $user_profile->identifier;
-    $user_id = User::model()->find("hybridAuth_provider_name = '".$provider."'");
-     
-    if( $user_id ){ // if user exist on database
-    // create a session for the user whithin your application
-    // and redirect him back to the profile or dashboard page
-    // ...
-    }
-    else{ // if not, create a new one
-   // create_new_user( $provider, $user_profile->identifier, $user_profile->email, ... );
-    }
-    
-   
-	
-	}
-	
-	public function actionpersona(){
-		$url = 'https://browserid.org/verify';  
-		$assert = $_POST['assertion'];  
-		$params = 'assertion='.$assert.'&audience=' . urlencode('http://83.233.118.50');  
-		$url = $this->do_post_request( $url , $params );
-		/*
-		create an user, connect the email info etc log in yada yada
-		
-		*/
-		$data = json_decode($url,true);
-		if ( $data['status'] == "okay" )
-		{	
-			$user = User::model()->find('persona="'.$data['email'].'"');
-			if ( $user )
-			{
-				$this->autoLogin( $user );
-				$this->redirect('/profile/id/'.$user->id);				
-			} else{
-			$this->actionaddUser('browserid',$data);
-			}
-			echo $url;
-		}
-	}
-	public function do_post_request($url, $data, $optional_headers = null)
-	{
-	$params = array('http' => array(
-	'method' => 'POST',
-	'content' => $data
-	));
-	if ($optional_headers!== null) {
-	$params['http']['header'] = $optional_headers;
-	}
-	$ctx = stream_context_create($params);
-	$fp = @fopen($url, 'rb', false, $ctx);
-	if (!$fp) {
-	throw new Exception("Problem with $url, $php_errormsg");
-	}
-	$response = @stream_get_contents($fp);
-	if ($response === false) {
-	throw new Exception("Problem reading data from $url, $php_errormsg");
-	}
-	return $response;
-	} 
 	
 	public function actionReputation($id){
 		$user = $this->loadModel($id);
@@ -132,10 +50,8 @@ class UserController extends Controller
 				$user->username = $userid;
 			}
 		}		
-				// Save to get an id
-		//Set id as username temporarely						
-	
-		//save again
+		// Save to get an id
+
 		if ( $user->save() )
 		{
 			$dir = User::USER_DIR . $user->id; //specifies a path for the users unique file dir
