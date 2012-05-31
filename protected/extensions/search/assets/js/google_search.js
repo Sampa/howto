@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	var config = {
-		siteURL		: 'YOUR_SITE_URL',	// Change this to your site
+		siteURL		: '83.233.118.50',	// Change this to your site
 		searchSite	: true,
 		type		: 'web',
 		append		: false,

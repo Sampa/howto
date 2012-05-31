@@ -24,6 +24,7 @@ return array(
 		'application.extensions.debugtoolbar.*',
 		'ext.xupload.models.XUploadForm',
         'application.components.*',
+		'application.modules.yiiauth.models.*',
 		'application.modules.yiiauth.components.*',
 		'application.extensions.jtogglecolumn.*', 
 		'application.modules.badger.models.*',

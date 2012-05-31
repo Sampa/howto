@@ -127,7 +127,7 @@ public function actionUpdate($id)
         $model = $this->loadModel($id);
  
         // Uncomment the following line if AJAX validation is needed
-        // $this->performAjaxValidation($model);
+        $this->performAjaxValidation($model,"step-form");
 
         if ( isset ( $_POST['Step'] ) )
         {
@@ -137,12 +137,14 @@ public function actionUpdate($id)
 			if ( isset ( $_GET['howtoid'] ) )
 			{
 				$model->howto_id = $_GET['howtoid'];
+				
 			}
             if ( $model->save() )
             {
-				$this->redirect( array( '/howto/view','id'=>$_GET['howtoid'] ) );
-            }
+				$this->redirect( Yii::app()->user->returnUrl );
+            }else{}
         }
+
 		$this->render('update',array('model'=>$model,));
 	}
        

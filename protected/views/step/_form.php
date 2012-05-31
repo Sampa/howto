@@ -1,7 +1,7 @@
 <div class="form">
 
 <?php 
-	$form = $this->beginWidget('CActiveForm', array(
+	$form = $this->beginWidget('BootActiveForm', array(
 	'id'=>'step-form',
 	'enableAjaxValidation'=>true,
 	'enableClientValidation'=>true,
@@ -21,16 +21,15 @@
 
 
 
-	<div class="row">
+	<div ="row-fluid">
 		<?php echo $form->labelEx($model,'title'); ?>
 		<?php echo $form->textField($model,'title',array('size'=>60,'maxlength'=>255)); ?>
 		<?php echo $form->error($model,'title'); ?>
 	</div>
 
-	<div class="row">
+	<div ="row-fluid">
 		<?php echo $form->labelEx($model,'text'); ?>
-		<?php echo $form->textArea($model,'text',
-		array( 'rows'=>6 , 'cols'=>50 , 'style'=>'display:none' ) ); ?>
+		<?php echo $form->textArea($model,'text'); ?>
 		
 		<?php echo $form->error($model,'text'); ?>
 	<?php 
@@ -44,7 +43,7 @@
 
 
 
-	<div class="row buttons">
+	<div ="row-fluid buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save', 
 			array( 'class'=>'btn btn-primary' ) ); ?>
 	</div>

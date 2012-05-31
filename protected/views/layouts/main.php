@@ -25,17 +25,17 @@
 
 <div id="page" >
 
-	
 	<div id="header" style="border:0px solid yellow; height:40px;">
 		<div id="logo" class="span2" style="border:0px solid black;">
 			<a href="<?=Yii::app()->homeUrl;?>">
 				<img src="/images/logo.png" alt="Howto"/>
 			</a>
 		</div>
-		
+	
+		<div class="" style="height:29px; float:left; width:25%; padding: 0px;">
+
 	<?php if ( $this->isGuest ):?>	
 	
-		<div class="" style="height:27px; float:left; width:28%; padding: 0px;">
 
 			<button class="btn btn-primary" id="loginButton"><!-- loginbutton-->
 				Login
@@ -52,10 +52,9 @@
 		
 		<?php endif;?>
 		
-	
+
 		<!--om man är inloggad -->
-		<?php if ( !$this->isGuest ):?>
-		<div class="btn-toolbar" style="margin-top:0px;">
+	<?php if ( !$this->isGuest ):?>
 		<!--userbutton-->
 		<div style="float:left;">
 		<?php
@@ -78,8 +77,10 @@
 				)
 			))); 
 	?>
-		</div>
-<!-- messagebutton--><div style=""><?php 
+	</div> <!-- // user button -->
+	
+	<div style="float:left;">
+<!-- messagebutton--><?php 
 	if ( Yii::app()->getModule('message')->getCountUnreadedMessages($this->userId) > 0 )
 	{
 		$unreadCount = '(' . Yii::app()->getModule('message')->getCountUnreadedMessages($this->userId) . ')'; 
@@ -103,15 +104,11 @@
 			),
 		)); 
 	?>
-
-
-			</div>
-		</div>
-		<?php endif;?>	
-		</div>
-
-	<div style=" position:absolute;top:2px;left:350px;">
-			<!--howtos--><?php 
+		</div><!-- // message button-->
+	<?php endif; // end is logged in?>	
+	
+	<div style="float:right;">
+<!--howtos--><?php 
 		$this->widget('bootstrap.widgets.BootButtonGroup', 
 		array(
 			'type'=>'primary', 
@@ -140,7 +137,10 @@
 			)
 		); 
 	?>
+		</div> <!-- // howtos button-->
 	</div>
+
+
 	
 	<div class="btn-toolbar span8" style="position:absolute; top:2px;right:10px;border:0px solid green; margin:-0px 0 0 -5px; height:auto;">
 	<!-- search -->

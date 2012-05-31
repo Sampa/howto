@@ -96,6 +96,7 @@
         <div class="row-fluid">
             <?php echo $form->labelEx($model,'text'); ?>
             <?php echo $form->textField($model,'text',array('size'=>60,'maxlength'=>255)); ?>
+	
         <span id="success-Slide_text"
               class="hid input-notification-success  success png_bg right"></span>
         <div>

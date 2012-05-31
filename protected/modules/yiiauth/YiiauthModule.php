@@ -99,6 +99,7 @@ return
 		/**
 	* @return string the base URL that contains all published asset files of this module.
 	*/
+	
 	public function getAssetsUrl()
 	{
 	if($this->_assetsUrl===null)

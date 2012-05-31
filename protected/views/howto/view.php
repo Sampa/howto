@@ -82,6 +82,7 @@
 	
 	<!-- steps-->
 	<div id="steps" class="span7" style="clear:both; float:left;">
+
 		<?php if ( $model->stepCount >= 1 ): ?>
 			<h3>
 				<?= $model->stepCount>1 ? $model->stepCount . ' steps' : 'One step'; ?>

@@ -51,6 +51,7 @@ public function   init() {
               Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js_plugins/ajaxform/form_ajax_binding.js', CClientScript::POS_HEAD);
               Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl.'/js_plugins/ajaxform/client_val_form.css','screen');
 
+
  }
 
 
@@ -128,7 +129,8 @@ public function   init() {
                                                  'jquery-ui-1.8.12.custom.min.js'=>false,
                                                  'json2.js'=>false,
                                                  'jquery.form.js'=>false,
-                                                'form_ajax_binding.js'=>false
+                                                'form_ajax_binding.js'=>false,
+
         );
 
         $model=$this->loadModel($_POST['id']);
@@ -207,8 +209,10 @@ public function   init() {
 						$model->picture = $this->saveImage($model);
 						
 						if($model->save(false))
-						{		
-							echo json_encode(array('success'=>true,'id'=>$model->primaryKey) );
+						{	
+							 $title = Howto::model()->getHowtoTitle($model->howto_id);
+							$this->redirect("/howto/".$model->howto_id."/".$title);
+							//echo $model->howto_id;//json_encode(array('success'=>true,'id'=>$model->primaryKey) );
                         } else
                         {
                             echo json_encode(array('success'=>false));
