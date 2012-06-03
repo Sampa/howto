@@ -31,8 +31,8 @@ $('.search-form form').submit(function(){
 ?>
 <div id="slide_div" style="display:none;">
 <div class="right">
-    <input id="add_slide" type="button" style="display:block; clear: both;"
-           value="Add Slide" class="btn btn-primary">
+	<?= CHtml::htmlButton('<i class="icon-plus icon-white"></i> Add slide', 
+					 array('class'=>'btn btn-mini btn-success','id'=>'add_slide','style'=>'clear:both;') );?>
 </div>
 
 <?php

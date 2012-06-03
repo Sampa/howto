@@ -9,9 +9,7 @@ $this->breadcrumbs=array(
 
 	<button id="howtodelete" class="btn btn-danger">
 	<i class="icon-remove icon-white"></i>Delete this Howto</button>
-	
 	<div id="delete_howto_message" style="display:none">
-
 	</div>
 <?php 	
 	echo $this->renderPartial('_form',

@@ -15,7 +15,7 @@
 <script type="text/javascript">
 function getReg(){
   <?php echo CHtml::ajax(array(
-            'url'=>array('/user/register'),
+            'url'=>array('/yiiauth/user/register'),
             'data'=> "js:$(this).serialize()",
             'type'=>'post',
             'dataType'=>'json',

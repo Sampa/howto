@@ -3,7 +3,7 @@
 <div class="row fileupload-buttonbar">
 	<div class="span7">
 		<!-- The fileinput-button span is used to style the file input field as button -->
-		<span class="btn btn-success fileinput-button"> <i class="icon-plus icon-white"></i> <span>Add files...</span>
+		<span class="btn btn-success fileinput-button"> <i class="icon-plus icon-white"></i>
 			<?php
             if ($this -> hasModel()) :
                 echo CHtml::activeFileField($this -> model, $this -> attribute, $htmlOptions) . "\n";
@@ -12,15 +12,15 @@
             endif;
             ?>
 		</span>
-		<button type="submit" class="btn btn-primary start">
+		<button type="submit" class="btn-btn btn-mini btn-primary start">
 			<i class="icon-upload icon-white"></i>
 			<span>Start upload</span>
 		</button>
-		<button type="reset" class="btn btn-warning cancel">
+		<button type="reset" class="btn-btn btn-mini btn-warning cancel">
 			<i class="icon-ban-circle icon-white"></i>
 			<span>Cancel upload</span>
 		</button>
-		<button type="button" class="btn btn-danger delete">
+		<button type="button" class="btn-btn btn-mini btn-danger delete">
 			<i class="icon-trash icon-white"></i>
 			<span>Delete</span>
 		</button>

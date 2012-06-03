@@ -1,28 +1,11 @@
 <?php $this->beginContent('application.views.layouts.main'); ?>
 <div class="span12" style="margin-left: 10px; margin-top: -18px; min-width: 100%; border:0px solid black;"> 
-		<div id="content" style="float:left;border:0px solid green;" class="span1" >
 			<?php echo $content; ?>
-		</div><!-- content -->
-		<div id="sidebar" class="span4" style="border:0px solid red;z-index:15;padding: 0px; position:relative; left:70px;">
+		<div id="sidebar" class="span5" style="border:0px solid red;z-index:15;padding: 0px; position:absolute; left:60%;">
 		
 <!-- siderbar clip--><?php echo $this->clips['sidebar']; ?>
 
-<!-- logged in user bookmarks--> 
-<?php
-	if ( !$this->isGuest ):
-		$bookmarks = Bookmark::model()->getBookmarks($this->userId);
-		if ( $bookmarks ):
-	?> 
-			<div class="well" style=""> <h2>Your Bookmarks</h2>
-				<?php
-					foreach( $bookmarks as $link )
-					{
-						echo $link . '<br/>';
-					}
-				?>
-			</div>
-			
-<?php endif; endif;?>
+
 <!-- tagcloud -->
 			<div class="well" style=""> <h2>Popular tags</h2>
 				<?php 
@@ -50,7 +33,7 @@
 		?>
 		
 		<button class="btn btn-primary" style="margin-top: -20px;" id="searchbutton">
-			<i class="icon-search icon-white"></i> Find
+			<i class="icon-search icon-white"></i>
 		</button>
 		<script type="text/javascript">
 			$("#searchfield").focus(function(){
@@ -85,22 +68,15 @@
 		<div style="float:left;">
 		Shared by	
 		</div>
-		<div style="float:left; margin-top:-8px;">
-			<ul class="nav nav-pills">
-				<li class="dropdown" id="sidebarmenu<?=$model->id;?>">
-					<a class="dropdown-toggle" data-toggle="dropdown" href="#sidebarmenu<?=$model->id;?>">
-						<?= $model->author->username;?>
-						<b class="caret"></b>
-					</a>
-					<ul class="dropdown-menu">
-						<li><a href="<?= User::getUserUrl($model->author->username);?>">View Profile</a></li>
-						<li><a href="/message/compose?id=<?=$model->author->id;?>">Send message</a></li>
-						<li><a href="/howto/show/by?user=<?=$model->author->username;?>">More by <?=$model->author->username;?></a></li>
-						<li><?=$this->renderPartial('//user/reputation',array('id'=>$model->author->id,'reputation'=>$model->author->reputation));?></li>
-					</ul>
-				</li>
-			</ul>
-		</div>
+		<?php
+			$this->widget('UserButton', 
+				array(
+				'id'=>$model->id,
+				'userid'=>$model->author->id,
+				'username'=>$model->author->username,
+				'reputation'=>$model->author->reputation,
+				)); 
+		?>
 <!-- created and last updated dates-->
 		<div >
 			<?php $created = date('F j, Y @ H:m',$model->create_time); ?> on <i> <?=$created;?></i> 

@@ -3,7 +3,7 @@
 	$updated = date('F j, Y',$data->update_time);
 ?>
 
-<div class="Howto">
+<div class="Howto span6" style="border: 0px solid black; margin-left:0px; margin-bottom:-50px;" >
 	<div class="title">
 		<h2>	
 			<?= CHtml::link(CHtml::encode($data->title), $data->url); ?>
@@ -14,22 +14,16 @@
 		<div style="float:left;">
 		Shared by	
 		</div>
-		<div style="float:left; margin-top:-8px;">
-			<ul class="nav nav-pills">
-				<li class="dropdown" id="menu<?=$data->id;?>">
-					<a class="dropdown-toggle" data-toggle="dropdown" href="#menu<?=$data->id;?>">
-						<?= $data->author->username;?>
-						<b class="caret"></b>
-					</a>
-					<ul class="dropdown-menu">
-						<li><a href="<?= User::getUserUrl($data->author->username);?>">View Profile</a></li>
-						<li><a href="/message/compose?id=<?=$data->author->id;?>">Send message</a></li>
-						<li><a href="/howto/show/by?user=<?=$data->author->username;?>">More by <?=$data->author->username;?></a></li>
-						<li><?=$this->renderPartial('/user/reputation',array('id'=>$data->author->id,'reputation'=>$data->author->reputation));?></li>
-					</ul>
-				</li>
-			</ul>
-		</div>
+		<?php
+			$this->widget('UserButton', 
+				array(
+				'id'=>$data->id,
+				'userid'=>$data->author->id,
+				'username'=>$data->author->username,
+				'reputation'=>$data->author->reputation,
+				)); 
+		?>
+	
 <!-- created and last updated dates-->
 		<div >
 			on <i> <?=$created;?></i>
@@ -87,46 +81,55 @@
 		<br/>
 		<div class="edit_area">
 		<?php
-			echo CHtml::encode($data->content);
+			echo $data->content;
 		?>
 		</div>
 	</div>
 	<div class="nav">
-		<?php
-		$steps ="";
-		if (count($data->steps) < 1)
-			$steps = "This howto has no steps...";
-		foreach ( $data->steps as $step ):
-			
-			$steps .=  $step->title.'<br/><div class="well edit_step" ">' . $step->text .'</div>';
-		 endforeach; 
-		 ?>
-		<?= CHtml::link($data->stepCount.' Steps', $data->url.'#steps', array('class'=>'btn btn-primary btn-success', 'data-title'=>'Steps preview', 'data-content'=>$steps, 'rel'=>'popover')); ?>
+
 		<b>Tags:</b>
 		<?= implode(', ', $data->tagLinks); ?>
 		<br/>
-<!--print--><?= CHtml::link('<i class="icon-print icon-white"></i> Print/Pdf', 
-					array('/viewpdf/id/' . $data->id ), array('class'=>'btn btn-primary') );?>		
-		
-<!--bookmark--><?= CHtml::link('<i class="icon-bookmark icon-white"></i> Bookmark ', 
-					array(''), array(
-						'class'=>'btn btn-primary bookmark',  
+<!-- steps-->
+	<?php
+		$steps ="";
+		if (count($data->steps) < 1)
+			$steps = "This howto has no steps...";
+		foreach ( $data->steps as $step ){
+			$steps .=  $step->title.'<br/><div class="well edit_step" ">' . $step->text .'</div>';
+		}; 
+		echo CHtml::link($data->stepCount.' Steps', $data->url.'#steps', array('class'=>'btn btn-mini  ', 'data-title'=>'Steps preview', 'data-content'=>$steps, 'rel'=>'popover')); 
+	?>&nbsp;
+<!--print--><?= CHtml::htmlButton('<i class="icon-print icon-white"></i> Print/Pdf', 
+				array('class'=>'btn btn-mini btn-primary printpdf') );?>		
+	
+<!--bookmark--><?php if(!Yii::app()->user == $data->author->id){
+				echo CHtml::htmlButton('<i class="icon-bookmark icon-white"></i> Bookmark ', 
+					 array(
+						'class'=>'btn btn-mini btn-primary bookmark',  
 						'name'=>$data->id,
-						) );?>
+						) );}?>
 		<div id="bookmark_success_<?=$data->id;?>" style="display:none"></div>
 		
-<!--email--><?= CHtml::link('<i class="icon-envelope icon-white"></i> Mail it', 
-					array(), array('class'=>'btn btn-primary mail',
+<!--email--><?= CHtml::htmlButton('<i class="icon-envelope icon-white"></i> Mail it', 
+					array('class'=>'btn btn-mini btn-primary mail',
 					'name'=>'?id='.$data->id.'&title='.$data->title) );?>	
+<!-- embed -->
+<?= CHtml::htmlButton('<i class="icon-retweet icon-white"></i> Embed', 
+					 array('class'=>'btn btn-mini btn-primary embed','id'=>'embedLink'.$data->id,'name'=>$data->id) );?>
 <!--edit--><?php 
 			if( Yii::app()->user->checkAccess('HowtoUpdateOwn', 
 				array('userid'=>$data->author_id))): ?>
-			<?=CHtml::link('<i class="icon-edit icon-white"></i> Edit', array('/howto/update','id'=>$data->id),
-			array('class'=>'btn btn-primary' ) ); ?> 
+			<button class="btn btn-mini btn-primary" id="edit_content">
+				<i class="icon-edit icon-white"></i> Edit
+			</button> 
+<!--delete--> 
+			<button id="howtodelete" class="btn btn-mini btn-danger">
+				<i class="icon-remove icon-white"></i> Delete
+			</button>
+				<div id="delete_howto_message" style="display:none"></div>
 		<?php endif; ?>   
-<!-- embed -->
-<?= CHtml::htmlButton('<i class="icon-retweet icon-white"></i> Embed', 
-					 array('class'=>'btn btn-primary embed','id'=>'embedLink'.$data->id,'name'=>$data->id) );?>		
+		
 
 	<div style="display:none;" class="well" id="embedCode<?=$data->id;?>">
 	<h4>Copy this code and paste it into your website</h4>
@@ -143,10 +146,71 @@
 .style{min-height:200px;}
 
 </style>
-	<script type="text/javascript">
-	$("#embedLink<?=$data->id;?>").click(function(){
-		id = <?=$data->id;?>;
-		$("#embedCode"+id).toggle();
+
+		
+	<?php if ( $this->user == $data->author->username):?>
+	<div id="elrte_holder" style="clear:both; max-width:50%;">
+	<textarea id="elrte_content" style="display:none" ></textarea>
+	<?php 
+		$this->widget('application.extensions.elrte.elRTE', 
+		array(
+			'selector'=>'#elrte_content',
+			'userid'=>Yii::app()->user->id,
+			'event'=>'$("#edit_content").click',
+		));
+	?>
+	</div>
+	<button id="save_content" name="<?=$data->id;?>" style="display:none" class="btn btn-mini btn-primary">Save</button>
+		<script type="text/javascript">
+	$('#edit_content').click(function(){
+	 $('#elrte_content').elrte('val', $(".edit_area").html());
+	 $('#elrte_content').fadeIn('slow');
+	 $('#save_content').fadeIn('slow');
+});
+
+	 $('#save_content').click(function(){
+	 $('#elrte_content').elrte('updateSource');
+		var id = $(this).attr('name');
+		var url = '/howto/inlineEdit?id='+id;
+		var content = $('#elrte_content').elrte('val');
+		jQuery.getJSON(url, {content: content }, function(data) {
+			if (data.status == 'success'){
+					$('.edit_area').html(data.div);
+					$('#elrte_content').elrte('destroy');
+					$('#elrte_content').fadeOut('slow');
+					$('#save_content').fadeOut('slow');
+					window.location.reload();
+				}
+			});
+			return false;
+	});
+		</script>
+		<?php endif;?>
+
+		<script type="text/javascript">
+	$(document).ready(function(){
+	$(".save_step").hide();
+	$(".step_text").click(function(){
+		var id = $(this).attr('name');
+		$("#"+id).fadeIn('slow');
+		$("#div"+id).fadeIn('slow');
+
+	});
+	$(".save_step").click(function(){
+		var id = $(this).attr('id');
+		var url = '/step/inlineEdit?id='+id;
+		var content = $('#step_text_div'+id).html();
+		jQuery.getJSON(url, {content: content }, function(data) {
+			if (data.status == 'success'){
+					$("#"+id).fadeOut('slow');
+					$("#div"+id).fadeOut('slow');
+
+				}
+			});
+			return false;
+		});
+	$(".printpdf").click(function(){
+		window.location.href = "/viewpdf/id/<?= $data->id;?>";
 	});
 	$(".bookmark").click(function(){
 		id = $(this).attr('name');
@@ -161,30 +225,25 @@
 			});
 			return false;
 		});
-		</script>
-		
-	<?php if ( $this->user == $data->author->username):?>
-	<div id="holder"></div>
-	<script type="text/javascript">
-	 $(document).ready(function() {
 
-     $('.edit_area').editable('/howto/inlineEdit?id=<?=$data->id;?>', { 
-         type      : 'textarea',
-		 data	   : $(this).html(),
-         cancel    : 'Cancel',
-         submit    : 'OK',
-         indicator : '<img src="img/indicator.gif">',
-         tooltip   : 'Click to edit...',
-		callback : function(value, settings) {
+			$("#howtodelete").click(function(){
+				deletehowto(<?php echo $data->id;?>);
+			});
 
-         console.log(value);
-     },
-     });
+		function deletehowto( id ) {
+			url = '/howto/delete';
+			jQuery.getJSON(url, {id: id}, function(data) {
+				if (data.status == 'success')
+					{
+						$('#delete_howto_message').html(data.div);
+						$('#delete_howto_message').fadeIn('slow');			
+
+					} 
+				});
+				return false;
+			}
+
 	
-	 $('.edit_area').click(function(){
-	 $('.edit_area textarea').addClass('style');
-
-});
 	 $('.edit_step').editable('/step/inlineEdit?id=<?=$data->id;?>&url=<?=$data->url;?>', { 
          type      : 'textarea',
 		 data	   : $(this).html(),
@@ -194,16 +253,20 @@
          tooltip   : 'Click to edit...',
 		callback : function(value, settings) {
 
-         console.log(value);
+         console.log($(this).html());
      },
      });
-	 $('edit_step').click(function(){
-		
-	});
- });
+ });//document ready
 	
 	</script>
 
-	<?php endif;?>
+
+		<script type="text/javascript">
+	$("#embedLink<?=$data->id;?>").click(function(){
+		id = <?=$data->id;?>;
+		$("#embedCode"+id).toggle();
+	});
 	
+</script>
 <?php $this->renderPartial('//howto/_mail');?>
+<br/>

@@ -1,4 +1,4 @@
-	<div style="min-width:500px;padding:0px;">
+	<div style="min-width:500px;padding:0px;" class="well">
 <?php 
 	$form = $this->beginWidget('BootActiveForm',array(
 		'id'=>'login-form',

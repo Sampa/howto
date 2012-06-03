@@ -137,19 +137,24 @@ class HowtoController extends Controller
 	
 	public function actionInlineEdit()
 	{			
-		$model = Howto::model()->findByPk($_GET['id']);
-		
-		if ( Yii::app()->request->isAjaxRequest )
-		{				$model->content = $_POST['value'];
+		if(!Yii::app()->user->isGuest)
+		{
+			$model = Howto::model()->findByPk($_GET['id']);
+			
+			if ( Yii::app()->request->isAjaxRequest )
+			{				$model->content = $_GET['content'];
 
-			if ( $model->save() ) 
-			{
-					echo $model->content;
-						
-					exit;
+				if ( $model->save() ) 
+				{
+
+					echo CJSON::encode( array (
+					'status'=>'success', 
+					'div'=>$model->content,
+					) );
+				}
+				
+				
 			}
-			
-			
 		}
 	}
 	

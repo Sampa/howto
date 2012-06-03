@@ -13,7 +13,6 @@
 ?>
 	<div id="modal_mail" class="divForForm"></div>
 <?php $this->endWidget(); ?> 
-	
 	<script type="text/javascript">
 	function getMail(url){
 	jQuery.ajax({'url':'/howto/mail'+url, 'data':$(this).serialize(),'type':'post','dataType':'json','success':function(data)
@@ -37,3 +36,4 @@
 	});
 	</script>
 <!-- end Mail -->
+

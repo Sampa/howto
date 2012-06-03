@@ -1,5 +1,17 @@
-<div class="form">
+<div class="well">
+<h4> Add a new step to your How2 </h4>
+<script type="text/javascript" src="/js/nicedit.js"></script> 
 
+<script type="text/javascript">
+	//<![CDATA[
+			bkLib.onDomLoaded(function() {
+			var myNicEditor = new nicEditor();
+			myNicEditor.setPanel('Step_panel');
+			myNicEditor.addInstance('Step_text');
+
+			});
+			//]]>
+</script>
 <?php 
 	$form = $this->beginWidget('BootActiveForm', array(
 	'id'=>'step-form',
@@ -15,7 +27,6 @@
 		) );
 ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
 
 	<?php echo $form->errorSummary($model); ?>
 
@@ -28,17 +39,12 @@
 	</div>
 
 	<div ="row-fluid">
+		<div id="Step_panel" style="max-width:500px;"></div>
 		<?php echo $form->labelEx($model,'text'); ?>
-		<?php echo $form->textArea($model,'text'); ?>
+		<?php echo $form->textArea($model,'text',array('style'=>'min-width:500px;')); ?>
 		
 		<?php echo $form->error($model,'text'); ?>
-	<?php 
-		$this->widget('application.extensions.elrte.elRTE', 
-		array(
-			'selector'=>'#Step_text',
-			'userid'=>$this->userId,
-		));
-	?>
+
 	</div>
 
 

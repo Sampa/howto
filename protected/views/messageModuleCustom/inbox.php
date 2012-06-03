@@ -7,9 +7,10 @@
 
 <?php $this->renderPartial(Yii::app()->getModule('message')->viewPath . '/_styles') ?>
 <?php $this->renderPartial(Yii::app()->getModule('message')->viewPath . '/_flash') ?>
-<div class="row">
 	<?php $this->renderPartial(Yii::app()->getModule('message')->viewPath . '/_navigation') ?>
-	<div class="span13">
+
+<div class="span5">
+	<div class="well">
 		<h2><?= MessageModule::t('Inbox'); ?></h2>
 
 		<?php if ($messagesAdapter->data): ?>
@@ -43,7 +44,7 @@
 			</table>
 
 			<div>
-				<button class="btn btn-danger">
+				<button class="btn btn-mini btn-danger">
 					<i class="icon-white icon-remove"></i>
 					<?= MessageModule::t("Delete Selected"); ?>
 				</button>

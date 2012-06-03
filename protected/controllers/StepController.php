@@ -70,10 +70,6 @@ public function actionCreate()
 		if ( isset ( $_GET['howto_id'] ) ) 
 		{
 			$howto_id = $_GET['howto_id'];
-			$howto = new Howto;
-			$howto = $howto->findByPk( $howto_id );		
-		}else{
-			$howto_id = Yii::app()->session['howto_id'];        	
 		}
 		
         if ( isset ( $_POST['Step'] ) )
@@ -106,12 +102,12 @@ public function actionCreate()
 
 
             echo CJSON::encode(array(
-                'status'=>'failure', 
+                'status'=>'render', 
                 'div'=>$this->renderPartial('_form', array('model'=>$model,'howtoid'=>''), true)));
             exit;               
         }
         else
-            $this->render('create',array('model'=>$model,'howto'=>$howto));
+            $this->render('create',array('model'=>$model,'howto'=>$howto_id));
     }
 	
 	
@@ -192,12 +188,13 @@ public function actionUpdate($id)
 			$model = Step::model()->findByPk($_GET['id']);
 		
 		if ( Yii::app()->request->isAjaxRequest )
-		{				$model->text = $_POST['value'];
+		{				$model->text = $_GET['content'];
 
 			if ( $model->save() ) 
 			{
-			echo $model->text;
-					exit;
+			echo CJSON::encode( array (
+					'status'=>'success', 
+					) );
 			}
 			
 			

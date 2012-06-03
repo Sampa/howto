@@ -7,12 +7,11 @@
 
 <?php $this->renderPartial(Yii::app()->getModule('message')->viewPath . '/_styles') ?>
 <?php $this->renderPartial(Yii::app()->getModule('message')->viewPath . '/_flash') ?>
+<?php $this->renderPartial(Yii::app()->getModule('message')->viewPath . '/_navigation') ?>
 
-<div class="row">
-
-	<?php $this->renderPartial(Yii::app()->getModule('message')->viewPath . '/_navigation') ?>
-	<div class="span13">
-	<h2><?= MessageModule::t('Sent'); ?></h2>
+<div class="span5">
+	<div class="well">
+	<h2><?= MessageModule::t('Messages you have sent'); ?></h2>
 
 		<?php if ($messagesAdapter->data): ?>
 			<?php $form = $this->beginWidget('BootActiveForm', array(
@@ -41,7 +40,7 @@
 			</table>
 
 			<div>
-				<button class="btn btn-danger">
+				<button class="btn btn-mini btn-danger">
 					<i class="icon-white icon-remove"></i>
 					<?= MessageModule::t("Delete Selected") ?>
 				</button>

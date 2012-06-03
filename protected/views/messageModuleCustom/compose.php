@@ -1,19 +1,19 @@
-<?php $this->pageTitle=Yii::app()->name . ' - '.MessageModule::t("Compose Message"); ?>
+<?php $this->pageTitle=Yii::app()->name . ' - '.MessageModule::t("New Message"); ?>
 <?php
 	$this->breadcrumbs=array(
-		MessageModule::t("Compose"),
+		MessageModule::t("New"),
 	);
 ?>
 
 <?php $this->renderPartial(Yii::app()->getModule('message')->viewPath . '/_styles') ?>
 <?php $this->renderPartial(Yii::app()->getModule('message')->viewPath . '/_flash') ?>
 
-<div class="row">
 <?php $this->renderPartial(Yii::app()->getModule('message')->viewPath . '/_navigation'); ?>
-	<div class="span13">
-		<h2><?= MessageModule::t('Compose New Message'); ?></h2>
+	<div class="span5">
 
-		<div class="form">
+
+		<div class="well">
+				<h2><?= MessageModule::t('New Message'); ?></h2>
 			<?php $form = $this->beginWidget('BootActiveForm', array(
 				'id'=>'message-form',
 				'enableAjaxValidation'=>false,
@@ -37,18 +37,18 @@
 
 			<?= $form->labelEx($model,'subject'); ?>
 			<div class="input">
-				<?= $form->textField($model,'subject'); ?>
+				<?= $form->textField($model,'subject',array('style'=>'max-width:90%;')); ?>
 				<?= $form->error($model,'subject'); ?>
 			</div>
 
 			<?= $form->labelEx($model,'body'); ?>
 			<div class="input">
-				<?= $form->textArea($model,'body'); ?>
+				<?= $form->textArea($model,'body',array('style'=>'max-width:90%;')); ?>
 				<?= $form->error($model,'body'); ?>
 			</div>
 
 			<div class="buttons">
-				<button class="btn btn-primary">
+				<button class="btn btn-mini btn-success">
 					<i class="icon-envelope icon-white"></i>
 					<?= MessageModule::t("Send") ?>
 				</button>
@@ -58,6 +58,5 @@
 
 		</div>
 	</div>
-</div>
 
 <?php $this->renderPartial(Yii::app()->getModule('message')->viewPath . '/_suggest'); ?>

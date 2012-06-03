@@ -74,8 +74,8 @@
 			</div>
 
 			<div class="buttons">
-				<button class="btn btn-primary"><i class="icon-white icon-repeat"></i> <?= MessageModule::t("Reply") ?></button>
-				<button class="btn btn-danger"><i class="icon-white icon-remove"></i> <?= MessageModule::t("Delete") ?></button>
+				<button class="btn btn-mini btn-primary"><i class="icon-white icon-repeat"></i> <?= MessageModule::t("Reply") ?></button>
+				<button class="btn btn-mini btn-danger"><i class="icon-white icon-remove"></i> <?= MessageModule::t("Delete") ?></button>
 
 			</div>
 

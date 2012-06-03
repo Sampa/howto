@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head> 
+<style type='text/css'>#copyMenu li span, #closeFrame {background-image:url(images/icons.gif);}</style>
+<script type='text/javascript'>var wpMoviePath = 'js/ZeroClipboard.swf';</script>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
+<script type="text/javascript" src="js/ZeroClipboard.js"></script> 
+<!-- <script type="text/javascript" src="js/SearchAndShare.js"></script> -->
+<script type="text/javascript" src="js/SearchAndShare.js"></script> 
+<link rel="stylesheet" type="text/css" href="css/SearchAndShare.css" /> 
+<style type="text/css"> 
+	/* These styles are for this demo page, not for the script. You need not copy these. */
+	html {margin:0; padding:0;}
+	body {margin:0; padding:20px; font-family:Arial, Helvetica, sans-serif;}
+	li {margin-top:10px;}
+	h2 {margin-top:40px;}
+</style> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<title>Search and Share - LatentMotion.com</title> 
+</head> 
+ 
+<body> 
+
+	<!-- This UL + LI set is all the html you have to copy in -->
+<ul id='copyMenu' class='ampSwitch pageSlide'> 
+      <li id='copyLink' class='c1 keep' style='width:120px; height:25px;'><span>Copy / Paste</span></li> 
+      <li id='wiki' class='short' title='http://en.wikipedia.org/wiki/w/index.php?search=[text]'><span>Wikipedia</span></li> 
+      <li id='google' class='short' title='http://www.google.com/cse?cx=partner-pub-7740231133366464:8kogvuvjbok&amp;ie=ISO-8859-1&amp;q=[text]'><span>Google</span></li> 
+      <li id='wolfram' class='short' title='http://www.wolframalpha.com/input/?i=[text]'><span>Facts</span></li> 
+      <li id='amazon' class='short' title='http://www.amazon.com/gp/redirect.html?ie=UTF8&amp;location=http%3A%2F%2Fwww.amazon.com%2Fs%3Fie%3DUTF8%26x%3D0%26ref%255F%3Dnb%255Fss%255Fgw%26y%3D0%26field-keywords%3D[text]%26url%3Dsearch-alias%253Daps&amp;tag=latemoti-20&amp;linkCode=ur2&amp;camp=1789&amp;creative=390957[pop]'><span>Amazon</span></li> 
+      <li id='ebay' class='short' title='http://shop.ebay.com/items/?_nkw=[text][pop]'><span>eBay</span></li> 
+      <li id='outlook' class='long' title='mailto:?subject=Check this out:[title]%22&amp;body=[text]%22...%0D%0D-- [url]'><span>Outlook</span></li> 
+      <li id='gmail' class='long' title='https://mail.google.com/mail/?fs=1&amp;view=cm&amp;shva=1&amp;su=Check this out:%22[title]%22&amp;body=%22[text]...%0D%0D-- [url][pop]'><span>Gmail</span></li> 
+      <li id='yahoo' class='long' title='http://compose.mail.yahoo.com/?Subject=[title]&amp;body=[text]... -- [url][pop]'><span>Y! Mail</span></li> 
+      <li id='twitter' class='long' title='http://bit.ly/?url=[url]&amp;keyword=&amp;s=[text]...[pop]'><span>Twitter</span></li> 
+      <!-- Please leave credit, I worked hard on this =) --> 
+      <li id='credits' class='keep'><a href='http://www.latentmotion.com/' id='credit'>Search &amp; Share</a></li> 
+</ul> 
+
+    
+    
+<div style="float:right; border:1px solid #888; padding:10px 20px; margin:10px 0 10px 20px;"> 
+  <p><strong>Table of Contents:</strong></p> 
+<ul> 
+  <li><a href="#what">What Does it Do?</a></li> 
+  <li><a href="#reasons">Reasons to Use It</a></li> 
+  <li><a href="#implement">How to Implement It</a></li> 
+  <li><a href="#modify">How to Modify It</a></li>
+  <li><a href="#future">Future Plans for the Script</a></li> 
+  <li><a href="#supported">Supported Browsers</a></li> 
+  <li><a href="#kudos">Extra Credit and Kudos</a><br /><br />
+  <iframe src="http://www.latentmotion.com/downloads/donate-sas.html" height="21" width="74" frameborder="0" scrolling="no"></iframe></li>
+</ul> 
+</div> 
+<h1 style="margin-top:0;"><a name="what" id="what"></a>What does Search and Share do?</h1> 
+<p>Search and Share makes highlighting text a more functional action. More specifically, it attempts to understand the intention of a user's text selection and present a variety of options accordingly. The criteria for understanding the intention is the character length of the selection, and the interpreted actions are <strong>copying, searching and sharing</strong>.</p>
+<p>To see the script in action, <strong>try highlighting any text on this page</strong>. If you select a lot of text, click copy and paste it somewhere. If you want to select only a word of phrase, here are some search-worthy examples:</p> 
+<ul> 
+  <li><strong>Wiki:  </strong>Machiavelli</li> 
+  <li><strong>Google:</strong> World Trade Center, NY</li> 
+  <li><strong>Facts (Wolfram):</strong> Hamburgers</li> 
+  <li><strong>Amazon:</strong> 1984 by George Orwell</li> 
+  <li><strong>Ebay:</strong> XBOX 360</li>
+</ul>
+<h2><a name="reasons" id="reasons"></a>Reasons to Use It</h2> 
+<ol> 
+  <li><strong>Get credit for your content.</strong> Whenever someone selects more than 40 characters from your web page and clicks the &quot;Copy&quot; link, your page title and URL will be included in the footer of the copied text. No longer will excerpts of your paragraphs float around AIM, or other places on the web, without attribution.</li> 
+  <li><strong>Improve word of mouth.</strong> Or word of email anyway. Just like the copy functionality, your users will also be presented with the option to directly embed the excerpt in a newly composed email within Outlook, Gmail or Yahoo Mail.</li> 
+  <li><strong>Go new-media viral.</strong> Make it easier for people to tweet about you. If you've got a younger audience, this twitter option will be a mass-promotion alternative to the more direct but confined email.</li> 
+  <li><strong>Provide context. </strong>Odds are, if you're writing anything worth reading about, a large chunk of your audience will want more details on the content they're unfamiliar with. With this script, they can get the biography of an unfamiliar politician, Google search results for related pages, or the set of fast-facts that Wolfram Alpha is quickly becoming known to provide.</li> 
+  <li><strong>Keep visitors longer.</strong> All of the aforementioned actions can be done while keeping your page open. As a result, your visitors will stay on your page longer, and unsurprisingly, they will also be more likely to continue to another page within your site. Plus, (if you'll allow my speculation...) as search engines use visitor retention metrics more and more to determine a site's value, it seems likely that you'll be positioning yourself to benefit with new search traffic too.</li> 
+</ol> 
+<h2><a name="implement" id="implement"></a>How to Implement It</h2>
+<ol> 
+  <li>Upload this file and th css, images, and js folders to your server (any directory is fine).</li> 
+  <li>Open this file, readme.html, in a browser. Confirm that, before changing anything, you can trigger the script by selecting text. Do not attempt to test this file locally. The script depends on flash, which may behave erratically if run from your computer.<br /> 
+    <em><strong>Note: 
+  If readme.html doesn't work</strong> on your server, post in the comments at: http://www.latentmotion.com/search-and-share/ . Either I, or one of our visitors will help you there. Do not contact me directly, as someone else with the same problem will not see and benefit from our troubleshooting.</em></li> 
+  <li>Now that we know the script is working, copy the javascript and css files from the header of readme.html and paste them into the header of your web page. You can also try copying the code from the box below, but in either case <strong>make sure to update the file paths.</strong> If you don't know what I'm talking about, the simplest thing to do is add &quot;http://www.yoursite.com/wherever-the-folder-is/ before the &quot; js/ &quot; and &quot; css/ &quot; below:<br /> 
+      <br /> 
+      <label> 
+        <textarea name="textfield" rows="4" cols="" id="textfield" style="width: 95%; padding:10px;">
+<style type='text/css'>#copyMenu li span, #closeFrame {background-image:url(images/icons.gif);}</style>
+<script type='text/javascript'>var wpMoviePath = 'js/ZeroClipboard.swf';</script>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
+<script type="text/javascript" src="js/SearchAndShare.min.js"></script> 
+<link rel="stylesheet" type="text/css" href="css/SearchAndShare.css" />
+        </textarea> 
+      </label> 
+    <br /> 
+  </li> 
+  <li>Copy the html of &quot;copyMenu&quot; into your page. Be sure to keep the link &quot;Search and Share&quot; that goes to this page, as removing is both illegal and will make the script break. You can also copy it from below:<br /> 
+    <br /> 
+    <textarea name="textfield2" rows="15" cols="" id="textfield2" style="width: 95%; padding:10px;">
+	<ul id='copyMenu' class='ampSwitch pageSlide'> 
+      <li id='copyLink' class='c1 keep' style='width:120px; height:25px;'><span>Copy / Paste</span></li> 
+      <li id='wiki' class='short' title='http://en.wikipedia.org/wiki/w/index.php?search=[text]'><span>Wikipedia</span></li> 
+      <li id='google' class='short' title='http://www.google.com/cse?cx=partner-pub-7740231133366464:8kogvuvjbok&amp;ie=ISO-8859-1&amp;q=[text]'><span>Google</span></li> 
+      <li id='wolfram' class='short' title='http://www.wolframalpha.com/input/?i=[text]'><span>Facts</span></li> 
+      <li id='amazon' class='short' title='http://www.amazon.com/gp/redirect.html?ie=UTF8&amp;location=http%3A%2F%2Fwww.amazon.com%2Fs%3Fie%3DUTF8%26x%3D0%26ref%255F%3Dnb%255Fss%255Fgw%26y%3D0%26field-keywords%3D[text]%26url%3Dsearch-alias%253Daps&amp;tag=latemoti-20&amp;linkCode=ur2&amp;camp=1789&amp;creative=390957[pop]'><span>Amazon</span></li> 
+      <li id='ebay' class='short' title='http://shop.ebay.com/items/?_nkw=[text][pop]'><span>eBay</span></li> 
+      <li id='outlook' class='long' title='mailto:?subject=Check this out:[title]%22&amp;body=[text]%22...%0D%0D-- [url]'><span>Outlook</span></li> 
+      <li id='gmail' class='long' title='https://mail.google.com/mail/?fs=1&amp;view=cm&amp;shva=1&amp;su=Check this out:%22[title]%22&amp;body=%22[text]...%0D%0D-- [url][pop]'><span>Gmail</span></li> 
+      <li id='yahoo' class='long' title='http://compose.mail.yahoo.com/?Subject=[title]&amp;body=[text]... -- [url][pop]'><span>Y! Mail</span></li> 
+      <li id='twitter' class='long' title='http://bit.ly/?url=[url]&amp;keyword=&amp;s=[text]...[pop]'><span>Twitter</span></li> 
+      <!-- Please leave credit, I worked hard on this =) --> 
+      <li id='credits' class='keep'><a href='http://www.latentmotion.com/search-and-share/' id='credit'>Search &amp; Share</a></li> 
+    </ul> 
+    </textarea> 
+  </li> 
+    <li>Do a dance, you're done!</li> 
+</ol> 
+<h2><a name="modify" id="modify"></a>How to Modify It</h2>
+<ul>
+  <li>You can feel free to add, remove, or re-order List Items in the html to easily modify the script.</li>
+  <li>If you add an &lt;LI&gt;, make sure you give it a class &quot;long&quot;, &quot;short&quot; or &quot;keep&quot;.
+    <ul>
+      <li><strong>Long</strong> means that it will match text length defined in the javascript file, which is a default of 40 chars +.</li>
+      <li><strong>Short</strong> means that it will match anything 4 - 39 chars, also defined in the javascript file.</li>
+      <li><strong>Keep</strong> means that it will be present in any menu box selection that is triggered.</li>
+    </ul>
+  </li>
+  <li>Also be sure to give your LI a title attribute of your URL, including some optional variables. Those variables are:
+    <ul>
+      <li><strong>[text]</strong> : The text selection of the user.</li>
+      <li><strong>[url]</strong> : The URL of the current page.</li>
+      <li><strong>[title]</strong> : The title of the current page.</li>
+      <li><strong>[pop]</strong> : Whether or not the link should open in a new window.</li>
+      <li><strong>Class &quot;ampSwitch&quot;</strong> in the copyMenu will automatically convert <strong>&amp;amp;</strong> into <strong>&amp;</strong> during the title to URL process. This was done for W3C validation.</li>
+      <li><strong>Class &quot;pageSlide&quot;</strong> in the copyMenu will slide the content of the page down with the iframe search (google etc). The slide computations can behave poorly with background images, so if you're having a problem, simply remove this class and revert to a more basic mode.</li>
+    </ul>
+  </li>
+  <li>If you are adding a completely new link option, be sure to use an appropriate icon. All of the icons currently used are pulled from the same file, &quot;icons.gif&quot;, which I recommend you add to the bottom of. Which icon gets used from this file depends on the css background positioning, which you'll find around line 13 of SearchAndShare.css.</li>
+  <li>Note that by default, this script includes my own affiliate ids. If you use and appreciate this script, the nice thing to do would be to leave them there. If you can't stand the idea of me making a few bucks off your traffic, consider donating to my script-writing-fund. On the other hand, if you saw me jay-walking and simply can't stand people who flout such critical traffic laws, do feel free to exact revenge by sticking it to me. Just leave the credit link in, otherwise you'll be breaking the law too.</li>
+</ul>
+<h2><a name="future" id="future"></a>Future Plans for the Script </h2>
+<ul> 
+  <li>Refactor the code and separate functionalities as independent jQuery plugin functions.</li>
+  <li>Make the iframe  resizable</li> 
+  <li>Allow for (tabbed?) reselection of the engine used to lookup the term.</li> 
+  <li>For WordPress Plugin version:
+    <ul> 
+      <li>Integrate bitly, or another minification library to abbreviate the URLs (especially for twitter).</li> 
+      <li>Retain selection information based on URLs, such that the text could be highlighted and anchor-linked to directly (maybe using scrollto?).</li> 
+    </ul> 
+  </li> 
+  <li>Consider metrics other than character length to determine intent.
+    <ul> 
+      <li>For example, a long and obscure enough word, if selected by itself, may be a good candidate to directly and immediately slide down a wiki page.</li> 
+      <li>Or, numerical input separated by mathematical symbols, on the other hand, may indicate a good wolfram alpha search.</li> 
+      <li>Or, perhaps it should be a website specific implementation option.</li> 
+    </ul> 
+  </li> 
+  <li>Code a menu for a non-textual selection.
+    <ul> 
+      <li>For example, highlighting or right clicking on an image seems to again indicate the intention to create a copy of it. Just as crediting excerpts of text is important, ensuring credit in an image selection is important.</li> 
+    </ul> 
+  </li> 
+  <li>Integrate google analytics tracking for selected text.</li> 
+</ul> 
+<h2><a name="supported" id="supported"></a>Supported Browsers (known)</h2> 
+<ul> 
+  <li>IE7, IE8</li>
+  <li>IE6 (Although the fixed iframe becomes absolutely positioned at the top of the page)</li> 
+  <li>Firefox 3.x (Anyone out there want to report on Firefox 2.x?)</li> 
+  <li>Chrome 1.x, Chrome 2.x</li> 
+  <li>Safari 2.x, Safari 3.x</li>
+</ul>
+<h2><a name="kudos" id="kudos"></a>Extra Credit and Kudos</h2>
+<ul>
+  <li>Thanks to J Huckaby for <a href="http://code.google.com/p/zeroclipboard/">Zero Clipboard</a>, the script that circumvents browser limitations on copying things into your clipboard (via a flash object).</li>
+  <li>Biggups to Peter-Paul Koch at <a href="http://www.quirksmode.org">Quirks Mode</a> for a consistently insightful resource. Specifically, his article on text selection manipulation was of great use to this project.</li>
+  <li>A deep bow to <a href="http://ejohn.org/">John Resig</a> for giving birth to jQuery.</li>
+  <li>A wave to my people at <a href="http://hyperstudio.mit.edu/people">MIT HyperStudio</a> who've helped me grow as a developer</li>
+</ul>
+</body> 
+</html> 

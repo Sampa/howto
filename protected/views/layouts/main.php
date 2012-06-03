@@ -4,6 +4,9 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="language" content="en" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link type="text/css" href="<?= Yii::app()->request->baseUrl; ?>/css/bottom.css" rel="stylesheet" />
+			<?php  Yii::app()->clientScript->registerScriptFile('/js/jquery.jcarousel.min.js');?>
+	<?php  Yii::app()->clientScript->registerScriptFile('/js/jquery.pikachoose.js');?>
 
 
 	<link rel="stylesheet" type="text/css" href="<?= Yii::app()->request->baseUrl; ?>/css/main.css" />
@@ -14,14 +17,16 @@
 	<?php  Yii::app()->clientScript->registerScriptFile('/js/jquery.multiplyforms.js');?>
 	<?php  Yii::app()->clientScript->registerScriptFile('/js/common.js');?>
 	<?php  Yii::app()->clientScript->registerScriptFile('/js/jeditable.js');?>
-    <script src="https://browserid.org/include.js" type="text/javascript"></script>  
-
+<script type="text/javascript" src="/js/nicedit.js"></script> 
 
 	<title><?= CHtml::encode( $this->pageTitle ); ?></title>
+
+
 
 </head>
 
 <body>
+	<?php $this->widget('application.extensions.search-and-share.SearchShare'); ?>
 
 <div id="page" >
 
@@ -32,7 +37,7 @@
 			</a>
 		</div>
 	
-		<div class="" style="height:29px; float:left; width:25%; padding: 0px;">
+		<div class="" style="height:29px; float:left; width:29%; padding: 0px;">
 
 	<?php if ( $this->isGuest ):?>	
 	
@@ -144,12 +149,12 @@
 	
 	<div class="btn-toolbar span8" style="position:absolute; top:2px;right:10px;border:0px solid green; margin:-0px 0 0 -5px; height:auto;">
 	<!-- search -->
-	<?php $this->widget('application.extensions.search.GoogleSearch'); ?>
+
 	</div>
-<div style="position:absolute; top:34px;left:150px;">
+<div style="position:absolute; max-height: 33px; top:34px;left:150px;">
 <style type="text/css">
 .tab_content{max-width:900px;min-height:36px;;padding: 4px 9px 0px 9px;}
-.tab_content a{padding:0px 3px 0px; }
+.tab_content a{padding:0px 3px 0px 0px; }
 </style>
 <?php 
 		$tabs = array();
@@ -236,9 +241,10 @@ $this->widget('bootstrap.widgets.BootTabbable', array(
 		</div>
 
 		<div id="conf"></div>
+
 	</div><!-- footer -->
 
 	</div><!-- page -->
-
+   
 </body>
 </html>

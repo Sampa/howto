@@ -1,4 +1,4 @@
-<div class="span2">
+<div class="span2 well">
 <?php 
 	$this->widget('bootstrap.widgets.BootMenu', array(
     'type'=>'list',

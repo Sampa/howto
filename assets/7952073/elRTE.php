@@ -9,7 +9,7 @@ class elRTE extends CInputWidget
 {
     public $doctype = '<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">';
     public $cssClass = 'el-rte';
-    public $absoluteURLs = 'false';
+    public $absoluteURLs = 'true';
     public $allowSource = 'false';
     public $lang;
     public $styleWithCSS = 'true';
@@ -20,6 +20,7 @@ class elRTE extends CInputWidget
     public $baseUrl;
     public $selector;
     public $userid;
+	public $event ="$(document).ready";
     public function init()
     {            
         $dir = dirname(__FILE__).DIRECTORY_SEPARATOR;                       
@@ -88,10 +89,10 @@ class elRTE extends CInputWidget
     {                
         $options = $this->generateOptions();
                 
-        $js = "$().ready(function() { \n";
+        $js = $this->event."(function() { \n";
         $js .= "elRTE.prototype.options.panels.myToolbar = ['bold', 'italic', 'underline',
             'strikethrough','justifyleft','justifyright', 'justifycenter', 'justifyfull',
-            'insertorderedlist', 'insertunorderedlist', 'docstructure','paste','removeformat','link','unlink', 'elfinder', 'image', 'fullscreen']; \n";
+            'insertorderedlist', 'insertunorderedlist', 'docstructure','paste','removeformat','link','unlink', 'elfinder',  'fullscreen']; \n";
         $js .= "elRTE.prototype.options.toolbars.myToolbar = ['myToolbar']; \n";
         $js .= "var opts = $options";
         $js .= "; \n";    

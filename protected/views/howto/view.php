@@ -3,52 +3,7 @@
 	$this->pageTitle = $model->title;
 	$this->layout = "column1";
 ?>
-	<script type="text/javascript" src="/js/jquery-easing-1.3.pack.js"></script>
-	<script type="text/javascript" src="/js/jquery-easing-compatibility.1.2.pack.js"></script>
-	<script type="text/javascript" src="/js/coda-slider.1.1.1.pack.js"></script>
-	<script type="text/javascript">
 	
-		var theInt = null;
-		var $crosslink, $navthumb;
-		var curclicked = 0;
-		
-		theInterval = function(cur){
-			clearInterval(theInt);
-			
-			if( typeof cur != 'undefined' )
-				curclicked = cur;
-			
-			$crosslink.removeClass("active-thumb");
-			$navthumb.eq(curclicked).parent().addClass("active-thumb");
-				$(".stripNav ul li a").eq(curclicked).trigger('click');
-			
-			theInt = setInterval(function(){
-				$crosslink.removeClass("active-thumb");
-				$navthumb.eq(curclicked).parent().addClass("active-thumb");
-				$(".stripNav ul li a").eq(curclicked).trigger('click');
-				curclicked++;
-				if( 6 == curclicked )
-					curclicked = 0;
-				
-			}, 3000);
-		};
-		
-		$(function(){
-			
-			$("#main-photo-slider").codaSlider();
-			
-			$navthumb = $(".nav-thumb");
-			$crosslink = $(".cross-link");
-			
-			$navthumb.click(function() {
-				var $this = $(this);
-				theInterval($this.parent().attr('href').slice(1) - 1);
-				return false;
-			});
-			
-			theInterval();
-		});
-	</script>
 <div id="howto_container" style="padding-left: 0px; float:left;">
 	<div id="left" class="span6" style="float:left;" >
 <?php 
@@ -81,26 +36,50 @@
 ?> 	 	</div><!--left-->
 	
 	<!-- steps-->
-	<div id="steps" class="span7" style="clear:both; float:left;">
-
+	<div id="steps" class="span6" style="clear:both; float:left;">
+		<button class="btn btn-mini btn-success" id="createButton"><!-- sign up button-->
+		<i class="icon-plus icon-white"></i> Add Step
+		</button>
+			
+			<!-- files with modalwindow, ajax calls etc for easier reading -->
+		<?php $this->renderPartial('//step/_create',array('howto'=>$model->id)); ?>
 		<?php if ( $model->stepCount >= 1 ): ?>
 			<h3>
 				<?= $model->stepCount>1 ? $model->stepCount . ' steps' : 'One step'; ?>
 			</h3>
 		<?php endif; ?>
+
 		<?php
 		foreach ( $model->steps as $step ):
 			echo CHtml::link( $step->title, array('/step/update?id=' . $step->id .'&howtoid=' . $model->id ) );
-			echo '<br/><div class="well edit_step" ">' . $step->text .'</div>';
-		 endforeach; 
+			echo '<br/><div id="div'.$step->id.'" style="display:none;"></div><div  name="'.$step->id.'" id="step_text_div'.$step->id.'" class="well step_text" ">' . $step->text .'</div>';
+			echo '<button class="btn btn-mini btn-success save_step" id="'.$step->id.'" style="display:block;">Save</button>';
 		 ?>
+		 <script type="text/javascript">
+			//<![CDATA[
+			bkLib.onDomLoaded(function() {
+			var myNicEditor = new nicEditor();
+			myNicEditor.setPanel('div<?=$step->id;?>');
+			myNicEditor.addInstance('step_text_div<?=$step->id;?>');
+
+			});
+			//]]>
+		</script>
+		<?php endforeach;?>
 	
 	</div>
+	
 
 </div><!-- container-->
-	<div id="comments" style="margin: 30px 0px 0 20px;" class="span4" >
+	<div id="comments" style="margin: 0px 0px 0 40px;" class="span5" >
 <?php
-	
+	if( $owner ) {
+		echo "<br/><br/>".CHtml::htmlButton('<i class="icon-edit icon-white"></i> Manage Slides',
+		array('class'=>'btn btn-mini btn-primary manage_slide'));
+			$this->registerAssets();	
+		$slide = new Slide('search');
+		echo $this->renderPartial('//slide/index' , array( 'model'=>$slide,'howto'=>$model->id ) );
+		}
 	$panels = Slide::model()->findAll('howto_id='.$model->id);
 	if ( $panels )
 	{
@@ -108,17 +87,12 @@
 	}
 	if ( $owner )
 	{
-		echo "<br/>".CHtml::button("Manage Slides",array('class'=>'btn btn-primary manage_slide'));
-		$this->registerAssets();	
-		$slide = new Slide('search');
-		echo $this->renderPartial('//slide/index' , array( 'model'=>$slide,'howto'=>$model->id ) );
+	
 	}
 	
 	
 	?>
 	<script type="text/javascript">
-	$(document).ready(function(){
-	});
 		$(".manage_slide").click(function(){
 			$("#slide_div").toggle();
 		});

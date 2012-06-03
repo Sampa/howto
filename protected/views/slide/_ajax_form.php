@@ -11,7 +11,7 @@
 
 <div id="slide_form_con" class="client-val-form">
     <?php if ($model->isNewRecord) : ?>    
-	<h3 id="create_header">Create New Slide</h3>
+	<h3 id="create_header">New Slide</h3>
     <?php  elseif (!$model->isNewRecord):  ?>    
 	<h3 id="update_header">Update Slide 
 	<?php  echo $model->id;  ?>  </h3>
@@ -63,9 +63,9 @@
                                          'errorCssClass' => 'err',
                                         'successCssClass' => 'suc',
                                         'afterValidateAttribute' => 'js:function(form, attribute, data, hasError){
-                                                                                                 $.js_afterValidateAttribute(form, attribute, data, hasError);
-                                                                                                                            }'
-                                                                             ),
+									 $.js_afterValidateAttribute(form, attribute, data, hasError);
+																}'
+				 ),
 ));
 
      ?>
@@ -117,9 +117,9 @@
     <?php  if (!$model->isNewRecord): ?>    <input type="hidden" name="update_id"
            value=" <?php echo $model->id; ?>"/>
     <?php endif; ?>
-    <div class="row-fluid buttons">
-        <?php   echo CHtml::submitButton($model->isNewRecord ? 'Submit' : 'Save',array('class' =>
-        'btn btn-primary align-right')); ?>    </div>
+    <div class="row-fluid">
+        <?php   echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Update',
+		array('class' =>'btn btn-mini btn-success','style'=>'max-width:100px;')); ?>    </div>
 
   <?php  $this->endWidget(); ?></div>
     <!-- form -->
