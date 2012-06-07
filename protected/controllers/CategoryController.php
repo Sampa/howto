@@ -48,10 +48,11 @@ class CategoryController extends Controller
 	 * Displays a particular model.
 	 * @param integer $id the ID of the model to be displayed
 	 */
-	public function actionView($id)
+	public function actionView($cat)
 	{
+	
 		$this->render('view',array(
-			'model'=>$this->loadModel($id),
+			'model'=>$this->loadModel($cat),
 		));
 	}
 
@@ -176,7 +177,11 @@ class CategoryController extends Controller
 	{
 		$model=Category::model()->findByPk($id);
 		if($model===null)
+		{
+		$model= Category::model()->find("name='".$id."'");
+		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
+		}
 		return $model;
 	}
 

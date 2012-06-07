@@ -52,7 +52,7 @@ class HowtoController extends Controller
 	*/
 	public function allowedActions()
 	{
-	 	return 'index,view,suggestTags,eltre,rating,bookmark';
+	 	return 'index,view,suggestTags,eltre,rating,bookmark,category';
 	}
 	
 
@@ -213,10 +213,7 @@ class HowtoController extends Controller
 	}
 	public function actionCreate()
 	{
-		Yii::import('ext.multimodelform.MultiModelForm');
-		$step = new Step;
 		$model = new Howto;
-
 		$this->performAjaxValidation( $model, 'howto-form' );
 		if ( isset ( $_POST['Howto'] ) )
 		{
@@ -225,6 +222,12 @@ class HowtoController extends Controller
 			$rating = new Rating();
 			$rating->save();
 			$model->rating_id = $rating->id;
+			
+			 foreach ( $_POST['Howto']['categories'] as $key=>$category)
+				{
+						$model->categories .= $category.', '; 
+				}
+				
 
 			if ( $model->save() )
 			{
@@ -239,15 +242,13 @@ class HowtoController extends Controller
 						$video->save();
 					}
 
-			 if ( $step->save() ) 
-				$this->redirect( array( 'view' , 'id'=>$model->id ) );
+				$this->redirect('/howto/'.$model->id.'/'.$model->title);
 			}
 		}
 		
 
 		$this->render('create',array(
 			'model'=>$model,
-			'step'=>$step,
 		));
 	}
 
@@ -304,7 +305,7 @@ class HowtoController extends Controller
 	}
 	
 
-	public function actionIndex($show="",$category="")
+	public function actionIndex($show="")
 	{
 		//*** SET THE SORT ORDER IF STATEMENTS ***//
 		$order = 'create_time DESC';
@@ -332,13 +333,10 @@ class HowtoController extends Controller
 		
 		if ( isset ( $_GET['tag'] ) )
 			$criteria->addSearchCondition( 'tags',$_GET['tag'] );
-	
-		if ( $split[0] == "category" ) 
-		{
-			$criteria->together = true;
-			$criteria->with = 'categories';
-			$criteria->Compare('categories.name' ,$split[1] , true );
-		}
+		if ( isset ( $_GET['category'] ) )
+			$criteria->addSearchCondition( 'categories',$_GET['category'] );
+			
+
 		
 		switch ($show)
 		{
@@ -366,6 +364,10 @@ class HowtoController extends Controller
 			$compareDate = $today->format('Y-m-d');
 			$sql = "create_time >".$compareDate;
 			$criteria->addCondition($sql);
+			break;
+			
+			case "show/category":
+
 			break;
 			
 		}

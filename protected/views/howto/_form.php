@@ -70,7 +70,7 @@
         echo $form->dropDownList( $model,'categories', $categories,
                 array(
                 'multiple'=>'multiple',
-                'key'=>'id', // The PRIMARY KEY OF PRODUCT MODEL
+                'key'=>'id',
                 'class'=>'multiselect',
 				) );?>
 	<?php $this->widget(

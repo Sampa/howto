@@ -121,7 +121,7 @@
 		$children = Category::model()->findAll("parent='".$cat->name."'");
 			foreach($children as $child)
 			{
-				$tab_content .= '<a href="/howto/category/'.$child->name.'">'.$child->name.'</a>';
+				$tab_content .= '<a href="/category/'.$child->name.'">'.$child->name.'</a>';
 			}
 		$tab_content .= '</div>';
 		$tabs[] = array('label'=>$cat->name,'content'=>$tab_content);		

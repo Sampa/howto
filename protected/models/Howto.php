@@ -35,7 +35,6 @@ class Howto extends Model
 			'steps' => array(self::HAS_MANY, 'Step', 'howto_id', 'order'=>'position','together' => true,),
 			'stepCount' => array( self::STAT , 'Step', 'howto_id', 'condition'=>''),
 			'rating'=>array( self::BELONGS_TO, 'Rating', 'rating_id'),
-			'categories'=>array(self::MANY_MANY, 'Category', 'tbl_howto_category(howto_id, category_id)'),
 
 	);
 	}
@@ -48,7 +47,7 @@ class Howto extends Model
     }
 	public function findRecentHowtos( $limit ){
 		
-		$this->beginCriteria('created DESC','status =' . Howto::STATUS_PUBLISHED);
+		$this->beginCriteria('created DESC');
 		$today = new DateTime();
 			$today->modify('-1 month'); 
 			$compareDate = $today->format('Y-m-d');
@@ -148,7 +147,17 @@ class Howto extends Model
 					));
 		return $links;
 	}
-
+	public function getCategoryLinks()
+	{
+		$links = array();
+		foreach ( Category::string2array( $this->categories ) as $category )
+			$links[] = CHtml::link( CHtml::encode( $category ), 
+				array( 
+					'/howto/index',
+					'category'=>$category
+					));
+		return $links;
+	}
 	/**
 	 * Normalizes the user-entered tags.
 	 */

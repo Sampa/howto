@@ -40,13 +40,7 @@
 	<div  style="position:relative; top:-20px;"> 
 <!-- Categories-->
 		<div>
-<?php 
-	if ( $data->categories ):
-		foreach ( $data->categories as $category ):
-			echo $category->name;
-		endforeach; 
-	endif;
-?>
+
 		</div>
 		<div  id="rating_info_<?=$data->rating_id?>">
 <?php 
@@ -95,6 +89,9 @@ if(!$owner):
 
 		<b>Tags:</b>
 		<?= implode(', ', $data->tagLinks); ?>
+		<br/>
+		<b>Categories:</b>
+		<?= implode(', ', $data->categoryLinks);?>
 		<br/>
 <!-- steps-->
 	<?php

@@ -15,7 +15,10 @@
 	</a>
 	<!--END AVATAR -->
 	</div>
+	<h6>
+	Joined on <?=$model->created;?> and last active <?=$model->last_activity;?>
 	<?php $this->renderPartial('reputation',array('id'=>$model->id,'reputation'=>$model->reputation));?>
+	</h6>
 	<div id="navbar" style="clear:both;">
 	<br/>
 <!-- Send PM for visitors -->

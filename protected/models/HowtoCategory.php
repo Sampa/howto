@@ -1,21 +1,19 @@
 <?php
 
 /**
- * This is the model class for table "category".
+ * This is the model class for table "{{howto_category}}".
  *
- * The followings are the available columns in table 'category':
+ * The followings are the available columns in table '{{howto_category}}':
  * @property integer $id
- * @property string $name
- *
- * The followings are the available model relations:
- * @property GuideCategory $id0
+ * @property integer $howto_id
+ * @property integer $category_id
  */
-class Category extends Model
+class HowtoCategory extends Model
 {
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
-	 * @return Category the static model class
+	 * @return HowtoCategory the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
@@ -27,12 +25,9 @@ class Category extends Model
 	 */
 	public function tableName()
 	{
-		return '{{category}}';
+		return '{{howto_category}}';
 	}
-public function behaviors(){
-          return array(
-			);
-          }
+
 	/**
 	 * @return array validation rules for model attributes.
 	 */
@@ -41,12 +36,11 @@ public function behaviors(){
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('name', 'required'),
-			array('name', 'length', 'max'=>255),
-			array('name','unique'),
+			array('howto_id, category_id', 'required'),
+			array('howto_id, category_id', 'numerical', 'integerOnly'=>true),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, category, parent', 'safe', 'on'=>'search'),
+			array('id, howto_id, category_id', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -58,9 +52,7 @@ public function behaviors(){
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'howtos'=>array(self::MANY_MANY, 'Howto', 'tbl_howto_category(category_id,howto_id)'),
-
-			);
+		);
 	}
 
 	/**
@@ -70,20 +62,11 @@ public function behaviors(){
 	{
 		return array(
 			'id' => 'ID',
-			'name' => 'Name',
-			'parent'=>'Parent',
+			'howto_id' => 'Howto',
+			'category_id' => 'Category',
 		);
 	}
 
-	public static function string2array($categories)
-	{
-		return preg_split('/\s*,\s*/',trim($categories),-1,PREG_SPLIT_NO_EMPTY);
-	}
-
-	public static function array2string($categories)
-	{
-		return implode(', ',$categories);
-	}
 	/**
 	 * Retrieves a list of models based on the current search/filter conditions.
 	 * @return CActiveDataProvider the data provider that can return the models based on the search/filter conditions.
@@ -96,8 +79,8 @@ public function behaviors(){
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
-		$criteria->compare('name',$this->name,true);
-		$criteria->compare('parent',$this->parent,true);
+		$criteria->compare('howto_id',$this->howto_id);
+		$criteria->compare('category_id',$this->category_id);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

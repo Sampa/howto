@@ -134,6 +134,8 @@ return array(
 				'about'=>'site/page/view/about',
         		'howto/<id:\d+>/<title:.*?>'=>'howto/view',
         		'tag/<tag:.*?>'=>'howto/index',
+				'category/<category:.*?>'=>'howto/index',
+
         		'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 				'profile/*'=>'yiiauth/user/view',
 				'howto/<show:.*?>'=>'howto/index/',

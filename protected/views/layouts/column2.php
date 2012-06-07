@@ -59,7 +59,7 @@
 <!-- latest howto -->
 			<div class="well" style="min-height:270px;"> <h2>Latest knowledge</h2>
 				<?php 
-					$models = Howto::model()->findAll(array('order' => 'create_time','limit'=>5));
+					$models = Howto::model()->findAll(array('order' => 'create_time DESC','limit'=>5));
 					foreach ($models as $model):
 					?>
 			<div style="float:left;min-width:100%;margin-bottom:-20px;">		
