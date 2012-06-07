@@ -29,9 +29,9 @@ $this->layout = "column1";
 			 
 			</p>
 			<p>
-				<a class="btn btn-primary" href="/creating">
+				<a class="btn" href="/creating">
 					Read more 
-					<i class="icon-white icon-arrow-right"></i>
+					<i class="icon-arrow-right"></i>
 				</a>
 			</p>
         </div>
@@ -43,9 +43,9 @@ $this->layout = "column1";
 			You can Bookmark,print and save the Howto as pdf. You can also comment and give feedback. 
 		</p>		
 		<p>
-			<a class="btn btn-primary" href="/reading">
+			<a class="btn" href="/reading">
 			Read more
-			<i class="icon-white icon-arrow-right"></i>
+			<i class="icon-arrow-right"></i>
 			</a>
 		</p>
     </div>
@@ -56,9 +56,9 @@ $this->layout = "column1";
 				Mail the knowledge to a friend, share on facebook, twitter or google+. Save them to your computer and share with your collegues or family. Print and set up in your office.
 			</p>
 			<p>
-				<a class="btn btn-primary" href="/sharing">
+				<a class="btn" href="/sharing">
 					Read more
-					<i class="icon-white icon-arrow-right"></i>
+					<i class="icon-arrow-right"></i>
 				</a>
 			</p>
     </div>

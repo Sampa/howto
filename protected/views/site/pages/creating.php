@@ -20,14 +20,8 @@ $this->widget('ext.yii-facebook-opengraph.plugins.comments', array(
 ));
 */
 ?>
+<div class="well span7">
 <h2> Creating!</h2>
-<p class="well">
-
-</p>
-<p>
-	
-</p>
-<div class="well">
 <div id="disqus_thread"></div>
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */

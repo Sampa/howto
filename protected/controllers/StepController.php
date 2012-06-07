@@ -12,7 +12,7 @@ class StepController extends Controller
 	
 		public function allowedActions()
 	{
-	 	return 'index,create,update';
+	 	return 'index,create,update,updatePos';
 	}
 	
 
@@ -21,18 +21,22 @@ class StepController extends Controller
 	public function actionupdatePos ( $howtoid )
 		{
 			if ( Yii::app()->request->isAjaxRequest )
-			{
-				foreach ( $_GET['pos'] as $newPos => $id )
-				{
-					$sql = "UPDATE step SET position=".$newPos;
-					$sql .=" WHERE id=".$id." AND howto_id=".$howtoid;
-					Yii::app()->db->createCommand($sql)->query();
+			{	
+				$pos = 1;
+				 foreach ( $_GET['pos'] as $id )
+				 {
+					if ($id=="")
+						continue;
+					$model = $this->loadModel($id);
+					$model->position = $pos;
+					$model->save();
+					$pos = $pos+1;
 				}
 			
 			echo CJSON::encode ( array (
                         'status'=>'success', 
 						'div'=>'Saved...',
-						'howtoid'=>$howtoid
+						'howtoid'=>$howtoid,
 						));
 		
 			}
@@ -235,7 +239,7 @@ public function actionUpdate($id)
 	{
 		$model = Step::model()->findByPk($id);
 		if ( $model===null )
-			throw new CHttpException(404,'The requested page does not exist.');
+			throw new CHttpException(404,'The requested model/page does not exist.');
 		return $model;
 	}
 

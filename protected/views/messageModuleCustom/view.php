@@ -11,13 +11,13 @@
 <?php $this->renderPartial(Yii::app()->getModule('message')->viewPath . '/_styles') ?>
 <?php $this->renderPartial(Yii::app()->getModule('message')->viewPath . '/_flash') ?>
 
-<div class="row">
+<div class="row-fluid">
 
 <?php $this->renderPartial(Yii::app()->getModule('message')->viewPath . '/_navigation') ?>
-	<div class="span13">
+	<div class="span7">
 		<?php $form = $this->beginWidget('BootActiveForm', array(
 			'id'=>'message-delete-form',
-			'enableAjaxValidation'=>false,
+			'enableAjaxValidation'=>true,
 			'action' => $this->createUrl('delete/', array('id' => $viewedMessage->id))
 		)); ?>
 		<?php $this->endWidget(); ?>
@@ -51,7 +51,7 @@
 		<div class="form">
 			<?php $form = $this->beginWidget('BootActiveForm', array(
 				'id'=>'message-form',
-				'enableAjaxValidation'=>false,
+				'enableAjaxValidation'=>true,
 			)); ?>
 
 			<?= $form->errorSummary($message, null, null, array('class' => 'alert-message block-message error')); ?>

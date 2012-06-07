@@ -26,6 +26,8 @@
 </head>
 
 <body>
+	
+
 	<?php $this->widget('application.extensions.search-and-share.SearchShare'); ?>
 
 <div id="page" >
@@ -36,8 +38,9 @@
 				<img src="/images/logo.png" alt="Howto"/>
 			</a>
 		</div>
-	
-		<div class="" style="height:29px; float:left; width:29%; padding: 0px;">
+			<?= CHtml::link('<i class="icon-white icon-plus-sign"></i> Howto',array('//howto/create'),
+				array('class'=>'btn  btn-success','style'=>'float:left;'));?>
+<div class="" style="height:29px; float:left; width:30%; border:0px solid black; padding-left: 10px;">
 
 	<?php if ( $this->isGuest ):?>	
 	
@@ -85,64 +88,17 @@
 	</div> <!-- // user button -->
 	
 	<div style="float:left;">
-<!-- messagebutton--><?php 
-	if ( Yii::app()->getModule('message')->getCountUnreadedMessages($this->userId) > 0 )
-	{
-		$unreadCount = '(' . Yii::app()->getModule('message')->getCountUnreadedMessages($this->userId) . ')'; 
-	}else{
-		$unreadCount = false;
-	}
-		$this->widget('bootstrap.widgets.BootButtonGroup', 
-		array(
-			'type'=>'primary', 
-			'buttons'=>
-			array(
-				array('label'=>'Messages'.$unreadCount,
-				'url'=>Yii::app()->getModule('message')->inboxUrl,
-					'visible' => !Yii::app()->user->isGuest),
-				array('items'=>
-						array(
-							array('label'=>'Sent', 'url'=>Yii::app()->getModule('message')->sentUrl),
-							array('label'=>'New message', 'url'=>Yii::app()->getModule('message')->composeUrl),
-						)
-					),
-			),
-		)); 
-	?>
-		</div><!-- // message button-->
+
 	<?php endif; // end is logged in?>	
-	
-	<div style="float:right;">
-<!--howtos--><?php 
-		$this->widget('bootstrap.widgets.BootButtonGroup', 
-		array(
-			'type'=>'primary', 
-			'buttons'=>
-			array(
-				array('label'=>'Howtos', 'url'=>'/howto/show/new'),
-				array('items'=>
-					array(
-						array(
-							'label'=>'Create New Howto',
-							'url'=>array( '//howto/create' ), 
-							'visible'=>!Yii::app()->user->isGuest,
-							),
-						array('label'=>'New!','url'=>array( '/howto/show/new' ),),
-						array('label'=>'Popular!','url'=>array( '/howto/show/popular' ), ),
-						array('label'=>'Your Howtos!','url'=>array( '/howto/show/own' ), 
-							'visible'=>!Yii::app()->user->isGuest ),
-						array(
-							'label'=>'Manage Howtos', 
-							'url'=>array( '/howto/admin' ), 
-							'visible'=>Yii::app()->user->checkAccess( 'Howto.Admin' )
-							),
-						)
-					),
-				),
-			)
-		); 
-	?>
-		</div> <!-- // howtos button-->
+
+	<div style="position:absolute; top:2px; left:390px;">
+	<?= CHtml::link('<i class="icon-time"></i> New!',array('//howto/show/new'),
+				array('class'=>'btn','style'=>'float:left;'));?>
+	<?= CHtml::link('<i class="icon-fire"></i> Popular!',array('//howto/show/popular'),
+				array('class'=>'btn ','style'=>'float:left;'));?>
+		
+			</div> <!-- // howtos button-->
+			
 	</div>
 
 
@@ -205,8 +161,8 @@ $this->widget('bootstrap.widgets.BootTabbable', array(
 //$Badge->onSuccess = array( $object, 'notifyUser'); // add custom event after giving badge to user
 //$Badge->checkAndGiveGroup( 'Login' );
 ?>
-	<?= $content; ?>
 
+	<?= $content; ?>
 
 	<div id="footer" style="clear:both;min-height:130px;"><!-- footer-->
 		<div style="float:left; margin-top:px;"><!-- contact -->

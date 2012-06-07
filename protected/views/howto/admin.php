@@ -1,9 +1,10 @@
 <?php
 $this->breadcrumbs=array(
-	'Manage howto-',
+	'Manage how2',
 );
+$this->layout="ajax";
 ?>
-<h1>Manage howto-</h1>
+<div class="" style="padding-bottom:90px;"><h4>Your Howto's </h4>
 
 <?php
 	$this->widget('bootstrap.widgets.BootGridView', 
@@ -34,3 +35,4 @@ $this->breadcrumbs=array(
 		),
 	)); 
 ?>
+</div>

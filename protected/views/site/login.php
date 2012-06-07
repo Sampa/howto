@@ -1,3 +1,4 @@
+<div class="span7 well" style="padding-right:0px;margin-left:0px; margin-top:10px;">
 
 <?php
 $this->pageTitle=Yii::app()->name . ' - Login';
@@ -42,3 +43,4 @@ $this->breadcrumbs=array(
 <?php $this->endWidget(); ?>
 
 </div><!-- form -->
+</div>

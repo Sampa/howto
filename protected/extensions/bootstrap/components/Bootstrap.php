@@ -112,6 +112,9 @@ class Bootstrap extends CApplicationComponent
 
 		if (!$this->isPluginDisabled(self::PLUGIN_POPOVER))
 			$this->registerPopover();
+			
+		if (!$this->isPluginDisabled(self::PLUGIN_ALERT))
+			$this->registerTooltip();
 	}
 
 	/**

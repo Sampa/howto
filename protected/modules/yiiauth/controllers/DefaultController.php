@@ -54,18 +54,22 @@ class DefaultController extends Controller
 		**/
 		
 		// workOnUser returns an user object
+		if ( is_object ($user_profile) ){
 		$user = $this->workOnUser($provider,$user_profile->identifier); 
-		if ( $this->autoLogin($user) ){
-			$this->render('profile',
-				array(
-				'error'=>$error, 
-				'provideruser'=>$user_profile,
-				'yiiuser'=>$user,
-				'provider'=>$provider,	
-				) );
+			if ( $this->autoLogin($user) ){
+				$this->render('profile',
+					array(
+					'error'=>$error, 
+					'provideruser'=>$user_profile,
+					'yiiuser'=>$user,
+					'provider'=>$provider,	
+					) );
+				}else{
+					$this->render('authenticatewith',array('error'=>$error,'user_profile'=>$user_profile ) );
+					}
 			}else{
-			$this->render('authenticatewith',array('error'=>$error,'user_profile'=>$user_profile ) );
-		}
+					echo "Something wrong with ".$provider;
+				}
 	} 
 
 	public function workOnUser($provider,$provideruser){

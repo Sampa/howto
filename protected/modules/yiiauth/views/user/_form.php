@@ -1,4 +1,31 @@
-<div class="well" >
+
+<?php if ( !$model->isNewRecord ): ?>
+	<div id="avatar_upload" style="">
+	 <h3> Upload an avatar </h3>
+<?php 
+
+	$XUpload = new XUploadForm;
+	$this->widget('xupload.XUpload', 
+			array(
+					'url' => Yii::app()->createUrl("file/upload", 
+					array("parent_id" =>User::USER_DIR . Yii::app()->user->id ) ),
+						'type'=>'avatar',
+						'model' => $XUpload,
+						'attribute' => 'file',
+						'options'=>array(
+						'completed' => 'js:function (e,data) {
+						$.each(data.files, function (index, file) {
+						$("#User_avatar").val(file.name);
+						});
+						}'),
+		       ));
+
+			   
+?>
+
+	</div>
+<?php endif;?>
+
 <?php 
 	$form = $this->beginWidget('bootstrap.widgets.BootActiveForm',
 	array(
@@ -13,7 +40,7 @@
 		'htmlOptions'=>array( 'class'=>'' ),
 		)); 
 ?>	
-	<div ="row-fluid buttons">
+	<div class="row-fluid buttons">
 	<?php
 		echo CHtml::htmlButton('<i class="icon-ok icon-white"></i> Save',
 			array('class'=>'btn btn-mini btn-success', 'type'=>'submit') ); 
@@ -74,4 +101,3 @@
 	?>
 <?php $this->endWidget(); ?>
 
-</div><!-- form -->

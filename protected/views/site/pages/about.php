@@ -20,6 +20,8 @@ $this->widget('ext.yii-facebook-opengraph.plugins.comments', array(
 ));
 */
 ?>
+<div class="well span7">
+
 <h2> Here we go!</h2>
 <p>
 	Here we go, Howto is live! Please note that we currently are at a beta stage.
@@ -32,7 +34,6 @@ $this->widget('ext.yii-facebook-opengraph.plugins.comments', array(
 	<br/>
 	Use the comment form below or mail us using our <?=CHtml::link('contact form',array('/contact'));?>
 </p>
-<div class="well">
 <div id="disqus_thread"></div>
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */

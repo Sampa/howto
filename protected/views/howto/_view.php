@@ -1,9 +1,14 @@
 <?php
 	$created = date('F j, Y',$data->create_time); 
 	$updated = date('F j, Y',$data->update_time);
+	if(Yii::app()->user->id == $data->author->id){
+		$owner = true;
+		}else{
+		$owner = false;
+		}
 ?>
 
-<div class="Howto span6" style="border: 0px solid black; margin-left:0px; margin-bottom:-50px;" >
+<div class="Howto span6" style="border: 0px solid black; margin-left:0px; margin-bottom:-30px;" >
 	<div class="title">
 		<h2>	
 			<?= CHtml::link(CHtml::encode($data->title), $data->url); ?>
@@ -55,6 +60,7 @@
 
 	
 <?php // rating
+if(!$owner):
 	$this->widget('CStarRating',array(
     'name'=>'rating'.$data->rating_id,
 	'starCount'=>10,
@@ -76,7 +82,7 @@
 			));
 ?> 	
 <div id="rating_success_<?=$data->id;?>" style="display:none"></div>
-
+<?php endif;?>
 	<div class="content">
 		<br/>
 		<div class="edit_area">
@@ -103,12 +109,12 @@
 <!--print--><?= CHtml::htmlButton('<i class="icon-print icon-white"></i> Print/Pdf', 
 				array('class'=>'btn btn-mini btn-primary printpdf') );?>		
 	
-<!--bookmark--><?php if(!Yii::app()->user == $data->author->id){
+<!--bookmark--><?php 
 				echo CHtml::htmlButton('<i class="icon-bookmark icon-white"></i> Bookmark ', 
 					 array(
 						'class'=>'btn btn-mini btn-primary bookmark',  
 						'name'=>$data->id,
-						) );}?>
+						) );?>
 		<div id="bookmark_success_<?=$data->id;?>" style="display:none"></div>
 		
 <!--email--><?= CHtml::htmlButton('<i class="icon-envelope icon-white"></i> Mail it', 
@@ -149,7 +155,7 @@
 
 		
 	<?php if ( $this->user == $data->author->username):?>
-	<div id="elrte_holder" style="clear:both; max-width:50%;">
+	<div id="elrte_holder" style="clear:both; max-width:100%;margin-top:0px;">
 	<textarea id="elrte_content" style="display:none" ></textarea>
 	<?php 
 		$this->widget('application.extensions.elrte.elRTE', 
@@ -164,6 +170,7 @@
 		<script type="text/javascript">
 	$('#edit_content').click(function(){
 	 $('#elrte_content').elrte('val', $(".edit_area").html());
+	 $('#elrte_holder').attr('style','clear:both; max-width:100%;margin-top:200px;');
 	 $('#elrte_content').fadeIn('slow');
 	 $('#save_content').fadeIn('slow');
 });
@@ -191,20 +198,21 @@
 	$(document).ready(function(){
 	$(".save_step").hide();
 	$(".step_text").click(function(){
+	$( "#sortable" ).sortable( "option", "disabled", true );
 		var id = $(this).attr('name');
-		$("#"+id).fadeIn('slow');
+		$("#button"+id).fadeIn('slow');
 		$("#div"+id).fadeIn('slow');
 
 	});
 	$(".save_step").click(function(){
-		var id = $(this).attr('id');
+		var id = $(this).attr('name');
 		var url = '/step/inlineEdit?id='+id;
 		var content = $('#step_text_div'+id).html();
 		jQuery.getJSON(url, {content: content }, function(data) {
 			if (data.status == 'success'){
-					$("#"+id).fadeOut('slow');
+					$("#button"+id).fadeOut('slow');
 					$("#div"+id).fadeOut('slow');
-
+					$( "#sortable" ).sortable( "option", "disabled", false );
 				}
 			});
 			return false;

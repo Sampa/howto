@@ -33,6 +33,7 @@ font: bold 11pt :verdana,Helvetica,sans-serif;
 	min-width:98%;
 	margin-left:0px;
 	margin-right:0px;
+	
 }
 
 #header
@@ -44,25 +45,30 @@ font: bold 11pt :verdana,Helvetica,sans-serif;
 
 #content
 {
-	margin:0px;
 	padding: 0 0 0 0px;
 	min-width: 700px;
+	
 	}
 .column1{
 
 }
 #sidebar
 {
-	float:left;
-	padding: 20px;
+	
+	padding: 0px;
+	
 }
 
 #footer
 {
-	padding: 10px;
-	margin: 10px 20px;
+	position:relative;
+	bottom:0px;
+	padding: 0px;
+	margin: 10px 0px 0px 0px;
 	text-align: center;
 	border-top: 1px solid #C9E0ED;
+	min-width:98%;
+	
 }
 
 #logo

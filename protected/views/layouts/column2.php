@@ -1,7 +1,9 @@
 <?php $this->beginContent('application.views.layouts.main'); ?>
-<div class="span12" style="margin-left: 10px; margin-top: -18px; min-width: 100%; border:0px solid black;"> 
+<div class="span8" style="margin-left: 10px; margin-top: -18px; border:0px solid black;"> 
 			<?php echo $content; ?>
-		<div id="sidebar" class="span5" style="border:0px solid red;z-index:15;padding: 0px; position:absolute; left:60%;">
+</div>
+
+		<div id="sidebar" class="span4" style="border:0px solid red;z-index:15;padding: 0px; position:relative; margin-top:-18px; margin-left:90px;">
 		
 <!-- siderbar clip--><?php echo $this->clips['sidebar']; ?>
 
@@ -55,9 +57,9 @@
 			</div>
 
 <!-- latest howto -->
-			<div class="well" style="min-height:300px;"> <h2>Latest knowledge</h2>
+			<div class="well" style="min-height:270px;"> <h2>Latest knowledge</h2>
 				<?php 
-					$models = Howto::model()->findAll(array('order' => 'create_time','limit'=>10));
+					$models = Howto::model()->findAll(array('order' => 'create_time','limit'=>5));
 					foreach ($models as $model):
 					?>
 			<div style="float:left;min-width:100%;margin-bottom:-20px;">		
@@ -86,5 +88,4 @@
 		<?php endforeach;?>
 			</div><!-- latest knowledge-->
 		</div><!-- sidebar -->
-</div>
 <?php $this->endContent(); ?>

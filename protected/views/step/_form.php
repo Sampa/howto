@@ -23,7 +23,7 @@
 		  'validateOnChange'=>true,
 		  'validateOnType'=>true,
 			 ),
- 		'htmlOptions'=>array( 'class'=>'well' ),
+ 		'htmlOptions'=>array( ),
 		) );
 ?>
 
@@ -49,9 +49,9 @@
 
 
 
-	<div ="row-fluid buttons">
+	<div class="row-fluid buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save', 
-			array( 'class'=>'btn btn-primary' ) ); ?>
+			array( 'class'=>'btn btn-success' ) ); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

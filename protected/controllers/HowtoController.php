@@ -52,7 +52,7 @@ class HowtoController extends Controller
 	*/
 	public function allowedActions()
 	{
-	 	return 'index,view,suggestTags,eltre,rating';
+	 	return 'index,view,suggestTags,eltre,rating,bookmark';
 	}
 	
 
@@ -174,17 +174,24 @@ class HowtoController extends Controller
 				$model = new Bookmark;
 				$model->howto_id = $_GET['id'];
 				$model->user_id = $this->userId;
+				$howto = $this->loadModel($model->howto_id);
+				$model->howto_title = $howto->title;
 				if ( $model->save() )
 				{ $message = 'Woho! Added this Howto to your bookmarks'; 
 				}
 				else { $message = 'Shit, something went wrong. Could not save this bookmark';
 				}
-							
-			} else { $message = 'Oops! You have already bookmarked this Howto'; }
-			echo CJSON::encode( array (
+				echo CJSON::encode( array (
 					'status'=>'success', 
 					'div'=>$message,
+					) );			
+			} else { $message = 'Oops! You have already bookmarked this Howto'; 
+				echo CJSON::encode( array (
+					'status'=>'failure', 
+					'div'=>$message,
 					) );
+			}
+		
 			
 		}
 	}
@@ -209,7 +216,6 @@ class HowtoController extends Controller
 		Yii::import('ext.multimodelform.MultiModelForm');
 		$step = new Step;
 		$model = new Howto;
-		$validatedSteps = array(); //ensure an empty array
 
 		$this->performAjaxValidation( $model, 'howto-form' );
 		if ( isset ( $_POST['Howto'] ) )
@@ -224,7 +230,6 @@ class HowtoController extends Controller
 			{
 				
 				$files = $this->checkFiles($_POST['Howto']['video']);
-				print_r($files);
 					foreach($files as $key=>$file)
 					{
 						$video = new Video;
@@ -233,9 +238,8 @@ class HowtoController extends Controller
 						$video->filename = $file;
 						$video->save();
 					}
-				$masterValues = array ('howto_id'=>$model->id);
 
-			 if ( MultiModelForm::save($step,$validatedSteps,$deleteSteps,$masterValues ) )
+			 if ( $step->save() ) 
 				$this->redirect( array( 'view' , 'id'=>$model->id ) );
 			}
 		}
@@ -244,46 +248,9 @@ class HowtoController extends Controller
 		$this->render('create',array(
 			'model'=>$model,
 			'step'=>$step,
-			'validatedSteps'=>$validatedSteps
 		));
 	}
 
-	/**
-	 * Updates a particular model.
-	 * If update is successful, the browser will be redirected to the 'view' page.
-	 */
-	 
-	
-	public function actionUpdate($id)
-	{
-		 Yii::import('ext.multimodelform.MultiModelForm');
-		$model = $this->loadModel($id);
-		$step = new Step;
-		$validatedSteps = array(); //ensure an empty array
-		$this->performAjaxValidation( $model, 'howto-form' );
-	
-		
-		if ( isset ( $_POST['Howto'] ) )
-		{
-			$model->attributes = $_POST['Howto'];
-			$masterValues = array ('howto_id'=>$model->id);
-			 if ( MultiModelForm::save($step,$validatedSteps,$deleteSteps,$masterValues) &&
-            $model->save()
-           )
-				$this->redirect( array( 'view' , 'id'=>$model->id ) );
-		}
-	
-		
-		$this->render('update',array(
-			'model'=>$model,
-			'step'=>$step,
-			'validatedSteps'=>$validatedSteps
-		));
-	}
-	
-	
-	
-	
 
 	/**
 	 * Deletes a particular model.
@@ -327,36 +294,7 @@ class HowtoController extends Controller
 		return $mPDF1->outPut();
 	}
 	
-	//**EXCEL**
-	public function actionexcel( $id )
-	{
-		$model = $this->loadModel();
-		$model = new CActiveDataProvider($model,
-		array(
-			'criteria'=>array(
-				'condition'=>'id='.$id,
-			),));
- 
-    // Export it (note the way we define columns, the same as in CGridView, thanks to EExcelView)
-    $this->toExcel($model,
-        array(
-            'id',
-            'title::Title', // Note the custom header
-            'content::Howto',
-			'tags',
-			//'rating',
-			'create_time',
-			'status',
-
-        ),
-        'Random file',
-        array(
-            'creator' =>'',
-			//'autoWidth'=>false,
-        ),
-        'Excel2007' // This is the default value, so you can omit it. You can export to CSV, PDF or HTML too
-    );
-}
+	
 	/**
 	 * Lists all models.
 	 */
@@ -368,7 +306,6 @@ class HowtoController extends Controller
 
 	public function actionIndex($show="",$category="")
 	{
-		
 		//*** SET THE SORT ORDER IF STATEMENTS ***//
 		$order = 'create_time DESC';
 		$split = explode("/",$show);
@@ -411,6 +348,7 @@ class HowtoController extends Controller
 					$this->redirect( array( '/reg' , 'ref'=>'own' ) );
 				}
 				$criteria->addColumnCondition( array ( 'author_id'=>Yii::app()->user->id ) );
+			$this->layout = "ajax";
 			break;
 			case "show/by":
 			if ( Yii::app()->user->isGuest )

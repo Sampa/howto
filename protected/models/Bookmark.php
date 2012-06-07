@@ -14,6 +14,7 @@ class Bookmark extends Model
 	 * @param string $className active record class name.
 	 * @return Bookmark the static model class
 	 */
+	public $howto_title;
 	public static function model($className=__CLASS__)
 	{
 		return parent::model($className);
@@ -35,7 +36,7 @@ class Bookmark extends Model
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('user_id, howto_id', 'required'),
+			array('user_id, howto_id howto_title', 'required'),
 			array('user_id, howto_id', 'numerical', 'integerOnly'=>true),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
@@ -70,6 +71,7 @@ class Bookmark extends Model
 		// class name for the relations automatically generated below.
 		return array(
 		'howto' => array( self::BELONGS_TO , 'Howto', 'howto_id' ),
+		'user'=>array( self::BELONGS_TO,'User','user_id'),
 
 		);
 	}
@@ -82,6 +84,7 @@ class Bookmark extends Model
 		return array(
 			'user_id' => 'User',
 			'howto_id' => 'Howto',
+			'howto_title'=>'Howto title',
 		);
 	}
 
@@ -95,8 +98,8 @@ class Bookmark extends Model
 		// should not be searched.
 
 		$criteria=new CDbCriteria;
-
-		$criteria->compare('user_id',$this->user_id);
+		$criteria->compare('user_id', Yii::app()->user->id);
+		$criteria->compare('howto_title',$this->howto_title);
 		$criteria->compare('howto_id',$this->howto_id);
 
 		return new CActiveDataProvider($this, array(

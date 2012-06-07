@@ -8,84 +8,78 @@
 	$imageUrl ="";
 	$imageUrl = "/files/users/".$model->id."/".$model->avatar;
 	?>
-	<div  style="width:60%; height:130px; float:left; border:1px solid blue;">
+	<div  style="width:100%; max-height:160px; float:left; border:0px solid blue;">
 	<!--avatar html-->
 	<a target="_blank" href="<?=$imageUrl;?>">
-		<img class="user_avatar" style="max-height:160px;" src="<?=$imageUrl;?>" alt="Avatar"/>
+		<img class="user_avatar" style="min-width:100%;max-height:160px;" src="<?=$imageUrl;?>" alt="Avatar"/>
 	</a>
 	<!--END AVATAR -->
 	</div>
+	<?php $this->renderPartial('reputation',array('id'=>$model->id,'reputation'=>$model->reputation));?>
 	<div id="navbar" style="clear:both;">
-<!-- Message/inbox -->
+	<br/>
+<!-- Send PM for visitors -->
 	<?php if(!$owner):?>
 	<button class="btn btn-mini btn-primary"
 	onClick="window.location.href = '/message/compose?id=<?=$model->id;?>'">
 		<i class="icon-white icon-envelope"></i> Send PM
 	</button>
 	<?php endif;?>
-	
+
+<!-- if u visit your own profile show some other stuff -->	
 <?php if($owner):?>
-	<button class="btn btn-mini btn-primary"
-	onClick="window.location.href = '/message/compose'">
-		<i class="icon-white icon-envelope"></i> New PM
-	</button>
+<?php 
+	if ( Yii::app()->getModule('message')->getCountUnreadedMessages($this->userId) > 0 )
+	{
+		$unreadCount = '(' . Yii::app()->getModule('message')->getCountUnreadedMessages($this->userId) . ')'; 
+	}else{
+		$unreadCount = false;
+	}			
+?>
+<!-- inbox button -->
 	<button class="btn btn-mini btn-primary"
 	onClick="window.location.href = '/message/inbox'">
-		<i class="icon-white icon-envelope"></i> Inbox
+		<?=$unreadCount;?> <i class="icon-white icon-envelope"></i>Inbox
 	</button>
-	<button class="btn btn-mini btn-primary"
-	onClick="window.location.href = '/message/Sent'">
-		<i class="icon-white icon-envelope"></i> Sent
-	</button>	
-<!-- update-->
-		<button class="update_toggle btn btn-mini btn-primary" id="update_button"">
-			<i class="icon-ok icon-white"></i>Update
-		</button> 
-  
-		<button class="update_toggle btn btn-mini btn-danger" id="cancel_button" style="display:none;">
-<!--cancel--><i class="icon-ban-circle icon-white"></i>Cancel 
-		</button>
+	
+<!-- bookmarks button-->
+	<?=  CHtml::ajaxLink('<i class="icon-bookmark icon-white"></i>Bookmarks',
+	array('//bookmark/admin'),array('update'=>'#currentContent'),array('class'=>'btn btn-mini btn-primary tool'));?>
+	
+<!-- view your own howtos button -->
+<?=  CHtml::ajaxLink('<i class="icon-book icon-white"></i>Your Howtos',
+	array('/howto/admin'),array('update'=>'#currentContent'),array('class'=>'btn btn-mini btn-primary'));?>
+<!-- update profile button-->
+<?=  CHtml::ajaxLink('<i class="icon-refresh icon-white"></i>Update Info',
+	array('update?id='.Yii::app()->user->id),array('update'=>'#currentContent'),
+	array('class'=>'btn btn-mini btn-primary update_toggle','id'=>'update_button'));?>
 <?php endif;?>
 	</div>
+	<div id="currentContent" class="span7 well" style="position:relative;border:0px solid red; margin-left:0px; padding:10px;">
+	<?= $model->presentation; ?> 
+	</div>
+
+
 	<?php
 	//$this->renderPartial('reputation',array('reputation'=>$model->reputation,'id'=>$model->id));?>
-	<?php 	if ( !Yii::app()->user->isGuest ): ?>
-	<div id="user_update" class="span7" style="border:0px solid red;clear:both; margin-left:0px;">
-<!--update form--><?=$this->renderPartial('update',array('model'=>$model));?>
-	</div>
-	<?php
-	$this->beginWidget('system.web.widgets.CClipWidget', array( 'id'=>'sidebar' ) );  
-		//the users own bookmarks
-		$bookmarks = Bookmark::model()->getBookmarks($this->userId);
-		if ( $bookmarks ):
-	?> 
-			<div class="well" style=""> <h2>Your Bookmarks</h2>
-				<?php
-					foreach( $bookmarks as $link )
-					{
-						echo $link . '<br/>';
-					}
-				?>
-			</div>
-	
+
+		<?php 
+		$this->widget('application.extensions.elrte.elRTE', 
+		array(
+			'selector'=>'#User_presentation',
+			'userid'=>Yii::app()->user->id,
+		));
+	?>
+
+
+
 	<script type="text/javascript">
 	
 		$(document).ready(function(){
-			$("#user_update").hide();
-		});
-		$(".update_toggle").click(function(){
-			$("#user_update").toggle();
-			$("#user_presentation").toggle();
-			$("#update_button").toggle();
-			$("#cancel_button").toggle();
-		});
+
 		$("#reputation").click(function(){
 			
 		
 		});
+		});
 	</script>	
-<?php endif; endif; $this->endWidget(); ?>
-
-
-	
-<div id="user_presentation" class="span7 well" style="border: 0px solid black;clear:both; padding-right:0px;margin-left:0px;"> <?= $model->presentation; ?> </div>
