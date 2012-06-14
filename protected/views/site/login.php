@@ -34,7 +34,6 @@ $this->breadcrumbs=array(
 		<?php echo $form->label($model,'rememberMe'); ?>
 		<?php echo $form->error($model,'rememberMe'); ?>
 	</div>
-
 	<div class="row-fluid submit">
 	    <?php echo CHtml::htmlButton('<i class="icon-ok icon-white"></i> Login', array('class'=>'btn btn-primary', 'type'=>'submit')); ?>
 

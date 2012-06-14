@@ -9,6 +9,45 @@ body
 }
 
 /** My own css **/
+.pop {
+  position: absolute;
+  display: inline;
+  }
+  .pop .pop_menu {
+  
+    display: none;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px; }
+  .pop .pop_toggle {
+    background-image: url(/images/arrow-down.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 20px;
+    height: 16px;
+	position:relative;
+	top:-2px;
+    overflow: hidden;
+    cursor: pointer; }
+
+.active .pop_menu {
+  display: block;
+	background-color:#0088CC;
+	z-index: 1001;
+
+  position: absolute;
+  padding: 0;
+  width: 24em; 
+     -moz-border-radius: 4px;
+    -webkit-border-radius: 4px; 
+  }
+
+.active .pop_toggle {
+  z-index: 2000;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  background-image: url(/images/arrow-down.gif); }
+
 
 /** User/view **/
 .user_avatar{width:150px;height:100px;float:left;}

@@ -3,7 +3,7 @@
 			<?php echo $content; ?>
 </div>
 
-		<div id="sidebar" class="span4" style="border:0px solid red;z-index:15;padding: 0px; position:relative; margin-top:-18px; margin-left:90px;">
+		<div id="sidebar" class="span5" style="border:0px solid red;z-index:15;padding: 0px; position:relative; margin-top:-18px; margin-left:40px;">
 		
 <!-- siderbar clip--><?php echo $this->clips['sidebar']; ?>
 

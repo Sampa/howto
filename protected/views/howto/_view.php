@@ -8,16 +8,16 @@
 		}
 ?>
 
-<div class="Howto span6" style="border: 0px solid black; margin-left:0px; margin-bottom:-30px;" >
+<div class="Howto span12" style="border: 0px solid black; margin-left:0px; margin-top:10px;" >
 	<div class="title">
 		<h2>	
 			<?= CHtml::link(CHtml::encode($data->title), $data->url); ?>
 		</h2>
 	</div>
 <!-- author link -->
-	<div class="author">
+	<div class="author span10" style="border:px solid black; max-height:18px;margin-left:0px;">
 		<div style="float:left;">
-		Shared by	
+		Shared by&nbsp;	
 		</div>
 		<?php
 			$this->widget('UserButton', 
@@ -31,17 +31,14 @@
 	
 <!-- created and last updated dates-->
 		<div >
-			on <i> <?=$created;?></i>
+			&nbsp;on <i> <?=$created;?></i>
 			and last updated on <i><?= $updated;?></i> 
 		</div>
 	</div>
 	<div style="clear:both"></div>
 	<!-- container to adjust the user link-->
-	<div  style="position:relative; top:-20px;"> 
-<!-- Categories-->
-		<div>
+	<div  style="position:relative; top:8px;"> 
 
-		</div>
 		<div  id="rating_info_<?=$data->rating_id?>">
 <?php 
 	if ( $rating = Rating::model()->findByPk($data->rating_id) )
@@ -54,7 +51,6 @@
 
 	
 <?php // rating
-if(!$owner):
 	$this->widget('CStarRating',array(
     'name'=>'rating'.$data->rating_id,
 	'starCount'=>10,
@@ -66,20 +62,16 @@ if(!$owner):
         	url = "/howto/rating";
 			jQuery.getJSON(url, {id: '.$data->rating_id.', val: $(this).val()}, function(data) {
 				if (data.status == "success"){
-					$("#rating_success_'.$data->rating_id.'").html(data.div);
-					$("#rating_success_'.$data->rating_id.'").fadeIn("slow");		
-					var pause = setTimeout("$(\"#rating_success_'.$data->rating_id.'\").fadeOut(\"slow\")",5000);
+
 					$("#rating_info_'.$data->rating_id.'").html(data.info);
 					$("input[id*='.$data->rating_id.'_]").rating("readOnly",true);
 					}
 				});}'
 			));
 ?> 	
-<div id="rating_success_<?=$data->id;?>" style="display:none"></div>
-<?php endif;?>
 	<div class="content">
 		<br/>
-		<div class="edit_area">
+		<div class="edit_area" style="max-width:60%">
 		<?php
 			echo $data->content;
 		?>
@@ -140,7 +132,7 @@ if(!$owner):
    src="http://83.233.118.50/howto/'.$data->id.'/'.$data->title.'!?embed=true" width="550" height="577" marginwidth="0" marginheight="0" frameborder="no"   scrolling="yes"</iframe>');?></h6>
    </div>
 	</div><!-- nav -->
-	</div><!-- categories and down-->
+</div><!-- categories and down-->
 </div>
 
 
@@ -249,7 +241,7 @@ if(!$owner):
 			}
 
 	
-	 $('.edit_step').editable('/step/inlineEdit?id=<?=$data->id;?>&url=<?=$data->url;?>', { 
+	 $('.edit_').editable('/step/inlineEdit?id=<?=$data->id;?>&url=<?=$data->url;?>', { 
          type      : 'textarea',
 		 data	   : $(this).html(),
          cancel    : 'Cancel',

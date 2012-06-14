@@ -21,6 +21,7 @@
 	</h6>
 	<div id="navbar" style="clear:both;">
 	<br/>
+	
 <!-- Send PM for visitors -->
 	<?php if(!$owner):?>
 	<button class="btn btn-mini btn-primary"
@@ -28,7 +29,6 @@
 		<i class="icon-white icon-envelope"></i> Send PM
 	</button>
 	<?php endif;?>
-
 <!-- if u visit your own profile show some other stuff -->	
 <?php if($owner):?>
 <?php 
@@ -52,19 +52,25 @@
 <!-- view your own howtos button -->
 <?=  CHtml::ajaxLink('<i class="icon-book icon-white"></i>Your Howtos',
 	array('/howto/admin'),array('update'=>'#currentContent'),array('class'=>'btn btn-mini btn-primary'));?>
+
+<!-- social -->
+	<?=  CHtml::ajaxLink('<i class="icon-user icon-white"></i> Social',
+	array('social/index'),array('update'=>'#currentContent'),array('class'=>'btn btn-mini btn-primary'));?>
+
 <!-- update profile button-->
 <?=  CHtml::ajaxLink('<i class="icon-refresh icon-white"></i>Update Info',
 	array('update?id='.Yii::app()->user->id),array('update'=>'#currentContent'),
-	array('class'=>'btn btn-mini btn-primary update_toggle','id'=>'update_button'));?>
+	array('class'=>'btn btn-mini btn-primary ','id'=>'update_button'));?>
 <?php endif;?>
 	</div>
-	<div id="currentContent" class="span7 well" style="position:relative;border:0px solid red; margin-left:0px; padding:10px;">
+	
+<!-- the div which gets updated by the ajaxlinks above -->
+	<div id="currentContent" class="span7 well" style="position:relative;margin-left:0px; padding:10px;">
 	<?= $model->presentation; ?> 
 	</div>
 
 
-	<?php
-	//$this->renderPartial('reputation',array('reputation'=>$model->reputation,'id'=>$model->id));?>
+
 
 		<?php 
 		$this->widget('application.extensions.elrte.elRTE', 

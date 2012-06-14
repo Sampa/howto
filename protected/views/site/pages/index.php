@@ -2,7 +2,7 @@
 $this->layout = "column1";
 ?>	
 
-	<div class="hero-unit">
+<div class="hero-unit">
 		<h1>Hello, knowledge!</h1>
 		<p>
 			At How-to.com we value knowledge, but not only that.

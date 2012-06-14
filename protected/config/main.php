@@ -48,7 +48,63 @@ return array(
 		   // drop all badger tables before installing (fresh install)
 		  'dropBeforeInstall' => false, 
             ),
-		'yiiauth',
+		'yiiauth'=>array(
+		'userClass'=>'User',
+		'config'=>array(
+		"base_url" => "http://83.233.118.50/hybridauth/", 
+		"providers" => array ( 
+			// openid providers
+			"OpenID" => array (
+				"enabled" => true
+			),
+			"Yahoo" => array ( 
+				"enabled" => true 
+			),
+			"AOL"  => array ( 
+				"enabled" => true 
+			),
+			"Google" => array ( 
+				"enabled" => true,
+				"keys"    => array ( "id" => "", "secret" => "" ),
+				"scope"   => ""
+			),
+			"Facebook" => array ( 
+				"enabled" => true,
+				"keys"    => array ( "id" => "324349220969408", "secret" => "5178fb0ce11cdf64f2e18184f1146ad6" ),
+				// A comma-separated list of permissions you want to request from the user. See the Facebook docs for a full list of available permissions: http://developers.facebook.com/docs/reference/api/permissions.
+				"scope"   => "", 
+				// The display context to show the authentication page. Options are: page, popup, iframe, touch and wap. Read the Facebook docs for more details: http://developers.facebook.com/docs/reference/dialogs#display. Default: page
+				"display" => "page" 
+			),
+			"Twitter" => array ( 
+				"enabled" => true,
+				"keys"    => array ( "key" => "rPmGEE1Wvsf56BSyQaWXw", "secret" => "V4SK09O0cPOgkabsxR5AruBSNrc0b1tzoBeWkL7ew0" ) 
+			),
+			// windows live
+			"Live" => array ( 
+				"enabled" => true,
+				"keys"    => array ( "id" => "", "secret" => "" ) 
+			),
+			"MySpace" => array ( 
+				"enabled" => false,
+				"keys"    => array ( "key" => "", "secret" => "" ) 
+			),
+			"LinkedIn" => array ( 
+				"enabled" => true,
+				"keys"    => array ( "key" => "", "secret" => "" ) 
+			),
+			"Foursquare" => array (
+				"enabled" => false,
+				"keys"    => array ( "id" => "", "secret" => "" ) 
+			),
+		),
+
+		// if you want to enable logging, set 'debug_mode' to true  then provide a writable file by the web server on "debug_file"
+		"debug_mode" => false,
+
+		"debug_file" => "",
+	),
+		),
 
 		'message' => array(
             'userModel' => 'User',
@@ -138,6 +194,7 @@ return array(
 
         		'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 				'profile/*'=>'yiiauth/user/view',
+				'user/search/*'=>'yiiauth/user/index',
 				'howto/<show:.*?>'=>'howto/index/',
 				'viewpdf/*'=>'howto/viewpdf',
 				'categories'=>'category/index',
@@ -145,6 +202,7 @@ return array(
 				'sharing'=>'site/page/view/sharing',
 				'reading'=>'site/page/view/reading',
 				'creating'=>'site/page/view/creating',
+				
 		
 
 

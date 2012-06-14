@@ -1,6 +1,10 @@
-<div class="well span7" style="min-height:900px; " >
+
+<div class="well" style="position:relative;min-height:900px;border:0px solid black; " >
 <h3>Share some knowledge!</h3>
 <br/>
+
+<div style="float:left; border:0px solid green; padding-right:0px;" class="span6">
+
 <?php 
 	$form = $this->beginWidget('BootActiveForm', 
 	array(
@@ -13,7 +17,7 @@
 		  'validateOnChange'=>true,
 		  'validateOnType'=>true,
 			 ),
- 		'htmlOptions'=>array( 'class'=>' span8','style'=>'float:left;' ),
+ 		'htmlOptions'=>array( 'class'=>'span8','style'=>'float:left;' ),
 		) );
  ?>
 
@@ -24,21 +28,31 @@
 	</div>
 
 	<div class="row-fluid">
-		<h4>Give your Howto a name</h4>
+		<h4>Give your Howto a name
+			<?php $this->widget('Question',array('content'=>'Try to pick a title that well describes what the howto is about,
+						so other users easily can see if it\'s for them '));?>
+
+		</h4>
+
 		<?php echo $form->textField($model,'title',array('size'=>80,'maxlength'=>128)); ?>
 		<?php echo $form->error($model,'title'); ?>
+	
 	</div>
 
-	<div class="row-fluid" style="max-width:80%;">
-	<h4> The description</h4>
-	<?php Yii::app()->user->setFlash('info', '	The purpose of this Howto<br/>
-	Is any Preparations needed?<br/> 
-	And so on. After creating your Howto you can add steps in which you guide the user thrue 
-	the Howto.');
-		$this->widget('bootstrap.widgets.BootAlert'); 
-		?>
+	<div class="row-fluid" style="width:500px;">
 
+		<h4>The description
+			<?php $this->widget('Question',array('content'=>'After creating your Howto you can add steps in which you guide the user thrue the Howto.
+						But here you make the description of the howto, get people interested;)
+						<ul>
+							<li>Is any Preparations needed?</li>
+							<li>Where can one read more?</li>
+							<li>Will you give support and answer questions?</li>
+						</ul> '));?>
+
+		</h4>
 	<?php echo $form->error($model,'content'); ?>
+
 	<?php echo $form->textArea($model,'content',array('style'=>'display:none'));?>
 	<?php 
 		$this->widget('application.extensions.elrte.elRTE', 
@@ -50,8 +64,19 @@
 		
 	</div>
 	
-	<div class="row-fluid">
-		<?php echo $form->labelEx($model,'tags'); ?>
+	<div class="row-fluid buttons">
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save', 
+			array( 'class'=>'btn btn-success' ) ); ?>
+	</div>
+</div>
+
+	<div class="span5" style="float:left; border:0px solid red; margin-right:50px;">
+<div class="row-fluid">
+		<h4>Tags
+		<?php $this->widget('Question',array('content'=>'Tags are used to in one word point out more exactly what the Howto is about,<br/>
+		making it more likely to attract viewers.<br/>
+		<b>For example: Pizza,easy,Recipe</b>'));?>
+		</h4>
 		<?php $this->widget('CAutoComplete', array(
 			'model'=>$model,
 			'attribute'=>'tags',
@@ -59,55 +84,54 @@
 			'multiple'=>true,
 			'htmlOptions'=>array('size'=>50),
 		)); ?>
-		<p class="hint">Please separate different tags with commas.</p>
+	
+	<p class="hint">Please separate different tags with commas.</p>
 		<?php echo $form->error($model,'tags'); ?>
 	</div>
-	<div class="row-fluid">
-	<h4> In which categories does this Howto belong?</h4>
-	<?php //PRODUCTS MULTISELECT //
+	<div class="row-fluid" >		
+	<h4> Categories
+	<?php $this->widget('Question',
+		array('content'=>'Select one or more categories that is <b>the most</b> suiting for your Howto<br/>
+Obviously misplaced Howtos will be removed.'));?>
+	</h4>
+	<?php 
 		$category = Category::model()->findAll('parent <> "no parent"');
-        $categories = CHtml::listData($category, 'id', 'name'); // Get the list of options
-        echo $form->dropDownList( $model,'categories', $categories,
-                array(
-                'multiple'=>'multiple',
-                'key'=>'id',
-                'class'=>'multiselect',
-				) );?>
-	<?php $this->widget(
-      'application.extensions.emultiselect.EMultiSelect',
-      array('sortable'=>true, 'searchable'=>true)
-	);?>
+		$categories = CHtml::listData($category, 'name', 'name'); // Get the list of options
+		$this->widget('ext.select2.ESelect2',array(
+		  'model'=>$model,
+		  'attribute'=>'categories',
+		  'data'=>$categories,
+		  'multiple'=>true,
+		)); 
+	?>		
 	</div>
-	<br/>
-	<div class="row-fluid buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save', 
-			array( 'class'=>'btn btn-success' ) ); ?>
-	</div>
+	<?php $this->endWidget();?>
+	<div class="" style="position:relative;top:10px;left:00px; min-width:200px;">
 
-<?php $this->endWidget(); ?>
-<!--
-	 <h5> Upload videos </h5>
-<div id="video"></div>-->
+	 <h4> Upload videos </h4>
+			<div id="video"></div>
 	 <?php 
-	// $XUpload = new XUploadForm;
-	// $this->widget('xupload.XUpload', 
-			// array(
-					// 'url' => Yii::app()->createUrl("file/upload", 
-					// array("parent_id" =>User::USER_DIR . Yii::app()->user->id . '/video') ),
-						// 'type'=>'video',
-						// 'model' => $XUpload,
-						// 'attribute' => 'file',
-						// 'multiple'=>true,
-						// 'options'=>array(
-						// 'completed' => 'js:function (e,data) {
-						// $.each(data.files, function (index, file) {
-						// $("#Howto_video").val(\'\'+$("#Howto_video").val()+";"+file.name + \'\' );
-						// });
-							// }'),
-		       // ));
+	$XUpload = new XUploadForm;
+	$this->widget('xupload.XUpload', 
+			array(
+					'url' => Yii::app()->createUrl("file/upload", 
+					array("parent_id" =>User::USER_DIR . Yii::app()->user->id . '/video') ),
+						'type'=>'video',
+						'model' => $XUpload,
+						'attribute' => 'file',
+						'multiple'=>true,
+						'options'=>array(
+						'completed' => 'js:function (e,data) {
+						$.each(data.files, function (index, file) {
+						$("#Howto_video").val(\'\'+$("#Howto_video").val()+";"+file.name + \'\' );
+						});
+							}'),
+		       ));
 
 			   
-?>
+	?>
+	</div>
 
 	</div><!-- form -->
+
 

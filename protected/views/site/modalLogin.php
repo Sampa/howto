@@ -31,6 +31,7 @@
 	</div>
 
 	<div style="position:relative;max-width:300px;float:left; ">
+		<h4> Or use a social Provider </h4>
 		<?php $this->widget('LoginWidget');?>
 
 	</div>

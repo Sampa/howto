@@ -3,10 +3,10 @@
 	$this->pageTitle = $model->title;
 	$this->layout = "column1";
 ?>
+	
+<div id="howto_container" class="span6" style="padding-left: 5px; float:left; border:0px solid black;">
 
-<div id="howto_container" style="padding-left: 0px; float:left;">
-
-	<div id="left" class="span6" style="float:left;" >
+	<div id="left" class="span12" style="float:left; border:0px solid red;" >
 <?php 
 	$this->renderPartial('_view',
 	array(
@@ -35,10 +35,16 @@
 				)
 			)
 		);
-?> 	 	</div><!--left-->
+		
+
+	
+ ?>
+
+
+</div><!--left-->
 	
 	<!-- steps-->
-	<div id="steps" class="span6" style="clear:both; float:left;">
+	<div id="steps" class="span10" style="clear:both; float:left;">
 		<button class="btn btn-mini btn-success" id="createButton"><!-- sign up button-->
 		<i class="icon-plus icon-white"></i> Add Step
 		</button>
@@ -92,7 +98,7 @@
 
 
 </div><!-- container-->
-	<div id="comments" style="margin: 0px 0px 0 40px;" class="span5" >
+	<div id="side" style="margin: 0px 0px 0 40px;" class="span5" >
 <?php
 	if( $owner ) {
 		echo "<br/><br/>".CHtml::htmlButton('<i class="icon-edit icon-white"></i> Manage Slides',
@@ -108,9 +114,27 @@
 	}
 	?>
 
-
+	<?php 
+	foreach($videos as $video):
+		echo $video->filename;
+	
+	endforeach;
+	?>
 	<script type="text/javascript">
+	function getCreate(id,content){
+
+ var content = $(content).html();
+        url = '/comment/new?howto_id='+id;
+ 
+    jQuery.getJSON(url, {content: content}, function(data) {
+        if (data.status == 'success') {
+           return true;	
+			
+        }else{return false;}          
+	});
+}
 $(function() {
+
 $(".alert").click(function(){
 $(".alert").hide();
 });
@@ -127,7 +151,6 @@ updatePos();
 });
 function updatePos() {
     var pos = $("#sortable").sortable('toArray');
-	console.log(pos);
         url = '/step/updatePos/howtoid/'+<?php echo $model->id;?>;
  
     jQuery.getJSON(url, {pos: pos}, function(data) {
@@ -147,18 +170,25 @@ function updatePos() {
 			$("#slide_div").toggle();
 		});
 	</script>
-<div id="disqus_thread" style="clear:both; margin-top:50px"></div>
-	</div><!-- comments -->
-<script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = 'howtos'; // required: replace example with your forum shortname
-/*	var disqus_url = $data->url;*/
+<?php if($model->commentCount>=1): ?>
+		<h3>
+			<?php echo $model->commentCount>1 ? $model->commentCount . ' comments' : 'One comment'; ?>
+		</h3>
+		<div id="current">
+		<?php $this->renderPartial('_comments',array(
+			'howto'=>$model,
+			'comments'=>$model->comments,
+		)); ?>
+		</div>
+	<?php endif; ?>
 
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
+	<h3>Leave a Comment</h3>
+
+	<?php if ( !Yii::app()->user->isGuest ): ?>
 	
-</script>
+		<?php $this->renderPartial('/comment/_form',array(
+			'model'=>$comment,
+			'howto'=>$model,
+		)); ?>
+	<?php endif; ?>
+	</div><!-- comments -->

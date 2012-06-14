@@ -21,8 +21,7 @@ class User extends CActiveRecord
 	public $password2;
 	public $verifyCode;
 	public $usernameLegal;
-	public $hybridauth_provider_uid;
-	public $hybridauth_provider_name;
+
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
@@ -94,7 +93,7 @@ class User extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
 			'howtos' => array( self::HAS_MANY , 'Howto' , 'author_id' ),
-			
+			'howtoCount' => array( self::STAT , 'Howto', 'author_id'),
 		);
 	}
 		

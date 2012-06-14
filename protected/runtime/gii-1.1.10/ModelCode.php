@@ -2,7 +2,7 @@
 return array (
   'template' => 'default',
   'tablePrefix' => 'tbl_',
-  'modelPath' => 'application.models',
+  'modelPath' => 'application.modules.yiiauth.models',
   'baseClass' => 'Model',
   'buildRelations' => '1',
 );

@@ -15,7 +15,7 @@ class Comment extends CActiveRecord
 	 */
 	const STATUS_PENDING = 1;
 	const STATUS_APPROVED = 2;
-
+	public $response_id;
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @return CActiveRecord the static model class
@@ -101,12 +101,11 @@ class Comment extends CActiveRecord
 	/**
 	 * @return string the hyperlink display for the current comment's author
 	 */
-	public function getAuthorLink()
+	public function getAuthor()
 	{
-		if ( !empty ( $this->url ) )
-			return CHtml::link( CHtml::encode ( $this->author ) , $this->url );
-		else
-			return CHtml::encode( $this->author );
+			$user = User::model()->findByPk($this->author);
+			return $user;
+
 	}
 
 	/**
@@ -139,8 +138,11 @@ class Comment extends CActiveRecord
 	{
 		if ( parent::beforeSave() )
 		{
-			if ( !$this->isGuest && $this->author == '' )
-				$this->author = $this->user;
+			if ( !Yii::app()->user->isGuest && $this->author == '' ){
+				$this->author = Yii::app()->user->name;
+				$this->status = 2;
+			
+			}
 			if ( $this->isNewRecord )
 				$this->create_time = time();
 			return true;

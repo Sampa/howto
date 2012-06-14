@@ -5,9 +5,10 @@ class DefaultController extends Controller
 	public function actionIndex(){
 		$this->renderPartial('index');	
 	}
-	public function actionauthenticatewith( $provider="" ) {   
-		require_once( '/hybridauth/Hybrid/Auth.php' );
-		$hybridauth_config = $this->hybridAuthConfig();
+	public function actionauthenticatewith( $provider="" ) {
+
+		$hybridauth_config =Yiiauth::hybridAuthConfig();
+		
 		$error = false;
 		$user_profile = false;
 		try{
@@ -57,62 +58,20 @@ class DefaultController extends Controller
 		if ( is_object ($user_profile) ){
 		$user = $this->workOnUser($provider,$user_profile->identifier); 
 			if ( $this->autoLogin($user) ){
+				//successfull login render default/profile.php
 				$this->render('profile',
 					array(
-					'error'=>$error, 
-					'provideruser'=>$user_profile,
-					'yiiuser'=>$user,
-					'provider'=>$provider,	
+					'error'=>$error, //string
+					'provideruser'=>$user_profile,//object
+					'yiiuser'=>$user, //object
+					'provider'=>$provider,	//string
 					) );
 				}else{
+					// this is where u go otherwise
 					$this->render('authenticatewith',array('error'=>$error,'user_profile'=>$user_profile ) );
 					}
 			}else{
 					echo "Something wrong with ".$provider;
 				}
 	} 
-
-	public function workOnUser($provider,$provideruser){
-		$social = Social::model()->find("provider='".$provider."' AND provideruser='".$provideruser."'");
-		if ( $social ){
-			 $user = User::model()->find("id=".$social->yiiuser);
-			 return $user;
-		}else{
-			// we want to create a new user, but since we get no user input the validation rules will cause
-			//errors on save to counter this i added 'on'=>'validation' to all my user validation rules
-			//example: 	array('username, password', 'required','on'=>'validation'),
-			// on normal user registration with user input I use: new User('validation') 
-			$user = new User;
-			$user->username = $provideruser; 
-			
-			if ( $user->save() ){ //we get an user id
-			//add a social connection between the newly created yii user and the provider user account to avoid double regestrations and enable the same yii user to have many providers associated with it.
-				$social = new Social;
-				$social->yiiuser = $user->id;
-				$social->provider = $provider;
-				$social->provideruser = $provideruser;
-				if($social->save())
-					return $user;
-			}
-		}
-	
-	}
-	
-	public function autoLogin($user) //accepts a user object
-	{
-	$identity=new UserIdentity($user->username, "");
-	$identity->hybridauth($user->username);
-	if ( $identity->errorCode == UserIdentity::ERROR_NONE )
-		{
-			$duration= 3600*24*30; // 30 days
-			Yii::app()->user->login($identity,$duration);
-			return true;
-		}
-		else
-		{
-			echo $identity->errorCode;
-			return false;
-		}
-	
-	}
 }?>

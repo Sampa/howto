@@ -4,35 +4,34 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="language" content="en" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<link type="text/css" href="<?= Yii::app()->request->baseUrl; ?>/css/bottom.css" rel="stylesheet" />
-			<?php  Yii::app()->clientScript->registerScriptFile('/js/jquery.jcarousel.min.js');?>
+	<link type="text/css" href="<?= Yii::app()->request->baseUrl; ?>/css/bottom.css" rel="stylesheet" />
+	<?php  Yii::app()->clientScript->registerScriptFile('/js/jquery.jcarousel.min.js');?>
 	<?php  Yii::app()->clientScript->registerScriptFile('/js/jquery.pikachoose.js');?>
 
 
+
 	<link rel="stylesheet" type="text/css" href="<?= Yii::app()->request->baseUrl; ?>/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="<?= Yii::app()->request->baseUrl; ?>/css/global.css" />
 
 <?php  //helps using more jQuery stuff on same page 
 
 ?>
-	<?php  Yii::app()->clientScript->registerScriptFile('/js/jquery.multiplyforms.js');?>
 	<?php  Yii::app()->clientScript->registerScriptFile('/js/common.js');?>
 	<?php  Yii::app()->clientScript->registerScriptFile('/js/jeditable.js');?>
-<script type="text/javascript" src="/js/nicedit.js"></script> 
+	<?php  Yii::app()->clientScript->registerScriptFile('/js/nicedit.js');?>
+	<?php  Yii::app()->clientScript->registerScriptFile('/js/jquery.pop.js');?>
+
+
 
 	<title><?= CHtml::encode( $this->pageTitle ); ?></title>
-
-
-
 </head>
 
-<body>
-	
-
-	<?php $this->widget('application.extensions.search-and-share.SearchShare'); ?>
+<body>	
+<?php //$this->widget('application.extensions.search-and-share.SearchShare'); ?>
 
 <div id="page" >
 
-	<div id="header" style="border:0px solid yellow; height:40px;">
+	<div id="header" style="border:0px solid red; min-height:70px;">
 		<div id="logo" class="span2" style="border:0px solid black;">
 			<a href="<?=Yii::app()->homeUrl;?>">
 				<img src="/images/logo.png" alt="Howto"/>
@@ -64,7 +63,7 @@
 		<!--om man är inloggad -->
 	<?php if ( !$this->isGuest ):?>
 		<!--userbutton-->
-		<div style="float:left;">
+	<div style="float:left;">
 		<?php
 		$this->widget('bootstrap.widgets.BootButtonGroup', 
 		array(
@@ -86,10 +85,10 @@
 			))); 
 	?>
 	</div> <!-- // user button -->
-	
+		<?php endif; // end is logged in?>	
+
 	<div style="float:left;">
 
-	<?php endif; // end is logged in?>	
 
 	<div style="position:absolute; top:2px; left:390px;">
 	<?= CHtml::link('<i class="icon-time"></i> New!',array('//howto/show/new'),
@@ -97,48 +96,50 @@
 	<?= CHtml::link('<i class="icon-fire"></i> Popular!',array('//howto/show/popular'),
 				array('class'=>'btn ','style'=>'float:left;'));?>
 		
-			</div> <!-- // howtos button-->
+	</div> <!-- // howtos button-->
 			
 	</div>
 
-
 	
-	<div class="btn-toolbar span8" style="position:absolute; top:2px;right:10px;border:0px solid green; margin:-0px 0 0 -5px; height:auto;">
+	
+	
+</div>
+	
+<div class="btn-toolbar span5" style="position:absolute; top:2px;right:00px; margin:-0px 0 0 -5px;">
 	<!-- search -->
-
+	<?php $this->renderPartial('//site/search');?>
 	</div>
-<div style="position:absolute; max-height: 33px; top:34px;left:150px;">
 <style type="text/css">
-.tab_content{max-width:900px;min-height:36px;;padding: 4px 9px 0px 9px;}
 .tab_content a{padding:0px 3px 0px 0px; }
 </style>
-<?php 
+<?php
 		$tabs = array();
 		$parents = Category::model()->findAll("parent='no parent'");
+		$active = true;
 		foreach($parents as $cat)
 		{
-		$tab_content = '<div class="tab_content">';
+		$tab_content = '<div class="tab_content" style="margin-bottom:7px;">';
 		$children = Category::model()->findAll("parent='".$cat->name."'");
 			foreach($children as $child)
 			{
 				$tab_content .= '<a href="/category/'.$child->name.'">'.$child->name.'</a>';
 			}
 		$tab_content .= '</div>';
-		$tabs[] = array('label'=>$cat->name,'content'=>$tab_content);		
+		$tabs[] = array('label'=>$cat->name,'content'=>$tab_content,'active'=>$active);		
+		$active = false;
 		}
-$this->widget('bootstrap.widgets.BootTabbable', array(
+
+?><div style="position:absolute; max-height: 33px; top:45px;left:130px; border:0px solid blue;">
+<?php
+ $this->widget('bootstrap.widgets.BootTabbable', array(
     'type'=>'tabs',
     'placement'=>'below', // 'above', 'right', 'below' or 'left'
     'tabs'=>$tabs,
-)); ?>
-</div>
-	</div><!--header-->
-	
+    )); ?>
+	</div>
 
-<!-- main menu --><div id="mainmenu_container" style="clear:both">
+</div><!--header-->
 
-	</div><!-- //mainmenu -->
-	
 	<!-- flashes -->
 <?php 
 	$this->widget('application.extensions.flash.Flash', 
@@ -147,13 +148,11 @@ $this->widget('bootstrap.widgets.BootTabbable', array(
 		'htmlOptions'=>array( 'class'=>'flash' ),
 	)); 
 ?>
-
+<div style="clear:both;"></div>
 	<!-- breadcrumbs -->
-<?php
-	$this->widget('bootstrap.widgets.BootBreadcrumbs', 
-		array(	'links'=>$this->breadcrumbs,
-	)); 
-?>
+<?php $this->widget('bootstrap.widgets.BootBreadcrumbs', array(
+    'links'=>array('How2'),
+)); ?>
 
 
 <?php
@@ -201,6 +200,18 @@ $this->widget('bootstrap.widgets.BootTabbable', array(
 	</div><!-- footer -->
 
 	</div><!-- page -->
-   
+   <?php $this->widget('application.extensions.fancybox.EFancyBox', array(
+    'target'=>'a[rel=fancybox]',
+    'config'=>array(),
+    )
+);?>
+		<?php  Yii::app()->clientScript->registerScriptFile('/js/jtip.js');?>
+		
+
 </body>
 </html>
+	<script type='text/javascript'>
+   $(document).ready(function(){
+     $.pop();
+   });
+</script>

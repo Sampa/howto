@@ -1,7 +1,7 @@
 <!-- The file upload form used as target for the file upload widget -->
 <?php echo CHtml::beginForm($this -> url, 'post', $this -> htmlOptions);?>
 <div class="row fileupload-buttonbar">
-	<div class="span7">
+	<div class="span12">
 		<!-- The fileinput-button span is used to style the file input field as button -->
 		<span class="btn btn-success fileinput-button"> <i class="icon-plus icon-white"></i>
 			<?php

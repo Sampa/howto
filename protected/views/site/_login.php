@@ -1,4 +1,3 @@
-<div class="span7 well" style="padding-right:0px;margin-left:0px; margin-top:10px;">
 
 <?php $this->beginWidget('BootModal', array(
     'id'=>'dialogLogin',
@@ -46,4 +45,3 @@ return false;
 });
 </script>
 <!-- end login -->
-</div>

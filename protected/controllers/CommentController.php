@@ -23,7 +23,7 @@ class CommentController extends Controller
 	*/
 	public function allowedActions()
 	{
-	 	return 'index';
+	 	return 'index,new';
 	}
 
 	/**
@@ -84,7 +84,36 @@ class CommentController extends Controller
 			'dataProvider'=>$dataProvider,
 		));
 	}
+	public function actionNew(){
+	
+		$model = new Comment;
+ 
+        // Uncomment the following line if AJAX validation is needed
+         $this->performAjaxValidation( $model , 'comment-form' );
 
+		
+			
+            $model->content = $_GET['content'];
+			$model->howto_id = $_GET['howto_id'];
+
+            if ( $model->save(false) )
+            {
+
+                if ( Yii::app()->request->isAjaxRequest )
+                {
+								                		
+                    echo CJSON::encode(array(
+                        'status'=>'success', 
+                        'div'=>'Your comment was posted',
+                        ));
+                    exit;             
+                }
+                else
+                    $this->redirect(array('howto/view','id'=>$howto_id));
+            }
+        
+	
+	}
 	/**
 	 * Approves a particular comment.
 	 * If approval is successful, the browser will be redirected to the comment index page.

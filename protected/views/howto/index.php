@@ -5,9 +5,9 @@
 <h1>Howto's in  <i><?php echo CHtml::encode($_GET['category']); ?></i></h1>
 <?php endif; ?>
 <div style="float:left;">
-<?php $this->widget('zii.widgets.CListView', array(
+<?php $this->widget('BootListView', array(
 	'dataProvider'=>$dataProvider,
-	'itemView'=>'_view',
+	'itemView'=>'/howto/_view',
 	'template'=>"{items}<div style=''>{pager}</div>",
 )); ?>
 </div>

@@ -36,13 +36,12 @@ class UserController extends Controller
 	 */
 	public function actionView( $id = null , $u = null)
 	{
+		$owner = false;
 		if ( isset ( $_POST['User'] ) )
 			$this->actionUpdate( $_POST['User']['id'] );
-		if (Yii::app()->user->id == $id || Yii::app()->user->name == $u)
+		if (Yii::app()->user->name == $u)
 		{
 			$owner = true;
-		}else{
-			$owner = false;
 		}
 		$this->render( 'view',
 			array(
@@ -103,7 +102,7 @@ class UserController extends Controller
 			));
 		}
 	}
-
+	
 	/**
 	 * Updates a particular model.
 	 * If update is successful, the browser will be redirected to the 'view' page.
@@ -178,8 +177,30 @@ class UserController extends Controller
 				'model'=>$model,
 			));
 	}
-	
-	
+	//search the database for usernames matching a search query 
+	public function actionSearch($find=null)
+	{
+	if( $find !== null )
+			{
+				$find = addcslashes($find, '%_'); // escape LIKE's special characters
+
+					$criteria = new CDbCriteria( array(
+						'condition' => "username LIKE :find",         // no quotes around :match
+						'params'    => array(':find' => "%$find%")  // Aha! Wildcards go here
+					) );
+					//*** FIND THE DATA ***
+					$dataProvider = new CActiveDataProvider('User', array(
+						'pagination'=>array(
+							'pageSize'=>10,
+						),
+						'criteria'=>$criteria,
+					));
+					
+					$this->render('/yiiauth/user/index',array(
+						'dataProvider'=>$dataProvider,
+					));
+			}
+	}
 	/**
 	 * Returns the data model based on the primary key given in the GET variable.
 	 * If the data model is not found, an HTTP exception will be raised.

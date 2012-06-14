@@ -52,7 +52,7 @@ class HowtoController extends Controller
 	*/
 	public function allowedActions()
 	{
-	 	return 'index,view,suggestTags,eltre,rating,bookmark,category';
+	 	return 'index,view,suggestTags,eltre,rating,bookmark,category,reloadComments';
 	}
 	
 
@@ -63,6 +63,8 @@ class HowtoController extends Controller
 	public function actionView()
 	{
 		$howto = $this->loadModel();
+		$comment=$this->newComment($howto);
+
 		$owner = false;
 		if ( $howto->author->id == Yii::app()->user->id )
 		$owner = true;
@@ -74,9 +76,12 @@ class HowtoController extends Controller
 		));
 		
 		}else{
+		$videos = Video::model()->findAll('howto_id='.$howto->id);
 		$this->render( 'view',array(
 			'model'=>$howto,
 			'owner'=>$owner,
+			'comment'=>$comment,
+			'videos'=>$videos,
 		));
 		}
 	}
@@ -113,8 +118,29 @@ class HowtoController extends Controller
 		}
 	
 	}
-	
-	
+	public function actionSearch($find=null)
+	{
+	if( $find !== null )
+			{
+				$find = addcslashes($find, '%_'); // escape LIKE's special characters
+
+					$criteria = new CDbCriteria( array(
+						'condition' => "content LIKE :find",         // no quotes around :match
+						'params'    => array(':find' => "%$find%")  // Aha! Wildcards go here
+					) );
+					//*** FIND THE DATA ***
+					$dataProvider = new CActiveDataProvider('Howto', array(
+						'pagination'=>array(
+							'pageSize'=>Yii::app()->params['howtosPerPage'],
+						),
+						'criteria'=>$criteria,
+					));
+					
+					$this->render('/howto/index',array(
+						'dataProvider'=>$dataProvider,
+					));
+			}
+	}
 	public function actionRating()
 	{			
 		$rating = Rating::model()->findByPk($_GET['id']);
@@ -213,6 +239,7 @@ class HowtoController extends Controller
 	}
 	public function actionCreate()
 	{
+		$this->layout ="column1";
 		$model = new Howto;
 		$this->performAjaxValidation( $model, 'howto-form' );
 		if ( isset ( $_POST['Howto'] ) )
@@ -225,6 +252,7 @@ class HowtoController extends Controller
 			
 			 foreach ( $_POST['Howto']['categories'] as $key=>$category)
 				{
+				
 						$model->categories .= $category.', '; 
 				}
 				
@@ -464,6 +492,13 @@ class HowtoController extends Controller
 		}
 		return $comment;
 	}
+	public function actionreloadComments(){
+	$model = Howto::model()->findByPk($_GET['howto_id']);
+	$this->renderPartial('_comments',array(
+			 'howto'=>$model,
+			 'comments'=>$model->comments,
+		)); 	
+	}
 	 public function registerAssets(){
 
             Yii::app()->clientScript->registerCoreScript('jquery');
@@ -492,4 +527,5 @@ class HowtoController extends Controller
               Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl.'/js_plugins/ajaxform/client_val_form.css','screen');
 
  }
+	
 }

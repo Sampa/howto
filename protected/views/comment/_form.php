@@ -1,56 +1,42 @@
-<div class="form">
-
-<?php 
-	$form = $this->beginWidget('bootstrap.widgets.BootActiveForm', 
-	array(
-		'id'=>'comment-form',
-		'enableAjaxValidation'=>true,
-		'enableClientValidation'=>true,
-		 'clientOptions' => 
-		 array(
-		  'validateOnSubmit'=>true,
-		  'validateOnChange'=>true,
-		  'validateOnType'=>true,
-			 ),
-		'htmlOptions'=>array( 'class'=>'well' ),
-		) );
- ?>
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
-	<?php if ( $this->isGuest ): ?>
-	<div class="row">	
-		<?php echo $form->labelEx($model,'author'); ?>
-		<?php echo $form->textField($model,'author',
-			array('size'=>60 , 'maxlength'=>128 ) ); ?>
-		<?php echo $form->error($model,'author'); ?>
-	
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'email'); ?>
-		<?php echo $form->textField($model,'email',array('size'=>60,'maxlength'=>128)); ?>
-		<?php echo $form->error($model,'email'); ?>
-	</div>
-	<?php endif; ?>
-
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'content'); ?>
-		<?php echo $form->textArea($model,'content'); ?>
-		<?php echo $form->error($model,'content'); ?>
-	</div>
-
-	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Submit' : 'Save',
-				array('class'=>'btn btn-primary') ); ?>
-	</div>
-
-<?php $this->endWidget(); ?>
-</div><!-- form -->
-<?php 
-	$this->widget('application.extensions.elrte.elRTE',
-	array(
-		'selector'=>'#Comment_content',
-		'userid'=>$this->userId,
-		'toolbar'=>'tiny',
-	));
+<div id="successDiv" style="display:none;">
+<?php
+Yii::app()->user->setFlash('success', 'Your comment was posted');
+		$this->widget('bootstrap.widgets.BootAlert'); 
 ?>
+</div>
+
+	<div class="row-fluid">
+		<div id="divComment" style="display:block;"></div>
+		<div id="comment_content" style="min-height:60px; min-width:250px;" class="well"	></div>
+	</div>
+	<div class="row-fluid buttons">
+	<?php $this->widget('BootButton', array(
+    'label'=>'Comment',
+    'type'=>'success', // '', 'primary', 'info', 'success', 'warning', 'danger' or 'inverse'
+    'size'=>'mini', // '', 'large', 'small' or 'mini'
+	'icon'=>'ok white',
+	'htmlOptions'=>array(	'id'=>'cButton'))
+	); ?>
+
+	</div>
+
+
+<script type="text/javascript">
+//<![CDATA[
+bkLib.onDomLoaded(function() {
+	
+var myNicEditor = new nicEditor();
+myNicEditor.setPanel('divComment');
+myNicEditor.addInstance('comment_content');
+
+});
+//]]>
+
+$("#cButton").click(function(){
+
+getCreate(<?php echo $howto->id;?>,'#comment_content');
+$("#successDiv").fadeIn('slow');
+
+<?= Chtml::ajax(array('url'=>'/howto/reloadComments?howto_id='.$howto->id,'update'=>'#current'));?>
+});
+</script>

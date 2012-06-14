@@ -53,6 +53,7 @@
 	</div>
 
 	<div style="position:relative;max-width:270px;float:left;">
+		<h3> Or use a social provider </h3>
 		<?php $this->widget('LoginWidget');?>
 
 	</div>
