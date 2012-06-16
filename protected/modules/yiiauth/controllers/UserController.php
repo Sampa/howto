@@ -17,7 +17,7 @@ class UserController extends Controller
 	}
 	public function allowedActions()
 	{
-	 	return 'register,adduser,view,reputation,persona,update,sociallogin';
+	 	return 'register,adduser,view,reputation,update,updateField,getPresentation';
 	}
 	
 
@@ -56,7 +56,7 @@ class UserController extends Controller
 	 */
 	public function actionRegister()
 	{
-		$model = new User('validation');
+		$model = new User('register');
 		// Uncomment the following line if AJAX validation is needed
 		 $this->performAjaxValidation( $model , 'user-form' );
 	
@@ -110,13 +110,12 @@ class UserController extends Controller
 	 */
 	public function actionUpdate( $id )
 	{
-		if ( Yii::app()->request->isAjaxRequest )
-			$this->layout = 'ajax';
 		$model = $this->loadModel( $id );
-		$model->scenario = "validation";
+		$model->scenario = "update";
+		$this->layout ="//layouts/column1";
 
 		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
+		$this->performAjaxValidation($model,"update-form");
 
 		if ( isset ( $_POST['User'] ) )
 		{
@@ -200,6 +199,34 @@ class UserController extends Controller
 						'dataProvider'=>$dataProvider,
 					));
 			}
+	}
+	public function actionUpdateField()
+	{			
+		if(!Yii::app()->user->isGuest)
+		{
+			
+			$model = User::model()->findByPk( Yii::app()->user->id );			
+			if ( Yii::app()->request->isAjaxRequest )
+			{
+					
+			$model->presentation = $_POST['content'];
+
+				if ( $model->save(false) ) 
+				{
+
+					echo CJSON::encode( array (
+					'status'=>'success', 
+					'div'=>'Saved..',
+					) );
+				}
+				
+				
+			}
+		}
+	}
+	public function actionpresentation(){
+		$user = $this->loadModel($id=Yii::app()->user->id);
+		echo $user->presentation;
 	}
 	/**
 	 * Returns the data model based on the primary key given in the GET variable.

@@ -4,11 +4,11 @@
 <?php if(!empty($_GET['category'])): ?>
 <h1>Howto's in  <i><?php echo CHtml::encode($_GET['category']); ?></i></h1>
 <?php endif; ?>
-<div style="float:left;">
+
+<div  style="float:left;">
 <?php $this->widget('BootListView', array(
 	'dataProvider'=>$dataProvider,
 	'itemView'=>'/howto/_view',
 	'template'=>"{items}<div style=''>{pager}</div>",
 )); ?>
 </div>
-

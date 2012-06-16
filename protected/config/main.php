@@ -194,6 +194,7 @@ return array(
 
         		'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 				'profile/*'=>'yiiauth/user/view',
+				'update/*'=>'yiiauth/user/update',
 				'user/search/*'=>'yiiauth/user/index',
 				'howto/<show:.*?>'=>'howto/index/',
 				'viewpdf/*'=>'howto/viewpdf',

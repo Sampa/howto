@@ -165,12 +165,12 @@ public function   init() {
         );
 
 
-        $this->renderPartial('_ajax_form', array('model'=>$model,'howto'=>$_GET['howto']), false, true);
+        $this->renderPartial('_ajax_form', array('model'=>$model,'howto'=>$howto), false, true);
       }
 
     public function actionIndex()
 	{
-
+	
 		$model=new Slide('search');
 		$model->unsetAttributes();  // clear any default values
 		if(isset($_GET['Slide']))

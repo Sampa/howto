@@ -3,26 +3,50 @@
 			<?php echo $content; ?>
 </div>
 
-		<div id="sidebar" class="span5" style="border:0px solid red;z-index:15;padding: 0px; position:relative; margin-top:-18px; margin-left:40px;">
+		<div id="sidebar" class="span5 well" style="border:0px solid red;z-index:15;padding-left:15px; position:relative; margin-top:-19px; margin-left:40px;">
 		
 <!-- siderbar clip--><?php echo $this->clips['sidebar']; ?>
 
 
 <!-- tagcloud -->
-			<div class="well" style=""> <h2>Popular tags</h2>
+<style type="text/css">
+    #tagCloud {  
+      width:290px;  padding:5px;  
+      overflow:auto;  ; 
+      background:url(/images/cloud.gif) no-repeat 0; padding:15px 0 15px 20px;  
+    }  
+    #tagCloud h2{
+	position:relative;
+	left:-22px;
+	}
+    #tagList { margin:0; padding:0; }  
+    #tagList li {  
+	
+      list-style-type:none; float:left; margin:0 10px; height:35px;  
+    }  
+    #tagList li a { text-decoration:none; }  
+    #tagList li a:hover ( text-decoration:underline; }  
+</style>
+		<div  id="tagCloud" style="min-height:166px;"> 
+		<h2>Popular tags</h2>
 				<?php 
 					$tags = Tag::model()->findTagWeights(20);
-
+					echo '<ul id="tagList">';
 					foreach($tags as $tag=>$weight)
 					{
+						$weight = $weight +3;
+						echo "<li>";
 						$link = CHtml::link( CHtml::encode( $tag ), array( 'tag/' . $tag ) );
 						echo CHtml::tag('span', array(
-							'class'=>'tag',
+							'class'=>'',
 							'style'=>"font-size:{$weight}pt",
 						), $link)."\n";
+						echo "</li>";
 					}
+					echo '</ul>';
 				?>
-				<div style="margin-top:15px;">
+	
+		<div style="margin-top:15px;">
 		<!-- tag search-->		
 		<?php $this->widget('CAutoComplete', array(
 			'model'=>new Howto,
@@ -53,11 +77,10 @@
 			})
 		</script>
 		</div>
-		
 			</div>
 
 <!-- latest howto -->
-			<div class="well" style="min-height:270px;"> <h2>Latest knowledge</h2>
+			<div class="" style="min-height:270px;"> <h2>Latest knowledge</h2>
 				<?php 
 					$models = Howto::model()->findAll(array('order' => 'create_time DESC','limit'=>5));
 					foreach ($models as $model):

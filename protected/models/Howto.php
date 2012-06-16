@@ -204,6 +204,7 @@ class Howto extends Model
 			{
 				$this->create_time = $this->update_time = time();
 				$this->author_id = Yii::app()->user->id;
+				$this->status = 2;
 			}
 			else
 				$this->update_time = time();

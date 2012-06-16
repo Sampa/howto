@@ -6,6 +6,8 @@
  */
 class ESelect2 extends CInputWidget
 {
+  public $multiple=false;
+
   /**
    * @var array select2 options
    */
@@ -14,7 +16,6 @@ class ESelect2 extends CInputWidget
    * @var array CHtml::dropDownList $data param
    */
   public $data=array();
-  public $multiple=false;
   /**
    * @var integer Script position
    */
@@ -23,8 +24,8 @@ class ESelect2 extends CInputWidget
   {
 
     list($this->name,$this->id)=$this->resolveNameId();
-		if($this->multiple)
-		$this->htmlOptions['multiple']='hej';
+	if($this->multiple)
+		$this->htmlOptions['multiple']='foo';
     if($this->hasModel())
     {
       echo CHtml::activeDropDownList($this->model,$this->attribute,$this->data,$this->htmlOptions);

@@ -1,3 +1,4 @@
+<?php $this->layout="ajax";?>
 <?php $this->pageTitle=Yii::app()->name . ' - ' . MessageModule::t("Compose Message"); ?>
 <?php $isIncomeMessage = $viewedMessage->receiver_id == Yii::app()->user->getId() ?>
 
@@ -14,7 +15,7 @@
 <div class="row-fluid">
 
 <?php $this->renderPartial(Yii::app()->getModule('message')->viewPath . '/_navigation') ?>
-	<div class="span7">
+	<div class="span9 well" style="position:relative;left:20px;">
 		<?php $form = $this->beginWidget('BootActiveForm', array(
 			'id'=>'message-delete-form',
 			'enableAjaxValidation'=>true,

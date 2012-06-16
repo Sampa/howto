@@ -1,30 +1,4 @@
-
-<?php if ( !$model->isNewRecord ): ?>
-	<div id="avatar_upload" style="">
-	 <h3> Upload an avatar </h3>
-<?php 
-
-	$XUpload = new XUploadForm;
-	$this->widget('xupload.XUpload', 
-			array(
-					'url' => Yii::app()->createUrl("file/upload", 
-					array("parent_id" =>User::USER_DIR . Yii::app()->user->id ) ),
-						'type'=>'avatar',
-						'model' => $XUpload,
-						'attribute' => 'file',
-						'options'=>array(
-						'completed' => 'js:function (e,data) {
-						$.each(data.files, function (index, file) {
-						$("#User_avatar").val(file.name);
-						});
-						}'),
-		       ));
-
-			   
-?>
-
-	</div>
-<?php endif;?>
+<div id="left" style="float:left;" class="span4">
 
 <?php 
 	$form = $this->beginWidget('bootstrap.widgets.BootActiveForm',
@@ -40,12 +14,7 @@
 		'htmlOptions'=>array( 'class'=>'' ),
 		)); 
 ?>	
-	<div class="row-fluid buttons">
-	<?php
-		echo CHtml::htmlButton('<i class="icon-ok icon-white"></i> Save',
-			array('class'=>'btn btn-mini btn-success', 'type'=>'submit') ); 
-	?>
-	</div>
+
 	
 	
 <?php echo $form->errorSummary($model); ?>
@@ -57,47 +26,88 @@
 	<?php echo $form->hiddenField($model,'id', array( 'value'=>$model->id ) );?>
 	
 	<div class="row-fluid">
-		<?php echo $form->labelEx($model,'username'); ?>
+		<h4>Username</h4>
 		<?php echo $form->textField($model,'username',
 			array( 'size'=>60,'maxlength'=>128 ) ); ?>
 		<?php echo $form->error($model,'username'); ?>
 	</div>
 
 	
-<?php 
-	if ( $model->isNewRecord ) :
-?>
+
 	<div class="row-fluid">
-		<?php echo $form->labelEx($model,'password'); ?>
-		<?php echo $form->passwordField($model,'password',array('size'=>60,'maxlength'=>128)); ?>
+		<h4>Password
+		</h4>
+		<?php echo $form->passwordField($model,'password',array('size'=>60,'maxlength'=>128,'value'=>'')); ?>
 		<?php echo $form->error($model,'password'); ?>
 	</div>
 	
 	<div class="row-fluid">
-		<?php echo $form->labelEx($model,'password2'); ?>
+		<h4>Repeat password</h4>
 		<?php echo $form->passwordField($model,'password2',array('size'=>60,'maxlength'=>128)); ?>
 		<?php echo $form->error($model,'password2'); ?>
 	</div>
 	
-<?php endif;?>
-
+	
 	<div class="row-fluid">
-		<?php echo $form->labelEx($model,'email'); ?>
+		<h4>Email
+		</h4>
 		<?php echo $form->textField($model,'email',array('size'=>60,'maxlength'=>128)); ?>
 		<?php echo $form->error($model,'email'); ?>
 	</div>
-
-	<div class="row-fluid" >
-		<?php echo $form->labelEx($model,'presentation');?>
-		<?php echo $form->textArea($model,'presentation',array('display'=>'none'));?>
-		<?php echo $form->error($model,'presentation');?>
-	</div>
-	<?php 
-		$this->widget('application.extensions.elrte.elRTE', 
-		array(
-			'selector'=>'#User_presentation',
-			'userid'=>Yii::app()->user->id,
-		));
+	<div class="row-fluid buttons">
+	<?php
+		echo CHtml::htmlButton('<i class="icon-ok icon-white"></i> Save',
+			array('class'=>'btn btn-mini btn-success', 'type'=>'submit') ); 
 	?>
-<?php $this->endWidget(); ?>
+	</div>
 
+
+<?php $this->endWidget(); ?>
+</div><!-- //left -->
+
+
+
+
+
+<div id="middle" class="span4" style="float:left;">
+<?php if ( !$model->isNewRecord ): ?>
+	
+	<div id="avatar_upload" style="float:left;">
+	 <h4> Upload an avatar </h4>
+<?php 
+
+	$XUpload = new XUploadForm;
+	$this->widget('xupload.XUpload', 
+			array(
+					'url' => Yii::app()->createUrl("file/upload", 
+					array("parent_id" =>User::USER_DIR . Yii::app()->user->id,'rename'=>rand(11111,99999999) ) ),
+						'type'=>'avatar',
+						'model' => $XUpload,
+						'attribute' => 'file',
+						'multiple'=>false,
+						'options'=>array(
+						'completed' => 'js:function (e,data) {
+						var filename = data.files[\'0\'][\'name\'];
+						showPic(filename);
+						}'),
+		       ));
+
+			   
+?>
+
+	</div>
+<div id="avatar"></div>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$("#User_password").val('');
+	
+	});
+		function showPic(filename){
+			var img = '<img src="<?=User::USER_DIR . Yii::app()->user->id;?>/'+filename+'" alt=""/>';
+			$("#avatar").html(img);
+			$("#User_avatar").val(filename);
+		}
+	</script>
+	<?php endif;?>
+
+</div>

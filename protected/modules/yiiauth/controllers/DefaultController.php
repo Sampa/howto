@@ -59,13 +59,14 @@ class DefaultController extends Controller
 		$user = $this->workOnUser($provider,$user_profile->identifier); 
 			if ( $this->autoLogin($user) ){
 				//successfull login render default/profile.php
-				$this->render('profile',
-					array(
-					'error'=>$error, //string
-					'provideruser'=>$user_profile,//object
-					'yiiuser'=>$user, //object
-					'provider'=>$provider,	//string
-					) );
+				$this->redirect('/profile/u/'.$user->username);
+				// $this->render('profile',
+					// array(
+					// 'error'=>$error, //string
+					// 'provideruser'=>$user_profile,//object
+					// 'yiiuser'=>$user, //object
+					// 'provider'=>$provider,	//string
+					// ) );
 				}else{
 					// this is where u go otherwise
 					$this->render('authenticatewith',array('error'=>$error,'user_profile'=>$user_profile ) );

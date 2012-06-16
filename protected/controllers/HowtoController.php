@@ -52,7 +52,7 @@ class HowtoController extends Controller
 	*/
 	public function allowedActions()
 	{
-	 	return 'index,view,suggestTags,eltre,rating,bookmark,category,reloadComments';
+	 	return 'index,view,suggestTags,eltre,rating,create,bookmark,category,reloadComments';
 	}
 	
 
@@ -62,6 +62,8 @@ class HowtoController extends Controller
 	 */
 	public function actionView()
 	{
+
+
 		$howto = $this->loadModel();
 		$comment=$this->newComment($howto);
 
@@ -244,8 +246,9 @@ class HowtoController extends Controller
 		$this->performAjaxValidation( $model, 'howto-form' );
 		if ( isset ( $_POST['Howto'] ) )
 		{
-			
+
 			$model->attributes = $_POST['Howto'];
+
 			$rating = new Rating();
 			$rating->save();
 			$model->rating_id = $rating->id;
@@ -387,8 +390,7 @@ class HowtoController extends Controller
 			
 			case "show/new":
 			$today = new DateTime();
-			$today->modify('-1 month'); 
-			
+			$today->modify('-1 week'); 
 			$compareDate = $today->format('Y-m-d');
 			$sql = "create_time >".$compareDate;
 			$criteria->addCondition($sql);

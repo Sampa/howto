@@ -80,6 +80,7 @@ class XUploadAction extends CAction {
      *
      * @since 0.1
      */
+	public $rename ="false";
     public function init() {
         if (!isset($this -> path)) {
             $this -> path = realpath(Yii::app() -> getBasePath() . "/../uploads");
@@ -119,8 +120,11 @@ class XUploadAction extends CAction {
             if ($model -> file !== null) {
                 $model -> mime_type = $model -> file -> getType();
                 $model -> size = $model -> file -> getSize();
-				
+				if(!$this->rename){
                 $model -> name = $model -> file -> getName();
+				}else{
+				$model -> name = $this->rename;
+				}
                 header('Vary: Accept');
                 if (isset($_SERVER['HTTP_ACCEPT']) && (strpos($_SERVER['HTTP_ACCEPT'], 'application/json') !== false)) {
                     header('Content-type: application/json');

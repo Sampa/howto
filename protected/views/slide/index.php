@@ -61,31 +61,31 @@ $del_title=Yii::t('admin_slide', 'Delete Confirmation');
 		),
 			
     array(
-                   'class' => 'CButtonColumn',
+                   'class' => 'BootButtonColumn',
                     'buttons' => array(
-                                                     'slide_delete' => array(
-                                                     'label' => Yii::t('admin_slide', 'Delete'), // text label of the button
-                                                      'url' => '$data->id', // a PHP expression for generating the URL of the button
-                                                      'imageUrl' =>Yii::app()->request->baseUrl .'/js_plugins/ajaxform/images/icons/cross.png', // image URL of the button.   If not set or false, a text link is used
-                                                      'options' => array("class" => "fan_del", 'title' => Yii::t('admin_slide', 'Delete')), // HTML options for the button   tag
-                                                      ),
-                                                     'slide_update' => array(
-                                                     'label' => Yii::t('admin_slide', 'Update'), // text label of the button
-                                                     'url' => '$data->id', // a PHP expression for generating the URL of the button
-                                                     'imageUrl' =>Yii::app()->request->baseUrl .'/js_plugins/ajaxform/images/icons/pencil.png', // image URL of the button.   If not set or false, a text link is used
-                                                     'options' => array("class" => "fan_update", 'title' => Yii::t('admin_slide', 'Update')), // HTML options for the    button tag
-                                                        ),
-                                                     'slide_view' => array(
-                                                      'label' => Yii::t('admin_slide', 'View'), // text label of the button
-                                                      'url' => '$data->id', // a PHP expression for generating the URL of the button
-                                                      'imageUrl' =>Yii::app()->request->baseUrl .'/js_plugins/ajaxform/images/icons/properties.png', // image URL of the button.   If not set or false, a text link is used
-                                                      'options' => array("class" => "fan_view", 'title' => Yii::t('admin_slide', 'View')), // HTML options for the    button tag
-                                                        )
-                                                    ),
+				 'slide_delete' => array(
+				 'label' => Yii::t('admin_slide', 'Delete'), // text label of the button
+				  'url' => '$data->id', // a PHP expression for generating the URL of the button
+				  'imageUrl' =>Yii::app()->request->baseUrl .'/js_plugins/ajaxform/images/icons/cross.png', // image URL of the button.   If not set or false, a text link is used
+				  'options' => array("class" => "fan_del", 'title' => Yii::t('admin_slide', 'Delete')), // HTML options for the button   tag
+				  ),
+				 'slide_update' => array(
+				 'label' => Yii::t('admin_slide', 'Update'), // text label of the button
+				 'url' => '$data->id', // a PHP expression for generating the URL of the button
+				 'imageUrl' =>Yii::app()->request->baseUrl .'/js_plugins/ajaxform/images/icons/pencil.png', // image URL of the button.   If not set or false, a text link is used
+				 'options' => array("class" => "fan_update", 'title' => Yii::t('admin_slide', 'Update')), // HTML options for the    button tag
+					),
+				 'slide_view' => array(
+				  'label' => Yii::t('admin_slide', 'View'), // text label of the button
+				  'url' => '$data->id', // a PHP expression for generating the URL of the button
+				  'imageUrl' =>Yii::app()->request->baseUrl .'/js_plugins/ajaxform/images/icons/properties.png', // image URL of the button.   If not set or false, a text link is used
+				  'options' => array("class" => "fan_view", 'title' => Yii::t('admin_slide', 'View')), // HTML options for the    button tag
+					)
+				),
                    'template' => '{slide_view}{slide_update}{slide_delete}',
             ),
     ),
-           'afterAjaxUpdate'=>'js:function(id,data){$.bind_crud()}'
+           'afterAjaxUpdate'=>'js:function(id,data){$.bind_crud();}',
 
                                             ));
 
@@ -98,7 +98,7 @@ $(function() {
 
     //declaring the function that will bind behaviors to the gridview buttons,
     //also applied after an ajax update of the gridview.(see 'afterAjaxUpdate' attribute of gridview).
-        $. bind_crud= function(){
+        $.bind_crud= function(){
             
  //VIEW
 
@@ -220,10 +220,10 @@ $(function() {
                 );
 
         $(this).bind('click', function() {
-                                                                      dialogs[id].dialog('open');
-                                                                       // prevent the default action, e.g., following a link
-                                                                      return false;
-                                                                     });
+				  dialogs[id].dialog('open');
+				   // prevent the default action, e.g., following a link
+				  return false;
+				 });
     });//each end
 
         }//bind_crud end

@@ -8,7 +8,7 @@
 			</a>
 			<ul class="dropdown-menu">
 				<li><a href="<?=User::getUserUrl($username);?>">View Profile</a></li>
-				<li><a href="/message/compose/id/<?=$userid;?>">Send Message</a></li>
+				<li><a href="/message/compose?id=<?=$userid;?>">Send Message</a></li>
 				<li><a href="/howto/show/by/user/<?=$username;?>">Howtos by <?=$username;?></a></li>
 
 			</ul>

@@ -12,7 +12,7 @@
 	array(
 		'data'=>$model,
 		'owner'=>$owner,
-	) ); 
+	) ,false, true); 
 ?>
 <?php // social plugin
 	$this->widget('application.extensions.social.social', 
@@ -45,8 +45,10 @@
 	
 	<!-- steps-->
 	<div id="steps" class="span10" style="clear:both; float:left;">
+		<?php if ( $owner ):?>
+
 		<button class="btn btn-mini btn-success" id="createButton"><!-- sign up button-->
-		<i class="icon-plus icon-white"></i> Add Step
+			<i class="icon-plus icon-white"></i> Add Step
 		</button>
 			
 			<!-- files with modalwindow, ajax calls etc for easier reading -->
@@ -56,8 +58,7 @@
 				<?= $model->stepCount>1 ? $model->stepCount . ' steps' : 'One step'; ?>
 			</h3>
 		<?php endif; ?>
-		
-		<?php if ( $owner ):
+		<?php
 		Yii::app()->user->setFlash('info', 'Drag the titles of the steps to  re-arrange them <br/>
 		Change the steps by clicking on the step text.');
 		$this->widget('bootstrap.widgets.BootAlert'); 
@@ -116,7 +117,6 @@
 
 	<?php 
 	foreach($videos as $video):
-		echo $video->filename;
 	
 	endforeach;
 	?>

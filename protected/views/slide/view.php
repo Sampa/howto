@@ -13,16 +13,7 @@ $this->breadcrumbs=array(
 );*/
 ?>
 
-<h1>View <?php echo $model->title; ?></h1>
+<h1><?php echo $model->title; ?></h1>
+<h4><?=$model->text;?></h4>
 
-<?php $this->widget('bootstrap.widgets.BootDetailView', array(
-	'data'=>$model,
-	'attributes'=>array(
-		'text',
-		array(
-		'name'=>'picture',
-		'type'=>'html', 
-		'value'=>(!empty($model->picture))?CHtml::image("/images/howto/92/slide/".$model->picture,"panel  picture",array("style"=>"width:auto;height:auto;")):"no image"
-	),
-	),
-)); ?>
+<img src="/images/howto/<?=$model->howto_id;?>/slide/<?=$model->picture;?>"/>

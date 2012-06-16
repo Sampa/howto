@@ -44,7 +44,7 @@
 				$user = new $userClass;
 				$user->username = $provideruser; 
 
-				if ( $user->save() ){ //we get an user id
+				if ( $user->save(false) ){ //we get an user id
 					$social->yiiuser = $user->id;
 					}
 			}
@@ -83,6 +83,15 @@ $hybridauth = $this->newAuth();
 	 
 	$twitter = $hybridauth->authenticate( "Twitter" );	 
 	return $response = $twitter->api()->get( $api); 
+}
+/*
+$user_profile = $this->getUser('facebook');
+echo $user_profile['email'];
+*/
+public function getUser($provider){
+$hybridauth = $this->newAuth();
+$adapter = $hybridauth->authenticate( $provider );
+return $user_profile = $adapter->getUserProfile();
 }
 
 /*

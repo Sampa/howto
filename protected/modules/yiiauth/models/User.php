@@ -37,6 +37,7 @@ class User extends CActiveRecord
 	 */
 	 public function beforeValidate()
 	{
+		
         $this->usernameLegal = preg_replace( '/[^A-Za-z0-9@_#?!&-]/' , '', $this->username );
         return true;
 	}
@@ -66,21 +67,24 @@ class User extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('username, password', 'required','on'=>'validation'),
-			array('username, password, last_activity', 'length', 'max'=>128,'on'=>'validation'),
-			array('avatar', 'length', 'max'=>255,'on'=>'validation'),
-			array('last_activity', 'safe','on'=>'validation'),
-			array('presentation','safe','on'=>'validation'),
-			 array('username', 'compare', 'compareAttribute'=>'usernameLegal', 'message'=>'Username contains illegal characters','on'=>'validation'),
-		//array('password', 'compare', 'compareAttribute'=>'password2'),              
-			array('email','length','max'=>256,'on'=>'validation'),
+			array('username', 'required','on'=>'update'),
+			array('password', 'compare', 'compareAttribute'=>'password2'),              
+
+			array('username, email', 'unique'), 
+			array('email','email'),
+			array('username', 'required'),
+			array('password','required','on'=>'register'),
+			array('password','length','min'=>6,'on'=>'register'),
+			array('username, password, last_activity', 'length', 'max'=>128),
+			array('avatar', 'length', 'max'=>255),
+			array('last_activity', 'safe'),
+			array('presentation','safe'),
+			 array('username', 'compare', 'compareAttribute'=>'usernameLegal', 'message'=>'Username contains illegal characters'),
          // make sure email is a valid email
-         //array('email','email'),
          // make sure username and email are unique
-		//array('username, email', 'unique'), 
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, username, password, email, created, last_activity,', 'safe', 'on'=>'search,validation'),
+			array('username,  email, created, last_activity,', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -153,18 +157,23 @@ class User extends CActiveRecord
 	{
 		if ( parent::beforeSave() )
 		{
+			if ( isset ( $_POST['User']['password'] ) )
+			{
+				$password = $_POST['User']['password'];
+				$this->password = crypt( $password,  Randomness::blowfishSalt() );
+			} else {
+				if ( $this->isNewRecord )
+					$password = rand(9999,999999);
+			}
 			$time = new Datetime();
 			if ( $this->isNewRecord )
 			{	
 				$this->created = $time->format('Y-m-d-h-m-s');
-				if ( isset ( $_POST['User']['password'] ) ){
-					$password = $_POST['User']['password'];
-				} else{
-					$password = rand(9999,999999);
-				}
-				$this->password = crypt( $password,  Randomness::blowfishSalt() );
+			
 			}
 			else{ 
+				
+					
 				$this->last_activity = $time->format('Y-m-d-h-m-s');
 			}
 			return true;

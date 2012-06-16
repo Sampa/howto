@@ -8,7 +8,7 @@
 		}
 ?>
 
-<div class="Howto span12" style="border: 0px solid black; margin-left:0px; margin-top:10px;" >
+<div class="Howto well" style="border: 0px solid black; margin-left:0px; max-width:500px;margin-top:10px;" >
 	<div class="title">
 		<h2>	
 			<?= CHtml::link(CHtml::encode($data->title), $data->url); ?>

@@ -9,8 +9,8 @@
 <?php $this->renderPartial(Yii::app()->getModule('message')->viewPath . '/_flash') ?>
 	<?php $this->renderPartial(Yii::app()->getModule('message')->viewPath . '/_navigation') ?>
 
-<div class="span5">
-	<div class="well">
+<div class="span4" style="float:left;">
+	<div class="">
 		<h2><?= MessageModule::t('Inbox'); ?></h2>
 
 		<?php if ($messagesAdapter->data): ?>

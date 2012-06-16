@@ -71,21 +71,23 @@
 </div>
 
 	<div class="span5" style="float:left; border:0px solid red; margin-right:50px;">
-<div class="row-fluid">
+<div class="row-fluid" >
+
 		<h4>Tags
 		<?php $this->widget('Question',array('content'=>'Tags are used to in one word point out more exactly what the Howto is about,<br/>
 		making it more likely to attract viewers.<br/>
 		<b>For example: Pizza,easy,Recipe</b>'));?>
 		</h4>
-		<?php $this->widget('CAutoComplete', array(
+		  <?php $this->widget('CAutoComplete', array(
 			'model'=>$model,
 			'attribute'=>'tags',
 			'url'=>array('suggestTags'),
 			'multiple'=>true,
 			'htmlOptions'=>array('size'=>50),
 		)); ?>
-	
-	<p class="hint">Please separate different tags with commas.</p>
+		<p class="hint">Please separate different tags with commas.</p>
+
+
 		<?php echo $form->error($model,'tags'); ?>
 	</div>
 	<div class="row-fluid" >		
@@ -102,13 +104,16 @@ Obviously misplaced Howtos will be removed.'));?>
 		  'attribute'=>'categories',
 		  'data'=>$categories,
 		  'multiple'=>true,
+		  'htmlOptions'=>array('class'=>'ac_input')
 		)); 
 	?>		
-	</div>
+</div>
+
 	<?php $this->endWidget();?>
-	<div class="" style="position:relative;top:10px;left:00px; min-width:200px;">
+	<div class="" style="position:relative;top:10px;left:00px; min-width:200px; display:none;">
 
 	 <h4> Upload videos </h4>
+	 <p class="note">Only mp4 format supported
 			<div id="video"></div>
 	 <?php 
 	$XUpload = new XUploadForm;
@@ -121,6 +126,7 @@ Obviously misplaced Howtos will be removed.'));?>
 						'attribute' => 'file',
 						'multiple'=>true,
 						'options'=>array(
+						'acceptFileTypes'=>'/(\.|\/)(mp4)$/i',
 						'completed' => 'js:function (e,data) {
 						$.each(data.files, function (index, file) {
 						$("#Howto_video").val(\'\'+$("#Howto_video").val()+";"+file.name + \'\' );

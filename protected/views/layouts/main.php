@@ -20,14 +20,13 @@
 	<?php  Yii::app()->clientScript->registerScriptFile('/js/jeditable.js');?>
 	<?php  Yii::app()->clientScript->registerScriptFile('/js/nicedit.js');?>
 	<?php  Yii::app()->clientScript->registerScriptFile('/js/jquery.pop.js');?>
-
+	<?php  Yii::app()->clientScript->registerScriptFile('/js/jquery.fcbkcomplete.js');?>
 
 
 	<title><?= CHtml::encode( $this->pageTitle ); ?></title>
 </head>
 
 <body>	
-<?php //$this->widget('application.extensions.search-and-share.SearchShare'); ?>
 
 <div id="page" >
 
@@ -205,7 +204,6 @@
     'config'=>array(),
     )
 );?>
-		<?php  Yii::app()->clientScript->registerScriptFile('/js/jtip.js');?>
 		
 
 </body>
