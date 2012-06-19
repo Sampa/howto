@@ -134,14 +134,6 @@
 	</div><!-- nav -->
 </div><!-- categories and down-->
 </div>
-
-
-
-<style type="text/css">
-.style{min-height:200px;}
-
-</style>
-
 		
 	<?php if ( $this->user == $data->author->username):?>
 	<div id="elrte_holder" style="clear:both; max-width:100%;margin-top:0px;">
@@ -187,7 +179,6 @@
 	$(document).ready(function(){
 	$(".save_step").hide();
 	$(".step_text").click(function(){
-	$( "#sortable" ).sortable( "option", "disabled", true );
 		var id = $(this).attr('name');
 		$("#button"+id).fadeIn('slow');
 		$("#div"+id).fadeIn('slow');
@@ -201,7 +192,6 @@
 			if (data.status == 'success'){
 					$("#button"+id).fadeOut('slow');
 					$("#div"+id).fadeOut('slow');
-					$( "#sortable" ).sortable( "option", "disabled", false );
 				}
 			});
 			return false;
@@ -241,18 +231,7 @@
 			}
 
 	
-	 $('.edit_').editable('/step/inlineEdit?id=<?=$data->id;?>&url=<?=$data->url;?>', { 
-         type      : 'textarea',
-		 data	   : $(this).html(),
-         cancel    : 'Cancel',
-         submit    : 'OK',
-         indicator : '<img src="img/indicator.gif">',
-         tooltip   : 'Click to edit...',
-		callback : function(value, settings) {
-
-         console.log($(this).html());
-     },
-     });
+	
  });//document ready
 	
 	</script>

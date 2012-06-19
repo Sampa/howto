@@ -134,6 +134,16 @@ class Comment extends CActiveRecord
 	 * This is invoked before the record is saved.
 	 * @return boolean whether the record should be saved.
 	 */
+	protected function afterSave()
+	{
+			$howto = new Howto;
+			$title = $howto->getTitle($this->howto_id);
+			$title = CHtml::link('Commented on '.$title , array('/howto/' . $this->howto_id . '/' . $title ) );
+			$content = substr($this->content,0,160);
+			$content .= "...";
+			Action::newAction($content,$title);
+
+	}
 	protected function beforeSave()
 	{
 		if ( parent::beforeSave() )

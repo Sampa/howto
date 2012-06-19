@@ -7,10 +7,7 @@
 
 <?php endforeach;?>
 	</ul>
-	<script language="javascript">
-			$(document).ready(
-				function (){
-					$("#pikame").PikaChoose({carousel:true});
-				});
+<script>
+$("#pikame").PikaChoose({carousel:true});
+		
 </script>
-

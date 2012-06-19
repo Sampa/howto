@@ -57,10 +57,14 @@
 	<div class="row-fluid buttons">
 	<?php
 		echo CHtml::htmlButton('<i class="icon-ok icon-white"></i> Save',
-			array('class'=>'btn btn-mini btn-success', 'type'=>'submit') ); 
+			array('class'=>'btn btn-mini btn-success', 'type'=>'submit','id'=>'save_button') ); 
 	?>
 	</div>
-
+	
+			<input type="hidden" id="x" name="x" />
+			<input type="hidden" id="y" name="y" />
+			<input type="hidden" id="w" name="w" />
+			<input type="hidden" id="h" name="h" />
 
 <?php $this->endWidget(); ?>
 </div><!-- //left -->
@@ -74,13 +78,25 @@
 	
 	<div id="avatar_upload" style="float:left;">
 	 <h4> Upload an avatar </h4>
+	<script type="text/javascript">
+	function showPic(filename){
+	var img = '<img src="<?=User::USER_DIR . Yii::app()->user->id;?>/'+filename+'" id="target" alt=""/>';
+	var cropped = '<img src="<?=User::USER_DIR . Yii::app()->user->id;?>/'+filename+'" id="preview" class="jcrop-preview" alt=""/>';
+			$(".cropinfo").show();
+			$("#avatar").html(img);
+			$("#preview_div").html(cropped);
+			$("#User_avatar").val(filename);
+			initCrop();
+		}
+
+	</script>
 <?php 
 
 	$XUpload = new XUploadForm;
 	$this->widget('xupload.XUpload', 
 			array(
 					'url' => Yii::app()->createUrl("file/upload", 
-					array("parent_id" =>User::USER_DIR . Yii::app()->user->id,'rename'=>rand(11111,99999999) ) ),
+					array("parent_id" =>User::USER_DIR . Yii::app()->user->id) ),
 						'type'=>'avatar',
 						'model' => $XUpload,
 						'attribute' => 'file',
@@ -96,18 +112,77 @@
 ?>
 
 	</div>
-<div id="avatar"></div>
+<?php 
+Yii::app() -> clientScript -> registerCssFile('/css/jquery.jcrop.css');
+      Yii::app() -> clientScript -> registerScriptFile("/js/jquery.jcrop.min.js");
+	  Yii::app() -> clientScript -> registerScriptFile("/js/jquery.color.js");
+?>
+<h4 class="cropinfo">Please select an area of the image to save as your avatar</h4>
+<div id="avatar" style="clear:both;"></div>
+<h4 class="cropinfo">This is what your avatar will look like</h4>
+<div id="preview_div" style="width:250px;height:250px;overflow:hidden;"></div>
 	<script type="text/javascript">
+
+
+function initCrop(){
+  // Create variables (in this scope) to hold the API and image size
+      var jcrop_api, boundx, boundy;
+
+      $('#target').Jcrop({
+        onChange: updatePreview,
+        onSelect: updatePreview,
+        aspectRatio: 1,
+		minSize: [ 250, 250 ],
+        maxSize: [ 250, 250 ],
+		allowResize: false,
+
+      },function(){
+        // Use the API to get the real image size
+        var bounds = this.getBounds();
+        boundx = bounds[0];
+        boundy = bounds[1];
+        // Store the API in the jcrop_api variable
+        jcrop_api = this;
+      });
+      function updatePreview(c)
+      {
+		
+		$('#x').val(c.x);
+		$('#y').val(c.y);
+		$('#w').val(c.w);
+		$('#h').val(c.h);
+
+        if (parseInt(c.w) > 0)
+        {
+          var rx = 250 / c.w;
+          var ry = 250 / c.h;
+
+          $('#preview').css({
+            width: Math.round(rx * boundx) + 'px',
+            height: Math.round(ry * boundy) + 'px',
+            marginLeft: '-' + Math.round(rx * c.x) + 'px',
+            marginTop: '-' + Math.round(ry * c.y) + 'px'
+          });
+        }
+      };
+	  };
+	 $("#save_button").click(
+	function checkCoords()
+	{
+		if (parseInt($('#w').val())) return true;
+		alert('Please select a crop region then press submit.');
+		return false;
+	});
 	$(document).ready(function(){
 		$("#User_password").val('');
-	
 	});
-		function showPic(filename){
-			var img = '<img src="<?=User::USER_DIR . Yii::app()->user->id;?>/'+filename+'" alt=""/>';
-			$("#avatar").html(img);
-			$("#User_avatar").val(filename);
-		}
-	</script>
+
+  </script>
+
+
+	
+	
+	
 	<?php endif;?>
 
 </div>

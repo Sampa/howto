@@ -5,7 +5,8 @@ class UserButton extends CWidget {
 	public $userid;
 	public $username;
 	public $reputation;
-    /**
+    public $profileLink = true;
+	/**
      * Publishes the required assets
      */
     public function init() {
@@ -19,6 +20,7 @@ class UserButton extends CWidget {
 			'userid'=>$this->userid,
 			'username'=>$this->username,
 			'reputation'=>$this->reputation,
+			'profileLink'=>$this->profileLink,
 		));
     }
 

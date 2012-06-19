@@ -52,7 +52,7 @@ class HowtoController extends Controller
 	*/
 	public function allowedActions()
 	{
-	 	return 'index,view,suggestTags,eltre,rating,create,bookmark,category,reloadComments';
+	 	return 'index,view,suggestTags,eltre,rating,bookmark,category,reloadComments,mail';
 	}
 	
 

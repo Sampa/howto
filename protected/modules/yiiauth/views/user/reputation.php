@@ -1,5 +1,5 @@
 <?php
-	if ( $this->userId !== $id )
+	if ( Yii::app()->user->id !== $id )
 	{
 		echo '<div id="req_res">';
 
@@ -11,7 +11,7 @@
 			array(
 				'update'=>'#req_res',
 			),
-			array('class'=>'btn btn-success')
+			array('class'=>'btn btn-mini btn-success')
 		);
 		echo '</div>';
 	}

@@ -49,11 +49,16 @@ class DefaultController extends Controller
 			$error .= "<hr /><pre>Trace:<br />" . $e->getTraceAsString() . "</pre>";  
 
 		}
+		 $session=new CHttpSession;
+		 $session->open();
+		 $session['provider']=$provider;
+		 $session['provideruser']=$user_profile->identifier;
+		 // 
 		/**$user_profile->identifier; //unique id
 		$provider; // the provider name
 		$_GET['openid'];//the extra_info
 		**/
-		
+
 		// workOnUser returns an user object
 		if ( is_object ($user_profile) ){
 		$user = $this->workOnUser($provider,$user_profile->identifier); 

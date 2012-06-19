@@ -220,6 +220,15 @@ class Howto extends Model
 	protected function afterSave()
 	{
 		parent::afterSave();
+		$title = $this->getTitle($this->id);
+		$tags = $this->getTagLinks();
+		$title = CHtml::link('Created '.$title , array('/howto/' . $this->id . '/' . $title ) );
+		$shortText = substr($this->content,0,160);
+		$content = $shortText."...<br/>Tags:";
+		foreach($tags as $tag){
+			$content .=" ".$tag.",";
+		}
+		Action::newAction($content,$title);
 		Tag::model()->updateFrequency( $this->_oldTags , $this->tags );
 	}
 

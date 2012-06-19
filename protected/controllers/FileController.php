@@ -9,7 +9,6 @@ class FileController extends Controller{
         		'subfolderVar' => 'parent_id',
         		'path' => realpath(Yii::app()->getBasePath()."/../"),
 				'type'=>'type',
-				'rename'=>'rename',
             ),
         );
     }

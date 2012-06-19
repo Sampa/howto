@@ -1,18 +1,10 @@
-<?php $this->pageTitle=Yii::app()->name . ' - '.MessageModule::t("New Message"); ?>
-<?php
-	$this->breadcrumbs=array(
-		MessageModule::t("New"),
-	);
-?>
+<?php $this->layout ="ajax";?>
 
 <?php $this->renderPartial(Yii::app()->getModule('message')->viewPath . '/_styles') ?>
 <?php $this->renderPartial(Yii::app()->getModule('message')->viewPath . '/_flash') ?>
 
-<?php $this->renderPartial(Yii::app()->getModule('message')->viewPath . '/_navigation'); ?>
-	<div class="span5">
-
-
-		<div class="well">
+<div class="span12" style="float:left;">
+		<div>
 				<h2><?= MessageModule::t('New Message'); ?></h2>
 			<?php $form = $this->beginWidget('BootActiveForm', array(
 				'id'=>'message-form',

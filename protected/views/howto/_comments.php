@@ -10,6 +10,8 @@
 		$user = User::model()->find("username='".$comment->author."'");
 		if(!$user)
 			continue;
+		if($comment->response_id !== null)
+			continue;
 ?>
 <div class="comment" id="c<?php echo $comment->id; ?>">
 
@@ -36,22 +38,65 @@
 	</div>
 
 	</div>
-	<?php $this->widget('BootButton', array(
+	<?php 
+	if(!Yii::app()->user->isGuest){
+	$this->widget('BootButton', array(
 		'buttonType'=>'button',
 		'type'=>'primary',
 		'size'=>'mini',
 		'label'=>'Reply',
 		'toggle'=>true,
 		'icon'=>'white repeat',
-		'htmlOptions'=>array('style'=>'float:left; margin-left:-75px;','class'=>'reply_button','id'=>$comment->id)
-		)); ?>
+		'htmlOptions'=>array('style'=>'float:left; margin-left:-75px;','class'=>'reply_button',
+		'id'=>$comment->id)
+		)); 
+	}
+	?>
 	
 	<div class="">
 		<?php echo $comment->content; ?>
 	</div>		
-
-
+	
 </div><!-- comment -->
+	<!--responses-->
+<?php $responses = Comment::model()->findAll('response_id='.$comment->id);
+if($responses):?>
+<div style="width:70%; margin-left:20%;" class="comment well">
+<?php
+		foreach($responses as $response){
+		 		$user = User::model()->find("username='".$response->author."'");
+		if(!$user)
+			continue;
+?>
+	<?php echo CHtml::link("#{$response->id}", $response->getUrl($howto), array(
+		'class'=>'cid',
+		'title'=>'Permalink to this comment',
+	)); ?>
+
+	<div class="author">
+			<?php
+			$this->widget('UserButton', 
+				array(
+				'id'=>$user->id,
+				'userid'=>$user->id,
+				'username'=>$user->username,
+				'reputation'=>$user->reputation,
+				)); 
+				 
+				?> 
+		<div class="time"><?php echo date('F j, Y \a\t h:i a',$response->create_time); ?></div>
+
+	</div>
+
+	
+	<div class="">
+		<?php echo $response->content; ?>
+	</div>		
+	
+<?php		}
+	?>
+</div> 
+<?php endif;?>
 	<!-- reply -->
 <div class="holder" id="holder<?=$comment->id;?>">
 		<div id="comment_success<?=$comment->id;?>"></div>
@@ -84,7 +129,7 @@ myNicEditor.addInstance('area<?=$comment->id;?>');
 <script type="text/javascript">
 $(".send_reply").click(function(){
 		var id = $(this).attr("name");	
-		if(getCreate(<?php echo $comment->howto->id;?>,'#area'+id) == true){
+		if(getCreate(<?php echo $comment->howto->id;?>,'#area'+id,id)){
 		<?= Chtml::ajax(array('url'=>'/howto/reloadComments?howto_id='.$comment->howto->id,'update'=>'#current'));?>
 		 $('#comment_success'+id).fadeIn('slow');
 		
@@ -99,6 +144,7 @@ $(".send_reply").click(function(){
   }, 1000, function() {
     // Animation complete.
   });
-		$("#holder"+id).slide();
+  
+		$("#holder"+id).fadeIn();
 	
 	});</script>

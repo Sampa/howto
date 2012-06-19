@@ -14,11 +14,11 @@
  * @version: 0.9.0
  */
 
-define('NICUPLOAD_PATH', 'C:\Programmering\xampp\htdocs\blog\files\users\\'.$_GET['hej']);
+define('NICUPLOAD_PATH', "C:/Programmering/xampp/htdocs/blog/files/users/");
 // Set the path (relative or absolute) to
 // the directory to save image files
                                     
-define('NICUPLOAD_URI', 'http://83.233.118.50/files/users/'.$_GET['hej']);   
+define('NICUPLOAD_URI', 'http://83.233.118.50/files/users/');   
 
 $nicupload_allowed_extensions = array('jpg','jpeg','png','gif','bmp');
 
@@ -30,16 +30,17 @@ if(!function_exists('json_encode')) {
     die('{"error" : "Image upload host does not have the required dependicies (json_encode/decode)"}');
 }
 
+if(isset($_POST['APC_UPLOAD_PROGRESS']))
 $id = $_POST['APC_UPLOAD_PROGRESS'];
-if(empty($id)) {
-    $id = $_GET['id'];
+if(!isset($id)) {
+    $id = $_GET['hej'];
 }
 
 if($_SERVER['REQUEST_METHOD']=='POST') { // Upload is complete
     if(empty($id) || !is_numeric($id)) {
         nicupload_error('Invalid Upload ID');
     }
-    if(!is_dir(NICUPLOAD_PATH) || !is_writable(NICUPLOAD_PATH)) {
+    if( !is_writable(NICUPLOAD_PATH)) {
         nicupload_error('Upload directory '.NICUPLOAD_PATH.' must exist and have write permissions on the server');
     }
     

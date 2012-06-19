@@ -25,7 +25,7 @@ Yii::app()->user->setFlash('success', 'Your comment was posted');
 //<![CDATA[
 bkLib.onDomLoaded(function() {
 	
-var myNicEditor = new nicEditor();
+var myNicEditor = new nicEditor({uploadURI:'/nic/upload.php?hej=<?=$model->id;?>'});
 myNicEditor.setPanel('divComment');
 myNicEditor.addInstance('comment_content');
 

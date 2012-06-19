@@ -5,9 +5,6 @@
 	<meta name="language" content="en" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<link type="text/css" href="<?= Yii::app()->request->baseUrl; ?>/css/bottom.css" rel="stylesheet" />
-	<?php  Yii::app()->clientScript->registerScriptFile('/js/jquery.jcarousel.min.js');?>
-	<?php  Yii::app()->clientScript->registerScriptFile('/js/jquery.pikachoose.js');?>
-
 
 
 	<link rel="stylesheet" type="text/css" href="<?= Yii::app()->request->baseUrl; ?>/css/main.css" />
@@ -16,11 +13,13 @@
 <?php  //helps using more jQuery stuff on same page 
 
 ?>
+	<?php  Yii::app()->clientScript->registerScriptFile('/js/jquery.pikachoose.js');?>
+
 	<?php  Yii::app()->clientScript->registerScriptFile('/js/common.js');?>
-	<?php  Yii::app()->clientScript->registerScriptFile('/js/jeditable.js');?>
 	<?php  Yii::app()->clientScript->registerScriptFile('/js/nicedit.js');?>
 	<?php  Yii::app()->clientScript->registerScriptFile('/js/jquery.pop.js');?>
 	<?php  Yii::app()->clientScript->registerScriptFile('/js/jquery.fcbkcomplete.js');?>
+	<?php  Yii::app()->clientScript->registerScriptFile('/js/jquery.vticker.js');?>
 
 
 	<title><?= CHtml::encode( $this->pageTitle ); ?></title>

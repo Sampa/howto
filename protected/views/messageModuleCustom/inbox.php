@@ -1,15 +1,9 @@
-<?php $this->pageTitle=Yii::app()->name . ' - '.MessageModule::t("Messages:inbox"); ?>
-<?php
-	$this->breadcrumbs=array(
-		MessageModule::t("Inbox"),
-	);
-?>
+<?php $this->layout ="ajax";?>
 
 <?php $this->renderPartial(Yii::app()->getModule('message')->viewPath . '/_styles') ?>
 <?php $this->renderPartial(Yii::app()->getModule('message')->viewPath . '/_flash') ?>
-	<?php $this->renderPartial(Yii::app()->getModule('message')->viewPath . '/_navigation') ?>
 
-<div class="span4" style="float:left;">
+<div class="span12" style="float:left;">
 	<div class="">
 		<h2><?= MessageModule::t('Inbox'); ?></h2>
 

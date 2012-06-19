@@ -105,17 +105,7 @@ class SiteController extends Controller
 		}
 		if (Yii::app()->request->isAjaxRequest)
         {
-			    $cs=Yii::app()->clientScript;
-                $cs->scriptMap=array(
-                                                 'jquery.min.js'=>false,
-                                                 'jquery.js'=>false,
-                                                 'jquery.fancybox-1.3.4.js'=>false,
-                                                 'jquery.fancybox.js'=>false,
-                                                 'jquery-ui-1.8.12.custom.min.js'=>false,
-                                                 'json2.js'=>false,
-                                                 'jquery.form.js'=>false,
-                                                'form_ajax_binding.js'=>false
-								);
+			    
             echo CJSON::encode(array(
                 'status'=>'render', 
                 'div'=>$this->renderPartial('/site/modalLogin', array('model'=>$model), true)));

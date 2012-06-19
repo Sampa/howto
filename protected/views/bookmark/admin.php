@@ -7,7 +7,7 @@
 	'columns'=>array(
 		'howto_title',
 		array(
-			'class'=>'CButtonColumn',
+			'class'=>'BootButtonColumn',
 			'viewButtonUrl'=>'"/howto/".$data->howto_id."/".$data->howto_title;', // a PHP expression for generating the URL of the button
 			'template'=>'{view}{delete}',
 		),

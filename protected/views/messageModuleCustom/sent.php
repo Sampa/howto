@@ -1,16 +1,10 @@
-<?php $this->pageTitle=Yii::app()->name . ' - '.MessageModule::t("Messages:sent"); ?>
-<?php
-	$this->breadcrumbs=array(
-		MessageModule::t("Sent"),
-	);
-?>
+<?php $this->layout ="ajax";?>
 
 <?php $this->renderPartial(Yii::app()->getModule('message')->viewPath . '/_styles') ?>
 <?php $this->renderPartial(Yii::app()->getModule('message')->viewPath . '/_flash') ?>
-<?php $this->renderPartial(Yii::app()->getModule('message')->viewPath . '/_navigation') ?>
 
-<div class="span5">
-	<div class="well">
+<div class="span12" style="float:left;">
+	<div >
 	<h2><?= MessageModule::t('Messages you have sent'); ?></h2>
 
 		<?php if ($messagesAdapter->data): ?>

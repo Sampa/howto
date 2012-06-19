@@ -7,7 +7,9 @@
 			<b class="caret"></b>
 			</a>
 			<ul class="dropdown-menu">
+				<?php if($profileLink):?>
 				<li><a href="<?=User::getUserUrl($username);?>">View Profile</a></li>
+				<?php endif;?>
 				<li><a href="/message/compose?id=<?=$userid;?>">Send Message</a></li>
 				<li><a href="/howto/show/by/user/<?=$username;?>">Howtos by <?=$username;?></a></li>
 

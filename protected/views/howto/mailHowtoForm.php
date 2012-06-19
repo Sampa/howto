@@ -39,7 +39,7 @@
 	<?php endif; ?>
 
 	<div class="row-fluid submit">
-	    <?php echo CHtml::htmlButton('<i class="icon-ok icon-white"></i> Send', array('class'=>'btn-tiny btn-success', 'type'=>'submit')); ?>
+	    <?php echo CHtml::htmlButton('<i class="icon-ok icon-white"></i> Send', array('class'=>'btn btn-mini btn-success', 'type'=>'submit')); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

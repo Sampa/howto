@@ -15,7 +15,7 @@
 </div>
 <?php $this->endWidget(); ?> 
 <script type="text/javascript">
-function getCreate(){
+function createStep(){
   <?php echo CHtml::ajax(array(
             'url'=>array('/step/create?howto_id='.$howto),
             'data'=> "js:$(this).serialize()",
@@ -39,7 +39,7 @@ function getCreate(){
 }
 
 $("#createButton").click(function(){
-getCreate();
+createStep();
 $('#dialogCreate').modal('show');
 return false; 
 });

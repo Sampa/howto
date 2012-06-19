@@ -95,7 +95,9 @@ class CommentController extends Controller
 			
             $model->content = $_GET['content'];
 			$model->howto_id = $_GET['howto_id'];
-
+			if($_GET['response']){
+			$model->response_id = $_GET['response'];
+			}
             if ( $model->save(false) )
             {
 

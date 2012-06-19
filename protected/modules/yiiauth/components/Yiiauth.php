@@ -73,7 +73,7 @@
 	}
 public function newAuth(){
 	$hybridauth_config = $this->hybridAuthConfig();
-	return $hybridauth = new Hybrid_Auth( $hybridauth_config );
+	return $hybridauth=  new Hybrid_Auth( $hybridauth_config );
 
 }
 public function twitterApi($api){
@@ -143,7 +143,7 @@ public function facebookApi($api){
 
 }
 public function updateStatus($provider,$status){
-	$this->newAuth();
+	$hybridauth = $this->newAuth();
 	// these providers are the only ones who support status updating
 	$providers = array('facebook', 'twitter', 'identica', 'linkedin', 'qq', 'sina', 'murmur', 'pixnet','plurk');
 		

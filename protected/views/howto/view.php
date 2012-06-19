@@ -3,6 +3,7 @@
 	$this->pageTitle = $model->title;
 	$this->layout = "column1";
 ?>
+
 	
 <div id="howto_container" class="span6" style="padding-left: 5px; float:left; border:0px solid black;">
 
@@ -12,7 +13,7 @@
 	array(
 		'data'=>$model,
 		'owner'=>$owner,
-	) ,false, true); 
+	) ); 
 ?>
 <?php // social plugin
 	$this->widget('application.extensions.social.social', 
@@ -65,28 +66,28 @@
 		?>
 		<div id="stepsUpdated"></div>
 		
-			<ul id="sortable">	
+			<ul id="sortable" style="display:inline;">	
 		<?php
 		endif;
 		foreach ( $model->steps as $step ):
 			if($owner)
-			echo '<li id="'.$step->id.'" class="ui-state-highlight" style="border:0px solid green">';
+				echo '<li id="'.$step->id.'" class="ui-state-highlight" style="border:0px solid green">';
 			echo $step->title;
 			echo '<br/><div id="div'.$step->id.'" style="display:none;"></div><div  name="'.$step->id.'" id="step_text_div'.$step->id.'" class="well step_text" ">' . $step->text .'</div>';
+			if($owner):
 			echo '<button class="btn btn-mini btn-success save_step" name ="'.$step->id.'" 
 			id="button'.$step->id.'" style="display:block;">Save</button>';;
 		 ?>
 		 <script type="text/javascript">
 			//<![CDATA[
 			bkLib.onDomLoaded(function() {
-			var myNicEditor = new nicEditor();
+			var myNicEditor = new nicEditor({uploadURI:'/nic/upload.php?hej=<?=$model->id;?>'});
 			myNicEditor.setPanel('div<?=$step->id;?>');
 			myNicEditor.addInstance('step_text_div<?=$step->id;?>');
 
 			});
 			//]]>
 		</script>
-		<?php if($owner):?>
 			</li>
 		<?php endif;?>
 		<?php endforeach; ?>
@@ -104,10 +105,10 @@
 	if( $owner ) {
 		echo "<br/><br/>".CHtml::htmlButton('<i class="icon-edit icon-white"></i> Manage Slides',
 		array('class'=>'btn btn-mini btn-primary manage_slide'));
-		$this->registerAssets();	
 		$slide = new Slide('search');
-		echo $this->renderPartial('//slide/index' , array( 'model'=>$slide,'howto'=>$model->id ) );
+		$this->renderPartial('//slide/index',array('model'=>$slide,'howto'=>$model->id));
 		}
+	
 	$panels = Slide::model()->findAll('howto_id='.$model->id);
 	if ( $panels )
 	{
@@ -121,30 +122,33 @@
 	endforeach;
 	?>
 	<script type="text/javascript">
-	function getCreate(id,content){
-
- var content = $(content).html();
-        url = '/comment/new?howto_id='+id;
- 
-    jQuery.getJSON(url, {content: content}, function(data) {
+	function getCreate(id,content,response){
+	if(response == ""){
+	response = false;
+	}
+	var content = $(content).html();
+    var url = '/comment/new?howto_id='+id;
+    jQuery.getJSON(url, {content: content,response:response}, function(data) {
         if (data.status == 'success') {
            return true;	
 			
         }else{return false;}          
 	});
-}
-$(function() {
-
-$(".alert").click(function(){
-$(".alert").hide();
-});
-		$( "#sortable" ).sortable({
+}	<?php if($owner):?>
+$(document).ready(function() {
+	$( "#sortable" ).sortable({
 			placeholder: "ui-state-highlight",
 			items: 'li',
 			cursor: 'crosshair',
-			disabled: false
-		}
-		);
+			disabled: false,
+		});
+		
+		});
+
+$(".alert").click(function(){
+$(this).hide();
+});
+	
 <!-- EVENT! When the user has sorted a step to a new position -->
 $("#sortable").bind( "sortupdate", function(event, ui) {
 updatePos();
@@ -163,13 +167,12 @@ function updatePos() {
     return false;
 }
 <!-- END EVENT -->
-	});
-	</script>
-<script type="text/javascript">
-		$(".manage_slide").click(function(){
+	$(".manage_slide").click(function(){
 			$("#slide_div").toggle();
 		});
-	</script>
+<?php endif;?>
+</script>
+
 <?php if($model->commentCount>=1): ?>
 		<h3>
 			<?php echo $model->commentCount>1 ? $model->commentCount . ' comments' : 'One comment'; ?>
@@ -184,11 +187,26 @@ function updatePos() {
 
 	<h3>Leave a Comment</h3>
 
-	<?php if ( !Yii::app()->user->isGuest ): ?>
+	<?php if ( !Yii::app()->user->isGuest ){
 	
-		<?php $this->renderPartial('/comment/_form',array(
+		$this->renderPartial('/comment/_form',array(
 			'model'=>$comment,
 			'howto'=>$model,
-		)); ?>
-	<?php endif; ?>
+		)); 
+	}else{ echo "You must be signed in to comment";}
+
+	?>
 	</div><!-- comments -->
+	<!-- to fix the rating breaking in view but not index-->
+	<script>
+	jQuery('#rating1 > input').rating({'cancel':'','callback':
+			function(){
+			url = "/howto/rating";
+			jQuery.getJSON(url, {id: 1, val: $(this).val()}, function(data) {
+			if (data.status == "success"){
+			$("#rating_info_1").html(data.info);
+			$("input[id*=1_]").rating("readOnly",true);
+			}
+			});}}); 
+	</script>
+	

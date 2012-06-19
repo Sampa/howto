@@ -79,7 +79,7 @@ class User extends CActiveRecord
 			array('avatar', 'length', 'max'=>255),
 			array('last_activity', 'safe'),
 			array('presentation','safe'),
-			 array('username', 'compare', 'compareAttribute'=>'usernameLegal', 'message'=>'Username contains illegal characters'),
+			array('username', 'compare', 'compareAttribute'=>'usernameLegal', 'message'=>'Username contains illegal characters'),
          // make sure email is a valid email
          // make sure username and email are unique
 			// The following rule is used by search().
@@ -98,6 +98,7 @@ class User extends CActiveRecord
 		return array(
 			'howtos' => array( self::HAS_MANY , 'Howto' , 'author_id' ),
 			'howtoCount' => array( self::STAT , 'Howto', 'author_id'),
+			'actions'=>array(self::HAS_MANY,'Action', 'user_id'),
 		);
 	}
 		

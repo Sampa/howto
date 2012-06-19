@@ -36,6 +36,7 @@ class UserController extends Controller
 	 */
 	public function actionView( $id = null , $u = null)
 	{
+		$this->layout ="//layouts/column1";
 		$owner = false;
 		if ( isset ( $_POST['User'] ) )
 			$this->actionUpdate( $_POST['User']['id'] );
@@ -43,7 +44,7 @@ class UserController extends Controller
 		{
 			$owner = true;
 		}
-		$this->render( 'view',
+		$this->render( 'viewForVisitors',
 			array(
 				'model'=>$this->loadModel( $id , $u ),
 				'owner'=>$owner,
@@ -119,9 +120,27 @@ class UserController extends Controller
 
 		if ( isset ( $_POST['User'] ) )
 		{
+	
 			$model->attributes = $_POST['User'];
+		if ($_POST['User']['avatar'] !== ""){
+			$targ_w = $_POST['w'];
+			$targ_h = $_POST['h'];
+			$jpeg_quality = 90;
+			//echo "x=".$_POST['x']."y=".$_POST['y']."h=".$_POST['h']."w=".$_POST['w'];
+			//ger x=58.54998779296875y=86h=250w=250
+			
+			$src = "files/users/".Yii::app()->user->id.'/'.$_POST['User']['avatar'] ;
+			$img_r = imagecreatefromjpeg($src);
+			$dst_r = ImageCreateTrueColor( $targ_w, $targ_h );
+
+			imagecopyresampled($dst_r,$img_r,0,0,$_POST['x'],$_POST['y'],
+			$targ_w,$targ_h,$_POST['w'],$_POST['h']);
+
+			header('Content-type: image/jpeg');
+			imagejpeg($dst_r,$src,$jpeg_quality);
+			}
 			if ( $model->save() )
-				$this->redirect( array( '/profile/u/' . $model->username ) );				
+				$this->redirect( array( '/profile/u/' . $model->username ) );					
 		}
 		
 		$this->render( 'update', array(	'model'=>$model ));
