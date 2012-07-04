@@ -44,7 +44,7 @@ class UserController extends Controller
 		{
 			$owner = true;
 		}
-		$this->render( 'viewForVisitors',
+		$this->render( 'view',
 			array(
 				'model'=>$this->loadModel( $id , $u ),
 				'owner'=>$owner,
@@ -130,6 +130,7 @@ class UserController extends Controller
 			//ger x=58.54998779296875y=86h=250w=250
 			
 			$src = "files/users/".Yii::app()->user->id.'/'.$_POST['User']['avatar'] ;
+			$thumb = "files/users/".Yii::app()->user->id.'/thumb_'.$_POST['User']['avatar'] ;
 			$img_r = imagecreatefromjpeg($src);
 			$dst_r = ImageCreateTrueColor( $targ_w, $targ_h );
 
@@ -137,7 +138,7 @@ class UserController extends Controller
 			$targ_w,$targ_h,$_POST['w'],$_POST['h']);
 
 			header('Content-type: image/jpeg');
-			imagejpeg($dst_r,$src,$jpeg_quality);
+			imagejpeg($dst_r,$thumb,$jpeg_quality);
 			}
 			if ( $model->save() )
 				$this->redirect( array( '/profile/u/' . $model->username ) );					
@@ -204,7 +205,8 @@ class UserController extends Controller
 
 					$criteria = new CDbCriteria( array(
 						'condition' => "username LIKE :find",         // no quotes around :match
-						'params'    => array(':find' => "%$find%")  // Aha! Wildcards go here
+						'params'    => array(':find' => "%$find%"),// Aha! Wildcards go here
+						'limit'		=>10,
 					) );
 					//*** FIND THE DATA ***
 					$dataProvider = new CActiveDataProvider('User', array(
@@ -214,7 +216,7 @@ class UserController extends Controller
 						'criteria'=>$criteria,
 					));
 					
-					$this->render('/yiiauth/user/index',array(
+					$this->renderPartial('index',array(
 						'dataProvider'=>$dataProvider,
 					));
 			}

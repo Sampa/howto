@@ -52,9 +52,30 @@ class HowtoController extends Controller
 	*/
 	public function allowedActions()
 	{
-	 	return 'index,view,suggestTags,eltre,rating,bookmark,category,reloadComments,mail';
+	 	return 'index,view,updateContent,rating,bookmark,category,reloadComments,mail,search,jsonTags,viewpdf,toggleStatus';
 	}
 	
+
+	public function actionUpdateContent()
+	{			
+		if(!Yii::app()->user->isGuest)
+		{
+			
+			if ( Yii::app()->request->isAjaxRequest )
+			{
+			$model = Howto::model()->findByPk( $_POST['id'] );			
+			$model->content = $_POST['content'];
+
+				if ( $model->save(false) ) 
+				{
+					echo CJSON::encode( array (
+					'status'=>'success', 
+					'div'=>'Saved..',
+					) );
+				}				
+			}
+		}
+	}
 
 
 	/**
@@ -66,17 +87,16 @@ class HowtoController extends Controller
 
 		$howto = $this->loadModel();
 		$comment=$this->newComment($howto);
-
 		$owner = false;
+		$related = $howto->related($howto);
 		if ( $howto->author->id == Yii::app()->user->id )
 		$owner = true;
 		
 		if ( isset( $_GET['embed'] ) && $_GET['embed'] == "true" )
 		{
-		$this->renderPartial( 'embed',array(
-			'model'=>$howto,
-		));
-		
+			$this->renderPartial( 'embed',array(
+				'model'=>$howto,
+			));
 		}else{
 		$videos = Video::model()->findAll('howto_id='.$howto->id);
 		$this->render( 'view',array(
@@ -84,6 +104,7 @@ class HowtoController extends Controller
 			'owner'=>$owner,
 			'comment'=>$comment,
 			'videos'=>$videos,
+			'related'=>$related,
 		));
 		}
 	}
@@ -127,19 +148,33 @@ class HowtoController extends Controller
 				$find = addcslashes($find, '%_'); // escape LIKE's special characters
 
 					$criteria = new CDbCriteria( array(
-						'condition' => "content LIKE :find",         // no quotes around :match
-						'params'    => array(':find' => "%$find%")  // Aha! Wildcards go here
+						'condition' => "content OR title LIKE :find ",         // no quotes around :match
+						'params'    => array(':find' => "%$find%"),  // Aha! Wildcards go here
+						'limit'=>7,
 					) );
+					$criteria->addCondition("status=2");
 					//*** FIND THE DATA ***
 					$dataProvider = new CActiveDataProvider('Howto', array(
-						'pagination'=>array(
-							'pageSize'=>Yii::app()->params['howtosPerPage'],
-						),
 						'criteria'=>$criteria,
 					));
 					
-					$this->render('/howto/index',array(
+					$criteria = new CDbCriteria( array(
+						'condition' => "username LIKE :find",         // no quotes around :match
+						'params'    => array(':find' => "%$find%"),// Aha! Wildcards go here
+						'limit'		=>10,
+					) );
+					//*** FIND THE DATA ***
+					$userProvider = new CActiveDataProvider('User', array(
+						'pagination'=>array(
+							'pageSize'=>10,
+						),
+						'criteria'=>$criteria,
+					));
+
+					$this->renderPartial('/howto/index',array(
 						'dataProvider'=>$dataProvider,
+						'userProvider'=>$userProvider,
+						'search'=>true,
 					));
 			}
 	}
@@ -157,7 +192,7 @@ class HowtoController extends Controller
 			echo CJSON::encode( array (
 						'status'=>'success', 
 						'div'=>'Thank you for voting!',	
-						'info'=>"Rating: " . $rating->vote_average ." " . $rating->vote_count . " votes",
+						'info'=>$rating->vote_average ." " . $rating->vote_count . " votes",
 						) );
 			}
 		}
@@ -246,22 +281,20 @@ class HowtoController extends Controller
 		$this->performAjaxValidation( $model, 'howto-form' );
 		if ( isset ( $_POST['Howto'] ) )
 		{
-
-			$model->attributes = $_POST['Howto'];
-
+				
+			$model->attributes = $_POST['Howto'];			
 			$rating = new Rating();
 			$rating->save();
 			$model->rating_id = $rating->id;
 			
-			 foreach ( $_POST['Howto']['categories'] as $key=>$category)
-				{
-				
-						$model->categories .= $category.', '; 
-				}
-				
-
 			if ( $model->save() )
 			{
+				 foreach ( $_POST['Howto']['categories'] as $key=>$category)
+				{
+						$relation = new HowtoCategory;
+						$relation->saveNew($model->id,$category);
+				}
+				Tag::workOnTags($_POST['Howto']['tag'],$model->id);
 				
 				$files = $this->checkFiles($_POST['Howto']['video']);
 					foreach($files as $key=>$file)
@@ -338,6 +371,8 @@ class HowtoController extends Controller
 
 	public function actionIndex($show="")
 	{
+		if(Yii::app()->request->isAjaxRequest) 
+			$this->layout = "ajax";
 		//*** SET THE SORT ORDER IF STATEMENTS ***//
 		$order = 'create_time DESC';
 		$split = explode("/",$show);
@@ -355,7 +390,6 @@ class HowtoController extends Controller
 		//*** INITIATE ***//
 		$criteria = new CDbCriteria(
 		array(
-			'condition'=>'status='.Howto::STATUS_PUBLISHED,
 			'order'=>$order,
 			'with'=>array('commentCount','rating'),
 		));
@@ -364,14 +398,13 @@ class HowtoController extends Controller
 		
 		if ( isset ( $_GET['tag'] ) )
 			$criteria->addSearchCondition( 'tags',$_GET['tag'] );
-		if ( isset ( $_GET['category'] ) )
-			$criteria->addSearchCondition( 'categories',$_GET['category'] );
-			
 
-		
+
+		$hidePrivate = true;
 		switch ($show)
 		{
 			case "show/own":
+			$hidePrivate = false;
 			if ( Yii::app()->user->isGuest )
 				{
 					$this->redirect( array( '/reg' , 'ref'=>'own' ) );
@@ -397,9 +430,12 @@ class HowtoController extends Controller
 			break;
 			
 			case "show/category":
-
+		
 			break;
 			
+		}
+		if($hidePrivate){
+		$criteria->addCondition('status='.Howto::STATUS_PUBLISHED);
 		}
 		//*** FIND THE DATA ***
 		$dataProvider = new CActiveDataProvider('Howto', array(
@@ -408,10 +444,18 @@ class HowtoController extends Controller
 			),
 			'criteria'=>$criteria,
 		));
-
+		if(Yii::app()->request->isAjaxRequest) {
+		$ajax = true;
+		$this->renderPartial('index',array(
+			'dataProvider'=>$dataProvider,false,true,
+			'ajax'=>true,
+		));
+		}else{
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
+		}
+		
 	}
 
 	/**
@@ -422,25 +466,21 @@ class HowtoController extends Controller
 		$model = new Howto( 'search' );
 		if ( isset( $_GET['Howto'] ) )
 			$model->attributes = $_GET['Howto'];
+		if( !Yii::app()->request->isAjaxRequest )
+		{
 		$this->render('admin',
 			array(
 				'model'=>$model,
 			) );
-	}
-
-	/**
-	 * Suggests tags based on the current user input.
-	 * This is called via AJAX when the user is entering the tags input.
-	 */
-	public function actionSuggestTags()
-	{
-		if ( isset ( $_GET['q'] ) && ( $keyword = trim( $_GET['q'] ) )!=='')
-		{
-			$tags = Tag::model()->suggestTags($keyword);
-			if ( $tags!==array() )
-				echo implode( "\n",$tags );
+		}else{
+		$this->renderPartial('admin',
+			array(
+				'model'=>$model,
+			) );
+		
 		}
 	}
+
 
 	/**
 	 * Returns the data model based on the primary key given in the GET variable.
@@ -500,6 +540,16 @@ class HowtoController extends Controller
 			 'howto'=>$model,
 			 'comments'=>$model->comments,
 		)); 	
+	}
+	public function actionjsonTags()
+	{	
+		
+			$tags = Tag::model()->findAll(array('order'=>'name'));
+			$json = array();
+			foreach($tags as $tag){
+				$json[] = $tag->name;
+			}
+			echo json_encode($json);		
 	}
 	 public function registerAssets(){
 

@@ -4,15 +4,9 @@ $this->breadcrumbs=array(
 );
 
 ?>
-<h1>Howtos in the <?php echo $model->name; ?> category</h1>
+<h1><?php echo $model->name; ?></h1>
 <?php foreach($model->howtos as $howto){
-	echo $howto->title;
+if($howto->author == Yii::app()->user->id){
+$owner = true;}else{$owner = false;}
+	$this->renderPartial('/howto/_view',array('data'=>$howto,'owner'=>$owner ) ); 
 }?>
-<?php $this->widget('zii.widgets.CDetailView', array(
-	'data'=>$model,
-	'attributes'=>array(
-		'id',
-		'name',
-		'parent',
-	),
-)); ?>

@@ -10,6 +10,11 @@ class Controller extends Yiiauth
 	public function init()
     {
 	parent::init();
+  if(Yii::app()->request->isAjaxRequest){
+    Yii::app()->clientScript->disableCoreScript('jquery');
+	Yii::app()->clientScript->disableCoreScript('jquery.rating.js');
+}
+
 	}
 
 	protected function afterRender($view, &$output)

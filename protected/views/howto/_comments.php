@@ -1,15 +1,10 @@
-	<style type="text/css">
-	.holder{padding:10px;background-color:#fff; display:none;margin-left:50px;width:340px;}
-	.area{
-	min-width:300px;min-height:50px; border-top:0px;
-	}
-
-	</style>
-
+	
 <?php foreach($comments as $comment): 
 		$user = User::model()->find("username='".$comment->author."'");
-		if(!$user)
+		if(!$user){
+			User::model()->delete($comment->id);
 			continue;
+		}
 		if($comment->response_id !== null)
 			continue;
 ?>
@@ -57,7 +52,7 @@
 		<?php echo $comment->content; ?>
 	</div>		
 	
-</div><!-- comment -->
+</div><!-- comment  marker--> 
 	<!--responses-->
 <?php $responses = Comment::model()->findAll('response_id='.$comment->id);
 if($responses):?>
@@ -97,8 +92,8 @@ if($responses):?>
 	?>
 </div> 
 <?php endif;?>
-	<!-- reply -->
-<div class="holder" id="holder<?=$comment->id;?>">
+	<!-- reply marker-->
+<div class="holder" id="holder<?=$comment->id;?>" style="display:none;">
 		<div id="comment_success<?=$comment->id;?>"></div>
 		<div id="panel<?=$comment->id;?>"></div>
 		<div id="area<?=$comment->id;?>" class="well area"></div>
@@ -126,11 +121,12 @@ myNicEditor.addInstance('area<?=$comment->id;?>');
 //]]>
 </script>
 <?php endforeach; ?>
+
 <script type="text/javascript">
 $(".send_reply").click(function(){
 		var id = $(this).attr("name");	
 		if(getCreate(<?php echo $comment->howto->id;?>,'#area'+id,id)){
-		<?= Chtml::ajax(array('url'=>'/howto/reloadComments?howto_id='.$comment->howto->id,'update'=>'#current'));?>
+		<?= CHtml::ajax(array('url'=>'/howto/reloadComments?howto_id='.$comment->howto->id,'update'=>'#current'));?>
 		 $('#comment_success'+id).fadeIn('slow');
 		
 		}
@@ -146,5 +142,5 @@ $(".send_reply").click(function(){
   });
   
 		$("#holder"+id).fadeIn();
-	
+		$("#area"+id).focus();
 	});</script>

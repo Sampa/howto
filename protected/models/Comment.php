@@ -136,8 +136,8 @@ class Comment extends CActiveRecord
 	 */
 	protected function afterSave()
 	{
-			$howto = new Howto;
-			$title = $howto->getTitle($this->howto_id);
+			$howto = Howto::model()->findByPk($this->howto_id);
+			$title = $howto->title;
 			$title = CHtml::link('Commented on '.$title , array('/howto/' . $this->howto_id . '/' . $title ) );
 			$content = substr($this->content,0,160);
 			$content .= "...";

@@ -16,7 +16,6 @@
 ?>	
 
 	
-	
 <?php echo $form->errorSummary($model); ?>
 	<div class="row-fluid">
 		<?php echo $form->hiddenField($model,'avatar',array('size'=>60,'maxlength'=>255)); ?>
@@ -70,9 +69,6 @@
 </div><!-- //left -->
 
 
-
-
-
 <div id="middle" class="span4" style="float:left;">
 <?php if ( !$model->isNewRecord ): ?>
 	
@@ -117,9 +113,9 @@ Yii::app() -> clientScript -> registerCssFile('/css/jquery.jcrop.css');
       Yii::app() -> clientScript -> registerScriptFile("/js/jquery.jcrop.min.js");
 	  Yii::app() -> clientScript -> registerScriptFile("/js/jquery.color.js");
 ?>
-<h4 class="cropinfo">Please select an area of the image to save as your avatar</h4>
+<h4 class="cropinfo" style="display:none;">Please select an area of the image to save as your avatar</h4>
 <div id="avatar" style="clear:both;"></div>
-<h4 class="cropinfo">This is what your avatar will look like</h4>
+<h4 class="cropinfo" style="display:none;">This is what your avatar will look like</h4>
 <div id="preview_div" style="width:250px;height:250px;overflow:hidden;"></div>
 	<script type="text/javascript">
 

@@ -3,65 +3,49 @@
 			<?php echo $content; ?>
 </div>
 
-		<div id="sidebar" class="span5 well" style="border:0px solid red;z-index:15;padding-left:15px; position:relative; margin-top:-19px; margin-left:40px;">
+		<div id="sidebar" class="span5 well" style="border:0px solid red;z-index:15;padding-left:15px; position:relative; margin-top:-9px; margin-left:40px;">
 		
 <!-- siderbar clip--><?php echo $this->clips['sidebar']; ?>
 
 
 <!-- tagcloud -->
-<style type="text/css">
-    #tagCloud {  
-      width:290px;  padding:5px;  
-      overflow:auto;  ; 
-      background:url(/images/cloud.gif) no-repeat 0; padding:15px 0 15px 20px;  
-    }  
-    #tagCloud h2{
-	position:relative;
-	left:-22px;
-	}
-    #tagList { margin:0; padding:0; }  
-    #tagList li {  
-	
-      list-style-type:none; float:left; margin:0 10px; height:35px;  
-    }  
-    #tagList li a { text-decoration:none; }  
-    #tagList li a:hover ( text-decoration:underline; }  
-</style>
-		<div  id="tagCloud" style="min-height:166px;"> 
+
 		<h2>Popular tags</h2>
 				<?php 
-					$tags = Tag::model()->findTagWeights(20);
-					echo '<ul id="tagList">';
-					foreach($tags as $tag=>$weight)
+					$tags = Tag::model()->findAll(array('limit'=>15,'order'=>'frequency'));
+					$foo ="";
+					foreach($tags as $tag)
 					{
-						$weight = $weight +3;
-						echo "<li>";
-						$link = CHtml::link( CHtml::encode( $tag ), array( 'tag/' . $tag ) );
-						echo CHtml::tag('span', array(
-							'class'=>'',
-							'style'=>"font-size:{$weight}pt",
-						), $link)."\n";
-						echo "</li>";
+						$weight = $tag->frequency +100;
+
+						$foo .='{text:"'.$tag->name.'", weight: '.$weight.', link: "/tag/'.$tag->name.'"},';
+
 					}
-					echo '</ul>';
 				?>
+    <script type="text/javascript">
+      /*!
+       * Create an array of word objects, each representing a word in the cloud
+       */
+      var word_array = [
+         <?=$foo;?>
+          // ...as many words as you want
+      ];
+
+
+    </script>
+
+    <!-- You should explicitly specify the dimensions of the container element -->
+    <div id="example" style="width: 350px;background:url(/images/cloud.gif) no-repeat; height: 250px;"></div>
+    <!-- You should explicitly specify the dimensions of the container element -->
 	
 		<div style="margin-top:15px;">
 		<!-- tag search-->		
-		<?php $this->widget('CAutoComplete', array(
-			'model'=>new Howto,
-			'id'=>'searchfield',
-			'attribute'=>'tags',
-			'url'=>array('/howto/suggestTags'),
-			'multiple'=>true,
-			'htmlOptions'=>array('size'=>20, 'value'=>'Find Howto\'s by tag','style'=>'margin-top:-11px'),
-		)); 
-		?>
 		
-		<button class="btn btn-primary" style="margin-top: -20px;" id="searchbutton">
-			<i class="icon-search icon-white"></i>
-		</button>
+		
+		
 		<script type="text/javascript">
+		        $("#example").jQCloud(word_array);
+
 			$("#searchfield").focus(function(){
 				$(this).val('');
 			});
@@ -77,38 +61,9 @@
 			})
 		</script>
 		</div>
-			</div>
 
 <!-- latest howto -->
-			<div class="" style="min-height:270px;"> <h2>Latest knowledge</h2>
-				<?php 
-					$models = Howto::model()->findAll(array('order' => 'create_time DESC','limit'=>5));
-					foreach ($models as $model):
-					?>
-			<div style="float:left;min-width:100%;margin-bottom:-20px;">		
-			<?=CHtml::link(CHtml::encode($model->title), $model->url); ?>
-					
-					<!-- author link -->
-	<div class="author">
-		<div style="float:left;">
-		Shared by	
-		</div>
-		<?php
-			$this->widget('UserButton', 
-				array(
-				'id'=>$model->id,
-				'userid'=>$model->author->id,
-				'username'=>$model->author->username,
-				'reputation'=>$model->author->reputation,
-				)); 
-		?>
-<!-- created and last updated dates-->
-		<div >
-			<?php $created = date('F j, Y @ H:m',$model->create_time); ?> on <i> <?=$created;?></i> 
-		</div>
-	</div>
-	</div>
-		<?php endforeach;?>
-			</div><!-- latest knowledge-->
+	<?php $this->widget('LatestKnowledge');?>
+
 		</div><!-- sidebar -->
 <?php $this->endContent(); ?>

@@ -2,7 +2,6 @@
 $this->breadcrumbs=array(
 	'Manage how2',
 );
-$this->layout="ajax";
 ?>
 <div class="" style="padding-bottom:90px;"><h4>Your Howto's </h4>
 
@@ -19,9 +18,12 @@ $this->layout="ajax";
 				'type'=>'raw',
 				'value'=>'CHtml::link( CHtml::encode( $data->title ), $data->url )',
 			),
+
 			array(
 				'name'=>'status',
-				'filter'=>false,
+				'filter' => array('1' => 'Private', '2' => 'Public'), // filter
+				'value'=>'$data->textStatus',
+
 			),
 			array(
 				'name'=>'create_time',
@@ -30,6 +32,7 @@ $this->layout="ajax";
 			),
 			array(
 				 'class'=>'bootstrap.widgets.BootButtonColumn',
+				 'template'=>'{view}{delete}',
 				'htmlOptions'=>array( 'style'=>'width: 50px' ),
 			),
 		),

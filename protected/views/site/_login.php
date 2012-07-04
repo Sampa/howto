@@ -10,7 +10,7 @@
     ),
 )); ?>
 
-<div id="modal_login" class="divForForm well" style="padding:25px;">
+<div id="modal_login" class="divForForm" style="padding:25px;">
 
 </div>
 <?php $this->endWidget(); ?> 

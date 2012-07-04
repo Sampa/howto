@@ -7,18 +7,21 @@
 		$owner = false;
 		}
 ?>
-
-<div class="Howto well" style="border: 0px solid black; margin-left:0px; max-width:500px;margin-top:10px;" >
-	<div class="title">
-		<h2>	
-			<?= CHtml::link(CHtml::encode($data->title), $data->url); ?>
-		</h2>
+<script type="text/javascript">
+	$(document).ready(function(){
+			initThis();
+		});
+</script>
+<div class="Howto  howtopage"  style=" margin:10px 0px 100px 0px;border-bottom:1px inset #08C;" >
+<div class="well">
+	
+	<div class="title ">
+		<h2><?= CHtml::link(CHtml::encode($data->title), $data->url); ?></h2>
 	</div>
+	
 <!-- author link -->
-	<div class="author span10" style="border:px solid black; max-height:18px;margin-left:0px;">
-		<div style="float:left;">
-		Shared by&nbsp;	
-		</div>
+	<div class="author span10" style=" max-height:18px;margin-left:0px;">
+		<div style="float:left; margin-top:2px;">Shared by&nbsp;</div>
 		<?php
 			$this->widget('UserButton', 
 				array(
@@ -28,32 +31,42 @@
 				'reputation'=>$data->author->reputation,
 				)); 
 		?>
-	
 <!-- created and last updated dates-->
-		<div >
+		<div style="margin-top:2px;">
 			&nbsp;on <i> <?=$created;?></i>
-			and last updated on <i><?= $updated;?></i> 
 		</div>
 	</div>
+
 	<div style="clear:both"></div>
 	<!-- container to adjust the user link-->
-	<div  style="position:relative; top:8px;"> 
-
-		<div  id="rating_info_<?=$data->rating_id?>">
-<?php 
-	if ( $rating = Rating::model()->findByPk($data->rating_id) )
-		{	
-			echo "Rating: <strong>" . $rating->vote_average ."</strong>";
-			echo " " . $rating->vote_count . " votes";
-		}
-?>
-		</div>
-
+	<div  style="position:relative; top:10px;"> 
+<?php if ( $owner ):?>
 	
-<?php // rating
+		<div  id="nic<?=$data->id;?>" style=" max-width:85%; display:none; float:left;"></div>
+		<button  rel="<?=$data->id;?>" style="display:none;" class="btn btn-mini btn-success savecontent">
+		<i class="icon-ok icon-white"></i>	Save
+		</button>
+		<div id="save_content_response<?=$data->id;?>" style="display:none;"></div>
+<?php endif;?>
+		
+		<div class="content">
+		<div class="edit_area" name="<?=$data->id;?>" id="edit_content<?=$data->id;?>" style="max-width:90%">
+				<?php
+					echo $data->content;
+				?>
+			</div>
+		
+		</div>
+	</div>
+
+</div> <!-- well -->	
+<div style="float:left; margin-top:13px;">
+		<?php if ( $rating = Rating::model()->findByPk($data->rating_id) )
+		{	
+// rating
 	$this->widget('CStarRating',array(
     'name'=>'rating'.$data->rating_id,
-	'starCount'=>10,
+	'starCount'=>5,
 	'readOnly'=>false,
 	'resetText'=>'',
 	'value'=>round($rating->vote_average,0),
@@ -69,180 +82,57 @@
 				});}'
 			));
 ?> 	
-	<div class="content">
-		<br/>
-		<div class="edit_area" style="max-width:60%">
-		<?php
-			echo $data->content;
-		?>
-		</div>
-	</div>
-	<div class="nav">
+		<div style="float:left;" id="rating_info_<?=$data->rating_id?>">
+<?php 
 
-		<b>Tags:</b>
-		<?= implode(', ', $data->tagLinks); ?>
-		<br/>
-		<b>Categories:</b>
-		<?= implode(', ', $data->categoryLinks);?>
-		<br/>
-<!-- steps-->
-	<?php
-		$steps ="";
-		if (count($data->steps) < 1)
-			$steps = "This howto has no steps...";
-		foreach ( $data->steps as $step ){
-			$steps .=  $step->title.'<br/><div class="well edit_step" ">' . $step->text .'</div>';
-		}; 
-		echo CHtml::link($data->stepCount.' Steps', $data->url.'#steps', array('class'=>'btn btn-mini  ', 'data-title'=>'Steps preview', 'data-content'=>$steps, 'rel'=>'popover')); 
-	?>&nbsp;
-<!--print--><?= CHtml::htmlButton('<i class="icon-print icon-white"></i> Print/Pdf', 
-				array('class'=>'btn btn-mini btn-primary printpdf') );?>		
+			echo "<strong>" . $rating->vote_average ."</strong>";
+			echo " " . $rating->vote_count . " votes";
+		}
+?>
+		</div>
+</div>
+<!--buttons-->
+<div style="padding-bottom:2px; margin-top:10px; float:left;">
+
+<!--print-->
+	<?= CHtml::link('<i class="icon-print"></i> Print/Pdf', '/viewpdf/id/'.$data->id,
+				array('class'=>'btn btn-mini printpdf','id'=>$data->id) );?>
+
+
 	
-<!--bookmark--><?php 
-				echo CHtml::htmlButton('<i class="icon-bookmark icon-white"></i> Bookmark ', 
-					 array(
-						'class'=>'btn btn-mini btn-primary bookmark',  
-						'name'=>$data->id,
-						) );?>
+<!--bookmark--><?php if ( !Yii::app()->user->isGuest )
+					{
+						echo CHtml::htmlButton('<i class="icon-bookmark"></i> Bookmark ', 
+						 array(
+							'class'=>'btn btn-mini  bookmark',  
+							'name'=>$data->id,
+							) );
+					}
+				?>
 		<div id="bookmark_success_<?=$data->id;?>" style="display:none"></div>
-		
-<!--email--><?= CHtml::htmlButton('<i class="icon-envelope icon-white"></i> Mail it', 
-					array('class'=>'btn btn-mini btn-primary mail',
-					'name'=>'?id='.$data->id.'&title='.$data->title) );?>	
-<!-- embed -->
-<?= CHtml::htmlButton('<i class="icon-retweet icon-white"></i> Embed', 
-					 array('class'=>'btn btn-mini btn-primary embed','id'=>'embedLink'.$data->id,'name'=>$data->id) );?>
-<!--edit--><?php 
-			if( Yii::app()->user->checkAccess('HowtoUpdateOwn', 
-				array('userid'=>$data->author_id))): ?>
-			<button class="btn btn-mini btn-primary" id="edit_content">
-				<i class="icon-edit icon-white"></i> Edit
-			</button> 
+
+
+<!--Add Step-->
+<?php if( $owner): ?>
+				<?php if( isset($view) && $view== true):?>
+					<button class="btn btn-mini " id="createButton"><!-- sign up button-->
+						<i class="icon-plus"></i> Add Step
+					</button>
+				<?php endif;?>
 <!--delete--> 
-			<button id="howtodelete" class="btn btn-mini btn-danger">
+			<button class="btn btn-mini btn-danger howtodelete" name="<?=$data->id;?>">
 				<i class="icon-remove icon-white"></i> Delete
 			</button>
-				<div id="delete_howto_message" style="display:none"></div>
-		<?php endif; ?>   
-		
+				<div id="delete_howto_message<?=$data->id;?>" name="<?=$data->id;?> style="display:none"></div>
+<?php endif; ?>   
 
-	<div style="display:none;" class="well" id="embedCode<?=$data->id;?>">
-	<h4>Copy this code and paste it into your website</h4>
-	<h6><?php echo CHtml::encode('<iframe 
-   src="http://83.233.118.50/howto/'.$data->id.'/'.$data->title.'!?embed=true" width="550" height="577" marginwidth="0" marginheight="0" frameborder="no"   scrolling="yes"</iframe>');?></h6>
-   </div>
-	</div><!-- nav -->
-</div><!-- categories and down-->
-</div>
-		
-	<?php if ( $this->user == $data->author->username):?>
-	<div id="elrte_holder" style="clear:both; max-width:100%;margin-top:0px;">
-	<textarea id="elrte_content" style="display:none" ></textarea>
-	<?php 
-		$this->widget('application.extensions.elrte.elRTE', 
-		array(
-			'selector'=>'#elrte_content',
-			'userid'=>Yii::app()->user->id,
-			'event'=>'$("#edit_content").click',
-		));
-	?>
-	</div>
-	<button id="save_content" name="<?=$data->id;?>" style="display:none" class="btn btn-mini btn-primary">Save</button>
-		<script type="text/javascript">
-	$('#edit_content').click(function(){
-	 $('#elrte_content').elrte('val', $(".edit_area").html());
-	 $('#elrte_holder').attr('style','clear:both; max-width:100%;margin-top:200px;');
-	 $('#elrte_content').fadeIn('slow');
-	 $('#save_content').fadeIn('slow');
-});
+</div> <!--buttons-->
 
-	 $('#save_content').click(function(){
-	 $('#elrte_content').elrte('updateSource');
-		var id = $(this).attr('name');
-		var url = '/howto/inlineEdit?id='+id;
-		var content = $('#elrte_content').elrte('val');
-		jQuery.getJSON(url, {content: content }, function(data) {
-			if (data.status == 'success'){
-					$('.edit_area').html(data.div);
-					$('#elrte_content').elrte('destroy');
-					$('#elrte_content').fadeOut('slow');
-					$('#save_content').fadeOut('slow');
-					window.location.reload();
-				}
-			});
-			return false;
-	});
-		</script>
-		<?php endif;?>
 
-		<script type="text/javascript">
-	$(document).ready(function(){
-	$(".save_step").hide();
-	$(".step_text").click(function(){
-		var id = $(this).attr('name');
-		$("#button"+id).fadeIn('slow');
-		$("#div"+id).fadeIn('slow');
-
-	});
-	$(".save_step").click(function(){
-		var id = $(this).attr('name');
-		var url = '/step/inlineEdit?id='+id;
-		var content = $('#step_text_div'+id).html();
-		jQuery.getJSON(url, {content: content }, function(data) {
-			if (data.status == 'success'){
-					$("#button"+id).fadeOut('slow');
-					$("#div"+id).fadeOut('slow');
-				}
-			});
-			return false;
-		});
-	$(".printpdf").click(function(){
-		window.location.href = "/viewpdf/id/<?= $data->id;?>";
-	});
-	$(".bookmark").click(function(){
-		id = $(this).attr('name');
-		url = '/howto/bookmark';
-		jQuery.getJSON(url, {id: id}, function(data) {
-			if (data.status == 'success'){
-					$('#bookmark_success_'+id).html(data.div);
-					$('#bookmark_success_'+id).fadeIn('slow');			
-					var pause = setTimeout("$('#bookmark_success_'+id).fadeOut('slow')",5000);
-					
-				}
-			});
-			return false;
-		});
-
-			$("#howtodelete").click(function(){
-				deletehowto(<?php echo $data->id;?>);
-			});
-
-		function deletehowto( id ) {
-			url = '/howto/delete';
-			jQuery.getJSON(url, {id: id}, function(data) {
-				if (data.status == 'success')
-					{
-						$('#delete_howto_message').html(data.div);
-						$('#delete_howto_message').fadeIn('slow');			
-
-					} 
-				});
-				return false;
-			}
-
+		<div style="display:none;" class="well" id="embedCode<?=$data->id;?>">
+			<h4>Copy this code and paste it into your website</h4>
+			<h6><?php echo CHtml::encode('<iframe 
+		   src="http://83.233.118.50/howto/'.$data->id.'/'.$data->title.'!?embed=true" width="550" height="577" marginwidth="0" marginheight="0" frameborder="no"   scrolling="yes"</iframe>');?></h6>
+	   </div>
+</div><!-- howto page-->
 	
-	
- });//document ready
-	
-	</script>
-
-
-		<script type="text/javascript">
-	$("#embedLink<?=$data->id;?>").click(function(){
-		id = <?=$data->id;?>;
-		$("#embedCode"+id).toggle();
-	});
-	
-</script>
-<?php $this->renderPartial('//howto/_mail');?>
-<br/>

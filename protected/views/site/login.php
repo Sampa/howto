@@ -1,4 +1,4 @@
-<div class="span7 well" style="padding-right:0px;margin-left:0px; margin-top:10px;">
+<div class="span8 well" style="padding-right:0px;margin-left:0px; margin-top:10px;">
 
 <?php
 $this->pageTitle=Yii::app()->name . ' - Login';
@@ -6,10 +6,15 @@ $this->breadcrumbs=array(
 	'Login',
 );
 ?>
-<div class="well">
+<div class="span4" style="float:left;">
 <?php $form=$this->beginWidget('BootActiveForm', array(
 	'id'=>'login-form',
 	'enableAjaxValidation'=>true,
+	'enableClientValidation'=>true,
+		'clientOptions'=>array(
+			'validateOnType'=>true,
+			'validateOnChange'=>true,
+		),
 )); ?>
 
 	<p class="note">Fields with <span class="required">*</span> are required.</p>
@@ -42,4 +47,9 @@ $this->breadcrumbs=array(
 <?php $this->endWidget(); ?>
 
 </div><!-- form -->
+	<div style="position:relative;max-width:300px;float:left; ">
+		<h4> Or use a social Provider </h4>
+		<?php $this->widget('LoginWidget');?>
+
+	</div>
 </div>

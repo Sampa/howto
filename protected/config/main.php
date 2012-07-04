@@ -21,7 +21,6 @@ return array(
 		'ext.bootstrap.widgets.*',
 		'application.modules.rights.*',
 		'application.modules.rights.components.*',
-		'application.extensions.debugtoolbar.*',
 		'ext.xupload.models.XUploadForm',
         'application.components.*',
 		'application.modules.yiiauth.models.*',
@@ -137,7 +136,9 @@ return array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
 		),
-
+		'clientScript'=>array(
+			'class'=>'ClientScript',
+		),
 		'bootstrap'=>array(
         'class'=>'ext.bootstrap.components.Bootstrap', // assuming you extracted bootstrap under extensions
         'coreCss'=>true, // whether to register the Bootstrap core CSS (bootstrap.min.css), defaults to true
@@ -189,8 +190,8 @@ return array(
 				'contact'=>'site/contact',
 				'about'=>'site/page/view/about',
         		'howto/<id:\d+>/<title:.*?>'=>'howto/view',
-        		'tag/<tag:.*?>'=>'howto/index',
-				'category/<category:.*?>'=>'howto/index',
+        		'tag/<tag:.*?>'=>'tag/view',
+				'category/<cat:.*?>'=>'category/view',
 
         		'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 				'profile/*'=>'yiiauth/user/view',
@@ -199,6 +200,7 @@ return array(
 				'howto/<show:.*?>'=>'howto/index/',
 				'viewpdf/*'=>'howto/viewpdf',
 				'categories'=>'category/index',
+				'login'=>'/site/login',
 				'register'=>'yiiauth/user/register',
 				'sharing'=>'site/page/view/sharing',
 				'reading'=>'site/page/view/reading',
@@ -220,12 +222,7 @@ return array(
 					'levels'=>'error, warning',
 				),
 				// debug toolbar configuration
-				array(
-					'class'=>'XWebDebugRouter',
-					'config'=>'alignLeft, opaque, runInDebug, fixedPos, collapsed, yamlStyle',
-					'levels'=>'error, warning, trace, profile, info',
-					'allowedIPs'=>array('127.0.0.1'),
-				),
+				
 				// uncomment the following to show log messages on web pages
 				
 			/*	array(

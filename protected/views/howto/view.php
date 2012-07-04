@@ -2,56 +2,25 @@
 	$this->breadcrumbs = array( $model->title, );
 	$this->pageTitle = $model->title;
 	$this->layout = "column1";
+	$updated = date('F j, Y',$model->update_time);
+
 ?>
+<?php  Yii::app()->clientScript->registerScriptFile('/js/howto.view.js',CClientScript::POS_BEGIN);?>
 
+<script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "072ae230-75fe-4c32-ab84-c2c0cb6ce84e"}); </script>
 	
-<div id="howto_container" class="span6" style="padding-left: 5px; float:left; border:0px solid black;">
+<div id="howto_container" class="span12" style="padding-left: 5px; float:left; ">
 
-	<div id="left" class="span12" style="float:left; border:0px solid red;" >
-<?php 
-	$this->renderPartial('_view',
-	array(
-		'data'=>$model,
-		'owner'=>$owner,
-	) ); 
-?>
-<?php // social plugin
-	$this->widget('application.extensions.social.social', 
-		array(
-			'style'=>'horizontal', 
-			'networks' => array(
-				'twitter'=>array(
-					'data-via'=>'', //http ://twitter.com/#!/YourPageAccount if exists else leave empty
-					), 
-				'googleplusone'=>array(
-					'size'=>'medium',
-					'annotation'=>'bubble',
-				), 
-				'facebook'=>array(
-					'href'=>'https://www.facebook.com/your_facebook_page',//asociate your page http://www.facebook.com/page 
-					'action'=>'recommend',//recommend, like
-					'colorscheme'=>'light',
-					'width'=>'130px',
-					)
-				)
-			)
-		);
-		
-
+	<div id="left" class="span6" style="" >
 	
- ?>
-
-
-</div><!--left-->
+		<?php $this->renderPartial('_view',array('data'=>$model,'owner'=>$owner ,'view'=>true ),false ); ?>
+	<h5>Last updated: <i><?= $updated?></i> </h5>
 	
 	<!-- steps-->
-	<div id="steps" class="span10" style="clear:both; float:left;">
+	<div id="steps" class="span12" style=" float:left;">
 		<?php if ( $owner ):?>
-
-		<button class="btn btn-mini btn-success" id="createButton"><!-- sign up button-->
-			<i class="icon-plus icon-white"></i> Add Step
-		</button>
-			
 			<!-- files with modalwindow, ajax calls etc for easier reading -->
 		<?php $this->renderPartial('//step/_create',array('howto'=>$model->id)); ?>
 		<?php if ( $model->stepCount >= 1 ): ?>
@@ -63,46 +32,85 @@
 		Yii::app()->user->setFlash('info', 'Drag the titles of the steps to  re-arrange them <br/>
 		Change the steps by clicking on the step text.');
 		$this->widget('bootstrap.widgets.BootAlert'); 
+		endif;
 		?>
 		<div id="stepsUpdated"></div>
 		
-			<ul id="sortable" style="display:inline;">	
+			<ul id="sortable" style="">	
 		<?php
-		endif;
+	
 		foreach ( $model->steps as $step ):
-			if($owner)
+			if($owner){
 				echo '<li id="'.$step->id.'" class="ui-state-highlight" style="border:0px solid green">';
-			echo $step->title;
-			echo '<br/><div id="div'.$step->id.'" style="display:none;"></div><div  name="'.$step->id.'" id="step_text_div'.$step->id.'" class="well step_text" ">' . $step->text .'</div>';
+			}
+			echo "<h5>".$step->title."</h5>";
+			echo '<br/><div id="div'.$step->id.'" style="display:none;"></div>';
+			echo '<div  name="'.$step->id.'" id="step_text_div'.$step->id.'" class="well step_text" ">' . $step->text .'</div>';
 			if($owner):
 			echo '<button class="btn btn-mini btn-success save_step" name ="'.$step->id.'" 
-			id="button'.$step->id.'" style="display:block;">Save</button>';;
+			id="button'.$step->id.'" style="display:none;">Save</button>';;
 		 ?>
 		 <script type="text/javascript">
-			//<![CDATA[
+			
 			bkLib.onDomLoaded(function() {
 			var myNicEditor = new nicEditor({uploadURI:'/nic/upload.php?hej=<?=$model->id;?>'});
 			myNicEditor.setPanel('div<?=$step->id;?>');
 			myNicEditor.addInstance('step_text_div<?=$step->id;?>');
 
 			});
-			//]]>
 		</script>
-			</li>
+			<?php if($owner){echo "</li>";}?>
 		<?php endif;?>
 		<?php endforeach; ?>
-		<?php if($owner):?>
 			</ul>
+	</div><!--steps-->
+	<?php if($related): ?>
+		
+		<div id="slider-code" class="span12">
+				<h3>You might also like:</h3>
+
+			<a class="buttons prev" href="#"><img src="/images/arrow_left.gif" alt="left"/></a>
+			<div class="viewport">
+				<ul class="overview" >
+				<?php
+				foreach ( $related as $link=>$weight )
+				{
+					echo '<li class="well">'.$link.'</li>';
+				}
+				?>
+				<li> some shits</li>
+				<li> some second shits</li>
+				<li> some third shits</li>
+				<li> some  fourth shits</li>
+				</ul>
+			</div>
+			<a class="buttons next" href="#"><img src="/images/arrow_right.gif" alt="right"/></a>
+		</div>
+			
 		<?php endif;?>
 	
-	</div>
+</div><!-- left-->
+
+<!------ RIGHT COLUMN -->
+
+	<div id="side" style="margin: 25px 0px 0 25px;padding-left:25px; border-left:0px solid #08c" class="span5" >
+		<!-- CATEGORIES -->
+		<?php
+		if (!count($model->categoryLinks) < 1){
+		foreach ( $model->categoryLinks as $catLink ){echo ''.$catLink.'';}
+		}
+		?>
+		<?php 
 	
-
-
-</div><!-- container-->
-	<div id="side" style="margin: 0px 0px 0 40px;" class="span5" >
-<?php
-	if( $owner ) {
+		if(count($model->tagLinks) > 0)
+		{
+			foreach($model->tagLinks as $taglink)
+			{	echo $taglink. "&nbsp;"; }
+		}
+		?>
+		<hr/>
+<?php /// SLIDES
+	/*if( $owner ) {
 		echo "<br/><br/>".CHtml::htmlButton('<i class="icon-edit icon-white"></i> Manage Slides',
 		array('class'=>'btn btn-mini btn-primary manage_slide'));
 		$slide = new Slide('search');
@@ -113,16 +121,15 @@
 	if ( $panels )
 	{
 		$this->renderPartial('_slide',array('howto'=>$model->id,'panels'=>$panels));
-	}
-	?>
-
-	<?php 
+	} 
+	 
 	foreach($videos as $video):
-	
+
 	endforeach;
-	?>
+*/ ?>
 	<script type="text/javascript">
-	function getCreate(id,content,response){
+	
+function getCreate(id,content,response){
 	if(response == ""){
 	response = false;
 	}
@@ -133,17 +140,36 @@
            return true;	
 			
         }else{return false;}          
-	});
-}	<?php if($owner):?>
+	});}
+	
 $(document).ready(function() {
-	$( "#sortable" ).sortable({
-			placeholder: "ui-state-highlight",
-			items: 'li',
-			cursor: 'crosshair',
-			disabled: false,
+
+$('#slider-code').tinycarousel({display:2, controls:true});
+
+$(".save_step").hide();
+	$(".step_text").click(function(){
+		var id = $(this).attr('name');
+		console.log(id);
+		$("#button"+id).fadeIn('slow');
+		$("#div"+id).fadeIn('slow');
+
+	});
+	$(".save_step").click(function(){
+		var id = $(this).attr('name');
+		var url = '/step/inlineEdit?id='+id;
+		var content = $('#step_text_div'+id).html();
+		jQuery.getJSON(url, {content: content }, function(data) {
+			if (data.status == 'success'){
+					$("#button"+id).fadeOut('slow');
+					$("#div"+id).fadeOut('slow');
+				}
+			});
+			return false;
 		});
-		
-		});
+
+
+initThis();/*  this is the js file with all code for each _view file*/
+
 
 $(".alert").click(function(){
 $(this).hide();
@@ -170,13 +196,24 @@ function updatePos() {
 	$(".manage_slide").click(function(){
 			$("#slide_div").toggle();
 		});
-<?php endif;?>
+});
+
 </script>
+		
+		<div style=" clear:both;position:relative; width:120%;top:0px; left:0px; ">
+				<span class='st_sharethis' displayText='ShareThis'></span>
+				<span class='st_twitter' displayText='Tweet'></span>
+				<span class='st_email' displayText='Email'></span>
+				<span class='st_plusone' displayText='Google +1'></span>
+				<span class='st_fbsend' displayText='Facebook Send'></span>
+				<span class='st_fbrec' displayText='Facebook Recommend'></span>
+		</div>	
+
 
 <?php if($model->commentCount>=1): ?>
-		<h3>
+		<h5>
 			<?php echo $model->commentCount>1 ? $model->commentCount . ' comments' : 'One comment'; ?>
-		</h3>
+		</h5>
 		<div id="current">
 		<?php $this->renderPartial('_comments',array(
 			'howto'=>$model,
@@ -185,7 +222,6 @@ function updatePos() {
 		</div>
 	<?php endif; ?>
 
-	<h3>Leave a Comment</h3>
 
 	<?php if ( !Yii::app()->user->isGuest ){
 	
@@ -199,14 +235,7 @@ function updatePos() {
 	</div><!-- comments -->
 	<!-- to fix the rating breaking in view but not index-->
 	<script>
-	jQuery('#rating1 > input').rating({'cancel':'','callback':
-			function(){
-			url = "/howto/rating";
-			jQuery.getJSON(url, {id: 1, val: $(this).val()}, function(data) {
-			if (data.status == "success"){
-			$("#rating_info_1").html(data.info);
-			$("input[id*=1_]").rating("readOnly",true);
-			}
-			});}}); 
+	 $("[id^=rating]").each(function () {
+       $(this).find("input").rating();
+		});
 	</script>
-	

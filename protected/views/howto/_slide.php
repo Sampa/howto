@@ -1,4 +1,5 @@
-	<ul id="pikame" class="jcarousel-skin-pika">
+<div class="">
+<ul id="pikame" class="jcarousel-skin-pika">
 	<?php foreach ($panels as $panel):?>
 	<li>
 		<img src="/images/howto/<?=$howto;?>/slide/<?=$panel->picture;?>"/>
@@ -8,6 +9,8 @@
 <?php endforeach;?>
 	</ul>
 <script>
-$("#pikame").PikaChoose({carousel:true});
-		
+$(document).ready(function(){
+$("#pikame").PikaChoose({carousel:false});
+});
 </script>
+</div>

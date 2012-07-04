@@ -1,0 +1,27 @@
+#jsrp_related { 
+	display:none; /*position:fixed;*/
+	background-color:#A7BFF2; border:2px solid #779CED;
+	bottom:0; right:0; /* left:0; */
+	z-index: 10000;
+	/*width:auto; set width of bar to width of entire window*/
+	-moz-border-radius-topleft:10px;
+	-webkit-border-top-left-radius:10px;
+	border-top-left-radius:10px;
+}
+#jsrp_related h3 { margin:0; padding:5px 5px 5px 10px; font-size:20px; font-weight:bold; 
+		color:#F5F4F0; text-shadow: #6374AB 2px 2px 2px;
+}
+#jsrp_related ul { margin:0; padding:0; }
+#jsrp_related ul li { float:left; padding:10px; background-color:white; list-style:none; vertical-align:middle; min-height:50px; border:thin solid #E6E6E6; }
+#jsrp_related ul li:hover { background-color:#E6E6E6; }
+#jsrp_related ul li a img { vertical-align:middle; }
+#jsrp_related-close { float:right; }
+#close_btn { border:0; text-decoration:none; }
+.hidexscroll { overflow-x:hidden; }
+.showxscroll { overflow-y:auto; }
+
+/*IE FIX*/
+.fixie {
+  left: expression( ( - jsrp_related.offsetWidth + ( document.documentElement.clientWidth ? document.documentElement.clientWidth : document.body.clientWidth ) + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+  top: expression( ( - jsrp_related.offsetHeight + ( document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight ) + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+}

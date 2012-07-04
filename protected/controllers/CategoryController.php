@@ -14,46 +14,47 @@ class CategoryController extends Controller
 	public function filters()
 	{
 		return array(
-			'accessControl', // perform access control for CRUD operations
+			'rights', // perform access control for CRUD operations
 		);
 	}
 
 	/**
-	 * Specifies the access control rules.
-	 * This method is used by the 'accessControl' filter.
-	 * @return array access control rules
-	 */
-	public function accessRules()
+	* Actions that are always allowed.
+	*/
+	public function allowedActions()
 	{
-		return array(
-			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
-				'users'=>array('*'),
-			),
-			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
-				'users'=>array('@'),
-			),
-			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete'),
-				'users'=>array('admin'),
-			),
-			array('deny',  // deny all users
-				'users'=>array('*'),
-			),
-		);
+	 	return 'view';
 	}
-
 	/**
 	 * Displays a particular model.
 	 * @param integer $id the ID of the model to be displayed
 	 */
 	public function actionView($cat)
 	{
-	
-		$this->render('view',array(
-			'model'=>$this->loadModel($cat),
+
+	$criteria = new CDbCriteria(
+		array(
+			'order'=>'create_time DESC',
+			'with'=>array('category'),
+			'together'=>true,
 		));
+		$criteria->addCondition('status='.Howto::PUBLIC_STATUS);
+		$criteria->addCondition("category.name=:cat"); 
+		$criteria->params = array(':cat' => $cat);
+		//*** FIND THE DATA ***
+		$dataProvider = new CActiveDataProvider('Howto', array(
+			'pagination'=>array(
+				'pageSize'=>Yii::app()->params['howtosPerPage'],
+			),
+			'criteria'=>$criteria,
+		));
+
+		$this->render('/howto/index',array(
+			'dataProvider'=>$dataProvider,
+		));
+		/*$this->render('view',array(
+			'model'=>$this->loadModel($cat),
+		));*/
 	}
 
 	/**

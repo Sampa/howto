@@ -1,8 +1,13 @@
-	<div style="min-width:500px;padding:0px;" class="well">
+	<div style="min-width:500px;padding:0px;">
 <?php 
 	$form = $this->beginWidget('BootActiveForm',array(
 		'id'=>'login-form',
 		'enableAjaxValidation'=>true,
+		'enableClientValidation'=>true,
+		'clientOptions'=>array(
+			'validateOnType'=>true,
+			'validateOnChange'=>true,
+		),
 	)); 
 ?>
 	<div class="modal-header">

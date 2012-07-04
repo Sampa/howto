@@ -9,17 +9,29 @@
 
 	<link rel="stylesheet" type="text/css" href="<?= Yii::app()->request->baseUrl; ?>/css/main.css" />
 	<link rel="stylesheet" type="text/css" href="<?= Yii::app()->request->baseUrl; ?>/css/global.css" />
+	<link rel="stylesheet" type="text/css" href="<?= Yii::app()->request->baseUrl; ?>/css/jcloud.css" />
+	<link rel="stylesheet" type="text/css" href="<?= Yii::app()->request->baseUrl; ?>/css/elfinder.min.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.14/themes/smoothness/jquery-ui.css" />
+	<?php  //helps using more jQuery stuff on same page 
+		$scriptmap=Yii::app()->clientScript;
+		$scriptmap->scriptMap=array(
+				'jquery.min.js'=>'http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js',
+				'jquery.js'=>'http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js',
+				'jquery-ui.min.js'=>'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js',
+				'jquery-ui.js'=>'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js',
+				);
+	?>
+	  <script src=""></script>
 
-<?php  //helps using more jQuery stuff on same page 
-
-?>
-	<?php  Yii::app()->clientScript->registerScriptFile('/js/jquery.pikachoose.js');?>
+		<?php //  Yii::app()->clientScript->registerScriptFile('/js/jquery.pikachoose.js');?>
 
 	<?php  Yii::app()->clientScript->registerScriptFile('/js/common.js');?>
 	<?php  Yii::app()->clientScript->registerScriptFile('/js/nicedit.js');?>
-	<?php  Yii::app()->clientScript->registerScriptFile('/js/jquery.pop.js');?>
-	<?php  Yii::app()->clientScript->registerScriptFile('/js/jquery.fcbkcomplete.js');?>
+	<?php // Yii::app()->clientScript->registerScriptFile('/js/jquery.pop.js');?>
 	<?php  Yii::app()->clientScript->registerScriptFile('/js/jquery.vticker.js');?>
+	<?php  Yii::app()->clientScript->registerScriptFile('/js/jquery.livesearch.js');?>
+	<?php  Yii::app()->clientScript->registerScriptFile('/js/jquery.jcloud.js');?>
+	<?php  Yii::app()->clientScript->registerScriptFile('/js/jquery.tinycarousel.min.js');?>
 
 
 	<title><?= CHtml::encode( $this->pageTitle ); ?></title>
@@ -42,13 +54,13 @@
 	<?php if ( $this->isGuest ):?>	
 	
 
-			<button class="btn btn-primary" id="loginButton"><!-- loginbutton-->
+			<a class="btn btn-primary" href="/login"><!-- loginbutton-->
 				Login
-			</button> <!--login button-->
+			</a> <!--login button-->
 
-			<button class="btn btn-primary" id="regButton"><!-- sign up button-->
+			<a class="btn btn-primary" href="/register"><!-- sign up button-->
 				Sign up
-			</button> <!--sign up button-->
+			</a> <!--sign up button-->
 			
 			<!-- files with modalwindow, ajax calls etc for easier reading -->
 		<?php $this->renderPartial('//site/_login'); 
@@ -88,7 +100,7 @@
 	<div style="float:left;">
 
 
-	<div style="position:absolute; top:2px; left:390px;">
+	<div style="position:absolute; top:2px; left:430px;">
 	<?= CHtml::link('<i class="icon-time"></i> New!',array('//howto/show/new'),
 				array('class'=>'btn','style'=>'float:left;'));?>
 	<?= CHtml::link('<i class="icon-fire"></i> Popular!',array('//howto/show/popular'),
@@ -193,22 +205,20 @@
 			</ul>
 		</div>
 
-		<div id="conf"></div>
 
 	</div><!-- footer -->
 
 	</div><!-- page -->
-   <?php $this->widget('application.extensions.fancybox.EFancyBox', array(
-    'target'=>'a[rel=fancybox]',
-    'config'=>array(),
-    )
-);?>
+
 		
 
 </body>
 </html>
-	<script type='text/javascript'>
-   $(document).ready(function(){
-     $.pop();
-   });
-</script>
+
+<?php
+		$this->widget('application.extensions.fancybox.EFancyBox', array(
+			'target'=>'a[rel=fbox]',
+			'config'=>array(),
+			)
+		);
+	?>

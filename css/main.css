@@ -31,18 +31,6 @@ ul.holder li.bit-box a.closebutton { position: absolute; right: 4px; top: 5px; d
 ul.holder li.bit-box a.closebutton:hover { background-position: 7px; }
 ul.holder li.bit-box-focus a.closebutton, ul.holder li.bit-box-focus a.closebutton:hover { background-position: bottom; }
 
-/* Autocompleter */
-
-.facebook-auto { display: none; position: absolute; background: #eee; z-index:1001; max-width:220px;}
-.facebook-auto .select_all_items {display: block; float: right;}
-.facebook-auto .default {max-width:220px; padding: 5px 7px; border: 1px solid #ccc; border-width: 0 1px 1px;font-family:"Lucida Grande","Verdana"; font-size:11px; }
-.facebook-auto ul { display: none; margin: 0; padding: 0; overflow: auto; max-width:220px;position:absolute; z-index:9999}
-.facebook-auto ul li { padding: 5px 12px; z-index: 1000; cursor: pointer; margin: 0; list-style-type: none; border: 1px solid #ccc; border-width: 0 1px 1px; font: 11px "Lucida Grande", "Verdana"; background-color: #eee }
-.facebook-auto ul li em { font-weight: bold; font-style: normal; background: #ccc; }
-.facebook-auto ul li.auto-focus { background: #4173CC; color: #fff; }
-.facebook-auto ul li.auto-focus em { background: none; }
-.deleted { background-color:#4173CC !important; color:#ffffff !important;}
-.hidden { display:none;}
 
 .ie6fix {height:1px;width:1px; position:absolute;top:0px;left:0px;z-index:1;}
 .pop {
@@ -84,6 +72,18 @@ ul.holder li.bit-box-focus a.closebutton, ul.holder li.bit-box-focus a.closebutt
   left: 0;
   background-image: url(/images/arrow-down.gif); }
 
+ /** TINY CARAUSEL **/
+#slider-code {  border-top:1px solid #08C; margin-top:60px;  }
+#slider-code .viewport { float: left;  width: 100%;height: 125px; overflow: hidden; position: relative; }
+#slider-code .next { margin: 30px 0 0 10px;  }
+#slider-code .disable { visibility: hidden; }
+#slider-code .prev{position:relative; top:50px; right:25px;}
+#slider-code .next{position:relative; top:50px; left:100%; }
+
+#slider-code .overview { list-style: none; position: absolute; padding: 0; margin: 0; left: 0; top: 0; }
+#slider-code .overview li{ float: left; margin: 0 29px 0 0; padding:3px; height: 70px; 
+border: 1px solid #08c; width: 145px;}
+					
 
 /** User/view **/
 .user_avatar{width:150px;height:100px;float:left;}
@@ -337,3 +337,29 @@ div.view
 .cross-link									{ display: block; width: 62px; margin-top: -14px; 
 											  position: relative; padding-top: 15px; z-index: 9999; }
 .active-thumb 								{ background: transparent url(/images/icon-uparrowsmallwhite.png) top center no-repeat; }
+
+/* related howtos*/
+
+#jsrp_related {
+	position:absolute;
+    display:none; /*position:fixed;*/
+    /*background-color:#A7BFF2; border:2px solid #779CED;*/
+    bottom:0; right:0; /* left:0; */
+    z-index: 10000;
+    /*width:auto; /*set width of bar to width of entire window*/
+    -moz-border-radius-topleft:10px;
+    -webkit-border-top-left-radius:10px;
+    border-top-left-radius:10px;
+}
+
+
+#jsrp_related-close { float:right; }
+#close_btn { border:0; text-decoration:none; }
+.hidexscroll { overflow-x:hidden; }
+.showxscroll { overflow-y:auto; }
+ 
+/*IE FIX*/
+.fixie {
+  left: expression( ( - jsrp_related.offsetWidth + ( document.documentElement.clientWidth ? document.documentElement.clientWidth : document.body.clientWidth ) + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+  top: expression( ( - jsrp_related.offsetHeight + ( document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight ) + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+}

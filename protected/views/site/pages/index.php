@@ -2,7 +2,7 @@
 $this->layout = "column1";
 ?>	
 
-<div class="hero-unit span8" >
+<div class="hero-unit span8" style="float:left;" >
 		<h1>Hello, knowledge!</h1>
 		<p>
 			At How-to.com we value knowledge, but not only that.
@@ -18,40 +18,12 @@ $this->layout = "column1";
 				<i class="icon-white icon-arrow-right"></i>
 			</a>
 		</p>
-   </div>
-
-		<div class="span4 well" style="float:left;min-height:270px;"> <h2>Latest knowledge</h2>
-				<?php 
-					$models = Howto::model()->findAll(array('order' => 'create_time DESC','limit'=>5));
-					foreach ($models as $model):
-					?>
-			<div style="float:left;min-width:100%;margin-bottom:-20px;">		
-			<?=CHtml::link(CHtml::encode($model->title), $model->url); ?>
-					
-					<!-- author link -->
-	<div class="author">
-		<div style="float:left;">
-		Shared by	
-		</div>
-		<?php
-			$this->widget('UserButton', 
-				array(
-				'id'=>$model->id,
-				'userid'=>$model->author->id,
-				'username'=>$model->author->username,
-				'reputation'=>$model->author->reputation,
-				)); 
-		?>
-<!-- created and last updated dates-->
-		<div >
-			<?php $created = date('F j, Y @ H:m',$model->create_time); ?> on <i> <?=$created;?></i> 
-		</div>
-	</div>
-	</div>
-		<?php endforeach;?>
-			</div><!-- latest knowledge-->
-	  
-    <div class="row-fluid" style="clear:both;padding: 0 0 0 15px;">
+  </div>
+	 	
+<div class="well span4" style="min-height:300px; ">
+<?php $this->widget('LatestKnowledge');?>
+</div>
+	<div class="row-fluid" style="clear:both;padding: 0 0 0 15px;">
         <div class="span4">
         <h2>Creating</h2>
             <p>

@@ -16,10 +16,15 @@ class Howto extends Model
 	const STATUS_DRAFT=1;
 	const STATUS_PUBLISHED=2;
 	const STATUS_ARCHIVED=3;
+	const PRIVATE_STATUS=1;
+	const PUBLIC_STATUS=2;
 
 	private $_oldTags;
 	public $image;
 	public $video;
+	public $categories;
+	public $tag;
+
 
 		/**
 	 * @return array relational rules.
@@ -35,6 +40,9 @@ class Howto extends Model
 			'steps' => array(self::HAS_MANY, 'Step', 'howto_id', 'order'=>'position','together' => true,),
 			'stepCount' => array( self::STAT , 'Step', 'howto_id', 'condition'=>''),
 			'rating'=>array( self::BELONGS_TO, 'Rating', 'rating_id'),
+			'category'=>array(self::MANY_MANY, 'Category', 'tbl_howto_category(howto_id,category_id)'),
+			'tags'=>array(self::MANY_MANY, 'Tag', 'tbl_howto_tag(howto_id,tag_id)'),
+
 
 	);
 	}
@@ -45,18 +53,7 @@ class Howto extends Model
 
         );
     }
-	public function findRecentHowtos( $limit ){
-		
-		$this->beginCriteria('created DESC');
-		$today = new DateTime();
-			$today->modify('-1 month'); 
-			$compareDate = $today->format('Y-m-d');
-		$criteria->addCondition( "created >" . $compareDate );
-
-		return Howto::model()->with('steps')->findAll( $criteria , array( 'limit'=>10 ) );
-
-}
-	/**
+		/**
 	 * Returns the static model of the specified AR class.
 	 * @return CActiveRecord the static model class
 	 */
@@ -81,17 +78,38 @@ class Howto extends Model
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('title, content', 'required'),
-			array('status', 'in', 'range'=>array(1,2,3)),
+			array('title, content,tag,categories', 'required'),
 			array('title', 'length', 'max'=>128),
-			array('tags', 'match', 'pattern'=>'/^[\w\s,]+$/', 'message'=>'Tags can only contain word characters.'),
-			array('tags', 'normalizeTags'),
+			array('tag', 'match', 'pattern'=>'/^[\w\s,]+$/u', 'message'=>'Tags can only contain word characters.'),
 			array('title, status', 'safe', 'on'=>'search'),
+			
 		);
 	}
+	public function findRecentHowtos( $limit ){
+		
+		$this->beginCriteria('created DESC');
+		$today = new DateTime();
+			$today->modify('-1 month'); 
+			$compareDate = $today->format('Y-m-d');
+		$criteria->addCondition( "created >" . $compareDate );
+
+		return Howto::model()->with('steps')->findAll( $criteria , array( 'limit'=>10 ) );
+
+}
 
 
 
+	public function getTextStatus(){
+		switch($this->status){
+			case 1:
+			return "Private";
+			break;
+			case 2:
+			return "Public";
+			break;
+		}
+
+	}
 	/**
 	 * @return array customized attribute labels (name=>label)
 	 */
@@ -123,10 +141,11 @@ class Howto extends Model
 	
 	public function getLink($id)
 	{
-		$title = $this->getHowtoTitle($id);
+		$title = $this->howtoTitle($id);
 		return CHtml::link($title , array('/howto/' . $id . '/' . $title ) );
 
 	}
+	
 	public function getHowtoTitle($id)
 	{
 		$model = Howto::model()->findByPk($id);
@@ -139,32 +158,72 @@ class Howto extends Model
 	public function getTagLinks()
 	{
 		$links = array();
-		foreach ( Tag::string2array( $this->tags ) as $tag )
-			$links[] = CHtml::link( CHtml::encode( $tag ), 
-				array( 
-					'/howto/index',
-					'tag'=>$tag
-					));
-		return $links;
+		if(is_array ( $this->tags ))
+		{
+			foreach ( $this->tags as $tag ){
+				$links[] = CHtml::link( CHtml::encode( $tag->name ), 
+					array( 
+						'/tag/'.$tag->name,
+					)) . "&nbsp;";
+										}
+			return $links;
+		}
 	}
 	public function getCategoryLinks()
 	{
 		$links = array();
-		foreach ( Category::string2array( $this->categories ) as $category )
-			$links[] = CHtml::link( CHtml::encode( $category ), 
+		if(is_array ( $this->category ))
+		{
+			foreach( $this->category as $category )
+			{
+				$links[] = CHtml::link( CHtml::encode( $category->name ), 
 				array( 
-					'/howto/index',
-					'category'=>$category
-					));
-		return $links;
+					'/category/'.$category->name,
+					)) . "&nbsp;";
+			}
+			return $links;
+		}
+	}
+
+	public function related()
+	{
+		$related = false;
+		$objects = array();
+		if (count($this->category) > 0 && count($this->tag > 0))
+			{
+				$related = array();
+				foreach ( $this->category as $category )
+				{
+					$objects = array_merge($objects,$category->howtos);
+					
+				}
+				if(is_array($this->tag)){
+					foreach ( $this->tag as $tag )
+					{
+						$objects = array_merge($objects,$tag->howtos);
+						
+					}
+				}
+				foreach($objects as $related_howto)
+				{
+					if($related_howto->id == $this->id)
+						continue;
+					if(isset($related_howto->id)){
+					$link = CHtml::link($related_howto->title , array('/howto/' . $related_howto->id . '/' . $related_howto->title ),array('class'=>'jsrp_title', 'rel'=>'bookmark' ));
+
+					if( isset($related[$link])){
+						$related[$link] = $related[$link]+ 1;						
+					}else{ $related[$link]= 1; }
+					}
+				}
+			$related = array_slice($related,0,4,true); //starts with first, takes 4, keeps same keys 
+			}
+		
+		return $related;
 	}
 	/**
 	 * Normalizes the user-entered tags.
 	 */
-	public function normalizeTags( $attribute , $params )
-	{
-		$this->tags = Tag::array2string( array_unique( Tag::string2array( $this->tags ) ) );
-	}
 
 	/**
 	 * Adds a new comment to this Howto.
@@ -189,7 +248,6 @@ class Howto extends Model
 	protected function afterFind()
 	{
 		parent::afterFind();
-		$this->_oldTags = $this->tags;
 	}
 
 	/**
@@ -204,7 +262,9 @@ class Howto extends Model
 			{
 				$this->create_time = $this->update_time = time();
 				$this->author_id = Yii::app()->user->id;
-				$this->status = 2;
+				if($_POST['Howto']['status'] == 1){
+					$this->status = 1;
+				}else{$this->status = 2;}
 			}
 			else
 				$this->update_time = time();
@@ -220,8 +280,9 @@ class Howto extends Model
 	protected function afterSave()
 	{
 		parent::afterSave();
-		$title = $this->getTitle($this->id);
-		$tags = $this->getTagLinks();
+		if(!$this->status == 1){
+		$title = $this->howtoTitle($this->id);
+		$tags = $this->tagLinks();
 		$title = CHtml::link('Created '.$title , array('/howto/' . $this->id . '/' . $title ) );
 		$shortText = substr($this->content,0,160);
 		$content = $shortText."...<br/>Tags:";
@@ -229,7 +290,8 @@ class Howto extends Model
 			$content .=" ".$tag.",";
 		}
 		Action::newAction($content,$title);
-		Tag::model()->updateFrequency( $this->_oldTags , $this->tags );
+		}
+		
 	}
 
 	/**
@@ -239,7 +301,11 @@ class Howto extends Model
 	{
 		parent::afterDelete();
 		Comment::model()->deleteAll( 'howto_id=' . $this->id );
-		Tag::model()->updateFrequency( $this->tags , '');
+		Bookmark::model()->deleteAll( 'howto_id=' . $this->id );
+		HowtoCategory::model()->deleteAll( 'howto_id=' . $this->id );
+  		Slide::model()->deleteAll( 'howto_id=' . $this->id );
+		Step::model()->deleteAll( 'howto_id=' . $this->id );
+		HowtoTag::model()->deleteAll( 'howto_id=' . $this->id );
 	}
 
 	/**

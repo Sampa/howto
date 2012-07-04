@@ -44,6 +44,7 @@ class HowtoCategory extends Model
 		);
 	}
 
+	
 	/**
 	 * @return array relational rules.
 	 */
@@ -54,7 +55,13 @@ class HowtoCategory extends Model
 		return array(
 		);
 	}
-
+	public function saveNew($howto_id,$category){
+		$relation = new HowtoCategory;
+		$relation->howto_id = $howto_id;
+		$relation->category_id = $category;
+		$relation->save(false);
+	
+	}
 	/**
 	 * @return array customized attribute labels (name=>label)
 	 */

@@ -1,4 +1,5 @@
 <?php class Yiiauth extends RController{
+
 	public static function hybridAuthConfig(){
 		
 		require_once( '/hybridauth/Hybrid/Auth.php' );
@@ -56,7 +57,7 @@
 	
 	public function autoLogin($user) //accepts a user object
 	{
-	$identity=new userIdentity($user->username, "");
+	$identity=new UserIdentity($user->username, "");
 	$identity->hybridauth($user->username);
 	if ( $identity->errorCode == UserIdentity::ERROR_NONE )
 		{

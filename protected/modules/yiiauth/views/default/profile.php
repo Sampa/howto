@@ -21,10 +21,12 @@
 	# now try to play with theses social apis
 	# Facebook: https://developers.facebook.com/docs/reference/api/
 // Example, ask facebook for friends list
-	$response = $this->facebookApi('/me/friends');
-	if($response){
-	echo "<h1> Example fb api call for friends</h1>";
-	var_export($response);
+if($provider == "Facebook"){
+		$response = $this->facebookApi('/me/friends');
+		if($response){
+		echo "<h1> Example fb api call for friends</h1>";
+		var_export($response);
+		}
 	}
 	//Post to facebook wall 
 	/*$this->facebookApi("/me/feed", "post", array(

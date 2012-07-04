@@ -1,8 +1,29 @@
-<div class=" span5">
-           	<input id="searchbox" type="text" style="float:left;" class="" style="" 
-			value="Type something to search for"  />
+<div class=" span5" style="margin-left:40px;">
+<style type="text/css">
+#jquery-live-search {
+	background: #fff;
+	
+	padding: 5px 10px;
+	max-height:800px;
+	overflow: hidden;
+	position: absolute;
+	z-index: 99;
 
-			<?php $this->widget('bootstrap.widgets.BootButtonGroup', array(
+	border: 1px solid #A9A9A9;
+	border-width: 0 1px 1px 1px;
+
+	-webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}</style><i class="icon-search" style="float:left; position:relative;top:7px;"></i>
+
+
+			<form method="post">
+           	<input id="searchbox" class="tagbox" type="text" name="q" style="float:left;width:260px;"
+			value="Type something to search for"  />
+			</form>
+			<?php
+			/* $this->widget('bootstrap.widgets.BootButtonGroup', array(
 				'type' => 'primary',
 				'toggle' => 'radio', // 'checkbox' or 'radio'
 				'size'=>'small',
@@ -12,9 +33,12 @@
 					array('label'=>'','icon'=>'user white',
 					'htmlOptions'=>array('id'=>'users','title'=>'Search for Users')),
 				),
-			)); ?>
+			)); */
+			?>
 </div>
 	<script type="text/javascript">
+	
+	jQuery('#searchbox').liveSearch({url:'/howto/search?find='});
 	$("#options").click(function(){
 		$("#search_options").fadeIn('slow');
 		

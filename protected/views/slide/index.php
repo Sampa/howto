@@ -46,7 +46,7 @@ $del_title=Yii::t('admin_slide', 'Delete Confirmation');
    ?>
 <?php
 
-    $this->widget('BootGridView', array(
+    $this->widget('zii.widgets.grid.CGridView', array(
          'id' => 'slide-grid',
          'dataProvider' => $model->search(),
          'filter' => $model->howto_id ,

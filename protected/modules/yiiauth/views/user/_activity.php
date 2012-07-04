@@ -6,6 +6,12 @@
 		margin-top: 5px;
 		width:250px;
 	}
+	#latestActivity ul 
+	{
+		list-style:none;
+
+		
+	}
 
 	#latestActivity ul li 
 	{

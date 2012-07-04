@@ -69,7 +69,6 @@ class User extends CActiveRecord
 		return array(
 			array('username', 'required','on'=>'update'),
 			array('password', 'compare', 'compareAttribute'=>'password2'),              
-
 			array('username, email', 'unique'), 
 			array('email','email'),
 			array('username', 'required'),

@@ -11,7 +11,7 @@ a{color:white;}
 	.pika-thumbs li .clip {position:relative;height:100%;text-align: center; vertical-align: center; overflow: hidden;}
 	
 /* The stage is the wrapper. The image fills 100% the height of the stage */
-.pika-stage, .pika-textnav {width: 500px;}
+.pika-stage, .pika-textnav {width: 420px;}
 .pika-stage {position: relative; background: #fafafa; border: 1px solid #e5e5e5; padding: 10px 10px 40px 10px; text-align:center; height:250px;}
 .pika-stage img{height:100%;}
 .pika-stage .caption {position: absolute; background: #000; background: rgba(0,0,0,0.75);  border: 1px solid #141414; font-size: 11px; 

@@ -1,17 +1,6 @@
 <div class="well">
 <h4> Add a new step to your How2 </h4>
-<script type="text/javascript" src="/js/nicedit.js"></script> 
 
-<script type="text/javascript">
-	//<![CDATA[
-			bkLib.onDomLoaded(function() {
-			var myNicEditor = new nicEditor();
-			myNicEditor.setPanel('Step_panel');
-			myNicEditor.addInstance('Step_text');
-
-			});
-			//]]>
-</script>
 <?php 
 	$form = $this->beginWidget('BootActiveForm', array(
 	'id'=>'step-form',
@@ -41,7 +30,7 @@
 	<div ="row-fluid">
 		<div id="Step_panel" style="max-width:500px;"></div>
 		<?php echo $form->labelEx($model,'text'); ?>
-		<?php echo $form->textArea($model,'text',array('style'=>'min-width:500px;')); ?>
+		<?php echo $form->textArea($model,'text',array('style'=>'min-width:500px;','rows'=>5)); ?>
 		
 		<?php echo $form->error($model,'text'); ?>
 
@@ -55,5 +44,6 @@
 	</div>
 
 <?php $this->endWidget(); ?>
+
 
 </div><!-- form -->

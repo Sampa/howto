@@ -107,7 +107,7 @@ public function actionCreate()
 
             echo CJSON::encode(array(
                 'status'=>'render', 
-                'div'=>$this->renderPartial('_form', array('model'=>$model,'howtoid'=>''), true)));
+                'div'=>$this->renderPartial('_form', array('model'=>$model,'howtoid'=>$howto_id), true)));
             exit;               
         }
         else
