@@ -1,7 +1,6 @@
 <?php $this->layout ="ajax";?>
 
-<?php $this->renderPartial(Yii::app()->getModule('message')->viewPath . '/_styles') ?>
-<?php $this->renderPartial(Yii::app()->getModule('message')->viewPath . '/_flash') ?>
+
 
 <div class="span12" style="float:left;">
 	<div >
@@ -27,7 +26,15 @@
 							<?= $form->hiddenField($message,"[$index]id"); ?>
 							<?= $message->getReceiverName() ?>
 						</td>
-						<td><a href="<?= $this->createUrl('view/', array('message_id' => $message->id)) ?>"><?= $message->subject ?></a></td>
+						<td>
+							<?php 
+								echo Chtml::ajaxLink(
+									$message->subject,
+									'/message/view?message_id='.$message->id,
+									array('update'=>'#currentContent')
+									);
+							?>
+						</td>
 						<td><span class="date"><?= date(Yii::app()->getModule('message')->dateFormat, strtotime($message->created_at)) ?></span></td>
 					</tr>
 				<?php endforeach ?>

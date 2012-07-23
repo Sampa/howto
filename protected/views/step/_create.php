@@ -29,9 +29,7 @@ function createStep(){
 			var myNicEditor = new nicEditor({uploadURI:'/nic/upload.php?hej=".$howto."'});
 			myNicEditor.setPanel('Step_panel');
 			myNicEditor.addInstance('Step_text');
-			$('.nicEdit-main').css('min-height:180;');
-
-			
+		
                           // Here is the trick: on submit-> once again this function!
                     $('#dialogCreate div.divForForm form').submit(getCreate);
                 }

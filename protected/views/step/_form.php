@@ -21,23 +21,24 @@
 
 
 
-	<div ="row-fluid">
+	<div class="row-fluid">
 		<?php echo $form->labelEx($model,'title'); ?>
 		<?php echo $form->textField($model,'title',array('size'=>60,'maxlength'=>255)); ?>
 		<?php echo $form->error($model,'title'); ?>
 	</div>
 
-	<div ="row-fluid">
-		<div id="Step_panel" style="max-width:500px;"></div>
+	<div class="row-fluid">
+		<div id="Step_panel" style="min-width:500px;"></div>
 		<?php echo $form->labelEx($model,'text'); ?>
-		<?php echo $form->textArea($model,'text',array('style'=>'min-width:500px;','rows'=>5)); ?>
-		
+		<?php echo $form->textArea($model,'text',array('class'=>'well','style'=>'min-width:100%; min-height:150px; max-height:300px;'));?>		
 		<?php echo $form->error($model,'text'); ?>
 
 	</div>
 
-
-
+<script>
+$().ready(function(){
+});
+</script>
 	<div class="row-fluid buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save', 
 			array( 'class'=>'btn btn-success' ) ); ?>

@@ -26,7 +26,7 @@ Yii::app()->user->setFlash('success', 'Your comment was posted');
 
 <script type="text/javascript">
 $("#leave_comment").click(function(){
-	$("#leave_comment_holder").toggle();
+	$("#leave_comment_holder").fadeToggle();
 	$("#comment_content").focus();
 
 });

@@ -2,20 +2,10 @@
 <?php $this->pageTitle=Yii::app()->name . ' - ' . MessageModule::t("Compose Message"); ?>
 <?php $isIncomeMessage = $viewedMessage->receiver_id == Yii::app()->user->getId() ?>
 
-<?php
-	$this->breadcrumbs = array(
-		($isIncomeMessage ? MessageModule::t("Inbox") : MessageModule::t("Sent")) => ($isIncomeMessage ? 'inbox' : 'sent'),
-		CHtml::encode($viewedMessage->subject),
-	);
-?>
-
-<?php $this->renderPartial(Yii::app()->getModule('message')->viewPath . '/_styles') ?>
-<?php $this->renderPartial(Yii::app()->getModule('message')->viewPath . '/_flash') ?>
 
 <div class="row-fluid">
 
-<?php $this->renderPartial(Yii::app()->getModule('message')->viewPath . '/_navigation') ?>
-	<div class="span9 well" style="position:relative;left:20px;">
+	<div class="span9" style="position:relative;">
 		<?php $form = $this->beginWidget('BootActiveForm', array(
 			'id'=>'message-delete-form',
 			'enableAjaxValidation'=>true,
@@ -74,13 +64,31 @@
 				<?= $form->error($message,'body'); ?>
 			</div>
 
+
 			<div class="buttons">
-				<button class="btn btn-mini btn-primary"><i class="icon-white icon-repeat"></i> <?= MessageModule::t("Reply") ?></button>
+				<button class="btn btn-mini btn-primary"><i class="icon-white icon-repeat"></i> 
+				<?= MessageModule::t("Reply") ?></button>
+			
 				<button class="btn btn-mini btn-danger"><i class="icon-white icon-remove"></i> <?= MessageModule::t("Delete") ?></button>
 
 			</div>
-
+		
 			<?php $this->endWidget(); ?>
 		</div>
 	</div>
 </div>
+	<script>
+		$("#message-form").submit(function(event) {
+		/* stop form from submitting normally */
+		event.preventDefault(); 			
+		/* get some values from elements on the page: */
+		var receiver_id = $("#Message_receiver_id").val(),
+			subject = $("#Message_subject").val(),
+			body =  $("#Message_body").val(),
+			url = '/message/view/reply';
+		jQuery.post(url, {receiver_id: receiver_id, subject:subject,body:body }, function(data) {
+				alert(data.message);
+			},'json' );
+			return false;
+		});
+	</script>

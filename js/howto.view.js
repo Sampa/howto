@@ -1,12 +1,21 @@
 	function initThis(){
 
 
-	 $('.savebutton').click(function(){
+	 $('.savebutton').live('click',function(){
 	 var id = $(this).attr('name');
 	});
-	 
+	 $(".del_attachment").live('click',function(){
+		var id = $(this).attr('name');
+		$.ajax({
+		  type: "POST",
+		  url: "/howto/delattachment",
+		  data: {id:id}
+		}).done(function( data ) {
+				$(".del_attachment[name="+id+"]").parent().remove();
+		});
+	 });
 
-			$(".bookmark").click(function(){
+			$(".bookmark").live('click',function(){
 		id = $(this).attr('name');
 		url = '/howto/bookmark';
 		jQuery.getJSON(url, {id: id}, function(data) {
@@ -24,7 +33,7 @@
 			});
 			return false;
 		});
-	$(".edit_area").click(function(){
+	$(".edit_area").live('click',function(){
 		var id = $(this).attr('name');
 	var dataid = id;
 	if(nicEditors.findEditor('edit_content'+id) == undefined){ 
@@ -36,7 +45,7 @@
 			$("#nic"+id).fadeIn('slow');
 		});
 	
-	$(".savecontent").click(function(){
+	$(".savecontent").live('click',function(){
 	 		var id = $(this).attr('rel');
 			 var content = $("div[name="+id+"]").html();
 					url = '/howto/updatecontent';
@@ -60,7 +69,7 @@
 					});
 		});
 
-			$(".howtodelete").click(function(){
+			$(".howtodelete").live('click',function(){
 				var id = $(this).attr('name');
 				deletehowto(id);
 			});

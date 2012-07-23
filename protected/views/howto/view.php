@@ -3,9 +3,14 @@
 	$this->pageTitle = $model->title;
 	$this->layout = "column1";
 	$updated = date('F j, Y',$model->update_time);
-
+	if(Yii::app()->user->id == $model->author->id){
+		$owner = true;
+		}else{
+		$owner = false;
+		}
 ?>
 <?php  Yii::app()->clientScript->registerScriptFile('/js/howto.view.js',CClientScript::POS_BEGIN);?>
+<?php $this->widget("ViewsCountWidget", array('uniqueMode'=>false,'modelId' => $model->id, 'modelClassName' => get_class($model)));?>
 
 <script type="text/javascript">var switchTo5x=true;</script>
 <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
@@ -15,20 +20,33 @@
 
 	<div id="left" class="span6" style="" >
 	
-		<?php $this->renderPartial('_view',array('data'=>$model,'owner'=>$owner ,'view'=>true ),false ); ?>
-	<h5>Last updated: <i><?= $updated?></i> </h5>
-	
+		<div style="margin-bottom:-5%;">
+			<?php echo $this->renderPartial('_view',array('data'=>$model,'owner'=>$owner ,'view'=>true ),true,false ); ?>
+		</div>
 	<!-- steps-->
+			<!--Add Step-->
+	<?php if( $owner): ?>
+				<button class="btn btn-mini " id="createButton"><!-- sign up button-->
+					<i class="icon-plus"></i> Add Step
+				</button>
+			<!--delete--> 
+				<button class="btn btn-mini btn-danger howtodelete" name="<?=$model->id;?>">
+					<i class="icon-remove icon-white"></i> Delete
+				</button>
+		<div id="delete_howto_message<?=$model->id;?>" name="<?=$model->id;?> style="display:none"></div>
+	<?php endif; ?>   
+	
 	<div id="steps" class="span12" style=" float:left;">
 		<?php if ( $owner ):?>
 			<!-- files with modalwindow, ajax calls etc for easier reading -->
-		<?php $this->renderPartial('//step/_create',array('howto'=>$model->id)); ?>
-		<?php if ( $model->stepCount >= 1 ): ?>
+		<?php
+		$this->renderPartial('//step/_create',array('howto'=>$model->id)); 
+		 if ( $model->stepCount >= 1 ): ?>
 			<h3>
 				<?= $model->stepCount>1 ? $model->stepCount . ' steps' : 'One step'; ?>
-			</h3>
-		<?php endif; ?>
-		<?php
+			</h3> 
+		<?php endif; 
+		
 		Yii::app()->user->setFlash('info', 'Drag the titles of the steps to  re-arrange them <br/>
 		Change the steps by clicking on the step text.');
 		$this->widget('bootstrap.widgets.BootAlert'); 
@@ -36,20 +54,32 @@
 		?>
 		<div id="stepsUpdated"></div>
 		
-			<ul id="sortable" style="">	
-		<?php
-	
-		foreach ( $model->steps as $step ):
-			if($owner){
-				echo '<li id="'.$step->id.'" class="ui-state-highlight" style="border:0px solid green">';
-			}
-			echo "<h5>".$step->title."</h5>";
-			echo '<br/><div id="div'.$step->id.'" style="display:none;"></div>';
-			echo '<div  name="'.$step->id.'" id="step_text_div'.$step->id.'" class="well step_text" ">' . $step->text .'</div>';
-			if($owner):
-			echo '<button class="btn btn-mini btn-success save_step" name ="'.$step->id.'" 
-			id="button'.$step->id.'" style="display:none;">Save</button>';;
-		 ?>
+			<ul id="sortable" style="list-style:none;">	
+				<?php
+				foreach ( $model->steps as $step ):
+					if($owner){
+						echo CHtml::tag('li',array('id'=>$step->id,'class'=>'ui-state-highlight','style'=>'border:0px;'),false);
+					}
+					echo CHtml::tag("h5",array('style'=>'min-width:100%;'),$step->title);
+					echo "<br/>";
+					echo CHtml::tag('div',array(
+						'id'=>'div'.$step->id,
+						'style'=>'display:none;',
+						),'');
+					echo CHtml::tag('div',array(
+						'id'=>'step_text_div'.$step->id,
+						'name'=>$step->id,
+						'class'=>'well step_text',
+						),$step->text);
+					if($owner):
+					echo CHtml::tag('button',array(
+						'id'=>'button'.$step->id,
+						'class'=>'btn btn-mini btn-success save_step',
+						'name'=>$step->id,
+						'style'=>'display:none;',
+					),'Save');
+					
+				 ?>
 		 <script type="text/javascript">
 			
 			bkLib.onDomLoaded(function() {
@@ -63,7 +93,11 @@
 		<?php endif;?>
 		<?php endforeach; ?>
 			</ul>
+	
+	<h5>Last updated: <i><?= $updated?></i> </h5>	
+
 	</div><!--steps-->
+
 	<?php if($related): ?>
 		
 		<div id="slider-code" class="span12">
@@ -75,7 +109,7 @@
 				<?php
 				foreach ( $related as $link=>$weight )
 				{
-					echo '<li class="well">'.$link.'</li>';
+					echo CHtml::tag('li',array('class'=>'well'),CHtml::tag('h4',array(),$link));
 				}
 				?>
 				<li> some shits</li>
@@ -109,24 +143,54 @@
 		}
 		?>
 		<hr/>
-<?php /// SLIDES
-	/*if( $owner ) {
-		echo "<br/><br/>".CHtml::htmlButton('<i class="icon-edit icon-white"></i> Manage Slides',
-		array('class'=>'btn btn-mini btn-primary manage_slide'));
-		$slide = new Slide('search');
-		$this->renderPartial('//slide/index',array('model'=>$slide,'howto'=>$model->id));
-		}
+			<!-- attachments-->
+		<h4> Attachments </h4>
+		
+<ul>
+		<?php foreach($attachments as $file):?>
+			<li>
+				 <a href="<?= USER::USER_DIR.Yii::app()->user->id."/".$file->filename;?>"><?= $file->filename;?></a>
+				<?php if($owner):?>
+					<button class="btn btn-danger btn-mini del_attachment" style="" name="<?=$file->id;?>">
+						<i class="icon-white icon-remove"></i> Delete
+					</button>
+				<?php endif;?>
+			</li>
+		<?php endforeach;?>
+</ul>
 	
-	$panels = Slide::model()->findAll('howto_id='.$model->id);
-	if ( $panels )
-	{
-		$this->renderPartial('_slide',array('howto'=>$model->id,'panels'=>$panels));
-	} 
-	 
-	foreach($videos as $video):
+	<?php 
+		if($owner)
+		{
+		$XUpload = new XUploadForm;
+		$this->widget('xupload.XUpload', 
+				array(
+						'url' => Yii::app()->createUrl("file/upload", 
+						array("parent_id" =>User::USER_DIR . Yii::app()->user->id) ),
+							'model' => $XUpload,
+							'attribute' => 'file',
+							'multiple'=>false,
+							'options'=>array(
+							'autoUpload'=>true,
+							'completed' => 'js:function (e,data) {
+							var filename = data.files[\'0\'][\'name\'];
+							var url = "/howto/newattachment";
+									jQuery.getJSON(url, {filename: filename,howto_id:'.$model->id.'}, function(data) {
+										if (data.status == "success") {
+							$().toastmessage("showSuccessToast", "Attachment added!");
+										   return true;	
+											
+										}else{return false;}          
+									});
+							}'),
+				   ));
 
-	endforeach;
-*/ ?>
+			   
+		} 
+	?>
+<!-- end attachments -->
+		<hr/>
+
 	<script type="text/javascript">
 	
 function getCreate(id,content,response){
@@ -167,39 +231,35 @@ $(".save_step").hide();
 			return false;
 		});
 
-
-initThis();/*  this is the js file with all code for each _view file*/
-
-
-$(".alert").click(function(){
-$(this).hide();
-});
-	
-<!-- EVENT! When the user has sorted a step to a new position -->
-$("#sortable").bind( "sortupdate", function(event, ui) {
-updatePos();
-});
-function updatePos() {
-    var pos = $("#sortable").sortable('toArray');
-        url = '/step/updatePos/howtoid/'+<?php echo $model->id;?>;
- 
-    jQuery.getJSON(url, {pos: pos}, function(data) {
-        if (data.status == 'success') {
-            $('#stepsUpdated').fadeIn('slow');			
-            $('#stepsUpdated').html(data.div);
-			$('#stepsUpdated').fadeOut('slow');
-        }
-    });
-    return false;
-}
-<!-- END EVENT -->
-	$(".manage_slide").click(function(){
-			$("#slide_div").toggle();
-		});
-});
-
-</script>
+	$(".alert").click(function(){
+		$(this).hide();
+	});
 		
+<!-- EVENT! When the user has sorted a step to a new position -->
+	$("#sortable").bind( "sortupdate", function(event, ui) {
+		updatePos();
+	});
+	function updatePos() {
+		var pos = $("#sortable").sortable('toArray');
+			url = '/step/updatePos/howtoid/'+<?php echo $model->id;?>;
+	 
+		jQuery.getJSON(url, {pos: pos}, function(data) {
+			if (data.status == 'success') {
+		$().toastmessage('showSuccessToast', data.div);
+
+			}
+		});
+		return false;
+	}
+<!-- END EVENT -->
+	
+	$(document).ready(function(){
+	$("#sortable").sortable({handle:'h5'});
+
+	
+		});
+</script>
+
 		<div style=" clear:both;position:relative; width:120%;top:0px; left:0px; ">
 				<span class='st_sharethis' displayText='ShareThis'></span>
 				<span class='st_twitter' displayText='Tweet'></span>
@@ -233,9 +293,4 @@ function updatePos() {
 
 	?>
 	</div><!-- comments -->
-	<!-- to fix the rating breaking in view but not index-->
-	<script>
-	 $("[id^=rating]").each(function () {
-       $(this).find("input").rating();
-		});
-	</script>
+

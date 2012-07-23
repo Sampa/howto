@@ -60,16 +60,18 @@
 	?>
 	</div>
 	
+	
 			<input type="hidden" id="x" name="x" />
 			<input type="hidden" id="y" name="y" />
 			<input type="hidden" id="w" name="w" />
 			<input type="hidden" id="h" name="h" />
 
 <?php $this->endWidget(); ?>
+
 </div><!-- //left -->
 
 
-<div id="middle" class="span4" style="float:left;">
+<div id="middle" class="span8" style="float:left;">
 <?php if ( !$model->isNewRecord ): ?>
 	
 	<div id="avatar_upload" style="float:left;">
@@ -98,6 +100,7 @@
 						'attribute' => 'file',
 						'multiple'=>false,
 						'options'=>array(
+						'autoUpload'=>true,
 						'completed' => 'js:function (e,data) {
 						var filename = data.files[\'0\'][\'name\'];
 						showPic(filename);
@@ -106,20 +109,27 @@
 
 			   
 ?>
+<div style=" float:left; ">
+					<h4 class="cropinfo" style="display:none;">Please select an area of the image</h4>
+					<div id="avatar" style=" float:left;"></div>
+			</div>
+	<div class="" style=" position:absolute;left:60px; top:380px; z-index: 100; min-width:250px; min-height:250px; max-width:260px;"></>
+				<h4 class="cropinfo" style="display:none;">This is what your avatar will look like</h4>
+				<div id="preview_div" style="width:250px;height:250px;overflow:hidden;"></div>
+	</div>
+			
+		
 
 	</div>
+	
+	
+	
 <?php 
 Yii::app() -> clientScript -> registerCssFile('/css/jquery.jcrop.css');
       Yii::app() -> clientScript -> registerScriptFile("/js/jquery.jcrop.min.js");
 	  Yii::app() -> clientScript -> registerScriptFile("/js/jquery.color.js");
 ?>
-<h4 class="cropinfo" style="display:none;">Please select an area of the image to save as your avatar</h4>
-<div id="avatar" style="clear:both;"></div>
-<h4 class="cropinfo" style="display:none;">This is what your avatar will look like</h4>
-<div id="preview_div" style="width:250px;height:250px;overflow:hidden;"></div>
-	<script type="text/javascript">
-
-
+<script type="text/javascript">
 function initCrop(){
   // Create variables (in this scope) to hold the API and image size
       var jcrop_api, boundx, boundy;

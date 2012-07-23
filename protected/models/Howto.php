@@ -21,7 +21,7 @@ class Howto extends Model
 
 	private $_oldTags;
 	public $image;
-	public $video;
+	public $files;
 	public $categories;
 	public $tag;
 
@@ -34,16 +34,15 @@ class Howto extends Model
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'author' => array( self::BELONGS_TO , 'User', 'author_id'),
-			'comments' => array( self::HAS_MANY , 'Comment', 'howto_id', 'condition'=>'comments.status='.Comment::STATUS_APPROVED, 'order'=>'comments.create_time DESC'),
-			'commentCount' => array( self::STAT , 'Comment', 'howto_id', 'condition'=>'status='.Comment::STATUS_APPROVED),
-			'steps' => array(self::HAS_MANY, 'Step', 'howto_id', 'order'=>'position','together' => true,),
-			'stepCount' => array( self::STAT , 'Step', 'howto_id', 'condition'=>''),
-			'rating'=>array( self::BELONGS_TO, 'Rating', 'rating_id'),
-			'category'=>array(self::MANY_MANY, 'Category', 'tbl_howto_category(howto_id,category_id)'),
-			'tags'=>array(self::MANY_MANY, 'Tag', 'tbl_howto_tag(howto_id,tag_id)'),
-
-
+		'author' => array( self::BELONGS_TO , 'User', 'author_id'),
+		'comments' => array( self::HAS_MANY , 'Comment', 'howto_id', 'condition'=>'comments.status='.Comment::STATUS_APPROVED, 'order'=>'comments.create_time DESC'),
+		'commentCount' => array( self::STAT , 'Comment', 'howto_id', 'condition'=>'status='.Comment::STATUS_APPROVED),
+		'steps' => array(self::HAS_MANY, 'Step', 'howto_id', 'order'=>'position','together' => true,),
+		'stepCount' => array( self::STAT , 'Step', 'howto_id', 'condition'=>''),
+		'rating'=>array( self::BELONGS_TO, 'Rating', 'rating_id'),
+		'category'=>array(self::MANY_MANY, 'Category', 'tbl_howto_category(howto_id,category_id)'),
+		'tags'=>array(self::MANY_MANY, 'Tag', 'tbl_howto_tag(howto_id,tag_id)'),
+		'attachments'=>array(self::HAS_MANY,'Files','howto_id','together'=>true),
 	);
 	}
 
@@ -273,7 +272,9 @@ class Howto extends Model
 		else
 			return false;
 	}
-
+	public function getRatingObject(){
+		return Rating::model()->findByPk($this->rating_id);			
+	}
 	/**
 	 * This is invoked after the record is saved.
 	 */
@@ -308,6 +309,15 @@ class Howto extends Model
 		HowtoTag::model()->deleteAll( 'howto_id=' . $this->id );
 	}
 
+	public function attachmentArray($data){
+			if ( is_array($data) ) {
+			return $data;
+			} else if ( $data !== null ) {
+			return array($data);
+			} else {
+			return array();
+		}
+	}
 	/**
 	 * Retrieves the list of howto- based on the current search/filter conditions.
 	 * @return CActiveDataProvider the data provider that can return the needed howto-.

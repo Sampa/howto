@@ -55,6 +55,7 @@ class Rating extends Model
 		return array(
 		);
 	}
+	
 
 	/**
 	 * @return array customized attribute labels (name=>label)

@@ -1,9 +1,9 @@
 <!-- The file upload form used as target for the file upload widget -->
 <?php echo CHtml::beginForm($this -> url, 'post', $this -> htmlOptions);?>
-<div class="row fileupload-buttonbar">
+<div class="row-fluid fileupload-buttonbar">
 	<div class="span12">
 		<!-- The fileinput-button span is used to style the file input field as button -->
-		<span class="btn btn-success fileinput-button"> <i class="icon-plus icon-white"></i>
+		<span class="btn btn-primary btn-mini fileinput-button"> <i class="icon-plus icon-white"></i> Upload
 			<?php
             if ($this -> hasModel()) :
                 echo CHtml::activeFileField($this -> model, $this -> attribute, $htmlOptions) . "\n";
@@ -12,7 +12,7 @@
             endif;
             ?>
 		</span>
-		<button type="submit" class="btn-btn btn-mini btn-primary start">
+		<!--<button type="submit" class="btn-btn btn-mini btn-primary start">
 			<i class="icon-upload icon-white"></i>
 			<span>Start upload</span>
 		</button>
@@ -24,14 +24,14 @@
 			<i class="icon-trash icon-white"></i>
 			<span>Delete</span>
 		</button>
-		<input type="checkbox" class="toggle">
+		<input type="checkbox" class="toggle">-->
 	</div>
-	<div class="span5">
-		<!-- The global progress bar -->
+	<!--<div class="span5">
+		<!-- The global progress bar -
 		<div class="progress progress-success progress-striped active fade">
 			<div class="bar" style="width:0%;"></div>
 		</div>
-	</div>
+	</div>-->
 </div>
 <!-- The loading indicator is shown during image processing -->
 <div class="fileupload-loading"></div>

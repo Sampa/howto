@@ -11,6 +11,8 @@
 	<link rel="stylesheet" type="text/css" href="<?= Yii::app()->request->baseUrl; ?>/css/global.css" />
 	<link rel="stylesheet" type="text/css" href="<?= Yii::app()->request->baseUrl; ?>/css/jcloud.css" />
 	<link rel="stylesheet" type="text/css" href="<?= Yii::app()->request->baseUrl; ?>/css/elfinder.min.css" />
+	<link rel="stylesheet" type="text/css" href="<?= Yii::app()->request->baseUrl; ?>/css/jquery.toastmessage.css" />
+
 	<link rel="stylesheet" type="text/css" media="screen" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.14/themes/smoothness/jquery-ui.css" />
 	<?php  //helps using more jQuery stuff on same page 
 		$scriptmap=Yii::app()->clientScript;
@@ -21,14 +23,12 @@
 				'jquery-ui.js'=>'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js',
 				);
 	?>
-	  <script src=""></script>
 
-		<?php //  Yii::app()->clientScript->registerScriptFile('/js/jquery.pikachoose.js');?>
-
+	<?php  Yii::app()->clientScript->registerScriptFile("/js/jquery-ui.min.js");?>
 	<?php  Yii::app()->clientScript->registerScriptFile('/js/common.js');?>
 	<?php  Yii::app()->clientScript->registerScriptFile('/js/nicedit.js');?>
-	<?php // Yii::app()->clientScript->registerScriptFile('/js/jquery.pop.js');?>
 	<?php  Yii::app()->clientScript->registerScriptFile('/js/jquery.vticker.js');?>
+	<?php  Yii::app()->clientScript->registerScriptFile('/js/jquery.toastmessage.js');?>
 	<?php  Yii::app()->clientScript->registerScriptFile('/js/jquery.livesearch.js');?>
 	<?php  Yii::app()->clientScript->registerScriptFile('/js/jquery.jcloud.js');?>
 	<?php  Yii::app()->clientScript->registerScriptFile('/js/jquery.tinycarousel.min.js');?>
@@ -40,7 +40,6 @@
 <body>	
 
 <div id="page" >
-
 	<div id="header" style="border:0px solid red; min-height:70px;">
 		<div id="logo" class="span2" style="border:0px solid black;">
 			<a href="<?=Yii::app()->homeUrl;?>">
@@ -48,17 +47,16 @@
 			</a>
 		</div>
 			<?= CHtml::link('<i class="icon-white icon-plus-sign"></i> Howto',array('//howto/create'),
-				array('class'=>'btn  btn-success','style'=>'float:left;'));?>
+				array('class'=>'btn btn-large btn-success','style'=>'float:left;'));?>
 <div class="" style="height:29px; float:left; width:30%; border:0px solid black; padding-left: 10px;">
 
 	<?php if ( $this->isGuest ):?>	
-	
 
-			<a class="btn btn-primary" href="/login"><!-- loginbutton-->
+			<a class="btn btn-large btn-primary" href="/login"><!-- loginbutton-->
 				Login
 			</a> <!--login button-->
 
-			<a class="btn btn-primary" href="/register"><!-- sign up button-->
+			<a class="btn btn-large btn-primary" href="/register"><!-- sign up button-->
 				Sign up
 			</a> <!--sign up button-->
 			
@@ -77,19 +75,17 @@
 		<?php
 		$this->widget('bootstrap.widgets.BootButtonGroup', 
 		array(
-			'type'=>'primary', 
-			'buttons'=>
-			array(
+			'type'=>'primary',
+			'size'=>'large',
+			'buttons'=>array(
 				array('label'=>$this->user, 
 						'url'=>User::getUserUrl( $this->user )),
-				array('items'=>
-					array(
-
+				array('items'=>array(
 						array('label'=>'Rights', 'url'=>array( '/rights' ),
+							'visible'=>Yii::app()->user->checkAccess(Rights::module()->superuserName ) ),
+						array('label'=>'Dashboard', 'url'=>array( '/dashboard' ),
 								'visible'=>Yii::app()->user->checkAccess(Rights::module()->superuserName ) ),
 						array('label'=>'Logout', 'url'=>array('/site/logout'),'id'=>'loggaut'), 
-						
-						
 					),
 				)
 			))); 
@@ -99,12 +95,12 @@
 
 	<div style="float:left;">
 
-
+	
 	<div style="position:absolute; top:2px; left:430px;">
 	<?= CHtml::link('<i class="icon-time"></i> New!',array('//howto/show/new'),
-				array('class'=>'btn','style'=>'float:left;'));?>
+				array('class'=>'btn btn-large','style'=>'float:left;'));?>
 	<?= CHtml::link('<i class="icon-fire"></i> Popular!',array('//howto/show/popular'),
-				array('class'=>'btn ','style'=>'float:left;'));?>
+				array('class'=>'btn btn-large','style'=>'float:left;'));?>
 		
 	</div> <!-- // howtos button-->
 			
@@ -214,7 +210,14 @@
 
 </body>
 </html>
-
+<script type="text/javascript">
+/*
+	$().toastmessage('showNoticeToast', 'some message here');
+	$().toastmessage('showSuccessToast', "some message here");
+	$().toastmessage('showWarningToast', "some message here");
+	$().toastmessage('showErrorToast', "some message here");
+*/
+</script>
 <?php
 		$this->widget('application.extensions.fancybox.EFancyBox', array(
 			'target'=>'a[rel=fbox]',

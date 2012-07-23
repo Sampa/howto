@@ -31,6 +31,7 @@ class HowtoController extends Controller
 	}
 	
 	
+
 	/**
 	 * Filter method for checking whether the currently logged in user
 	 * is the author of the Howto being accessed.
@@ -52,7 +53,8 @@ class HowtoController extends Controller
 	*/
 	public function allowedActions()
 	{
-	 	return 'index,view,updateContent,rating,bookmark,category,reloadComments,mail,search,jsonTags,viewpdf,toggleStatus';
+	 	return 'create,index,view,updateContent,rating,bookmark,category,reloadComments,mail,
+		search,jsonTags,viewpdf,toggleStatus,newAttachment,delattachment';
 	}
 	
 
@@ -98,13 +100,16 @@ class HowtoController extends Controller
 				'model'=>$howto,
 			));
 		}else{
-		$videos = Video::model()->findAll('howto_id='.$howto->id);
+		// need to make sure it is always an array to avoid errors
+		$attachments = $howto->attachmentArray($howto->attachments); 
+		
+
 		$this->render( 'view',array(
 			'model'=>$howto,
 			'owner'=>$owner,
 			'comment'=>$comment,
-			'videos'=>$videos,
 			'related'=>$related,
+			'attachments'=>$attachments,
 		));
 		}
 	}
@@ -180,9 +185,11 @@ class HowtoController extends Controller
 	}
 	public function actionRating()
 	{			
-		$rating = Rating::model()->findByPk($_GET['id']);
+			$id = substr($_GET['id'],4);
+			$val = round($_GET['val'],0);
+			$rating = Rating::model()->findByPk($id);
 			$rating->vote_count = $rating->vote_count + 1;
-			$rating->vote_sum = $rating->vote_sum + $_GET['val'];
+			$rating->vote_sum = $rating->vote_sum + $val;
 			$rating->vote_average = round($rating->vote_sum / $rating->vote_count,2);
 		
 		if ( Yii::app()->request->isAjaxRequest )
@@ -193,6 +200,7 @@ class HowtoController extends Controller
 						'status'=>'success', 
 						'div'=>'Thank you for voting!',	
 						'info'=>$rating->vote_average ." " . $rating->vote_count . " votes",
+						'id'=>$rating->id,
 						) );
 			}
 		}
@@ -258,22 +266,7 @@ class HowtoController extends Controller
 			
 		}
 	}
-	public function checkFiles($post)
-	{
-		$return = array();
-		$files = explode( ';',$post );
-		foreach( $files as $key=>$file )
-		{
-			if($key==0)
-				continue;
-			if( file_exists ( dirname(__FILE__) . "..\\..\\..\\files\\users\\".Yii::app()->user->id."\\video\\" . $file ) )
-			{
-				$return[] = $file;	
-			}
-		}	
-		return $return;
-	
-	}
+
 	public function actionCreate()
 	{
 		$this->layout ="column1";
@@ -281,7 +274,7 @@ class HowtoController extends Controller
 		$this->performAjaxValidation( $model, 'howto-form' );
 		if ( isset ( $_POST['Howto'] ) )
 		{
-				
+	
 			$model->attributes = $_POST['Howto'];			
 			$rating = new Rating();
 			$rating->save();
@@ -296,16 +289,8 @@ class HowtoController extends Controller
 				}
 				Tag::workOnTags($_POST['Howto']['tag'],$model->id);
 				
-				$files = $this->checkFiles($_POST['Howto']['video']);
-					foreach($files as $key=>$file)
-					{
-						$video = new Video;
-						$video->user_id = Yii::app()->user->id;
-						$video->howto_id = $model->id;
-						$video->filename = $file;
-						$video->save();
-					}
-
+				Files::workOnFiles($_POST['Howto']['files'],$model->id);
+				
 				$this->redirect('/howto/'.$model->id.'/'.$model->title);
 			}
 		}
@@ -550,6 +535,32 @@ class HowtoController extends Controller
 				$json[] = $tag->name;
 			}
 			echo json_encode($json);		
+	}
+	
+	public function actionnewattachment(){
+		if (  isset ( $_GET['filename'] ) && !Yii::app()->user->isGuest  )
+		{
+		Files::workOnFile($_GET['filename'],$_GET['howto_id']);
+				echo CJSON::encode(
+						array(
+							'status'=>'success', 
+							));
+		}
+	
+	}
+	public function actiondelattachment(){
+
+		if (  isset ( $_POST['id'] ) && !Yii::app()->user->isGuest  )
+		{
+		if(Files::model()->findByPk($_POST['id'])->delete()){
+				echo CJSON::encode(
+						array(
+							'status'=>'success', 
+							));
+		}else{exit;}
+
+	}
+	
 	}
 	 public function registerAssets(){
 

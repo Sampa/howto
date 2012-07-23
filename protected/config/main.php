@@ -27,6 +27,11 @@ return array(
 		'application.modules.yiiauth.components.*',
 		'application.extensions.jtogglecolumn.*', 
 		'application.modules.badger.models.*',
+		'application.modules.pcviewscounter.*',
+        'application.modules.pcviewscounter.models.*',
+        'application.modules.pcviewscounter.controllers.*',
+        'application.modules.pcviewscounter.components.*',
+        'application.modules.pcviewscounter.extensions.ViewsCountWidget.*',
 
 	
 	),
@@ -37,6 +42,9 @@ return array(
 ),
 	// application modules
 	'modules'=>array(
+		'pcviewscounter' => array(
+          'class' => 'application.modules.pcviewscounter.pcviewscounterModule'
+		  ),
 		'badger' => array(
 		  'layout' => '//layouts/main', //default: "//layouts/main"
 		  //'userTable' => 'userx', // default: "user"
@@ -125,12 +133,22 @@ return array(
 		'generatorPaths' => array(
                 'ext.bootstrap.gii',
 				'application.gii',  //Ajax Crud template path
+				'ext.giiplus', 
 				),
 			),
 		),
 
 	// application components
 	'components'=>array(
+	'cache'=>array(
+'class'=>'CDbCache',		
+		),
+	'geoip' => array(
+		'class' => 'ext.PcMaxmindGeoIp.PcMaxmindGeoIp',
+	),
+	'file'=>array(
+        'class'=>'application.extensions.file.CFile',
+    ),
 		'user'=>array(
 			'class'=>'RWebUser',
 			// enable cookie-based authentication
@@ -205,7 +223,7 @@ return array(
 				'sharing'=>'site/page/view/sharing',
 				'reading'=>'site/page/view/reading',
 				'creating'=>'site/page/view/creating',
-				
+				'dashboard'=>'dashboard/index',
 		
 
 
@@ -225,10 +243,10 @@ return array(
 				
 				// uncomment the following to show log messages on web pages
 				
-			/*	array(
+				array(
 					'class'=>'CWebLogRoute',
 				),
-				*/
+				
 			),
 		),
 		'ePdf' => array(

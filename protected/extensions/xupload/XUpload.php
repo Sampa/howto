@@ -99,6 +99,8 @@ class XUpload extends CJuiInputWidget {
             //The Templates plugin is included to render the upload/download listings
             Yii::app() -> clientScript -> registerScriptFile("http://blueimp.github.com/JavaScript-Templates/tmpl.min.js", CClientScript::POS_END);
             //The Iframe Transport is required for browsers without support for XHR file uploads
+			 Yii::app() -> clientScript -> registerScriptFile("http://blueimp.github.com/JavaScript-Load-Image/load-image.min.js", CClientScript::POS_END);
+            Yii::app() -> clientScript -> registerScriptFile("http://blueimp.github.com/JavaScript-Canvas-to-Blob/canvas-to-blob.min.js", CClientScript::POS_END);
             Yii::app() -> clientScript -> registerScriptFile($baseUrl . '/js/jquery.iframe-transport.js', CClientScript::POS_END);
             // The basic File Upload plugin
             Yii::app() -> clientScript -> registerScriptFile($baseUrl . '/js/jquery.fileupload.js', CClientScript::POS_END);
